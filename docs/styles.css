@@ -977,31 +977,38 @@ select {
   z-index: 30;
 }
 
-.about-link { margin-top: 1rem; }
 .smart-summary { color: var(--ink) !important; font-weight: 700; }
 .data-section p { color: var(--muted); }
 .data-status { color: var(--right) !important; font-weight: 700; }
 .data-status:empty { display: none; }
 
-.about { padding-top: .5rem; }
-.about h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
-.about-facts { display: grid; gap: .75rem; margin: 1.5rem 0; }
-.about-facts > div {
-  padding: .9rem 1.1rem;
+.faq { margin-top: 2.5rem; }
+.faq h2 { margin: 0 0 .5rem; font-size: 1.5rem; }
+.faq-group { margin: 1.25rem 0 .6rem; font-size: 1.1rem; }
+.faq details {
+  margin-bottom: .5rem;
   border: 2px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
 }
-.about-facts dt { margin-bottom: .2rem; font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; font-weight: 800; }
-.about-facts dd { margin: 0; }
-.about-facts ul { margin: .25rem 0 0; padding-left: 1.25rem; }
-.about-note {
+.faq details[open] { border-color: var(--line-strong); }
+.faq summary {
+  padding: .75rem 1rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+.faq summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: var(--radius); }
+.faq details > :not(summary) { margin: 0 1rem .9rem; }
+.faq details ul, .faq details ol { padding-left: 1.25rem; }
+.faq details li + li { margin-top: .25rem; }
+.faq-note {
+  margin: .75rem 0 0;
   padding: .7rem .9rem;
   border-left: 4px solid var(--gold);
   border-radius: 0 8px 8px 0;
   background: var(--gold-soft);
+  font-size: .95rem;
 }
-.about-actions { max-width: 26rem; margin-top: 1.5rem; }
 
 /* Study mode ---------------------------------------------------------------- */
 

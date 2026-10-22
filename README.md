@@ -51,9 +51,12 @@ Durante el examen, un contador muestra tus aciertos seguidos (por ejemplo, «�
 
 Todo se guarda solo en el navegador de cada dispositivo. Para pasarlo a otro teléfono o computadora, en **Mis datos** usa **Descargar mis datos** (guarda un archivo) y luego **Cargar mis datos** en el otro dispositivo. **Borrar mi progreso** lo reinicia sin tocar tus falladas, marcadas ni exámenes.
 
-### Cómo es el examen
+### Preguntas frecuentes
 
-El botón **¿Cómo es el examen?**, en el inicio, y el enlace del pie de página abren un resumen de lo que se sabe del examen real: qué evalúa, cuántas preguntas tiene, con cuántas se aprueba, qué pasa si no apruebas y quién no lo rinde, con enlaces a las fuentes oficiales.
+Al final del inicio, y con el enlace **Preguntas frecuentes** del pie de página, hay respuestas cortas en dos grupos:
+
+- **Sobre el examen oficial de nacionalización:** cómo es, qué evalúa, con cuántas respuestas se aprueba, qué pasa si no apruebas, cómo llega la cita y quién no lo rinde, con enlaces a las fuentes oficiales.
+- **Sobre esta página:** si es oficial, si las preguntas son las del examen, cómo conviene estudiar, dónde se guarda el progreso, si funciona sin internet, cómo reportar un error y cómo compartir un examen.
 
 ### Buscar preguntas
 

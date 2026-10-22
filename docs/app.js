@@ -701,7 +701,6 @@ function setupPractice() {
     state.topicsMode = "study";
     showTopics();
   });
-  app.querySelector("#open-about").addEventListener("click", showAbout);
   app.querySelector("#open-progress").addEventListener("click", showProgress);
   app.querySelector("#open-builder").addEventListener("click", showBuilder);
   updatePractice();
@@ -1531,14 +1530,15 @@ function setupDataTransfer() {
   });
 }
 
-// How the real exam works ---------------------------------------------------------
+// Frequently asked questions ---------------------------------------------------
 
-function showAbout() {
-  history.replaceState(null, "", `${location.pathname}${location.search}#como-es-el-examen`);
-  app.replaceChildren(cloneTemplate("about-template"));
-  app.querySelector(".back-home").addEventListener("click", showHome);
-  app.querySelector(".about-mock").addEventListener("click", () => startExam(mockExam(), { passMark: MOCK_PASS }));
-  app.focus();
+// The questions live at the end of the home page; old links to the former
+// "#como-es-el-examen" page land there too.
+function showFaq() {
+  showHome();
+  const faq = document.getElementById("preguntas-frecuentes");
+  faq.querySelector("details").open = true;
+  faq.scrollIntoView();
 }
 
 // Result ---------------------------------------------------------------------
@@ -2243,7 +2243,7 @@ fetch("data/cards.json")
       const topics = topicsFromHash();
       if (exam) showShared(exam);
       else if (topics) showSharedTopics(topics);
-      else if (location.hash === "#como-es-el-examen") showAbout();
+      else if (["#preguntas-frecuentes", "#como-es-el-examen"].includes(location.hash)) showFaq();
       else return false;
       return true;
     };
