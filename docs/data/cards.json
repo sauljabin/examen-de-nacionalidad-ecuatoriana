@@ -4277,7 +4277,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-yasuni.jpg",
+        "alt": "Laguna en el Parque Nacional Yasuní",
+        "credit": "Napowildlifecenter",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Napo_Wildlife_Center_Ecolodge.JPG"
+       }
       },
       {
        "id": "9242yXwWB5caOb2mp.f",
@@ -4298,7 +4305,14 @@
         {
          "text": "El mono araña y el jaguar son símbolos del Parque Nacional Yasuní, también pueden ser tucanes y guacamayos."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mono-arana.jpg",
+        "alt": "Mono araña de vientre blanco",
+        "credit": "Ewa",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Ateles_belzebuth_(White-bellied_spider_monkey)_2.jpg"
+       }
       },
       {
        "id": "85QEuGxzcxuVJIeA1.f",
@@ -4319,7 +4333,14 @@
         {
          "text": "Muchas especies endémicas y en peligro de extinción, incluyendo tortugas gigantes, iguanas marinas e iguanas terrestres, pinzones de Darwin y piqueros."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-tortuga-gigante.jpg",
+        "alt": "Tortuga gigante de Galápagos",
+        "credit": "Matthew Field",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg"
+       }
       },
       {
        "id": "GN3hNbWRfiUraULSw.f",
@@ -4340,7 +4361,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-sangay.jpg",
+        "alt": "Volcán Sangay",
+        "credit": "Albert Backer",
+        "license": "CC BY-SA 2.5",
+        "url": "https://commons.wikimedia.org/wiki/File:Sangay1.jpg"
+       }
       },
       {
        "id": "ILoFqN8Wf3xBG5UmP.f",
@@ -4365,7 +4393,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-machalilla.jpg",
+        "alt": "Playa Los Frailes, Parque Nacional Machalilla",
+        "credit": "AnitaAD",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Playa_Los_Frailes.jpg"
+       }
       },
       {
        "id": "fktwq13Lbmj7wTRqP.f",
@@ -4400,7 +4435,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-yasuni.jpg",
+        "alt": "Laguna en el Parque Nacional Yasuní",
+        "credit": "Napowildlifecenter",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Napo_Wildlife_Center_Ecolodge.JPG"
+       }
       },
       {
        "id": "EH3SsfHtc4X273fbU.f",
@@ -4421,7 +4463,14 @@
         {
          "text": "Azuay."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cajas.jpg",
+        "alt": "Parque Nacional Cajas",
+        "credit": "Delphine Ménard",
+        "license": "CC BY-SA 2.0 fr",
+        "url": "https://commons.wikimedia.org/wiki/File:Ecuador_cajas_national_park.jpg"
+       }
       },
       {
        "id": "3DkzOmtpYMEYWWxSt.f",
@@ -4442,7 +4491,14 @@
         {
          "text": "Zamora Chinchipe y Loja."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-podocarpus.jpg",
+        "alt": "Bosque del Parque Nacional Podocarpus",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Bosquebombus.jpg"
+       }
       },
       {
        "id": "19weeumgzv7TlhyEN.f",
@@ -4477,7 +4533,14 @@
         {
          "text": ", la única conífera nativa del Ecuador."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-podocarpus.jpg",
+        "alt": "Bosque del Parque Nacional Podocarpus",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Bosquebombus.jpg"
+       }
       },
       {
        "id": "9aM32PjFeUErfwD6g.f",
@@ -4498,7 +4561,14 @@
         {
          "text": "El volcán Cotopaxi."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cotopaxi.jpg",
+        "alt": "Volcán Cotopaxi",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg"
+       }
       },
       {
        "id": "KyuBgcDHQhFhQBmjy.f",
@@ -4519,7 +4589,14 @@
         {
          "text": "En las provincias de Cotopaxi, Pichincha y Napo."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cotopaxi.jpg",
+        "alt": "Volcán Cotopaxi",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg"
+       }
       },
       {
        "id": "gE6rMJCgy5IBxBRy5.f",
@@ -4533,7 +4610,14 @@
         {
          "text": "La tortuga gigante."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-tortuga-gigante.jpg",
+        "alt": "Tortuga gigante de Galápagos",
+        "credit": "Matthew Field",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg"
+       }
       },
       {
        "id": "7Zq9O9nezbkc7ihAR.f",
@@ -4549,7 +4633,14 @@
         "Selva amazónica",
         "Bosque nublado"
        ],
-       "answer": 0
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-iguana-marina.jpg",
+        "alt": "Iguana marina en Galápagos",
+        "credit": "Ekki3",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:313_Rabida,_Iguana.jpg"
+       }
       }
      ]
     },
@@ -4576,7 +4667,14 @@
         {
          "text": "El Reventador."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-reventador.jpg",
+        "alt": "Volcán Reventador",
+        "credit": "DonValentino",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:ElReventador2012.jpg"
+       }
       },
       {
        "id": "wi29qP6kA2och7ogB.f",
@@ -4597,7 +4695,14 @@
         {
          "text": "El Chimborazo."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-chimborazo.jpg",
+        "alt": "Volcán Chimborazo con una vicuña",
+        "credit": "Dabit100 / David Torres Costales Riobamba",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1a_-_Chimborazo,_Ecuador.jpg"
+       }
       },
       {
        "id": "crr3z2dZJnWBaMPop.f",
@@ -4625,7 +4730,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cotopaxi.jpg",
+        "alt": "Volcán Cotopaxi",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg"
+       }
       },
       {
        "id": "rxAz0m6xOTeQKwrvD.f",
@@ -4643,7 +4755,14 @@
         {
          "text": " metros sobre el nivel del mar."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-chimborazo.jpg",
+        "alt": "Volcán Chimborazo con una vicuña",
+        "credit": "Dabit100 / David Torres Costales Riobamba",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1a_-_Chimborazo,_Ecuador.jpg"
+       }
       },
       {
        "id": "8SfkMhFR9tgrSCoyL.f",
@@ -4664,7 +4783,14 @@
         {
          "text": "El Guagua Pichincha y el Rucu Pichincha."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-pichincha.jpg",
+        "alt": "Rucu Pichincha",
+        "credit": "Timwryan",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Rucu_Pichincha_and_Trail.jpg"
+       }
       },
       {
        "id": "BO92XqsFTWMSnQ2lD.f",
@@ -4685,7 +4811,14 @@
         {
          "text": "En la provincia de Pichincha."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cayambe.jpg",
+        "alt": "Volcán Cayambe",
+        "credit": "Kryptonit",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Cayambe_Vulkan_w.jpg"
+       }
       },
       {
        "id": "DyTgYFfyja4B6kw8C.f",
@@ -4706,7 +4839,14 @@
         {
          "text": "En la provincia de Pichincha."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-pichincha.jpg",
+        "alt": "Rucu Pichincha",
+        "credit": "Timwryan",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Rucu_Pichincha_and_Trail.jpg"
+       }
       },
       {
        "id": "QIPgkeiwZlJaIthxs.f",
@@ -4727,7 +4867,14 @@
         {
          "text": "En la provincia de Pichincha."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-pululahua.jpg",
+        "alt": "Cráter del Pululahua",
+        "credit": "diego_cue",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Crater_del_Pululahua_-_panoramio.jpg"
+       }
       },
       {
        "id": "KMcJdcRzlxfCYIRNw.f",
@@ -4748,7 +4895,14 @@
         {
          "text": "En la provincia de Pichincha."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-ilalo.jpg",
+        "alt": "El Ilaló (adelante) y el Sincholagua (atrás)",
+        "credit": "Ciencia1.com",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Volcanes_Sincholagua_e_Ilal%C3%B3_-_panoramio.jpg"
+       }
       },
       {
        "id": "g8ly5aBnaNFQdg40Z.f",
@@ -4769,7 +4923,14 @@
         {
          "text": "En la provincia de Cotopaxi."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cotopaxi.jpg",
+        "alt": "Volcán Cotopaxi",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg"
+       }
       },
       {
        "id": "CS93G5UNyu3rEFf6y.f",
@@ -4790,7 +4951,14 @@
         {
          "text": "En la provincia de Cotopaxi."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-illiniza.jpg",
+        "alt": "Los Illinizas",
+        "credit": "Philippe Lavoie",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Illinizas.JPG"
+       }
       },
       {
        "id": "JWqJnmWuD6dWhriur.f",
@@ -4811,7 +4979,14 @@
         {
          "text": "En la provincia de Cotopaxi."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-quilotoa.jpg",
+        "alt": "Laguna del Quilotoa, Cotopaxi",
+        "credit": "Annom",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Panorama_quilotoa_crater_lake_ecuador.jpg"
+       }
       },
       {
        "id": "MqWYuQroxStqiIMl7.f",
@@ -4832,7 +5007,14 @@
         {
          "text": "En la provincia de Chimborazo."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-chimborazo.jpg",
+        "alt": "Volcán Chimborazo con una vicuña",
+        "credit": "Dabit100 / David Torres Costales Riobamba",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1a_-_Chimborazo,_Ecuador.jpg"
+       }
       },
       {
        "id": "NfRBuwVXJQfRKsGrH.f",
@@ -4853,7 +5035,14 @@
         {
          "text": "En la provincia de Tungurahua."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-tungurahua.jpg",
+        "alt": "Volcán Tungurahua",
+        "credit": "Dabit100 / David Torres Costales",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Tungurahua_Riobamba_-_Ecuador.jpg"
+       }
       },
       {
        "id": "etWH3V98ys1X8fpc7.f",
@@ -4874,7 +5063,14 @@
         {
          "text": "En la provincia de Morona Santiago."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-sangay.jpg",
+        "alt": "Volcán Sangay",
+        "credit": "Albert Backer",
+        "license": "CC BY-SA 2.5",
+        "url": "https://commons.wikimedia.org/wiki/File:Sangay1.jpg"
+       }
       },
       {
        "id": "yaE80HQyqVnF37zKc.f",
@@ -4895,7 +5091,14 @@
         {
          "text": "En la provincia de Napo."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-antisana.jpg",
+        "alt": "Volcán Antisana",
+        "credit": "camilogaleano.com",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Antisana.jpg"
+       }
       },
       {
        "id": "GC3PrTslIGJx9yB0Q.f",
@@ -4916,7 +5119,14 @@
         {
          "text": "En la provincia de Napo."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-reventador.jpg",
+        "alt": "Volcán Reventador",
+        "credit": "DonValentino",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:ElReventador2012.jpg"
+       }
       },
       {
        "id": "IznnRlbGpGpJd9NQh.f",
@@ -4937,7 +5147,14 @@
         {
          "text": "En la provincia de Imbabura."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-imbabura.jpg",
+        "alt": "Volcán Imbabura sobre Otavalo",
+        "credit": "Bcasterline",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Otavalo_Imbabura_nina_urkuwan.jpg"
+       }
       },
       {
        "id": "br55Vc93wTwxw2zLX.f",
@@ -4958,7 +5175,14 @@
         {
          "text": "En la provincia de Imbabura."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cuicocha.jpg",
+        "alt": "Laguna de Cuicocha, Imbabura",
+        "credit": "Ymblanter",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Laguna_Cuicocha_seen_from_the_visitor_center_02.jpg"
+       }
       },
       {
        "id": "fBtuo9tiAZ3Uns6cn.f",
