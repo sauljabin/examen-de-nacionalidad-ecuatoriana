@@ -25,7 +25,7 @@ En el inicio hay un buscador: escribe una o varias palabras (por ejemplo, «Chim
 
 Después de la primera visita con internet, la página funciona sin conexión: guarda la página, las preguntas y las imágenes de las preguntas (mapas, escudo y bandera). Las fotos de las respuestas se guardan a medida que las ves. Cuando vuelve la conexión, se descargan solas las preguntas actualizadas.
 
-También se puede instalar como una app:
+También se puede instalar como una app. En el inicio aparece un botón **Instalar app** (en Android y en Chrome o Edge de computadora) o, en el iPhone, las instrucciones para hacerlo; también se puede hacer a mano:
 
 - **Android (Chrome):** acepta «Instalar app» o usa el menú ⋮ → **Agregar a pantalla de inicio**.
 - **iPhone (Safari):** botón **Compartir** → **Agregar a pantalla de inicio**.

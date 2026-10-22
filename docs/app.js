@@ -261,6 +261,7 @@ function selectedCards() {
 
 function showHome() {
   app.replaceChildren(cloneTemplate("home-template"));
+  setupInstall();
   let searchTimer;
   app.querySelector("#search").addEventListener("input", (event) => {
     clearTimeout(searchTimer);
@@ -623,6 +624,77 @@ function showResult() {
   }
   app.focus();
 }
+
+// Install --------------------------------------------------------------------
+
+// Chrome, Edge and Android fire "beforeinstallprompt"; we keep it to open the
+// install dialog from our own button. Safari on iPhone has no such event, so
+// there we explain how to add the page to the home screen.
+let installPrompt = null;
+
+function isInstalled() {
+  return window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+}
+
+function isIOS() {
+  return /iphone|ipad|ipod/i.test(navigator.userAgent)
+    || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+}
+
+function installDismissed() {
+  try {
+    return localStorage.getItem("installDismissed") === "1";
+  } catch {
+    return false;
+  }
+}
+
+function installMode() {
+  if (isInstalled() || installDismissed()) return null;
+  if (installPrompt) return "prompt";
+  if (isIOS()) return "ios";
+  return null;
+}
+
+function renderInstall(mode) {
+  const section = app.querySelector(".install");
+  if (!section) return;
+  section.hidden = !mode;
+  if (!mode) return;
+  section.querySelector(".install-button").hidden = mode !== "prompt";
+  section.querySelector(".install-message").textContent = mode === "prompt"
+    ? "Tenla a mano en tu pantalla de inicio y úsala sin internet."
+    : "En el iPhone, toca el botón Compartir y luego «Agregar a pantalla de inicio». Después funciona sin internet.";
+}
+
+function setupInstall() {
+  const section = app.querySelector(".install");
+  section.querySelector(".install-button").addEventListener("click", async () => {
+    if (!installPrompt) return;
+    installPrompt.prompt();
+    await installPrompt.userChoice;
+    installPrompt = null;
+    renderInstall(installMode());
+  });
+  section.querySelector(".install-dismiss").addEventListener("click", () => {
+    try {
+      localStorage.setItem("installDismissed", "1");
+    } catch {}
+    renderInstall(null);
+  });
+  renderInstall(installMode());
+}
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  installPrompt = event;
+  renderInstall(installMode());
+});
+
+window.addEventListener("appinstalled", () => {
+  installPrompt = null;
+  renderInstall(null);
+});
 
 // Startup --------------------------------------------------------------------
 
