@@ -17,26 +17,9 @@ No hay cuentas, publicidad ni servidor: todo pasa en tu navegador.
 
 Puedes salir del examen en cualquier momento con el botón **Salir** o la tecla `Esc`.
 
-### Accesibilidad
+### Buscar preguntas
 
-El botón **Accesibilidad**, arriba a la derecha, permite cambiar:
-
-- el tamaño de la letra (cinco tamaños),
-- el tema (automático, claro u oscuro),
-- el espacio entre líneas,
-- el alto contraste,
-- las animaciones (se pueden reducir).
-
-La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), diseñada para personas con baja visión, y todo se puede usar con teclado.
-
-### Tipos de pregunta
-
-| Tipo | Cómo se ve |
-|---|---|
-| Pregunta y respuesta | La respuesta aparece debajo de la pregunta. En lagos, volcanes, parques nacionales y la mayoría de los temas de Cultura (lugares, pintura, literatura, gastronomía, cine, teatro, música y danza) también aparece una foto. |
-| Selección | Hay hasta cuatro opciones. Si la pregunta dice «Selecciona todas las respuestas correctas», puede haber varias: márcalas y pulsa **Comprobar** (o `Enter`). Al responder se marcan las correctas, el acierto se cuenta solo y suele aparecer una breve explicación. Las opciones se eligen también con las teclas `1` a `4`. |
-| Texto con huecos | Cada parte oculta se ve como `?` y se completa al revelarla. |
-| Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, la capital de una provincia en el mapa) y desaparece al revelarla. |
+En el inicio hay un buscador: escribe una o varias palabras (por ejemplo, «Chimborazo» o «Julio Jaramillo») y aparecen las preguntas que las contienen, con su respuesta. No importan las tildes ni las mayúsculas.
 
 ## Colaborar
 

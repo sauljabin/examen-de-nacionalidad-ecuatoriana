@@ -172,6 +172,74 @@ function renderPhoto(photo) {
   return figure;
 }
 
+// Search ---------------------------------------------------------------------
+
+const SEARCH_LIMIT = 50;
+
+// Lowercase without accents, so "ecuador" matches "Ecuador" and "region" matches "región".
+function normalize(text) {
+  return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+function searchableText(card) {
+  return normalize([
+    plainText(card.front),
+    plainText(card.back),
+    // Only the right options: wrong ones would make unrelated questions match.
+    card.type === "choice" ? correctAnswerText(card) : "",
+    card.explanation || "",
+    card.subcategory,
+    card.topic || "",
+  ].join(" "));
+}
+
+function renderSearchResult(card) {
+  const item = document.createElement("li");
+  const crumbs = document.createElement("p");
+  crumbs.className = "result-crumbs";
+  crumbs.textContent = [card.category, card.subcategory, card.topic].filter(Boolean).join(" › ");
+  item.append(crumbs);
+  if (card.front?.length) {
+    const question = document.createElement("p");
+    question.className = "result-question";
+    question.append(renderSegments(card.front, { revealCloze: true }));
+    item.append(question);
+  }
+  if (card.image) item.append(renderImage(card.image, { revealed: true }));
+  if (card.type === "basic" || card.type === "choice") {
+    const answer = document.createElement("p");
+    answer.className = "result-answer";
+    if (card.type === "choice") answer.textContent = correctAnswerText(card);
+    else answer.append(renderSegments(card.back, { revealCloze: true }));
+    item.append(answer);
+  }
+  if (card.explanation) item.append(renderExplanation(card.explanation));
+  return item;
+}
+
+function runSearch(query) {
+  const status = app.querySelector(".search-status");
+  const list = app.querySelector(".search-results");
+  const words = normalize(query).split(/\s+/).filter(Boolean);
+  list.replaceChildren();
+  if (!words.length || words.join("").length < 2) {
+    status.textContent = "";
+    return;
+  }
+  const matches = state.allCards.filter((card) => {
+    const text = searchableText(card);
+    return words.every((word) => text.includes(word));
+  });
+  if (!matches.length) {
+    status.textContent = "No hay preguntas con esas palabras.";
+  } else if (matches.length > SEARCH_LIMIT) {
+    status.textContent = `${matches.length} preguntas encontradas. Se muestran las primeras ${SEARCH_LIMIT}; escribe más palabras para afinar la búsqueda.`;
+  } else {
+    status.textContent = `${matches.length} ${matches.length === 1 ? "pregunta encontrada" : "preguntas encontradas"}.`;
+  }
+  list.append(...matches.slice(0, SEARCH_LIMIT).map(renderSearchResult));
+}
+
 function cardSummary(card) {
   const text = plainText(card.front).replace(/\s+/g, " ").trim();
   return card.type === "image" ? `${text} (imagen de ${card.subcategory})` : text;
@@ -193,6 +261,11 @@ function selectedCards() {
 
 function showHome() {
   app.replaceChildren(cloneTemplate("home-template"));
+  let searchTimer;
+  app.querySelector("#search").addEventListener("input", (event) => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => runSearch(event.target.value), 150);
+  });
   const list = app.querySelector("#categories");
   state.categories.forEach((category, position) => {
     const node = cloneTemplate("category-template");
@@ -594,12 +667,14 @@ fetch("data/cards.json")
   .then((response) => response.json())
   .then((data) => {
     state.categories = data.categories;
+    state.allCards = [];
     for (const category of data.categories) {
       for (const sub of category.subcategories) {
         state.selected.add(subcategoryKey(category, sub));
         for (const card of sub.cards) {
           card.category = category.title;
           card.subcategory = sub.title;
+          state.allCards.push(card);
         }
       }
     }
