@@ -1,6 +1,4 @@
 __pycache__/
 .DS_Store
 .claude/
-
-# RemNote export: contains account data (email, user id). Keep it local.
 backup/

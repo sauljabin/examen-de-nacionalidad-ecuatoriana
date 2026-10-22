@@ -50,32 +50,16 @@ Incluye una fuente cuando puedas.
 ## Estructura
 
 ```
-backup/                     Exportación original de RemNote (.rem), solo en local
-scripts/convert_remnote.py  Conversor de .rem a los datos de la página
 docs/                       Página estática (lo que publica GitHub Pages)
   index.html, app.js, styles.css
-  data/cards.json           Preguntas generadas por el conversor
-  images/                   Imágenes descargadas de RemNote
+  data/cards.json           Preguntas
+  images/                   Imágenes de las preguntas
 .github/ISSUE_TEMPLATE/     Formularios para reportar errores y proponer preguntas
 ```
 
-## Regenerar las preguntas
+## Editar las preguntas
 
-Necesitas Python 3.9 o superior; no hace falta instalar paquetes.
-
-La carpeta `backup/` no está en el repositorio: la exportación de RemNote incluye datos de la cuenta (email, identificador de usuario), así que solo existe en la computadora del autor. Para regenerar las preguntas necesitas tu propia exportación.
-
-El archivo `.rem` es un ZIP que exporta RemNote (*Exportar → JSON*). El conversor lee las notas (`rem.json`) y las tarjetas que RemNote había creado (`cards.json`), así que la página tiene exactamente las mismas preguntas. Respeta la organización del documento: el primer nivel son las categorías y el segundo, las subcategorías. Ignora la carpeta «Archivados» y descarga las imágenes a `docs/images/`.
-
-```bash
-python3 scripts/convert_remnote.py backup/RemNoteExport_*.rem
-```
-
-Para exportar solo algunas categorías, repite `--category`:
-
-```bash
-python3 scripts/convert_remnote.py backup/RemNoteExport_*.rem --category "Símbolos Patrios" --category "Historia"
-```
+Todas las preguntas están en `docs/data/cards.json`, agrupadas por categoría y subcategoría. Para corregir o añadir una, edita ese archivo; el formato está descrito en [AGENT.md](AGENT.md). Las imágenes van en `docs/images/`.
 
 ## Probar en local
 
