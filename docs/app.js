@@ -326,6 +326,7 @@ function renderCardFace(card) {
     front.append(text);
   }
   if (card.image) front.append(renderImage(card.image, { revealed }));
+  if (card.type === "cloze" && revealed && card.photo) front.append(renderPhoto(card.photo));
   if (card.type === "basic" && revealed) {
     app.querySelector(".back").replaceChildren(renderSegments(card.back, { revealCloze: true }));
     if (card.photo) app.querySelector(".back").after(renderPhoto(card.photo));
