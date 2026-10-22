@@ -41,7 +41,7 @@
     --ink: #f1ece2;
     --muted: #a9b0bc;
     --line: #353e4c;
-    --line-strong: #000000;
+    --line-strong: #8b94a5;
     --accent: #7fb0ff;
     --accent-ink: #0d1320;
     --accent-soft: #23324d;
@@ -71,7 +71,7 @@
   --ink: #f1ece2;
   --muted: #a9b0bc;
   --line: #353e4c;
-  --line-strong: #000000;
+  --line-strong: #8b94a5;
   --accent: #7fb0ff;
   --accent-ink: #0d1320;
   --accent-soft: #23324d;
@@ -121,6 +121,7 @@
   --ink: #ffffff;
   --muted: #ffffff;
   --line: #ffffff;
+  --line-strong: #ffffff;
   --accent: #ffe600;
   --accent-ink: #000000;
   --accent-soft: #000000;
@@ -155,7 +156,6 @@ body {
   font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
   line-height: var(--leading);
   overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 h1, h2, .score, .brand strong {
@@ -691,4 +691,15 @@ legend { margin-bottom: .45rem; font-weight: 700; }
   .question { padding: 1.1rem; box-shadow: 4px 4px 0 var(--accent); }
   .breakdown li { grid-template-columns: 7rem 1fr auto; }
   kbd { display: none; }
+  body { hyphens: auto; }
+  .start-panel { display: contents; }
+  .start-panel .field, .start-panel .check { margin-top: 1rem; }
+  .start-panel #start {
+    position: sticky;
+    bottom: .75rem;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 0 0 .5rem var(--paper);
+  }
 }
