@@ -1,6 +1,6 @@
 # Examen de Nacionalización Ecuatoriana
 
-Página web para practicar el examen de nacionalización ecuatoriana con preguntas de estudio. Funciona en el navegador de la computadora y del teléfono. Tiene 674 preguntas sobre símbolos patrios, geografía, historia, política y cultura del Ecuador.
+Página web para practicar el examen de nacionalización ecuatoriana con preguntas de estudio. Funciona en el navegador de la computadora y del teléfono. Tiene 675 preguntas sobre símbolos patrios, geografía, historia, política y cultura del Ecuador.
 
 > [!IMPORTANT]
 > **Este proyecto es completamente gratuito y tiene fines exclusivamente pedagógicos.** No es material oficial ni está avalado por ninguna institución del Estado ecuatoriano. El contenido puede contener errores u omisiones. Para requisitos y trámites, consulta la información oficial en [gob.ec: Obtención de la nacionalidad ecuatoriana por carta de naturalización](https://www.gob.ec/mremh/tramites/obtencion-nacionalidad-ecuatoriana-carta-naturalizacion).

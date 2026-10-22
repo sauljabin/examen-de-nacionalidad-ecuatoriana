@@ -388,7 +388,7 @@
        ],
        "back": [
         {
-         "text": "7 estrellas."
+         "text": "Primero 3, por los departamentos de Quito, Guayas y Azuay; desde noviembre de 1845 tuvo 7, una por cada provincia."
         }
        ]
       },
@@ -4600,21 +4600,7 @@
        ],
        "back": [
         {
-         "text": "Se estableció con el fin de proteger al bosque más grande de "
-        },
-        {
-         "text": "romerillos",
-         "bold": true
-        },
-        {
-         "text": " en el país, compuesto por tres especies del género "
-        },
-        {
-         "text": "Podocarpus",
-         "bold": true
-        },
-        {
-         "text": ", la única conífera nativa del Ecuador."
+         "text": "Se creó para proteger el bosque de romerillos más grande del país. Los romerillos son las únicas coníferas nativas del Ecuador."
         }
        ],
        "photo": {
@@ -4748,7 +4734,7 @@
        ],
        "back": [
         {
-         "text": "El Reventador."
+         "text": "El Sangay y El Reventador son los más activos; el Sangay llega a registrar cientos de explosiones al día."
         }
        ],
        "photo": {
@@ -4832,11 +4818,7 @@
        ],
        "back": [
         {
-         "text": "6310",
-         "bold": true
-        },
-        {
-         "text": " metros sobre el nivel del mar."
+         "text": "6263 metros sobre el nivel del mar."
         }
        ],
        "photo": {
@@ -5200,7 +5182,7 @@
        ],
        "back": [
         {
-         "text": "En la provincia de Napo."
+         "text": "Entre las provincias de Napo y Sucumbíos."
         }
        ],
        "photo": {
@@ -5341,20 +5323,6 @@
         },
         {
          "text": "."
-        }
-       ]
-      },
-      {
-       "id": "BjBJdCYpPoYcQ1Wmy.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "El Río Guayas nace en"
-        }
-       ],
-       "back": [
-        {
-         "text": "El volcán Chimborazo."
         }
        ]
       },
@@ -5803,7 +5771,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Quién fundó la Real Audiencia de Quito?"
+         "text": "¿Quién fue el primer presidente de la Real Audiencia de Quito?"
         }
        ],
        "back": [
@@ -6227,14 +6195,28 @@
        "type": "cloze",
        "front": [
         {
-         "text": "En el Congreso de Angostura, se redactó "
+         "text": "En el Congreso de Angostura se aprobó "
         },
         {
-         "text": "la Constitución de la República de Colombia (Gran Colombia)",
+         "text": "la Ley Fundamental de la República de Colombia",
          "cloze": true
         },
         {
          "text": ", que unificó a Venezuela, la Nueva Granada (Colombia) y Quito (Ecuador) en una sola nación."
+        }
+       ]
+      },
+      {
+       "id": "constitucion-cucuta",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Dónde y en qué año se aprobó la Constitución de la Gran Colombia?"
+        }
+       ],
+       "back": [
+        {
+         "text": "En el Congreso de Cúcuta, en 1821."
         }
        ]
       },
@@ -6385,7 +6367,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué tratado estableció la frontera entre Ecuador y Perú en 1829?"
+         "text": "¿Qué tratado de 1829 estableció la frontera entre la Gran Colombia y el Perú?"
         }
        ],
        "back": [
@@ -6825,26 +6807,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué país salió victorioso en la Batalla de Guayaquil?"
+         "text": "¿Qué bando salió victorioso en la Batalla de Guayaquil de 1860?"
         }
        ],
        "back": [
         {
-         "text": "Ecuador. Gracias a las tropas lideradas por "
-        },
-        {
-         "text": "Gabriel García Moreno",
-         "bold": true
-        },
-        {
-         "text": ", con apoyo militar del expresidente "
-        },
-        {
-         "text": "Juan José Flores",
-         "bold": true
-        },
-        {
-         "text": "."
+         "text": "El gobierno de Gabriel García Moreno, con apoyo del expresidente Juan José Flores. Derrotaron a Guillermo Franco, que se había proclamado jefe supremo de Guayaquil con respaldo del Perú. Con esta victoria, García Moreno reunificó el país, que estaba dividido en varios gobiernos desde 1859."
         }
        ]
       },
@@ -7219,14 +7187,7 @@
        ],
        "back": [
         {
-         "text": "Durante la presidencia de "
-        },
-        {
-         "text": "Jamil Mahuad",
-         "bold": true
-        },
-        {
-         "text": "."
+         "text": "La anunció Jamil Mahuad el 9 de enero de 2000, en plena crisis económica tras el feriado bancario. Mahuad, que gobernó apenas un año y medio, fue derrocado doce días después, y su sucesor, Gustavo Noboa, la aplicó con la Ley de Transformación Económica (Ley Trole) en marzo de 2000."
         }
        ]
       }
@@ -7262,6 +7223,20 @@
        "front": [
         {
          "text": "¿Qué constitución declara por primera vez que el Ecuador es un país \"pluricultural y multiétnico\"?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La Constitución de 1998."
+        }
+       ]
+      },
+      {
+       "id": "constitucion-2008-intercultural",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué constitución declara que el Ecuador es un Estado \"intercultural y plurinacional\"?"
         }
        ],
        "back": [
@@ -7438,7 +7413,7 @@
        ],
        "back": [
         {
-         "text": "Autonomía política, territorial, legislativa y administrativa dentro de su territorio ancestral."
+         "text": "Pueden formar circunscripciones territoriales indígenas con gobierno autónomo, mantener sus propias formas de organización y aplicar la justicia indígena en sus territorios."
         }
        ]
       },
@@ -7539,12 +7514,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué caso la Asamblea Nacional podrá destituir al Presidente de la República?"
+         "text": "¿En qué casos puede la Asamblea Nacional destituir al Presidente de la República?"
         }
        ],
        "back": [
         {
-         "text": "Por arrogarse funciones que no le corresponden."
+         "text": "Por arrogarse funciones que no le corresponden constitucionalmente, o por grave crisis política y conmoción interna."
         }
        ]
       },
@@ -8124,7 +8099,7 @@
        ],
        "back": [
         {
-         "text": "El Ministerio del Ambiente, Agua y Transición Ecológica de Ecuador regula el uso de agua y cuencas hídricas."
+         "text": "El Ministerio de Ambiente y Energía, que en 2025 absorbió al antiguo Ministerio del Ambiente, Agua y Transición Ecológica."
         }
        ]
       },
@@ -8427,19 +8402,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cómo llegó "
-        },
-        {
-         "text": "José Joaquín de Olmedo",
-         "bold": true
-        },
-        {
-         "text": " a la Presidencia de la República en 1845?"
+         "text": "¿Qué cargo ocupó José Joaquín de Olmedo tras la Revolución Marcista de 1845?"
         }
        ],
        "back": [
         {
-         "text": "Por el apoyo popular de la \"Revolución Marcista\" o \"Revolución de Marzo\" que depuso a Juan José Flores."
+         "text": "Presidió el gobierno provisional (Triunvirato Marcista) que se formó tras derrocar a Juan José Flores."
         }
        ]
       },
@@ -11554,16 +11522,15 @@
        ],
        "back": [
         {
-         "text": "Bombo (tambor).",
-         "bold": true
+         "text": "La bomba, un tambor de dos parches."
         }
        ],
        "photo": {
-        "src": "images/foto-bomba.jpg",
-        "alt": "Bailarina de bomba con una botella sobre la cabeza",
-        "credit": "Donrembe",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Bombabailebotella.png"
+        "src": "images/foto-tambor-bomba.jpg",
+        "alt": "Tambores bomba del Valle del Chota",
+        "credit": "TupakAmaruIshkay",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:El_tambor_de_la_Bomba.jpg"
        }
       },
       {
@@ -13023,7 +12990,7 @@
        ],
        "back": [
         {
-         "text": "Es una planta de la familia del té, nativa de la Amazonía, cuyas hojas se usan para preparar una infusión estimulante, medicinales y rituales."
+         "text": "Es un árbol nativo de la Amazonía, pariente de la yerba mate, cuyas hojas se usan para preparar una infusión estimulante con usos medicinales y rituales."
         }
        ],
        "photo": {
@@ -13364,28 +13331,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué región del ecuador se encuentran las tribus "
-        },
-        {
-         "text": "shuar",
-         "bold": true
-        },
-        {
-         "text": ", "
-        },
-        {
-         "text": "jíbaras",
-         "bold": true
-        },
-        {
-         "text": " y "
-        },
-        {
-         "text": "záparas",
-         "bold": true
-        },
-        {
-         "text": "?"
+         "text": "¿En qué región del Ecuador viven las nacionalidades shuar, achuar y sápara?"
         }
        ],
        "back": [
@@ -13450,12 +13396,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué provincia se encuentran los Awá?"
+         "text": "¿En qué provincias vive el pueblo Awá?"
         }
        ],
        "back": [
         {
-         "text": "Carchi."
+         "text": "Principalmente en Carchi, Esmeraldas e Imbabura."
         }
        ]
       },
@@ -13825,14 +13771,7 @@
        ],
        "back": [
         {
-         "text": "El Inti Raymi, también conocido como la "
-        },
-        {
-         "text": "Fiesta del Sol y la Cosecha",
-         "bold": true
-        },
-        {
-         "text": ", es una antigua celebración incaica que se realiza en Ecuador y otros países andinos para agradecer al sol (Inti) por las cosechas y para dar la bienvenida a un nuevo ciclo agrícola. Se celebra principalmente durante el solsticio de invierno, alrededor del 21 de junio, marcando el día más corto y la noche más larga del año."
+         "text": "El Inti Raymi, también conocido como la Fiesta del Sol y la Cosecha, es una antigua celebración incaica que se realiza en Ecuador y otros países andinos para agradecer al sol (Inti) por las cosechas y para dar la bienvenida a un nuevo ciclo agrícola. Se celebra alrededor del solsticio de junio (21 de junio), cuando el sol alcanza su punto más al norte."
         }
        ]
       },
@@ -14255,12 +14194,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué año llegó al territorio del Ecuador por primera vez la misión geodésica de los franceses?"
+         "text": "¿En qué año llegó al territorio del Ecuador la Misión Geodésica Francesa?"
         }
        ],
        "back": [
         {
-         "text": "1734."
+         "text": "1736."
         }
        ]
       },
