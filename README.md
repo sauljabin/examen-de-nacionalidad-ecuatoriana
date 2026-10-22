@@ -24,7 +24,7 @@ El inicio tiene tres bloques:
 - **Formas de practicar**
   - **Simulacro:** 30 preguntas al azar de todos los temas, repartidas por igual, como en el examen real. Al final te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
   - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime, y **Compartir esta selección** da un enlace que abre la misma pantalla con esos temas marcados (por ejemplo, para mandar solo *Símbolos Patrios › Himno Nacional*).
-- **Tu repaso**
+- **Mi repaso**
   - **Falladas:** las preguntas que respondes mal se guardan solas, aunque cierres la página. Cuando aciertas una, sale de la lista.
   - **Marcadas:** durante un examen o en el buscador, el botón **Marcar** (o la tecla `M`) guarda una pregunta para repasarla después.
 - **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Hay dos formas de tener uno:
@@ -75,8 +75,8 @@ La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible]
 
 | Tipo | Cómo se ve |
 |---|---|
-| Pregunta y respuesta | La respuesta aparece debajo de la pregunta. En lagos, volcanes, parques nacionales y la mayoría de los temas de Cultura (lugares, pintura, literatura, gastronomía, cine, teatro, música y danza) también aparece una foto. |
-| Selección | Hay hasta cuatro opciones. Si la pregunta dice «Selecciona todas las respuestas correctas», puede haber varias: márcalas y pulsa **Comprobar** (o `Enter`). Al responder se marcan las correctas, el acierto se cuenta solo y suele aparecer una breve explicación. Las opciones se eligen también con las teclas `1` a `4`. |
+| Selección | Es el tipo más común, como en el examen real. Hay hasta cuatro opciones. Si la pregunta dice «Selecciona todas las respuestas correctas», puede haber varias: márcalas y pulsa **Comprobar** (o `Enter`). Al responder se marcan las correctas, el acierto se cuenta solo y suele aparecer una breve explicación. Las opciones se eligen también con las teclas `1` a `4`. En lagos, volcanes, parques nacionales y la mayoría de los temas de Cultura también aparece una foto. |
+| Pregunta y respuesta | Quedan pocas, las que piden una lista (por ejemplo, las atribuciones de cada función del Estado). La respuesta aparece debajo de la pregunta y tú indicas si acertaste. |
 | Texto con huecos | Cada parte oculta se ve como `?` y se completa al revelarla. |
 | Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, la capital de una provincia en el mapa) y desaparece al revelarla. |
 

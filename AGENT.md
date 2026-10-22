@@ -69,6 +69,8 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
 - Las respuestas empiezan con mayúscula.
 - Las preguntas llevan los dos signos: «¿…?». Las frases para completar («El día de la Bandera se celebra el») no llevan signos.
 - Usa comillas españolas: «…», no comillas rectas.
+- Los títulos de secciones van en primera persona («Mi repaso», «Mis exámenes», «Mi examen»); los textos que explican o piden algo se dirigen a la persona de tú («respondiste», «toca»).
+- Prefiere preguntas de selección, como en el examen real. Las opciones falsas deben ser datos reales que se confunden con facilidad (otra fecha patria, otro presidente, otra provincia vecina), nunca otra respuesta que también sea correcta; usa `explanation` para aclarar a qué corresponde cada una. Deja como pregunta y respuesta solo las que piden una lista.
 - Las funciones del Estado se llaman como en la Constitución: «Función Ejecutiva», «Función Legislativa», «Función Judicial», «Función Electoral» y «Función de Transparencia y Control Social», no «Poder…».
 - Escribe «Cusco», «océano Pacífico» y «Constitución» con mayúscula cuando nombra una constitución concreta («la Constitución de 2008»).
 - Las opciones de las preguntas de selección no llevan punto final.
