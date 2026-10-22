@@ -488,19 +488,31 @@ function topicsFromHash() {
   return keys;
 }
 
-async function shareTopics() {
-  const status = app.querySelector(".topics-status");
-  const link = topicsLink();
-  if (navigator.share && matchMedia("(pointer: coarse)").matches) {
-    navigator.share({ title: "Temas para practicar", url: link }).catch(() => {});
-    return;
+// Phones and tablets open the system share sheet (WhatsApp, copy and so on);
+// computers copy the link. Returns "copied", "failed" or null after sharing.
+const nativeShare = Boolean(navigator.share) && matchMedia("(pointer: coarse)").matches;
+
+async function shareLink(link, title) {
+  if (nativeShare) {
+    try {
+      await navigator.share({ title, url: link });
+    } catch {}
+    return null;
   }
   try {
     await navigator.clipboard.writeText(link);
-    status.textContent = "Enlace copiado: quien lo abra verá estos mismos temas marcados.";
+    return "copied";
   } catch {
-    status.textContent = link;
+    return "failed";
   }
+}
+
+async function shareTopics() {
+  const status = app.querySelector(".topics-status");
+  const link = topicsLink();
+  const result = await shareLink(link, "Temas para practicar");
+  if (result === "copied") status.textContent = "Enlace copiado: quien lo abra verá estos mismos temas marcados.";
+  else if (result === "failed") status.textContent = link;
 }
 
 function showSharedTopics(keys) {
@@ -1202,19 +1214,15 @@ function showShared({ cards, title, missing = 0 }) {
   const status = app.querySelector(".share-status");
   input.value = link;
   input.addEventListener("focus", () => input.select());
-  app.querySelector(".copy-link").addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(link);
-      status.textContent = "Enlace copiado.";
-    } catch {
+  const share = app.querySelector(".share-link-button");
+  share.textContent = nativeShare ? "Compartir" : "Copiar enlace";
+  share.addEventListener("click", async () => {
+    const result = await shareLink(link, title || "Examen de nacionalización ecuatoriana");
+    if (result === "copied") status.textContent = "Enlace copiado.";
+    if (result === "failed") {
       input.select();
       status.textContent = "Mantén presionado el enlace para copiarlo.";
     }
-  });
-  const share = app.querySelector(".share-button");
-  share.hidden = !navigator.share;
-  share.addEventListener("click", () => {
-    navigator.share({ title: title || "Examen de nacionalización ecuatoriana", url: link }).catch(() => {});
   });
 
   const print = app.querySelector(".print-shared");

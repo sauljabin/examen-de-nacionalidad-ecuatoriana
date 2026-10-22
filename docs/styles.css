@@ -498,6 +498,33 @@ input[type="checkbox"], input[type="radio"] {
   flex: none;
 }
 
+/* Our own checkbox, so it matches the dark borders of buttons and fields in
+   every theme instead of the browser's light gray box. */
+input[type="checkbox"] {
+  appearance: none;
+  display: inline-grid;
+  place-content: center;
+  border: 2px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--surface);
+  cursor: pointer;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: .65rem;
+  height: .65rem;
+  background: var(--accent-ink);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"]:indeterminate { border-color: var(--accent); background: var(--accent); }
+input[type="checkbox"]:checked::before { transform: scale(1); }
+input[type="checkbox"]:indeterminate::before { height: .18rem; clip-path: none; transform: scale(1); }
+@media (forced-colors: active) {
+  input[type="checkbox"] { appearance: auto; }
+}
+
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .chip {
   display: inline-flex;
