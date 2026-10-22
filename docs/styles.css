@@ -427,6 +427,8 @@ kbd {
 .topics-intro { padding-top: .5rem; }
 .topics-intro h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
 .topics-intro + .toolbar { margin-top: 1.25rem; }
+.topics-status { margin: -.25rem 0 .75rem; color: var(--right); font-weight: 700; }
+.topics-status:empty { display: none; }
 
 .save-exam { max-width: 32rem; margin: 0 auto 2.5rem; text-align: left; }
 .save-done { margin: 0 auto 2.5rem; color: var(--right); font-weight: 700; }
@@ -569,8 +571,18 @@ select {
 }
 .question:not(.is-revealed) { cursor: pointer; }
 
+.question-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+.listen { flex: none; padding: .3rem .8rem; font-size: .9rem; }
+.listen[aria-pressed="true"] { border-color: var(--line-strong); background: var(--accent-soft); color: var(--accent); }
+
 .crumbs {
-  margin: 0 0 1rem;
+  margin: 0;
   color: var(--muted);
   font-size: .85rem;
   font-weight: 700;
@@ -883,6 +895,7 @@ legend { margin-bottom: .45rem; font-weight: 700; }
   .topbar, main { padding-left: 1rem; padding-right: 1rem; }
   .question { padding: 1.1rem; box-shadow: 4px 4px 0 var(--accent); }
   .exam-bar { flex-wrap: wrap; gap: .5rem; }
+  .listen span,
   .exam-bar .mark span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .breakdown li { grid-template-columns: 7rem 1fr auto; }
   kbd { display: none; }

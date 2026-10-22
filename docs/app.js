@@ -441,6 +441,7 @@ function showTopics() {
     });
   }
   app.querySelector("#print").addEventListener("click", () => openPrintDialog(selectedCards()));
+  app.querySelector(".share-topics").addEventListener("click", shareTopics);
   app.querySelector("#shuffle").addEventListener("change", (event) => {
     state.topicShuffle = event.target.checked;
   });
@@ -460,6 +461,55 @@ function showTopics() {
 function toggleSelection(key, on) {
   if (on) state.selected.add(key);
   else state.selected.delete(key);
+}
+
+// "#temas=" lists whole categories by id and single subtopics as
+// "<category>/<subcategory>", separated by commas.
+function topicsLink() {
+  const parts = [];
+  for (const category of state.categories) {
+    const keys = category.subcategories
+      .map((sub) => subcategoryKey(category, sub))
+      .filter((key) => state.selected.has(key));
+    if (keys.length === category.subcategories.length) parts.push(category.id);
+    else parts.push(...keys);
+  }
+  return `${location.origin}${location.pathname}#temas=${parts.join(",")}`;
+}
+
+function topicsFromHash() {
+  const params = new URLSearchParams(location.hash.slice(1));
+  const topics = params.get("temas");
+  if (topics === null) return null;
+  const wanted = new Set(topics.split(","));
+  const keys = state.categories.flatMap((category) => category.subcategories
+    .map((sub) => subcategoryKey(category, sub))
+    .filter((key) => wanted.has(category.id) || wanted.has(key)));
+  return keys;
+}
+
+async function shareTopics() {
+  const status = app.querySelector(".topics-status");
+  const link = topicsLink();
+  if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+    navigator.share({ title: "Temas para practicar", url: link }).catch(() => {});
+    return;
+  }
+  try {
+    await navigator.clipboard.writeText(link);
+    status.textContent = "Enlace copiado: quien lo abra verá estos mismos temas marcados.";
+  } catch {
+    status.textContent = link;
+  }
+}
+
+function showSharedTopics(keys) {
+  state.selected = new Set(keys);
+  history.replaceState(null, "", location.pathname + location.search);
+  showTopics();
+  app.querySelector(".topics-status").textContent = keys.length
+    ? `Abriste un enlace con ${plural(keys.length, "subtema marcado", "subtemas marcados")}.`
+    : "El enlace no tiene temas válidos; elige los que quieras.";
 }
 
 function updateTopics() {
@@ -615,7 +665,11 @@ function showCard() {
   const card = state.queue[state.index];
   const total = state.queue.length;
   state.revealed = false;
+  stopSpeaking();
   app.replaceChildren(cloneTemplate("card-template"));
+  const listen = app.querySelector(".listen");
+  listen.hidden = !canSpeak;
+  listen.addEventListener("click", toggleSpeaking);
   const counter = app.querySelector(".counter");
   counter.textContent = `${state.index + 1} / ${total}`;
   counter.setAttribute("aria-label", `Pregunta ${state.index + 1} de ${total}`);
@@ -633,7 +687,7 @@ function showCard() {
   app.querySelector(".exit").addEventListener("click", confirmExit);
   // Tapping the card also shows the answer, which is handy on phones.
   app.querySelector(".question").addEventListener("click", (event) => {
-    if (card.type !== "choice" && !event.target.closest("a")) reveal();
+    if (card.type !== "choice" && !event.target.closest("a, button")) reveal();
   });
   app.querySelector(".reveal").addEventListener("click", reveal);
   app.querySelector(".next").addEventListener("click", () => grade(state.choiceResult));
@@ -736,6 +790,7 @@ function checkSelection() {
 }
 
 function finishChoice(selected) {
+  stopSpeaking();
   state.revealed = true;
   const card = state.queue[state.index];
   const correct = new Set(correctOptions(card));
@@ -777,8 +832,67 @@ function renderExplanation(text) {
   return explanation;
 }
 
+// Read aloud -----------------------------------------------------------------
+
+// Uses the device's own voices (Web Speech API), so it also works offline
+// on most phones. Hidden where the browser has no speech synthesis.
+const canSpeak = "speechSynthesis" in window;
+
+function speechText(card) {
+  const parts = [(card.front || [])
+    .map((segment) => (segment.cloze && !state.revealed ? " espacio en blanco " : segment.text))
+    .join("")];
+  if (card.type === "choice") {
+    if (state.revealed) {
+      parts.push(app.querySelector(".feedback")?.textContent, card.explanation);
+    } else {
+      state.optionOrder.forEach((index, position) => parts.push(`Opción ${position + 1}: ${card.options[index]}.`));
+    }
+  } else if (card.type === "image") {
+    parts.push(state.revealed
+      ? "La respuesta está en la imagen."
+      : "Mira la imagen: ¿qué hay debajo del recuadro amarillo?");
+  } else if (card.type === "basic" && state.revealed) {
+    parts.push(`Respuesta: ${plainText(card.back)}`);
+  }
+  return parts.filter(Boolean).join(" ");
+}
+
+function spanishVoice() {
+  const voices = speechSynthesis.getVoices().filter((voice) => voice.lang.toLowerCase().startsWith("es"));
+  for (const lang of ["es-ec", "es-419", "es-co", "es-mx", "es-us", "es-es"]) {
+    const voice = voices.find((item) => item.lang.toLowerCase().replace("_", "-") === lang);
+    if (voice) return voice;
+  }
+  return voices[0];
+}
+
+function stopSpeaking() {
+  if (canSpeak) speechSynthesis.cancel();
+  app.querySelector(".listen")?.setAttribute("aria-pressed", "false");
+}
+
+function toggleSpeaking() {
+  const button = app.querySelector(".listen");
+  if (!canSpeak || !button) return;
+  if (button.getAttribute("aria-pressed") === "true") {
+    stopSpeaking();
+    return;
+  }
+  speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(speechText(state.queue[state.index]));
+  utterance.lang = "es-EC";
+  const voice = spanishVoice();
+  if (voice) utterance.voice = voice;
+  utterance.addEventListener("end", () => button.setAttribute("aria-pressed", "false"));
+  utterance.addEventListener("error", () => button.setAttribute("aria-pressed", "false"));
+  button.setAttribute("aria-pressed", "true");
+  speechSynthesis.speak(utterance);
+}
+
 function reveal() {
   if (state.revealed || state.queue[state.index].type === "choice") return;
+  stopSpeaking();
   state.revealed = true;
   const card = state.queue[state.index];
   if (card.type === "image") {
@@ -812,7 +926,10 @@ async function confirmExit() {
     text: "Se perderá el resultado de este intento. Las preguntas que ya fallaste quedan guardadas en «Falladas».",
     ok: "Salir",
     cancel: "Seguir respondiendo",
-  })) state.exit.back();
+  })) {
+    stopSpeaking();
+    state.exit.back();
+  }
 }
 
 // Result ---------------------------------------------------------------------
@@ -823,6 +940,7 @@ function durationText(ms) {
 }
 
 function showResult() {
+  stopSpeaking();
   const total = state.queue.length;
   const right = total - state.missed.length;
   app.replaceChildren(cloneTemplate("result-template"));
@@ -1414,6 +1532,8 @@ document.addEventListener("keydown", (event) => {
     confirmExit();
   } else if (event.key === "m" || event.key === "M") {
     app.querySelector(".exam-bar .mark")?.click();
+  } else if (event.key === "l" || event.key === "L") {
+    toggleSpeaking();
   } else if (state.queue[state.index]?.type === "choice") {
     const position = Number(event.key) - 1;
     if (!state.revealed && state.optionOrder?.[position] !== undefined) {
@@ -1473,14 +1593,18 @@ fetch("data/cards.json")
         }
       }
     }
-    const exam = examFromHash();
-    if (exam) showShared(exam);
-    else showHome();
+    // Shared links: an exam (#examen=) or a set of topics (#temas=).
+    const route = () => {
+      const exam = examFromHash();
+      const topics = topicsFromHash();
+      if (exam) showShared(exam);
+      else if (topics) showSharedTopics(topics);
+      else return false;
+      return true;
+    };
+    if (!route()) showHome();
     // A shared link pasted into a tab where the site is already open.
-    window.addEventListener("hashchange", () => {
-      const next = examFromHash();
-      if (next) showShared(next);
-    });
+    window.addEventListener("hashchange", route);
   })
   .catch(() => {
     app.innerHTML = '<p class="loading">No se pudieron cargar las preguntas.</p>';

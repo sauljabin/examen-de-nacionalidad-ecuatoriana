@@ -23,7 +23,7 @@ El inicio tiene tres bloques:
 
 - **Formas de practicar**
   - **Simulacro:** 30 preguntas al azar de todos los temas, repartidas por igual, como en el examen real. Al final te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
-  - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime.
+  - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime, y **Compartir esta selección** da un enlace que abre la misma pantalla con esos temas marcados (por ejemplo, para mandar solo *Símbolos Patrios › Himno Nacional*).
 - **Tu repaso**
   - **Falladas:** las preguntas que respondes mal se guardan solas, aunque cierres la página. Cuando aciertas una, sale de la lista.
   - **Marcadas:** durante un examen o en el buscador, el botón **Marcar** (o la tecla `M`) guarda una pregunta para repasarla después.
@@ -66,6 +66,8 @@ El botón **Accesibilidad**, arriba a la derecha, permite cambiar:
 - el espacio entre líneas,
 - el alto contraste,
 - las animaciones (se pueden reducir).
+
+Durante el examen, el botón **Escuchar** (o la tecla `L`) lee en voz alta la pregunta y, si es de selección, sus opciones; después de responder, lee la respuesta. Usa las voces en español del teléfono o la computadora, así que también funciona sin conexión en la mayoría de los dispositivos.
 
 La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), diseñada para personas con baja visión, y todo se puede usar con teclado.
 
