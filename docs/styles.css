@@ -782,3 +782,82 @@ legend { margin-bottom: .45rem; font-weight: 700; }
     box-shadow: 0 0 0 .5rem var(--paper);
   }
 }
+
+/* Print ---------------------------------------------------------------------- */
+
+.print-summary { margin-top: 0; }
+.print-hint { color: var(--muted); font-size: .9rem; }
+
+@media screen {
+  #print-area { display: none; }
+}
+
+@media print {
+  @page { margin: 1.5cm; }
+
+  body {
+    display: block;
+    min-height: 0;
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  body > :not(#print-area) { display: none !important; }
+  #print-area { display: block; }
+
+  .print-header { margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 2px solid #000; }
+  .print-header h1 { margin: 0 0 .2rem; font-size: 18pt; }
+  .print-header p { margin: 0; }
+  .print-disclaimer { font-size: 9pt; color: #444; }
+
+  #print-area h2 {
+    margin: 1.2rem 0 .4rem;
+    font-size: 13pt;
+    break-after: avoid;
+  }
+
+  .print-list { margin: 0; padding-left: 1.6rem; }
+  .print-card {
+    margin-bottom: .7rem;
+    break-inside: avoid;
+    white-space: pre-wrap;
+  }
+  .print-card p { margin: 0; }
+  .print-answer { margin-top: .15rem !important; font-weight: 700; }
+  .print-answer::before { content: "R: "; }
+  .print-blank {
+    height: 1.6rem;
+    border-bottom: 1px solid #999;
+  }
+  .print-note { margin-top: .15rem !important; font-size: 9pt; font-style: italic; }
+  .print-options { margin: .2rem 0 0; padding-left: 1.4rem; list-style: upper-alpha; }
+  .print-options .is-correct { font-weight: 700; }
+  .print-options .is-correct::after { content: " ✓"; }
+
+  #print-area .cloze, #print-area .cloze.revealed {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  #print-area [class^="color-"] { color: #000; }
+  #print-area .explanation {
+    margin-top: .2rem;
+    padding: .2rem .5rem;
+    border-left: 3px solid #999;
+    background: none;
+    font-size: 9.5pt;
+  }
+  #print-area .occlusion { max-width: 9cm; margin-top: .3rem; border: 1px solid #999; }
+  #print-area .mask {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  #print-area .mask.active { font-size: 10pt; }
+  #print-area .print-photo { margin-top: .3rem; }
+  #print-area .print-photo img { max-height: 5cm; border: 1px solid #999; }
+  #print-area .print-photo figcaption { font-size: 8pt; color: #444; }
+}

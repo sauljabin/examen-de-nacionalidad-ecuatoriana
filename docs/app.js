@@ -317,6 +317,7 @@ function showHome() {
       updateHome();
     });
   }
+  app.querySelector("#print").addEventListener("click", openPrintDialog);
   app.querySelector("#start").addEventListener("click", () => {
     const cards = selectedCards();
     if (!cards.length) return;
@@ -346,6 +347,7 @@ function updateHome() {
   const total = count === "all" ? available : Math.min(available, Number(count));
   const start = app.querySelector("#start");
   start.disabled = available === 0;
+  app.querySelector("#print").disabled = available === 0;
   start.textContent = available
     ? `Comenzar · ${total} ${total === 1 ? "pregunta" : "preguntas"}`
     : "Elige al menos un tema";
@@ -625,6 +627,202 @@ function showResult() {
   app.focus();
 }
 
+// Print ----------------------------------------------------------------------
+
+const printArea = document.getElementById("print-area");
+
+// Cloze cards made from the same text (a card per hole, like each line of the
+// anthem) would print the same text over and over. With answers, print it once
+// with every hole; without answers each card keeps its single blank.
+function mergeClozeSiblings(cards) {
+  const groups = new Map();
+  const merged = [];
+  for (const card of cards) {
+    if (card.type !== "cloze") {
+      merged.push(card);
+      continue;
+    }
+    const base = card.id.split(".")[0];
+    if (!groups.has(base)) {
+      groups.set(base, []);
+      merged.push({ ...card, siblings: groups.get(base) });
+    }
+    groups.get(base).push(card);
+  }
+  return merged.map((card) => (card.siblings ? withAllHoles(card.siblings) : card));
+}
+
+function withAllHoles(siblings) {
+  const holes = new Set(siblings.flatMap((card) => card.front
+    .filter((segment) => segment.cloze)
+    .map((segment) => segment.text)));
+  const front = [];
+  for (const segment of siblings[0].front) {
+    if (segment.cloze) {
+      front.push(segment);
+      continue;
+    }
+    // Split plain text wherever another sibling hides part of it.
+    let pieces = [{ ...segment }];
+    for (const hole of holes) {
+      pieces = pieces.flatMap((piece) => {
+        if (piece.cloze || !piece.text.includes(hole)) return [piece];
+        return piece.text.split(hole).flatMap((part, index) => (index
+          ? [{ ...segment, text: hole, cloze: true }, { ...segment, text: part }]
+          : [{ ...segment, text: part }]));
+      });
+    }
+    front.push(...pieces.filter((piece) => piece.text));
+  }
+  return { ...siblings[0], front };
+}
+
+// Image cards only make sense with their picture, so a text-only print skips them.
+function printableCards({ answers, images }) {
+  const cards = selectedCards().filter((card) => images || card.type !== "image");
+  return answers ? mergeClozeSiblings(cards) : cards;
+}
+
+function printOptions() {
+  const dialog = document.getElementById("print-dialog");
+  return {
+    answers: dialog.querySelector("#print-answers").checked,
+    images: dialog.querySelector("#print-images").checked,
+  };
+}
+
+function updatePrintSummary() {
+  const dialog = document.getElementById("print-dialog");
+  const options = printOptions();
+  const count = printableCards(options).length;
+  const skipped = printableCards({ ...options, images: true }).length - count;
+  dialog.querySelector(".print-summary").textContent =
+    `Se imprimirán ${count} ${count === 1 ? "pregunta" : "preguntas"} de los temas que marcaste.`
+    + (skipped ? ` Sin imágenes se omiten ${skipped} que solo tienen sentido con su imagen.` : "");
+}
+
+function openPrintDialog() {
+  const dialog = document.getElementById("print-dialog");
+  updatePrintSummary();
+  dialog.showModal();
+}
+
+function printSegments(segments, answers) {
+  // Without answers, hidden cloze text becomes a blank line to fill in.
+  return renderSegments(
+    (segments || []).map((segment) => (segment.cloze && !answers
+      ? { text: "________" }
+      : segment)),
+    { revealCloze: true },
+  );
+}
+
+function renderPrintCard(card, { answers, images }) {
+  const item = document.createElement("li");
+  item.className = "print-card";
+  if (card.front?.length) {
+    const question = document.createElement("p");
+    question.className = "print-question";
+    question.append(printSegments(card.front, answers));
+    item.append(question);
+  }
+  if (card.image && images) item.append(renderImage(card.image, { revealed: answers }));
+  if (card.type === "choice") {
+    const options = document.createElement("ol");
+    options.className = "print-options";
+    const correct = new Set(correctOptions(card));
+    card.options.forEach((option, index) => {
+      const li = document.createElement("li");
+      li.textContent = option;
+      if (answers && correct.has(index)) li.className = "is-correct";
+      options.append(li);
+    });
+    if (isMultiChoice(card)) {
+      const hint = document.createElement("p");
+      hint.className = "print-note";
+      hint.textContent = "Puede haber más de una respuesta correcta.";
+      item.append(hint);
+    }
+    item.append(options);
+  }
+  if (card.type === "basic") {
+    const answer = document.createElement("p");
+    answer.className = answers ? "print-answer" : "print-blank";
+    if (answers) answer.append(printSegments(card.back, true));
+    item.append(answer);
+  }
+  if (answers && card.explanation) item.append(renderExplanation(card.explanation));
+  if (answers && images && card.photo) {
+    const photo = renderPhoto(card.photo);
+    photo.classList.add("print-photo");
+    item.append(photo);
+  }
+  return item;
+}
+
+function buildPrintArea({ answers, images }) {
+  const cards = printableCards({ answers, images });
+  const header = document.createElement("header");
+  header.className = "print-header";
+  const title = document.createElement("h1");
+  title.textContent = "Examen de Nacionalización Ecuatoriana";
+  const meta = document.createElement("p");
+  const date = new Date().toLocaleDateString("es-EC", { day: "numeric", month: "long", year: "numeric" });
+  meta.textContent = `${cards.length} preguntas · ${answers ? "con respuestas" : "sin respuestas"} · ${date}`;
+  const note = document.createElement("p");
+  note.className = "print-disclaimer";
+  note.textContent = "Material gratuito con fines exclusivamente pedagógicos; no es material oficial. "
+    + "sauljabin.github.io/examen-de-nacionalidad-ecuatoriana";
+  header.append(title, meta, note);
+
+  const content = [header];
+  let number = 0;
+  for (const category of state.categories) {
+    for (const sub of category.subcategories) {
+      const subCards = cards.filter((card) => card.subcategory === sub.title && card.category === category.title);
+      if (!subCards.length) continue;
+      const heading = document.createElement("h2");
+      heading.textContent = `${category.title} › ${sub.title}`;
+      const list = document.createElement("ol");
+      list.className = "print-list";
+      list.start = number + 1;
+      number += subCards.length;
+      list.append(...subCards.map((card) => renderPrintCard(card, { answers, images })));
+      content.push(heading, list);
+    }
+  }
+  printArea.replaceChildren(...content);
+}
+
+function imagesLoaded(root) {
+  return Promise.all([...root.querySelectorAll("img")].map((img) => (img.complete
+    ? null
+    : new Promise((resolve) => {
+      img.addEventListener("load", resolve, { once: true });
+      img.addEventListener("error", resolve, { once: true });
+    }))));
+}
+
+function setupPrint() {
+  const dialog = document.getElementById("print-dialog");
+  const go = dialog.querySelector(".print-go");
+  dialog.querySelector("#print-images").addEventListener("change", updatePrintSummary);
+  dialog.querySelector("#print-answers").addEventListener("change", updatePrintSummary);
+  go.addEventListener("click", async () => {
+    const options = printOptions();
+    go.disabled = true;
+    go.textContent = "Preparando…";
+    buildPrintArea(options);
+    // Wait for pictures so they appear in the print or PDF.
+    await imagesLoaded(printArea);
+    go.disabled = false;
+    go.textContent = "Imprimir";
+    dialog.close();
+    window.print();
+  });
+  window.addEventListener("afterprint", () => printArea.replaceChildren());
+}
+
 // Install --------------------------------------------------------------------
 
 // Chrome, Edge and Android fire "beforeinstallprompt"; we keep it to open the
@@ -734,6 +932,7 @@ document.getElementById("report-link").href = issueUrl("error.yml");
 document.getElementById("suggest-link").href = issueUrl("incluir-pregunta.yml");
 document.getElementById("repo-link").href = REPO_URL;
 setupSettings();
+setupPrint();
 
 // Offline support: the service worker caches the site after the first visit.
 if ("serviceWorker" in navigator) {

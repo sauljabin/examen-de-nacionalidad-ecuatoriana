@@ -56,6 +56,8 @@
     </p>
   </footer>
 
+  <div id="print-area"></div>
+
   <dialog id="settings" aria-labelledby="settings-title">
     <form method="dialog">
       <h2 id="settings-title">Accesibilidad</h2>
@@ -100,6 +102,26 @@
       <div class="dialog-actions">
         <button class="ghost" type="button" id="reset-settings">Restablecer</button>
         <button class="primary" value="close">Listo</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="print-dialog" aria-labelledby="print-title">
+    <form method="dialog">
+      <h2 id="print-title">Imprimir o guardar PDF</h2>
+      <p class="print-summary"></p>
+      <label class="switch">
+        <input id="print-answers" type="checkbox" checked>
+        <span>Incluir las respuestas</span>
+      </label>
+      <label class="switch">
+        <input id="print-images" type="checkbox" checked>
+        <span>Incluir imágenes y fotos</span>
+      </label>
+      <p class="print-hint">Sin respuestas obtienes un cuestionario para responder en papel. Para guardar un PDF, elige «Guardar como PDF» en el diálogo de impresión.</p>
+      <div class="dialog-actions">
+        <button class="ghost" value="cancel">Cancelar</button>
+        <button class="primary print-go" type="button">Imprimir</button>
       </div>
     </form>
   </dialog>
@@ -167,6 +189,10 @@
         <input id="shuffle" type="checkbox" checked>
         <span>Orden aleatorio</span>
       </label>
+      <button id="print" class="ghost" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg>
+        Imprimir o PDF
+      </button>
       <button id="start" class="primary big" type="button"></button>
     </section>
   </template>

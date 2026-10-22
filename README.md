@@ -21,6 +21,15 @@ Puedes salir del examen en cualquier momento con el botón **Salir** o la tecla 
 
 En el inicio hay un buscador: escribe una o varias palabras (por ejemplo, «Chimborazo» o «Julio Jaramillo») y aparecen las preguntas que las contienen, con su respuesta. No importan las tildes ni las mayúsculas.
 
+### Imprimir o guardar como PDF
+
+El botón **Imprimir o PDF**, junto a «Comenzar», imprime los temas que tengas marcados. Puedes elegir:
+
+- **Incluir las respuestas:** sin ellas obtienes un cuestionario para responder en papel, con líneas y huecos en blanco.
+- **Incluir imágenes y fotos:** sin ellas sale solo texto; las preguntas que solo tienen sentido con su imagen (como los mapas) se omiten.
+
+Para obtener un PDF, elige «Guardar como PDF» en el diálogo de impresión del navegador; funciona igual en la computadora y en el teléfono.
+
 ### Usar sin conexión e instalar en el teléfono
 
 Después de la primera visita con internet, la página funciona sin conexión: guarda la página, las preguntas y las imágenes de las preguntas (mapas, escudo y bandera). Las fotos de las respuestas se guardan a medida que las ves. Cuando vuelve la conexión, se descargan solas las preguntas actualizadas.
