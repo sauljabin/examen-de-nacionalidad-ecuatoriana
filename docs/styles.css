@@ -867,6 +867,84 @@ select {
 .share-status:empty { display: none; }
 .shared-more { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; margin-top: 1.5rem; }
 
+/* Progress ------------------------------------------------------------------ */
+
+.progress-summary .toolbar { align-items: center; }
+.progress-summary .stat-tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 5.5rem), 1fr)); }
+.progress-summary .stat-tiles > div { padding: .6rem .7rem; }
+.progress-summary .stat-tiles dt { font-size: .8rem; }
+.progress-summary .stat-tiles dd strong { font-size: 1.6rem; }
+.stat-tiles dt { overflow-wrap: normal; hyphens: none; }
+.stat-tiles dd { overflow-wrap: normal; hyphens: none; }
+.stat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem), 1fr));
+  gap: .75rem;
+  margin: 0;
+}
+.stat-tiles > div {
+  padding: .8rem 1rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.stat-tiles dt { color: var(--muted); font-size: .85rem; font-weight: 700; }
+.stat-tiles dd { margin: 0; color: var(--muted); }
+.stat-tiles dd strong { color: var(--ink); font-family: "Fraunces", Georgia, serif; font-size: 2rem; line-height: 1.2; }
+.stat-tiles .stat-note { font-size: .85rem; }
+
+.progress-page { padding-top: .5rem; }
+.progress-page h1 { margin: 0 0 1rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.progress-page h2 { margin: 2rem 0 .75rem; font-size: 1.4rem; }
+.achievements-count { color: var(--muted); font-family: "Atkinson Hyperlegible", system-ui, sans-serif; font-size: 1rem; font-weight: 400; }
+.progress-hint { margin: .75rem 0 0; color: var(--muted); font-size: .9rem; }
+
+.mastery-list { display: grid; gap: .6rem; margin: 0; padding: 0; list-style: none; }
+.mastery-list li {
+  display: grid;
+  grid-template-columns: 10rem 1fr auto;
+  align-items: center;
+  gap: .25rem .75rem;
+}
+.mastery-list i {
+  height: .7rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--right) calc(var(--ratio) * 100%), var(--sunken) 0);
+}
+.mastery-list strong { font-variant-numeric: tabular-nums; }
+.mastery-list small { grid-column: 2 / -1; color: var(--muted); }
+.mastery-list small:empty { display: none; }
+
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+  gap: .75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.achievement-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  padding: .75rem 1rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: left;
+}
+.achievement-list li > div { display: grid; }
+.achievement-list small { color: var(--muted); }
+.achievement-icon { flex: none; color: var(--muted); }
+.achievement-list .is-unlocked { border-color: var(--line-strong); background: var(--gold-soft); }
+.achievement-list .is-unlocked .achievement-icon { color: var(--ink); }
+.achievement-list .is-locked { opacity: .7; border-style: dashed; }
+.reset-progress { margin-top: 2rem; }
+
+.new-achievements { max-width: 32rem; margin: 0 auto 2rem; }
+.new-achievements h2 { margin: 0 0 .75rem; font-size: 1.4rem; }
+.new-achievements .achievement-list { grid-template-columns: 1fr; }
+
 /* Dialogs ------------------------------------------------------------------- */
 
 dialog {
@@ -925,6 +1003,9 @@ legend { margin-bottom: .45rem; font-weight: 700; }
   .listen span,
   .exam-bar .mark span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .breakdown li { grid-template-columns: 7rem 1fr auto; }
+  .mastery-list li { grid-template-columns: 1fr auto; }
+  .mastery-list i { grid-column: 1 / -1; grid-row: 2; }
+  .mastery-list small { grid-column: 1 / -1; }
   kbd { display: none; }
   body { hyphens: auto; }
   .start-panel { display: contents; }

@@ -35,6 +35,18 @@ Cada examen guardado tiene un enlace para compartirlo: quien lo abra verá las m
 
 Las listas y los exámenes se guardan solo en el navegador de cada dispositivo. Un examen compartido viaja completo dentro del enlace (un código corto por pregunta después de `#examen=`), así que no hace falta ningún servidor.
 
+### Mi progreso
+
+En el inicio, **Mi progreso** muestra tu racha, cuántas preguntas dominas y cuántos logros tienes. **Ver mi progreso** abre el detalle:
+
+- **Racha:** días seguidos en que respondiste al menos una pregunta, y tu mejor racha.
+- **Respondidas:** cuántas respuestas diste y qué porcentaje acertaste.
+- **Dominadas:** una pregunta está dominada si la acertaste la última vez que la respondiste. Se muestra en total y por categoría, junto con las que tienes por repasar.
+- **Mejor simulacro:** tu mejor puntaje y cuántos simulacros aprobaste.
+- **Logros:** 12 medallas, como «Tres días seguidos», «Simulacro aprobado» o «Símbolos dominados». Los nuevos aparecen al terminar un examen.
+
+Todo se guarda solo en el navegador de cada dispositivo, y **Borrar mi progreso** lo reinicia sin tocar tus falladas, marcadas ni exámenes.
+
 ### Buscar preguntas
 
 En el inicio hay un buscador: escribe una o varias palabras (por ejemplo, «Chimborazo» o «Julio Jaramillo») y aparecen las preguntas que las contienen, con su respuesta. No importan las tildes ni las mayúsculas.

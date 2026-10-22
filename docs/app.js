@@ -75,12 +75,16 @@ function askConfirm({ title, text, ok, cancel = "Cancelar" }) {
 // Saved lists ----------------------------------------------------------------
 
 // Kept only in this browser, by card id: questions answered wrong (missed),
-// questions the person marked (marked), saved exams (exams) and the exam
-// being built (draft).
+// questions the person marked (marked), saved exams (exams), the exam being
+// built (draft), the last result of each question (results), the days with
+// practice (days), totals (stats) and unlocked achievements (achievements).
 const progress = readProgress();
 
 function readProgress() {
-  const empty = { missed: [], marked: [], exams: [], draft: { title: "", ids: [] } };
+  const empty = {
+    missed: [], marked: [], exams: [], draft: { title: "", ids: [] },
+    results: {}, days: [], stats: {}, achievements: {},
+  };
   try {
     return { ...empty, ...JSON.parse(localStorage.getItem("progress") || "{}") };
   } catch {
@@ -611,6 +615,7 @@ function setupPractice() {
     }
   });
   app.querySelector("#open-topics").addEventListener("click", showTopics);
+  app.querySelector("#open-progress").addEventListener("click", showProgress);
   app.querySelector("#open-builder").addEventListener("click", showBuilder);
   updatePractice();
 }
@@ -659,6 +664,7 @@ function updatePractice() {
   app.querySelector("#open-builder").textContent = draft ? `Seguir creando (${draft})` : "Crear examen";
   app.querySelector(".exams-empty").hidden = exams.length > 0;
   app.querySelector(".exam-list").replaceChildren(...exams.map(renderSavedExam));
+  updateProgressSummary();
 }
 
 // Exam -----------------------------------------------------------------------
@@ -926,7 +932,10 @@ function grade(knewIt) {
   const card = state.queue[state.index];
   card.lastResult = knewIt;
   if (!knewIt) state.missed.push(card);
+  const hadMissed = progress.missed.length > 0;
   setInList(progress.missed, card.id, !knewIt);
+  if (hadMissed && !progress.missed.length) progress.stats.clearedMissed = true;
+  recordAnswer(card, knewIt);
   state.index += 1;
   if (state.index < state.queue.length) showCard();
   else showResult();
@@ -942,6 +951,212 @@ async function confirmExit() {
     stopSpeaking();
     state.exit.back();
   }
+}
+
+// Progress, streak and achievements -----------------------------------------
+
+function todayKey() {
+  const date = new Date();
+  return [date.getFullYear(), date.getMonth() + 1, date.getDate()]
+    .map((part) => String(part).padStart(2, "0")).join("-");
+}
+
+function dayNumber(key) {
+  const [year, month, day] = key.split("-").map(Number);
+  return Math.round(Date.UTC(year, month - 1, day) / 86400000);
+}
+
+function recordAnswer(card, right) {
+  const stats = progress.stats;
+  progress.results[card.id] = right ? 1 : 0;
+  stats.answered = (stats.answered || 0) + 1;
+  if (right) stats.right = (stats.right || 0) + 1;
+  const today = todayKey();
+  if (progress.days.at(-1) !== today) progress.days.push(today);
+  saveProgress();
+}
+
+function recordExam(right) {
+  const stats = progress.stats;
+  stats.exams = (stats.exams || 0) + 1;
+  if (state.passMark) {
+    stats.mocks = (stats.mocks || 0) + 1;
+    stats.bestMock = Math.max(stats.bestMock || 0, right);
+    if (right >= state.passMark) stats.mocksPassed = (stats.mocksPassed || 0) + 1;
+  }
+  saveProgress();
+}
+
+// The streak counts consecutive days with practice, ending today or yesterday.
+function streaks() {
+  const days = [...new Set(progress.days)].map(dayNumber).sort((a, b) => a - b);
+  let best = 0;
+  let run = 0;
+  days.forEach((day, index) => {
+    run = index && day === days[index - 1] + 1 ? run + 1 : 1;
+    best = Math.max(best, run);
+  });
+  const current = days.length && dayNumber(todayKey()) - days.at(-1) <= 1 ? run : 0;
+  return { current, best };
+}
+
+function categoryCards(category) {
+  return category.subcategories.flatMap((sub) => sub.cards);
+}
+
+// A question is mastered when its last answer was right.
+function mastery(cards) {
+  let right = 0;
+  let wrong = 0;
+  for (const card of cards) {
+    if (progress.results[card.id] === 1) right += 1;
+    else if (progress.results[card.id] === 0) wrong += 1;
+  }
+  return { right, wrong, total: cards.length };
+}
+
+const ACHIEVEMENTS = [
+  { id: "first-answer", title: "Primer paso", text: "Responde tu primera pregunta.", test: (s) => s.answered >= 1 },
+  { id: "first-exam", title: "Primer examen", text: "Termina un examen.", test: (s) => s.exams >= 1 },
+  { id: "answered-100", title: "Cien preguntas", text: "Responde 100 preguntas.", test: (s) => s.answered >= 100 },
+  { id: "answered-500", title: "Quinientas preguntas", text: "Responde 500 preguntas.", test: (s) => s.answered >= 500 },
+  { id: "streak-3", title: "Tres días seguidos", text: "Practica 3 días seguidos.", test: (s) => s.bestStreak >= 3 },
+  { id: "streak-7", title: "Una semana seguida", text: "Practica 7 días seguidos.", test: (s) => s.bestStreak >= 7 },
+  { id: "all-categories", title: "De todo un poco", text: "Acierta al menos una pregunta de cada categoría.", test: (s) => s.allCategories },
+  { id: "cleared-missed", title: "Cuenta saldada", text: "Vacía tus falladas acertándolas todas.", test: (s) => s.clearedMissed },
+  { id: "mock-passed", title: "Simulacro aprobado", text: `Aprueba un simulacro con ${MOCK_PASS} aciertos o más.`, test: (s) => s.mocksPassed >= 1 },
+  { id: "mock-perfect", title: "Simulacro perfecto", text: `Acierta las ${MOCK_SIZE} preguntas de un simulacro.`, test: (s) => s.bestMock >= MOCK_SIZE },
+  { id: "symbols-mastered", title: "Símbolos dominados", text: "Domina todas las preguntas de Símbolos Patrios.", test: (s) => s.symbolsMastered },
+  { id: "half-mastered", title: "Mitad del camino", text: "Domina la mitad de todas las preguntas.", test: (s) => s.mastered * 2 >= s.total },
+];
+
+function progressSnapshot() {
+  const stats = progress.stats;
+  const symbols = state.categories.find((category) => category.title === "Símbolos Patrios");
+  const symbolsMastery = symbols ? mastery(categoryCards(symbols)) : null;
+  return {
+    answered: stats.answered || 0,
+    exams: stats.exams || 0,
+    mocksPassed: stats.mocksPassed || 0,
+    bestMock: stats.bestMock || 0,
+    clearedMissed: Boolean(stats.clearedMissed),
+    bestStreak: streaks().best,
+    allCategories: state.categories.every((category) => mastery(categoryCards(category)).right > 0),
+    symbolsMastered: Boolean(symbolsMastery && symbolsMastery.right === symbolsMastery.total),
+    mastered: mastery(state.allCards).right,
+    total: state.allCards.length,
+  };
+}
+
+// Unlocks what the current progress earns and returns the new achievements.
+function unlockAchievements() {
+  const snapshot = progressSnapshot();
+  const unlocked = ACHIEVEMENTS.filter((item) => !progress.achievements[item.id] && item.test(snapshot));
+  for (const item of unlocked) progress.achievements[item.id] = Date.now();
+  if (unlocked.length) saveProgress();
+  return unlocked;
+}
+
+const MEDAL_ICON = '<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M8 2h8l-2 6h-4z"/><circle cx="12" cy="15" r="6"/><path d="M12 12l1 2 2 .3-1.5 1.4.4 2.1-1.9-1-1.9 1 .4-2.1L9 14.3l2-.3z" fill="currentColor" stroke="none"/></svg>';
+
+function renderAchievement(item, unlockedAt, { withDate = true } = {}) {
+  const li = document.createElement("li");
+  li.className = unlockedAt ? "is-unlocked" : "is-locked";
+  const icon = document.createElement("span");
+  icon.className = "achievement-icon";
+  icon.innerHTML = MEDAL_ICON;
+  const body = document.createElement("div");
+  const title = document.createElement("strong");
+  title.textContent = item.title;
+  const text = document.createElement("small");
+  text.textContent = unlockedAt && withDate
+    ? `${item.text} Lo lograste el ${new Date(unlockedAt).toLocaleDateString("es-EC", { day: "numeric", month: "long", year: "numeric" })}.`
+    : item.text;
+  body.append(title, text);
+  li.append(icon, body);
+  if (!unlockedAt) li.setAttribute("aria-label", `${item.title}, todavía sin lograr: ${item.text}`);
+  return li;
+}
+
+function renderNewAchievements(items) {
+  const box = app.querySelector(".new-achievements");
+  if (!items.length) return;
+  box.hidden = false;
+  box.querySelector("h2").textContent = items.length === 1 ? "¡Nuevo logro!" : "¡Nuevos logros!";
+  box.querySelector("ul").replaceChildren(...items.map((item) => renderAchievement(item, progress.achievements[item.id], { withDate: false })));
+}
+
+function updateProgressSummary() {
+  const { current } = streaks();
+  const mastered = mastery(state.allCards).right;
+  const unlocked = Object.keys(progress.achievements).length;
+  app.querySelector(".stat-streak").replaceChildren(statValue(current, current === 1 ? "día" : "días"));
+  app.querySelector(".stat-mastered").replaceChildren(statValue(mastered, `de ${state.allCards.length}`));
+  app.querySelector(".stat-achievements").replaceChildren(statValue(unlocked, `de ${ACHIEVEMENTS.length}`));
+}
+
+function statValue(number, unit) {
+  const fragment = document.createDocumentFragment();
+  const strong = document.createElement("strong");
+  strong.textContent = number;
+  fragment.append(strong, ` ${unit}`);
+  return fragment;
+}
+
+function showProgress() {
+  if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  unlockAchievements();
+  app.replaceChildren(cloneTemplate("progress-template"));
+  app.querySelector(".back-home").addEventListener("click", showHome);
+  const stats = progress.stats;
+  const { current, best } = streaks();
+  const total = mastery(state.allCards);
+  const answered = stats.answered || 0;
+  app.querySelector(".stat-streak").replaceChildren(statValue(current, current === 1 ? "día" : "días"));
+  app.querySelector(".stat-streak-note").textContent = `Mejor racha: ${plural(best, "día", "días")}.`;
+  app.querySelector(".stat-answered").replaceChildren(statValue(answered, answered === 1 ? "respuesta" : "respuestas"));
+  app.querySelector(".stat-answered-note").textContent = answered
+    ? `${Math.round(((stats.right || 0) / answered) * 100)} % de aciertos.`
+    : "Todavía no respondes ninguna.";
+  app.querySelector(".stat-mastered").replaceChildren(statValue(total.right, `de ${total.total}`));
+  app.querySelector(".stat-mastered-note").textContent = `${plural(total.wrong, "pregunta", "preguntas")} por repasar.`;
+  app.querySelector(".stat-mock").replaceChildren(statValue(stats.bestMock || 0, `de ${MOCK_SIZE}`));
+  app.querySelector(".stat-mock-note").textContent = stats.mocks
+    ? `Aprobaste ${stats.mocksPassed || 0} de ${plural(stats.mocks, "simulacro", "simulacros")}.`
+    : "Todavía no haces ningún simulacro.";
+
+  app.querySelector(".mastery-list").replaceChildren(...state.categories.map((category) => {
+    const result = mastery(categoryCards(category));
+    const item = document.createElement("li");
+    const name = document.createElement("span");
+    name.textContent = category.title;
+    const bar = document.createElement("i");
+    bar.style.setProperty("--ratio", result.right / result.total);
+    bar.title = `${result.right} de ${result.total} dominadas`;
+    const value = document.createElement("strong");
+    value.textContent = `${result.right} de ${result.total}`;
+    const note = document.createElement("small");
+    note.textContent = result.wrong ? `${result.wrong} por repasar` : "";
+    item.append(name, bar, value, note);
+    return item;
+  }));
+
+  const unlockedCount = ACHIEVEMENTS.filter((item) => progress.achievements[item.id]).length;
+  app.querySelector(".achievements-count").textContent = `${unlockedCount} de ${ACHIEVEMENTS.length}`;
+  app.querySelector(".achievement-list").replaceChildren(...ACHIEVEMENTS
+    .map((item) => renderAchievement(item, progress.achievements[item.id])));
+
+  app.querySelector(".reset-progress").addEventListener("click", async () => {
+    if (!(await askConfirm({
+      title: "¿Borrar mi progreso?",
+      text: "Se borrarán la racha, las estadísticas, lo que dominas y los logros de este dispositivo. Tus falladas, marcadas y exámenes se mantienen.",
+      ok: "Borrar",
+    }))) return;
+    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {} });
+    saveProgress();
+    showProgress();
+  });
+  app.focus();
 }
 
 // Result ---------------------------------------------------------------------
@@ -968,6 +1183,8 @@ function showResult() {
       ? `¡Aprobado! Se necesitan ${state.passMark} aciertos.`
       : `No aprobado: se necesitan ${state.passMark} aciertos y te ${state.passMark - right === 1 ? "faltó" : "faltaron"} ${state.passMark - right}.`;
   }
+  recordExam(right);
+  renderNewAchievements(unlockAchievements());
 
   const byCategory = new Map();
   for (const card of state.queue) {
@@ -1070,6 +1287,11 @@ function removeButton(card) {
 function showBuilder() {
   if (location.hash) history.replaceState(null, "", location.pathname + location.search);
   app.replaceChildren(cloneTemplate("builder-template"));
+  // Editing a saved exam: say so, so it is clear that saving changes it.
+  if (progress.exams.some((exam) => exam.id === progress.draft.editing)) {
+    app.querySelector(".builder-eyebrow").textContent = "Editar examen";
+    app.querySelector("#builder-done").textContent = "Guardar cambios";
+  }
   const title = app.querySelector("#exam-title");
   title.value = progress.draft.title;
   title.addEventListener("input", () => {
