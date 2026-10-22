@@ -267,20 +267,15 @@ kbd {
 }
 .brand strong { font-size: 1.15rem; }
 
+/* The real flag with the coat of arms: plain stripes would read as Colombia's. */
 .flag {
-  display: inline-flex;
-  flex-direction: column;
   flex: none;
-  width: 1.9rem;
-  height: 1.3rem;
+  width: 2.4rem;
+  height: 1.6rem;
   border: 2px solid var(--line-strong);
   border-radius: 4px;
-  overflow: hidden;
+  object-fit: cover;
 }
-.flag i { display: block; }
-.flag i:nth-child(1) { flex: 2; background: #ffd100; }
-.flag i:nth-child(2) { flex: 1; background: #034ea2; }
-.flag i:nth-child(3) { flex: 1; background: #ed1c24; }
 
 .footer {
   border-top: 2px dashed var(--line);
