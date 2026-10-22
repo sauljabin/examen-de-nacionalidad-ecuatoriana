@@ -87,7 +87,7 @@
        ],
        "back": [
         {
-         "text": "El color del mar y el cielo"
+         "text": "El color del mar y el cielo."
         }
        ]
       },
@@ -108,7 +108,7 @@
        ],
        "back": [
         {
-         "text": "La sangre derramada por los soldados y mártires de las batallas de la independencia"
+         "text": "La sangre derramada por los soldados y mártires de las batallas de la independencia."
         }
        ]
       },
@@ -158,7 +158,7 @@
        ],
        "back": [
         {
-         "text": "26 de septiembre de 1860"
+         "text": "26 de septiembre de 1860."
         }
        ]
       },
@@ -230,7 +230,7 @@
        ],
        "back": [
         {
-         "text": "31 de octubre de 1900"
+         "text": "31 de octubre de 1900."
         }
        ]
       },
@@ -287,7 +287,7 @@
        ],
        "back": [
         {
-         "text": "26 de septiembre"
+         "text": "26 de septiembre."
         }
        ]
       },
@@ -301,7 +301,7 @@
        ],
        "back": [
         {
-         "text": "26 de septiembre de 1955"
+         "text": "26 de septiembre de 1955."
         }
        ]
       },
@@ -591,7 +591,7 @@
        ],
        "back": [
         {
-         "text": "Coro, segunda estrofa y coro"
+         "text": "Coro, segunda estrofa y coro."
         }
        ]
       },
@@ -1090,7 +1090,7 @@
        ],
        "back": [
         {
-         "text": "El 31 de octubre de 1900"
+         "text": "El 31 de octubre de 1900."
         }
        ]
       },
@@ -1104,7 +1104,7 @@
        ],
        "back": [
         {
-         "text": "El 31 de octubre"
+         "text": "El 31 de octubre."
         }
        ]
       },
@@ -1189,7 +1189,7 @@
        ],
        "back": [
         {
-         "text": "La derecha del escudo"
+         "text": "La derecha del escudo."
         }
        ]
       },
@@ -1203,7 +1203,7 @@
        ],
        "back": [
         {
-         "text": "La Revolución Marcista de 1845"
+         "text": "La Revolución Marcista de 1845."
         }
        ]
       },
@@ -1261,9 +1261,6 @@
         {
          "text": " Pedro Pablo Traversari.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -1788,7 +1785,7 @@
          "bold": true
         },
         {
-         "text": " regiones geográficas: Costa, Sierra y Amazonía"
+         "text": " regiones geográficas: Costa, Sierra y Amazonía."
         }
        ]
       },
@@ -1969,7 +1966,7 @@
        ],
        "back": [
         {
-         "text": "Carchi, Esmeraldas y Sucumbíos"
+         "text": "Carchi, Esmeraldas y Sucumbíos."
         }
        ]
       },
@@ -1983,7 +1980,7 @@
        ],
        "back": [
         {
-         "text": "El Oro, Loja, Morona Santiago, Orellana, Pastaza, Sucumbíos y Zamora Chinchipe"
+         "text": "El Oro, Loja, Morona Santiago, Orellana, Pastaza, Sucumbíos y Zamora Chinchipe."
         }
        ]
       }
@@ -2010,7 +2007,7 @@
          "bold": true
         },
         {
-         "text": " provincias"
+         "text": " provincias."
         }
        ]
       },
@@ -2024,11 +2021,8 @@
        ],
        "back": [
         {
-         "text": "221",
+         "text": "221.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -2042,7 +2036,7 @@
        ],
        "back": [
         {
-         "text": "10"
+         "text": "10."
         }
        ]
       },
@@ -2056,7 +2050,7 @@
        ],
        "back": [
         {
-         "text": "7"
+         "text": "7."
         }
        ]
       },
@@ -2070,7 +2064,7 @@
        ],
        "back": [
         {
-         "text": "6"
+         "text": "6."
         }
        ]
       },
@@ -2084,7 +2078,7 @@
        ],
        "back": [
         {
-         "text": "1"
+         "text": "1."
         }
        ]
       },
@@ -2098,7 +2092,7 @@
        ],
        "back": [
         {
-         "text": "Pastaza"
+         "text": "Pastaza."
         }
        ]
       },
@@ -2112,7 +2106,7 @@
        ],
        "back": [
         {
-         "text": "Guayas"
+         "text": "Guayas."
         }
        ]
       },
@@ -2126,7 +2120,7 @@
        ],
        "back": [
         {
-         "text": "El Oro"
+         "text": "El Oro."
         }
        ]
       }
@@ -2488,7 +2482,7 @@
        ],
        "back": [
         {
-         "text": "Cuenca"
+         "text": "Cuenca."
         }
        ]
       },
@@ -2502,7 +2496,7 @@
        ],
        "back": [
         {
-         "text": "Guaranda"
+         "text": "Guaranda."
         }
        ]
       },
@@ -2516,7 +2510,7 @@
        ],
        "back": [
         {
-         "text": "Azogues"
+         "text": "Azogues."
         }
        ]
       },
@@ -2530,7 +2524,7 @@
        ],
        "back": [
         {
-         "text": "Tulcán"
+         "text": "Tulcán."
         }
        ]
       },
@@ -2544,7 +2538,7 @@
        ],
        "back": [
         {
-         "text": "Riobamba"
+         "text": "Riobamba."
         }
        ]
       },
@@ -2558,7 +2552,7 @@
        ],
        "back": [
         {
-         "text": "Latacunga"
+         "text": "Latacunga."
         }
        ]
       },
@@ -2572,7 +2566,7 @@
        ],
        "back": [
         {
-         "text": "Machala"
+         "text": "Machala."
         }
        ]
       },
@@ -2586,7 +2580,7 @@
        ],
        "back": [
         {
-         "text": "Esmeraldas"
+         "text": "Esmeraldas."
         }
        ]
       },
@@ -2600,7 +2594,7 @@
        ],
        "back": [
         {
-         "text": "Puerto Baquerizo Moreno"
+         "text": "Puerto Baquerizo Moreno."
         }
        ]
       },
@@ -2614,7 +2608,7 @@
        ],
        "back": [
         {
-         "text": "Guayaquil"
+         "text": "Guayaquil."
         }
        ]
       },
@@ -2628,7 +2622,7 @@
        ],
        "back": [
         {
-         "text": "Ibarra"
+         "text": "Ibarra."
         }
        ]
       },
@@ -2642,7 +2636,7 @@
        ],
        "back": [
         {
-         "text": "Loja"
+         "text": "Loja."
         }
        ]
       },
@@ -2656,7 +2650,7 @@
        ],
        "back": [
         {
-         "text": "Babahoyo"
+         "text": "Babahoyo."
         }
        ]
       },
@@ -2670,7 +2664,7 @@
        ],
        "back": [
         {
-         "text": "Portoviejo"
+         "text": "Portoviejo."
         }
        ]
       },
@@ -2684,7 +2678,7 @@
        ],
        "back": [
         {
-         "text": "Macas"
+         "text": "Macas."
         }
        ]
       },
@@ -2698,7 +2692,7 @@
        ],
        "back": [
         {
-         "text": "Tena"
+         "text": "Tena."
         }
        ]
       },
@@ -2712,7 +2706,7 @@
        ],
        "back": [
         {
-         "text": "Coca"
+         "text": "Coca."
         }
        ]
       },
@@ -2726,7 +2720,7 @@
        ],
        "back": [
         {
-         "text": "Puyo"
+         "text": "Puyo."
         }
        ]
       },
@@ -2740,7 +2734,7 @@
        ],
        "back": [
         {
-         "text": "Quito"
+         "text": "Quito."
         }
        ]
       },
@@ -2754,7 +2748,7 @@
        ],
        "back": [
         {
-         "text": "Santa Elena"
+         "text": "Santa Elena."
         }
        ]
       },
@@ -2768,7 +2762,7 @@
        ],
        "back": [
         {
-         "text": "Santo Domingo"
+         "text": "Santo Domingo."
         }
        ]
       },
@@ -2782,7 +2776,7 @@
        ],
        "back": [
         {
-         "text": "Nueva Loja"
+         "text": "Nueva Loja."
         }
        ]
       },
@@ -2796,7 +2790,7 @@
        ],
        "back": [
         {
-         "text": "Ambato"
+         "text": "Ambato."
         }
        ]
       },
@@ -2810,7 +2804,7 @@
        ],
        "back": [
         {
-         "text": "Zamora"
+         "text": "Zamora."
         }
        ]
       }
@@ -3525,7 +3519,7 @@
        ],
        "back": [
         {
-         "text": "Guayaquil"
+         "text": "Guayaquil."
         }
        ]
       },
@@ -3683,11 +3677,8 @@
        ],
        "back": [
         {
-         "text": "Los Ríos",
+         "text": "Los Ríos.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       }
@@ -3735,7 +3726,7 @@
        ],
        "back": [
         {
-         "text": "Islas Encantadas"
+         "text": "Islas Encantadas."
         }
        ]
       },
@@ -3777,7 +3768,7 @@
        ],
        "back": [
         {
-         "text": "1832"
+         "text": "1832."
         }
        ]
       }
@@ -3855,9 +3846,6 @@
         {
          "text": "Puerto López.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -3880,9 +3868,6 @@
         {
          "text": "Manabí.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -3956,7 +3941,7 @@
        ],
        "back": [
         {
-         "text": "Esmeraldas"
+         "text": "Esmeraldas."
         }
        ]
       },
@@ -3970,7 +3955,7 @@
        ],
        "back": [
         {
-         "text": "Esmeraldas"
+         "text": "Esmeraldas."
         }
        ]
       },
@@ -3991,7 +3976,7 @@
        ],
        "back": [
         {
-         "text": "En Manabí, en el parque nacional Machalilla"
+         "text": "En Manabí, en el parque nacional Machalilla."
         }
        ]
       },
@@ -4005,7 +3990,7 @@
        ],
        "back": [
         {
-         "text": "Manabí"
+         "text": "Manabí."
         }
        ]
       },
@@ -4026,7 +4011,7 @@
        ],
        "back": [
         {
-         "text": "Santa Elena"
+         "text": "Santa Elena."
         }
        ]
       },
@@ -4047,7 +4032,7 @@
        ],
        "back": [
         {
-         "text": "Santa Elena"
+         "text": "Santa Elena."
         }
        ]
       },
@@ -4061,7 +4046,7 @@
        ],
        "back": [
         {
-         "text": "Santa Elena"
+         "text": "Santa Elena."
         }
        ]
       },
@@ -4096,7 +4081,7 @@
        ],
        "back": [
         {
-         "text": "Esmeraldas, Manabí, Santa Elena, Guayas y El Oro"
+         "text": "Esmeraldas, Manabí, Santa Elena, Guayas y El Oro."
         }
        ]
       },
@@ -4117,7 +4102,7 @@
        ],
        "back": [
         {
-         "text": "Napo"
+         "text": "Napo."
         }
        ]
       },
@@ -4138,7 +4123,7 @@
        ],
        "back": [
         {
-         "text": "Pastaza (Puyo) "
+         "text": "Pastaza (Puyo)."
         }
        ]
       }
@@ -5292,11 +5277,8 @@
        ],
        "back": [
         {
-         "text": "27",
+         "text": "27.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       }
@@ -5330,7 +5312,7 @@
          "bold": true
         },
         {
-         "text": ". "
+         "text": "."
         }
        ]
       },
@@ -5659,9 +5641,6 @@
         {
          "text": "Francisco Pizarro.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -5737,9 +5716,6 @@
         {
          "text": "Diego de Almagro.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -5804,9 +5780,6 @@
         {
          "text": "Diego de Almagro.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -5820,11 +5793,8 @@
        ],
        "back": [
         {
-         "text": "1563",
+         "text": "1563.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -5838,7 +5808,7 @@
        ],
        "back": [
         {
-         "text": "Hernando de Santillán"
+         "text": "Hernando de Santillán."
         }
        ]
       },
@@ -5852,7 +5822,7 @@
        ],
        "back": [
         {
-         "text": "Actividad textilera"
+         "text": "Actividad textilera."
         }
        ]
       }
@@ -5872,7 +5842,7 @@
        ],
        "back": [
         {
-         "text": "1592"
+         "text": "1592."
         }
        ]
       },
@@ -5886,7 +5856,7 @@
        ],
        "back": [
         {
-         "text": "Por la imposición de un nuevo tributo a las ventas comerciales"
+         "text": "Por la imposición de un nuevo tributo a las ventas comerciales."
         }
        ]
       },
@@ -5900,7 +5870,7 @@
        ],
        "back": [
         {
-         "text": "Rebelión de las alcabalas"
+         "text": "Rebelión de las alcabalas."
         }
        ]
       }
@@ -5946,9 +5916,6 @@
         {
          "text": "Real Audiencia de Quito.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -5962,7 +5929,7 @@
        ],
        "back": [
         {
-         "text": "10 de agosto"
+         "text": "10 de agosto."
         }
        ]
       },
@@ -5980,7 +5947,7 @@
        ],
        "back": [
         {
-         "text": "Guayaquil, Quito y Cuenca"
+         "text": "Guayaquil, Quito y Cuenca."
         }
        ]
       },
@@ -5994,11 +5961,8 @@
        ],
        "back": [
         {
-         "text": "La Revolución Quiteña",
+         "text": "La Revolución Quiteña.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -6019,7 +5983,7 @@
        ],
        "back": [
         {
-         "text": "10 de agosto en conmemoración del Primer Grito de Independencia de 1809"
+         "text": "10 de agosto en conmemoración del Primer Grito de Independencia de 1809."
         }
        ]
       },
@@ -6058,7 +6022,7 @@
        ],
        "back": [
         {
-         "text": "10 de agosto de 1809"
+         "text": "10 de agosto de 1809."
         }
        ]
       },
@@ -6072,7 +6036,7 @@
        ],
        "back": [
         {
-         "text": "Juan Pío Montúfar",
+         "text": "Juan Pío Montúfar.",
          "bold": true
         }
        ]
@@ -6093,7 +6057,7 @@
        ],
        "back": [
         {
-         "text": "9 de octubre de 1820. "
+         "text": "9 de octubre de 1820."
         }
        ]
       }
@@ -6151,7 +6115,7 @@
          "bold": true
         },
         {
-         "text": " en las faldas del volcán Pichincha "
+         "text": " en las faldas del volcán Pichincha."
         }
        ]
       },
@@ -6191,9 +6155,6 @@
         {
          "text": "Antonio José de Sucre.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -6234,7 +6195,7 @@
        ],
        "back": [
         {
-         "text": "Febrero de 1819 y julio de 1821"
+         "text": "Febrero de 1819 y julio de 1821."
         }
        ]
       },
@@ -6288,7 +6249,7 @@
        ],
        "back": [
         {
-         "text": "Capitanía General de Venezuela"
+         "text": "Capitanía General de Venezuela."
         }
        ]
       },
@@ -6303,7 +6264,7 @@
        ],
        "back": [
         {
-         "text": "Nueva Granada"
+         "text": "Nueva Granada."
         }
        ]
       },
@@ -6318,7 +6279,7 @@
        ],
        "back": [
         {
-         "text": "Quito"
+         "text": "Quito."
         }
        ]
       }
@@ -6415,7 +6376,7 @@
        ],
        "back": [
         {
-         "text": "La Guerra grancolombo-peruana"
+         "text": "La Guerra grancolombo-peruana."
         }
        ]
       },
@@ -6429,11 +6390,8 @@
        ],
        "back": [
         {
-         "text": "Tratado de Guayaquil",
+         "text": "Tratado de Guayaquil.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       }
@@ -6561,11 +6519,8 @@
          "text": " o la "
         },
         {
-         "text": "Revolución de 1845",
+         "text": "Revolución de 1845.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -6682,7 +6637,7 @@
          "bold": true
         },
         {
-         "text": ", como resultado de la Revolución Marcista. Esta revolución, que tuvo lugar en Guayaquil, marcó el fin de su gobierno autoritario. "
+         "text": ", como resultado de la Revolución Marcista. Esta revolución, que tuvo lugar en Guayaquil, marcó el fin de su gobierno autoritario."
         }
        ]
       }
@@ -6744,7 +6699,7 @@
        ],
        "back": [
         {
-         "text": "José María Urbina"
+         "text": "José María Urbina."
         }
        ]
       }
@@ -6923,7 +6878,7 @@
        ],
        "back": [
         {
-         "text": "1922"
+         "text": "1922."
         }
        ]
       },
@@ -6937,7 +6892,7 @@
        ],
        "back": [
         {
-         "text": "Huelga por mejores salarios y condiciones laborales"
+         "text": "Huelga por mejores salarios y condiciones laborales."
         }
        ]
       },
@@ -6951,7 +6906,7 @@
        ],
        "back": [
         {
-         "text": "José Luis Tamayo"
+         "text": "José Luis Tamayo."
         }
        ]
       }
@@ -6975,7 +6930,7 @@
        ],
        "back": [
         {
-         "text": "Perú invadió a Ecuador por disputas territoriales. "
+         "text": "Perú invadió a Ecuador por disputas territoriales."
         }
        ]
       },
@@ -6989,7 +6944,7 @@
        ],
        "back": [
         {
-         "text": "Carlos Arroyo del Río"
+         "text": "Carlos Arroyo del Río."
         }
        ]
       },
@@ -7031,7 +6986,7 @@
        ],
        "back": [
         {
-         "text": "Pérdida de territorio amazónico"
+         "text": "Pérdida de territorio amazónico."
         }
        ]
       }
@@ -7160,7 +7115,7 @@
        ],
        "back": [
         {
-         "text": "1998"
+         "text": "1998."
         }
        ]
       },
@@ -7181,7 +7136,7 @@
        ],
        "back": [
         {
-         "text": "1998"
+         "text": "1998."
         }
        ]
       },
@@ -7202,7 +7157,7 @@
        ],
        "back": [
         {
-         "text": "El fin del conflicto territorial entre ambos países y de la guerra del Cenepa"
+         "text": "El fin del conflicto territorial entre ambos países y de la guerra del Cenepa."
         }
        ]
       }
@@ -7483,7 +7438,7 @@
        ],
        "back": [
         {
-         "text": "Autonomía política, territorial, legislativa y administrativa dentro de su territorio ancestral"
+         "text": "Autonomía política, territorial, legislativa y administrativa dentro de su territorio ancestral."
         }
        ]
       },
@@ -7497,7 +7452,7 @@
        ],
        "back": [
         {
-         "text": "Muerte cruzada"
+         "text": "Muerte cruzada."
         }
        ]
       },
@@ -7511,11 +7466,8 @@
        ],
        "back": [
         {
-         "text": "Sumak Kawsay",
+         "text": "Sumak Kawsay.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -7529,7 +7481,7 @@
        ],
        "back": [
         {
-         "text": "Castellano, kichwa y shuar"
+         "text": "Castellano, kichwa y shuar."
         }
        ]
       },
@@ -7543,7 +7495,7 @@
        ],
        "back": [
         {
-         "text": "Asamblea Nacional"
+         "text": "Asamblea Nacional."
         }
        ]
       },
@@ -7564,7 +7516,7 @@
        ],
        "back": [
         {
-         "text": "2017"
+         "text": "2017."
         }
        ]
       },
@@ -7592,7 +7544,7 @@
        ],
        "back": [
         {
-         "text": "Por arrogarse funciones que no le corresponden"
+         "text": "Por arrogarse funciones que no le corresponden."
         }
        ]
       },
@@ -7627,7 +7579,7 @@
        ],
        "back": [
         {
-         "text": "En ninguna"
+         "text": "En ninguna."
         }
        ]
       },
@@ -7641,7 +7593,7 @@
        ],
        "back": [
         {
-         "text": "No"
+         "text": "No."
         }
        ]
       },
@@ -7655,7 +7607,7 @@
        ],
        "back": [
         {
-         "text": "Las que obtengan la carta de naturalización"
+         "text": "Las que obtengan la carta de naturalización."
         }
        ]
       },
@@ -7683,7 +7635,7 @@
        ],
        "back": [
         {
-         "text": "Asambleístas, el Presidente de la República, las otras funciones del Estado, la Corte Constitucional y ciudadanos con respaldo electoral. \n"
+         "text": "Asambleístas, el Presidente de la República, las otras funciones del Estado, la Corte Constitucional y ciudadanos con respaldo electoral."
         }
        ]
       }
@@ -7703,7 +7655,7 @@
        ],
        "back": [
         {
-         "text": "Son las diferentes funciones y órganos que ejercen el poder dentro de un Estado"
+         "text": "Son las diferentes funciones y órganos que ejercen el poder dentro de un Estado."
         }
        ]
       },
@@ -7766,11 +7718,8 @@
          "text": " "
         },
         {
-         "text": "(ciudadano)",
+         "text": "(ciudadano).",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -7785,7 +7734,7 @@
        ],
        "back": [
         {
-         "text": "• Dirigir y administrar el país\n• Gestionar los recursos públicos\n• Hacer cumplir las leyes y políticas públicas"
+         "text": "• Dirigir y administrar el país.\n• Gestionar los recursos públicos.\n• Hacer cumplir las leyes y políticas públicas."
         }
        ]
       },
@@ -7800,11 +7749,8 @@
        ],
        "back": [
         {
-         "text": "El Presidente de la República",
+         "text": "El Presidente de la República.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -7819,7 +7765,7 @@
        ],
        "back": [
         {
-         "text": "La Presidencia y Vicepresidencia de la República, los Ministerios de Estado, y otros organismos e instituciones necesarios para la ejecución de las políticas públicas"
+         "text": "La Presidencia y Vicepresidencia de la República, los Ministerios de Estado, y otros organismos e instituciones necesarios para la ejecución de las políticas públicas."
         }
        ]
       },
@@ -7834,7 +7780,7 @@
        ],
        "back": [
         {
-         "text": "Presidente de la República"
+         "text": "Presidente de la República."
         }
        ]
       },
@@ -7849,7 +7795,7 @@
        ],
        "back": [
         {
-         "text": "Sufragio directo en una misma papeleta"
+         "text": "Sufragio directo en una misma papeleta."
         }
        ]
       },
@@ -7871,7 +7817,7 @@
          "bold": true
         },
         {
-         "text": " candidatos más votados"
+         "text": " candidatos más votados."
         }
        ]
       },
@@ -7886,7 +7832,7 @@
        ],
        "back": [
         {
-         "text": "Obtienen más del 40% de votos válidos, siempre que tengan una diferencia de al menos 10% sobre la segunda opción más votada"
+         "text": "Obtienen más del 40% de votos válidos, siempre que tengan una diferencia de al menos 10% sobre la segunda opción más votada."
         }
        ]
       },
@@ -7901,7 +7847,7 @@
        ],
        "back": [
         {
-         "text": "4 años y pueden ser reelegidos por un segundo periodo"
+         "text": "4 años y pueden ser reelegidos por un segundo periodo."
         }
        ]
       },
@@ -7916,7 +7862,7 @@
        ],
        "back": [
         {
-         "text": "• Crear, discutir y aprobar leyes que regulen la convivencia entre los ciudadanos y el funcionamiento del Estado\n• Fiscalizar los actos realizados por el Poder Ejecutivo\n• Aprobar el presupuesto nacional"
+         "text": "• Crear, discutir y aprobar leyes que regulen la convivencia entre los ciudadanos y el funcionamiento del Estado.\n• Fiscalizar los actos realizados por el Poder Ejecutivo.\n• Aprobar el presupuesto nacional."
         }
        ]
       },
@@ -7931,7 +7877,7 @@
        ],
        "back": [
         {
-         "text": "La Asamblea Nacional"
+         "text": "La Asamblea Nacional."
         }
        ]
       },
@@ -7946,7 +7892,7 @@
        ],
        "back": [
         {
-         "text": "4 años"
+         "text": "4 años."
         }
        ]
       },
@@ -7972,7 +7918,7 @@
          "bold": true
         },
         {
-         "text": "Vicepresidentes, elegidos por los propios legisladores"
+         "text": "Vicepresidentes, elegidos por los propios legisladores."
         }
        ]
       },
@@ -7994,7 +7940,7 @@
        ],
        "back": [
         {
-         "text": "151 asambleístas en 2025"
+         "text": "151 asambleístas en 2025."
         }
        ]
       },
@@ -8038,7 +7984,7 @@
        ],
        "back": [
         {
-         "text": "18 años"
+         "text": "18 años."
         }
        ]
       },
@@ -8053,7 +7999,7 @@
        ],
        "back": [
         {
-         "text": "2 recesos de 15 días cada uno"
+         "text": "2 recesos de 15 días cada uno."
         }
        ]
       },
@@ -8068,7 +8014,7 @@
        ],
        "back": [
         {
-         "text": "• Administrar la justicia en el país\n• Garantizar el respeto a la constitución y a las leyes\n• Interpretar y aplicar las leyes\n• Proteger los derechos y garantías fundamentales de los ciudadanos"
+         "text": "• Administrar la justicia en el país.\n• Garantizar el respeto a la constitución y a las leyes.\n• Interpretar y aplicar las leyes.\n• Proteger los derechos y garantías fundamentales de los ciudadanos."
         }
        ]
       },
@@ -8083,7 +8029,7 @@
        ],
        "back": [
         {
-         "text": "La Corte Nacional de Justicia, Consejo de la Judicatura, cortes, juezas y jueces, entre otros"
+         "text": "La Corte Nacional de Justicia, Consejo de la Judicatura, cortes, juezas y jueces, entre otros."
         }
        ]
       },
@@ -8098,7 +8044,7 @@
        ],
        "back": [
         {
-         "text": "Concursos de méritos y oposición"
+         "text": "Concursos de méritos y oposición."
         }
        ]
       },
@@ -8113,7 +8059,7 @@
        ],
        "back": [
         {
-         "text": "• Organizar y controlar las elecciones populares\n• Inscribir y fiscalizar a los partidos políticos\n• Garantizar la transparencia y legalidad de los procesos electorales\n• Asegurar que los ciudadanos puedan ejercer su derecho al voto"
+         "text": "• Organizar y controlar las elecciones populares.\n• Inscribir y fiscalizar a los partidos políticos.\n• Garantizar la transparencia y legalidad de los procesos electorales.\n• Asegurar que los ciudadanos puedan ejercer su derecho al voto."
         }
        ]
       },
@@ -8128,7 +8074,7 @@
        ],
        "back": [
         {
-         "text": "Consejo Nacional Electoral"
+         "text": "Consejo Nacional Electoral."
         }
        ]
       },
@@ -8143,7 +8089,7 @@
        ],
        "back": [
         {
-         "text": "• Prevenir y combatir la corrupción\n• Vigilar y supervisar el uso de los recursos públicos\n• Incentivar la participación ciudadana\n• Proteger el ejercicio y cumplimiento de los derechos"
+         "text": "• Prevenir y combatir la corrupción.\n• Vigilar y supervisar el uso de los recursos públicos.\n• Incentivar la participación ciudadana.\n• Proteger el ejercicio y cumplimiento de los derechos."
         }
        ]
       },
@@ -8158,7 +8104,7 @@
        ],
        "back": [
         {
-         "text": "La Contraloría General del Estado y el Consejo de Participación Ciudadana y Control Social"
+         "text": "La Contraloría General del Estado y el Consejo de Participación Ciudadana y Control Social."
         }
        ]
       }
@@ -8206,7 +8152,7 @@
        ],
        "back": [
         {
-         "text": "Celebrar contratos con entidades del sector público"
+         "text": "Celebrar contratos con entidades del sector público."
         }
        ]
       }
@@ -8472,7 +8418,7 @@
        ],
        "back": [
         {
-         "text": "La declaración de independencia de la ciudad de Guayaquil "
+         "text": "La declaración de independencia de la ciudad de Guayaquil."
         }
        ]
       },
@@ -8507,7 +8453,7 @@
        ],
        "back": [
         {
-         "text": "Gabriel García Moreno, en 1875"
+         "text": "Gabriel García Moreno, en 1875."
         }
        ]
       },
@@ -8521,7 +8467,7 @@
        ],
        "back": [
         {
-         "text": "Mi pluma lo mató. "
+         "text": "Mi pluma lo mató."
         }
        ]
       },
@@ -8542,7 +8488,7 @@
        ],
        "back": [
         {
-         "text": "Sobre la supresión de las Mitas"
+         "text": "Sobre la supresión de las Mitas."
         }
        ]
       },
@@ -8560,7 +8506,7 @@
          "bold": true
         },
         {
-         "text": " en el año 1972"
+         "text": " en el año 1972."
         }
        ]
       },
@@ -8581,7 +8527,7 @@
          "bold": true
         },
         {
-         "text": " en un accidente de avión"
+         "text": " en un accidente de avión."
         }
        ]
       }
@@ -8615,7 +8561,7 @@
        ],
        "back": [
         {
-         "text": "1945"
+         "text": "1945."
         }
        ]
       }
@@ -8881,9 +8827,6 @@
         {
          "text": "Iglesia de La Compañía de Jesús.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -8916,9 +8859,6 @@
         {
          "text": "pan de oro.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -9134,9 +9074,6 @@
         {
          "text": "Basílica del Voto Nacional.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -9189,7 +9126,7 @@
        ],
        "back": [
         {
-         "text": "Barroco"
+         "text": "Barroco."
         }
        ],
        "photo": {
@@ -9217,7 +9154,7 @@
        ],
        "back": [
         {
-         "text": "Barroco"
+         "text": "Barroco."
         }
        ],
        "photo": {
@@ -9252,11 +9189,8 @@
          "text": " e "
         },
         {
-         "text": "Iglesia de San Francisco",
+         "text": "Iglesia de San Francisco.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -9346,7 +9280,7 @@
        ],
        "back": [
         {
-         "text": "Manuel Chili Caspicara"
+         "text": "Manuel Chili Caspicara."
         }
        ],
        "photo": {
@@ -9374,7 +9308,7 @@
        ],
        "back": [
         {
-         "text": "Caspicara, porque en kichwa caspi significa \"madera\" y cara \"corteza\", aludiendo a su \"cara de madera\" o \"cara de palo\""
+         "text": "Caspicara, porque en kichwa caspi significa \"madera\" y cara \"corteza\", aludiendo a su \"cara de madera\" o \"cara de palo\"."
         }
        ],
        "photo": {
@@ -9395,11 +9329,8 @@
        ],
        "back": [
         {
-         "text": "XVII y XVIII",
+         "text": "XVII y XVIII.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -9553,7 +9484,7 @@
        ],
        "back": [
         {
-         "text": "Inclusión de rostros mestizos e indígenas junto a símbolos cristianos"
+         "text": "Inclusión de rostros mestizos e indígenas junto a símbolos cristianos."
         }
        ],
        "photo": {
@@ -9718,11 +9649,8 @@
        ],
        "back": [
         {
-         "text": "Indigenismo",
+         "text": "Indigenismo.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -9743,7 +9671,7 @@
        ],
        "back": [
         {
-         "text": "Expresionismo y surrealismo"
+         "text": "Expresionismo y surrealismo."
         }
        ]
       },
@@ -9757,7 +9685,7 @@
        ],
        "back": [
         {
-         "text": "Las floristas"
+         "text": "Las floristas."
         }
        ]
       },
@@ -9778,7 +9706,7 @@
        ],
        "back": [
         {
-         "text": "Expresionismo social"
+         "text": "Expresionismo social."
         }
        ],
        "photo": {
@@ -9799,7 +9727,7 @@
        ],
        "back": [
         {
-         "text": "El Pintor de las Manos"
+         "text": "El Pintor de las Manos."
         }
        ],
        "photo": {
@@ -9827,7 +9755,7 @@
        ],
        "back": [
         {
-         "text": "El carbonero"
+         "text": "El carbonero."
         }
        ],
        "photo": {
@@ -9855,7 +9783,7 @@
        ],
        "back": [
         {
-         "text": "Leonardo Tejada fue un pintor ecuatoriano cuya obra se destacó por su Realismo social y Expresionismo"
+         "text": "Leonardo Tejada fue un pintor ecuatoriano cuya obra se destacó por su Realismo social y Expresionismo."
         }
        ]
       },
@@ -9936,11 +9864,8 @@
        ],
        "back": [
         {
-         "text": "Leonardo Tejada",
+         "text": "Leonardo Tejada.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -9975,7 +9900,7 @@
        ],
        "back": [
         {
-         "text": "Incorporó el arte no figurativo y la abstracción geométrica en Ecuador"
+         "text": "Incorporó el arte no figurativo y la abstracción geométrica en Ecuador."
         }
        ]
       },
@@ -10017,7 +9942,7 @@
        ],
        "back": [
         {
-         "text": "Fue la primera mujer artista con presencia visible en el ámbito artístico nacional"
+         "text": "Fue la primera mujer artista con presencia visible en el ámbito artístico nacional."
         }
        ]
       },
@@ -10038,7 +9963,7 @@
        ],
        "back": [
         {
-         "text": "Muralismo y dibujo"
+         "text": "Muralismo y dibujo."
         }
        ]
       },
@@ -10059,7 +9984,7 @@
        ],
        "back": [
         {
-         "text": "Los caballos"
+         "text": "Los caballos."
         }
        ]
       },
@@ -10080,7 +10005,7 @@
        ],
        "back": [
         {
-         "text": "Impresionismo y Simbolismo"
+         "text": "Impresionismo y Simbolismo."
         }
        ],
        "photo": {
@@ -10108,7 +10033,7 @@
        ],
        "back": [
         {
-         "text": "Por su temática religiosa y su uso de la \"paleta de Dios\" con los siete colores del arco iris"
+         "text": "Por su temática religiosa y su uso de la \"paleta de Dios\" con los siete colores del arco iris."
         }
        ],
        "photo": {
@@ -10138,9 +10063,6 @@
         {
          "text": "Iglesia de La Merced.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -10161,7 +10083,7 @@
        ],
        "back": [
         {
-         "text": "Pintor, escultor, muralista y arquitecto"
+         "text": "Pintor, escultor, muralista y arquitecto."
         }
        ],
        "photo": {
@@ -10217,7 +10139,7 @@
        ],
        "back": [
         {
-         "text": "El hombre, la casa y la luna"
+         "text": "El hombre, la casa y la luna."
         }
        ],
        "photo": {
@@ -10245,11 +10167,8 @@
          "text": "Fue miembro del Grupo de Vanguardia denominado como Grupo "
         },
         {
-         "text": "VAN",
+         "text": "VAN.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -10386,7 +10305,7 @@
          "bold": true
         },
         {
-         "text": ". "
+         "text": "."
         }
        ],
        "photo": {
@@ -10435,7 +10354,7 @@
          "bold": true
         },
         {
-         "text": ") y promover una identidad literaria propia. "
+         "text": ") y promover una identidad literaria propia."
         }
        ],
        "photo": {
@@ -10709,7 +10628,7 @@
        ],
        "back": [
         {
-         "text": "Modernismo y simbolismo francés"
+         "text": "Modernismo y simbolismo francés."
         }
        ],
        "photo": {
@@ -10800,7 +10719,7 @@
        ],
        "back": [
         {
-         "text": "La Emancipada"
+         "text": "La Emancipada."
         }
        ],
        "photo": {
@@ -10879,9 +10798,6 @@
         {
          "text": "Miguel Riofrío.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -10911,9 +10827,6 @@
         {
          "text": "Primicias de la Cultura de Quito.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -10941,7 +10854,7 @@
        ],
        "back": [
         {
-         "text": "Difundió ideas ilustradas y críticas a la corrupción que inspiraron a los líderes de la independencia de 1809"
+         "text": "Difundió ideas ilustradas y críticas a la corrupción que inspiraron a los líderes de la independencia de 1809."
         }
        ],
        "photo": {
@@ -11096,7 +11009,7 @@
        ],
        "back": [
         {
-         "text": "Prosa polemista, anticlerical y de fuerte crítica al poder"
+         "text": "Prosa polemista, anticlerical y de fuerte crítica al poder."
         }
        ],
        "photo": {
@@ -11124,7 +11037,7 @@
        ],
        "back": [
         {
-         "text": "Por su prosa incisiva que promovió el liberalismo y la crítica al autoritarismo"
+         "text": "Por su prosa incisiva que promovió el liberalismo y la crítica al autoritarismo."
         }
        ],
        "photo": {
@@ -11159,7 +11072,7 @@
        ],
        "back": [
         {
-         "text": "Las Catilinarias"
+         "text": "Las Catilinarias."
         }
        ],
        "photo": {
@@ -11214,7 +11127,7 @@
        ],
        "back": [
         {
-         "text": "Ser reconocida en un ámbito literario dominado por hombres y prejuicios de género"
+         "text": "Ser reconocida en un ámbito literario dominado por hombres y prejuicios de género."
         }
        ],
        "photo": {
@@ -11301,7 +11214,7 @@
        ],
        "back": [
         {
-         "text": "Yo vendo unos ojos negros"
+         "text": "Yo vendo unos ojos negros."
         }
        ],
        "photo": {
@@ -11332,11 +11245,8 @@
          "text": "La novela indigenista "
         },
         {
-         "text": "Huasipungo",
+         "text": "Huasipungo.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -11364,7 +11274,7 @@
        ],
        "back": [
         {
-         "text": "Novela de realismo social (indigenismo)"
+         "text": "Novela de realismo social (indigenismo)."
         }
        ],
        "photo": {
@@ -11392,7 +11302,7 @@
        ],
        "back": [
         {
-         "text": "La historia de amor entre Cumandá, una joven indígena zápara del Oriente, y Carlos Orozco, un hombre blanco, marcada por el conflicto cultural y una revelación trágica"
+         "text": "La historia de amor entre Cumandá, una joven indígena zápara del Oriente, y Carlos Orozco, un hombre blanco, marcada por el conflicto cultural y una revelación trágica."
         }
        ],
        "photo": {
@@ -11448,11 +11358,8 @@
        ],
        "back": [
         {
-         "text": "La Carta a Lizardo",
+         "text": "La Carta a Lizardo.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -11473,11 +11380,8 @@
        ],
        "back": [
         {
-         "text": "Juan Montalvo",
+         "text": "Juan Montalvo.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -11509,7 +11413,7 @@
          "bold": true
         },
         {
-         "text": "Suárez"
+         "text": "Suárez."
         }
        ],
        "photo": {
@@ -11650,11 +11554,8 @@
        ],
        "back": [
         {
-         "text": "Bombo (tambor) ",
+         "text": "Bombo (tambor).",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -11677,9 +11578,6 @@
         {
          "text": "Carlos Rubira Infante.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -11877,7 +11775,7 @@
        ],
        "back": [
         {
-         "text": "Pueblo Kichwa de Otavalo"
+         "text": "Pueblo Kichwa de Otavalo."
         }
        ],
        "photo": {
@@ -11921,9 +11819,6 @@
         {
          "text": "Álvaro Manzano.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -11967,9 +11862,6 @@
         {
          "text": "J. J.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -12020,9 +11912,6 @@
         {
          "text": "El Requinto de Oro de América.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -12064,7 +11953,7 @@
        ],
        "back": [
         {
-         "text": "Piano"
+         "text": "Piano."
         }
        ]
       },
@@ -12110,7 +11999,7 @@
        ],
        "back": [
         {
-         "text": "Director de orquesta y de coros"
+         "text": "Director de orquesta y de coros."
         }
        ]
       },
@@ -12131,7 +12020,7 @@
        ],
        "back": [
         {
-         "text": "Costa: principalmente Manabí, Los Ríos, Guayas y El Oro"
+         "text": "Costa: principalmente Manabí, Los Ríos, Guayas y El Oro."
         }
        ],
        "photo": {
@@ -12159,7 +12048,7 @@
        ],
        "back": [
         {
-         "text": "Su forma de copla improvisada basada en versos métricos que riman"
+         "text": "Su forma de copla improvisada basada en versos métricos que riman."
         }
        ],
        "photo": {
@@ -12180,7 +12069,7 @@
        ],
        "back": [
         {
-         "text": "Montuvios de la Costa ecuatoriana"
+         "text": "Montuvios de la Costa ecuatoriana."
         }
        ],
        "photo": {
@@ -12250,7 +12139,7 @@
        ],
        "back": [
         {
-         "text": "Tempo lento y melodía melancólica"
+         "text": "Tempo lento y melodía melancólica."
         }
        ]
       },
@@ -12271,7 +12160,7 @@
        ],
        "back": [
         {
-         "text": "Amor no correspondido y lamentos de pérdida"
+         "text": "Amor no correspondido y lamentos de pérdida."
         }
        ]
       },
@@ -12381,11 +12270,8 @@
        ],
        "back": [
         {
-         "text": "Sebastián Cordero",
+         "text": "Sebastián Cordero.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -12443,9 +12329,6 @@
         {
          "text": "Qué tan lejos.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -12552,9 +12435,6 @@
         {
          "text": "Patio de Comedias de Quito.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -12610,7 +12490,7 @@
        ],
        "back": [
         {
-         "text": "El Miche"
+         "text": "El Miche."
         }
        ],
        "photo": {
@@ -12631,7 +12511,7 @@
        ],
        "back": [
         {
-         "text": "Parque El Ejido"
+         "text": "Parque El Ejido."
         }
        ],
        "photo": {
@@ -12659,7 +12539,7 @@
        ],
        "back": [
         {
-         "text": "Teatro callejero"
+         "text": "Teatro callejero."
         }
        ],
        "photo": {
@@ -12764,7 +12644,7 @@
        ],
        "back": [
         {
-         "text": "Ana Cristina Barragán",
+         "text": "Ana Cristina Barragán.",
          "bold": true
         }
        ],
@@ -13248,7 +13128,7 @@
          "bold": true
         },
         {
-         "text": " (3 de noviembre de 1820)"
+         "text": " (3 de noviembre de 1820)."
         }
        ]
       },
@@ -13561,7 +13441,7 @@
        ],
        "back": [
         {
-         "text": "Sucumbíos"
+         "text": "Sucumbíos."
         }
        ]
       },
@@ -13575,7 +13455,7 @@
        ],
        "back": [
         {
-         "text": "Carchi"
+         "text": "Carchi."
         }
        ]
       },
@@ -14108,9 +13988,6 @@
         {
          "text": "Kulla Raymi.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -14124,7 +14001,7 @@
        ],
        "back": [
         {
-         "text": "Guayaquil"
+         "text": "Guayaquil."
         }
        ]
       },
@@ -14138,7 +14015,7 @@
        ],
        "back": [
         {
-         "text": "Los territorios del Norte"
+         "text": "Los territorios del Norte."
         }
        ]
       },
@@ -14177,7 +14054,7 @@
        ],
        "back": [
         {
-         "text": "1698"
+         "text": "1698."
         }
        ]
       },
@@ -14198,7 +14075,7 @@
        ],
        "back": [
         {
-         "text": "1868"
+         "text": "1868."
         }
        ]
       },
@@ -14212,7 +14089,7 @@
        ],
        "back": [
         {
-         "text": "Cerca de 300 años"
+         "text": "Cerca de 300 años."
         }
        ]
       },
@@ -14226,7 +14103,7 @@
        ],
        "back": [
         {
-         "text": "Siglo XV"
+         "text": "Siglo XV."
         }
        ]
       },
@@ -14240,7 +14117,7 @@
        ],
        "back": [
         {
-         "text": "65 años"
+         "text": "65 años."
         }
        ]
       },
@@ -14270,7 +14147,7 @@
        ],
        "back": [
         {
-         "text": "1969"
+         "text": "1969."
         }
        ]
       },
@@ -14357,9 +14234,6 @@
         {
          "text": "Matilde Hidalgo.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ],
        "photo": {
@@ -14386,7 +14260,7 @@
        ],
        "back": [
         {
-         "text": "1734"
+         "text": "1734."
         }
        ]
       },
@@ -14425,11 +14299,8 @@
        ],
        "back": [
         {
-         "text": "Misión Geodésica Francesa",
+         "text": "Misión Geodésica Francesa.",
          "bold": true
-        },
-        {
-         "text": " "
         }
        ]
       },
@@ -14450,7 +14321,7 @@
        ],
        "back": [
         {
-         "text": "Un científico, astrónomo, matemático y cartógrafo ecuatoriano (Real Audiencia de Quito)"
+         "text": "Un científico, astrónomo, matemático y cartógrafo ecuatoriano (Real Audiencia de Quito)."
         }
        ]
       }
