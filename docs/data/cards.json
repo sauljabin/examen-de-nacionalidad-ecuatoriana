@@ -10224,7 +10224,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-gallegos-lara.jpg",
+        "alt": "Joaquín Gallegos Lara",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Joaquingallegoslara.png"
+       }
       },
       {
        "id": "3wYwLuK8itYcviM3K.f",
@@ -10245,7 +10252,14 @@
         {
          "text": "Juan León Mera."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
       },
       {
        "id": "MCuO11dwB8p0ZPPdW.f",
@@ -10277,7 +10291,14 @@
         {
          "text": ".  "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
       },
       {
        "id": "fQMg0EnjXHOojuV6j.f",
@@ -10319,7 +10340,14 @@
         {
          "text": ") y promover una identidad literaria propia.  "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
       },
       {
        "id": "JF9bxKLlAZdpGAEMS.f",
@@ -10337,7 +10365,14 @@
         {
          "text": " (Matilde Hidalgo de Prócel)."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
       },
       {
        "id": "uqMEvHWHy83kMXfDL.f",
@@ -10355,7 +10390,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
       },
       {
        "id": "c3PTBouXDbJAdllLS.f",
@@ -10373,7 +10415,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
       },
       {
        "id": "ultAC8KqASoT9M8b4.f",
@@ -10405,7 +10454,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-luis-a-martinez.jpg",
+        "alt": "Luis A. Martínez",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Luis_A._mart%C3%ADnez.jpg"
+       }
       },
       {
        "id": "QTyVwF5z7L5KFcu2y.f",
@@ -10430,7 +10486,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-luis-a-martinez.jpg",
+        "alt": "Luis A. Martínez",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Luis_A._mart%C3%ADnez.jpg"
+       }
       },
       {
        "id": "LxB7mCLtJbeZwHFZ6.f",
@@ -10451,7 +10514,14 @@
         {
          "text": "Periodista."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-ampuero.jpg",
+        "alt": "María Fernanda Ampuero",
+        "credit": "Freddy eduardo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
+       }
       },
       {
        "id": "hc0cMS6nSF96uu4ZL.f",
@@ -10472,7 +10542,14 @@
         {
          "text": "Pelea de gallos."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-ampuero.jpg",
+        "alt": "María Fernanda Ampuero",
+        "credit": "Freddy eduardo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
+       }
       },
       {
        "id": "eZvMXP93rDBHs86sU.f",
@@ -10493,7 +10570,14 @@
         {
          "text": "Lenguaje crudo que denuncia el machismo, la violencia de género y la desigualdad social."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-ampuero.jpg",
+        "alt": "María Fernanda Ampuero",
+        "credit": "Freddy eduardo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
+       }
       },
       {
        "id": "XzyaTpDCAldbFoG9D.f",
@@ -10514,7 +10598,14 @@
         {
          "text": "El alma en los labios."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
       },
       {
        "id": "Qr0m9rBTvH6flUmTr.29221176283091",
@@ -10542,7 +10633,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
       },
       {
        "id": "PSSfjFKG7TEAVIJVk.f",
@@ -10563,7 +10661,14 @@
         {
          "text": "El árbol del bien y del mal."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
       },
       {
        "id": "AvfRiJYQeqATIL5VL.f",
@@ -10584,7 +10689,14 @@
         {
          "text": "Modernismo y simbolismo francés"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
       },
       {
        "id": "gvWkJviK2MQnQVWJO.f",
@@ -10605,7 +10717,14 @@
         {
          "text": "Generación Decapitada."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
       },
       {
        "id": "RtCHxoZStdkKIiU5W.f",
@@ -10626,7 +10745,14 @@
         {
          "text": "Jean d'Agrève."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
       },
       {
        "id": "Nk3lMCP1Wbc7wH62X.f",
@@ -10654,7 +10780,14 @@
         {
          "text": "La Emancipada"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
       },
       {
        "id": "cXxgS7V252Ynmq4kn.f",
@@ -10668,7 +10801,14 @@
         {
          "text": "La rebelión de una joven contra un matrimonio impuesto por su padre."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
       },
       {
        "id": "GLbrtxxzxAthKfo0U.f",
@@ -10696,7 +10836,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
       },
       {
        "id": "TUlvR2iw3CX7DIxDe.f",
@@ -10714,7 +10861,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
       },
       {
        "id": "b6Ms39QuOJL3Emawl.f",
@@ -10739,7 +10893,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-espejo.jpg",
+        "alt": "Eugenio Espejo, retrato de Manuel Salas Alzamora",
+        "credit": "Manuel Salas Alzamora",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Eugenio_Espejo_(por_Manuel_Salas_Alzamora).jpg"
+       }
       },
       {
        "id": "RAltP7pcgzZj6Tlpr.f",
@@ -10760,7 +10921,14 @@
         {
          "text": "Difundió ideas ilustradas y críticas a la corrupción que inspiraron a los líderes de la independencia de 1809"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-espejo.jpg",
+        "alt": "Eugenio Espejo, retrato de Manuel Salas Alzamora",
+        "credit": "Manuel Salas Alzamora",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Eugenio_Espejo_(por_Manuel_Salas_Alzamora).jpg"
+       }
       },
       {
        "id": "bDoXmSd5gW1jJoFv6.f",
@@ -10792,7 +10960,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-espejo.jpg",
+        "alt": "Eugenio Espejo, retrato de Manuel Salas Alzamora",
+        "credit": "Manuel Salas Alzamora",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Eugenio_Espejo_(por_Manuel_Salas_Alzamora).jpg"
+       }
       },
       {
        "id": "g4S1d4phuprmJINGs.f",
@@ -10813,7 +10988,14 @@
         {
          "text": "Sátira política."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-espejo.jpg",
+        "alt": "Eugenio Espejo, retrato de Manuel Salas Alzamora",
+        "credit": "Manuel Salas Alzamora",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Eugenio_Espejo_(por_Manuel_Salas_Alzamora).jpg"
+       }
       },
       {
        "id": "ORI1I9P9AGkUv7ZNb.f",
@@ -10834,7 +11016,14 @@
         {
          "text": "La victoria de Junín: Canto a Bolívar."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-olmedo.jpg",
+        "alt": "José Joaquín de Olmedo",
+        "credit": "Pintor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jjolemdo.jpg"
+       }
       },
       {
        "id": "5pXf5mAd6LqaqUnCr.f",
@@ -10852,7 +11041,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-olmedo.jpg",
+        "alt": "José Joaquín de Olmedo",
+        "credit": "Pintor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jjolemdo.jpg"
+       }
       },
       {
        "id": "fqHXlFTdkmpNGJfNO.f",
@@ -10880,7 +11076,14 @@
         {
          "text": "Prosa polemista, anticlerical y de fuerte crítica al poder"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-montalvo.jpg",
+        "alt": "Juan Montalvo",
+        "credit": "Casa de Montalvo",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jmontalvo.jpg"
+       }
       },
       {
        "id": "oej3skaK0534dyCIX.f",
@@ -10901,7 +11104,14 @@
         {
          "text": "Por su prosa incisiva que promovió el liberalismo y la crítica al autoritarismo"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-montalvo.jpg",
+        "alt": "Juan Montalvo",
+        "credit": "Casa de Montalvo",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jmontalvo.jpg"
+       }
       },
       {
        "id": "xBLb1VKC7znpmItCO.f",
@@ -10929,7 +11139,14 @@
         {
          "text": "Las Catilinarias"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-montalvo.jpg",
+        "alt": "Juan Montalvo",
+        "credit": "Casa de Montalvo",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jmontalvo.jpg"
+       }
       },
       {
        "id": "ki6YWPd2oeFUJm8Jv.5441592318310651",
@@ -10949,7 +11166,14 @@
         {
          "text": " ecuatoriano de pensamiento liberal "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-montalvo.jpg",
+        "alt": "Juan Montalvo",
+        "credit": "Casa de Montalvo",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jmontalvo.jpg"
+       }
       },
       {
        "id": "vCnrdgtsGBLG6JrW8.f",
@@ -10970,7 +11194,14 @@
         {
          "text": "Ser reconocida en un ámbito literario dominado por hombres y prejuicios de género"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-yanez-cossio.jpg",
+        "alt": "Alicia Yánez Cossío en 2014",
+        "credit": "Baltasara Campos",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Alicia_Y%C3%A1nez_Coss%C3%ADo,_fotograf%C3%ADa_an%C3%A1loga._Quito,_Ecuador_2014.png"
+       }
       },
       {
        "id": "VtcpYevsnu2UUnfLh.19773309858207144",
@@ -10994,7 +11225,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-yanez-cossio.jpg",
+        "alt": "Alicia Yánez Cossío en 2014",
+        "credit": "Baltasara Campos",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Alicia_Y%C3%A1nez_Coss%C3%ADo,_fotograf%C3%ADa_an%C3%A1loga._Quito,_Ecuador_2014.png"
+       }
       },
       {
        "id": "GvZT6VmKUgFxIhOJJ.f",
@@ -11015,7 +11253,14 @@
         {
          "text": "incorporó elementos de realismo mágico y perspectiva femenina en sus relatos.  Es autora de varias producciones literarias que se basan en la narración de protagonistas femeninas."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-yanez-cossio.jpg",
+        "alt": "Alicia Yánez Cossío en 2014",
+        "credit": "Baltasara Campos",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Alicia_Y%C3%A1nez_Coss%C3%ADo,_fotograf%C3%ADa_an%C3%A1loga._Quito,_Ecuador_2014.png"
+       }
       },
       {
        "id": "CCdbEfEhwCBKsFngk.f",
@@ -11036,7 +11281,14 @@
         {
          "text": "Yo vendo unos ojos negros"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-yanez-cossio.jpg",
+        "alt": "Alicia Yánez Cossío en 2014",
+        "credit": "Baltasara Campos",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Alicia_Y%C3%A1nez_Coss%C3%ADo,_fotograf%C3%ADa_an%C3%A1loga._Quito,_Ecuador_2014.png"
+       }
       },
       {
        "id": "oiTXCKUQD5zigMbEg.f",
@@ -11064,7 +11316,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-icaza.jpg",
+        "alt": "Jorge Icaza",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Jorgeicaza.png"
+       }
       },
       {
        "id": "yG7Rvw9g3Ep6OnGeb.f",
@@ -11085,7 +11344,14 @@
         {
          "text": "Novela de realismo social (indigenismo)"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-icaza.jpg",
+        "alt": "Jorge Icaza",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Jorgeicaza.png"
+       }
       },
       {
        "id": "A91OyaiSukNYN3D6Q.f",
@@ -11106,7 +11372,14 @@
         {
          "text": "La historia de amor entre Cumandá, una joven indígena zápara del Oriente, y Carlos Orozco, un hombre blanco, marcada por el conflicto cultural y una revelación trágica"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
       },
       {
        "id": "oS4PTVaZCOnaOZ7fK.f",
@@ -11127,7 +11400,14 @@
         {
          "text": "Ser el primer poeta de gran relevancia en el actual territorio ecuatoriano."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-aguirre.jpg",
+        "alt": "Juan Bautista Aguirre",
+        "credit": "Eladio Sevilla",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bautista-aguirre-pintura.png"
+       }
       },
       {
        "id": "YATcWe9YNZIpQtjwb.f",
@@ -11152,7 +11432,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-aguirre.jpg",
+        "alt": "Juan Bautista Aguirre",
+        "credit": "Eladio Sevilla",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bautista-aguirre-pintura.png"
+       }
       },
       {
        "id": "r9pX9caOJbBiPShFq.f",
@@ -11170,7 +11457,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-montalvo.jpg",
+        "alt": "Juan Montalvo",
+        "credit": "Casa de Montalvo",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jmontalvo.jpg"
+       }
       },
       {
        "id": "huU1NozHyGnYemfJy.f",
@@ -11195,7 +11489,14 @@
         {
          "text": "Suárez"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-pablo-palacio.jpg",
+        "alt": "Pablo Palacio en 1926",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Pablopalacio1926.png"
+       }
       },
       {
        "id": "fnwLpkTgJdazT7HnZ.f",
@@ -11216,7 +11517,14 @@
         {
          "text": "Don Goyo"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-aguilera-malta.jpg",
+        "alt": "Demetrio Aguilera Malta con Velia Márquez",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Velia_marquez_demetrio_aguilera_malta.jpg"
+       }
       }
      ]
     },
