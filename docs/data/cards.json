@@ -66,7 +66,7 @@
        ],
        "back": [
         {
-         "text": "riquezas, la abundancia y la fertilidad de los cultivos y la tierra"
+         "text": "Las riquezas, la abundancia y la fertilidad de los cultivos y la tierra."
         }
        ]
       },
@@ -87,7 +87,7 @@
        ],
        "back": [
         {
-         "text": "el color del mar y el cielo"
+         "text": "El color del mar y el cielo"
         }
        ]
       },
@@ -108,7 +108,7 @@
        ],
        "back": [
         {
-         "text": "la sangre derramada por los soldados y mártires de las batallas de la independencia"
+         "text": "La sangre derramada por los soldados y mártires de las batallas de la independencia"
         }
        ]
       },
@@ -210,7 +210,7 @@
          "bold": true
         },
         {
-         "text": " el uso de la La Bandera Nacional "
+         "text": " el uso de la Bandera Nacional "
         },
         {
          "text": "tri",
@@ -493,7 +493,7 @@
        ],
        "back": [
         {
-         "text": "coro, segunda estrofa y coro"
+         "text": "Coro, segunda estrofa y coro"
         }
        ]
       },
@@ -992,7 +992,7 @@
        ],
        "back": [
         {
-         "text": "el 31 de octubre de 1900"
+         "text": "El 31 de octubre de 1900"
         }
        ]
       },
@@ -1001,12 +1001,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué fecha se celebra El Día de Escudo Nacional?"
+         "text": "¿En qué fecha se celebra el Día del Escudo Nacional?"
         }
        ],
        "back": [
         {
-         "text": "el 31 de octubre"
+         "text": "El 31 de octubre"
         }
        ]
       },
@@ -1091,7 +1091,7 @@
        ],
        "back": [
         {
-         "text": "la derecha del escudo"
+         "text": "La derecha del escudo"
         }
        ]
       },
@@ -1105,7 +1105,7 @@
        ],
        "back": [
         {
-         "text": "la Revolución Marcista de 1845"
+         "text": "La Revolución Marcista de 1845"
         }
        ]
       },
@@ -1221,7 +1221,7 @@
        ],
        "back": [
         {
-         "text": "Símbolo del comercio, utilizado también en las instituciones dedicadas a las ciencias económicas. Esta asociado con Mercurio (Hermes en la mitología griega), el dios del comercio y la paz. Es una vara o bastón alado adornado con dos serpientes entrelazadas."
+         "text": "Símbolo del comercio, utilizado también en las instituciones dedicadas a las ciencias económicas. Está asociado con Mercurio (Hermes en la mitología griega), el dios del comercio y la paz. Es una vara o bastón alado adornado con dos serpientes entrelazadas."
         }
        ]
       }
@@ -1694,7 +1694,7 @@
          "bold": true
         },
         {
-         "text": ", de forma similar a cómo la antigua Atenas fue un centro de pensamiento, filosofía y expresión artística en la Grecia clásica."
+         "text": ", de forma similar a como la antigua Atenas fue un centro de pensamiento, filosofía y expresión artística en la Grecia clásica."
         }
        ]
       },
@@ -1787,7 +1787,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuales son las regiones geográficas del Ecuador?"
+         "text": "¿Cuáles son las regiones geográficas del Ecuador?"
         }
        ],
        "back": [
@@ -1810,7 +1810,7 @@
          "bold": true
         },
         {
-         "text": " (o Amazonía) y Región  "
+         "text": " (o Amazonía) y Región "
         },
         {
          "text": "Insular",
@@ -1889,7 +1889,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cómo se le conoce a la Provincia Tungurahua?"
+         "text": "¿Cómo se le conoce a la provincia de Tungurahua?"
         }
        ],
        "back": [
@@ -1908,7 +1908,7 @@
        ],
        "back": [
         {
-         "text": "limita al norte con Colombia, al sur y al este con Perú, y al oeste con el Océano Pacífico."
+         "text": "Limita al norte con Colombia, al sur y al este con Perú, y al oeste con el Océano Pacífico."
         }
        ]
       },
@@ -1950,7 +1950,7 @@
        ],
        "back": [
         {
-         "text": "Aproximadamente a 1000 km (972 km)."
+         "text": "A unos 972 km."
         }
        ]
       },
@@ -2062,7 +2062,7 @@
        ],
        "back": [
         {
-         "text": "bosques húmedos, páramos, manglares, y la Amazonía (bosques de tierra firme e inundables), así como la franja marino costera."
+         "text": "Bosques húmedos, páramos, manglares, y la Amazonía (bosques de tierra firme e inundables), así como la franja marino costera."
         }
        ]
       },
@@ -2085,19 +2085,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué región geográfica del Ecuador es conocida como \""
-        },
-        {
-         "text": "La Amazonía",
-         "bold": true
-        },
-        {
-         "text": "\"?"
+         "text": "¿Con qué otro nombre se conoce a la región amazónica del Ecuador?"
         }
        ],
        "back": [
         {
-         "text": "La región oriental del Ecuador."
+         "text": "Oriente."
         }
        ]
       },
@@ -2183,7 +2176,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué ciudad de de la provincia de Manabí es conocida por su festival de ballenas jorobadas?"
+         "text": "¿Qué ciudad de la provincia de Manabí es conocida por su festival de ballenas jorobadas?"
         }
        ],
        "back": [
@@ -2227,7 +2220,7 @@
        ],
        "back": [
         {
-         "text": "es "
+         "text": "Es "
         },
         {
          "text": "Montecristi",
@@ -2462,11 +2455,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Provincia conocida como "
-        },
-        {
-         "text": "\"La Tierra del Cacao\"",
-         "bold": true
+         "text": "¿Qué provincia es conocida como \"La Tierra del Cacao\"?"
         }
        ],
        "back": [
@@ -2554,7 +2543,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿A qué provincia pertenece el cantón Puyo?"
+         "text": "¿A qué provincia pertenece la ciudad de Puyo?"
         }
        ],
        "back": [
@@ -2596,7 +2585,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Con qué otro nombre se conoce a la "
+         "text": "¿Con qué otro nombre se conoce a las "
         },
         {
          "text": "Islas Galápagos",
@@ -2622,7 +2611,7 @@
        ],
        "back": [
         {
-         "text": "aproximadamente el "
+         "text": "Aproximadamente el "
         },
         {
          "text": "8%",
@@ -2673,7 +2662,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "La Cordillera de los Andes divide al país en"
+         "text": "La Cordillera de los Andes divide al Ecuador continental en"
         }
        ],
        "back": [
@@ -2787,7 +2776,7 @@
        ],
        "back": [
         {
-         "text": "en Manabí, en el parque nacional Machalilla"
+         "text": "En Manabí, en el parque nacional Machalilla"
         }
        ]
       },
@@ -2796,7 +2785,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Mompiche, Tonsupa y Atacames quedan en la provincia"
+         "text": "Mompiche, Tonsupa y Atacames quedan en la provincia de"
         }
        ],
        "back": [
@@ -2810,7 +2799,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Puerto Lopez, Machalilla, Salango, Manta, Ayampe y Pedernales quedan en la provincia"
+         "text": "Puerto López, Machalilla, Salango, Manta, Ayampe y Pedernales quedan en la provincia de"
         }
        ],
        "back": [
@@ -2824,7 +2813,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Salinas, Ayangue y Montañita quedan en la provincia"
+         "text": "Salinas, Ayangue y Montañita quedan en la provincia de"
         }
        ],
        "back": [
@@ -2878,7 +2867,7 @@
        ],
        "back": [
         {
-         "text": "Carchi, Esmeralda y Sucumbíos"
+         "text": "Carchi, Esmeraldas y Sucumbíos"
         }
        ]
       },
@@ -5111,7 +5100,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "El Río Guayas se forma por la confluencia de qué ríos"
+         "text": "¿De la confluencia de qué ríos se forma el río Guayas?"
         }
        ],
        "back": [
@@ -5144,7 +5133,7 @@
        ],
        "back": [
         {
-         "text": "el volcán Chimborazo."
+         "text": "El volcán Chimborazo."
         }
        ]
       },
@@ -5158,7 +5147,7 @@
        ],
        "back": [
         {
-         "text": "el volcán Cotopaxi."
+         "text": "El volcán Cotopaxi."
         }
        ]
       },
@@ -5442,7 +5431,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Quiénes era los ocupantes originarios de la zona de Pichincha, en Ecuador?"
+         "text": "¿Quiénes eran los ocupantes originarios de la zona de Pichincha, en Ecuador?"
         }
        ],
        "back": [
@@ -5456,7 +5445,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Antes de la llegada de los Españoles, Quito estaba gobernada por el Imperio Inca. ¿Quién era el gobernador de Quito?"
+         "text": "Antes de la llegada de los españoles, Quito estaba gobernada por el Imperio Inca. ¿Quién era el gobernador de Quito?"
         }
        ],
        "back": [
@@ -5555,12 +5544,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿A qué se le llamó al Tahuantinsuyo?"
+         "text": "¿Qué era el Tahuantinsuyo?"
         }
        ],
        "back": [
         {
-         "text": "Al imperio incaico."
+         "text": "El Imperio inca."
         }
        ]
       },
@@ -5605,7 +5594,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Quién fundó la real Audiencia de Quito?"
+         "text": "¿Quién fundó la Real Audiencia de Quito?"
         }
        ],
        "back": [
@@ -5619,7 +5608,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué actividad económica permitió el desarrollo de la audiencia de quito?"
+         "text": "¿Qué actividad económica permitió el desarrollo de la Audiencia de Quito?"
         }
        ],
        "back": [
@@ -5667,7 +5656,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuál fue la primera manifestación política del pueblo quiteño en contra de las autoridades españolas"
+         "text": "¿Cuál fue la primera manifestación política del pueblo quiteño en contra de las autoridades españolas?"
         }
        ],
        "back": [
@@ -5713,7 +5702,7 @@
        ],
        "back": [
         {
-         "text": "fue un movimiento revolucionario que buscaba la autonomía de la "
+         "text": "Fue un movimiento revolucionario que buscaba la autonomía de la "
         },
         {
          "text": "Real Audiencia de Quito.",
@@ -5734,7 +5723,7 @@
        ],
        "back": [
         {
-         "text": "10 de Agosto"
+         "text": "10 de agosto"
         }
        ]
       },
@@ -5766,7 +5755,7 @@
        ],
        "back": [
         {
-         "text": "La Revolución de Quiteña",
+         "text": "La Revolución Quiteña",
          "bold": true
         },
         {
@@ -5791,7 +5780,7 @@
        ],
        "back": [
         {
-         "text": "10 de Agosto en conmemoración del Primer Grito de Independencia de 1809"
+         "text": "10 de agosto en conmemoración del Primer Grito de Independencia de 1809"
         }
        ]
       },
@@ -5865,7 +5854,7 @@
        ],
        "back": [
         {
-         "text": "9 de octubre del 1820. "
+         "text": "9 de octubre de 1820. "
         }
        ]
       }
@@ -5905,7 +5894,7 @@
        ],
        "back": [
         {
-         "text": "la Gran Colombia."
+         "text": "La Gran Colombia."
         }
        ]
       },
@@ -5937,7 +5926,7 @@
        ],
        "back": [
         {
-         "text": "la independencia de la "
+         "text": "La independencia de la "
         },
         {
          "text": "Real Audiencia de Quito (Actual República del Ecuador)",
@@ -6006,7 +5995,7 @@
        ],
        "back": [
         {
-         "text": "febrero de 1819 y julio de 1821"
+         "text": "Febrero de 1819 y julio de 1821"
         }
        ]
       },
@@ -6055,7 +6044,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Distrito del Norte"
+         "text": "¿Qué territorio formaba el Distrito del Norte de la Gran Colombia?"
         }
        ],
        "back": [
@@ -6070,7 +6059,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Distrito Central"
+         "text": "¿Qué territorio formaba el Distrito del Centro de la Gran Colombia?"
         }
        ],
        "back": [
@@ -6085,7 +6074,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Distrito del Sur"
+         "text": "¿Qué territorio formaba el Distrito del Sur de la Gran Colombia?"
         }
        ],
        "back": [
@@ -6239,7 +6228,7 @@
        ],
        "back": [
         {
-         "text": "el 13 de mayo de 1830 al separarse de la Gran Colombia."
+         "text": "El 13 de mayo de 1830 al separarse de la Gran Colombia."
         }
        ]
       },
@@ -6314,7 +6303,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué otros nombre recibe La "
+         "text": "¿Qué otros nombres recibe La "
         },
         {
          "text": "Revolución Marcista",
@@ -6356,7 +6345,7 @@
          "text": "se llama así porque inició en el mes de "
         },
         {
-         "text": "Marzo",
+         "text": "marzo",
          "cloze": true
         }
        ]
@@ -6474,7 +6463,7 @@
        ],
        "back": [
         {
-         "text": "el "
+         "text": "El "
         },
         {
          "text": "25 de julio",
@@ -6585,7 +6574,7 @@
        ],
        "back": [
         {
-         "text": "Guillermo Franco (autoproclamado jefe supremo ecuatoriana) y Ramón Castilla (presidente peruano)."
+         "text": "Guillermo Franco (autoproclamado jefe supremo ecuatoriano) y Ramón Castilla (presidente peruano)."
         }
        ]
       }
@@ -6853,7 +6842,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué fecha inició la Guerra del Cenapa?"
+         "text": "¿En qué fecha inició la Guerra del Cenepa?"
         }
        ],
        "back": [
@@ -6867,7 +6856,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué fecha terminó la Guerra del Cenapa?"
+         "text": "¿En qué fecha terminó la Guerra del Cenepa?"
         }
        ],
        "back": [
@@ -6927,7 +6916,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuando se resolvió en totalidad el problema territorial con Perú?"
+         "text": "¿Cuándo se resolvió en totalidad el problema territorial con Perú?"
         }
        ],
        "back": [
@@ -6974,7 +6963,7 @@
        ],
        "back": [
         {
-         "text": "El fin del conflicto territorial entre ambos países y de la guerra del Cenapa"
+         "text": "El fin del conflicto territorial entre ambos países y de la guerra del Cenepa"
         }
        ]
       }
@@ -7031,7 +7020,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Durante qué presidencia de dolarizó el Ecuador?"
+         "text": "¿Durante qué presidencia se dolarizó el Ecuador?"
         }
        ],
        "back": [
@@ -7394,7 +7383,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "En qué provincia se puede autorizar bases militares extranjeras para fines militares"
+         "text": "¿En qué provincia se pueden autorizar bases militares extranjeras?"
         }
        ],
        "back": [
@@ -7408,7 +7397,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Cuándo se adquiere la nacionalidad Ecuatoriana, ¿se pierde la nacionalidad previa?"
+         "text": "Cuando se adquiere la nacionalidad ecuatoriana, ¿se pierde la nacionalidad previa?"
         }
        ],
        "back": [
@@ -7475,7 +7464,7 @@
        ],
        "back": [
         {
-         "text": "son las diferentes funciones y órganos que ejercen el poder dentro de un Estado"
+         "text": "Son las diferentes funciones y órganos que ejercen el poder dentro de un Estado"
         }
        ]
       },
@@ -7503,7 +7492,7 @@
        ],
        "back": [
         {
-         "text": "ejecutiva",
+         "text": "Ejecutiva",
          "bold": true
         },
         {
@@ -7528,7 +7517,7 @@
          "bold": true
         },
         {
-         "text": " y la de  "
+         "text": " y la de "
         },
         {
          "text": "transparencia y control social",
@@ -7557,7 +7546,7 @@
        ],
        "back": [
         {
-         "text": "• dirigir y administrar el país\n• gestionar los recursos públicos\n• hacer cumplir las leyes y políticas públicas"
+         "text": "• Dirigir y administrar el país\n• Gestionar los recursos públicos\n• Hacer cumplir las leyes y políticas públicas"
         }
        ]
       },
@@ -7572,7 +7561,7 @@
        ],
        "back": [
         {
-         "text": "el Presidente de la República",
+         "text": "El Presidente de la República",
          "bold": true
         },
         {
@@ -7586,12 +7575,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "Esta función ejecutiva está integrada por"
+         "text": "La Función Ejecutiva está integrada por"
         }
        ],
        "back": [
         {
-         "text": "la Presidencia y Vicepresidencia de la República, los Ministerios de Estado, y otros organismos e instituciones necesarios para la ejecución de las políticas públicas"
+         "text": "La Presidencia y Vicepresidencia de la República, los Ministerios de Estado, y otros organismos e instituciones necesarios para la ejecución de las políticas públicas"
         }
        ]
       },
@@ -7621,7 +7610,7 @@
        ],
        "back": [
         {
-         "text": "sufragio directo en una misma papeleta"
+         "text": "Sufragio directo en una misma papeleta"
         }
        ]
       },
@@ -7636,7 +7625,7 @@
        ],
        "back": [
         {
-         "text": "se recurre a un balotaje o segunda vuelta, entre los "
+         "text": "Se recurre a un balotaje o segunda vuelta, entre los "
         },
         {
          "text": "dos",
@@ -7658,7 +7647,7 @@
        ],
        "back": [
         {
-         "text": "obtienen más del 40% de votos válidos, siempre que tengan una diferencia de al menos 10% sobre la segunda opción más votada"
+         "text": "Obtienen más del 40% de votos válidos, siempre que tengan una diferencia de al menos 10% sobre la segunda opción más votada"
         }
        ]
       },
@@ -7688,7 +7677,7 @@
        ],
        "back": [
         {
-         "text": "• crear, discutir y aprobar leyes que regulen la convivencia entre los ciudadanos y el funcionamiento del Estado\n• fiscalizar los actos realizados por el Poder Ejecutivo\n• aprobar el presupuesto nacional"
+         "text": "• Crear, discutir y aprobar leyes que regulen la convivencia entre los ciudadanos y el funcionamiento del Estado\n• Fiscalizar los actos realizados por el Poder Ejecutivo\n• Aprobar el presupuesto nacional"
         }
        ]
       },
@@ -7698,7 +7687,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Esta función legislativa es ejercida por"
+         "text": "La Función Legislativa es ejercida por"
         }
        ],
        "back": [
@@ -7766,7 +7755,7 @@
        ],
        "back": [
         {
-         "text": "151 diputados en 2025"
+         "text": "151 asambleístas en 2025"
         }
        ]
       },
@@ -7781,7 +7770,7 @@
        ],
        "back": [
         {
-         "text": "Na hay un número fijo, pero la Constitución establece que cada provincia elige "
+         "text": "No hay un número fijo, pero la Constitución establece que cada provincia elige "
         },
         {
          "text": "dos asambleístas",
@@ -7840,7 +7829,7 @@
        ],
        "back": [
         {
-         "text": "• administrar la justicia en el país\n• garantizar el respeto a la constitución y a las leyes\n• interpretar y aplicar las leyes\n• proteger de los derechos y garantías fundamentales de los ciudadanos"
+         "text": "• Administrar la justicia en el país\n• Garantizar el respeto a la constitución y a las leyes\n• Interpretar y aplicar las leyes\n• Proteger los derechos y garantías fundamentales de los ciudadanos"
         }
        ]
       },
@@ -7855,7 +7844,7 @@
        ],
        "back": [
         {
-         "text": "la Corte Nacional de Justicia, Consejo de la Judicatura, cortes, juezas y jueces, entre otros"
+         "text": "La Corte Nacional de Justicia, Consejo de la Judicatura, cortes, juezas y jueces, entre otros"
         }
        ]
       },
@@ -7870,7 +7859,7 @@
        ],
        "back": [
         {
-         "text": "concursos de merito y oposición"
+         "text": "Concursos de méritos y oposición"
         }
        ]
       },
@@ -7885,7 +7874,7 @@
        ],
        "back": [
         {
-         "text": "• organizar y controlar las elecciones populares\n• inscribir y fiscalizar a los partidos políticos\n• garantizar la transparencia y legalidad de los procesos electorales\n• asegurar que los ciudadanos puedan ejercer su derecho al voto"
+         "text": "• Organizar y controlar las elecciones populares\n• Inscribir y fiscalizar a los partidos políticos\n• Garantizar la transparencia y legalidad de los procesos electorales\n• Asegurar que los ciudadanos puedan ejercer su derecho al voto"
         }
        ]
       },
@@ -7915,7 +7904,7 @@
        ],
        "back": [
         {
-         "text": "• prevenir y combatir la corrupción\n• vigilar y supervisar el uso de los recursos públicos\n• incentivar la participación ciudadana\n• proteger el ejercicio y cumplimiento de los derechos"
+         "text": "• Prevenir y combatir la corrupción\n• Vigilar y supervisar el uso de los recursos públicos\n• Incentivar la participación ciudadana\n• Proteger el ejercicio y cumplimiento de los derechos"
         }
        ]
       },
@@ -7925,7 +7914,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Este poder esta liderado por"
+         "text": "La Función de Transparencia y Control Social está liderada por"
         }
        ],
        "back": [
@@ -8039,14 +8028,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Durante qué presidencia entró en vigencia la constitución que se denominó \""
-        },
-        {
-         "text": "La Carta Negra",
-         "bold": true
-        },
-        {
-         "text": "\" en Ecuador"
+         "text": "¿Durante qué presidencia entró en vigencia la constitución conocida como \"La Carta Negra\"?"
         }
        ],
        "back": [
@@ -8078,45 +8060,6 @@
         }
        ],
        "back": [
-        {
-         "text": "Jamil Mahuad",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ]
-      },
-      {
-       "id": "hKeBWGoicJTL4XIS9.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Durante qué presidencia sucedió la Guerra del Cenepa de 1995?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Sixto Durán-Ballén",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ]
-      },
-      {
-       "id": "sTnYAZS3Zz5Ac23tN.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿En qué año se firmó la paz definitiva entre Ecuador y Perú?"
-        }
-       ],
-       "back": [
-        {
-         "text": "En 1998 durante la presidencia de "
-        },
         {
          "text": "Jamil Mahuad",
          "bold": true
@@ -8311,7 +8254,7 @@
        ],
        "back": [
         {
-         "text": "Por el apoyo popular del \"Revolución Marcista\" o \"Revolución de Marzo\" que depuso a Juan José Flores."
+         "text": "Por el apoyo popular de la \"Revolución Marcista\" o \"Revolución de Marzo\" que depuso a Juan José Flores."
         }
        ]
       },
@@ -8325,7 +8268,7 @@
        ],
        "back": [
         {
-         "text": "Gabriel García moreno 1875"
+         "text": "Gabriel García Moreno, en 1875"
         }
        ]
       },
@@ -8392,7 +8335,7 @@
        ],
        "back": [
         {
-         "text": "el 24 de mayo de "
+         "text": "El 24 de mayo de "
         },
         {
          "text": "1981",
@@ -8636,7 +8579,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué monumento se encuentra emplazado en el centro de la plaza grande de Quito?"
+         "text": "¿Qué monumento se encuentra emplazado en el centro de la Plaza Grande de Quito?"
         }
        ],
        "back": [
@@ -8817,7 +8760,7 @@
        ],
        "back": [
         {
-         "text": "en "
+         "text": "En "
         },
         {
          "text": "la Catedral Metropolitana de Quito",
@@ -8970,7 +8913,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es el nombre del colegio jesuita más conocido de quito?"
+         "text": "¿Cuál es el nombre del colegio jesuita más conocido de Quito?"
         }
        ],
        "back": [
@@ -9051,7 +8994,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Algunas construcciones representativas del centro Histórico de Quito son"
+         "text": "Algunas construcciones representativas del Centro Histórico de Quito son"
         }
        ],
        "back": [
@@ -9233,7 +9176,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué es el barroco Quiteño?"
+         "text": "¿Qué es el barroco quiteño?"
         }
        ],
        "back": [
@@ -9362,32 +9305,11 @@
        }
       },
       {
-       "id": "3T1YYXZ10Pd5xESI4.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué estilo artístico europeo inspiró directamente la Escuela Quiteña?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Barroco."
-        }
-       ],
-       "photo": {
-        "src": "images/foto-escuela-quitena.jpg",
-        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
-        "credit": "Andrés Sánchez Gallque",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
-       }
-      },
-      {
        "id": "zWSVizNZ91ZvGVhRA.f",
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuál de estos rasgos iconográficos refleja el sincretismo cultural en los retablos barrocos quiteños?"
+         "text": "¿Qué rasgo iconográfico refleja el sincretismo cultural en los retablos barrocos quiteños?"
         }
        ],
        "back": [
@@ -9591,14 +9513,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "La obra cumbre del autor "
-        },
-        {
-         "text": "Camilo Egas",
-         "bold": true
-        },
-        {
-         "text": " que obtuvo premio en el salón Mariano Aguilera 1918"
+         "text": "¿Qué obra de Camilo Egas obtuvo el premio del Salón Mariano Aguilera de 1918?"
         }
        ],
        "back": [
@@ -9640,14 +9555,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Por qué seudónimo era conocido "
-        },
-        {
-         "text": "Eduardo Kingman",
-         "bold": true
-        },
-        {
-         "text": ", debido a su énfasis en ese motivo en muchas de sus pinturas?"
+         "text": "¿Con qué apodo se conocía a Eduardo Kingman, por el elemento que más repetía en sus pinturas?"
         }
        ],
        "back": [
@@ -9802,23 +9710,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "La obra más relevante de "
-        },
-        {
-         "text": "Leonardo Tejada",
-         "bold": true
+         "text": "¿Cuál es la obra más relevante de Leonardo Tejada?"
         }
        ],
        "back": [
         {
-         "text": "Entre los trabajos de importancia que se han encomendado a Leonardo Tejada hay que citar la mayor parte de "
-        },
-        {
-         "text": "las  tallas en madera en el Paraninfo de la Universidad Central ",
-         "bold": true
-        },
-        {
-         "text": "de Quito."
+         "text": "Las tallas en madera del Paraninfo de la Universidad Central del Ecuador."
         }
        ]
       },
@@ -9860,7 +9757,7 @@
        ],
        "back": [
         {
-         "text": "la abstracción geométrica."
+         "text": "La abstracción geométrica."
         }
        ]
       },
@@ -9890,7 +9787,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En cuál disciplinas artísticas se especializa"
+         "text": "¿En qué disciplinas artísticas se especializa"
         },
         {
          "text": " Pilar Bustos",
@@ -9914,7 +9811,7 @@
          "text": "¿Cuál tema es recurrente en la obra de la artista ecuatoriana "
         },
         {
-         "text": "Pilar Busto",
+         "text": "Pilar Bustos",
          "bold": true
         },
         {
@@ -9923,7 +9820,7 @@
        ],
        "back": [
         {
-         "text": "los caballos"
+         "text": "Los caballos"
         }
        ]
       },
@@ -10020,11 +9917,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Profesiones de "
-        },
-        {
-         "text": "Oswaldo Viteri",
-         "bold": true
+         "text": "¿Qué profesiones ejerció Oswaldo Viteri?"
         }
        ],
        "back": [
@@ -10080,11 +9973,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Principal obra de "
-        },
-        {
-         "text": "Oswaldo Viteri",
-         "bold": true
+         "text": "¿Cuál es la principal obra de Oswaldo Viteri?"
         }
        ],
        "back": [
@@ -10130,14 +10019,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Una de las temáticas recurrentes en la obra de "
-        },
-        {
-         "text": "Gilberto Almeida",
-         "bold": true
-        },
-        {
-         "text": ", especialmente en sus paisajes, es:"
+         "text": "¿Qué temática es recurrente en la obra de Gilberto Almeida, especialmente en sus paisajes?"
         }
        ],
        "back": [
@@ -10170,27 +10052,6 @@
          "text": "."
         }
        ]
-      },
-      {
-       "id": "ViGCpBcuJARHVjsEJ.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Quién fue la primera Mujer indígena que defendió el arte y la cultura?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Dolores Cacuango"
-        }
-       ],
-       "photo": {
-        "src": "images/foto-dolores-cacuango.jpg",
-        "alt": "Dolores Cacuango",
-        "credit": "Varios autores",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Dolores_Cacuango1.jpg"
-       }
       }
      ]
     },
@@ -10286,7 +10147,7 @@
          "bold": true
         },
         {
-         "text": ".  "
+         "text": ". "
         }
        ],
        "photo": {
@@ -10335,7 +10196,7 @@
          "bold": true
         },
         {
-         "text": ") y promover una identidad literaria propia.  "
+         "text": ") y promover una identidad literaria propia. "
         }
        ],
        "photo": {
@@ -10344,81 +10205,6 @@
         "credit": "Autor desconocido",
         "license": "Public domain",
         "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
-       }
-      },
-      {
-       "id": "JF9bxKLlAZdpGAEMS.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Quién fue la primera mujer que votó en Ecuador (y en Latinoamérica)?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Matilde Hidalgo Navarro",
-         "bold": true
-        },
-        {
-         "text": " (Matilde Hidalgo de Prócel)."
-        }
-       ],
-       "photo": {
-        "src": "images/foto-matilde-hidalgo.jpg",
-        "alt": "Matilde Hidalgo",
-        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
-       }
-      },
-      {
-       "id": "uqMEvHWHy83kMXfDL.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Quién fue la primera médica del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Matilde Hidalgo",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ],
-       "photo": {
-        "src": "images/foto-matilde-hidalgo.jpg",
-        "alt": "Matilde Hidalgo",
-        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
-       }
-      },
-      {
-       "id": "c3PTBouXDbJAdllLS.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Quién fue la primera mujer electa a un cargo público en el Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Matilde Hidalgo.",
-         "bold": true
-        },
-        {
-         "text": " "
-        }
-       ],
-       "photo": {
-        "src": "images/foto-matilde-hidalgo.jpg",
-        "alt": "Matilde Hidalgo",
-        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
        }
       },
       {
@@ -11027,7 +10813,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Quién es reconocido por haber diseãdo la bandera, el escudo y escrito el himno de Guayaquil?"
+         "text": "¿Quién es reconocido por haber diseñado la bandera, el escudo y escrito el himno de Guayaquil?"
         }
        ],
        "back": [
@@ -11248,7 +11034,7 @@
        ],
        "back": [
         {
-         "text": "incorporó elementos de realismo mágico y perspectiva femenina en sus relatos.  Es autora de varias producciones literarias que se basan en la narración de protagonistas femeninas."
+         "text": "En la novela, con elementos de realismo mágico y una perspectiva femenina: sus relatos suelen tener protagonistas mujeres."
         }
        ],
        "photo": {
@@ -11411,7 +11197,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es considerada la obra más relevante y representativa de del poeta "
+         "text": "¿Cuál es considerada la obra más relevante y representativa del poeta "
         },
         {
          "text": "Juan Bautista Aguirre",
@@ -11714,7 +11500,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué instrumento de cuerda es característico de las música andina ecuatoriana?"
+         "text": "¿Qué instrumento de cuerda es característico de la música andina ecuatoriana?"
         }
        ],
        "back": [
@@ -11735,7 +11521,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué instrumento de viento es característico de las música andina ecuatoriana?"
+         "text": "¿Qué instrumento de viento es característico de la música andina ecuatoriana?"
         }
        ],
        "back": [
@@ -11754,7 +11540,7 @@
          "bold": true
         },
         {
-         "text": "el "
+         "text": "la "
         },
         {
          "text": "quena",
@@ -12192,7 +11978,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Algunos géneros musicales del Ecuador:"
+         "text": "¿Cuáles son algunos géneros musicales del Ecuador?"
         }
        ],
        "back": [
@@ -12559,11 +12345,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Obra relevante de "
-        },
-        {
-         "text": "Juana Guarderas",
-         "bold": true
+         "text": "¿Qué obra de teatro es una de las más relevantes de Juana Guarderas?"
         }
        ],
        "back": [
@@ -12738,7 +12520,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "Directora de la película La piel pulpo"
+         "text": "¿Quién dirigió la película La piel pulpo?"
         }
        ],
        "back": [
@@ -12855,7 +12637,7 @@
        ],
        "back": [
         {
-         "text": "el "
+         "text": "El "
         },
         {
          "text": "Día de los Difuntos",
@@ -12883,7 +12665,7 @@
        ],
        "back": [
         {
-         "text": "harina de maíz morado, mortiño, mora",
+         "text": "Harina de maíz morado, mortiño, mora",
          "bold": true
         },
         {
@@ -12908,7 +12690,7 @@
        ],
        "back": [
         {
-         "text": "simbolizan los 12 apóstoles de Jesús."
+         "text": "Simbolizan los 12 apóstoles de Jesús."
         }
        ],
        "photo": {
@@ -12929,7 +12711,7 @@
        ],
        "back": [
         {
-         "text": "el bacalao simboliza a Jesucristo."
+         "text": "El bacalao simboliza a Jesucristo."
         }
        ],
        "photo": {
@@ -13075,7 +12857,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué región del ecuador se consume la fanesca?"
+         "text": "¿En qué región del Ecuador se consume la fanesca?"
         }
        ],
        "back": [
@@ -13096,7 +12878,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿De qué región del ecuador son originarios el encebollado y el bolón?"
+         "text": "¿De qué región del Ecuador son originarios el encebollado y el bolón?"
         }
        ],
        "back": [
@@ -13138,12 +12920,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "En los Andes ecuatorianos que planta se considera sagrada"
+         "text": "¿Qué planta se considera sagrada en los Andes ecuatorianos?"
         }
        ],
        "back": [
         {
-         "text": "El Maíz"
+         "text": "El maíz."
         }
        ],
        "photo": {
@@ -13212,7 +12994,7 @@
        ],
        "back": [
         {
-         "text": "el sur del Ecuador, entre las provincias de Azuay y Cañar."
+         "text": "El sur del Ecuador, entre las provincias de Azuay y Cañar."
         }
        ]
       },
@@ -13314,7 +13096,7 @@
        ],
        "back": [
         {
-         "text": "en la provincia de Pastaza."
+         "text": "En la provincia de Pastaza."
         }
        ]
       },
@@ -13370,7 +13152,7 @@
        ],
        "back": [
         {
-         "text": "en la región amazónica del Ecuador."
+         "text": "En la región amazónica del Ecuador."
         }
        ]
       },
@@ -13444,12 +13226,12 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Hasta dónde no llegó la conquista de los Incas?"
+         "text": "¿A qué región del actual Ecuador no llegó la conquista inca?"
         }
        ],
        "back": [
         {
-         "text": "Amazonia"
+         "text": "A la Amazonía."
         }
        ]
       }
@@ -13539,7 +13321,7 @@
        ],
        "back": [
         {
-         "text": "el castellano."
+         "text": "El castellano."
         }
        ]
       },
@@ -13833,7 +13615,7 @@
        ],
        "back": [
         {
-         "text": "La pambamesa es un acto para compartir la comida que se ofrece sobretodo en festividades ancestrales, como el Inti Raymi. Los participantes comparten alimentos colocados directamente sobre un mantel extendido en el suelo."
+         "text": "La pambamesa es un acto para compartir la comida que se ofrece sobre todo en festividades ancestrales, como el Inti Raymi. Los participantes comparten alimentos colocados directamente sobre un mantel extendido en el suelo."
         }
        ]
       },
@@ -13877,7 +13659,7 @@
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es el nombre del aeropuerto internacional de que sirve a Quito?"
+         "text": "¿Cuál es el nombre del aeropuerto internacional que sirve a Quito?"
         }
        ],
        "back": [
@@ -14072,7 +13854,7 @@
        ],
        "back": [
         {
-         "text": "cerca de 300 años"
+         "text": "Cerca de 300 años"
         }
        ]
       },
@@ -14133,6 +13915,102 @@
          "text": "1969"
         }
        ]
+      },
+      {
+       "id": "ViGCpBcuJARHVjsEJ.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué líder indígena fundó las primeras escuelas bilingües (kichwa y castellano) del Ecuador?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Dolores Cacuango."
+        }
+       ],
+       "photo": {
+        "src": "images/foto-dolores-cacuango.jpg",
+        "alt": "Dolores Cacuango",
+        "credit": "Varios autores",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Dolores_Cacuango1.jpg"
+       }
+      },
+      {
+       "id": "JF9bxKLlAZdpGAEMS.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Quién fue la primera mujer que votó en Ecuador (y en Latinoamérica)?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Matilde Hidalgo Navarro",
+         "bold": true
+        },
+        {
+         "text": " (Matilde Hidalgo de Procel)."
+        }
+       ],
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
+      },
+      {
+       "id": "uqMEvHWHy83kMXfDL.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Quién fue la primera médica del Ecuador?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Matilde Hidalgo",
+         "bold": true
+        },
+        {
+         "text": "."
+        }
+       ],
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
+      },
+      {
+       "id": "c3PTBouXDbJAdllLS.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Quién fue la primera mujer electa a un cargo público en el Ecuador?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Matilde Hidalgo.",
+         "bold": true
+        },
+        {
+         "text": " "
+        }
+       ],
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
       }
      ]
     },
