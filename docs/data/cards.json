@@ -120,6 +120,20 @@
        ]
       },
       {
+       "id": "bandera-escudo-centro",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué figura va en el centro de la Bandera Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "El Escudo Nacional, que reúne símbolos del país como el Chimborazo, el río Guayas, el sol y el cóndor. Según el decreto de 1900, la llevan con escudo los edificios nacionales, los buques de guerra, las fortalezas y las misiones diplomáticas."
+        }
+       ]
+      },
+      {
        "id": "XrrSsOnGix2d5MT4c.f",
        "type": "basic",
        "front": [
@@ -1169,7 +1183,7 @@
        ],
        "back": [
         {
-         "text": "La derecha del escudo."
+         "text": "La derecha del escudo, que para quien lo mira es la izquierda."
         }
        ]
       },
@@ -1297,6 +1311,216 @@
        "back": [
         {
          "text": "Símbolo del comercio, utilizado también en las instituciones dedicadas a las ciencias económicas. Está asociado con Mercurio (Hermes en la mitología griega), el dios del comercio y la paz. Es una vara o bastón alado adornado con dos serpientes entrelazadas."
+        }
+       ]
+      },
+      {
+       "id": "escudo-condor",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué simboliza el cóndor en el Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Con las alas desplegadas en actitud de vuelo, simboliza energía, esfuerzo y grandeza; representa la fuerza y la libertad del pueblo ecuatoriano."
+        }
+       ]
+      },
+      {
+       "id": "escudo-banderas",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuántas banderas hay en el Escudo Nacional y cómo están dispuestas?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Cuatro, dos a cada lado, que se agrupan bajo las fasces consulares."
+        }
+       ]
+      },
+      {
+       "id": "escudo-astas",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué representan las astas del Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Son cuatro y coronan las banderas. Las dos astas de lanza simbolizan las luchas por la independencia, y las dos de alabarda, la custodia y protección del poder del país."
+        }
+       ]
+      },
+      {
+       "id": "escudo-liston",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué es el listón del Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Una cinta de seda."
+        }
+       ]
+      },
+      {
+       "id": "escudo-laurel",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué representa el laurel en el Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La gloria de la nación."
+        }
+       ]
+      },
+      {
+       "id": "escudo-palma",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué representa la palma en el Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La paz en la nación. Algunas fuentes la interpretan también como el martirio de quienes lucharon por la libertad."
+        }
+       ]
+      },
+      {
+       "id": "escudo-sol",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué simboliza el sol dorado del Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "El oro, la riqueza y la importancia de los primeros pobladores. También se lo llama Sol Incaico y recuerda la veneración de los pueblos ancestrales al sol. Está en la parte superior del óvalo, junto a los signos del zodiaco."
+        }
+       ]
+      },
+      {
+       "id": "escudo-chimborazo",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué volcán aparece en el Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "El Chimborazo, el volcán más alto del Ecuador. Medido desde el centro de la Tierra, su cumbre es el punto más alejado del planeta. En el escudo, de él nace el río Guayas, aunque en la realidad el Guayas se forma por la unión de los ríos Daule y Babahoyo."
+        }
+       ]
+      },
+      {
+       "id": "escudo-rio-guayas",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué simboliza el río Guayas en el Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La unión de todos los ecuatorianos como una gran familia que comparte las riquezas de la tierra. Sus orillas con vegetación expresan la agricultura nacional."
+        }
+       ]
+      },
+      {
+       "id": "escudo-segur",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué simboliza el segur en el Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La fuerza pública."
+        }
+       ]
+      },
+      {
+       "id": "escudo-ovalo",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cómo es el contorno del óvalo del Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "De doble borde color café, con uniones del mismo color arriba y abajo."
+        }
+       ]
+      },
+      {
+       "id": "escudo-zodiaco-posicion",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué signos del zodiaco están a la derecha del sol en el Escudo Nacional y cuáles a la izquierda?"
+        }
+       ],
+       "back": [
+        {
+         "text": "A la derecha del escudo, Aries y Tauro; a la izquierda, Géminis y Cáncer. En heráldica, la derecha del escudo es la izquierda de quien lo mira."
+        }
+       ]
+      },
+      {
+       "id": "escudo-caduceo",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué simboliza el caduceo del Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La navegación y el comercio. Está coronado por dos alas, rodeado de serpientes y es atributo de Mercurio; en el escudo sirve de mástil al buque Guayas."
+        }
+       ]
+      },
+      {
+       "id": "escudo-buque",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué características tiene el buque a vapor Guayas del Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Tiene por mástil un caduceo, y sus colores y su pabellón son los de la Bandera Nacional. Fue construido en 1841 en los astilleros de Guayaquil, el primero de América del Sur."
+        }
+       ]
+      },
+      {
+       "id": "escudo-fasces",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué simbolizan las fasces consulares en el Escudo Nacional?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La dignidad republicana; también son símbolo de autoridad. El escudo descansa sobre ellas."
         }
        ]
       }
