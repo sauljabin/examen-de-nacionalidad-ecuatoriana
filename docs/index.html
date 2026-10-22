@@ -200,7 +200,7 @@
     </section>
 
     <section class="practice" aria-labelledby="review-title">
-      <h2 id="review-title">Tu repaso</h2>
+      <h2 id="review-title">Mi repaso</h2>
       <div class="practice-grid">
         <article class="practice-card">
           <h3>Falladas</h3>
@@ -367,7 +367,7 @@
       </button>
     </div>
     <section class="builder">
-      <p class="eyebrow">Crea tu examen</p>
+      <p class="eyebrow">Crear examen</p>
       <h1>Elige las preguntas</h1>
       <p class="lead">Búscalas o tómalas de tus listas. Al guardar, el examen queda en «Mis exámenes» y tendrás un enlace para compartirlo; quien lo abra verá las mismas preguntas.</p>
       <label class="text-field">
@@ -394,7 +394,7 @@
         <ol class="search-results"></ol>
       </div>
 
-      <h2 id="draft-title">Tu examen</h2>
+      <h2 id="draft-title">Mi examen</h2>
       <p class="draft-empty">Todavía no elegiste preguntas.</p>
       <ol class="search-results draft-list" aria-labelledby="draft-title"></ol>
       <button class="link clear-draft" type="button">Vaciar el examen</button>
@@ -406,6 +406,12 @@
   </template>
 
   <template id="shared-template">
+    <div class="exam-bar">
+      <button class="ghost back-home" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </button>
+    </div>
     <section class="shared">
       <p class="eyebrow">Examen para compartir</p>
       <h1 class="shared-title"></h1>
@@ -436,7 +442,6 @@
         <button class="ghost save-shared" type="button">Guardar en mis exámenes</button>
         <button class="ghost edit-shared" type="button">Editar preguntas</button>
         <button class="link delete-shared" type="button" hidden>Eliminar</button>
-        <button class="link shared-home" type="button">Volver al inicio</button>
       </div>
     </section>
   </template>

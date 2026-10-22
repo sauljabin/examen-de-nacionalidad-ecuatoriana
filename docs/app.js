@@ -622,8 +622,8 @@ function renderSavedExam(exam) {
   const open = document.createElement("button");
   open.type = "button";
   open.className = "ghost";
-  open.textContent = "Compartir";
-  open.setAttribute("aria-label", `Compartir, imprimir o editar «${exam.title}»`);
+  open.textContent = "Ver";
+  open.setAttribute("aria-label", `Ver «${exam.title}»: compartir, imprimir, editar o eliminar`);
   open.addEventListener("click", () => openSavedExam(exam));
   item.append(info, start, open);
   return item;
@@ -1234,6 +1234,7 @@ function showShared({ cards, title, missing = 0 }) {
     showBuilder();
   });
   const saved = findSavedExam(cards.map((card) => card.id));
+  app.querySelector(".shared .eyebrow").textContent = saved ? "Mis exámenes" : "Examen compartido";
   const save = app.querySelector(".save-shared");
   save.hidden = Boolean(saved);
   save.addEventListener("click", () => openSavedExam(saveExam({ title, ids: cards.map((card) => card.id) })));
@@ -1249,7 +1250,7 @@ function showShared({ cards, title, missing = 0 }) {
     saveProgress();
     showHome();
   });
-  app.querySelector(".shared-home").addEventListener("click", showHome);
+  app.querySelector(".back-home").addEventListener("click", showHome);
   app.focus();
 }
 

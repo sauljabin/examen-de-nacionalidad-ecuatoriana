@@ -817,7 +817,7 @@ select {
 .builder-count { flex: 1 1 9rem; font-weight: 700; }
 .builder-bar #builder-done { flex: 1 0 auto; max-width: 16rem; padding: .8rem 1.4rem; }
 
-.shared { padding-top: 1.5rem; }
+.shared { padding-top: .5rem; }
 .shared-warning {
   margin: 1rem 0 0;
   padding: .6rem .9rem;
