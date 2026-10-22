@@ -300,15 +300,23 @@ kbd {
 }
 .hero h1 { font-size: clamp(1.9rem, 5vw, 2.9rem); margin: 0 0 1rem; max-width: 22ch; }
 .lead { margin: 0; color: var(--muted); font-size: 1.1rem; max-width: 44rem; }
-.free {
-  display: inline-block;
-  margin-top: 1rem;
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  max-width: 46rem;
+  margin: 0 auto 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+.features li {
   padding: .25rem .8rem;
   border: 2px solid var(--line-strong);
   border-radius: 999px;
   background: var(--gold-soft);
+  color: var(--ink);
   font-weight: 700;
-  font-size: .9rem;
 }
 
 .visually-hidden {
