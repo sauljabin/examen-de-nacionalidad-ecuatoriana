@@ -4631,17 +4631,19 @@
       },
       {
        "id": "7Zq9O9nezbkc7ihAR.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué ecosistema se encuentra principalmente en las Islas Galápagos?"
+         "text": "¿Qué tipo de ecosistema predomina en las Islas Galápagos?"
         }
        ],
-       "back": [
-        {
-         "text": "Un ecosistema marino."
-        }
-       ]
+       "options": [
+        "Marino",
+        "Páramo andino",
+        "Selva amazónica",
+        "Bosque nublado"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -5162,24 +5164,19 @@
       },
       {
        "id": "lm8x9jMJFN3RgpvX2.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué río de la costa ecuatoriana desemboca en el Océano Pacífico?"
+         "text": "¿Cuál de estos ríos desemboca en el océano Pacífico?"
         }
        ],
-       "back": [
-        {
-         "text": "El río "
-        },
-        {
-         "text": "Guayas",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ]
+       "options": [
+        "El río Guayas",
+        "El río Napo",
+        "El río Pastaza",
+        "El río Putumayo"
+       ],
+       "answer": 0
       },
       {
        "id": "bMfaBVRrZXtPNpjbQ.f",
@@ -11500,22 +11497,10 @@
       },
       {
        "id": "fnwLpkTgJdazT7HnZ.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es la novela que escribió "
-        },
-        {
-         "text": "Demetrio Aguilera Malta",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Don Goyo"
+         "text": "¿Cuál de estas novelas escribió Demetrio Aguilera Malta?"
         }
        ],
        "photo": {
@@ -11524,7 +11509,14 @@
         "credit": "Autor desconocido",
         "license": "CC BY 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Velia_marquez_demetrio_aguilera_malta.jpg"
-       }
+       },
+       "options": [
+        "Don Goyo",
+        "Huasipungo",
+        "Cumandá",
+        "A la costa"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -11696,15 +11688,10 @@
       },
       {
        "id": "8RKsJvMM4xXXBpclY.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué festividad ecuatoriana es conocida por el uso de máscaras y trajes coloridos?"
-        }
-       ],
-       "back": [
-        {
-         "text": "La Diablada de Píllaro."
+         "text": "¿Qué festividad ecuatoriana es conocida por sus máscaras y trajes coloridos de diablos?"
         }
        ],
        "photo": {
@@ -11713,7 +11700,14 @@
         "credit": "Agencia de Noticias ANDES",
         "license": "CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:%22LA_DIABLADA_DE_P%C3%8DLLARO%22_(39497453312).jpg"
-       }
+       },
+       "options": [
+        "La Diablada de Píllaro",
+        "La Fiesta de la Fruta y de las Flores",
+        "La Fiesta del Yamor",
+        "El Pase del Niño"
+       ],
+       "answer": 0
       },
       {
        "id": "OSrfsDBdOgsjUswoS.f",
@@ -14112,17 +14106,19 @@
       },
       {
        "id": "U0lTsiKNWTXqLkCc1.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué ciudad es una de las más visitadas por turistas nacionales y extranjeros?"
+         "text": "¿Cuál de estas ciudades es una de las más visitadas por turistas nacionales y extranjeros?"
         }
        ],
-       "back": [
-        {
-         "text": "Otavalo"
-        }
-       ]
+       "options": [
+        "Otavalo",
+        "Babahoyo",
+        "Nueva Loja",
+        "Guaranda"
+       ],
+       "answer": 0
       },
       {
        "id": "65hd0Kzw5feeokKIo.f",

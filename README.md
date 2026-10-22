@@ -34,6 +34,7 @@ La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible]
 | Tipo | Cómo se ve |
 |---|---|
 | Pregunta y respuesta | La respuesta aparece debajo de la pregunta. En lagos y en la mayoría de los temas de Cultura (lugares, pintura, gastronomía, cine, teatro, música y danza) también aparece una foto. |
+| Selección | Hay hasta cuatro opciones; al elegir una se marca la correcta y el acierto se cuenta solo. Se puede responder con las teclas `1` a `4`. |
 | Texto con huecos | Cada parte oculta se ve como `?` y se completa al revelarla. |
 | Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, la capital de una provincia en el mapa) y desaparece al revelarla. |
 

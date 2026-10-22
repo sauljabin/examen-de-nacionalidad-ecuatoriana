@@ -546,6 +546,34 @@ select {
   font: 800 min(70cqh, 40cqw, 2rem)/1 "Fraunces", Georgia, serif;
 }
 
+.options {
+  display: grid;
+  gap: .6rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  white-space: normal;
+}
+.options button {
+  justify-content: flex-start;
+  width: 100%;
+  padding: .75rem 1rem;
+  border-radius: 12px;
+  box-shadow: none;
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+.options button:hover:not(:disabled) { border-color: var(--accent); box-shadow: none; transform: none; }
+.options button:disabled { opacity: 1; cursor: default; }
+.options button.is-correct { border-color: var(--right); background: var(--right-soft); color: var(--right); font-weight: 700; }
+.options button.is-wrong { border-color: var(--wrong); background: var(--wrong-soft); color: var(--wrong); font-weight: 700; }
+.options kbd { flex: none; }
+
+.feedback { margin: 1rem 0 0; font-weight: 700; white-space: normal; }
+.feedback.is-right { color: var(--right); }
+.feedback.is-wrong { color: var(--wrong); }
+
 .actions { display: grid; gap: .75rem; margin-top: 1.5rem; }
 
 .grade {

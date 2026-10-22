@@ -308,9 +308,15 @@ function showCard() {
   app.querySelector(".exit").addEventListener("click", confirmExit);
   // Tapping the card also shows the answer, which is handy on phones.
   app.querySelector(".question").addEventListener("click", (event) => {
-    if (!event.target.closest("a")) reveal();
+    if (card.type !== "choice" && !event.target.closest("a")) reveal();
   });
   app.querySelector(".reveal").addEventListener("click", reveal);
+  app.querySelector(".next").addEventListener("click", () => grade(state.choiceResult));
+  if (card.type === "choice") {
+    app.querySelector(".reveal").hidden = true;
+    app.querySelector(".options button")?.focus();
+    return;
+  }
   app.querySelector(".right").addEventListener("click", () => grade(true));
   app.querySelector(".wrong").addEventListener("click", () => grade(false));
   app.querySelector(".reveal").focus();
@@ -326,6 +332,7 @@ function renderCardFace(card) {
     front.append(text);
   }
   if (card.image) front.append(renderImage(card.image, { revealed }));
+  if (card.type === "choice") front.append(renderOptions(card));
   if (card.type === "cloze" && revealed && card.photo) front.append(renderPhoto(card.photo));
   if (card.type === "basic" && revealed) {
     app.querySelector(".back").replaceChildren(renderSegments(card.back, { revealCloze: true }));
@@ -334,8 +341,51 @@ function renderCardFace(card) {
   }
 }
 
-function reveal() {
+function renderOptions(card) {
+  const list = document.createElement("ol");
+  list.className = "options";
+  // Keep the shuffled order for this card while it is on screen.
+  state.optionOrder = shuffle(card.options.map((_, index) => index));
+  state.optionOrder.forEach((optionIndex, position) => {
+    const item = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.dataset.option = optionIndex;
+    const key = document.createElement("kbd");
+    key.textContent = position + 1;
+    button.append(key, card.options[optionIndex]);
+    button.addEventListener("click", () => choose(optionIndex));
+    item.append(button);
+    list.append(item);
+  });
+  return list;
+}
+
+function choose(optionIndex) {
   if (state.revealed) return;
+  state.revealed = true;
+  const card = state.queue[state.index];
+  state.choiceResult = optionIndex === card.answer;
+  for (const button of app.querySelectorAll(".options button")) {
+    const index = Number(button.dataset.option);
+    button.disabled = true;
+    if (index === card.answer) button.classList.add("is-correct");
+    else if (index === optionIndex) button.classList.add("is-wrong");
+  }
+  const feedback = document.createElement("p");
+  feedback.className = state.choiceResult ? "feedback is-right" : "feedback is-wrong";
+  feedback.textContent = state.choiceResult
+    ? "¡Correcto!"
+    : `Incorrecto. La respuesta es: ${card.options[card.answer]}.`;
+  app.querySelector(".options").after(feedback);
+  if (card.photo) feedback.after(renderPhoto(card.photo));
+  app.querySelector(".question").classList.add("is-revealed");
+  app.querySelector(".next").hidden = false;
+  app.querySelector(".next").focus();
+}
+
+function reveal() {
+  if (state.revealed || state.queue[state.index].type === "choice") return;
   state.revealed = true;
   const card = state.queue[state.index];
   if (card.type === "image") {
@@ -352,7 +402,8 @@ function reveal() {
 }
 
 function grade(knewIt) {
-  if (!state.revealed) return;
+  if (!state.revealed || knewIt === undefined) return;
+  state.choiceResult = undefined;
   const card = state.queue[state.index];
   card.lastResult = knewIt;
   if (!knewIt) state.missed.push(card);
@@ -418,10 +469,11 @@ function showResult() {
       item.append(question);
     }
     if (card.image) item.append(renderImage(card.image, { revealed: true }));
-    if (card.type === "basic") {
+    if (card.type === "basic" || card.type === "choice") {
       const answer = document.createElement("p");
       answer.className = "missed-answer";
-      answer.append(renderSegments(card.back, { revealCloze: true }));
+      if (card.type === "choice") answer.textContent = card.options[card.answer];
+      else answer.append(renderSegments(card.back, { revealCloze: true }));
       item.append(answer);
     }
     if (card.photo) item.append(renderPhoto(card.photo));
@@ -437,6 +489,14 @@ document.addEventListener("keydown", (event) => {
   if (document.querySelector("dialog[open]")) return;
   if (event.key === "Escape") {
     confirmExit();
+  } else if (state.queue[state.index]?.type === "choice") {
+    const position = Number(event.key) - 1;
+    if (!state.revealed && state.optionOrder?.[position] !== undefined) {
+      choose(state.optionOrder[position]);
+    } else if (state.revealed && (event.key === " " || event.key === "Enter")) {
+      event.preventDefault();
+      grade(state.choiceResult);
+    }
   } else if (event.key === " " || event.key === "Enter") {
     if (!state.revealed) {
       event.preventDefault();
