@@ -21,6 +21,36 @@ Puedes salir del examen en cualquier momento con el botón **Salir** o la tecla 
 
 En el inicio hay un buscador: escribe una o varias palabras (por ejemplo, «Chimborazo» o «Julio Jaramillo») y aparecen las preguntas que las contienen, con su respuesta. No importan las tildes ni las mayúsculas.
 
+### Usar sin conexión e instalar en el teléfono
+
+Después de la primera visita con internet, la página funciona sin conexión: guarda la página, las preguntas y las imágenes de las preguntas (mapas, escudo y bandera). Las fotos de las respuestas se guardan a medida que las ves. Cuando vuelve la conexión, se descargan solas las preguntas actualizadas.
+
+También se puede instalar como una app:
+
+- **Android (Chrome):** acepta «Instalar app» o usa el menú ⋮ → **Agregar a pantalla de inicio**.
+- **iPhone (Safari):** botón **Compartir** → **Agregar a pantalla de inicio**.
+
+### Accesibilidad
+
+El botón **Accesibilidad**, arriba a la derecha, permite cambiar:
+
+- el tamaño de la letra (cinco tamaños),
+- el tema (automático, claro u oscuro),
+- el espacio entre líneas,
+- el alto contraste,
+- las animaciones (se pueden reducir).
+
+La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), diseñada para personas con baja visión, y todo se puede usar con teclado.
+
+### Tipos de pregunta
+
+| Tipo | Cómo se ve |
+|---|---|
+| Pregunta y respuesta | La respuesta aparece debajo de la pregunta. En lagos, volcanes, parques nacionales y la mayoría de los temas de Cultura (lugares, pintura, literatura, gastronomía, cine, teatro, música y danza) también aparece una foto. |
+| Selección | Hay hasta cuatro opciones. Si la pregunta dice «Selecciona todas las respuestas correctas», puede haber varias: márcalas y pulsa **Comprobar** (o `Enter`). Al responder se marcan las correctas, el acierto se cuenta solo y suele aparecer una breve explicación. Las opciones se eligen también con las teclas `1` a `4`. |
+| Texto con huecos | Cada parte oculta se ve como `?` y se completa al revelarla. |
+| Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, la capital de una provincia en el mapa) y desaparece al revelarla. |
+
 ## Colaborar
 
 ¿Encontraste un dato incorrecto o quieres proponer una pregunta? Abre un *issue*:
@@ -36,6 +66,8 @@ Incluye una fuente cuando puedas.
 ```
 docs/                       Página estática (lo que publica GitHub Pages)
   index.html, app.js, styles.css
+  sw.js, manifest.webmanifest  Uso sin conexión e instalación como app
+  icons/                    Íconos de la app
   data/cards.json           Preguntas
   images/                   Imágenes de las preguntas
 .github/ISSUE_TEMPLATE/     Formularios para reportar errores y proponer preguntas

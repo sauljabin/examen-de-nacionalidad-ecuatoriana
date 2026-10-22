@@ -663,6 +663,11 @@ document.getElementById("suggest-link").href = issueUrl("incluir-pregunta.yml");
 document.getElementById("repo-link").href = REPO_URL;
 setupSettings();
 
+// Offline support: the service worker caches the site after the first visit.
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+
 fetch("data/cards.json")
   .then((response) => response.json())
   .then((data) => {

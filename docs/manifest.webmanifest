@@ -1,0 +1,16 @@
+{
+  "name": "Examen de Nacionalización Ecuatoriana",
+  "short_name": "Examen Ecuador",
+  "description": "Preguntas de práctica para el examen de nacionalización ecuatoriana. Gratuito y con fines pedagógicos.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f2e8",
+  "theme_color": "#0a4fa3",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -22,6 +22,7 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
 | Ruta | Qué contiene |
 |---|---|
 | `docs/index.html`, `app.js`, `styles.css` | La página. JavaScript sin frameworks ni compilación. |
+| `docs/sw.js`, `docs/manifest.webmanifest`, `docs/icons/` | Uso sin conexión (service worker) e instalación como app. |
 | `docs/data/cards.json` | Todas las preguntas. Es la fuente de verdad: edítalo directamente. |
 | `docs/images/` | Imágenes de las preguntas, referenciadas desde `cards.json` con rutas relativas (`images/…`). |
 | `.github/ISSUE_TEMPLATE/` | Formularios de issues. `app.js` enlaza a `error.yml` y `incluir-pregunta.yml` y rellena el campo `pregunta` por URL. |
@@ -85,4 +86,5 @@ python3 -m http.server 8000 --directory docs
 - Accesibilidad: las preferencias se guardan como atributos `data-*` en `<html>` (`data-font-size`, `data-theme`, `data-spacing`, `data-contrast`, `data-motion`) y en `localStorage`. Usa unidades `rem` para que el tamaño de letra escale todo. Todo debe poder usarse con teclado.
 - Fotos de las respuestas: usa solo imágenes con licencia libre de Wikimedia Commons (CC0, CC BY, CC BY-SA o dominio público) y guarda siempre autor, licencia y enlace en `photo`. No uses fotos de obras de arte cuyo autor murió hace menos de 70 años (por ejemplo, Guayasamín, Kingman o Egas): la licencia de la foto no cubre la obra. En esos casos usa un retrato del artista o no pongas foto. Guárdalas en `docs/images/foto-<tema>.jpg`, de 900 px de lado como máximo.
 - Las tarjetas de *Partes de la Bandera Nacional* usan imágenes SVG (`docs/images/bandera-*.svg`) que llevan la bandera incrustada, el nombre de la parte y su descripción. El recuadro `active` de cada tarjeta tapa justo esa descripción: si cambias el texto o su posición en el SVG, recalcula `x`, `y`, `width` y `height` del bloque.
+- Sin conexión: `docs/sw.js` pide a la red primero la página y `cards.json` (así las correcciones llegan en la siguiente visita con internet) y usa la caché primero para las imágenes. Si cambias el contenido de una imagen sin cambiarle el nombre, sube `VERSION` en `sw.js`; si agregas un archivo nuevo a la página (otro `.js` o `.css`), añádelo a `SHELL`.
 - El estilo debe ser propio y no imitar a otras aplicaciones de tarjetas de estudio.
