@@ -39,7 +39,9 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
       "cards": [
         {"id": "…", "type": "basic", "front": [Segment], "back": [Segment]},
         {"id": "…", "type": "cloze", "front": [Segment]},
-        {"id": "…", "type": "choice", "front": [Segment], "options": ["A", "B", "C", "D"], "answer": 0},
+        {"id": "…", "type": "choice", "front": [Segment], "options": ["A", "B", "C", "D"], "answer": 0,
+         "explanation": "…"},
+        {"id": "…", "type": "choice", "front": [Segment], "options": ["A", "B", "C", "D"], "answer": [0, 2]},
         {"id": "…", "type": "image", "front": [Segment],
          "image": {"src": "images/x.png", "width": 790, "height": 592,
                    "blocks": [{"x": 0.5, "y": 0.1, "width": 0.4, "height": 0.3, "active": true}]}}
@@ -53,7 +55,8 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
 - Una tarjeta puede tener `topic` (carpetas por debajo de la subcategoría).
 - Los `id` de categoría y subcategoría son el título en minúsculas, sin tildes y con guiones (`simbolos-patrios`).
 - Los `id` de tarjeta deben ser únicos; aparecen en los reportes de error. Para una tarjeta nueva, usa cualquier cadena única.
-- `type: "basic"` necesita `front` y `back`. `type: "cloze"` necesita al menos un segmento con `cloze: true`. `type: "choice"` necesita `options` (de 2 a 4 textos) y `answer`, el índice de la correcta; la página muestra las opciones en orden aleatorio. Úsalo cuando una pregunta abierta tendría varias respuestas válidas. `type: "image"` necesita `image` con exactamente un bloque `active: true`, que es el que se revela, y un `front` con el enunciado (por ejemplo, «¿Cuál es la capital de esta provincia?»): sin él no se entiende qué se pregunta.
+- `type: "basic"` necesita `front` y `back`. `type: "cloze"` necesita al menos un segmento con `cloze: true`. `type: "choice"` necesita `options` (de 2 a 4 textos) y `answer`: el índice de la correcta, o una lista de índices si hay varias correctas (entonces la página pide «Selecciona todas las respuestas correctas» y muestra el botón **Comprobar**). Las opciones aparecen en orden aleatorio. Úsalo cuando una pregunta abierta tendría varias respuestas válidas o cuando es fácil confundir la respuesta con un dato parecido.
+- `explanation` (opcional, solo en `choice`) es un texto corto que aparece al responder. Úsalo para no perder el contexto que tendría una respuesta abierta: por qué las otras opciones no son correctas, la lista completa o un dato que ayude a recordar. `type: "image"` necesita `image` con exactamente un bloque `active: true`, que es el que se revela, y un `front` con el enunciado (por ejemplo, «¿Cuál es la capital de esta provincia?»): sin él no se entiende qué se pregunta.
 - `photo` (opcional) es una foto que aparece al revelar la respuesta: `{"src", "alt", "credit", "license", "url"}`. `url` es la página del archivo en Wikimedia Commons y `credit` es el autor; la página muestra los dos bajo la foto.
 - `color` admite `red`, `orange`, `yellow`, `green`, `purple`, `blue`, `gray`, `brown` y `pink`.
 - Después de editar, comprueba que el JSON es válido: `python3 -m json.tool docs/data/cards.json > /dev/null`.

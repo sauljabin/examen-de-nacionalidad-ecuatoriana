@@ -312,8 +312,10 @@ function showCard() {
   });
   app.querySelector(".reveal").addEventListener("click", reveal);
   app.querySelector(".next").addEventListener("click", () => grade(state.choiceResult));
+  app.querySelector(".check-answer").addEventListener("click", checkSelection);
   if (card.type === "choice") {
     app.querySelector(".reveal").hidden = true;
+    app.querySelector(".check-answer").hidden = !isMultiChoice(card);
     app.querySelector(".options button")?.focus();
     return;
   }
@@ -341,16 +343,42 @@ function renderCardFace(card) {
   }
 }
 
+// A choice card has one right answer ("answer": 2) or several ("answer": [0, 2]).
+function isMultiChoice(card) {
+  return Array.isArray(card.answer);
+}
+
+function correctOptions(card) {
+  return isMultiChoice(card) ? card.answer : [card.answer];
+}
+
+function joinList(items) {
+  return items.length > 1 ? `${items.slice(0, -1).join(", ")} y ${items.at(-1)}` : items[0];
+}
+
+function correctAnswerText(card) {
+  return joinList(correctOptions(card).map((index) => card.options[index]));
+}
+
 function renderOptions(card) {
+  const fragment = document.createDocumentFragment();
+  if (isMultiChoice(card)) {
+    const hint = document.createElement("p");
+    hint.className = "choice-hint";
+    hint.textContent = "Selecciona todas las respuestas correctas.";
+    fragment.append(hint);
+  }
   const list = document.createElement("ol");
   list.className = "options";
   // Keep the shuffled order for this card while it is on screen.
   state.optionOrder = shuffle(card.options.map((_, index) => index));
+  state.selection = new Set();
   state.optionOrder.forEach((optionIndex, position) => {
     const item = document.createElement("li");
     const button = document.createElement("button");
     button.type = "button";
     button.dataset.option = optionIndex;
+    if (isMultiChoice(card)) button.setAttribute("aria-pressed", "false");
     const key = document.createElement("kbd");
     key.textContent = position + 1;
     button.append(key, card.options[optionIndex]);
@@ -358,30 +386,70 @@ function renderOptions(card) {
     item.append(button);
     list.append(item);
   });
-  return list;
+  fragment.append(list);
+  return fragment;
 }
 
 function choose(optionIndex) {
   if (state.revealed) return;
+  const card = state.queue[state.index];
+  if (!isMultiChoice(card)) {
+    finishChoice(new Set([optionIndex]));
+    return;
+  }
+  // Multiple answers: toggle the option and wait for "Comprobar".
+  if (state.selection.has(optionIndex)) state.selection.delete(optionIndex);
+  else state.selection.add(optionIndex);
+  const button = app.querySelector(`.options button[data-option="${optionIndex}"]`);
+  button.classList.toggle("is-selected", state.selection.has(optionIndex));
+  button.setAttribute("aria-pressed", String(state.selection.has(optionIndex)));
+}
+
+function checkSelection() {
+  if (state.revealed || !state.selection?.size) return;
+  finishChoice(state.selection);
+}
+
+function finishChoice(selected) {
   state.revealed = true;
   const card = state.queue[state.index];
-  state.choiceResult = optionIndex === card.answer;
+  const correct = new Set(correctOptions(card));
+  state.choiceResult = selected.size === correct.size && [...selected].every((index) => correct.has(index));
   for (const button of app.querySelectorAll(".options button")) {
     const index = Number(button.dataset.option);
     button.disabled = true;
-    if (index === card.answer) button.classList.add("is-correct");
-    else if (index === optionIndex) button.classList.add("is-wrong");
+    button.classList.remove("is-selected");
+    if (correct.has(index)) {
+      button.classList.add("is-correct");
+      if (!selected.has(index)) button.classList.add("is-missed");
+    } else if (selected.has(index)) {
+      button.classList.add("is-wrong");
+    }
   }
   const feedback = document.createElement("p");
   feedback.className = state.choiceResult ? "feedback is-right" : "feedback is-wrong";
+  const label = correct.size > 1 ? "Las respuestas correctas son" : "La respuesta es";
   feedback.textContent = state.choiceResult
     ? "¡Correcto!"
-    : `Incorrecto. La respuesta es: ${card.options[card.answer]}.`;
+    : `Incorrecto. ${label}: ${correctAnswerText(card)}.`;
   app.querySelector(".options").after(feedback);
-  if (card.photo) feedback.after(renderPhoto(card.photo));
+  let last = feedback;
+  if (card.explanation) {
+    last = renderExplanation(card.explanation);
+    feedback.after(last);
+  }
+  if (card.photo) last.after(renderPhoto(card.photo));
+  app.querySelector(".check-answer").hidden = true;
   app.querySelector(".question").classList.add("is-revealed");
   app.querySelector(".next").hidden = false;
   app.querySelector(".next").focus();
+}
+
+function renderExplanation(text) {
+  const explanation = document.createElement("p");
+  explanation.className = "explanation";
+  explanation.textContent = text;
+  return explanation;
 }
 
 function reveal() {
@@ -472,10 +540,11 @@ function showResult() {
     if (card.type === "basic" || card.type === "choice") {
       const answer = document.createElement("p");
       answer.className = "missed-answer";
-      if (card.type === "choice") answer.textContent = card.options[card.answer];
+      if (card.type === "choice") answer.textContent = correctAnswerText(card);
       else answer.append(renderSegments(card.back, { revealCloze: true }));
       item.append(answer);
     }
+    if (card.explanation) item.append(renderExplanation(card.explanation));
     if (card.photo) item.append(renderPhoto(card.photo));
     list.append(item);
   }
@@ -493,9 +562,16 @@ document.addEventListener("keydown", (event) => {
     const position = Number(event.key) - 1;
     if (!state.revealed && state.optionOrder?.[position] !== undefined) {
       choose(state.optionOrder[position]);
-    } else if (state.revealed && (event.key === " " || event.key === "Enter")) {
-      event.preventDefault();
-      grade(state.choiceResult);
+    } else if (event.key === " " || event.key === "Enter") {
+      const card = state.queue[state.index];
+      if (state.revealed) {
+        event.preventDefault();
+        grade(state.choiceResult);
+      } else if (isMultiChoice(card) && event.key === "Enter") {
+        // Enter checks the answer; Space toggles the focused option.
+        event.preventDefault();
+        checkSelection();
+      }
     }
   } else if (event.key === " " || event.key === "Enter") {
     if (!state.revealed) {
