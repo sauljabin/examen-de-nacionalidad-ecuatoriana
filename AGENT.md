@@ -58,6 +58,16 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
 - `color` admite `red`, `orange`, `yellow`, `green`, `purple`, `blue`, `gray`, `brown` y `pink`.
 - Después de editar, comprueba que el JSON es válido: `python3 -m json.tool docs/data/cards.json > /dev/null`.
 
+## Estilo de las preguntas
+
+- Toda respuesta de pregunta y respuesta termina en punto, también después de un paréntesis o de comillas; las que terminan en «!» o «?» se dejan así. En las respuestas con viñetas, cada línea termina en punto.
+- Las respuestas empiezan con mayúscula.
+- Las preguntas llevan los dos signos: «¿…?». Las frases para completar («El día de la Bandera se celebra el») no llevan signos.
+- Usa comillas españolas: «…», no comillas rectas.
+- Las funciones del Estado se llaman como en la Constitución: «Función Ejecutiva», «Función Legislativa», «Función Judicial», «Función Electoral» y «Función de Transparencia y Control Social», no «Poder…».
+- Escribe «Cusco», «océano Pacífico» y «Constitución» con mayúscula cuando nombra una constitución concreta («la Constitución de 2008»).
+- Las opciones de las preguntas de selección no llevan punto final.
+
 ## Comandos
 
 ```bash
