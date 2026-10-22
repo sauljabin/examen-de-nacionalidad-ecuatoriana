@@ -37,13 +37,16 @@ Las listas y los exámenes se guardan solo en el navegador de cada dispositivo. 
 
 ### Mi progreso
 
-En el inicio, **Mi progreso** muestra tu racha, cuántas preguntas dominas y cuántos logros tienes. **Ver mi progreso** abre el detalle:
+En el inicio, **Mi progreso** muestra tu racha, cuántas preguntas dominas, cuántos logros tienes y cuánto te falta para la meta de hoy. **Ver mi progreso** abre el detalle:
 
 - **Racha:** días seguidos en que respondiste al menos una pregunta, y tu mejor racha.
 - **Respondidas:** cuántas respuestas diste y qué porcentaje acertaste.
 - **Dominadas:** una pregunta está dominada si la acertaste la última vez que la respondiste. Se muestra en total y por categoría, junto con las que tienes por repasar.
 - **Mejor simulacro:** tu mejor puntaje y cuántos simulacros aprobaste.
-- **Logros:** 12 medallas, como «Tres días seguidos», «Simulacro aprobado» o «Símbolos dominados». Los nuevos aparecen al terminar un examen.
+- **Meta diaria:** eliges 10, 20 o 30 preguntas al día y ves cuántas llevas hoy y cuántos días la cumpliste.
+- **Logros:** 20 medallas, como «Tres días seguidos», «Simulacro aprobado», «Diez seguidas» o «Símbolos dominados». Los nuevos aparecen al terminar un examen.
+
+Durante el examen, un contador muestra tus aciertos seguidos (por ejemplo, «🔥 5 seguidas»); al fallar vuelve a cero sin ningún aviso. Al aprobar un simulacro, terminar un examen con el 90 % o más, cumplir la meta o ganar un logro, cae un poco de confeti con los colores de la bandera.
 
 Todo se guarda solo en el navegador de cada dispositivo, y **Borrar mi progreso** lo reinicia sin tocar tus falladas, marcadas ni exámenes.
 
@@ -77,7 +80,8 @@ El botón **Accesibilidad**, arriba a la derecha, permite cambiar:
 - el tema (automático, claro u oscuro),
 - el espacio entre líneas,
 - el alto contraste,
-- las animaciones (se pueden reducir).
+- las animaciones (se pueden reducir; también quita el confeti),
+- el contador de aciertos seguidos (se puede ocultar).
 
 Durante el examen, el botón **Escuchar** (o la tecla `L`) lee en voz alta la pregunta y, si es de selección, sus opciones; después de responder, lee la respuesta. Usa las voces en español del teléfono o la computadora, así que también funciona sin conexión en la mayoría de los dispositivos.
 

@@ -54,7 +54,7 @@
       <li>Buscador de preguntas</li>
       <li>Simulacro del examen</li>
       <li>Repaso de falladas y marcadas</li>
-      <li>Racha, progreso y logros</li>
+      <li>Racha, meta diaria y logros</li>
       <li>Crea y comparte exámenes</li>
       <li>Letra grande, alto contraste y modo oscuro</li>
       <li>Lectura en voz alta</li>
@@ -112,6 +112,10 @@
       <label class="switch">
         <input type="checkbox" data-setting="motion" value="reduce">
         <span>Reducir animaciones</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" data-setting="combo" value="off">
+        <span>Ocultar los aciertos seguidos durante el examen</span>
       </label>
 
       <div class="dialog-actions">
@@ -190,6 +194,10 @@
         <div><dt>Dominadas</dt><dd class="stat-mastered"></dd></div>
         <div><dt>Logros</dt><dd class="stat-achievements"></dd></div>
       </dl>
+      <div class="goal">
+        <p class="goal-text"></p>
+        <i class="goal-bar" aria-hidden="true"></i>
+      </div>
     </section>
 
     <section class="practice" aria-labelledby="practice-title">
@@ -312,6 +320,7 @@
       <span class="counter" aria-live="polite"></span>
     </div>
     <div class="meter" aria-hidden="true"><div></div></div>
+    <p class="combo" hidden></p>
 
     <section class="question" aria-live="polite">
       <div class="question-head">
@@ -353,6 +362,8 @@
       <p class="score"></p>
       <p class="summary"></p>
       <p class="verdict" hidden></p>
+      <p class="result-combo" hidden></p>
+      <p class="result-goal" hidden></p>
       <section class="new-achievements" hidden>
         <h2></h2>
         <ul class="achievement-list"></ul>
@@ -479,6 +490,18 @@
         <div><dt>Mejor simulacro</dt><dd class="stat-mock"></dd><dd class="stat-note stat-mock-note"></dd></div>
       </dl>
       <p class="progress-hint">La racha cuenta los días seguidos en que respondes al menos una pregunta. Una pregunta está dominada si la acertaste la última vez que la respondiste.</p>
+
+      <section class="goal-section goal" aria-labelledby="goal-title">
+        <h2 id="goal-title">Meta diaria</h2>
+        <div class="segmented goal-options" role="radiogroup" aria-label="Preguntas por día">
+          <label><input type="radio" name="goal" value="10"><span>10 preguntas</span></label>
+          <label><input type="radio" name="goal" value="20"><span>20 preguntas</span></label>
+          <label><input type="radio" name="goal" value="30"><span>30 preguntas</span></label>
+        </div>
+        <p class="goal-text"></p>
+        <i class="goal-bar" aria-hidden="true"></i>
+        <p class="goal-days"></p>
+      </section>
 
       <h2>Por categoría</h2>
       <ul class="mastery-list"></ul>

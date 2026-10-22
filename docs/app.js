@@ -3,7 +3,7 @@
 // Static practice exam. Questions come from data/cards.json.
 
 const REPO_URL = "https://github.com/sauljabin/examen-de-nacionalidad-ecuatoriana";
-const DEFAULT_SETTINGS = { fontSize: "m", theme: "auto", spacing: "normal", contrast: "", motion: "" };
+const DEFAULT_SETTINGS = { fontSize: "m", theme: "auto", spacing: "normal", contrast: "", motion: "", combo: "" };
 
 const app = document.getElementById("app");
 const root = document.documentElement;
@@ -77,13 +77,16 @@ function askConfirm({ title, text, ok, cancel = "Cancelar" }) {
 // Kept only in this browser, by card id: questions answered wrong (missed),
 // questions the person marked (marked), saved exams (exams), the exam being
 // built (draft), the last result of each question (results), the days with
-// practice (days), totals (stats) and unlocked achievements (achievements).
+// practice (days), totals (stats), unlocked achievements (achievements), the
+// daily goal (goal), today's answers (today) and the days the goal was met
+// (goalDays).
 const progress = readProgress();
 
 function readProgress() {
   const empty = {
     missed: [], marked: [], exams: [], draft: { title: "", ids: [] },
     results: {}, days: [], stats: {}, achievements: {},
+    goal: 20, today: { day: "", count: 0 }, goalDays: [],
   };
   try {
     return { ...empty, ...JSON.parse(localStorage.getItem("progress") || "{}") };
@@ -676,6 +679,9 @@ function startExam(cards, { passMark, exit } = {}) {
   state.passMark = passMark;
   state.exit = exit || { back: showHome, label: "Volver al inicio" };
   state.startedAt = Date.now();
+  state.combo = 0;
+  state.bestCombo = 0;
+  state.goalJustMet = false;
   showCard();
 }
 
@@ -695,6 +701,10 @@ function showCard() {
   app.querySelector(".crumbs").textContent =
     [card.category, card.subcategory, card.topic].filter(Boolean).join(" › ");
   app.querySelector(".exam-bar").append(markButton(card));
+  const combo = app.querySelector(".combo");
+  combo.hidden = state.combo < 2;
+  combo.textContent = `🔥 ${state.combo} seguidas`;
+  combo.setAttribute("aria-label", `${state.combo} aciertos seguidos`);
   renderCardFace(card);
   // Start loading the answer photo now so it shows up right away on reveal.
   if (card.photo) new Image().src = card.photo.src;
@@ -936,6 +946,9 @@ function grade(knewIt) {
   setInList(progress.missed, card.id, !knewIt);
   if (hadMissed && !progress.missed.length) progress.stats.clearedMissed = true;
   recordAnswer(card, knewIt);
+  state.combo = knewIt ? state.combo + 1 : 0;
+  state.bestCombo = Math.max(state.bestCombo, state.combo);
+  progress.stats.bestCombo = Math.max(progress.stats.bestCombo || 0, state.bestCombo);
   state.index += 1;
   if (state.index < state.queue.length) showCard();
   else showResult();
@@ -973,7 +986,81 @@ function recordAnswer(card, right) {
   if (right) stats.right = (stats.right || 0) + 1;
   const today = todayKey();
   if (progress.days.at(-1) !== today) progress.days.push(today);
+  if (progress.today.day !== today) progress.today = { day: today, count: 0 };
+  progress.today.count += 1;
+  if (checkGoal()) state.goalJustMet = true;
   saveProgress();
+}
+
+function todayCount() {
+  return progress.today.day === todayKey() ? progress.today.count : 0;
+}
+
+// Marks today as a goal day once today's answers reach the goal; true the first time.
+function checkGoal() {
+  const today = todayKey();
+  if (todayCount() < progress.goal || progress.goalDays.includes(today)) return false;
+  progress.goalDays.push(today);
+  return true;
+}
+
+function renderGoal(container) {
+  const count = todayCount();
+  const met = count >= progress.goal;
+  container.querySelector(".goal-text").textContent = met
+    ? `¡Meta de hoy cumplida! Hoy respondiste ${plural(count, "pregunta", "preguntas")}.`
+    : `Meta de hoy: ${count} de ${progress.goal} preguntas.`;
+  const bar = container.querySelector(".goal-bar");
+  bar.style.setProperty("--ratio", Math.min(1, count / progress.goal));
+  bar.classList.toggle("is-met", met);
+}
+
+// Confetti in the flag colors. Skipped when the person or the system asks
+// for less motion.
+function celebrate() {
+  if (root.dataset.motion === "reduce" || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const canvas = document.createElement("canvas");
+  canvas.className = "confetti";
+  canvas.setAttribute("aria-hidden", "true");
+  document.body.append(canvas);
+  const ratio = window.devicePixelRatio || 1;
+  canvas.width = innerWidth * ratio;
+  canvas.height = innerHeight * ratio;
+  const context = canvas.getContext("2d");
+  context.scale(ratio, ratio);
+  const colors = ["#f2b705", "#0a4fa3", "#d0312d"];
+  const pieces = Array.from({ length: 140 }, (_, index) => ({
+    x: Math.random() * innerWidth,
+    y: -20 - Math.random() * innerHeight * 0.6,
+    width: 6 + Math.random() * 6,
+    height: 8 + Math.random() * 8,
+    speedX: (Math.random() - 0.5) * 2,
+    speedY: 2 + Math.random() * 3,
+    angle: Math.random() * Math.PI,
+    spin: (Math.random() - 0.5) * 0.3,
+    color: colors[index % colors.length],
+  }));
+  const start = performance.now();
+  const frame = (now) => {
+    const elapsed = now - start;
+    context.clearRect(0, 0, innerWidth, innerHeight);
+    context.globalAlpha = Math.max(0, 1 - Math.max(0, elapsed - 2000) / 800);
+    for (const piece of pieces) {
+      piece.x += piece.speedX;
+      piece.y += piece.speedY;
+      piece.speedY += 0.05;
+      piece.angle += piece.spin;
+      context.save();
+      context.translate(piece.x, piece.y);
+      context.rotate(piece.angle);
+      context.fillStyle = piece.color;
+      context.fillRect(-piece.width / 2, -piece.height / 2, piece.width, piece.height);
+      context.restore();
+    }
+    if (elapsed < 2800) requestAnimationFrame(frame);
+    else canvas.remove();
+  };
+  requestAnimationFrame(frame);
 }
 
 function recordExam(right) {
@@ -1028,6 +1115,14 @@ const ACHIEVEMENTS = [
   { id: "mock-perfect", title: "Simulacro perfecto", text: `Acierta las ${MOCK_SIZE} preguntas de un simulacro.`, test: (s) => s.bestMock >= MOCK_SIZE },
   { id: "symbols-mastered", title: "Símbolos dominados", text: "Domina todas las preguntas de Símbolos Patrios.", test: (s) => s.symbolsMastered },
   { id: "half-mastered", title: "Mitad del camino", text: "Domina la mitad de todas las preguntas.", test: (s) => s.mastered * 2 >= s.total },
+  { id: "combo-10", title: "Diez seguidas", text: "Acierta 10 preguntas seguidas en un examen.", test: (s) => s.bestCombo >= 10 },
+  { id: "combo-25", title: "Veinticinco seguidas", text: "Acierta 25 preguntas seguidas en un examen.", test: (s) => s.bestCombo >= 25 },
+  { id: "goal-1", title: "Meta cumplida", text: "Cumple tu meta diaria.", test: (s) => s.goalDays >= 1 },
+  { id: "goal-7", title: "Siete metas", text: "Cumple tu meta diaria en 7 días distintos.", test: (s) => s.goalDays >= 7 },
+  { id: "streak-30", title: "Un mes seguido", text: "Practica 30 días seguidos.", test: (s) => s.bestStreak >= 30 },
+  { id: "mocks-5", title: "Cinco aprobados", text: "Aprueba 5 simulacros.", test: (s) => s.mocksPassed >= 5 },
+  { id: "own-exam", title: "Examen propio", text: "Guarda tu primer examen en «Mis exámenes».", test: (s) => s.savedExams >= 1 },
+  { id: "all-mastered", title: "Todo dominado", text: "Domina todas las preguntas.", test: (s) => s.mastered >= s.total },
 ];
 
 function progressSnapshot() {
@@ -1045,6 +1140,9 @@ function progressSnapshot() {
     symbolsMastered: Boolean(symbolsMastery && symbolsMastery.right === symbolsMastery.total),
     mastered: mastery(state.allCards).right,
     total: state.allCards.length,
+    bestCombo: stats.bestCombo || 0,
+    goalDays: progress.goalDays.length,
+    savedExams: progress.exams.length,
   };
 }
 
@@ -1087,6 +1185,7 @@ function renderNewAchievements(items) {
 }
 
 function updateProgressSummary() {
+  renderGoal(app.querySelector(".progress-summary"));
   const { current } = streaks();
   const mastered = mastery(state.allCards).right;
   const unlocked = Object.keys(progress.achievements).length;
@@ -1125,6 +1224,25 @@ function showProgress() {
     ? `Aprobaste ${stats.mocksPassed || 0} de ${plural(stats.mocks, "simulacro", "simulacros")}.`
     : "Todavía no haces ningún simulacro.";
 
+  const goalSection = app.querySelector(".goal-section");
+  for (const input of goalSection.querySelectorAll("input")) {
+    input.checked = Number(input.value) === progress.goal;
+    input.addEventListener("change", () => {
+      progress.goal = Number(input.value);
+      checkGoal();
+      saveProgress();
+      renderGoal(goalSection);
+      updateGoalDays();
+    });
+  }
+  const updateGoalDays = () => {
+    goalSection.querySelector(".goal-days").textContent = progress.goalDays.length
+      ? `La cumpliste ${plural(progress.goalDays.length, "día", "días")}.`
+      : "Todavía no la cumples ningún día.";
+  };
+  renderGoal(goalSection);
+  updateGoalDays();
+
   app.querySelector(".mastery-list").replaceChildren(...state.categories.map((category) => {
     const result = mastery(categoryCards(category));
     const item = document.createElement("li");
@@ -1152,7 +1270,7 @@ function showProgress() {
       text: "Se borrarán la racha, las estadísticas, lo que dominas y los logros de este dispositivo. Tus falladas, marcadas y exámenes se mantienen.",
       ok: "Borrar",
     }))) return;
-    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {} });
+    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [] });
     saveProgress();
     showProgress();
   });
@@ -1184,7 +1302,20 @@ function showResult() {
       : `No aprobado: se necesitan ${state.passMark} aciertos y te ${state.passMark - right === 1 ? "faltó" : "faltaron"} ${state.passMark - right}.`;
   }
   recordExam(right);
-  renderNewAchievements(unlockAchievements());
+  const combo = app.querySelector(".result-combo");
+  if (state.bestCombo >= 2) {
+    combo.hidden = false;
+    combo.textContent = `Mejor serie: ${state.bestCombo} aciertos seguidos.`;
+  }
+  if (state.goalJustMet) {
+    const goal = app.querySelector(".result-goal");
+    goal.hidden = false;
+    goal.textContent = `¡Cumpliste tu meta de hoy: ${progress.goal} preguntas!`;
+  }
+  const unlocked = unlockAchievements();
+  renderNewAchievements(unlocked);
+  const passed = state.passMark ? right >= state.passMark : total >= 10 && right / total >= 0.9;
+  if (passed || unlocked.length || state.goalJustMet) celebrate();
 
   const byCategory = new Map();
   for (const card of state.queue) {
