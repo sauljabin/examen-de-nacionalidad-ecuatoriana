@@ -409,6 +409,104 @@
      ]
     },
     {
+     "id": "partes-de-la-bandera-nacional",
+     "title": "Partes de la Bandera Nacional",
+     "cards": [
+      {
+       "id": "bandera-amarilla",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte de la bandera?"
+        }
+       ],
+       "image": {
+        "src": "images/bandera-amarilla.svg",
+        "width": 960,
+        "height": 480,
+        "blocks": [
+         {
+          "x": 0.5833333333333334,
+          "y": 0.24375,
+          "width": 0.4041666666666667,
+          "height": 0.22916666666666666,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "bandera-azul",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte de la bandera?"
+        }
+       ],
+       "image": {
+        "src": "images/bandera-azul.svg",
+        "width": 960,
+        "height": 480,
+        "blocks": [
+         {
+          "x": 0.5833333333333334,
+          "y": 0.5166666666666667,
+          "width": 0.4041666666666667,
+          "height": 0.09583333333333334,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "bandera-roja",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte de la bandera?"
+        }
+       ],
+       "image": {
+        "src": "images/bandera-roja.svg",
+        "width": 960,
+        "height": 480,
+        "blocks": [
+         {
+          "x": 0.5833333333333334,
+          "y": 0.6875,
+          "width": 0.4041666666666667,
+          "height": 0.29583333333333334,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "bandera-escudo",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte de la bandera?"
+        }
+       ],
+       "image": {
+        "src": "images/bandera-escudo.svg",
+        "width": 960,
+        "height": 480,
+        "blocks": [
+         {
+          "x": 0.5833333333333334,
+          "y": 0.3958333333333333,
+          "width": 0.4041666666666667,
+          "height": 0.22916666666666666,
+          "active": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
      "id": "himno-nacional",
      "title": "Himno Nacional",
      "cards": [
