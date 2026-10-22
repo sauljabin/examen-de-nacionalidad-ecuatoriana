@@ -470,9 +470,11 @@ select {
 .photo { margin: 1rem 0 0; }
 .photo img {
   display: block;
-  width: 100%;
+  /* Keep the whole photo visible: tall photos get narrower, never cropped. */
+  width: auto;
+  max-width: 100%;
+  height: auto;
   max-height: 24rem;
-  object-fit: cover;
   border: 2px solid var(--line-strong);
   border-radius: 10px;
   background: var(--sunken);
