@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Examen de Nacionalización Ecuatoriana</title>
+  <meta name="description" content="Preguntas de práctica para el examen de nacionalización ecuatoriana. Proyecto con fines exclusivamente pedagógicos.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3'><rect width='3' height='1.5' fill='%23ffd100'/><rect y='1.5' width='3' height='.75' fill='%23034ea2'/><rect y='2.25' width='3' height='.75' fill='%23ed1c24'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved accessibility settings before the first paint.
+    try {
+      const saved = JSON.parse(localStorage.getItem("settings") || "{}");
+      for (const [key, value] of Object.entries(saved)) {
+        document.documentElement.dataset[key] = value;
+      }
+    } catch {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Saltar al contenido</a>
+
+  <header class="topbar">
+    <a class="brand" href="./">
+      <span class="flag" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Examen de <strong>Nacionalización</strong></span>
+    </a>
+    <button id="open-settings" class="ghost" type="button" aria-haspopup="dialog">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
+      <span>Accesibilidad</span>
+    </button>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <p class="loading">Cargando preguntas…</p>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Proyecto <strong>completamente gratuito</strong> y con <strong>fines exclusivamente pedagógicos</strong>. No es material oficial del Estado ecuatoriano.
+      Información oficial: <a href="https://www.gob.ec/mremh/tramites/obtencion-nacionalidad-ecuatoriana-carta-naturalizacion" rel="noopener">gob.ec</a>.
+    </p>
+    <p class="footer-links">
+      <a id="report-link" rel="noopener" target="_blank">Reportar un error</a>
+      <a id="suggest-link" rel="noopener" target="_blank">Proponer una pregunta</a>
+      <a id="repo-link" rel="noopener" target="_blank">Código en GitHub</a>
+    </p>
+  </footer>
+
+  <dialog id="settings" aria-labelledby="settings-title">
+    <form method="dialog">
+      <h2 id="settings-title">Accesibilidad</h2>
+
+      <fieldset>
+        <legend>Tamaño de la letra</legend>
+        <div class="segmented" data-setting="fontSize">
+          <label><input type="radio" name="fontSize" value="s"><span style="font-size:.85rem">A</span></label>
+          <label><input type="radio" name="fontSize" value="m"><span>A</span></label>
+          <label><input type="radio" name="fontSize" value="l"><span style="font-size:1.2rem">A</span></label>
+          <label><input type="radio" name="fontSize" value="xl"><span style="font-size:1.4rem">A</span></label>
+          <label><input type="radio" name="fontSize" value="xxl"><span style="font-size:1.6rem">A</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tema</legend>
+        <div class="segmented" data-setting="theme">
+          <label><input type="radio" name="theme" value="auto"><span>Automático</span></label>
+          <label><input type="radio" name="theme" value="light"><span>Claro</span></label>
+          <label><input type="radio" name="theme" value="dark"><span>Oscuro</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Espacio entre líneas</legend>
+        <div class="segmented" data-setting="spacing">
+          <label><input type="radio" name="spacing" value="normal"><span>Normal</span></label>
+          <label><input type="radio" name="spacing" value="wide"><span>Amplio</span></label>
+        </div>
+      </fieldset>
+
+      <label class="switch">
+        <input type="checkbox" data-setting="contrast" value="high">
+        <span>Alto contraste</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" data-setting="motion" value="reduce">
+        <span>Reducir animaciones</span>
+      </label>
+
+      <div class="dialog-actions">
+        <button class="ghost" type="button" id="reset-settings">Restablecer</button>
+        <button class="primary" value="close">Listo</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="exit-dialog" aria-labelledby="exit-title">
+    <form method="dialog">
+      <h2 id="exit-title">¿Salir del examen?</h2>
+      <p>Se perderá el progreso de este intento.</p>
+      <div class="dialog-actions">
+        <button class="ghost" value="stay">Seguir respondiendo</button>
+        <button class="danger" value="exit">Salir</button>
+      </div>
+    </form>
+  </dialog>
+
+  <template id="home-template">
+    <section class="hero">
+      <p class="eyebrow">Práctica de estudio</p>
+      <h1>Prepárate para el examen de nacionalización ecuatoriana</h1>
+      <p class="lead">Elige los temas, lee cada pregunta, piensa tu respuesta y compárala con la correcta. Al final verás cuánto sabes y qué te conviene repasar.</p>
+      <p class="free">Completamente gratuito · sin registro · sin publicidad</p>
+    </section>
+
+    <div class="toolbar">
+      <h2>Temas</h2>
+      <div>
+        <button class="link" type="button" data-select="all">Marcar todo</button>
+        <button class="link" type="button" data-select="none">Desmarcar todo</button>
+      </div>
+    </div>
+    <div id="categories" class="categories"></div>
+
+    <section class="start-panel" aria-label="Opciones del examen">
+      <label class="field">
+        <span>Preguntas</span>
+        <select id="question-count">
+          <option value="10">10</option>
+          <option value="20" selected>20</option>
+          <option value="50">50</option>
+          <option value="all">Todas</option>
+        </select>
+      </label>
+      <label class="check">
+        <input id="shuffle" type="checkbox" checked>
+        <span>Orden aleatorio</span>
+      </label>
+      <button id="start" class="primary big" type="button"></button>
+    </section>
+  </template>
+
+  <template id="category-template">
+    <article class="category">
+      <header>
+        <label class="category-title">
+          <input type="checkbox" class="category-check">
+          <span class="index" aria-hidden="true"></span>
+          <span class="name"></span>
+        </label>
+        <span class="count"></span>
+      </header>
+      <div class="chips"></div>
+    </article>
+  </template>
+
+  <template id="card-template">
+    <div class="exam-bar">
+      <button class="ghost exit" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        Salir
+      </button>
+      <span class="counter" aria-live="polite"></span>
+    </div>
+    <div class="meter" aria-hidden="true"><div></div></div>
+
+    <section class="question" aria-live="polite">
+      <p class="crumbs"></p>
+      <div class="front"></div>
+      <div class="answer" hidden>
+        <p class="answer-label">Respuesta</p>
+        <div class="back"></div>
+      </div>
+    </section>
+
+    <div class="actions">
+      <button class="primary big reveal" type="button">
+        Ver respuesta <kbd>Espacio</kbd>
+      </button>
+      <div class="grade" hidden>
+        <p class="grade-label">¿Acertaste?</p>
+        <button class="wrong" type="button">No <kbd>1</kbd></button>
+        <button class="right" type="button">Sí <kbd>2</kbd></button>
+      </div>
+      <a class="report" target="_blank" rel="noopener">Reportar un error en esta pregunta</a>
+    </div>
+  </template>
+
+  <template id="result-template">
+    <section class="result">
+      <p class="eyebrow">Resultado</p>
+      <p class="score"></p>
+      <p class="summary"></p>
+      <ul class="breakdown"></ul>
+      <div class="result-actions">
+        <button class="primary big retry-missed" type="button">Repasar las falladas</button>
+        <button class="ghost big restart" type="button">Volver al inicio</button>
+      </div>
+      <h2 class="missed-title">Preguntas falladas</h2>
+      <ol class="missed"></ol>
+    </section>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

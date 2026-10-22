@@ -1,0 +1,15 @@
+name: Sugerir una mejora
+description: Una idea para que la página sea más útil o más fácil de usar.
+title: "[Mejora] "
+labels: ["mejora"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: ¿Qué te gustaría?
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: ¿Por qué sería útil?

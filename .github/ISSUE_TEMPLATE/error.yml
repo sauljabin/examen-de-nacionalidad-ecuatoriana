@@ -1,0 +1,38 @@
+name: Reportar un error
+description: Una pregunta o respuesta incorrecta, o algo de la página que no funciona.
+title: "[Error] "
+labels: ["error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar el material. Si el error está en una pregunta, el botón «Reportar un error en esta pregunta» de la página rellena el primer campo por ti.
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: Pregunta o parte de la página
+      description: Copia la pregunta afectada o describe dónde está el problema.
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué está mal?
+      description: Explica el error. Si es un fallo de la página, di qué hiciste y qué esperabas que pasara.
+    validations:
+      required: true
+  - type: textarea
+    id: correccion
+    attributes:
+      label: Corrección propuesta
+      description: ¿Cuál sería el dato o el comportamiento correcto?
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente
+      description: Un enlace o referencia que respalde la corrección (por ejemplo, gob.ec o la Constitución).
+  - type: input
+    id: dispositivo
+    attributes:
+      label: Dispositivo y navegador
+      description: Solo si es un fallo de la página. Por ejemplo, «iPhone 15, Safari» o «Windows, Chrome».

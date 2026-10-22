@@ -1,0 +1,40 @@
+name: Proponer una pregunta
+description: Sugiere una pregunta nueva para incluir en el examen de práctica.
+title: "[Pregunta] "
+labels: ["incluir pregunta"]
+body:
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoría
+      options:
+        - Símbolos Patrios
+        - Geografía
+        - Historia
+        - Política
+        - Cultura
+        - Otra
+    validations:
+      required: true
+  - type: input
+    id: subcategoria
+    attributes:
+      label: Subcategoría
+      description: Por ejemplo, «Volcanes» o «Presidentes». Puede ser una nueva.
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: Pregunta
+    validations:
+      required: true
+  - type: textarea
+    id: respuesta
+    attributes:
+      label: Respuesta
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente
+      description: Un enlace o referencia que respalde la respuesta.
