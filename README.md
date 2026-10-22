@@ -33,7 +33,7 @@ La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible]
 
 | Tipo | Cómo se ve |
 |---|---|
-| Pregunta y respuesta | La respuesta aparece debajo de la pregunta. |
+| Pregunta y respuesta | La respuesta aparece debajo de la pregunta. En lugares emblemáticos, lagos, pintura y artes plásticas, también aparece una foto. |
 | Texto con huecos | Cada parte oculta se ve como `?` y se completa al revelarla. |
 | Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, la capital de una provincia en el mapa) y desaparece al revelarla. |
 
@@ -79,4 +79,4 @@ En el repositorio de GitHub: **Settings → Pages → Build and deployment**, el
 
 Dedicado al dominio público con [CC0 1.0 Universal](LICENSE): puedes copiar, modificar y distribuir el código y el contenido sin pedir permiso ni dar crédito.
 
-Algunas imágenes se basan en obras de terceros (por ejemplo, los mapas y el Escudo Nacional de Wikimedia Commons). Los símbolos patrios pertenecen al Estado ecuatoriano y la ley regula su uso. La dedicación CC0 solo cubre lo que es obra de los autores de este proyecto.
+Algunas imágenes se basan en obras de terceros (por ejemplo, los mapas y el Escudo Nacional de Wikimedia Commons). Las fotos que aparecen con las respuestas son de Wikimedia Commons y conservan su propia licencia (CC0, CC BY, CC BY-SA o dominio público); el autor, la licencia y el enlace al original se muestran bajo cada foto. Los símbolos patrios pertenecen al Estado ecuatoriano y la ley regula su uso. La dedicación CC0 solo cubre lo que es obra de los autores de este proyecto.

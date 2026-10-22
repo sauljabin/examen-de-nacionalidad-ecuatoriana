@@ -467,6 +467,25 @@ select {
 }
 .back { font-size: clamp(1.1rem, 2.6vw, 1.3rem); font-weight: 700; white-space: pre-wrap; }
 
+.photo { margin: 1rem 0 0; }
+.photo img {
+  display: block;
+  width: 100%;
+  max-height: 24rem;
+  object-fit: cover;
+  border: 2px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--sunken);
+}
+.photo figcaption {
+  margin-top: .4rem;
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 400;
+  white-space: normal;
+}
+.missed .photo img { max-height: 14rem; }
+
 .cloze {
   display: inline-block;
   min-width: 3.5em;
@@ -637,7 +656,7 @@ legend { margin-bottom: .45rem; font-weight: 700; }
 @media (max-width: 40rem) {
   #open-settings span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .brand { font-size: .95rem; }
-  .brand strong { font-size: min(1.15rem, 5.5vw); }
+  .brand strong { font-size: min(1.15rem, 5.5vw); white-space: nowrap; hyphens: none; }
   .topbar, main { padding-left: 1rem; padding-right: 1rem; }
   .question { padding: 1.1rem; box-shadow: 4px 4px 0 var(--accent); }
   .breakdown li { grid-template-columns: 7rem 1fr auto; }

@@ -155,6 +155,23 @@ function renderImage(image, { revealed }) {
   return figure;
 }
 
+function renderPhoto(photo) {
+  const figure = document.createElement("figure");
+  figure.className = "photo";
+  const img = document.createElement("img");
+  img.src = photo.src;
+  img.alt = photo.alt;
+  const caption = document.createElement("figcaption");
+  const source = document.createElement("a");
+  source.href = photo.url;
+  source.target = "_blank";
+  source.rel = "noopener";
+  source.textContent = "Wikimedia Commons";
+  caption.append(`${photo.alt}. Foto: ${photo.credit} · ${photo.license} · `, source);
+  figure.append(img, caption);
+  return figure;
+}
+
 function cardSummary(card) {
   const text = plainText(card.front).replace(/\s+/g, " ").trim();
   return card.type === "image" ? `${text} (imagen de ${card.subcategory})` : text;
@@ -282,6 +299,8 @@ function showCard() {
   app.querySelector(".crumbs").textContent =
     [card.category, card.subcategory, card.topic].filter(Boolean).join(" › ");
   renderCardFace(card);
+  // Start loading the answer photo now so it shows up right away on reveal.
+  if (card.photo) new Image().src = card.photo.src;
   app.querySelector(".report").href = issueUrl("error.yml", {
     title: `[Error] ${cardSummary(card).slice(0, 70)}`,
     pregunta: `${cardSummary(card)}\n\nID: ${card.id}`,
@@ -309,6 +328,7 @@ function renderCardFace(card) {
   if (card.image) front.append(renderImage(card.image, { revealed }));
   if (card.type === "basic" && revealed) {
     app.querySelector(".back").replaceChildren(renderSegments(card.back, { revealCloze: true }));
+    if (card.photo) app.querySelector(".back").after(renderPhoto(card.photo));
     app.querySelector(".answer").hidden = false;
   }
 }
@@ -403,6 +423,7 @@ function showResult() {
       answer.append(renderSegments(card.back, { revealCloze: true }));
       item.append(answer);
     }
+    if (card.photo) item.append(renderPhoto(card.photo));
     list.append(item);
   }
   app.focus();

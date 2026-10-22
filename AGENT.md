@@ -53,6 +53,7 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
 - Los `id` de categoría y subcategoría son el título en minúsculas, sin tildes y con guiones (`simbolos-patrios`).
 - Los `id` de tarjeta deben ser únicos; aparecen en los reportes de error. Para una tarjeta nueva, usa cualquier cadena única.
 - `type: "basic"` necesita `front` y `back`. `type: "cloze"` necesita al menos un segmento con `cloze: true`. `type: "image"` necesita `image` con exactamente un bloque `active: true`, que es el que se revela, y un `front` con el enunciado (por ejemplo, «¿Cuál es la capital de esta provincia?»): sin él no se entiende qué se pregunta.
+- `photo` (opcional) es una foto que aparece al revelar la respuesta: `{"src", "alt", "credit", "license", "url"}`. `url` es la página del archivo en Wikimedia Commons y `credit` es el autor; la página muestra los dos bajo la foto.
 - `color` admite `red`, `orange`, `yellow`, `green`, `purple`, `blue`, `gray`, `brown` y `pink`.
 - Después de editar, comprueba que el JSON es válido: `python3 -m json.tool docs/data/cards.json > /dev/null`.
 
@@ -68,4 +69,5 @@ python3 -m http.server 8000 --directory docs
 - Usa solo rutas relativas en `docs/`: GitHub Pages sirve el sitio bajo `/<repo>/`.
 - La página debe funcionar en escritorio y en teléfonos (desde 360 px de ancho), con todos los tamaños de letra y sin desplazamiento horizontal. Pruébala en modo móvil con la letra más grande.
 - Accesibilidad: las preferencias se guardan como atributos `data-*` en `<html>` (`data-font-size`, `data-theme`, `data-spacing`, `data-contrast`, `data-motion`) y en `localStorage`. Usa unidades `rem` para que el tamaño de letra escale todo. Todo debe poder usarse con teclado.
+- Fotos de las respuestas: usa solo imágenes con licencia libre de Wikimedia Commons (CC0, CC BY, CC BY-SA o dominio público) y guarda siempre autor, licencia y enlace en `photo`. No uses fotos de obras de arte cuyo autor murió hace menos de 70 años (por ejemplo, Guayasamín, Kingman o Egas): la licencia de la foto no cubre la obra. En esos casos usa un retrato del artista o no pongas foto. Guárdalas en `docs/images/foto-<tema>.jpg`, de 900 px de lado como máximo.
 - El estilo debe ser propio y no imitar a otras aplicaciones de tarjetas de estudio.

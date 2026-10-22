@@ -5262,7 +5262,14 @@
         {
          "text": "Imbabura."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-yahuarcocha.jpg",
+        "alt": "Laguna de Yahuarcocha, Imbabura",
+        "credit": "Sylvain2803",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Yahuarcocha2.JPG"
+       }
       },
       {
        "id": "mwnV0hcKeEZrWBc4H.f",
@@ -5276,7 +5283,14 @@
         {
          "text": "Imbabura."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-san-pablo.jpg",
+        "alt": "Lago San Pablo, Imbabura",
+        "credit": "Diego Tirira from Quito, Ecuador",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:I_Lago_San_Pablo_1102_(3)_(17107936850).jpg"
+       }
       },
       {
        "id": "e40e2TNPbiMQBbQq2.f",
@@ -5290,7 +5304,14 @@
         {
          "text": "Imbabura."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-cuicocha.jpg",
+        "alt": "Laguna de Cuicocha, Imbabura",
+        "credit": "Ymblanter",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Laguna_Cuicocha_seen_from_the_visitor_center_02.jpg"
+       }
       },
       {
        "id": "5xINYGasEcuA7vQZX.f",
@@ -5304,7 +5325,14 @@
         {
          "text": "Cotopaxi."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-quilotoa.jpg",
+        "alt": "Laguna del Quilotoa, Cotopaxi",
+        "credit": "Annom",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Panorama_quilotoa_crater_lake_ecuador.jpg"
+       }
       }
      ]
     }
@@ -8436,7 +8464,14 @@
         {
          "text": "Quito."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mitad-del-mundo.jpg",
+        "alt": "Monumento a la Mitad del Mundo, Quito",
+        "credit": "Kaldari",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mitad_del_Mundo_01.jpg"
+       }
       },
       {
        "id": "nqSIqVgYhdy1dKw7o.f",
@@ -8457,7 +8492,14 @@
         {
          "text": "Cañar."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-ingapirca.jpg",
+        "alt": "Complejo arqueológico de Ingapirca, Cañar",
+        "credit": "Delphine Ménard",
+        "license": "CC BY-SA 2.0 fr",
+        "url": "https://commons.wikimedia.org/wiki/File:Ecuador_ingapirca_inca_ruins.jpg"
+       }
       },
       {
        "id": "2Ln1YQFoaspNhUJ1L.f",
@@ -8471,7 +8513,14 @@
         {
          "text": "Guayaquil."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-malecon-2000.jpg",
+        "alt": "Malecón 2000, Guayaquil",
+        "credit": "Freddy eduardo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Vista_del_Malec%C3%B3n_2000.jpg"
+       }
       },
       {
        "id": "P1d87FVShM0IppcbY.f",
@@ -8492,7 +8541,14 @@
         {
          "text": "Guayaquil."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-rotonda.jpg",
+        "alt": "Hemiciclo de la Rotonda, Guayaquil",
+        "credit": "Freddy eduardo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Hemiciclo_de_la_Rotonda_en_Guayaquil.jpg"
+       }
       },
       {
        "id": "YS8OjS20sDbjEJ99x.f",
@@ -8541,7 +8597,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-virgen-panecillo.jpg",
+        "alt": "Virgen de Quito en la cima del Panecillo",
+        "credit": "Diego Tirira from Quito, Ecuador",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:P_Quito-PA_(30)_(17198014690).jpg"
+       }
       },
       {
        "id": "4Yj5Jp6DJKi8VxFNc.f",
@@ -8562,7 +8625,14 @@
         {
          "text": "Plaza Grande."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-plaza-grande.jpg",
+        "alt": "Plaza Grande, Quito",
+        "credit": "Ángel M. Felicísimo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Plaza_Grande_-_Quito.jpg"
+       }
       },
       {
        "id": "AFK2jWjH4AQuG1IBh.f",
@@ -8583,7 +8653,14 @@
         {
          "text": ", conocido también como Monumento a los Héroes del 10 de agosto de 1809."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-monumento-independencia.jpg",
+        "alt": "Monumento a los Héroes de la Independencia, Plaza Grande de Quito",
+        "credit": "H3kt0r",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Monumento_a_los_H%C3%A9roes_del_10_de_Agosto_de_1809_(Quito_DM).jpg"
+       }
       },
       {
        "id": "OUSU5LyLHD8T92YWg.f",
@@ -8604,7 +8681,14 @@
         {
          "text": " es la sede del Gobierno y residencia oficial del presidente de la República del Ecuador, ubicado en el centro histórico de la ciudad capital de Quito."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-carondelet.jpg",
+        "alt": "Palacio de Carondelet, Quito",
+        "credit": "MartínGonzález 2396",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Vista_Externa_del_Palacio_de_Carondelet.JPG"
+       }
       },
       {
        "id": "UTKOrhTakTtWW4GBC.f",
@@ -8622,7 +8706,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-compania.jpg",
+        "alt": "Iglesia de la Compañía de Jesús, Quito",
+        "credit": "Ranoutofusername",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
+       }
       },
       {
        "id": "Pu7SpRJUi5aGpsO39.f",
@@ -8650,7 +8741,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-compania.jpg",
+        "alt": "Iglesia de la Compañía de Jesús, Quito",
+        "credit": "Ranoutofusername",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
+       }
       },
       {
        "id": "kWAwPUVBLsOnCWG7B.f",
@@ -8664,7 +8762,14 @@
         {
          "text": "La Iglesia de la Compañía de Jesús."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-compania.jpg",
+        "alt": "Iglesia de la Compañía de Jesús, Quito",
+        "credit": "Ranoutofusername",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
+       }
       },
       {
        "id": "uzOkhM8aaV8nJYRhq.f",
@@ -8689,7 +8794,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-compania.jpg",
+        "alt": "Iglesia de la Compañía de Jesús, Quito",
+        "credit": "Ranoutofusername",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
+       }
       },
       {
        "id": "G1DtVEp9Q7rkVqmrV.f",
@@ -8717,7 +8829,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-catedral-quito.jpg",
+        "alt": "Catedral Metropolitana de Quito",
+        "credit": "Ángel M. Felicísimo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Metropolitan_Cathedral_of_Quito.jpg"
+       }
       },
       {
        "id": "kMyMtfeujWqaIjPOW.f",
@@ -8738,7 +8857,14 @@
         {
          "text": "Frente a la Plaza San Francisco."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-san-francisco.jpg",
+        "alt": "Iglesia y convento de San Francisco, Quito",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco,_Quito,_Ecuador,_2015-07-22,_DD_154.JPG"
+       }
       },
       {
        "id": "atpt98EN423AlwnQE.f",
@@ -8759,7 +8885,14 @@
         {
          "text": "El estilo barroco quiteño."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-san-francisco.jpg",
+        "alt": "Iglesia y convento de San Francisco, Quito",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco,_Quito,_Ecuador,_2015-07-22,_DD_154.JPG"
+       }
       },
       {
        "id": "RRqAvUMjXOv09e76I.f",
@@ -8773,7 +8906,14 @@
         {
          "text": "Iglesia y Convento de San Francisco."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-san-francisco.jpg",
+        "alt": "Iglesia y convento de San Francisco, Quito",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco,_Quito,_Ecuador,_2015-07-22,_DD_154.JPG"
+       }
       },
       {
        "id": "9FIPSRTKotfea53g2.f",
@@ -8794,7 +8934,14 @@
         {
          "text": "Neogótico."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-voto-nacional.jpg",
+        "alt": "Basílica del Voto Nacional, Quito",
+        "credit": "Samuelistok",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:El_Voto_Nacional_._Quito,_Ecuador.JPG"
+       }
       },
       {
        "id": "DZiqi16QVfMoqeF6Q.f",
@@ -8812,7 +8959,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-voto-nacional.jpg",
+        "alt": "Basílica del Voto Nacional, Quito",
+        "credit": "Samuelistok",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:El_Voto_Nacional_._Quito,_Ecuador.JPG"
+       }
       },
       {
        "id": "5FdHQyyhUiCYipDmP.f",
@@ -8830,7 +8984,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-san-gabriel.jpg",
+        "alt": "Capilla del Milagro de La Dolorosa, en el Colegio San Gabriel de Quito",
+        "credit": "H3kt0r",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Capilla_del_Milagro_de_La_Dolorosa_(Quito).jpg"
+       }
       },
       {
        "id": "qoblqtw1tz8Nz092D.f",
@@ -8851,7 +9012,14 @@
         {
          "text": "Barroco"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-la-merced.jpg",
+        "alt": "Iglesia de La Merced, Quito",
+        "credit": "Shoestring (Wikitravel)",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Convento_La_Merced,_Quito,_Ecuador.JPG"
+       }
       },
       {
        "id": "Su2b6jBtzX5awOqg2.f",
@@ -8872,7 +9040,14 @@
         {
          "text": "Barroco"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-sagrario.jpg",
+        "alt": "Iglesia de El Sagrario, Quito",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_El_Sagrario,_Quito,_Ecuador,_2015-07-22,_DD_101.JPG"
+       }
       },
       {
        "id": "jLvzdUqCxxX2DjAcb.f",
@@ -8904,7 +9079,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-centro-historico.jpg",
+        "alt": "Centro Histórico de Quito de noche",
+        "credit": "Carlos Costales Terán",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Quito_Centro_Hist%C3%B3rico.JPG"
+       }
       }
      ]
     },
@@ -8924,7 +9106,14 @@
         {
          "text": "Bernardo de Legarda."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-virgen-legarda.jpg",
+        "alt": "Virgen de Quito, según el modelo de Bernardo de Legarda",
+        "credit": "FA2010",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Ecuador_Hausaltar_mit_Virgen_de_Quito_02_EthnM.jpg"
+       }
       },
       {
        "id": "ZTJYRRpK3NQjG2992.f",
@@ -8938,7 +9127,14 @@
         {
          "text": "Miguel de Santiago."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-miguel-de-santiago.jpg",
+        "alt": "Retrato de Miguel de Santiago",
+        "credit": "J. Garcés R.",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguel_de_Santiago.jpg"
+       }
       },
       {
        "id": "z3UkJqbgSOr42JJqH.f",
@@ -8952,7 +9148,14 @@
         {
          "text": "La Sábana Santa."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
       },
       {
        "id": "ZswCVhrzYl9xpe6BN.f",
@@ -8966,7 +9169,14 @@
         {
          "text": "Manuel Chili Caspicara"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
       },
       {
        "id": "qAZocN43aVynERW1Z.f",
@@ -8987,7 +9197,14 @@
         {
          "text": "Caspicara, porque en kichwa caspi significa \"madera\" y cara \"corteza\", aludiendo a su \"cara de madera\" o \"cara de palo\""
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
       },
       {
        "id": "HA8tMvUIXus5Q8hN0.f",
@@ -9005,7 +9222,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
       },
       {
        "id": "Pzz24qDeiDyLExriM.f",
@@ -9026,7 +9250,14 @@
         {
          "text": " es el conjunto de expresiones arquitectónicas, pictóricas y escultóricas desarrolladas en Quito entre mediados del siglo XVII y fines del XVIII, que adaptó el barroco europeo a la realidad andina."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-compania.jpg",
+        "alt": "Iglesia de la Compañía de Jesús, Quito",
+        "credit": "Ranoutofusername",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
+       }
       },
       {
        "id": "SnTsu8U2fZKifKtGD.f",
@@ -9040,7 +9271,14 @@
         {
          "text": "Madera policromada y estofada en pan de oro."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
       },
       {
        "id": "LtNPjwibVLtxkG7xy.f",
@@ -9054,7 +9292,14 @@
         {
          "text": "La Escuela quiteña es como se llamó al conjunto de manifestaciones artísticas y de artistas que se desarrolló en el territorio de la Real Audiencia de Quito durante los siglos XVI al XVIII."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
       },
       {
        "id": "XnvxIJBZluLkB6xm8.f",
@@ -9068,7 +9313,14 @@
         {
          "text": "Se llama encarnado."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
       },
       {
        "id": "IAtEUi14RhT2gB9Rt.f",
@@ -9082,7 +9334,14 @@
         {
          "text": "Estofado."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
       },
       {
        "id": "cmME9bgsyu7QQOyex.f",
@@ -9096,7 +9355,14 @@
         {
          "text": "Barroco."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
       },
       {
        "id": "3T1YYXZ10Pd5xESI4.f",
@@ -9110,7 +9376,14 @@
         {
          "text": "Barroco."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
       },
       {
        "id": "zWSVizNZ91ZvGVhRA.f",
@@ -9124,7 +9397,14 @@
         {
          "text": "Inclusión de rostros mestizos e indígenas junto a símbolos cristianos"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
       },
       {
        "id": "scYQg0oIedVS0bPh9.f",
@@ -9145,7 +9425,14 @@
         {
          "text": "El realismo mágico."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-endara-crow.jpg",
+        "alt": "Gonzalo Endara Crow junto a Luis Alberto Costales",
+        "credit": "David Torres Costales",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Gonzalo-Endara-crow-junto-al-luis-alberto-costales-cazar.jpg"
+       }
       },
       {
        "id": "R6q3KKMhVtuoSUNs3.f",
@@ -9170,7 +9457,14 @@
         {
          "text": "."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-endara-crow.jpg",
+        "alt": "Gonzalo Endara Crow junto a Luis Alberto Costales",
+        "credit": "David Torres Costales",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Gonzalo-Endara-crow-junto-al-luis-alberto-costales-cazar.jpg"
+       }
       },
       {
        "id": "cE6GXivHsetjdg2lm.f",
@@ -9191,7 +9485,14 @@
         {
          "text": "El expresionismo."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-guayasamin.jpg",
+        "alt": "Oswaldo Guayasamín en 1949",
+        "credit": "Annemarie Heinrich",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo_Guayasam%C3%ADn_by_Annemarie_Heinrich,_1949.jpg"
+       }
       },
       {
        "id": "U0cX08tmU5ReLgR55.f",
@@ -9205,7 +9506,14 @@
         {
          "text": "En Quito, Ecuador. Iniciativa del pintor ecuatoriano Oswaldo Guayasamín en homenaje al ser humano."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-capilla-del-hombre.jpg",
+        "alt": "La Capilla del Hombre, Quito",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:La_Capilla_del_Hombre,_Quito.jpg"
+       }
       },
       {
        "id": "aZMJmKNA1RkA8rsy8.f",
@@ -9226,7 +9534,14 @@
         {
          "text": "Huacayñán, La Edad de la Ira y Mientras Viva Siempre te Recuerdo (La Ternura)."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-guayasamin.jpg",
+        "alt": "Oswaldo Guayasamín en 1949",
+        "credit": "Annemarie Heinrich",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo_Guayasam%C3%ADn_by_Annemarie_Heinrich,_1949.jpg"
+       }
       },
       {
        "id": "WGvARjEVCbBoUHOt3.f",
@@ -9314,7 +9629,14 @@
         {
          "text": "Expresionismo social"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-kingman.jpg",
+        "alt": "Eduardo Kingman",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Eduardo_kingman.jpg"
+       }
       },
       {
        "id": "NWlddZhgLxHvcavXB.f",
@@ -9335,7 +9657,14 @@
         {
          "text": "El Pintor de las Manos"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-kingman.jpg",
+        "alt": "Eduardo Kingman",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Eduardo_kingman.jpg"
+       }
       },
       {
        "id": "Elh3TT7jdAfmcJFfl.f",
@@ -9356,7 +9685,14 @@
         {
          "text": "El carbonero"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-kingman.jpg",
+        "alt": "Eduardo Kingman",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Eduardo_kingman.jpg"
+       }
       },
       {
        "id": "jx7oHbTbUuHKBrnm5.f",
@@ -9416,7 +9752,14 @@
         {
          "text": "La Casa de la Cultura Ecuatoriana."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-casa-cultura.jpg",
+        "alt": "Casa de la Cultura Ecuatoriana, Quito",
+        "credit": "H3kt0r",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Casa_de_la_Cultura_Ecuatoriana_01.JPG"
+       }
       },
       {
        "id": "QtXFEYjnOiKpnLnm6.f",
@@ -9606,7 +9949,14 @@
         {
          "text": "Impresionismo y Simbolismo"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mideros.jpg",
+        "alt": "Víctor Mideros",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Fotopintorvictormideros.jpg"
+       }
       },
       {
        "id": "SKBwilzCReELdKS0F.f",
@@ -9627,7 +9977,14 @@
         {
          "text": "Por su temática religiosa y su uso de la \"paleta de Dios\" con los siete colores del arco iris"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-mideros.jpg",
+        "alt": "Víctor Mideros",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Fotopintorvictormideros.jpg"
+       }
       },
       {
        "id": "rXuQ1wIcOpGHbylbg.f",
@@ -9652,7 +10009,14 @@
         {
          "text": " "
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-la-merced.jpg",
+        "alt": "Iglesia de La Merced, Quito",
+        "credit": "Shoestring (Wikitravel)",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Convento_La_Merced,_Quito,_Ecuador.JPG"
+       }
       },
       {
        "id": "NHuMXz81Erqc2NvH8.f",
@@ -9670,7 +10034,14 @@
         {
          "text": "Pintor, escultor, muralista y arquitecto"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-viteri.jpg",
+        "alt": "Oswaldo Viteri",
+        "credit": "Hablemos de cultura",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo-viteri.jpg"
+       }
       },
       {
        "id": "gjAPOVDmpIsYL3Kdr.f",
@@ -9698,7 +10069,14 @@
         {
          "text": " y otros objetos de desecho encontrados."
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-viteri.jpg",
+        "alt": "Oswaldo Viteri",
+        "credit": "Hablemos de cultura",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo-viteri.jpg"
+       }
       },
       {
        "id": "VdvLonnpKtEJWvsgs.f",
@@ -9716,7 +10094,14 @@
         {
          "text": "El hombre, la casa y la luna"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-viteri.jpg",
+        "alt": "Oswaldo Viteri",
+        "credit": "Hablemos de cultura",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo-viteri.jpg"
+       }
       },
       {
        "id": "Hu5UoPWEWWZJ2o40w.f",
@@ -9801,7 +10186,14 @@
         {
          "text": "Dolores Cacuango"
         }
-       ]
+       ],
+       "photo": {
+        "src": "images/foto-dolores-cacuango.jpg",
+        "alt": "Dolores Cacuango",
+        "credit": "Varios autores",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Dolores_Cacuango1.jpg"
+       }
       }
      ]
     },
