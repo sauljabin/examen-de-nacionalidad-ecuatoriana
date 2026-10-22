@@ -78,20 +78,37 @@ function askConfirm({ title, text, ok, cancel = "Cancelar" }) {
 // questions the person marked (marked), saved exams (exams), the exam being
 // built (draft), the last result of each question (results), the days with
 // practice (days), totals (stats), unlocked achievements (achievements), the
-// daily goal (goal), today's answers (today) and the days the goal was met
-// (goalDays).
+// daily goal (goal), today's answers (today), the days the goal was met
+// (goalDays) and the review schedule of each question (srs).
 const progress = readProgress();
 
-function readProgress() {
-  const empty = {
+function emptyProgress() {
+  return {
     missed: [], marked: [], exams: [], draft: { title: "", ids: [] },
     results: {}, days: [], stats: {}, achievements: {},
-    goal: 20, today: { day: "", count: 0 }, goalDays: [],
+    goal: 20, today: { day: "", count: 0 }, goalDays: [], srs: {},
   };
+}
+
+// Fills in missing fields and drops values of the wrong type, so an old or
+// hand-edited copy cannot break the page.
+function withDefaults(saved) {
+  const result = emptyProgress();
+  for (const [key, value] of Object.entries(saved || {})) {
+    if (!(key in result)) continue;
+    const fallback = result[key];
+    if (Array.isArray(fallback) ? Array.isArray(value) : typeof value === typeof fallback && value !== null) {
+      result[key] = value;
+    }
+  }
+  return result;
+}
+
+function readProgress() {
   try {
-    return { ...empty, ...JSON.parse(localStorage.getItem("progress") || "{}") };
+    return withDefaults(JSON.parse(localStorage.getItem("progress") || "{}"));
   } catch {
-    return empty;
+    return emptyProgress();
   }
 }
 
@@ -562,8 +579,55 @@ function updateTopics() {
 const MOCK_SIZE = 30;
 const MOCK_PASS = 27;
 
+// Cloze cards made from the same text share this key: shown together, they
+// give away each other's answers.
+function textKey(card) {
+  return card.type === "cloze" ? card.id.split(".")[0] : card.id;
+}
+
+// Spaced repetition: after a right answer a question comes back after more
+// and more days; after a wrong one it is due again right away.
+const REVIEW_DAYS = [0, 1, 3, 7, 14, 30];
+
+function reviewEntry(card) {
+  if (progress.srs[card.id]) return progress.srs[card.id];
+  // Answered before spaced repetition existed: due now.
+  if (card.id in progress.results) return [progress.results[card.id], 0];
+  return null;
+}
+
+function reviewPlan() {
+  const today = dayNumber(todayKey());
+  const due = [];
+  const fresh = [];
+  for (const card of state.allCards) {
+    const entry = reviewEntry(card);
+    if (!entry) fresh.push(card);
+    else if (entry[1] + REVIEW_DAYS[entry[0]] <= today) {
+      due.push({ card, level: entry[0], overdue: today - entry[1] - REVIEW_DAYS[entry[0]] });
+    }
+  }
+  // Wrong and low-level questions first, then the most overdue.
+  due.sort((a, b) => a.level - b.level || b.overdue - a.overdue);
+  return { due: due.map((item) => item.card), fresh };
+}
+
+// As many questions as the daily goal: the ones due first, then new ones.
+function smartReview() {
+  const { due, fresh } = reviewPlan();
+  const used = new Set();
+  const picked = [];
+  for (const card of [...due, ...shuffle(fresh)]) {
+    if (picked.length === progress.goal) break;
+    if (used.has(textKey(card))) continue;
+    used.add(textKey(card));
+    picked.push(card);
+  }
+  return shuffle(picked);
+}
+
 // Random questions spread evenly over the categories, with at most one card
-// per text: cloze cards made from the same text show each other's answers.
+// per text.
 function mockExam() {
   const used = new Set();
   const pools = state.categories.map((category) =>
@@ -573,7 +637,7 @@ function mockExam() {
     for (const pool of pools) {
       while (pool.length) {
         const card = pool.pop();
-        const key = card.type === "cloze" ? card.id.split(".")[0] : card.id;
+        const key = textKey(card);
         if (used.has(key)) continue;
         used.add(key);
         picked.push(card);
@@ -586,6 +650,10 @@ function mockExam() {
 }
 
 function setupPractice() {
+  app.querySelector("#start-smart").addEventListener("click", () => {
+    const cards = smartReview();
+    if (cards.length) startExam(cards);
+  });
   app.querySelector("#start-mock").addEventListener("click", () => {
     startExam(mockExam(), { passMark: MOCK_PASS });
   });
@@ -618,6 +686,7 @@ function setupPractice() {
     }
   });
   app.querySelector("#open-topics").addEventListener("click", showTopics);
+  app.querySelector("#open-about").addEventListener("click", showAbout);
   app.querySelector("#open-progress").addEventListener("click", showProgress);
   app.querySelector("#open-builder").addEventListener("click", showBuilder);
   updatePractice();
@@ -650,6 +719,12 @@ function renderSavedExam(exam) {
 }
 
 function updatePractice() {
+  const plan = reviewPlan();
+  const smart = app.querySelector(".smart-summary");
+  smart.textContent = plan.due.length || plan.fresh.length
+    ? `${plural(progress.goal, "pregunta", "preguntas")}, tu meta diaria. Hoy te ${plan.due.length === 1 ? "toca" : "tocan"} ${plural(plan.due.length, "para repasar", "para repasar")} y quedan ${plan.fresh.length} sin ver.`
+    : "Por hoy no tienes nada que repasar. ¡Vuelve mañana!";
+  app.querySelector("#start-smart").disabled = !plan.due.length && !plan.fresh.length;
   const missed = cardsFromIds(progress.missed).length;
   const marked = cardsFromIds(progress.marked).length;
   const draft = cardsFromIds(progress.draft.ids).length;
@@ -982,6 +1057,8 @@ function dayNumber(key) {
 function recordAnswer(card, right) {
   const stats = progress.stats;
   progress.results[card.id] = right ? 1 : 0;
+  const level = reviewEntry(card)?.[0] || 0;
+  progress.srs[card.id] = [right ? Math.min(level + 1, REVIEW_DAYS.length - 1) : 0, dayNumber(todayKey())];
   stats.answered = (stats.answered || 0) + 1;
   if (right) stats.right = (stats.right || 0) + 1;
   const today = todayKey();
@@ -1264,16 +1341,89 @@ function showProgress() {
   app.querySelector(".achievement-list").replaceChildren(...ACHIEVEMENTS
     .map((item) => renderAchievement(item, progress.achievements[item.id])));
 
+  setupDataTransfer();
   app.querySelector(".reset-progress").addEventListener("click", async () => {
     if (!(await askConfirm({
       title: "¿Borrar mi progreso?",
       text: "Se borrarán la racha, las estadísticas, lo que dominas y los logros de este dispositivo. Tus falladas, marcadas y exámenes se mantienen.",
       ok: "Borrar",
     }))) return;
-    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [] });
+    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [], srs: {} });
     saveProgress();
     showProgress();
   });
+  app.focus();
+}
+
+// Moving data between devices ---------------------------------------------------
+
+const DATA_APP = "examen-nacionalizacion-ecuatoriana";
+
+function downloadData() {
+  const data = { app: DATA_APP, version: 1, exportedAt: new Date().toISOString(), progress, settings: storage("read") };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(data)], { type: "application/json" }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `examen-ecuador-mis-datos-${todayKey()}.json`;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function loadData(file) {
+  let data;
+  try {
+    data = JSON.parse(await file.text());
+  } catch {
+    return "No se pudo leer el archivo. Elige el que descargaste con «Descargar mis datos».";
+  }
+  if (data?.app !== DATA_APP || typeof data.progress !== "object") {
+    return "Ese archivo no es de esta página. Elige el que descargaste con «Descargar mis datos».";
+  }
+  const date = new Date(data.exportedAt).toLocaleDateString("es-EC", { day: "numeric", month: "long", year: "numeric" });
+  if (!(await askConfirm({
+    title: "¿Cargar estos datos?",
+    text: `Se reemplazarán el progreso, las falladas, las marcadas y los exámenes de este dispositivo por los del archivo, descargado el ${date}.`,
+    ok: "Cargar",
+  }))) return "";
+  const loaded = withDefaults(data.progress);
+  for (const key of Object.keys(progress)) delete progress[key];
+  Object.assign(progress, loaded);
+  saveProgress();
+  if (data.settings && typeof data.settings === "object") applySettings({ ...DEFAULT_SETTINGS, ...data.settings });
+  return "loaded";
+}
+
+function setupDataTransfer() {
+  const status = app.querySelector(".data-status");
+  const input = app.querySelector(".data-file");
+  app.querySelector(".download-data").addEventListener("click", () => {
+    downloadData();
+    status.textContent = "Listo. Busca el archivo en tus descargas y cárgalo en el otro dispositivo.";
+  });
+  app.querySelector(".load-data").addEventListener("click", () => input.click());
+  input.addEventListener("change", async () => {
+    const file = input.files[0];
+    input.value = "";
+    if (!file) return;
+    const result = await loadData(file);
+    if (result === "loaded") {
+      showProgress();
+      app.querySelector(".data-status").textContent = "Datos cargados.";
+    } else {
+      status.textContent = result;
+    }
+  });
+}
+
+// How the real exam works ---------------------------------------------------------
+
+function showAbout() {
+  history.replaceState(null, "", `${location.pathname}${location.search}#como-es-el-examen`);
+  app.replaceChildren(cloneTemplate("about-template"));
+  app.querySelector(".back-home").addEventListener("click", showHome);
+  app.querySelector(".about-mock").addEventListener("click", () => startExam(mockExam(), { passMark: MOCK_PASS }));
   app.focus();
 }
 
@@ -1961,6 +2111,7 @@ fetch("data/cards.json")
       const topics = topicsFromHash();
       if (exam) showShared(exam);
       else if (topics) showSharedTopics(topics);
+      else if (location.hash === "#como-es-el-examen") showAbout();
       else return false;
       return true;
     };

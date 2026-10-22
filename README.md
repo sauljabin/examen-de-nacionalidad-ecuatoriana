@@ -22,6 +22,7 @@ Puedes salir del examen en cualquier momento con el botón **Salir** o la tecla 
 El inicio tiene tres bloques:
 
 - **Formas de practicar**
+  - **Repaso inteligente:** arma solo un examen del tamaño de tu meta diaria. Primero pone las preguntas que te toca repasar y luego algunas que nunca viste. Usa repetición espaciada: cada vez que aciertas una pregunta, vuelve después de más días (1, 3, 7, 14 y 30); si la fallas, vuelve enseguida.
   - **Simulacro:** 30 preguntas al azar de todos los temas, repartidas por igual, como en el examen real. Al final te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
   - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime, y **Compartir esta selección** da un enlace que abre la misma pantalla con esos temas marcados (por ejemplo, para mandar solo *Símbolos Patrios › Himno Nacional*).
 - **Mi repaso**
@@ -48,7 +49,11 @@ En el inicio, **Mi progreso** muestra tu racha, cuántas preguntas dominas, cuá
 
 Durante el examen, un contador muestra tus aciertos seguidos (por ejemplo, «🔥 5 seguidas»); al fallar vuelve a cero sin ningún aviso. Al aprobar un simulacro, terminar un examen con el 90 % o más, cumplir la meta o ganar un logro, cae un poco de confeti con los colores de la bandera.
 
-Todo se guarda solo en el navegador de cada dispositivo, y **Borrar mi progreso** lo reinicia sin tocar tus falladas, marcadas ni exámenes.
+Todo se guarda solo en el navegador de cada dispositivo. Para pasarlo a otro teléfono o computadora, en **Mis datos** usa **Descargar mis datos** (guarda un archivo) y luego **Cargar mis datos** en el otro dispositivo. **Borrar mi progreso** lo reinicia sin tocar tus falladas, marcadas ni exámenes.
+
+### Cómo es el examen
+
+El botón **¿Cómo es el examen?**, en el inicio, y el enlace del pie de página abren un resumen de lo que se sabe del examen real: qué evalúa, cuántas preguntas tiene, con cuántas se aprueba, qué pasa si no apruebas y quién no lo rinde, con enlaces a las fuentes oficiales.
 
 ### Buscar preguntas
 

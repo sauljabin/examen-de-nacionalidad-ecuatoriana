@@ -53,6 +53,7 @@
       <li>Imprime o guarda en PDF</li>
       <li>Buscador de preguntas</li>
       <li>Simulacro del examen</li>
+      <li>Repaso inteligente</li>
       <li>Repaso de falladas y marcadas</li>
       <li>Racha, meta diaria y logros</li>
       <li>Crea y comparte exámenes</li>
@@ -67,6 +68,7 @@
     </p>
     <p class="footer-links">
       <a id="report-link" rel="noopener" target="_blank">Reportar un error</a>
+      <a href="#como-es-el-examen">Cómo es el examen</a>
       <a id="suggest-link" rel="noopener" target="_blank">Proponer una pregunta</a>
       <a id="repo-link" rel="noopener" target="_blank">Código en GitHub</a>
     </p>
@@ -162,6 +164,10 @@
       <p class="eyebrow">Práctica de estudio</p>
       <h1>Prepárate para el examen de nacionalización ecuatoriana</h1>
       <p class="lead">Lee cada pregunta, piensa tu respuesta y compárala con la correcta. Practica con un simulacro, por temas o con tus propios exámenes, y al final verás qué te conviene repasar.</p>
+      <button id="open-about" class="ghost about-link" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
+        ¿Cómo es el examen?
+      </button>
     </section>
 
     <section class="install" hidden aria-label="Instalar la app">
@@ -204,6 +210,14 @@
     <section class="practice" aria-labelledby="practice-title">
       <h2 id="practice-title">Formas de practicar</h2>
       <div class="practice-grid">
+        <article class="practice-card">
+          <h3>Repaso inteligente</h3>
+          <p>Elige las preguntas por ti: primero las que te toca repasar y luego algunas nuevas. Ideal para estudiar un poco cada día.</p>
+          <p class="smart-summary"></p>
+          <div class="practice-actions">
+            <button id="start-smart" class="primary" type="button">Empezar repaso</button>
+          </div>
+        </article>
         <article class="practice-card">
           <h3>Simulacro</h3>
           <p>30 preguntas al azar de todos los temas, como en el examen. Para aprobar se necesitan 27 aciertos (90&nbsp;%).</p>
@@ -510,8 +524,73 @@
       <h2>Logros <span class="achievements-count"></span></h2>
       <ul class="achievement-list"></ul>
 
+      <section class="data-section" aria-labelledby="data-title">
+        <h2 id="data-title">Mis datos</h2>
+        <p>Tu progreso, tus falladas, marcadas y exámenes se guardan solo en este navegador. Para pasarlos a otro teléfono o computadora, descárgalos aquí y cárgalos allá.</p>
+        <div class="practice-actions">
+          <button class="ghost download-data" type="button">Descargar mis datos</button>
+          <button class="ghost load-data" type="button">Cargar mis datos</button>
+          <input class="data-file" type="file" accept=".json,application/json" hidden>
+        </div>
+        <p class="data-status" aria-live="polite"></p>
+      </section>
+
       <button class="link reset-progress" type="button">Borrar mi progreso</button>
     </section>
+  </template>
+
+  <template id="about-template">
+    <div class="exam-bar">
+      <button class="ghost back-home" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </button>
+    </div>
+    <article class="about">
+      <p class="eyebrow">Antes de ir</p>
+      <h1>Cómo es el examen</h1>
+      <p class="lead">Lo que se sabe del examen de conocimientos para obtener la nacionalidad ecuatoriana por carta de naturalización.</p>
+
+      <dl class="about-facts">
+        <div>
+          <dt>Qué evalúa</dt>
+          <dd>Conocimientos generales de historia, geografía, cultura y realidad actual del Ecuador. El trámite también pide hablar y escribir en castellano.</dd>
+        </div>
+        <div>
+          <dt>Cómo es</dt>
+          <dd>30 preguntas, en una computadora, en la sala de evaluaciones de la Coordinación Zonal que te corresponde según dónde vives. Lleva tu pasaporte y la notificación de la cita.</dd>
+        </div>
+        <div>
+          <dt>Cuándo apruebas</dt>
+          <dd>Con el 90 %, es decir, 27 respuestas correctas de 30.</dd>
+        </div>
+        <div>
+          <dt>Si no apruebas</dt>
+          <dd>Puedes rendirlo dos veces más, con 30 días entre un intento y otro. Si no apruebas al tercer intento, debes esperar un año para volver a presentar la solicitud.</dd>
+        </div>
+        <div>
+          <dt>La cita</dt>
+          <dd>Llega al correo electrónico que indicaste en la solicitud, igual que los avisos de la entrevista y de los documentos que falten. Revísalo seguido, también la carpeta de correo no deseado.</dd>
+        </div>
+        <div>
+          <dt>Quién no rinde el examen</dt>
+          <dd>
+            <ul>
+              <li>Los menores de edad.</li>
+              <li>Las personas con una discapacidad intelectual que les impida cumplir este requisito.</li>
+              <li>Las personas adultas mayores, aunque se evalúa su castellano.</li>
+              <li>Quienes terminaron una carrera universitaria o un posgrado en el Ecuador, en castellano.</li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+
+      <p class="about-note">Esta información es referencial y puede cambiar. Confírmala en la página del trámite en <a href="https://www.gob.ec/mremh/tramites/obtencion-nacionalidad-ecuatoriana-carta-naturalizacion" rel="noopener" target="_blank">gob.ec</a> o con tu Coordinación Zonal. Fuentes: gob.ec y el <a href="https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/" rel="noopener" target="_blank">aviso de la Cancillería</a> sobre el examen en computadora.</p>
+
+      <div class="about-actions">
+        <button class="primary big about-mock" type="button">Hacer un simulacro de 30 preguntas</button>
+      </div>
+    </article>
   </template>
 
   <script src="app.js"></script>

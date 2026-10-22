@@ -392,7 +392,7 @@ kbd {
 .practice h2 { margin: 2rem 0 .75rem; font-size: 1.5rem; }
 .practice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
   gap: 1rem;
 }
 .practice-card {
@@ -976,6 +976,32 @@ select {
   pointer-events: none;
   z-index: 30;
 }
+
+.about-link { margin-top: 1rem; }
+.smart-summary { color: var(--ink) !important; font-weight: 700; }
+.data-section p { color: var(--muted); }
+.data-status { color: var(--right) !important; font-weight: 700; }
+.data-status:empty { display: none; }
+
+.about { padding-top: .5rem; }
+.about h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.about-facts { display: grid; gap: .75rem; margin: 1.5rem 0; }
+.about-facts > div {
+  padding: .9rem 1.1rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.about-facts dt { margin-bottom: .2rem; font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; font-weight: 800; }
+.about-facts dd { margin: 0; }
+.about-facts ul { margin: .25rem 0 0; padding-left: 1.25rem; }
+.about-note {
+  padding: .7rem .9rem;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  background: var(--gold-soft);
+}
+.about-actions { max-width: 26rem; margin-top: 1.5rem; }
 
 /* Dialogs ------------------------------------------------------------------- */
 
