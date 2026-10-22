@@ -696,9 +696,11 @@ function updatePrintSummary() {
   const options = printOptions();
   const count = printableCards(options).length;
   const skipped = printableCards({ ...options, images: true }).length - count;
-  dialog.querySelector(".print-summary").textContent =
-    `Se imprimirán ${count} ${count === 1 ? "pregunta" : "preguntas"} de los temas que marcaste.`
-    + (skipped ? ` Sin imágenes se omiten ${skipped} que solo tienen sentido con su imagen.` : "");
+  dialog.querySelector(".print-go").disabled = count === 0;
+  dialog.querySelector(".print-summary").textContent = count === 0
+    ? "Con esta selección no hay nada que imprimir: las preguntas de estos temas solo tienen sentido con su imagen. Activa «Incluir imágenes y fotos» o marca otros temas."
+    : `Se imprimirán ${count} ${count === 1 ? "pregunta" : "preguntas"} de los temas que marcaste.`
+      + (skipped ? ` Sin imágenes se omiten ${skipped} que solo tienen sentido con su imagen.` : "");
 }
 
 function openPrintDialog() {
