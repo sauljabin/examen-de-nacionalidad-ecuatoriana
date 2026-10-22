@@ -10,17 +10,24 @@
      "cards": [
       {
        "id": "fZv8goNuJ33A5OMs0.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
          "text": "¿Cuáles son los símbolos patrios del Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "La bandera, el escudo y el himno nacional."
-        }
-       ]
+       "options": [
+        "La Bandera Nacional",
+        "El Escudo Nacional",
+        "El Himno Nacional",
+        "La chuquiragua"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "La chuquiragua se considera la flor nacional, pero no es un símbolo patrio."
       },
       {
        "id": "CttxHTiAWl97gxgcR.f",
@@ -1931,31 +1938,45 @@
       },
       {
        "id": "2H8U3dQcDggFGr3ye.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
          "text": "¿Qué provincias tienen frontera con Colombia?"
         }
        ],
-       "back": [
-        {
-         "text": "Carchi, Esmeraldas y Sucumbíos."
-        }
-       ]
+       "options": [
+        "Carchi",
+        "Esmeraldas",
+        "Sucumbíos",
+        "Imbabura"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Imbabura está cerca de la frontera, pero no limita con Colombia."
       },
       {
        "id": "wBRuiGKexIOFHKRBo.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué provincias tienen frontera con Perú?"
+         "text": "¿Cuáles de estas provincias tienen frontera con el Perú?"
         }
        ],
-       "back": [
-        {
-         "text": "El Oro, Loja, Morona Santiago, Orellana, Pastaza, Sucumbíos y Zamora Chinchipe."
-        }
-       ]
+       "options": [
+        "El Oro",
+        "Loja",
+        "Zamora Chinchipe",
+        "Azuay"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "En total son siete: El Oro, Loja, Zamora Chinchipe, Morona Santiago, Pastaza, Orellana y Sucumbíos. Azuay no tiene frontera internacional."
       }
      ]
     },
@@ -4046,17 +4067,24 @@
       },
       {
        "id": "dSDaZXGFPYe8Mdd8J.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué provincias atraviesa la Ruta del Spondylus?"
+         "text": "¿Cuáles de estas provincias atraviesa la Ruta del Spondylus?"
         }
        ],
-       "back": [
-        {
-         "text": "Esmeraldas, Manabí, Santa Elena, Guayas y El Oro."
-        }
-       ]
+       "options": [
+        "Manabí",
+        "Santa Elena",
+        "El Oro",
+        "Los Ríos"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "La ruta recorre toda la costa: Esmeraldas, Manabí, Santa Elena, Guayas y El Oro. Los Ríos no tiene salida al mar."
       },
       {
        "id": "9s3Vv1oAfnE0UlZD8.f",
@@ -4316,22 +4344,10 @@
      "cards": [
       {
        "id": "jQsOR401i5Kxc7j5H.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
          "text": "¿Cuál es el parque nacional más grande del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El "
-        },
-        {
-         "text": "Parque Nacional Yasuní",
-         "color": "purple"
-        },
-        {
-         "text": "."
         }
        ],
        "photo": {
@@ -4340,26 +4356,22 @@
         "credit": "Napowildlifecenter",
         "license": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Napo_Wildlife_Center_Ecolodge.JPG"
-       }
+       },
+       "options": [
+        "El Yasuní",
+        "El Sangay",
+        "El Cotopaxi",
+        "El Podocarpus"
+       ],
+       "answer": 0,
+       "explanation": "Protege cerca de un millón de hectáreas de selva amazónica entre las provincias de Orellana y Pastaza."
       },
       {
        "id": "9242yXwWB5caOb2mp.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué animales son símbolos del "
-        },
-        {
-         "text": "Parque Nacional Yasuní",
-         "color": "purple"
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El mono araña y el jaguar son símbolos del Parque Nacional Yasuní, también pueden ser tucanes y guacamayos."
+         "text": "¿Qué animales son símbolos del Parque Nacional Yasuní?"
         }
        ],
        "photo": {
@@ -4368,7 +4380,18 @@
         "credit": "Ewa",
         "license": "CC BY 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Ateles_belzebuth_(White-bellied_spider_monkey)_2.jpg"
-       }
+       },
+       "options": [
+        "El mono araña",
+        "El jaguar",
+        "La tortuga gigante",
+        "El cóndor andino"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "También se asocian al Yasuní los tucanes y los guacamayos. La tortuga gigante vive en Galápagos y el cóndor, en los Andes."
       },
       {
        "id": "85QEuGxzcxuVJIeA1.f",
@@ -4530,22 +4553,10 @@
       },
       {
        "id": "3DkzOmtpYMEYWWxSt.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿En qué provincias se encuentra ubicado el "
-        },
-        {
-         "text": "Parque Nacional Podocarpus",
-         "color": "purple"
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Zamora Chinchipe y Loja."
+         "text": "¿En qué provincias se encuentra el Parque Nacional Podocarpus?"
         }
        ],
        "photo": {
@@ -4554,7 +4565,18 @@
         "credit": "Autor desconocido",
         "license": "Public domain",
         "url": "https://commons.wikimedia.org/wiki/File:Bosquebombus.jpg"
-       }
+       },
+       "options": [
+        "Zamora Chinchipe",
+        "Loja",
+        "Azuay",
+        "El Oro"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "El parque está en el sur del país, entre la Sierra y la Amazonía."
       },
       {
        "id": "19weeumgzv7TlhyEN.f",
@@ -4614,22 +4636,10 @@
       },
       {
        "id": "KyuBgcDHQhFhQBmjy.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿En qué provincias se encuentra el "
-        },
-        {
-         "text": "Parque Nacional Cotopaxi",
-         "color": "purple"
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "En las provincias de Cotopaxi, Pichincha y Napo."
+         "text": "¿En qué provincias se encuentra el Parque Nacional Cotopaxi?"
         }
        ],
        "photo": {
@@ -4638,7 +4648,19 @@
         "credit": "Bernard Gagnon",
         "license": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg"
-       }
+       },
+       "options": [
+        "Cotopaxi",
+        "Pichincha",
+        "Napo",
+        "Tungurahua"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Aunque lleva el nombre del volcán, el parque se extiende por tres provincias."
       },
       {
        "id": "gE6rMJCgy5IBxBRy5.f",
@@ -4692,22 +4714,10 @@
      "cards": [
       {
        "id": "As7mLFrutOZNXZo3q.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es el volcán "
-        },
-        {
-         "text": "más activo",
-         "bold": true
-        },
-        {
-         "text": " de Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El Sangay y El Reventador son los más activos; el Sangay llega a registrar cientos de explosiones al día."
+         "text": "¿Cuáles son los volcanes más activos del Ecuador?"
         }
        ],
        "photo": {
@@ -4716,26 +4726,25 @@
         "credit": "DonValentino",
         "license": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:ElReventador2012.jpg"
-       }
+       },
+       "options": [
+        "El Sangay",
+        "El Reventador",
+        "El Chimborazo",
+        "El Imbabura"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "El Instituto Geofísico considera al Sangay y al Reventador los más activos del país; el Sangay llega a registrar cientos de explosiones al día. El Chimborazo y el Imbabura no tienen erupciones recientes."
       },
       {
        "id": "wi29qP6kA2och7ogB.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es el volcán "
-        },
-        {
-         "text": "más alto",
-         "bold": true
-        },
-        {
-         "text": " del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El Chimborazo."
+         "text": "¿Cuál es el volcán más alto del Ecuador?"
         }
        ],
        "photo": {
@@ -4744,33 +4753,22 @@
         "credit": "Dabit100 / David Torres Costales Riobamba",
         "license": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1a_-_Chimborazo,_Ecuador.jpg"
-       }
+       },
+       "options": [
+        "El Chimborazo",
+        "El Cotopaxi",
+        "El Cayambe",
+        "El Antisana"
+       ],
+       "answer": 0,
+       "explanation": "Mide 6263 m. Por estar cerca de la línea ecuatorial, su cumbre es el punto de la Tierra más alejado de su centro."
       },
       {
        "id": "crr3z2dZJnWBaMPop.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es el volcán "
-        },
-        {
-         "text": "activo más alto",
-         "bold": true
-        },
-        {
-         "text": " del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El volcán "
-        },
-        {
-         "text": "Cotopaxi",
-         "bold": true
-        },
-        {
-         "text": "."
+         "text": "¿Cuál es el volcán activo más alto del Ecuador?"
         }
        ],
        "photo": {
@@ -4779,7 +4777,15 @@
         "credit": "Bernard Gagnon",
         "license": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg"
-       }
+       },
+       "options": [
+        "El Cotopaxi",
+        "El Chimborazo",
+        "El Sangay",
+        "El Tungurahua"
+       ],
+       "answer": 0,
+       "explanation": "El Chimborazo es más alto (6263 m), pero se considera inactivo. El Cotopaxi mide unos 5897 m."
       },
       {
        "id": "rxAz0m6xOTeQKwrvD.f",
@@ -4804,22 +4810,10 @@
       },
       {
        "id": "8SfkMhFR9tgrSCoyL.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "El "
-        },
-        {
-         "text": "Macizo de los Pichinchas",
-         "bold": true
-        },
-        {
-         "text": " es un conjunto de cerros y volcanes situados en Quito, sus principales volcanes son"
-        }
-       ],
-       "back": [
-        {
-         "text": "El Guagua Pichincha y el Rucu Pichincha."
+         "text": "¿Cuáles son los principales volcanes del Macizo de los Pichinchas, en Quito?"
         }
        ],
        "photo": {
@@ -4828,7 +4822,18 @@
         "credit": "Timwryan",
         "license": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rucu_Pichincha_and_Trail.jpg"
-       }
+       },
+       "options": [
+        "El Guagua Pichincha",
+        "El Rucu Pichincha",
+        "El Ilaló",
+        "El Pululahua"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "El Ilaló y el Pululahua también están en la provincia de Pichincha, pero no forman parte del macizo."
       },
       {
        "id": "BO92XqsFTWMSnQ2lD.f",
@@ -5273,31 +5278,23 @@
       },
       {
        "id": "Mn4ClQrcpbQHMQv7L.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
          "text": "¿De la confluencia de qué ríos se forma el río Guayas?"
         }
        ],
-       "back": [
-        {
-         "text": "El río Guayas se forma por la confluencia de los ríos "
-        },
-        {
-         "text": "Daule",
-         "bold": true
-        },
-        {
-         "text": " y "
-        },
-        {
-         "text": "Babahoyo",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ]
+       "options": [
+        "El Daule",
+        "El Babahoyo",
+        "El Napo",
+        "El Pastaza"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "El Napo y el Pastaza son ríos amazónicos que desembocan en el Amazonas."
       },
       {
        "id": "iI5PhIg1CUj2SKyRW.f",
@@ -5990,17 +5987,20 @@
      "cards": [
       {
        "id": "rPypMS5mF4ERNi8Tx.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
          "text": "¿En qué fecha se independizó Guayaquil?"
         }
        ],
-       "back": [
-        {
-         "text": "9 de octubre de 1820."
-        }
-       ]
+       "options": [
+        "9 de octubre de 1820",
+        "10 de agosto de 1809",
+        "3 de noviembre de 1820",
+        "24 de mayo de 1822"
+       ],
+       "answer": 0,
+       "explanation": "El 10 de agosto de 1809 fue el Primer Grito de Independencia en Quito, el 3 de noviembre de 1820 se independizó Cuenca y el 24 de mayo de 1822 fue la Batalla del Pichincha."
       }
      ]
     },
@@ -6010,17 +6010,20 @@
      "cards": [
       {
        "id": "Hu68lTrOdwYQpiVNO.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿En qué fecha ocurrió la independencia de Cuenca?"
+         "text": "¿En qué fecha se independizó Cuenca?"
         }
        ],
-       "back": [
-        {
-         "text": "3 de noviembre de 1820."
-        }
-       ]
+       "options": [
+        "3 de noviembre de 1820",
+        "9 de octubre de 1820",
+        "10 de agosto de 1809",
+        "24 de mayo de 1822"
+       ],
+       "answer": 0,
+       "explanation": "Cuenca se independizó menos de un mes después que Guayaquil (9 de octubre de 1820)."
       }
      ]
     },
@@ -7412,17 +7415,24 @@
       },
       {
        "id": "S6PAGYSiC6PYuGYsL.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "De acuerdo al Artículo 2, ¿cuáles son los idiomas oficiales del Ecuador de relación intercultural?"
+         "text": "Según el artículo 2 de la Constitución, ¿cuáles son los idiomas oficiales de relación intercultural?"
         }
        ],
-       "back": [
-        {
-         "text": "Castellano, kichwa y shuar."
-        }
-       ]
+       "options": [
+        "El castellano",
+        "El kichwa",
+        "El shuar",
+        "El wao tededo"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "El castellano es el idioma oficial del Ecuador. Los demás idiomas ancestrales, como el wao tededo, son de uso oficial para los pueblos indígenas en las zonas donde habitan."
       },
       {
        "id": "MJOPNfYySBNCHjaa2.f",
@@ -8121,31 +8131,37 @@
       },
       {
        "id": "YrlMW57kf06d7NUkW.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
          "text": "¿Cuál fue el primer presidente del Ecuador nacido en Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "Vicente Rocafuerte."
-        }
-       ]
+       "options": [
+        "Vicente Rocafuerte",
+        "Juan José Flores",
+        "José María Urbina",
+        "Gabriel García Moreno"
+       ],
+       "answer": 0,
+       "explanation": "Nació en Guayaquil y gobernó de 1835 a 1839. Su antecesor, Juan José Flores, era venezolano."
       },
       {
        "id": "74f63ZnGeVsvCoHsd.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuál fue el primer presidente del Ecuador?"
+         "text": "¿Quién fue el primer presidente del Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "Juan José Flores."
-        }
-       ]
+       "options": [
+        "Juan José Flores",
+        "Vicente Rocafuerte",
+        "Gabriel García Moreno",
+        "José Joaquín de Olmedo"
+       ],
+       "answer": 0,
+       "explanation": "Gobernó desde 1830 y era venezolano. Vicente Rocafuerte fue el primer presidente nacido en territorio ecuatoriano."
       },
       {
        "id": "UswoTwrxzwOBS9ATB.f",
@@ -8195,17 +8211,20 @@
       },
       {
        "id": "ohMRtjh1UW9QpOtkt.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Quién es el presidente de Ecuador con más mandatos?"
+         "text": "¿Qué presidente del Ecuador tuvo más mandatos?"
         }
        ],
-       "back": [
-        {
-         "text": "José María Velasco Ibarra, con 5 mandatos."
-        }
-       ]
+       "options": [
+        "José María Velasco Ibarra",
+        "Juan José Flores",
+        "Gabriel García Moreno",
+        "Eloy Alfaro"
+       ],
+       "answer": 0,
+       "explanation": "Fue presidente cinco veces entre 1934 y 1972, pero solo terminó uno de esos mandatos."
       },
       {
        "id": "sKLytz6rD4rlVKcbx.f",
@@ -11576,36 +11595,10 @@
       },
       {
        "id": "Knxhvo5keex9ofWsq.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué instrumento de viento es característico de la música andina ecuatoriana?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El "
-        },
-        {
-         "text": "rondador ",
-         "bold": true
-        },
-        {
-         "text": "y"
-        },
-        {
-         "text": " ",
-         "bold": true
-        },
-        {
-         "text": "la "
-        },
-        {
-         "text": "quena",
-         "bold": true
-        },
-        {
-         "text": "."
+         "text": "¿Qué instrumentos de viento son característicos de la música andina ecuatoriana?"
         }
        ],
        "photo": {
@@ -11614,7 +11607,18 @@
         "credit": "Inti-sol",
         "license": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rondador.jpg"
-       }
+       },
+       "options": [
+        "El rondador",
+        "La quena",
+        "El charango",
+        "La marimba"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "El charango es un instrumento de cuerda y la marimba, de percusión."
       },
       {
        "id": "PQV7LqOJFMx8UHSZm.f",
@@ -12003,15 +12007,10 @@
       },
       {
        "id": "3kWTg2mRLUqBuKtuv.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué género musical es considerado el «género nacional» por excelencia en el Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El pasillo."
+         "text": "¿Qué género musical se considera el «género nacional» del Ecuador?"
         }
        ],
        "photo": {
@@ -12020,7 +12019,15 @@
         "credit": "Maty1206",
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Julio_jaramillo_laurido2.jpg"
-       }
+       },
+       "options": [
+        "El pasillo",
+        "El sanjuanito",
+        "La bomba",
+        "El albazo"
+       ],
+       "answer": 0,
+       "explanation": "Su intérprete más famoso fue Julio Jaramillo."
       },
       {
        "id": "Xf63PRpOyVUPBgNfz.f",
