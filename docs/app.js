@@ -28,6 +28,20 @@ function cloneTemplate(id) {
   return document.getElementById(id).content.cloneNode(true);
 }
 
+// Every new screen starts at the top, so a long page such as the result
+// doesn't leave the next one scrolled halfway down.
+function showScreen(templateId) {
+  app.replaceChildren(cloneTemplate(templateId));
+  window.scrollTo({ top: 0, behavior: "instant" });
+}
+
+// Redraws the screen that is already open without moving the page.
+function redraw(show) {
+  const top = window.scrollY;
+  show();
+  window.scrollTo({ top, behavior: "instant" });
+}
+
 function shuffle(items) {
   const copy = [...items];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -393,7 +407,7 @@ function selectedCards() {
 function showHome() {
   // Leaving a shared exam: drop its link from the address bar.
   if (location.hash) history.replaceState(null, "", location.pathname + location.search);
-  app.replaceChildren(cloneTemplate("home-template"));
+  showScreen("home-template");
   setupInstall();
   setupPractice();
   let searchTimer;
@@ -412,7 +426,7 @@ function showHome() {
 // "Por temas" and "Modo estudio" share this screen; state.topicsMode says
 // which one is open.
 function showTopics() {
-  app.replaceChildren(cloneTemplate("topics-template"));
+  showScreen("topics-template");
   app.querySelector(".back-home").addEventListener("click", showHome);
   if (state.topicsMode === "study") {
     app.querySelector(".topics-intro .eyebrow").textContent = "Modo estudio";
@@ -487,7 +501,7 @@ function showTopics() {
     else startExam(chosen, { exit: { back: showTopics, label: "Volver a los temas" } });
   });
   updateTopics();
-  app.focus();
+  app.focus({ preventScroll: true });
 }
 
 function toggleSelection(key, on) {
@@ -775,7 +789,7 @@ function showStudyCard() {
   const total = state.queue.length;
   state.revealed = true;
   stopSpeaking();
-  app.replaceChildren(cloneTemplate("study-template"));
+  showScreen("study-template");
   const counter = app.querySelector(".counter");
   counter.textContent = `${state.index + 1} / ${total}`;
   counter.setAttribute("aria-label", `Pregunta ${state.index + 1} de ${total}`);
@@ -823,7 +837,7 @@ function showStudyCard() {
   const next = app.querySelector(".study-next");
   next.textContent = state.index === total - 1 ? "Terminar" : "Siguiente";
   next.addEventListener("click", () => moveStudy(1));
-  next.focus();
+  next.focus({ preventScroll: true });
 }
 
 function moveStudy(step) {
@@ -848,13 +862,13 @@ function showStudyDone() {
   stopSpeaking();
   state.studying = false;
   const cards = state.queue;
-  app.replaceChildren(cloneTemplate("study-done-template"));
+  showScreen("study-done-template");
   app.querySelector(".summary").textContent =
     `Estudiaste ${plural(cards.length, "pregunta", "preguntas")}. ¿Las practicas ahora para ver cuánto recuerdas?`;
   app.querySelector(".study-test").addEventListener("click", () => startExam(shuffle(cards)));
   app.querySelector(".study-again").addEventListener("click", () => startStudy(cards));
   app.querySelector(".restart").addEventListener("click", showHome);
-  app.focus();
+  app.focus({ preventScroll: true });
 }
 
 // Exam -----------------------------------------------------------------------
@@ -878,7 +892,7 @@ function showCard() {
   const total = state.queue.length;
   state.revealed = false;
   stopSpeaking();
-  app.replaceChildren(cloneTemplate("card-template"));
+  showScreen("card-template");
   const listen = app.querySelector(".listen");
   listen.hidden = !canSpeak;
   listen.addEventListener("click", toggleSpeaking);
@@ -911,12 +925,12 @@ function showCard() {
   if (card.type === "choice") {
     app.querySelector(".reveal").hidden = true;
     app.querySelector(".check-answer").hidden = !isMultiChoice(card);
-    app.querySelector(".options button")?.focus();
+    app.querySelector(".options button")?.focus({ preventScroll: true });
     return;
   }
   app.querySelector(".right").addEventListener("click", () => grade(true));
   app.querySelector(".wrong").addEventListener("click", () => grade(false));
-  app.querySelector(".reveal").focus();
+  app.querySelector(".reveal").focus({ preventScroll: true });
 }
 
 function renderCardFace(card) {
@@ -1395,7 +1409,7 @@ function statValue(number, unit) {
 function showProgress() {
   if (location.hash) history.replaceState(null, "", location.pathname + location.search);
   unlockAchievements();
-  app.replaceChildren(cloneTemplate("progress-template"));
+  showScreen("progress-template");
   app.querySelector(".back-home").addEventListener("click", showHome);
   const stats = progress.stats;
   const { current, best } = streaks();
@@ -1463,9 +1477,9 @@ function showProgress() {
     }))) return;
     Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [], srs: {} });
     saveProgress();
-    showProgress();
+    redraw(showProgress);
   });
-  app.focus();
+  app.focus({ preventScroll: true });
 }
 
 // Moving data between devices ---------------------------------------------------
@@ -1522,7 +1536,7 @@ function setupDataTransfer() {
     if (!file) return;
     const result = await loadData(file);
     if (result === "loaded") {
-      showProgress();
+      redraw(showProgress);
       app.querySelector(".data-status").textContent = "Datos cargados.";
     } else {
       status.textContent = result;
@@ -1552,7 +1566,7 @@ function showResult() {
   stopSpeaking();
   const total = state.queue.length;
   const right = total - state.missed.length;
-  app.replaceChildren(cloneTemplate("result-template"));
+  showScreen("result-template");
   app.querySelector(".score").textContent = `${Math.round((right / total) * 100)}%`;
   app.querySelector(".summary").textContent =
     `Acertaste ${right} de ${total} preguntas ${durationText(Date.now() - state.startedAt)}.`;
@@ -1645,7 +1659,7 @@ function showResult() {
     if (card.photo) item.append(renderPhoto(card.photo));
     list.append(item);
   }
-  app.focus();
+  app.focus({ preventScroll: true });
 }
 
 // Exam builder ---------------------------------------------------------------
@@ -1681,7 +1695,7 @@ function removeButton(card) {
 
 function showBuilder() {
   if (location.hash) history.replaceState(null, "", location.pathname + location.search);
-  app.replaceChildren(cloneTemplate("builder-template"));
+  showScreen("builder-template");
   // Editing a saved exam: say so, so it is clear that saving changes it.
   if (progress.exams.some((exam) => exam.id === progress.draft.editing)) {
     app.querySelector(".builder-eyebrow").textContent = "Editar examen";
@@ -1727,7 +1741,7 @@ function showBuilder() {
   });
   renderBuilderSource();
   renderDraft();
-  app.focus();
+  app.focus({ preventScroll: true });
 }
 
 function builderSource() {
@@ -1807,7 +1821,7 @@ function examFromHash() {
 function showShared({ cards, title, missing = 0 }) {
   const link = examLink(cards, title);
   history.replaceState(null, "", link);
-  app.replaceChildren(cloneTemplate("shared-template"));
+  showScreen("shared-template");
   app.querySelector(".shared-title").textContent = title || "Examen personalizado";
   const categories = [...new Set(cards.map((card) => card.category))];
   app.querySelector(".shared-summary").textContent = cards.length
@@ -1876,7 +1890,7 @@ function showShared({ cards, title, missing = 0 }) {
     showHome();
   });
   app.querySelector(".back-home").addEventListener("click", showHome);
-  app.focus();
+  app.focus({ preventScroll: true });
 }
 
 // Print ----------------------------------------------------------------------
