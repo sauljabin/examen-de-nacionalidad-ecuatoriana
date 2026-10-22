@@ -1234,6 +1234,11 @@
       {
        "id": "hYB9kJClaxcQ32KId.9900036244614224",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/a5ebb355cedb08d2.png",
         "width": 573.989644150863,
@@ -1252,6 +1257,11 @@
       {
        "id": "TAnCJ6EbrlRndPJ1M.26716673941597124",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/a217526741d7e299.png",
         "width": 790,
@@ -1270,6 +1280,11 @@
       {
        "id": "sbj1RYpKnDhtOZ9O4.902543676681673",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/2de1dcda25eadb02.png",
         "width": 790,
@@ -1288,6 +1303,11 @@
       {
        "id": "UuqcCoF18WDAXgnH5.28720710483591383",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/6dac66a50452c63a.png",
         "width": 572,
@@ -1306,6 +1326,11 @@
       {
        "id": "725KCJCDSNKMUXc2Q.06201437213982974",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/773971ea4dae38bc.png",
         "width": 790,
@@ -1324,6 +1349,11 @@
       {
        "id": "jLzDTK1Cv8amrEZoI.1647189918385954",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/9a158e3fbfa4c964.png",
         "width": 790,
@@ -1342,6 +1372,11 @@
       {
        "id": "EcI99zXwXz2PGmVje.3884763080218272",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/7fb4f320f3680aae.png",
         "width": 546.8504155124654,
@@ -1360,6 +1395,11 @@
       {
        "id": "BekFLB5w6OPwL69Gy.3682844484273602",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/eda466c31f40323a.png",
         "width": 790,
@@ -1378,6 +1418,11 @@
       {
        "id": "xeyPxATINmbjp9Mk5.8942785994404268",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/8ffe109f08bc46e5.png",
         "width": 557.8504155124654,
@@ -1396,6 +1441,11 @@
       {
        "id": "GjxRlM7jFa87CtQ3u.17314703725996816",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/95d3a1d41b6afe98.png",
         "width": 790,
@@ -1414,6 +1464,11 @@
       {
        "id": "TcDHcC2QHgVeDjRln.8107239911567634",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/ce34c1e3acf4b071.png",
         "width": 790,
@@ -1432,6 +1487,11 @@
       {
        "id": "KXtXaank8jZdY2lzK.9954522198833778",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/14f21b04d39b1a57.png",
         "width": 557.8504155124654,
@@ -1450,6 +1510,11 @@
       {
        "id": "QcviInrhT6oTFh8Wi.3654224457725501",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/7ef9ac0db723deb7.png",
         "width": 790,
@@ -1468,6 +1533,11 @@
       {
        "id": "V3E0gZT8UKkFiF38w.6412938386166135",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/d57c41964dbb93fc.png",
         "width": 790,
@@ -1486,6 +1556,11 @@
       {
        "id": "MjlxdNcjlkwm3CTwx.2366915299340525",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Qué representa esta parte del escudo?"
+        }
+       ],
        "image": {
         "src": "images/e416caaa70f3e5aa.png",
         "width": 790,
@@ -2824,12 +2899,17 @@
      ]
     },
     {
-     "id": "provincias-mapa",
-     "title": "Provincias Mapa",
+     "id": "capitales-en-el-mapa",
+     "title": "Capitales en el mapa",
      "cards": [
       {
        "id": "BjzxH4m0vejdtk7LD.6159555822361691",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/8b1da93fccb87d42.png",
         "width": 790,
@@ -2848,6 +2928,11 @@
       {
        "id": "3A5o8GQ2Wj41spdEi.41754954647800036",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/bef53308a80e64d8.png",
         "width": 790,
@@ -2866,6 +2951,11 @@
       {
        "id": "mPxaO0lJ4EM0YxDBn.1469644241468675",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/e095eb6013b08b0d.png",
         "width": 790,
@@ -2884,6 +2974,11 @@
       {
        "id": "VRgaWcym7m482Yfde.6588172467288091",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/8b82f23e95390d01.png",
         "width": 790,
@@ -2902,6 +2997,11 @@
       {
        "id": "LM4fEdLMuaBwxE8U8.6736362743611011",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/f93febb69804ed97.png",
         "width": 790,
@@ -2920,6 +3020,11 @@
       {
        "id": "0m4JC0VfumhOjy7wn.7579381501414596",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/8c9149d6e2b9dc98.png",
         "width": 790,
@@ -2938,6 +3043,11 @@
       {
        "id": "sG4F4p57DP8egwfRp.9598310167834113",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/6f37752fdcb8ac3f.png",
         "width": 790,
@@ -2956,6 +3066,11 @@
       {
        "id": "oFI3ay6GfV2nnECJQ.9466517446437006",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/29cfa291d6f1d2f1.png",
         "width": 790,
@@ -2974,6 +3089,11 @@
       {
        "id": "Sf901dWkh5V8D3FJq.8592505994334363",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/b1db737482cc4ab2.png",
         "width": 495.4268321900199,
@@ -2992,6 +3112,11 @@
       {
        "id": "F5LNEf0JmHWEe7XEO.9377448717212984",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/05c280cbb7e698cf.png",
         "width": 790,
@@ -3010,6 +3135,11 @@
       {
        "id": "q5OJ3JzdyD7j4IuZi.3249179628996083",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/0b569d527cd333ab.png",
         "width": 790,
@@ -3028,6 +3158,11 @@
       {
        "id": "0WIkYm7A9zm5s6oG8.19140185549685262",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/3bf245ba0c7781f0.png",
         "width": 790,
@@ -3046,6 +3181,11 @@
       {
        "id": "Dv3s6WS9MUq4auedZ.41175205106345114",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/46601177059028e9.png",
         "width": 790,
@@ -3064,6 +3204,11 @@
       {
        "id": "EDuA7y1G5YJZPIoKT.7993762771068855",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/fe55443b93e84c11.png",
         "width": 790,
@@ -3082,6 +3227,11 @@
       {
        "id": "mVn9InH3IaayeXcGr.8110910725157552",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/1f65fe210bd48d55.png",
         "width": 790,
@@ -3100,6 +3250,11 @@
       {
        "id": "VkyjJMqrX8p5iyqRF.462796658451074",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/5d138f6701a0cf41.png",
         "width": 790,
@@ -3118,6 +3273,11 @@
       {
        "id": "NiH5KgH2895efitqW.18436624351577213",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/c6127c4af0b03f67.png",
         "width": 790,
@@ -3136,6 +3296,11 @@
       {
        "id": "xVtwmJFcpn7IJmLup.564186647151315",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/3a11fb27139cfa80.png",
         "width": 790,
@@ -3154,6 +3319,11 @@
       {
        "id": "LN8KtEsJ1uc6r939R.11947980813779102",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/887d7c38e3860fbc.png",
         "width": 790,
@@ -3172,6 +3342,11 @@
       {
        "id": "4rcI3thWOHV7Ox68d.23377090543032997",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/90ac6abdff398f52.png",
         "width": 790,
@@ -3190,6 +3365,11 @@
       {
        "id": "eV50v1HkoWw8hEPTy.27534453150609617",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/5ccbee358718e26a.png",
         "width": 790,
@@ -3208,6 +3388,11 @@
       {
        "id": "aJsL6HQzVjIvmYZgu.14413047043238392",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/e5f9f48dacd022cf.png",
         "width": 790,
@@ -3226,6 +3411,11 @@
       {
        "id": "IVXVkM2UCSDtVXWsO.4994967866352401",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/5d4470344126cbbf.png",
         "width": 790,
@@ -3244,6 +3434,11 @@
       {
        "id": "UEvsA9cu758dYjAJR.7118108348071839",
        "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
        "image": {
         "src": "images/25d648b49f3b1d4c.png",
         "width": 790,

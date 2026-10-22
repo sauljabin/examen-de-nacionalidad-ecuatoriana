@@ -39,7 +39,7 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
       "cards": [
         {"id": "…", "type": "basic", "front": [Segment], "back": [Segment]},
         {"id": "…", "type": "cloze", "front": [Segment]},
-        {"id": "…", "type": "image",
+        {"id": "…", "type": "image", "front": [Segment],
          "image": {"src": "images/x.png", "width": 790, "height": 592,
                    "blocks": [{"x": 0.5, "y": 0.1, "width": 0.4, "height": 0.3, "active": true}]}}
       ]
@@ -52,7 +52,7 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
 - Una tarjeta puede tener `topic` (carpetas por debajo de la subcategoría).
 - Los `id` de categoría y subcategoría son el título en minúsculas, sin tildes y con guiones (`simbolos-patrios`).
 - Los `id` de tarjeta deben ser únicos; aparecen en los reportes de error. Para una tarjeta nueva, usa cualquier cadena única.
-- `type: "basic"` necesita `front` y `back`. `type: "cloze"` necesita al menos un segmento con `cloze: true`. `type: "image"` necesita `image` con exactamente un bloque `active: true`, que es el que se revela.
+- `type: "basic"` necesita `front` y `back`. `type: "cloze"` necesita al menos un segmento con `cloze: true`. `type: "image"` necesita `image` con exactamente un bloque `active: true`, que es el que se revela, y un `front` con el enunciado (por ejemplo, «¿Cuál es la capital de esta provincia?»): sin él no se entiende qué se pregunta.
 - `color` admite `red`, `orange`, `yellow`, `green`, `purple`, `blue`, `gray`, `brown` y `pink`.
 - Después de editar, comprueba que el JSON es válido: `python3 -m json.tool docs/data/cards.json > /dev/null`.
 

@@ -156,8 +156,8 @@ function renderImage(image, { revealed }) {
 }
 
 function cardSummary(card) {
-  if (card.type === "image") return `Imagen: ${card.subcategory}`;
-  return plainText(card.front).replace(/\s+/g, " ").trim();
+  const text = plainText(card.front).replace(/\s+/g, " ").trim();
+  return card.type === "image" ? `${text} (imagen de ${card.subcategory})` : text;
 }
 
 // Home -----------------------------------------------------------------------
@@ -301,7 +301,7 @@ function renderCardFace(card) {
   const front = app.querySelector(".front");
   const revealed = state.revealed;
   front.replaceChildren();
-  if (card.type !== "image" && card.front?.length) {
+  if (card.front?.length) {
     const text = document.createElement("p");
     text.append(renderSegments(card.front, { revealCloze: revealed }));
     front.append(text);
@@ -391,7 +391,7 @@ function showResult() {
   const list = app.querySelector(".missed");
   for (const card of missed) {
     const item = document.createElement("li");
-    if (card.type !== "image") {
+    if (card.front?.length) {
       const question = document.createElement("p");
       question.append(renderSegments(card.front, { revealCloze: true }));
       item.append(question);

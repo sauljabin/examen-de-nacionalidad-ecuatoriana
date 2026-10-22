@@ -35,7 +35,7 @@ La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible]
 |---|---|
 | Pregunta y respuesta | La respuesta aparece debajo de la pregunta. |
 | Texto con huecos | Cada parte oculta se ve como `?` y se completa al revelarla. |
-| Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, el nombre de una provincia en el mapa) y desaparece al revelarla. |
+| Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, la capital de una provincia en el mapa) y desaparece al revelarla. |
 
 ## Colaborar
 
