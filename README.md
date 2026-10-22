@@ -19,13 +19,12 @@ Puedes salir del examen en cualquier momento con el botón **Salir** o la tecla 
 
 ### Formas de practicar
 
-El inicio tiene tres bloques:
+El inicio tiene tres bloques: **Mi progreso** (ver más abajo), **Formas de practicar** y **Mis exámenes**.
 
 - **Formas de practicar**
   - **Repaso inteligente:** arma solo un examen del tamaño de tu meta diaria. Primero pone las preguntas que te toca repasar y luego algunas que nunca viste. Usa repetición espaciada: cada vez que aciertas una pregunta, vuelve después de más días (1, 3, 7, 14 y 30); si la fallas, vuelve enseguida.
   - **Simulacro:** 30 preguntas al azar de todos los temas, repartidas por igual, como en el examen real. Al final te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
   - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime, y **Compartir esta selección** da un enlace que abre la misma pantalla con esos temas marcados (por ejemplo, para mandar solo *Símbolos Patrios › Himno Nacional*).
-- **Mi repaso**
   - **Falladas:** las preguntas que respondes mal se guardan solas, aunque cierres la página. Cuando aciertas una, sale de la lista.
   - **Marcadas:** durante un examen o en el buscador, el botón **Marcar** (o la tecla `M`) guarda una pregunta para repasarla después.
 - **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Hay dos formas de tener uno:
