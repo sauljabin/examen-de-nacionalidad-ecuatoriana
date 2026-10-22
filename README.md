@@ -80,11 +80,19 @@ docs/                       Página estática (lo que publica GitHub Pages)
   data/cards.json           Preguntas
   images/                   Imágenes de las preguntas
 .github/ISSUE_TEMPLATE/     Formularios para reportar errores y proponer preguntas
+scripts/build_part_images.py  Genera las imágenes de las partes del escudo y de la bandera
+assets/                     Escudo y bandera oficiales en SVG (fuente de esas imágenes)
 ```
 
 ## Editar las preguntas
 
 Todas las preguntas están en `docs/data/cards.json`, agrupadas por categoría y subcategoría. Para corregir o añadir una, edita ese archivo; el formato está descrito en [AGENT.md](AGENT.md). Las imágenes van en `docs/images/`.
+
+Las imágenes de *Partes del Escudo Nacional* y *Partes de la Bandera Nacional* se generan con un script a partir de los SVG oficiales. Para corregir un texto o mover un indicador, edita la lista del script y ejecútalo:
+
+```bash
+python3 scripts/build_part_images.py
+```
 
 ## Probar en local
 
@@ -104,4 +112,4 @@ En el repositorio de GitHub: **Settings → Pages → Build and deployment**, el
 
 Dedicado al dominio público con [CC0 1.0 Universal](LICENSE): puedes copiar, modificar y distribuir el código y el contenido sin pedir permiso ni dar crédito.
 
-Algunas imágenes se basan en obras de terceros (por ejemplo, los mapas y el Escudo Nacional de Wikimedia Commons). Las fotos que aparecen con las respuestas son de Wikimedia Commons y conservan su propia licencia (CC0, CC BY, CC BY-SA o dominio público); el autor, la licencia y el enlace al original se muestran bajo cada foto. Los símbolos patrios pertenecen al Estado ecuatoriano y la ley regula su uso. La dedicación CC0 solo cubre lo que es obra de los autores de este proyecto.
+Algunas imágenes se basan en obras de terceros de Wikimedia Commons: los mapas, y el escudo y la bandera oficiales en SVG ([escudo](https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Ecuador.svg), [bandera](https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg)). Las fotos que aparecen con las respuestas son de Wikimedia Commons y conservan su propia licencia (CC0, CC BY, CC BY-SA o dominio público); el autor, la licencia y el enlace al original se muestran bajo cada foto. Los símbolos patrios pertenecen al Estado ecuatoriano y la ley regula su uso. La dedicación CC0 solo cubre lo que es obra de los autores de este proyecto.
