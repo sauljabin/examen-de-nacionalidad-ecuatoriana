@@ -54,6 +54,7 @@
       <li>Buscador de preguntas</li>
       <li>Simulacro del examen</li>
       <li>Repaso inteligente</li>
+      <li>Modo estudio</li>
       <li>Repaso de falladas y marcadas</li>
       <li>Racha, meta diaria y logros</li>
       <li>Crea y comparte exámenes</li>
@@ -230,6 +231,13 @@
           <p>Elige las categorías y subtemas que quieras, cuántas preguntas y en qué orden. También puedes imprimirlos.</p>
           <div class="practice-actions">
             <button id="open-topics" class="primary" type="button">Elegir temas</button>
+          </div>
+        </article>
+        <article class="practice-card">
+          <h3>Modo estudio</h3>
+          <p>Lee las preguntas ya con su respuesta, sin calificación. Ideal para aprender un tema antes de ponerte a prueba.</p>
+          <div class="practice-actions">
+            <button id="open-study" class="primary" type="button">Elegir qué estudiar</button>
           </div>
         </article>
         <article class="practice-card">
@@ -530,6 +538,50 @@
       </section>
 
       <button class="link reset-progress" type="button">Borrar mi progreso</button>
+    </section>
+  </template>
+
+  <template id="study-template">
+    <div class="exam-bar">
+      <button class="ghost exit" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        Salir
+      </button>
+      <span class="counter" aria-live="polite"></span>
+    </div>
+    <div class="meter" aria-hidden="true"><div></div></div>
+
+    <section class="question study is-revealed" aria-live="polite">
+      <div class="question-head">
+        <p class="crumbs"></p>
+        <button class="ghost listen" type="button" aria-pressed="false" hidden>
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+          <span>Escuchar</span>
+        </button>
+      </div>
+      <div class="front"></div>
+      <div class="answer" hidden>
+        <p class="answer-label">Respuesta</p>
+        <div class="back"></div>
+      </div>
+    </section>
+
+    <div class="actions study-actions">
+      <button class="ghost big previous" type="button">Anterior</button>
+      <button class="primary big study-next" type="button">Siguiente</button>
+    </div>
+  </template>
+
+  <template id="study-done-template">
+    <section class="result">
+      <p class="eyebrow">Modo estudio</p>
+      <p class="score">¡Bien!</p>
+      <p class="summary"></p>
+      <div class="result-actions">
+        <button class="primary big study-test" type="button">Practicar estas preguntas</button>
+        <button class="ghost big study-again" type="button">Estudiarlas otra vez</button>
+        <button class="ghost big restart" type="button">Volver al inicio</button>
+      </div>
     </section>
   </template>
 

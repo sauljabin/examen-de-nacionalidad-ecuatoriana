@@ -1003,6 +1003,19 @@ select {
 }
 .about-actions { max-width: 26rem; margin-top: 1.5rem; }
 
+/* Study mode ---------------------------------------------------------------- */
+
+.study { cursor: default; }
+.study-options li {
+  padding: .7rem 1rem;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  font-size: 1.05rem;
+}
+.study-options li.is-correct { border-color: var(--right); background: var(--right-soft); color: var(--right); font-weight: 700; }
+.study-actions { grid-template-columns: auto 1fr; }
+.study-actions .previous { width: auto; }
+
 /* Dialogs ------------------------------------------------------------------- */
 
 dialog {

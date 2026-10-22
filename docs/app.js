@@ -409,9 +409,17 @@ function showHome() {
 
 // Practice by topics ---------------------------------------------------------
 
+// "Por temas" and "Modo estudio" share this screen; state.topicsMode says
+// which one is open.
 function showTopics() {
   app.replaceChildren(cloneTemplate("topics-template"));
   app.querySelector(".back-home").addEventListener("click", showHome);
+  if (state.topicsMode === "study") {
+    app.querySelector(".topics-intro .eyebrow").textContent = "Modo estudio";
+    app.querySelector(".topics-intro h1").textContent = "Elige qué estudiar";
+    app.querySelector(".topics-intro .lead").textContent =
+      "Verás cada pregunta ya con su respuesta, sin calificación. Marca categorías completas o solo algunos subtemas.";
+  }
   app.querySelector("#question-count").value = state.topicCount || "20";
   app.querySelector("#shuffle").checked = state.topicShuffle ?? true;
   const list = app.querySelector("#categories");
@@ -474,9 +482,9 @@ function showTopics() {
     if (!cards.length) return;
     const ordered = app.querySelector("#shuffle").checked ? shuffle(cards) : cards;
     const count = app.querySelector("#question-count").value;
-    startExam(count === "all" ? ordered : ordered.slice(0, Number(count)), {
-      exit: { back: showTopics, label: "Volver a los temas" },
-    });
+    const chosen = count === "all" ? ordered : ordered.slice(0, Number(count));
+    if (state.topicsMode === "study") startStudy(chosen);
+    else startExam(chosen, { exit: { back: showTopics, label: "Volver a los temas" } });
   });
   updateTopics();
   app.focus();
@@ -564,7 +572,7 @@ function updateTopics() {
   start.disabled = available === 0;
   app.querySelector("#print").disabled = available === 0;
   start.textContent = available
-    ? `Comenzar · ${total} ${total === 1 ? "pregunta" : "preguntas"}`
+    ? `${state.topicsMode === "study" ? "Estudiar" : "Comenzar"} · ${plural(total, "pregunta", "preguntas")}`
     : "Elige al menos un tema";
   app.querySelector("#question-count").onchange = (event) => {
     state.topicCount = event.target.value;
@@ -685,7 +693,14 @@ function setupPractice() {
       updatePractice();
     }
   });
-  app.querySelector("#open-topics").addEventListener("click", showTopics);
+  app.querySelector("#open-topics").addEventListener("click", () => {
+    state.topicsMode = "practice";
+    showTopics();
+  });
+  app.querySelector("#open-study").addEventListener("click", () => {
+    state.topicsMode = "study";
+    showTopics();
+  });
   app.querySelector("#open-about").addEventListener("click", showAbout);
   app.querySelector("#open-progress").addEventListener("click", showProgress);
   app.querySelector("#open-builder").addEventListener("click", showBuilder);
@@ -745,9 +760,108 @@ function updatePractice() {
   updateProgressSummary();
 }
 
+// Study mode -------------------------------------------------------------------
+
+// Each question with its answer already showing, without grading: nothing
+// here counts for the streak, missed questions or progress.
+function startStudy(cards) {
+  state.queue = cards;
+  state.index = 0;
+  state.studying = true;
+  showStudyCard();
+}
+
+function showStudyCard() {
+  const card = state.queue[state.index];
+  const total = state.queue.length;
+  state.revealed = true;
+  stopSpeaking();
+  app.replaceChildren(cloneTemplate("study-template"));
+  const counter = app.querySelector(".counter");
+  counter.textContent = `${state.index + 1} / ${total}`;
+  counter.setAttribute("aria-label", `Pregunta ${state.index + 1} de ${total}`);
+  app.querySelector(".meter > div").style.width = `${((state.index + 1) / total) * 100}%`;
+  app.querySelector(".exam-bar").append(markButton(card));
+  app.querySelector(".exit").addEventListener("click", endStudy);
+  const listen = app.querySelector(".listen");
+  listen.hidden = !canSpeak;
+  listen.addEventListener("click", toggleSpeaking);
+  app.querySelector(".crumbs").textContent = [card.category, card.subcategory, card.topic].filter(Boolean).join(" › ");
+
+  const front = app.querySelector(".front");
+  if (card.front?.length) {
+    const text = document.createElement("p");
+    text.append(renderSegments(card.front, { revealCloze: true }));
+    front.append(text);
+  }
+  if (card.image) front.append(renderImage(card.image, { revealed: true }));
+  if (card.type === "choice") {
+    const list = document.createElement("ul");
+    list.className = "options study-options";
+    const correct = new Set(correctOptions(card));
+    card.options.forEach((option, index) => {
+      const item = document.createElement("li");
+      item.textContent = option;
+      if (correct.has(index)) {
+        item.className = "is-correct";
+        item.prepend("✓ ");
+      }
+      list.append(item);
+    });
+    front.append(list);
+  }
+  if (card.type === "basic") {
+    app.querySelector(".back").replaceChildren(renderSegments(card.back, { revealCloze: true }));
+    app.querySelector(".answer").hidden = false;
+  }
+  const after = app.querySelector(".answer");
+  if (card.photo) after.after(renderPhoto(card.photo));
+  if (card.explanation) after.after(renderExplanation(card.explanation));
+
+  const previous = app.querySelector(".previous");
+  previous.disabled = state.index === 0;
+  previous.addEventListener("click", () => moveStudy(-1));
+  const next = app.querySelector(".study-next");
+  next.textContent = state.index === total - 1 ? "Terminar" : "Siguiente";
+  next.addEventListener("click", () => moveStudy(1));
+  next.focus();
+}
+
+function moveStudy(step) {
+  const index = state.index + step;
+  if (index < 0) return;
+  if (index >= state.queue.length) {
+    showStudyDone();
+    return;
+  }
+  state.index = index;
+  showStudyCard();
+}
+
+function endStudy() {
+  stopSpeaking();
+  state.studying = false;
+  state.topicsMode = "study";
+  showTopics();
+}
+
+function showStudyDone() {
+  stopSpeaking();
+  state.studying = false;
+  const cards = state.queue;
+  app.replaceChildren(cloneTemplate("study-done-template"));
+  app.querySelector(".summary").textContent =
+    `Estudiaste ${plural(cards.length, "pregunta", "preguntas")}. ¿Las practicas ahora para ver cuánto recuerdas?`;
+  app.querySelector(".study-test").addEventListener("click", () => startExam(shuffle(cards)));
+  app.querySelector(".study-again").addEventListener("click", () => startStudy(cards));
+  app.querySelector(".restart").addEventListener("click", showHome);
+  app.focus();
+}
+
 // Exam -----------------------------------------------------------------------
 
 function startExam(cards, { passMark, exit } = {}) {
+  state.studying = false;
   state.queue = cards;
   state.index = 0;
   state.missed = [];
@@ -947,7 +1061,7 @@ function speechText(card) {
     .join("")];
   if (card.type === "choice") {
     if (state.revealed) {
-      parts.push(app.querySelector(".feedback")?.textContent, card.explanation);
+      parts.push(app.querySelector(".feedback")?.textContent || `Respuesta: ${correctAnswerText(card)}.`, card.explanation);
     } else {
       state.optionOrder.forEach((index, position) => parts.push(`Opción ${position + 1}: ${card.options[index]}.`));
     }
@@ -2038,6 +2152,24 @@ window.addEventListener("appinstalled", () => {
 // Startup --------------------------------------------------------------------
 
 document.addEventListener("keydown", (event) => {
+  if (app.querySelector(".study") && !event.repeat && !document.querySelector("dialog[open]")) {
+    // A focused button or link already reacts to Space and Enter by itself.
+    const onControl = event.target instanceof Element && event.target.closest("a, button");
+    if (onControl && (event.key === " " || event.key === "Enter")) return;
+    if (event.key === "ArrowRight" || event.key === " " || event.key === "Enter") {
+      event.preventDefault();
+      moveStudy(1);
+    } else if (event.key === "ArrowLeft") {
+      moveStudy(-1);
+    } else if (event.key === "Escape") {
+      endStudy();
+    } else if (event.key === "m" || event.key === "M") {
+      app.querySelector(".exam-bar .mark")?.click();
+    } else if (event.key === "l" || event.key === "L") {
+      toggleSpeaking();
+    }
+    return;
+  }
   if (!app.querySelector(".question") || event.repeat) return;
   if (document.querySelector("dialog[open]")) return;
   if (event.key === "Escape") {
