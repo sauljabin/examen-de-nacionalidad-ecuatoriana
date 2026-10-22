@@ -518,7 +518,11 @@ select {
   border: 2px solid #1b2330;
   background: repeating-linear-gradient(-45deg, #f2b705 0 10px, #e6a800 10px 20px);
   color: #1b2330;
-  font: 800 clamp(.75rem, 4cqi, 2rem)/1 "Fraunces", Georgia, serif;
+  /* Size the "?" from the mask itself so it fits thin labels too. */
+  container-type: size;
+}
+.mask.active span {
+  font: 800 min(70cqh, 40cqw, 2rem)/1 "Fraunces", Georgia, serif;
 }
 
 .actions { display: grid; gap: .75rem; margin-top: 1.5rem; }

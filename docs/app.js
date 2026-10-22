@@ -145,7 +145,11 @@ function renderImage(image, { revealed }) {
       width: `${block.width * 100}%`,
       height: `${block.height * 100}%`,
     });
-    if (block.active) mask.textContent = "?";
+    if (block.active) {
+      const mark = document.createElement("span");
+      mark.textContent = "?";
+      mask.append(mark);
+    }
     figure.append(mask);
   }
   return figure;
