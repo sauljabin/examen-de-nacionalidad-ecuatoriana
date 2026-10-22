@@ -9,13 +9,31 @@ No hay cuentas, publicidad ni servidor: todo pasa en tu navegador.
 
 ## Cómo se usa
 
-1. En el inicio, elige las categorías y subcategorías que quieres practicar (por ejemplo, *Geografía › Volcanes*) y cuántas preguntas quieres.
+1. En el inicio, elige cómo practicar (ver abajo).
 2. Lee la pregunta y piensa la respuesta.
 3. Pulsa **Ver respuesta**, toca la tarjeta o usa la barra espaciadora.
 4. Indica si acertaste: **No** (tecla `1`) o **Sí** (tecla `2`).
-5. Al final ves tu porcentaje por categoría y puedes repasar solo las preguntas falladas.
+5. Al final ves tu porcentaje por categoría, puedes repasar solo las preguntas falladas y puedes guardar el examen con un nombre.
 
 Puedes salir del examen en cualquier momento con el botón **Salir** o la tecla `Esc`.
+
+### Formas de practicar
+
+El inicio tiene tres bloques:
+
+- **Formas de practicar**
+  - **Simulacro:** 30 preguntas al azar de todos los temas, repartidas por igual, como en el examen real. Al final te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
+  - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime.
+- **Tu repaso**
+  - **Falladas:** las preguntas que respondes mal se guardan solas, aunque cierres la página. Cuando aciertas una, sale de la lista.
+  - **Marcadas:** durante un examen o en el buscador, el botón **Marcar** (o la tecla `M`) guarda una pregunta para repasarla después.
+- **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Hay dos formas de tener uno:
+  - **Crear examen:** elige preguntas con el buscador o desde tus marcadas y falladas, ponle un nombre y pulsa **Guardar**.
+  - **Al terminar cualquier examen**, incluido un simulacro, escribe un nombre y pulsa **Guardar**.
+
+Cada examen guardado tiene un enlace para compartirlo: quien lo abra verá las mismas preguntas, sin registrarse, y podrá guardarlo en sus propios exámenes. También se puede imprimir, editar o eliminar.
+
+Las listas y los exámenes se guardan solo en el navegador de cada dispositivo. Un examen compartido viaja completo dentro del enlace (un código corto por pregunta después de `#examen=`), así que no hace falta ningún servidor.
 
 ### Buscar preguntas
 
@@ -23,7 +41,7 @@ En el inicio hay un buscador: escribe una o varias palabras (por ejemplo, «Chim
 
 ### Imprimir o guardar como PDF
 
-El botón **Imprimir o PDF**, junto a «Comenzar», imprime los temas que tengas marcados. Puedes elegir:
+En **Por temas**, el botón **Imprimir o PDF**, junto a «Comenzar», imprime los temas que tengas marcados. Los exámenes guardados también se imprimen desde su página. Puedes elegir:
 
 - **Incluir las respuestas:** sin ellas obtienes un cuestionario para responder en papel, con líneas y huecos en blanco.
 - **Incluir imágenes y fotos:** sin ellas sale solo texto; las preguntas que solo tienen sentido con su imagen (como los mapas) se omiten.

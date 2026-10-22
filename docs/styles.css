@@ -373,6 +373,63 @@ kbd {
 .result-question { margin-top: .3rem !important; }
 .result-answer { margin-top: .4rem !important; color: var(--accent); font-weight: 700; }
 .search-results .occlusion { margin-top: .5rem; max-width: 28rem; }
+.result-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .75rem;
+  white-space: normal;
+}
+.result-head .result-crumbs { flex: 1; min-width: 0; margin-top: .4rem; }
+.result-head button { flex: none; padding: .3rem .8rem; font-size: .9rem; }
+
+/* Toggle buttons: mark a question, add it to an exam. */
+.mark[aria-pressed="true"] { border-color: var(--line-strong); background: var(--gold-soft); }
+.mark[aria-pressed="true"] svg { fill: var(--gold); }
+.add[aria-pressed="true"] { border-color: var(--right); background: var(--right-soft); color: var(--right); }
+
+.practice h2 { margin: 2rem 0 .75rem; font-size: 1.5rem; }
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+}
+.practice-card {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding: 1rem 1.1rem 1.1rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.practice-card h3 { margin: 0; font-family: "Fraunces", Georgia, serif; font-size: 1.25rem; }
+.practice-card p { flex: 1; margin: 0; color: var(--muted); }.practice-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
+
+.my-exams .toolbar { align-items: center; margin: 2rem 0 .75rem; }
+.my-exams .toolbar h2 { margin: 0; }
+.exams-empty { margin: 0; color: var(--muted); }
+.exam-list { display: grid; gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.exam-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem .75rem;
+  padding: .9rem 1.1rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.exam-info { display: grid; flex: 1 1 14rem; min-width: 0; }
+.exam-info strong { font-size: 1.1rem; }
+.exam-info small { color: var(--muted); font-size: .9rem; }
+
+.topics-intro { padding-top: .5rem; }
+.topics-intro h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.topics-intro + .toolbar { margin-top: 1.25rem; }
+
+.save-exam { max-width: 32rem; margin: 0 auto 2.5rem; text-align: left; }
+.save-done { margin: 0 auto 2.5rem; color: var(--right); font-weight: 700; }
 
 .install {
   display: flex;
@@ -457,7 +514,7 @@ input[type="checkbox"], input[type="radio"] {
 .chip span { min-width: 0; overflow-wrap: break-word; }
 .chip small { color: var(--muted); font-variant-numeric: tabular-nums; }
 
-.start-panel {
+.start-panel, .builder-bar {
   position: sticky;
   bottom: 0;
   display: flex;
@@ -702,6 +759,10 @@ select {
   background: linear-gradient(90deg, var(--right) calc(var(--ratio) * 100%), var(--sunken) 0);
 }
 
+.verdict { margin: -.75rem auto 1.5rem; font-size: 1.2rem; font-weight: 700; }
+.verdict.is-right { color: var(--right); }
+.verdict.is-wrong { color: var(--wrong); }
+
 .result-actions { display: grid; gap: .75rem; max-width: 26rem; margin: 0 auto 2.5rem; }
 .missed-title { text-align: left; font-size: 1.5rem; }
 
@@ -721,6 +782,51 @@ select {
 .missed p { margin: 0; }
 .missed-answer { margin-top: .4rem !important; font-weight: 700; color: var(--accent); }
 .missed .occlusion { margin-top: .5rem; }
+
+/* Exam builder and shared exams --------------------------------------------- */
+
+.builder h1, .shared h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.builder h2 { margin: 2rem 0 .75rem; font-size: 1.4rem; }
+.text-field { display: grid; gap: .35rem; margin-top: 1.5rem; font-weight: 700; }
+.text-field input, .share-link {
+  min-width: 0;
+  padding: .6rem .9rem;
+  border: 2px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 400;
+}
+.builder-source { margin-top: .75rem; }
+.source-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 .75rem; }
+.draft-empty { color: var(--muted); }
+.clear-draft { margin-top: .75rem; }
+.builder-count { flex: 1 1 9rem; font-weight: 700; }
+.builder-bar #builder-done { flex: 1 0 auto; max-width: 16rem; padding: .8rem 1.4rem; }
+
+.shared { padding-top: 1.5rem; }
+.shared-warning {
+  margin: 1rem 0 0;
+  padding: .6rem .9rem;
+  border-left: 4px solid var(--wrong);
+  border-radius: 0 8px 8px 0;
+  background: var(--wrong-soft);
+}
+.shared-start { display: grid; gap: .75rem; max-width: 26rem; margin: 1.5rem 0 2rem; }
+.share-box {
+  padding: 1rem 1.2rem 1.2rem;
+  border: 2px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+}
+.share-box h2 { margin: 0 0 .3rem; font-size: 1.3rem; }
+.share-box p { margin: 0 0 .75rem; }
+.share-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.share-link { flex: 1 1 14rem; }
+.share-status { margin: .5rem 0 0 !important; color: var(--right); font-weight: 700; }
+.share-status:empty { display: none; }
+.shared-more { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; margin-top: 1.5rem; }
 
 /* Dialogs ------------------------------------------------------------------- */
 
@@ -776,6 +882,8 @@ legend { margin-bottom: .45rem; font-weight: 700; }
   .brand strong { display: block; font-size: min(1.15rem, 5.5vw); hyphens: none; }
   .topbar, main { padding-left: 1rem; padding-right: 1rem; }
   .question { padding: 1.1rem; box-shadow: 4px 4px 0 var(--accent); }
+  .exam-bar { flex-wrap: wrap; gap: .5rem; }
+  .exam-bar .mark span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .breakdown li { grid-template-columns: 7rem 1fr auto; }
   kbd { display: none; }
   body { hyphens: auto; }

@@ -52,6 +52,9 @@
       <li>Se instala en Android, iPhone y computadora</li>
       <li>Imprime o guarda en PDF</li>
       <li>Buscador de preguntas</li>
+      <li>Simulacro del examen</li>
+      <li>Repaso de falladas y marcadas</li>
+      <li>Crea y comparte exámenes</li>
       <li>Letra grande, alto contraste y modo oscuro</li>
       <li>Se usa con teclado</li>
     </ul>
@@ -136,13 +139,13 @@
     </form>
   </dialog>
 
-  <dialog id="exit-dialog" aria-labelledby="exit-title">
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title">
     <form method="dialog">
-      <h2 id="exit-title">¿Salir del examen?</h2>
-      <p>Se perderá el progreso de este intento.</p>
+      <h2 id="confirm-title"></h2>
+      <p class="confirm-text"></p>
       <div class="dialog-actions">
-        <button class="ghost" value="stay">Seguir respondiendo</button>
-        <button class="danger" value="exit">Salir</button>
+        <button class="ghost confirm-cancel" value="cancel"></button>
+        <button class="danger confirm-ok" value="ok"></button>
       </div>
     </form>
   </dialog>
@@ -151,7 +154,7 @@
     <section class="hero">
       <p class="eyebrow">Práctica de estudio</p>
       <h1>Prepárate para el examen de nacionalización ecuatoriana</h1>
-      <p class="lead">Elige los temas, lee cada pregunta, piensa tu respuesta y compárala con la correcta. Al final verás cuánto sabes y qué te conviene repasar.</p>
+      <p class="lead">Lee cada pregunta, piensa tu respuesta y compárala con la correcta. Practica con un simulacro, por temas o con tus propios exámenes, y al final verás qué te conviene repasar.</p>
     </section>
 
     <section class="install" hidden aria-label="Instalar la app">
@@ -175,8 +178,72 @@
       <ol class="search-results"></ol>
     </section>
 
+    <section class="practice" aria-labelledby="practice-title">
+      <h2 id="practice-title">Formas de practicar</h2>
+      <div class="practice-grid">
+        <article class="practice-card">
+          <h3>Simulacro</h3>
+          <p>30 preguntas al azar de todos los temas, como en el examen. Para aprobar se necesitan 27 aciertos (90&nbsp;%).</p>
+          <div class="practice-actions">
+            <button id="start-mock" class="primary" type="button">Empezar simulacro</button>
+          </div>
+        </article>
+        <article class="practice-card">
+          <h3>Por temas</h3>
+          <p>Elige las categorías y subtemas que quieras, cuántas preguntas y en qué orden. También puedes imprimirlos.</p>
+          <div class="practice-actions">
+            <button id="open-topics" class="primary" type="button">Elegir temas</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="practice" aria-labelledby="review-title">
+      <h2 id="review-title">Tu repaso</h2>
+      <div class="practice-grid">
+        <article class="practice-card">
+          <h3>Falladas</h3>
+          <p class="missed-summary"></p>
+          <div class="practice-actions">
+            <button id="start-missed" class="primary" type="button">Repasar</button>
+            <button id="clear-missed" class="link" type="button">Vaciar</button>
+          </div>
+        </article>
+        <article class="practice-card">
+          <h3>Marcadas</h3>
+          <p class="marked-summary"></p>
+          <div class="practice-actions">
+            <button id="start-marked" class="primary" type="button">Repasar</button>
+            <button id="clear-marked" class="link" type="button">Quitar marcas</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="practice my-exams" aria-labelledby="exams-title">
+      <div class="toolbar">
+        <h2 id="exams-title">Mis exámenes</h2>
+        <button id="open-builder" class="primary" type="button"></button>
+      </div>
+      <p class="exams-empty">Crea un examen con las preguntas que elijas, o guarda uno al terminarlo. Luego puedes repetirlo o compartirlo con un enlace.</p>
+      <ul class="exam-list"></ul>
+    </section>
+  </template>
+
+  <template id="topics-template">
+    <div class="exam-bar">
+      <button class="ghost back-home" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </button>
+    </div>
+    <section class="topics-intro">
+      <p class="eyebrow">Por temas</p>
+      <h1>Elige qué practicar</h1>
+      <p class="lead">Marca categorías completas o solo algunos subtemas. Abajo eliges cuántas preguntas y si van en orden aleatorio.</p>
+    </section>
     <div class="toolbar">
-      <h2>Temas</h2>
+      <h2 class="visually-hidden">Temas</h2>
       <div>
         <button class="link" type="button" data-select="all">Marcar todo</button>
         <button class="link" type="button" data-select="none">Desmarcar todo</button>
@@ -263,13 +330,105 @@
       <p class="eyebrow">Resultado</p>
       <p class="score"></p>
       <p class="summary"></p>
+      <p class="verdict" hidden></p>
       <ul class="breakdown"></ul>
       <div class="result-actions">
         <button class="primary big retry-missed" type="button">Repasar las falladas</button>
         <button class="ghost big restart" type="button">Volver al inicio</button>
       </div>
+      <form class="save-exam share-box">
+        <h2>¿Te sirvió este examen?</h2>
+        <p>Guárdalo con un nombre para repetirlo cuando quieras o compartirlo con un enlace.</p>
+        <div class="share-row">
+          <input class="save-title share-link" type="text" maxlength="80" autocomplete="off" aria-label="Nombre del examen" placeholder="Nombre del examen">
+          <button class="primary" type="submit">Guardar</button>
+        </div>
+      </form>
+      <p class="save-done" hidden>Guardado en «Mis exámenes». <button class="link open-saved" type="button">Ver y compartir</button></p>
       <h2 class="missed-title">Preguntas falladas</h2>
       <ol class="missed"></ol>
+    </section>
+  </template>
+
+  <template id="builder-template">
+    <div class="exam-bar">
+      <button class="ghost back-home" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </button>
+    </div>
+    <section class="builder">
+      <p class="eyebrow">Crea tu examen</p>
+      <h1>Elige las preguntas</h1>
+      <p class="lead">Búscalas o tómalas de tus listas. Al guardar, el examen queda en «Mis exámenes» y tendrás un enlace para compartirlo; quien lo abra verá las mismas preguntas.</p>
+      <label class="text-field">
+        <span>Nombre del examen (opcional)</span>
+        <input id="exam-title" type="text" maxlength="80" placeholder="Por ejemplo: Repaso de símbolos patrios" autocomplete="off">
+      </label>
+
+      <h2>Agrega preguntas</h2>
+      <div class="segmented source-tabs" role="radiogroup" aria-label="De dónde agregar preguntas">
+        <label><input type="radio" name="source" value="search" checked><span>Buscar</span></label>
+        <label><input type="radio" name="source" value="marked"><span class="marked-tab">Marcadas</span></label>
+        <label><input type="radio" name="source" value="missed"><span class="missed-tab">Falladas</span></label>
+      </div>
+      <div class="builder-source">
+        <label class="search-box">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <span class="visually-hidden">Buscar preguntas</span>
+          <input id="builder-search" type="search" placeholder="Buscar preguntas, por ejemplo «cóndor»" autocomplete="off" spellcheck="false">
+        </label>
+        <div class="source-head">
+          <p class="search-status" aria-live="polite"></p>
+          <button class="link add-all" type="button" hidden>Agregar todas</button>
+        </div>
+        <ol class="search-results"></ol>
+      </div>
+
+      <h2 id="draft-title">Tu examen</h2>
+      <p class="draft-empty">Todavía no elegiste preguntas.</p>
+      <ol class="search-results draft-list" aria-labelledby="draft-title"></ol>
+      <button class="link clear-draft" type="button">Vaciar el examen</button>
+    </section>
+    <section class="builder-bar" aria-label="Terminar el examen">
+      <span class="builder-count"></span>
+      <button id="builder-done" class="primary" type="button">Guardar</button>
+    </section>
+  </template>
+
+  <template id="shared-template">
+    <section class="shared">
+      <p class="eyebrow">Examen para compartir</p>
+      <h1 class="shared-title"></h1>
+      <p class="lead shared-summary"></p>
+      <p class="shared-warning" hidden></p>
+      <div class="shared-start">
+        <label class="check">
+          <input id="shared-shuffle" type="checkbox">
+          <span>Orden aleatorio</span>
+        </label>
+        <button class="primary big shared-go" type="button">Comenzar</button>
+      </div>
+      <div class="share-box">
+        <h2>Comparte este examen</h2>
+        <p>Quien abra el enlace verá estas mismas preguntas, sin registrarse.</p>
+        <div class="share-row">
+          <input class="share-link" type="text" readonly aria-label="Enlace del examen">
+          <button class="ghost copy-link" type="button">Copiar enlace</button>
+          <button class="ghost share-button" type="button" hidden>Compartir…</button>
+        </div>
+        <p class="share-status" aria-live="polite"></p>
+      </div>
+      <div class="shared-more">
+        <button class="ghost print-shared" type="button">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg>
+          Imprimir o PDF
+        </button>
+        <button class="ghost save-shared" type="button">Guardar en mis exámenes</button>
+        <button class="ghost edit-shared" type="button">Editar preguntas</button>
+        <button class="link delete-shared" type="button" hidden>Eliminar</button>
+        <button class="link shared-home" type="button">Volver al inicio</button>
+      </div>
     </section>
   </template>
 
