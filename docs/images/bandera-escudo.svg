@@ -5,6 +5,6 @@
 <circle cx="280" cy="178" r="7" fill="#000" stroke="#fff" stroke-width="2"/>
 <g font-family="Arial, Helvetica, sans-serif" fill="#000">
 <text x="566" y="188" font-size="30" font-weight="bold">Escudo Nacional</text>
-<text font-size="26"><tspan x="566" y="222">Lo lleva la bandera que usan</tspan><tspan x="566" y="254">las instituciones del Estado</tspan><tspan x="566" y="286">y los actos oficiales.</tspan></text>
+<text font-size="26"><tspan x="566" y="222">Va en el centro de la</tspan><tspan x="566" y="254">bandera y reúne símbolos del</tspan><tspan x="566" y="286">país: el Chimborazo, el río</tspan><tspan x="566" y="318">Guayas, el sol y el cóndor.</tspan></text>
 </g>
 </svg>
