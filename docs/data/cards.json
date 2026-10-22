@@ -5,8 +5,8 @@
    "title": "Símbolos Patrios",
    "subcategories": [
     {
-     "id": "general",
-     "title": "General",
+     "id": "los-tres-simbolos",
+     "title": "Los tres símbolos",
      "cards": [
       {
        "id": "fZv8goNuJ33A5OMs0.f",
@@ -1585,203 +1585,9 @@
    "title": "Geografía",
    "subcategories": [
     {
-     "id": "general",
-     "title": "General",
+     "id": "territorio-y-regiones",
+     "title": "Territorio y regiones",
      "cards": [
-      {
-       "id": "7HGSQl0IRU7ja6pPp.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuántas provincias tiene la República del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Ecuador tiene "
-        },
-        {
-         "text": "24",
-         "bold": true
-        },
-        {
-         "text": " provincias"
-        }
-       ]
-      },
-      {
-       "id": "5RU3VpcJARkgChIlm.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuántos cantones tiene Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "221",
-         "bold": true
-        },
-        {
-         "text": " "
-        }
-       ]
-      },
-      {
-       "id": "ZEBzTrlxefQ7DsRk6.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A cuál provincia se le conoce como la "
-        },
-        {
-         "text": "provincia de los lagos",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Imbabura",
-         "bold": true
-        },
-        {
-         "text": " se le conoce como la provincia de los lagos."
-        }
-       ]
-      },
-      {
-       "id": "vwEOqkWI19dDPL3J7.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué ciudad del Ecuador se la conoce como la "
-        },
-        {
-         "text": "Atenas del Ecuador",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Cuenca",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ]
-      },
-      {
-       "id": "xmqaD7Ui5eYPGJKaJ.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Por qué Cuenca se le conoce como la Atenas del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "A Cuenca se le da este título por su destacado "
-        },
-        {
-         "text": "aporte a la cultura, la educación y las artes en el país",
-         "bold": true
-        },
-        {
-         "text": ", de forma similar a como la antigua Atenas fue un centro de pensamiento, filosofía y expresión artística en la Grecia clásica."
-        }
-       ]
-      },
-      {
-       "id": "KkgmkUPK8FSxQmnbF.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre oficial de "
-        },
-        {
-         "text": "Cuenca",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Santa Ana de los Ríos de Cuenca."
-        }
-       ]
-      },
-      {
-       "id": "v17yFx5WZ0zedAqQA.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre oficial de "
-        },
-        {
-         "text": "Guayaquil",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Santiago de Guayaquil."
-        }
-       ]
-      },
-      {
-       "id": "s8QcYYpXBqtTS4mZy.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre oficial de "
-        },
-        {
-         "text": "Quito",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "San Francisco de Quito."
-        }
-       ]
-      },
-      {
-       "id": "o0HaQ8AeEGj1IhYYq.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre oficial de las "
-        },
-        {
-         "text": "Islas Galápagos",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Archipiélago de Colón."
-        }
-       ]
-      },
       {
        "id": "IRr08oZgtZSxgghNc.f",
        "type": "basic",
@@ -1843,76 +1649,6 @@
        ]
       },
       {
-       "id": "6lQF6y86NgWgFphMp.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cómo le dicen a "
-        },
-        {
-         "text": "Ambato",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "\"La Ciudad de las Flores y las Frutas\" o también \"Cuna de los tres Juanes\"."
-        }
-       ]
-      },
-      {
-       "id": "NvW5LWak7tPcVEeoA.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre de la ciudad en la que nacieron los tres Juanes: "
-        },
-        {
-         "text": "Juan Montalvo, Juan León Mera, Juan Benigno Vela",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Ambato."
-        }
-       ]
-      },
-      {
-       "id": "WAbTER412O6X0MGlF.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cómo se le conoce a la provincia de Tungurahua?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Tierra de los tres Juanes."
-        }
-       ]
-      },
-      {
-       "id": "fBKHkLC8PNOJLT5lt.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuáles son los límites geográficos del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Limita al norte con Colombia, al sur y al este con Perú, y al oeste con el Océano Pacífico."
-        }
-       ]
-      },
-      {
        "id": "YrdMljtCV5EVtSYfo.f",
        "type": "basic",
        "front": [
@@ -1923,160 +1659,6 @@
        "back": [
         {
          "text": "Al oeste del país y de la cordillera de los Andes, bordeando el océano Pacífico."
-        }
-       ]
-      },
-      {
-       "id": "ozBE7EniLVDVLKQbR.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuáles son las dos corrientes marinas que bañan al Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "La corriente fría del Humboldt y la corriente cálida del Niño."
-        }
-       ]
-      },
-      {
-       "id": "wyfHqFdLWOQ6auFgI.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué distancia de la costa ecuatoriana se halla el Archipiélago de Galápagos?"
-        }
-       ],
-       "back": [
-        {
-         "text": "A unos 972 km."
-        }
-       ]
-      },
-      {
-       "id": "HU1MBRcpML9Nzwzci.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre de la isla de 920 km² de superficie que se encuentra frente a Guayaquil?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Isla Puná."
-        }
-       ]
-      },
-      {
-       "id": "haUA3gnuq8yjqcjEd.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué provincia pertenece la Isla Puná?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Pertenece a la provincia del Guayas."
-        }
-       ]
-      },
-      {
-       "id": "eMGzAEMb8HrtUfzIC.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué provincia del Ecuador se le conoce como la "
-        },
-        {
-         "text": "Provincia Verde",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Esmeraldas."
-        }
-       ]
-      },
-      {
-       "id": "j83V5M3qxZVQ1pYWS.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué origen tiene el Archipiélago de Colón o Islas Galápagos?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Tiene un origen volcánico."
-        }
-       ]
-      },
-      {
-       "id": "v1fRapTTKk5Vx0DQX.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es la carretera que atraviesa el Ecuador desde el norte al sur?"
-        }
-       ],
-       "back": [
-        {
-         "text": "La carretera Panamericana."
-        }
-       ]
-      },
-      {
-       "id": "zhuprqWA6xMYZUXtD.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "En Ecuador la carretera Panamericana toma el nombre de"
-        }
-       ],
-       "back": [
-        {
-         "text": "Troncal de la Sierra ("
-        },
-        {
-         "text": "E35",
-         "bold": true
-        },
-        {
-         "text": ")."
-        }
-       ]
-      },
-      {
-       "id": "Nv1EhYu0z25n6Tjl4.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuáles son los principales ecosistemas del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Bosques húmedos, páramos, manglares, y la Amazonía (bosques de tierra firme e inundables), así como la franja marino costera."
-        }
-       ]
-      },
-      {
-       "id": "27y4tbTNHaqeOKinP.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué océano baña la costa del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El Océano Pacífico."
         }
        ]
       },
@@ -2095,509 +1677,34 @@
        ]
       },
       {
-       "id": "I26V7rtNJQJT5pDeQ.f",
+       "id": "uOSrCDdrrs3PxJnNh.f",
        "type": "basic",
        "front": [
         {
-         "text": "¿Qué ciudad ecuatoriana es conocida como \""
-        },
+         "text": "La Cordillera de los Andes divide al Ecuador continental en"
+        }
+       ],
+       "back": [
         {
-         "text": "La Ciudad Blanca",
+         "text": "3",
          "bold": true
         },
         {
-         "text": "\"?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Ibarra."
+         "text": " regiones geográficas: Costa, Sierra y Amazonía"
         }
        ]
       },
       {
-       "id": "3dlaGeN0WROQ5NtMf.f",
+       "id": "Nv1EhYu0z25n6Tjl4.f",
        "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es el número de provincias en la región Sierra?"
+         "text": "¿Cuáles son los principales ecosistemas del Ecuador?"
         }
        ],
        "back": [
         {
-         "text": "10"
-        }
-       ]
-      },
-      {
-       "id": "GZirDvoYDGHKNcoNn.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el número de provincias en la región Costa?"
-        }
-       ],
-       "back": [
-        {
-         "text": "7"
-        }
-       ]
-      },
-      {
-       "id": "0ycwWKcJIEXFiBhia.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el número de provincias en la región Amazonía?"
-        }
-       ],
-       "back": [
-        {
-         "text": "6"
-        }
-       ]
-      },
-      {
-       "id": "3qra8bYq0IaL74Ef1.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es el número de provincias en la región Insular?"
-        }
-       ],
-       "back": [
-        {
-         "text": "1"
-        }
-       ]
-      },
-      {
-       "id": "wjIXQ3cEwFm4L8MeU.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué ciudad de la provincia de Manabí es conocida por su festival de ballenas jorobadas?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Puerto López.",
-         "bold": true
-        },
-        {
-         "text": " "
-        }
-       ]
-      },
-      {
-       "id": "oJ0t5YNFuYRt9wnWS.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué ciudad es la \""
-        },
-        {
-         "text": "Capital Cultural del Ecuador",
-         "bold": true
-        },
-        {
-         "text": "\"?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Loja."
-        }
-       ]
-      },
-      {
-       "id": "IMudNdrp7d7jYve4t.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué ciudad ecuatoriana es famosa por sus sombreros de paja toquilla?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Es "
-        },
-        {
-         "text": "Montecristi",
-         "bold": true
-        },
-        {
-         "text": ", en la provincia de Manabí."
-        }
-       ]
-      },
-      {
-       "id": "rwZyKkdHkvfpNvkLA.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué parroquia ecuatoriana es famosa por la elaboración de guitarras artesanales?"
-        }
-       ],
-       "back": [
-        {
-         "text": "San Bartolomé, en la provincia de Azuay."
-        }
-       ]
-      },
-      {
-       "id": "QEwaXfYZfFm9AANY4.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué fiesta tradicional se celebra en Cuenca durante el mes de noviembre?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Fiestas de la Independencia de Cuenca",
-         "bold": true
-        },
-        {
-         "text": " (3 de noviembre de 1820)"
-        }
-       ]
-      },
-      {
-       "id": "VVujvfY1BHj3pmJAB.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuándo se celebra la "
-        },
-        {
-         "text": "Fiesta de la Fruta y de las Flores",
-         "bold": true
-        },
-        {
-         "text": " en Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Se celebra en Ambato, durante el feriado de Carnaval."
-        }
-       ]
-      },
-      {
-       "id": "gBM3K1Io3LFJiaD1r.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál es la provincia de origen del sombrero de paja toquilla?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Manabí",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ]
-      },
-      {
-       "id": "hilE2kVzyNipJzYSz.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué celebración tradicional tiene lugar en la provincia de "
-        },
-        {
-         "text": "Imbabura",
-         "bold": true
-        },
-        {
-         "text": " en septiembre?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Fiesta del Yamor, en Otavalo."
-        }
-       ]
-      },
-      {
-       "id": "eEmyhIe9SidFu7fHi.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué ciudad es conocida como \""
-        },
-        {
-         "text": "La Carita de Dios",
-         "bold": true
-        },
-        {
-         "text": "\"?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Quito."
-        }
-       ]
-      },
-      {
-       "id": "WxpPa3GNZyEb2DXYc.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿En qué provincia de Ecuador se encuentra el "
-        },
-        {
-         "text": "Archipiélago de Jambelí",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El Archipiélago de Jambelí se encuentra en la provincia de "
-        },
-        {
-         "text": "El Oro",
-         "bold": true
-        },
-        {
-         "text": ", en aguas del golfo de Guayaquil."
-        }
-       ]
-      },
-      {
-       "id": "B6zFL4XvxrHHE70ra.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la parroquia de "
-        },
-        {
-         "text": "Salango",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Manabí.",
-         "bold": true
-        },
-        {
-         "text": " "
-        }
-       ]
-      },
-      {
-       "id": "zPpsG3qC6xIRlMwAI.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué cantón pertenece "
-        },
-        {
-         "text": "Salango",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Puerto López",
-         "bold": true
-        },
-        {
-         "text": " de "
-        },
-        {
-         "text": "Manabí",
-         "bold": true
-        },
-        {
-         "text": "."
-        }
-       ]
-      },
-      {
-       "id": "c6xwkH0hccGfkKvbc.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuál ciudad se le conoce como "
-        },
-        {
-         "text": "\"La Perla del Pacífico\"",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Guayaquil"
-        }
-       ]
-      },
-      {
-       "id": "NkwJvDzy2h117AwLj.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué provincia es conocida como \"La Tierra del Cacao\"?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Los Ríos",
-         "bold": true
-        },
-        {
-         "text": " "
-        }
-       ]
-      },
-      {
-       "id": "9s3Vv1oAfnE0UlZD8.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la cascada "
-        },
-        {
-         "text": "San Rafael",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Napo"
-        }
-       ]
-      },
-      {
-       "id": "YvUUSswGEgj1GiY2C.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Por cuál provincia se extiende principalmente "
-        },
-        {
-         "text": "La Ruta de los Shamanes",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Pastaza (Puyo) "
-        }
-       ]
-      },
-      {
-       "id": "0f1ExhRfs8IZUfiht.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "En los Andes, ¿cuál planta demuestra la mayor diversidad de especies en el mundo?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Orquídeas."
-        }
-       ]
-      },
-      {
-       "id": "Gls8LkerkdVUdZz19.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿En qué año se anexaron al Ecuador las Islas Galápagos?"
-        }
-       ],
-       "back": [
-        {
-         "text": "1832"
-        }
-       ]
-      },
-      {
-       "id": "cMrnN8Q3ox2rs3MMJ.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué provincia pertenece la ciudad de Puyo?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Pastaza"
-        }
-       ]
-      },
-      {
-       "id": "Cf9H88Z0prW8CGWLI.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué provincia pertenece el cantón Colimes?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Guayas"
-        }
-       ]
-      },
-      {
-       "id": "MyfhqGbmXaGbVOmGs.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿A qué provincia pertenece el cantón Zaruma?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El Oro"
-        }
-       ]
-      },
-      {
-       "id": "V3HRrB28lB1hFTyga.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Con qué otro nombre se conoce a las "
-        },
-        {
-         "text": "Islas Galápagos",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Islas Encantadas"
+         "text": "Bosques húmedos, páramos, manglares, y la Amazonía (bosques de tierra firme e inundables), así como la franja marino costera."
         }
        ]
       },
@@ -2658,202 +1765,99 @@
        ]
       },
       {
-       "id": "uOSrCDdrrs3PxJnNh.f",
+       "id": "0f1ExhRfs8IZUfiht.f",
        "type": "basic",
        "front": [
         {
-         "text": "La Cordillera de los Andes divide al Ecuador continental en"
+         "text": "En los Andes, ¿cuál planta demuestra la mayor diversidad de especies en el mundo?"
         }
        ],
        "back": [
         {
-         "text": "3",
+         "text": "Orquídeas."
+        }
+       ]
+      },
+      {
+       "id": "v1fRapTTKk5Vx0DQX.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es la carretera que atraviesa el Ecuador desde el norte al sur?"
+        }
+       ],
+       "back": [
+        {
+         "text": "La carretera Panamericana."
+        }
+       ]
+      },
+      {
+       "id": "zhuprqWA6xMYZUXtD.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "En Ecuador la carretera Panamericana toma el nombre de"
+        }
+       ],
+       "back": [
+        {
+         "text": "Troncal de la Sierra ("
+        },
+        {
+         "text": "E35",
          "bold": true
         },
         {
-         "text": " regiones geográficas: Costa, Sierra y Amazonía"
+         "text": ")."
         }
        ]
-      },
+      }
+     ]
+    },
+    {
+     "id": "limites-y-fronteras",
+     "title": "Límites y fronteras",
+     "cards": [
       {
-       "id": "c4wP3wGhJc5LCAUWy.f",
+       "id": "fBKHkLC8PNOJLT5lt.f",
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué provincia se encuentra la "
-        },
-        {
-         "text": "Playa de Tonsupa",
-         "bold": true
-        },
-        {
-         "text": "?"
+         "text": "¿Cuáles son los límites geográficos del Ecuador?"
         }
        ],
        "back": [
         {
-         "text": "Esmeraldas."
+         "text": "Limita al norte con Colombia, al sur y al este con Perú, y al oeste con el Océano Pacífico."
         }
        ]
       },
       {
-       "id": "nyeDqVI9NRZcv6Sjl.f",
+       "id": "27y4tbTNHaqeOKinP.f",
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué provincia se encuentra la"
-        },
-        {
-         "text": " Playa Atacames",
-         "bold": true
-        },
-        {
-         "text": "?"
+         "text": "¿Qué océano baña la costa del Ecuador?"
         }
        ],
        "back": [
         {
-         "text": "Esmeraldas"
+         "text": "El Océano Pacífico."
         }
        ]
       },
       {
-       "id": "4sGHjMTd1PnnQXmzf.f",
+       "id": "ozBE7EniLVDVLKQbR.f",
        "type": "basic",
        "front": [
         {
-         "text": "¿En qué provincia se encuentra la "
-        },
-        {
-         "text": "Playa de Ayangue",
-         "bold": true
-        },
-        {
-         "text": "?"
+         "text": "¿Cuáles son las dos corrientes marinas que bañan al Ecuador?"
         }
        ],
        "back": [
         {
-         "text": "Santa Elena"
-        }
-       ]
-      },
-      {
-       "id": "3WuF5OWATgj4NxOvg.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la "
-        },
-        {
-         "text": "Playa Montañita",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Santa Elena"
-        }
-       ]
-      },
-      {
-       "id": "KmPu0bq7Qm3T2Fp0b.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la "
-        },
-        {
-         "text": "Playa los Frailes",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "En Manabí, en el parque nacional Machalilla"
-        }
-       ]
-      },
-      {
-       "id": "OgqYpeYKj5BdBev0o.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "Mompiche, Tonsupa y Atacames quedan en la provincia de"
-        }
-       ],
-       "back": [
-        {
-         "text": "Esmeraldas"
-        }
-       ]
-      },
-      {
-       "id": "iKOBeGwiDOUZDoBQ0.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "Puerto López, Machalilla, Salango, Manta, Ayampe y Pedernales quedan en la provincia de"
-        }
-       ],
-       "back": [
-        {
-         "text": "Manabí"
-        }
-       ]
-      },
-      {
-       "id": "69c8XlaZCX7GDXG30.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "Salinas, Ayangue y Montañita quedan en la provincia de"
-        }
-       ],
-       "back": [
-        {
-         "text": "Santa Elena"
-        }
-       ]
-      },
-      {
-       "id": "9fih3AShGC1bYfxvQ.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Dónde se encuentra "
-        },
-        {
-         "text": "La Chocolatera",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "back": [
-        {
-         "text": "En Salinas, en la provincia de Santa Elena."
-        }
-       ]
-      },
-      {
-       "id": "dSDaZXGFPYe8Mdd8J.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Qué provincias atraviesa la Ruta del Spondylus?"
-        }
-       ],
-       "back": [
-        {
-         "text": "Esmeraldas, Manabí, Santa Elena, Guayas y El Oro"
+         "text": "La corriente fría del Humboldt y la corriente cálida del Niño."
         }
        ]
       },
@@ -2888,560 +1892,145 @@
      ]
     },
     {
-     "id": "capitales-en-el-mapa",
-     "title": "Capitales en el mapa",
+     "id": "provincias-y-cantones",
+     "title": "Provincias y cantones",
      "cards": [
       {
-       "id": "BjzxH4m0vejdtk7LD.6159555822361691",
-       "type": "image",
+       "id": "7HGSQl0IRU7ja6pPp.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿Cuántas provincias tiene la República del Ecuador?"
         }
        ],
-       "image": {
-        "src": "images/8b1da93fccb87d42.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7991317934058911,
-          "y": 0.15345418390355628,
-          "width": 0.09204055181719724,
-          "height": 0.0420432150276086,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "Ecuador tiene "
+        },
+        {
+         "text": "24",
+         "bold": true
+        },
+        {
+         "text": " provincias"
+        }
+       ]
       },
       {
-       "id": "3A5o8GQ2Wj41spdEi.41754954647800036",
-       "type": "image",
+       "id": "5RU3VpcJARkgChIlm.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿Cuántos cantones tiene Ecuador?"
         }
        ],
-       "image": {
-        "src": "images/bef53308a80e64d8.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7488503808390888,
-          "y": 0.20686043001970775,
-          "width": 0.1516964650320473,
-          "height": 0.055678852333860065,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "221",
+         "bold": true
+        },
+        {
+         "text": " "
+        }
+       ]
       },
       {
-       "id": "mPxaO0lJ4EM0YxDBn.1469644241468675",
-       "type": "image",
+       "id": "3dlaGeN0WROQ5NtMf.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿Cuál es el número de provincias en la región Sierra?"
         }
        ],
-       "image": {
-        "src": "images/e095eb6013b08b0d.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7326580615379152,
-          "y": 0.28299273831294497,
-          "width": 0.15851428368517304,
-          "height": 0.060224064769277205,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "10"
+        }
+       ]
       },
       {
-       "id": "VRgaWcym7m482Yfde.6588172467288091",
-       "type": "image",
+       "id": "GZirDvoYDGHKNcoNn.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿Cuál es el número de provincias en la región Costa?"
         }
        ],
-       "image": {
-        "src": "images/8b82f23e95390d01.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7275446975480709,
-          "y": 0.3784421994567051,
-          "width": 0.15936651101681373,
-          "height": 0.05795145855156862,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "7"
+        }
+       ]
       },
       {
-       "id": "LM4fEdLMuaBwxE8U8.6736362743611011",
-       "type": "image",
+       "id": "0ycwWKcJIEXFiBhia.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿Cuál es el número de provincias en la región Amazonía?"
         }
        ],
-       "image": {
-        "src": "images/f93febb69804ed97.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7641904728086217,
-          "y": 0.4648012357296309,
-          "width": 0.13550414573087372,
-          "height": 0.05681515544271435,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "6"
+        }
+       ]
       },
       {
-       "id": "0m4JC0VfumhOjy7wn.7579381501414596",
-       "type": "image",
+       "id": "3qra8bYq0IaL74Ef1.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿Cuál es el número de provincias en la región Insular?"
         }
        ],
-       "image": {
-        "src": "images/8c9149d6e2b9dc98.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7224313335582266,
-          "y": 0.4273032331374394,
-          "width": 0.20538678692541237,
-          "height": 0.05795145855156864,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "1"
+        }
+       ]
       },
       {
-       "id": "sG4F4p57DP8egwfRp.9598310167834113",
-       "type": "image",
+       "id": "cMrnN8Q3ox2rs3MMJ.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿A qué provincia pertenece la ciudad de Puyo?"
         }
        ],
-       "image": {
-        "src": "images/6f37752fdcb8ac3f.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7445892441808852,
-          "y": 0.48639099479786235,
-          "width": 0.19686451360900523,
-          "height": 0.05113363989844291,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "Pastaza"
+        }
+       ]
       },
       {
-       "id": "oFI3ay6GfV2nnECJQ.9466517446437006",
-       "type": "image",
+       "id": "Cf9H88Z0prW8CGWLI.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿A qué provincia pertenece el cantón Colimes?"
         }
        ],
-       "image": {
-        "src": "images/29cfa291d6f1d2f1.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.775269428119951,
-          "y": 0.6125206398806882,
-          "width": 0.128686327077748,
-          "height": 0.05681515544271436,
-          "active": true
-         }
-        ]
-       }
+       "back": [
+        {
+         "text": "Guayas"
+        }
+       ]
       },
       {
-       "id": "Sf901dWkh5V8D3FJq.8592505994334363",
-       "type": "image",
+       "id": "MyfhqGbmXaGbVOmGs.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "¿A qué provincia pertenece el cantón Zaruma?"
         }
        ],
-       "image": {
-        "src": "images/b1db737482cc4ab2.png",
-        "width": 495.4268321900199,
-        "height": 371.570124142515,
-        "blocks": [
-         {
-          "x": 0.763338245476981,
-          "y": 0.6579727642348596,
-          "width": 0.13635637306251444,
-          "height": 0.06704188342240293,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "F5LNEf0JmHWEe7XEO.9377448717212984",
-       "type": "image",
-       "front": [
+       "back": [
         {
-         "text": "¿Cuál es la capital de esta provincia?"
+         "text": "El Oro"
         }
-       ],
-       "image": {
-        "src": "images/05c280cbb7e698cf.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7241357882215081,
-          "y": 0.7954654404062284,
-          "width": 0.0954494611437601,
-          "height": 0.05795145855156863,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "q5OJ3JzdyD7j4IuZi.3249179628996083",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/0b569d527cd333ab.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7667471548035438,
-          "y": 0.13186442483532482,
-          "width": 0.2011256502672088,
-          "height": 0.044315821245317195,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "0WIkYm7A9zm5s6oG8.19140185549685262",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/3bf245ba0c7781f0.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7335102888695562,
-          "y": 0.42162171759316797,
-          "width": 0.14317419171563994,
-          "height": 0.045452124354171466,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "Dv3s6WS9MUq4auedZ.41175205106345114",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/46601177059028e9.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7190224242316638,
-          "y": 0.32730855955826216,
-          "width": 0.25481597216057367,
-          "height": 0.07045079274896579,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "EDuA7y1G5YJZPIoKT.7993762771068855",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/fe55443b93e84c11.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7437370168492445,
-          "y": 0.5022992383218223,
-          "width": 0.15425314702696946,
-          "height": 0.059087761660422906,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "mVn9InH3IaayeXcGr.8110910725157552",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/1f65fe210bd48d55.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7318058342062745,
-          "y": 0.5397972409140138,
-          "width": 0.13465191839923302,
-          "height": 0.05681515544271409,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "VkyjJMqrX8p5iyqRF.462796658451074",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/5d138f6701a0cf41.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7377714255277595,
-          "y": 0.5534328782202652,
-          "width": 0.19771674094064592,
-          "height": 0.05908776166042292,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "NiH5KgH2895efitqW.18436624351577213",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/c6127c4af0b03f67.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7318058342062745,
-          "y": 0.7045611916978854,
-          "width": 0.1278340997461073,
-          "height": 0.06476927720469434,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "xVtwmJFcpn7IJmLup.564186647151315",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/3a11fb27139cfa80.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7070912415886939,
-          "y": 0.23867691706762778,
-          "width": 0.18322887630275378,
-          "height": 0.0693144896401115,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "LN8KtEsJ1uc6r939R.11947980813779102",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/887d7c38e3860fbc.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7113523782468973,
-          "y": 0.3136729222520107,
-          "width": 0.17641105764962806,
-          "height": 0.06363297409584007,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "4rcI3thWOHV7Ox68d.23377090543032997",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/90ac6abdff398f52.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7275446975480709,
-          "y": 0.3943504429806651,
-          "width": 0.10738064378673012,
-          "height": 0.05567885233386006,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "eV50v1HkoWw8hEPTy.27534453150609617",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/5ccbee358718e26a.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7241357882215081,
-          "y": 0.4545745077499423,
-          "width": 0.16192319301173588,
-          "height": 0.06363297409584005,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "aJsL6HQzVjIvmYZgu.14413047043238392",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/e5f9f48dacd022cf.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7105001509152566,
-          "y": 0.560250696873391,
-          "width": 0.2624860181453403,
-          "height": 0.05681515544271435,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "IVXVkM2UCSDtVXWsO.4994967866352401",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/5d4470344126cbbf.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.7130568329101789,
-          "y": 0.8170551994744598,
-          "width": 0.2829394741047174,
-          "height": 0.05681515544271435,
-          "active": true
-         }
-        ]
-       }
-      },
-      {
-       "id": "UEvsA9cu758dYjAJR.7118108348071839",
-       "type": "image",
-       "front": [
-        {
-         "text": "¿Cuál es la capital de esta provincia?"
-        }
-       ],
-       "image": {
-        "src": "images/25d648b49f3b1d4c.png",
-        "width": 790,
-        "height": 592.5,
-        "blocks": [
-         {
-          "x": 0.09860092679722314,
-          "y": 0.07845817871917334,
-          "width": 0.3468565239777711,
-          "height": 0.054542549225005774,
-          "active": true
-         }
-        ]
-       }
+       ]
       }
      ]
     },
@@ -4124,6 +2713,1334 @@
        "back": [
         {
          "text": "Zamora"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "capitales-en-el-mapa",
+     "title": "Capitales en el mapa",
+     "cards": [
+      {
+       "id": "BjzxH4m0vejdtk7LD.6159555822361691",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/8b1da93fccb87d42.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7991317934058911,
+          "y": 0.15345418390355628,
+          "width": 0.09204055181719724,
+          "height": 0.0420432150276086,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "3A5o8GQ2Wj41spdEi.41754954647800036",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/bef53308a80e64d8.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7488503808390888,
+          "y": 0.20686043001970775,
+          "width": 0.1516964650320473,
+          "height": 0.055678852333860065,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "mPxaO0lJ4EM0YxDBn.1469644241468675",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/e095eb6013b08b0d.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7326580615379152,
+          "y": 0.28299273831294497,
+          "width": 0.15851428368517304,
+          "height": 0.060224064769277205,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "VRgaWcym7m482Yfde.6588172467288091",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/8b82f23e95390d01.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7275446975480709,
+          "y": 0.3784421994567051,
+          "width": 0.15936651101681373,
+          "height": 0.05795145855156862,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "LM4fEdLMuaBwxE8U8.6736362743611011",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/f93febb69804ed97.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7641904728086217,
+          "y": 0.4648012357296309,
+          "width": 0.13550414573087372,
+          "height": 0.05681515544271435,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "0m4JC0VfumhOjy7wn.7579381501414596",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/8c9149d6e2b9dc98.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7224313335582266,
+          "y": 0.4273032331374394,
+          "width": 0.20538678692541237,
+          "height": 0.05795145855156864,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "sG4F4p57DP8egwfRp.9598310167834113",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/6f37752fdcb8ac3f.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7445892441808852,
+          "y": 0.48639099479786235,
+          "width": 0.19686451360900523,
+          "height": 0.05113363989844291,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "oFI3ay6GfV2nnECJQ.9466517446437006",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/29cfa291d6f1d2f1.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.775269428119951,
+          "y": 0.6125206398806882,
+          "width": 0.128686327077748,
+          "height": 0.05681515544271436,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "Sf901dWkh5V8D3FJq.8592505994334363",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/b1db737482cc4ab2.png",
+        "width": 495.4268321900199,
+        "height": 371.570124142515,
+        "blocks": [
+         {
+          "x": 0.763338245476981,
+          "y": 0.6579727642348596,
+          "width": 0.13635637306251444,
+          "height": 0.06704188342240293,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "F5LNEf0JmHWEe7XEO.9377448717212984",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/05c280cbb7e698cf.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7241357882215081,
+          "y": 0.7954654404062284,
+          "width": 0.0954494611437601,
+          "height": 0.05795145855156863,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "q5OJ3JzdyD7j4IuZi.3249179628996083",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/0b569d527cd333ab.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7667471548035438,
+          "y": 0.13186442483532482,
+          "width": 0.2011256502672088,
+          "height": 0.044315821245317195,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "0WIkYm7A9zm5s6oG8.19140185549685262",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/3bf245ba0c7781f0.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7335102888695562,
+          "y": 0.42162171759316797,
+          "width": 0.14317419171563994,
+          "height": 0.045452124354171466,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "Dv3s6WS9MUq4auedZ.41175205106345114",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/46601177059028e9.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7190224242316638,
+          "y": 0.32730855955826216,
+          "width": 0.25481597216057367,
+          "height": 0.07045079274896579,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "EDuA7y1G5YJZPIoKT.7993762771068855",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/fe55443b93e84c11.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7437370168492445,
+          "y": 0.5022992383218223,
+          "width": 0.15425314702696946,
+          "height": 0.059087761660422906,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "mVn9InH3IaayeXcGr.8110910725157552",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/1f65fe210bd48d55.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7318058342062745,
+          "y": 0.5397972409140138,
+          "width": 0.13465191839923302,
+          "height": 0.05681515544271409,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "VkyjJMqrX8p5iyqRF.462796658451074",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/5d138f6701a0cf41.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7377714255277595,
+          "y": 0.5534328782202652,
+          "width": 0.19771674094064592,
+          "height": 0.05908776166042292,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "NiH5KgH2895efitqW.18436624351577213",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/c6127c4af0b03f67.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7318058342062745,
+          "y": 0.7045611916978854,
+          "width": 0.1278340997461073,
+          "height": 0.06476927720469434,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "xVtwmJFcpn7IJmLup.564186647151315",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/3a11fb27139cfa80.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7070912415886939,
+          "y": 0.23867691706762778,
+          "width": 0.18322887630275378,
+          "height": 0.0693144896401115,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "LN8KtEsJ1uc6r939R.11947980813779102",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/887d7c38e3860fbc.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7113523782468973,
+          "y": 0.3136729222520107,
+          "width": 0.17641105764962806,
+          "height": 0.06363297409584007,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "4rcI3thWOHV7Ox68d.23377090543032997",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/90ac6abdff398f52.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7275446975480709,
+          "y": 0.3943504429806651,
+          "width": 0.10738064378673012,
+          "height": 0.05567885233386006,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "eV50v1HkoWw8hEPTy.27534453150609617",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/5ccbee358718e26a.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7241357882215081,
+          "y": 0.4545745077499423,
+          "width": 0.16192319301173588,
+          "height": 0.06363297409584005,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "aJsL6HQzVjIvmYZgu.14413047043238392",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/e5f9f48dacd022cf.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7105001509152566,
+          "y": 0.560250696873391,
+          "width": 0.2624860181453403,
+          "height": 0.05681515544271435,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "IVXVkM2UCSDtVXWsO.4994967866352401",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/5d4470344126cbbf.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.7130568329101789,
+          "y": 0.8170551994744598,
+          "width": 0.2829394741047174,
+          "height": 0.05681515544271435,
+          "active": true
+         }
+        ]
+       }
+      },
+      {
+       "id": "UEvsA9cu758dYjAJR.7118108348071839",
+       "type": "image",
+       "front": [
+        {
+         "text": "¿Cuál es la capital de esta provincia?"
+        }
+       ],
+       "image": {
+        "src": "images/25d648b49f3b1d4c.png",
+        "width": 790,
+        "height": 592.5,
+        "blocks": [
+         {
+          "x": 0.09860092679722314,
+          "y": 0.07845817871917334,
+          "width": 0.3468565239777711,
+          "height": 0.054542549225005774,
+          "active": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "ciudades-y-sobrenombres",
+     "title": "Ciudades y sobrenombres",
+     "cards": [
+      {
+       "id": "s8QcYYpXBqtTS4mZy.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre oficial de "
+        },
+        {
+         "text": "Quito",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "San Francisco de Quito."
+        }
+       ]
+      },
+      {
+       "id": "v17yFx5WZ0zedAqQA.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre oficial de "
+        },
+        {
+         "text": "Guayaquil",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Santiago de Guayaquil."
+        }
+       ]
+      },
+      {
+       "id": "KkgmkUPK8FSxQmnbF.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre oficial de "
+        },
+        {
+         "text": "Cuenca",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Santa Ana de los Ríos de Cuenca."
+        }
+       ]
+      },
+      {
+       "id": "vwEOqkWI19dDPL3J7.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿A qué ciudad del Ecuador se la conoce como la "
+        },
+        {
+         "text": "Atenas del Ecuador",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Cuenca",
+         "bold": true
+        },
+        {
+         "text": "."
+        }
+       ]
+      },
+      {
+       "id": "xmqaD7Ui5eYPGJKaJ.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Por qué Cuenca se le conoce como la Atenas del Ecuador?"
+        }
+       ],
+       "back": [
+        {
+         "text": "A Cuenca se le da este título por su destacado "
+        },
+        {
+         "text": "aporte a la cultura, la educación y las artes en el país",
+         "bold": true
+        },
+        {
+         "text": ", de forma similar a como la antigua Atenas fue un centro de pensamiento, filosofía y expresión artística en la Grecia clásica."
+        }
+       ]
+      },
+      {
+       "id": "eEmyhIe9SidFu7fHi.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué ciudad es conocida como \""
+        },
+        {
+         "text": "La Carita de Dios",
+         "bold": true
+        },
+        {
+         "text": "\"?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Quito."
+        }
+       ]
+      },
+      {
+       "id": "c6xwkH0hccGfkKvbc.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál ciudad se le conoce como "
+        },
+        {
+         "text": "\"La Perla del Pacífico\"",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Guayaquil"
+        }
+       ]
+      },
+      {
+       "id": "I26V7rtNJQJT5pDeQ.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué ciudad ecuatoriana es conocida como \""
+        },
+        {
+         "text": "La Ciudad Blanca",
+         "bold": true
+        },
+        {
+         "text": "\"?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Ibarra."
+        }
+       ]
+      },
+      {
+       "id": "oJ0t5YNFuYRt9wnWS.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué ciudad es la \""
+        },
+        {
+         "text": "Capital Cultural del Ecuador",
+         "bold": true
+        },
+        {
+         "text": "\"?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Loja."
+        }
+       ]
+      },
+      {
+       "id": "6lQF6y86NgWgFphMp.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cómo le dicen a "
+        },
+        {
+         "text": "Ambato",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "\"La Ciudad de las Flores y las Frutas\" o también \"Cuna de los tres Juanes\"."
+        }
+       ]
+      },
+      {
+       "id": "NvW5LWak7tPcVEeoA.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre de la ciudad en la que nacieron los tres Juanes: "
+        },
+        {
+         "text": "Juan Montalvo, Juan León Mera, Juan Benigno Vela",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Ambato."
+        }
+       ]
+      },
+      {
+       "id": "WAbTER412O6X0MGlF.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cómo se le conoce a la provincia de Tungurahua?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Tierra de los tres Juanes."
+        }
+       ]
+      },
+      {
+       "id": "ZEBzTrlxefQ7DsRk6.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿A cuál provincia se le conoce como la "
+        },
+        {
+         "text": "provincia de los lagos",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Imbabura",
+         "bold": true
+        },
+        {
+         "text": " se le conoce como la provincia de los lagos."
+        }
+       ]
+      },
+      {
+       "id": "eMGzAEMb8HrtUfzIC.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿A qué provincia del Ecuador se le conoce como la "
+        },
+        {
+         "text": "Provincia Verde",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Esmeraldas."
+        }
+       ]
+      },
+      {
+       "id": "NkwJvDzy2h117AwLj.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué provincia es conocida como \"La Tierra del Cacao\"?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Los Ríos",
+         "bold": true
+        },
+        {
+         "text": " "
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "islas-galapagos",
+     "title": "Islas Galápagos",
+     "cards": [
+      {
+       "id": "o0HaQ8AeEGj1IhYYq.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre oficial de las "
+        },
+        {
+         "text": "Islas Galápagos",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Archipiélago de Colón."
+        }
+       ]
+      },
+      {
+       "id": "V3HRrB28lB1hFTyga.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Con qué otro nombre se conoce a las "
+        },
+        {
+         "text": "Islas Galápagos",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Islas Encantadas"
+        }
+       ]
+      },
+      {
+       "id": "wyfHqFdLWOQ6auFgI.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿A qué distancia de la costa ecuatoriana se halla el Archipiélago de Galápagos?"
+        }
+       ],
+       "back": [
+        {
+         "text": "A unos 972 km."
+        }
+       ]
+      },
+      {
+       "id": "j83V5M3qxZVQ1pYWS.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué origen tiene el Archipiélago de Colón o Islas Galápagos?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Tiene un origen volcánico."
+        }
+       ]
+      },
+      {
+       "id": "Gls8LkerkdVUdZz19.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué año se anexaron al Ecuador las Islas Galápagos?"
+        }
+       ],
+       "back": [
+        {
+         "text": "1832"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "playas-y-rutas-turisticas",
+     "title": "Playas y rutas turísticas",
+     "cards": [
+      {
+       "id": "HU1MBRcpML9Nzwzci.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre de la isla de 920 km² de superficie que se encuentra frente a Guayaquil?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Isla Puná."
+        }
+       ]
+      },
+      {
+       "id": "haUA3gnuq8yjqcjEd.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿A qué provincia pertenece la Isla Puná?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Pertenece a la provincia del Guayas."
+        }
+       ]
+      },
+      {
+       "id": "WxpPa3GNZyEb2DXYc.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia de Ecuador se encuentra el "
+        },
+        {
+         "text": "Archipiélago de Jambelí",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "El Archipiélago de Jambelí se encuentra en la provincia de "
+        },
+        {
+         "text": "El Oro",
+         "bold": true
+        },
+        {
+         "text": ", en aguas del golfo de Guayaquil."
+        }
+       ]
+      },
+      {
+       "id": "wjIXQ3cEwFm4L8MeU.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué ciudad de la provincia de Manabí es conocida por su festival de ballenas jorobadas?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Puerto López.",
+         "bold": true
+        },
+        {
+         "text": " "
+        }
+       ]
+      },
+      {
+       "id": "B6zFL4XvxrHHE70ra.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia se encuentra la parroquia de "
+        },
+        {
+         "text": "Salango",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Manabí.",
+         "bold": true
+        },
+        {
+         "text": " "
+        }
+       ]
+      },
+      {
+       "id": "zPpsG3qC6xIRlMwAI.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿A qué cantón pertenece "
+        },
+        {
+         "text": "Salango",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Puerto López",
+         "bold": true
+        },
+        {
+         "text": " de "
+        },
+        {
+         "text": "Manabí",
+         "bold": true
+        },
+        {
+         "text": "."
+        }
+       ]
+      },
+      {
+       "id": "c4wP3wGhJc5LCAUWy.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia se encuentra la "
+        },
+        {
+         "text": "Playa de Tonsupa",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Esmeraldas."
+        }
+       ]
+      },
+      {
+       "id": "nyeDqVI9NRZcv6Sjl.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia se encuentra la"
+        },
+        {
+         "text": " Playa Atacames",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Esmeraldas"
+        }
+       ]
+      },
+      {
+       "id": "OgqYpeYKj5BdBev0o.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "Mompiche, Tonsupa y Atacames quedan en la provincia de"
+        }
+       ],
+       "back": [
+        {
+         "text": "Esmeraldas"
+        }
+       ]
+      },
+      {
+       "id": "KmPu0bq7Qm3T2Fp0b.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia se encuentra la "
+        },
+        {
+         "text": "Playa los Frailes",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "En Manabí, en el parque nacional Machalilla"
+        }
+       ]
+      },
+      {
+       "id": "iKOBeGwiDOUZDoBQ0.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "Puerto López, Machalilla, Salango, Manta, Ayampe y Pedernales quedan en la provincia de"
+        }
+       ],
+       "back": [
+        {
+         "text": "Manabí"
+        }
+       ]
+      },
+      {
+       "id": "4sGHjMTd1PnnQXmzf.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia se encuentra la "
+        },
+        {
+         "text": "Playa de Ayangue",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Santa Elena"
+        }
+       ]
+      },
+      {
+       "id": "3WuF5OWATgj4NxOvg.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia se encuentra la "
+        },
+        {
+         "text": "Playa Montañita",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Santa Elena"
+        }
+       ]
+      },
+      {
+       "id": "69c8XlaZCX7GDXG30.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "Salinas, Ayangue y Montañita quedan en la provincia de"
+        }
+       ],
+       "back": [
+        {
+         "text": "Santa Elena"
+        }
+       ]
+      },
+      {
+       "id": "9fih3AShGC1bYfxvQ.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Dónde se encuentra "
+        },
+        {
+         "text": "La Chocolatera",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "En Salinas, en la provincia de Santa Elena."
+        }
+       ]
+      },
+      {
+       "id": "dSDaZXGFPYe8Mdd8J.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué provincias atraviesa la Ruta del Spondylus?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Esmeraldas, Manabí, Santa Elena, Guayas y El Oro"
+        }
+       ]
+      },
+      {
+       "id": "9s3Vv1oAfnE0UlZD8.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿En qué provincia se encuentra la cascada "
+        },
+        {
+         "text": "San Rafael",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Napo"
+        }
+       ]
+      },
+      {
+       "id": "YvUUSswGEgj1GiY2C.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Por cuál provincia se extiende principalmente "
+        },
+        {
+         "text": "La Ruta de los Shamanes",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Pastaza (Puyo) "
         }
        ]
       }
@@ -12935,6 +12852,125 @@
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Batea_con_mazorcas_de_ma%C3%ADz.jpg"
        }
+      }
+     ]
+    },
+    {
+     "id": "fiestas-y-artesanias",
+     "title": "Fiestas y artesanías",
+     "cards": [
+      {
+       "id": "IMudNdrp7d7jYve4t.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué ciudad ecuatoriana es famosa por sus sombreros de paja toquilla?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Es "
+        },
+        {
+         "text": "Montecristi",
+         "bold": true
+        },
+        {
+         "text": ", en la provincia de Manabí."
+        }
+       ]
+      },
+      {
+       "id": "gBM3K1Io3LFJiaD1r.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuál es la provincia de origen del sombrero de paja toquilla?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Manabí",
+         "bold": true
+        },
+        {
+         "text": "."
+        }
+       ]
+      },
+      {
+       "id": "rwZyKkdHkvfpNvkLA.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué parroquia ecuatoriana es famosa por la elaboración de guitarras artesanales?"
+        }
+       ],
+       "back": [
+        {
+         "text": "San Bartolomé, en la provincia de Azuay."
+        }
+       ]
+      },
+      {
+       "id": "QEwaXfYZfFm9AANY4.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué fiesta tradicional se celebra en Cuenca durante el mes de noviembre?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Fiestas de la Independencia de Cuenca",
+         "bold": true
+        },
+        {
+         "text": " (3 de noviembre de 1820)"
+        }
+       ]
+      },
+      {
+       "id": "VVujvfY1BHj3pmJAB.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuándo se celebra la "
+        },
+        {
+         "text": "Fiesta de la Fruta y de las Flores",
+         "bold": true
+        },
+        {
+         "text": " en Ecuador?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Se celebra en Ambato, durante el feriado de Carnaval."
+        }
+       ]
+      },
+      {
+       "id": "hilE2kVzyNipJzYSz.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Qué celebración tradicional tiene lugar en la provincia de "
+        },
+        {
+         "text": "Imbabura",
+         "bold": true
+        },
+        {
+         "text": " en septiembre?"
+        }
+       ],
+       "back": [
+        {
+         "text": "Fiesta del Yamor, en Otavalo."
+        }
+       ]
       }
      ]
     },
