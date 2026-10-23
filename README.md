@@ -26,6 +26,9 @@ El inicio tiene tres bloques: **Mi progreso** (ver más abajo), **Formas de prac
   - **Simulacro:** 30 preguntas al azar de todos los temas, repartidas por igual, como en el examen real. Al final te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
   - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime, y **Compartir esta selección** da un enlace que abre la misma pantalla con esos temas marcados (por ejemplo, para mandar solo *Símbolos Patrios › Himno Nacional*).
   - **Modo estudio:** eliges temas como en «Por temas», pero cada pregunta aparece ya con su respuesta, la explicación y la foto, sin calificación. Avanzas con **Siguiente** (o la flecha derecha, `Espacio` o `Enter`) y retrocedes con **Anterior** (o la flecha izquierda). No cuenta para la racha ni para las falladas. Al terminar puedes practicar esas mismas preguntas.
+  - **Símbolos patrios:** la bandera, el escudo y el himno, uno debajo del otro, con su imagen, qué significa cada elemento, su historia y su día. El himno se puede escuchar (versión instrumental de dominio público) y tiene la letra que se canta y la completa, con sus seis estrofas.
+  - **Línea de tiempo:** los temas de Historia en orden, de la época prehispánica a la dolarización, agrupados por época. Cada fecha se abre para leer un resumen y estudiar o practicar sus preguntas.
+  - **Mapa de provincias:** en **Explorar**, tocas una provincia y ves su capital y su región, con los colores de las cuatro regiones. En **Jugar**, la página te pide las 24 provincias en desorden y las encuentras en el mapa.
   - **Falladas:** las preguntas que respondes mal se guardan solas, aunque cierres la página. Cuando aciertas una, sale de la lista.
   - **Marcadas:** durante un examen o en el buscador, el botón **Marcar** (o la tecla `M`) guarda una pregunta para repasarla después.
 - **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Arriba aparecen tres exámenes **recomendados** de 30 preguntas, «Lo esencial», «Lo importante» y «Para completar», con las preguntas que más se repiten en las guías de estudio públicas que arma gente que ya dio el examen oficial. Es una referencia, no una garantía de que salgan. Para tener un examen propio hay dos formas:
@@ -74,7 +77,7 @@ Para obtener un PDF, elige «Guardar como PDF» en el diálogo de impresión del
 
 ### Usar sin conexión e instalar en el teléfono
 
-Después de la primera visita con internet, la página funciona sin conexión: guarda la página, las preguntas y las imágenes de las preguntas (mapas, escudo y bandera). Las fotos de las respuestas se guardan a medida que las ves. Cuando vuelve la conexión, se descargan solas las preguntas actualizadas.
+Después de la primera visita con internet, la página funciona sin conexión: guarda la página, las preguntas y las imágenes de las preguntas (mapas, escudo y bandera). Las fotos de las respuestas se guardan a medida que las ves. El audio del himno es lo único que necesita conexión. Cuando vuelve la conexión, se descargan solas las preguntas actualizadas.
 
 También se puede instalar como una app. En el inicio aparece un botón **Instalar app** (en Android y en Chrome o Edge de computadora) o, en el iPhone, las instrucciones para hacerlo; también se puede hacer a mano:
 

@@ -1147,6 +1147,226 @@ legend { margin-bottom: .45rem; font-weight: 700; }
 
 .dialog-actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
 
+/* Learning pages: symbols, timeline and map ---------------------------------- */
+
+.learn-page { padding-top: .5rem; }
+.learn-page h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.learn-page .lead { margin-bottom: 1.5rem; }
+
+.symbol {
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.25rem 1.25rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.symbol h2 { margin: 0 0 .75rem; font-size: 1.6rem; }
+.symbol h3 { margin: 1.25rem 0 .5rem; font-size: 1.15rem; }
+.symbol-body {
+  display: grid;
+  grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+.symbol-body h3 { margin-top: 0; }
+.symbol-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.symbol-flag { box-shadow: 0 0 0 1px var(--line); }
+.symbol-coat { max-width: 14rem; margin-inline: auto; }
+.symbol-facts { margin: 0; padding-left: 1.2rem; }
+.symbol-facts li + li { margin-top: .35rem; }
+.symbol-day {
+  display: inline-block;
+  margin: 1rem 0 0;
+  padding: .3rem .8rem;
+  border-radius: 999px;
+  background: var(--gold-soft);
+}
+.symbol-history { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+.symbol-history li { display: grid; grid-template-columns: 3.5rem 1fr; gap: .75rem; }
+.symbol-history strong { color: var(--accent); font-variant-numeric: tabular-nums; }
+.symbol-actions { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin-top: 1.25rem; }
+
+.anthem-player { margin: 1rem 0 0; }
+.anthem-player audio { display: block; width: 100%; max-width: 32rem; }
+.anthem-player figcaption { margin-top: .4rem; color: var(--muted); font-size: .8rem; }
+.lyrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem 1.5rem;
+}
+.lyrics h4 {
+  margin: 0 0 .3rem;
+  color: var(--muted);
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.lyrics p { margin: 0; line-height: 1.6; }
+.lyrics-full { margin-top: 1.25rem; }
+.lyrics-full summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+.lyrics-full .lyrics { margin-top: 1rem; }
+
+.era-nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+.era-nav button.chip { box-shadow: none; font-weight: 700; }
+.timeline-tools { display: flex; justify-content: flex-end; margin: .75rem 0 .25rem; }
+.timeline { margin: 0; padding: 0; list-style: none; }
+.timeline-era { scroll-margin-top: 1rem; }
+.timeline-era h2 { margin: 1.5rem 0 .5rem; font-size: 1.3rem; }
+.timeline-event {
+  position: relative;
+  padding: 0 0 .75rem 1.75rem;
+  scroll-margin-top: 1rem;
+}
+/* The line and the dot of each event. */
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: .45rem;
+  width: 3px;
+  background: color-mix(in srgb, var(--accent) 35%, var(--paper));
+}
+.timeline-event::after {
+  content: "";
+  position: absolute;
+  top: 1.05rem;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  background: var(--paper);
+  box-sizing: border-box;
+}
+.timeline-event:has(details[open])::after { background: var(--accent); }
+.timeline-event details {
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.timeline-event details[open] { border-color: var(--accent); }
+.timeline-event summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .2rem .75rem;
+  padding: .7rem 1rem;
+  cursor: pointer;
+}
+.timeline-event summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: var(--radius); }
+.timeline-year {
+  color: var(--accent);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.timeline-title { flex: 1; font-weight: 700; }
+.timeline-event summary::-webkit-details-marker { display: none; }
+.timeline-event summary::after {
+  content: "+";
+  align-self: center;
+  color: var(--accent);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.timeline-event details[open] summary::after { content: "−"; }
+.timeline-body { padding: 0 1rem 1rem; }
+.timeline-summary { margin: 0 0 1rem; }
+.timeline-extra h2 { margin: 2rem 0 .75rem; font-size: 1.3rem; }
+
+.map-modes { max-width: 20rem; margin-bottom: 1rem; }
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+.map-frame {
+  padding: .5rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--blue) 10%, var(--surface));
+}
+.map-loading { margin: 2rem 1rem; color: var(--muted); text-align: center; }
+.province-map { display: block; width: 100%; height: auto; }
+.province-map .sea, .province-map .inset-sea { fill: color-mix(in srgb, var(--blue) 14%, var(--surface)); }
+.province-map .inset-sea { stroke: var(--line-strong); stroke-width: 2px; }
+.province-map .abroad { fill: var(--sunken); }
+.province-map .land { fill: var(--surface); }
+.province-map .border { fill: none; stroke: var(--muted); stroke-width: 1px; stroke-linejoin: round; pointer-events: none; }
+.province-map .border-outer { stroke: var(--ink); stroke-width: 1.5px; }
+.province-map .coast { fill: none; stroke: color-mix(in srgb, var(--blue) 60%, var(--surface)); stroke-width: 1px; pointer-events: none; }
+.province-map [data-province] { cursor: pointer; outline: none; }
+.province-map path.province, .province-map .island { fill: var(--surface); transition: fill .15s ease; }
+.province-map [data-region="Costa"] path, .province-map path[data-region="Costa"] { fill: color-mix(in srgb, var(--blue) 30%, var(--surface)); }
+.province-map [data-region="Sierra"] path, .province-map path[data-region="Sierra"] { fill: color-mix(in srgb, var(--orange) 30%, var(--surface)); }
+.province-map [data-region="Amazonía"] path, .province-map path[data-region="Amazonía"] { fill: color-mix(in srgb, var(--green) 30%, var(--surface)); }
+.province-map [data-region="Insular"] .island { fill: color-mix(in srgb, var(--purple) 40%, var(--surface)); }
+.province-map [data-region="Insular"] .inset-sea { fill: color-mix(in srgb, var(--blue) 14%, var(--surface)); }
+.province-map.is-game path.province, .province-map.is-game .island { fill: var(--surface); }
+/* Hover, selection and game states: a province is a path, except Galápagos,
+   a group of islands. */
+.province-map path[data-province]:is(:hover, :focus-visible),
+.province-map g[data-province]:is(:hover, :focus-visible) .island { fill: var(--gold-soft); }
+.province-map path[data-province]:is(.is-selected, .is-target),
+.province-map g[data-province]:is(.is-selected, .is-target) .island { fill: var(--gold); }
+.province-map path[data-province].is-right,
+.province-map g[data-province].is-right .island { fill: var(--right); }
+.province-map path[data-province].is-wrong,
+.province-map g[data-province].is-wrong .island { fill: var(--wrong); }
+.province-map g[data-province]:hover .inset-sea, .province-map g[data-province]:focus-visible .inset-sea { stroke: var(--accent); stroke-width: 3px; }
+
+.map-side { display: grid; gap: 1rem; }
+.map-panel {
+  padding: 1rem 1.1rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  scroll-margin: 1rem 0;
+}
+.map-panel h2 { margin: 0 0 .5rem; font-size: 1.5rem; }
+.map-panel .practice-actions { margin-top: 1rem; }
+.map-hint { margin: 0; color: var(--muted); }
+.map-counter { margin: 0 0 .25rem; color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
+.map-panel .feedback { margin: .5rem 0 1rem; }
+.map-panel .feedback.is-wrong { color: var(--wrong); }
+.map-facts { display: grid; gap: .4rem; margin: 0; }
+.map-facts div { display: flex; flex-wrap: wrap; gap: .1rem .5rem; }
+.map-facts dt { color: var(--muted); font-weight: 700; }
+.map-facts dt::after { content: ":"; }
+.map-facts dd { margin: 0; font-weight: 700; }
+.map-legend { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; font-size: .95rem; }
+.map-legend li { display: flex; align-items: center; gap: .5rem; }
+.map-legend i { flex: none; width: 1.1rem; height: 1.1rem; border: 1px solid var(--muted); border-radius: 4px; }
+.map-legend [data-region="Costa"] i { background: color-mix(in srgb, var(--blue) 30%, var(--surface)); }
+.map-legend [data-region="Sierra"] i { background: color-mix(in srgb, var(--orange) 30%, var(--surface)); }
+.map-legend [data-region="Amazonía"] i { background: color-mix(in srgb, var(--green) 30%, var(--surface)); }
+.map-legend [data-region="Insular"] i { background: color-mix(in srgb, var(--purple) 40%, var(--surface)); }
+.map-credit { margin: 1rem 0 0; color: var(--muted); font-size: .8rem; }
+.map-practice { margin-top: 1rem; }
+
+@media (forced-colors: active) {
+  .province-map path.province, .province-map .island { fill: Canvas; stroke: CanvasText; }
+  .province-map path[data-province]:is(.is-selected, .is-target, .is-right, .is-wrong),
+  .province-map g[data-province]:is(.is-selected, .is-target, .is-right, .is-wrong) .island { fill: Highlight; }
+}
+
+@media (max-width: 48rem) {
+  .symbol-body { grid-template-columns: 1fr; }
+  .symbol-flag { max-width: 22rem; }
+  .map-layout { grid-template-columns: 1fr; }
+  /* The question or the province info goes above the map. */
+  .map-side { order: -1; }
+}
+
 /* Small screens ------------------------------------------------------------- */
 
 @media (max-width: 40rem) {

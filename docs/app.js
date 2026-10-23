@@ -722,6 +722,9 @@ function setupPractice() {
     state.topicsMode = "study";
     showTopics();
   });
+  app.querySelector("#open-symbols").addEventListener("click", () => showSymbols());
+  app.querySelector("#open-timeline").addEventListener("click", () => showTimeline());
+  app.querySelector("#open-map").addEventListener("click", showMap);
   app.querySelector("#open-progress").addEventListener("click", showProgress);
   app.querySelector("#open-builder").addEventListener("click", showBuilder);
   updatePractice();
@@ -795,10 +798,12 @@ function updatePractice() {
 
 // Each question with its answer already showing, without grading: nothing
 // here counts for the streak, missed questions or progress.
-function startStudy(cards) {
+// "exit" says where "Salir" goes; without it, back to the topics.
+function startStudy(cards, { exit } = {}) {
   state.queue = cards;
   state.index = 0;
   state.studying = true;
+  state.studyExit = exit;
   showStudyCard();
 }
 
@@ -872,6 +877,10 @@ function moveStudy(step) {
 function endStudy() {
   stopSpeaking();
   state.studying = false;
+  if (state.studyExit) {
+    state.studyExit.back();
+    return;
+  }
   state.topicsMode = "study";
   showTopics();
 }
@@ -883,9 +892,12 @@ function showStudyDone() {
   showScreen("study-done-template");
   app.querySelector(".summary").textContent =
     `Estudiaste ${plural(cards.length, "pregunta", "preguntas")}. ¿Las practicas ahora para ver cuánto recuerdas?`;
-  app.querySelector(".study-test").addEventListener("click", () => startExam(shuffle(cards)));
-  app.querySelector(".study-again").addEventListener("click", () => startStudy(cards));
-  app.querySelector(".restart").addEventListener("click", showHome);
+  const exit = state.studyExit;
+  app.querySelector(".study-test").addEventListener("click", () => startExam(shuffle(cards), { exit }));
+  app.querySelector(".study-again").addEventListener("click", () => startStudy(cards, { exit }));
+  const restart = app.querySelector(".restart");
+  if (exit) restart.textContent = exit.label;
+  restart.addEventListener("click", exit ? exit.back : showHome);
   app.focus({ preventScroll: true });
 }
 
@@ -1658,6 +1670,368 @@ function setupDataTransfer() {
       status.textContent = result;
     }
   });
+}
+
+// Learning pages: symbols, timeline and map -------------------------------------
+
+function subcategoriesById(ids) {
+  return state.categories.flatMap((category) => category.subcategories)
+    .filter((sub) => ids.includes(sub.id));
+}
+
+// "Estudiar" and "Practicar" for a group of questions. "exit" brings the
+// person back to the page, at the same place, when they finish or leave.
+function renderLearnActions(container, cards, exit) {
+  const study = document.createElement("button");
+  study.type = "button";
+  study.className = "primary";
+  study.textContent = `Estudiar ${plural(cards.length, "pregunta", "preguntas")}`;
+  study.addEventListener("click", () => startStudy(cards, { exit }));
+  const practice = document.createElement("button");
+  practice.type = "button";
+  practice.className = "ghost";
+  practice.textContent = "Practicar";
+  practice.addEventListener("click", () => startExam(shuffle(cards), { exit }));
+  container.replaceChildren(study, practice);
+}
+
+function scrollIntoPlace(element) {
+  element?.scrollIntoView({ block: "start", behavior: "instant" });
+}
+
+function showSymbols(articleIndex) {
+  showScreen("symbols-template");
+  app.querySelector(".back-home").addEventListener("click", showHome);
+  const articles = [...app.querySelectorAll(".symbol")];
+  articles.forEach((article, index) => {
+    const cards = subcategoriesById(article.dataset.subcategories.split(" ")).flatMap((sub) => sub.cards);
+    renderLearnActions(article.querySelector(".symbol-actions"), cards, {
+      back: () => showSymbols(index),
+      label: "Volver a los símbolos patrios",
+    });
+  });
+  if (articleIndex !== undefined) scrollIntoPlace(articles[articleIndex]);
+}
+
+// Historia subtopics are named "<year> <event>"; the others have no year.
+const ERAS = [
+  { title: "Época prehispánica", until: 1491 },
+  { title: "Conquista y Colonia", until: 1808 },
+  { title: "Independencia", until: 1829 },
+  { title: "La República en el siglo XIX", until: 1899 },
+  { title: "Siglos XX y XXI", until: Infinity },
+];
+
+function timelineEvents() {
+  const history = state.categories.find((category) => category.id === "historia");
+  return history.subcategories.map((sub) => {
+    const match = sub.title.match(/^(\d{4}) (.+)$/);
+    if (match) return { sub, year: Number(match[1]), label: match[1], title: match[2] };
+    if (sub.id === "epoca-prehispanica") return { sub, year: 0, label: "Antes de 1492", title: sub.title };
+    return { sub, year: null, label: "", title: sub.title };
+  });
+}
+
+function renderTimelineEvent(event, openId) {
+  const item = cloneTemplate("timeline-event-template").firstElementChild;
+  item.id = `historia-${event.sub.id}`;
+  item.querySelector(".timeline-year").textContent = event.label;
+  item.querySelector(".timeline-year").hidden = !event.label;
+  item.querySelector(".timeline-title").textContent = event.title;
+  item.querySelector(".timeline-summary").textContent = event.sub.summary || "";
+  item.querySelector("details").open = event.sub.id === openId;
+  renderLearnActions(item.querySelector(".practice-actions"), event.sub.cards, {
+    back: () => showTimeline(event.sub.id),
+    label: "Volver a la línea de tiempo",
+  });
+  return item;
+}
+
+function showTimeline(openId) {
+  showScreen("timeline-template");
+  app.querySelector(".back-home").addEventListener("click", showHome);
+  const events = timelineEvents();
+  const list = app.querySelector(".timeline");
+  const nav = app.querySelector(".era-nav");
+  let era = -1;
+  for (const event of events.filter((item) => item.year !== null)) {
+    const index = ERAS.findIndex((item) => event.year <= item.until);
+    if (index !== era) {
+      era = index;
+      const heading = document.createElement("li");
+      heading.className = "timeline-era";
+      heading.id = `epoca-${index}`;
+      heading.innerHTML = "<h2></h2>";
+      heading.firstChild.textContent = ERAS[index].title;
+      list.append(heading);
+      const jump = document.createElement("button");
+      jump.type = "button";
+      jump.className = "chip";
+      jump.textContent = ERAS[index].title;
+      jump.addEventListener("click", () => heading.scrollIntoView({
+        block: "start",
+        behavior: reducedMotion() ? "auto" : "smooth",
+      }));
+      nav.append(jump);
+    }
+    list.append(renderTimelineEvent(event, openId));
+  }
+  const extra = events.filter((item) => item.year === null);
+  const extraList = app.querySelector(".timeline-extra-items");
+  extraList.replaceChildren(...extra.map((event) => renderTimelineEvent(event, openId)));
+  app.querySelector(".timeline-extra").hidden = !extra.length;
+
+  const all = [...app.querySelectorAll(".timeline-event details")];
+  const expand = app.querySelector(".timeline-expand");
+  const syncExpand = () => {
+    expand.textContent = all.every((details) => details.open) ? "Cerrar todas" : "Abrir todas";
+  };
+  expand.addEventListener("click", () => {
+    const open = !all.every((details) => details.open);
+    all.forEach((details) => { details.open = open; });
+    syncExpand();
+  });
+  all.forEach((details) => details.addEventListener("toggle", syncExpand));
+  syncExpand();
+  if (openId) scrollIntoPlace(document.getElementById(`historia-${openId}`));
+}
+
+// Ids match data-province in images/mapa-provincias.svg
+// (scripts/build_province_map.py). Same names and capitals as the questions of
+// «Capitales de las Provincias» and «Provincias por Región».
+const PROVINCES = [
+  { id: "carchi", name: "Carchi", capital: "Tulcán", region: "Sierra" },
+  { id: "imbabura", name: "Imbabura", capital: "Ibarra", region: "Sierra" },
+  { id: "pichincha", name: "Pichincha", capital: "Quito", region: "Sierra" },
+  { id: "cotopaxi", name: "Cotopaxi", capital: "Latacunga", region: "Sierra" },
+  { id: "tungurahua", name: "Tungurahua", capital: "Ambato", region: "Sierra" },
+  { id: "bolivar", name: "Bolívar", capital: "Guaranda", region: "Sierra" },
+  { id: "chimborazo", name: "Chimborazo", capital: "Riobamba", region: "Sierra" },
+  { id: "canar", name: "Cañar", capital: "Azogues", region: "Sierra" },
+  { id: "azuay", name: "Azuay", capital: "Cuenca", region: "Sierra" },
+  { id: "loja", name: "Loja", capital: "Loja", region: "Sierra" },
+  { id: "esmeraldas", name: "Esmeraldas", capital: "Esmeraldas", region: "Costa" },
+  { id: "manabi", name: "Manabí", capital: "Portoviejo", region: "Costa" },
+  { id: "santo-domingo-de-los-tsachilas", name: "Santo Domingo de los Tsáchilas", capital: "Santo Domingo", region: "Costa" },
+  { id: "los-rios", name: "Los Ríos", capital: "Babahoyo", region: "Costa" },
+  { id: "guayas", name: "Guayas", capital: "Guayaquil", region: "Costa" },
+  { id: "santa-elena", name: "Santa Elena", capital: "Santa Elena", region: "Costa" },
+  { id: "el-oro", name: "El Oro", capital: "Machala", region: "Costa" },
+  { id: "sucumbios", name: "Sucumbíos", capital: "Nueva Loja", region: "Amazonía" },
+  { id: "napo", name: "Napo", capital: "Tena", region: "Amazonía" },
+  { id: "orellana", name: "Orellana", capital: "Coca", region: "Amazonía" },
+  { id: "pastaza", name: "Pastaza", capital: "Puyo", region: "Amazonía" },
+  { id: "morona-santiago", name: "Morona Santiago", capital: "Macas", region: "Amazonía" },
+  { id: "zamora-chinchipe", name: "Zamora Chinchipe", capital: "Zamora", region: "Amazonía" },
+  { id: "galapagos", name: "Galápagos", capital: "Puerto Baquerizo Moreno", region: "Insular" },
+];
+const REGIONS = ["Costa", "Sierra", "Amazonía", "Insular"];
+const MAP_SUBCATEGORIES = ["provincias-y-cantones", "provincias-por-region", "capitales-de-las-provincias", "capitales-en-el-mapa"];
+
+const provinceById = (id) => PROVINCES.find((province) => province.id === id);
+
+// Questions that mention a province, for "Estudiar" in the explore panel.
+function provinceCards(province) {
+  const name = normalize(province.name);
+  return state.allCards.filter((card) => searchableText(card).includes(name));
+}
+
+function showMap() {
+  showScreen("map-template");
+  app.querySelector(".back-home").addEventListener("click", showHome);
+  state.map = { mode: "explore", selected: null, game: null };
+  const exit = { back: showMap, label: "Volver al mapa" };
+  const mapCards = subcategoriesById(MAP_SUBCATEGORIES).flatMap((sub) => sub.cards);
+  const study = app.querySelector(".map-study");
+  study.textContent = `Estudiar las ${mapCards.length} preguntas de provincias`;
+  study.addEventListener("click", () => startStudy(mapCards, { exit }));
+
+  const legend = app.querySelector(".map-legend");
+  legend.replaceChildren(...REGIONS.map((region) => {
+    const item = document.createElement("li");
+    const count = PROVINCES.filter((province) => province.region === region).length;
+    item.innerHTML = '<i aria-hidden="true"></i><span></span>';
+    item.dataset.region = region;
+    item.querySelector("span").textContent = `${region}: ${plural(count, "provincia", "provincias")}`;
+    return item;
+  }));
+
+  app.querySelectorAll('input[name="map-mode"]').forEach((input) => {
+    input.addEventListener("change", () => {
+      state.map.mode = input.value;
+      if (input.value === "game") startMapGame();
+      else exploreMap();
+    });
+  });
+
+  const frame = app.querySelector(".map-frame");
+  const screen = app.firstElementChild;
+  fetch("images/mapa-provincias.svg")
+    .then((response) => response.text())
+    .then((svg) => {
+      // The person may have left the map while it loaded.
+      if (!screen.isConnected) return;
+      frame.innerHTML = svg;
+      for (const shape of frame.querySelectorAll("[data-province]")) {
+        const province = provinceById(shape.dataset.province);
+        shape.dataset.region = province.region;
+        shape.setAttribute("tabindex", "0");
+        shape.setAttribute("role", "button");
+        shape.addEventListener("click", () => pickProvince(province.id));
+        shape.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            pickProvince(province.id);
+          }
+        });
+      }
+      if (state.map.mode === "game") startMapGame();
+      else exploreMap();
+    })
+    .catch(() => {
+      frame.querySelector(".map-loading").textContent = "No se pudo cargar el mapa.";
+    });
+}
+
+function mapShapes() {
+  return [...app.querySelectorAll(".map-frame [data-province]")];
+}
+
+function exploreMap() {
+  const map = app.querySelector(".province-map");
+  if (!map) return;
+  state.map.game = null;
+  map.classList.remove("is-game");
+  app.querySelector(".map-legend").hidden = false;
+  for (const shape of mapShapes()) {
+    shape.classList.remove("is-right", "is-wrong", "is-target");
+    shape.setAttribute("aria-label", provinceById(shape.dataset.province).name);
+  }
+  showProvince(state.map.selected);
+}
+
+function showProvince(id) {
+  state.map.selected = id;
+  mapShapes().forEach((shape) => shape.classList.toggle("is-selected", shape.dataset.province === id));
+  const panel = app.querySelector(".map-panel");
+  const province = id && provinceById(id);
+  if (!province) {
+    panel.innerHTML = '<p class="map-hint">Toca una provincia para ver su capital y su región.</p>';
+    return;
+  }
+  panel.innerHTML = `
+    <h2 class="map-name"></h2>
+    <dl class="map-facts">
+      <div><dt>Capital</dt><dd class="map-capital"></dd></div>
+      <div><dt>Región</dt><dd class="map-region"></dd></div>
+    </dl>
+    <div class="practice-actions"></div>`;
+  panel.querySelector(".map-name").textContent = province.name;
+  panel.querySelector(".map-capital").textContent = province.capital;
+  panel.querySelector(".map-region").textContent = province.region;
+  const cards = provinceCards(province);
+  const actions = panel.querySelector(".practice-actions");
+  if (cards.length) {
+    const study = document.createElement("button");
+    study.type = "button";
+    study.className = "ghost";
+    study.textContent = `Estudiar ${plural(cards.length, "pregunta", "preguntas")} que la mencionan`;
+    study.addEventListener("click", () => startStudy(cards, { exit: { back: showMap, label: "Volver al mapa" } }));
+    actions.append(study);
+  }
+}
+
+function pickProvince(id) {
+  if (state.map.game) {
+    answerMapGame(id);
+    return;
+  }
+  showProvince(id);
+  // On phones the panel sits above the map: bring it into view.
+  const panel = app.querySelector(".map-panel");
+  if (panel.getBoundingClientRect().top < 0) scrollToAnswer(panel);
+}
+
+function startMapGame() {
+  const map = app.querySelector(".province-map");
+  if (!map) return;
+  state.map.selected = null;
+  state.map.game = { queue: shuffle(PROVINCES), index: 0, right: 0, answered: false };
+  map.classList.add("is-game");
+  app.querySelector(".map-legend").hidden = true;
+  for (const shape of mapShapes()) {
+    shape.classList.remove("is-selected", "is-right", "is-wrong", "is-target");
+    // The name would give the answer away.
+    shape.setAttribute("aria-label", "Provincia");
+  }
+  askMapGame();
+}
+
+function askMapGame() {
+  const game = state.map.game;
+  const province = game.queue[game.index];
+  game.answered = false;
+  const panel = app.querySelector(".map-panel");
+  panel.innerHTML = `
+    <p class="map-counter"></p>
+    <h2 class="map-question"></h2>
+    <p class="map-hint">Tócala en el mapa.</p>`;
+  panel.querySelector(".map-counter").textContent =
+    `${game.index + 1} de ${game.queue.length} · ${plural(game.right, "acierto", "aciertos")}`;
+  panel.querySelector(".map-question").textContent = `¿Dónde está ${province.name}?`;
+}
+
+function answerMapGame(id) {
+  const game = state.map.game;
+  if (game.answered) return;
+  game.answered = true;
+  const target = game.queue[game.index];
+  const right = id === target.id;
+  if (right) game.right++;
+  const shapes = mapShapes();
+  const shapeOf = (provinceId) => shapes.find((shape) => shape.dataset.province === provinceId);
+  shapeOf(target.id).classList.add(right ? "is-right" : "is-target");
+  if (!right) shapeOf(id).classList.add("is-wrong");
+
+  const panel = app.querySelector(".map-panel");
+  const feedback = document.createElement("p");
+  feedback.className = `feedback ${right ? "is-right" : "is-wrong"}`;
+  feedback.textContent = right
+    ? `¡Correcto! Su capital es ${target.capital}.`
+    : `Esa es ${provinceById(id).name}. ${target.name} está marcada en el mapa; su capital es ${target.capital}.`;
+  const next = document.createElement("button");
+  next.type = "button";
+  next.className = "primary";
+  const last = game.index === game.queue.length - 1;
+  next.textContent = last ? "Ver resultado" : "Siguiente";
+  next.addEventListener("click", () => {
+    // A missed province goes back to normal; the right ones stay green.
+    shapes.forEach((shape) => shape.classList.remove("is-wrong", "is-target"));
+    if (last) {
+      endMapGame();
+    } else {
+      game.index++;
+      askMapGame();
+    }
+  });
+  panel.querySelector(".map-hint").replaceWith(feedback, next);
+  next.focus({ preventScroll: true });
+  if (panel.getBoundingClientRect().top < 0) scrollToAnswer(panel);
+}
+
+function endMapGame() {
+  const game = state.map.game;
+  const panel = app.querySelector(".map-panel");
+  panel.innerHTML = `
+    <h2 class="map-question"></h2>
+    <p class="map-hint"></p>
+    <div class="practice-actions"><button class="primary map-again" type="button">Jugar otra vez</button></div>`;
+  panel.querySelector(".map-question").textContent = `Acertaste ${game.right} de ${game.queue.length}`;
+  panel.querySelector(".map-hint").textContent = game.right === game.queue.length
+    ? "¡Encontraste todas las provincias a la primera!"
+    : "Las provincias en verde son las que acertaste a la primera.";
+  panel.querySelector(".map-again").addEventListener("click", startMapGame);
+  panel.querySelector(".map-again").focus({ preventScroll: true });
 }
 
 // Frequently asked questions ---------------------------------------------------

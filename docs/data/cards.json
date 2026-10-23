@@ -6320,6 +6320,7 @@
     {
      "id": "epoca-prehispanica",
      "title": "Época prehispánica",
+     "summary": "Hace unos 10 000 años, en la península de Santa Elena, vivía la cultura Las Vegas, de cazadores, recolectores y pescadores. Hacia el 3500 a. C., Valdivia fue una de las primeras culturas agrícolas y alfareras de América. Los pueblos se organizaban en señoríos étnicos, como los quitus en la zona de Pichincha. En el siglo XV los incas conquistaron buena parte del actual Ecuador, pero no la Amazonía; los caranquis y cayambis resistieron hasta la matanza de Yahuarcocha. Al morir Huayna Cápac, Atahualpa recibió el norte, con Quito, y su hermano Huáscar, el sur, con el Cusco.",
      "cards": [
       {
        "id": "las-vegas",
@@ -6560,6 +6561,7 @@
     {
      "id": "1492-descubrimiento-de-america",
      "title": "1492 Descubrimiento de América",
+     "summary": "El 12 de octubre de 1492 Cristóbal Colón llegó a América. Había zarpado del puerto de Palos el 3 de agosto. Con su viaje empezó la conquista española del continente.",
      "cards": [
       {
        "id": "irWEdQHqW8TlxwmgP.f",
@@ -6583,6 +6585,7 @@
     {
      "id": "1534-fundacion-de-quito",
      "title": "1534 Fundación de Quito",
+     "summary": "Francisco Pizarro ordenó ejecutar a Atahualpa, el último emperador inca. El 15 de agosto de 1534 Diego de Almagro fundó una primera ciudad cerca de la actual Riobamba, y el 6 de diciembre de 1534 Sebastián de Benalcázar fundó San Francisco de Quito a los pies del Pichincha; esa es la fecha que se celebra. Pizarro nombró a Gonzalo Pizarro gobernador de Quito, y a Almagro, de Nueva Toledo; con Almagro se disputó el control del Cusco.",
      "cards": [
       {
        "id": "C0ZA6VLXwizIrn2bw.f",
@@ -6749,6 +6752,7 @@
     {
      "id": "1563-real-audiencia-de-quito",
      "title": "1563 Real Audiencia de Quito",
+     "summary": "En 1563 el rey Felipe II creó la Real Audiencia de Quito, y su primer presidente fue Hernando de Santillán. Sus ciudades principales eran Quito, Guayaquil y Cuenca, y su economía se basó en los obrajes, talleres textiles. El poder colonial duró cerca de 300 años.",
      "cards": [
       {
        "id": "24n6XV8mEI02wkAyd.f",
@@ -6838,6 +6842,7 @@
     {
      "id": "1592-rebelion-de-las-alcabalas",
      "title": "1592 Rebelión de las Alcabalas",
+     "summary": "En 1592 Quito se levantó contra la alcabala, un nuevo impuesto a las ventas. Fue la primera manifestación política del pueblo quiteño contra las autoridades españolas. En 1765 hubo otra protesta, la Rebelión de los Barrios.",
      "cards": [
       {
        "id": "2Eqfr5PtwCQh4Dsd7.f",
@@ -6894,6 +6899,7 @@
     {
      "id": "1809-primer-grito-de-independencia",
      "title": "1809 Primer Grito de Independencia",
+     "summary": "El 10 de agosto de 1809 los patriotas quiteños instalaron la Junta Soberana de Quito, presidida por Juan Pío Montúfar, que buscaba la autonomía de la Real Audiencia. Es el Primer Grito de Independencia, también llamado Revolución Quiteña, y se celebra cada 10 de agosto. El 2 de agosto de 1810 fueron asesinados en Quito los próceres que estaban presos.",
      "cards": [
       {
        "id": "4MgDYBlXtLTh0Xd0Z.f",
@@ -7042,6 +7048,7 @@
     {
      "id": "1820-independencia-de-guayaquil",
      "title": "1820 Independencia de Guayaquil",
+     "summary": "El 9 de octubre de 1820 Guayaquil se declaró independiente, en un movimiento liderado por José Joaquín de Olmedo. Su bandera tenía franjas celestes y blancas con tres estrellas.",
      "cards": [
       {
        "id": "rPypMS5mF4ERNi8Tx.f",
@@ -7088,6 +7095,7 @@
     {
      "id": "1820-independencia-de-cuenca",
      "title": "1820 Independencia de Cuenca",
+     "summary": "El 3 de noviembre de 1820, menos de un mes después que Guayaquil, Cuenca proclamó su independencia.",
      "cards": [
       {
        "id": "Hu68lTrOdwYQpiVNO.f",
@@ -7111,6 +7119,7 @@
     {
      "id": "1822-batalla-del-pichincha",
      "title": "1822 Batalla del Pichincha",
+     "summary": "El 24 de mayo de 1822, en las faldas del volcán Pichincha, el ejército de Antonio José de Sucre venció a los españoles; allí se destacó Abdón Calderón, el «héroe niño». La batalla selló la independencia de la Real Audiencia de Quito, que se unió a la Gran Colombia.",
      "cards": [
       {
        "id": "F3bcltdlhupmqA53A.f",
@@ -7206,6 +7215,7 @@
     {
      "id": "1822-gran-colombia",
      "title": "1822 Gran Colombia",
+     "summary": "El Congreso de Angostura aprobó en 1819 la Ley Fundamental que creó la Gran Colombia, y el Congreso de Cúcuta le dio su constitución en 1821. Tenía tres distritos: el del Norte (Venezuela), el del Centro (Nueva Granada) y el del Sur (Quito). El actual Ecuador formó parte de ella de 1822 a 1830. En julio de 1822 Bolívar y San Martín se reunieron en Guayaquil.",
      "cards": [
       {
        "id": "00R3yGSV7GXoBc91n.f",
@@ -7352,6 +7362,7 @@
     {
      "id": "1829-la-batalla-de-tarqui",
      "title": "1829 Batalla de Tarqui",
+     "summary": "El 27 de febrero de 1829, en el Portete de Tarqui, el ejército de la Gran Colombia, dirigido por Antonio José de Sucre, venció al ejército peruano de José de La Mar en una disputa territorial. Ese año el Tratado de Guayaquil terminó la guerra y fijó la frontera. Hoy es el Día del Ejército ecuatoriano.",
      "cards": [
       {
        "id": "cvFkXKk0XPOdPb8MP.f",
@@ -7462,6 +7473,7 @@
     {
      "id": "1830-separacion-de-la-gran-colombia",
      "title": "1830 Separación de la Gran Colombia",
+     "summary": "El 13 de mayo de 1830 el Ecuador se separó de la Gran Colombia y nació como Estado. Ese año se reunió en Riobamba la primera asamblea constituyente, y Juan José Flores, el primer presidente, promulgó la primera constitución.",
      "cards": [
       {
        "id": "t18aw04BM3All8xAn.f",
@@ -7518,6 +7530,7 @@
     {
      "id": "1845-revolucion-marcista",
      "title": "1845 Revolución Marcista",
+     "summary": "Entre marzo y junio de 1845, una revolución iniciada en Guayaquil derrocó a Juan José Flores, que estaba en su tercer mandato con la Constitución de 1843, la «Carta de Esclavitud». Gobernó un triunvirato presidido por José Joaquín de Olmedo, con Vicente Ramón Roca y Diego Noboa. Por esos meses el escudo lleva los signos de Aries, Tauro, Géminis y Cáncer.",
      "cards": [
       {
        "id": "D70KUEmkbDLb23TpG.f",
@@ -7719,6 +7732,7 @@
     {
      "id": "1851-manumision-de-los-esclavos",
      "title": "1851 Manumisión de los Esclavos",
+     "summary": "El 25 de julio de 1851 el presidente José María Urbina decretó la manumisión de los esclavos, es decir, la abolición de la esclavitud en el Ecuador.",
      "cards": [
       {
        "id": "UG8zJV1ldSanRN5Rj.f",
@@ -7773,6 +7787,7 @@
     {
      "id": "1860-tratado-de-mapasingue",
      "title": "1860 Tratado de Mapasingue",
+     "summary": "Desde 1859 el país estaba dividido en varios gobiernos y en guerra con el Perú por límites. El 25 de enero de 1860 Guillermo Franco, que se había proclamado jefe supremo de Guayaquil, firmó con el presidente peruano Ramón Castilla el Tratado de Mapasingue, que se consideró una traición porque cedía soberanía al Perú.",
      "cards": [
       {
        "id": "jiTlCNcDWRd2XAiye.f",
@@ -7845,6 +7860,7 @@
     {
      "id": "1860-batalla-de-guayaquil",
      "title": "1860 Batalla de Guayaquil",
+     "summary": "El 24 de septiembre de 1860 Gabriel García Moreno, con el apoyo del expresidente Juan José Flores, derrotó a Guillermo Franco en Guayaquil. Así reunificó el país y asumió el poder. Dos días después, el 26 de septiembre, restableció la bandera tricolor.",
      "cards": [
       {
        "id": "kfMLp3iHXD49c865i.f",
@@ -7934,6 +7950,7 @@
     {
      "id": "1894-venta-de-la-bandera",
      "title": "1894 Venta de la bandera",
+     "summary": "En 1894, durante el gobierno de Luis Cordero, Chile usó la bandera ecuatoriana para vender el crucero Esmeralda al Japón. El escándalo llevó a la renuncia de Cordero en 1895 y abrió paso a la Revolución Liberal.",
      "cards": [
       {
        "id": "crucero-esmeralda",
@@ -7957,6 +7974,7 @@
     {
      "id": "1895-revolucion-liberal",
      "title": "1895 Revolución Liberal",
+     "summary": "El 5 de junio de 1895 empezó en Guayaquil la Revolución Liberal, liderada por Eloy Alfaro. En su gobierno, en 1900, se oficializaron la bandera y el escudo. El 28 de enero de 1912 Alfaro fue asesinado en Quito y su cuerpo fue quemado en El Ejido: la «hoguera bárbara».",
      "cards": [
       {
        "id": "XTlgh2R7kesOC68Ua.f",
@@ -8020,6 +8038,7 @@
     {
      "id": "1922-masacre-de-los-obreros-de-guayaquil",
      "title": "1922 Masacre de los Obreros de Guayaquil",
+     "summary": "El 15 de noviembre de 1922, durante el gobierno de José Luis Tamayo, una huelga de trabajadores de Guayaquil que pedía mejores salarios y condiciones laborales terminó en una masacre.",
      "cards": [
       {
        "id": "bVmeCA0k7raA8l3s2.f",
@@ -8075,6 +8094,7 @@
     {
      "id": "1925-revolucion-juliana",
      "title": "1925 Revolución Juliana",
+     "summary": "El 9 de julio de 1925 un movimiento de jóvenes militares, la Revolución Juliana, derrocó al presidente Gonzalo Córdova.",
      "cards": [
       {
        "id": "revolucion-juliana",
@@ -8098,6 +8118,7 @@
     {
      "id": "1941-la-guerra-del-41",
      "title": "1941 Guerra con el Perú",
+     "summary": "En 1941, durante el gobierno de Carlos Arroyo del Río, el Perú invadió el Ecuador por una disputa territorial. El 29 de enero de 1942 se firmó el Protocolo de Río de Janeiro, con el que el Ecuador perdió territorio amazónico.",
      "cards": [
       {
        "id": "ZFrH9qFUSYSeIJaeT.f",
@@ -8181,6 +8202,7 @@
     {
      "id": "1964-reforma-agraria",
      "title": "1964 Reforma Agraria",
+     "summary": "En 1964 la Junta Militar dictó la primera Ley de Reforma Agraria, que abolió el huasipungo.",
      "cards": [
       {
        "id": "reforma-agraria",
@@ -8204,6 +8226,7 @@
     {
      "id": "1995-guerra-del-cenepa",
      "title": "1995 Guerra del Cenepa",
+     "summary": "Del 26 de enero al 28 de febrero de 1995, Ecuador y Perú se enfrentaron en la Guerra del Cenepa, por una disputa territorial en esa zona. Gobernaba Sixto Durán-Ballén. Antes, en 1981, había ocurrido el conflicto de Paquisha.",
      "cards": [
       {
        "id": "alhXNWcIuq9RkYdwS.f",
@@ -8293,6 +8316,7 @@
     {
      "id": "1998-paz-con-el-peru",
      "title": "1998 Paz con el Perú",
+     "summary": "El 26 de octubre de 1998, durante la presidencia de Jamil Mahuad, Ecuador y Perú firmaron el Acta de Brasilia, que puso fin al conflicto territorial entre los dos países.",
      "cards": [
       {
        "id": "VTtXQVyktlMSg130p.f",
@@ -8378,6 +8402,7 @@
     {
      "id": "2000-dolarizacion",
      "title": "2000 Dolarización",
+     "summary": "En 1999 la crisis económica llevó al feriado bancario. El 9 de enero de 2000 el presidente Jamil Mahuad anunció la dolarización y días después fue derrocado; su sucesor, Gustavo Noboa, la aplicó con la Ley Trole en marzo de 2000.",
      "cards": [
       {
        "id": "2cy7Z2b9Iw3aJhzRp.f",
@@ -8434,6 +8459,7 @@
     {
      "id": "mujeres-que-hicieron-historia",
      "title": "Mujeres que hicieron historia",
+     "summary": "En casa de Manuela Cañizares se reunieron los patriotas la noche del 9 de agosto de 1809. Manuela Sáenz es la «Libertadora del Libertador». Dolores Cacuango fundó las primeras escuelas bilingües, en kichwa y castellano. Matilde Hidalgo fue la primera médica del Ecuador, la primera mujer electa a un cargo público y, en 1924, la primera que votó en el país y en Latinoamérica.",
      "cards": [
       {
        "id": "SBhFz1u5LYKmP0NkN.f",

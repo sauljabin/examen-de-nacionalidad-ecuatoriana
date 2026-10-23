@@ -237,6 +237,27 @@
           </div>
         </article>
         <article class="practice-card">
+          <h3>Símbolos patrios</h3>
+          <p>La bandera, el escudo y el himno: qué significa cada uno y su historia. Incluye el himno para escuchar con su letra.</p>
+          <div class="practice-actions">
+            <button id="open-symbols" class="primary" type="button">Ver los símbolos</button>
+          </div>
+        </article>
+        <article class="practice-card">
+          <h3>Línea de tiempo</h3>
+          <p>La historia del Ecuador en orden, de la época prehispánica a la dolarización. Abre cada fecha para leer un resumen.</p>
+          <div class="practice-actions">
+            <button id="open-timeline" class="primary" type="button">Ver la línea de tiempo</button>
+          </div>
+        </article>
+        <article class="practice-card">
+          <h3>Mapa de provincias</h3>
+          <p>Toca una provincia para ver su capital y su región, o juega a encontrar las 24 en el mapa.</p>
+          <div class="practice-actions">
+            <button id="open-map" class="primary" type="button">Abrir el mapa</button>
+          </div>
+        </article>
+        <article class="practice-card">
           <h3>Falladas</h3>
           <p class="missed-summary"></p>
           <div class="practice-actions">
@@ -558,6 +579,218 @@
         <button class="ghost save-shared" type="button">Guardar en mis exámenes</button>
         <button class="ghost edit-shared" type="button">Editar</button>
         <button class="link delete-shared" type="button" hidden>Eliminar</button>
+      </div>
+    </section>
+  </template>
+
+  <template id="symbols-template">
+    <div class="exam-bar">
+      <button class="ghost back-home" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </button>
+    </div>
+    <section class="learn-page symbols">
+      <p class="eyebrow">Símbolos patrios</p>
+      <h1>La bandera, el escudo y el himno</h1>
+      <p class="lead">Son los tres símbolos patrios del Ecuador, y la Constitución de 2008 los reconoce en su artículo 2. La bandera y el escudo actuales se fijaron por decreto en 1900, con Eloy Alfaro, y el himno se declaró oficial en 1948. La chuquiragua es la flor nacional, pero no es un símbolo patrio.</p>
+
+      <article class="symbol" data-subcategories="bandera-nacional partes-de-la-bandera-nacional">
+        <h2>Bandera Nacional</h2>
+        <div class="symbol-body">
+          <img class="symbol-image symbol-flag" src="images/bandera.svg" width="1440" height="960" alt="La Bandera Nacional: franjas horizontales amarilla, azul y roja, con el Escudo Nacional en el centro.">
+          <div>
+            <h3>Qué significan sus colores</h3>
+            <ul class="symbol-facts">
+              <li><strong>Amarillo:</strong> las riquezas, la abundancia y la fertilidad de la tierra. Es el doble de ancho que cada una de las otras franjas.</li>
+              <li><strong>Azul:</strong> el mar y el cielo.</li>
+              <li><strong>Rojo:</strong> la sangre derramada por los soldados y mártires de la independencia.</li>
+              <li><strong>En el centro, el Escudo Nacional.</strong> La bandera con escudo la llevan los edificios nacionales, los buques de guerra, las fortalezas y las misiones diplomáticas.</li>
+            </ul>
+            <p class="symbol-day">Día de la Bandera: <strong>26 de septiembre</strong></p>
+          </div>
+        </div>
+        <h3>Su historia</h3>
+        <ol class="symbol-history">
+          <li><strong>1806</strong> Francisco de Miranda iza por primera vez la bandera tricolor, en La Vela de Coro.</li>
+          <li><strong>1809</strong> Los patriotas quiteños usan una bandera roja con una cruz en aspa blanca.</li>
+          <li><strong>1820</strong> Guayaquil independiente usa franjas celestes y blancas con tres estrellas.</li>
+          <li><strong>1845</strong> Tras la Revolución Marcista, la bandera es blanca, celeste y blanca, con estrellas: primero 3 y luego 7, una por provincia.</li>
+          <li><strong>1860</strong> El 26 de septiembre, Gabriel García Moreno restablece el tricolor en homenaje a la Gran Colombia.</li>
+          <li><strong>1900</strong> El 31 de octubre, con Eloy Alfaro, se oficializa de forma definitiva.</li>
+          <li><strong>1955</strong> El Congreso decreta el Día de la Bandera.</li>
+        </ol>
+        <div class="symbol-actions"></div>
+      </article>
+
+      <article class="symbol" data-subcategories="escudo-nacional elementos-del-escudo partes-del-escudo-nacional">
+        <h2>Escudo Nacional</h2>
+        <div class="symbol-body">
+          <img class="symbol-image symbol-coat" src="images/escudo.svg" width="800" height="960" alt="El Escudo Nacional: un óvalo con el Chimborazo, el río Guayas y un buque, el sol y los signos del zodiaco arriba, coronado por un cóndor y rodeado de banderas, laurel y palma, sobre las fasces.">
+          <div>
+            <h3>Qué representa cada elemento</h3>
+            <ul class="symbol-facts">
+              <li><strong>Cóndor:</strong> energía, esfuerzo y grandeza; la fuerza y la libertad del pueblo.</li>
+              <li><strong>Sol dorado:</strong> el oro, la riqueza y la importancia de los primeros pobladores.</li>
+              <li><strong>Signos del zodiaco:</strong> Aries, Tauro, Géminis y Cáncer, por marzo, abril, mayo y junio de 1845, los meses de la Revolución Marcista.</li>
+              <li><strong>Chimborazo:</strong> el volcán más alto del Ecuador; en el escudo, de él nace el río Guayas.</li>
+              <li><strong>Río Guayas:</strong> la unión de los ecuatorianos como una gran familia que comparte las riquezas de la tierra.</li>
+              <li><strong>Buque a vapor Guayas:</strong> el primero construido en América del Sur, en 1841. Su mástil es un caduceo, símbolo de la navegación y el comercio.</li>
+              <li><strong>Cuatro banderas y sus astas:</strong> dos astas de lanza por las luchas de la independencia y dos de alabarda por la custodia del poder del país.</li>
+              <li><strong>Laurel y palma:</strong> la gloria y la paz de la nación.</li>
+              <li><strong>Fasces consulares:</strong> la dignidad republicana. Su hacha, la segur, simboliza la fuerza pública.</li>
+            </ul>
+            <p class="symbol-day">Día del Escudo: <strong>31 de octubre</strong></p>
+          </div>
+        </div>
+        <h3>Su historia</h3>
+        <ol class="symbol-history">
+          <li><strong>1836</strong> El escudo de Vicente Rocafuerte tiene siete estrellas, por las siete provincias de entonces.</li>
+          <li><strong>1845</strong> El escudo de la Revolución Marcista incorpora los signos del zodiaco.</li>
+          <li><strong>1900</strong> El 31 de octubre, con Eloy Alfaro, se adopta oficialmente el escudo actual. Su diseño se atribuye a José Joaquín de Olmedo, y el del escudo actual, a Pedro Pablo Traversari.</li>
+          <li><strong>1978</strong> La Constitución lo reconoce como símbolo nacional.</li>
+          <li><strong>2003</strong> Se declara intangible.</li>
+        </ol>
+        <div class="symbol-actions"></div>
+      </article>
+
+      <article class="symbol" data-subcategories="himno-nacional himno-cantado">
+        <h2>Himno Nacional</h2>
+        <p>Se llama <strong>«¡Salve, oh Patria!»</strong>. La letra es de <strong>Juan León Mera</strong> y la música, del compositor francés <strong>Antonio Neumane</strong>. Tiene un coro y seis estrofas, pero se canta el coro, la segunda estrofa y otra vez el coro.</p>
+        <figure class="anthem-player">
+          <audio controls preload="none" src="audio/himno-nacional.m4a"></audio>
+          <figcaption>Versión instrumental de la Banda de la Marina de los Estados Unidos (dominio público), <a href="https://commons.wikimedia.org/wiki/File:Anthem_of_Ecuador.ogg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+        </figure>
+        <p class="symbol-day">Día del Himno: <strong>26 de noviembre</strong></p>
+
+        <h3>Lo que se canta</h3>
+        <div class="lyrics">
+          <section>
+            <h4>Coro</h4>
+            <p>¡Salve, oh Patria, mil veces! ¡Oh Patria!<br>¡Gloria a ti!, ¡Gloria a ti!<br>Ya tu pecho, tu pecho rebosa<br>gozo y paz, ya tu pecho rebosa<br>y tu frente, tu frente radiosa<br>más que el sol contemplamos lucir,<br>y tu frente, tu frente radiosa<br>más que el sol contemplamos lucir.</p>
+          </section>
+          <section>
+            <h4>Segunda estrofa</h4>
+            <p>Los primeros los hijos del suelo<br>que, soberbio, el Pichincha decora<br>te aclamaron por siempre señora<br>y vertieron su sangre por ti.<br>Dios miró y aceptó el holocausto<br>y esa sangre fue germen fecundo<br>de otros héroes que, atónito, el mundo<br>vio en tu torno a millares surgir,<br>a millares surgir, a millares surgir.</p>
+          </section>
+          <section>
+            <h4>Coro</h4>
+            <p>Se repite el coro.</p>
+          </section>
+        </div>
+
+        <details class="lyrics-full">
+          <summary>Letra completa: el coro y las seis estrofas</summary>
+          <div class="lyrics">
+            <section>
+              <h4>Coro</h4>
+              <p>¡Salve, oh Patria, mil veces! ¡Oh Patria,<br>gloria a ti! Ya tu pecho rebosa<br>gozo y paz, y tu frente radiosa<br>más que el sol contemplamos lucir.</p>
+            </section>
+            <section>
+              <h4>I</h4>
+              <p>Indignados tus hijos del yugo<br>que te impuso la ibérica audacia,<br>de la injusta y horrenda desgracia<br>que pesaba fatal sobre ti,<br>santa voz a los cielos alzaron,<br>voz de noble y sin par juramento,<br>de vengarte del monstruo sangriento,<br>de romper ese yugo servil.</p>
+            </section>
+            <section>
+              <h4>II</h4>
+              <p>Los primeros los hijos del suelo<br>que, soberbio, el Pichincha decora<br>te aclamaron por siempre señora<br>y vertieron su sangre por ti.<br>Dios miró y aceptó el holocausto,<br>y esa sangre fue germen fecundo<br>de otros héroes que, atónito, el mundo<br>vio en tu torno a millares surgir.</p>
+            </section>
+            <section>
+              <h4>III</h4>
+              <p>De estos héroes al brazo de hierro<br>nada tuvo invencible la tierra,<br>y del valle a la altísima sierra<br>se escuchaba el fragor de la lid.<br>Tras la lid la victoria volaba,<br>libertad tras el triunfo venía,<br>y al león destrozado se oía<br>de impotencia y despecho rugir.</p>
+            </section>
+            <section>
+              <h4>IV</h4>
+              <p>Cedió al fin la fiereza española,<br>y hoy, ¡oh Patria!, tu libre existencia<br>es la noble y magnífica herencia<br>que nos dio el heroísmo feliz;<br>de las manos paternas la hubimos,<br>nadie intente arrancárnosla ahora,<br>ni nuestra ira excitar vengadora<br>quiera, necio o audaz, contra sí.</p>
+            </section>
+            <section>
+              <h4>V</h4>
+              <p>Nadie, ¡oh Patria!, lo intente. Las sombras<br>de tus héroes gloriosos nos miran,<br>y el valor y el orgullo que inspiran<br>son augurios de triunfos por ti.<br>Venga el hierro y el plomo fulmíneo,<br>que a la idea de guerra y venganza<br>se despierta la heroica pujanza<br>que hizo al fiero español sucumbir.</p>
+            </section>
+            <section>
+              <h4>VI</h4>
+              <p>Y si nuevas cadenas prepara<br>la injusticia de bárbara suerte,<br>¡gran Pichincha!, prevén tú la muerte<br>de la Patria y sus hijos al fin;<br>hunde al punto en tus hondas entrañas<br>cuanto existe en tu tierra: el tirano<br>huelle solo cenizas, y en vano<br>busque rastro de ser junto a ti.</p>
+            </section>
+          </div>
+        </details>
+
+        <h3>Su historia</h3>
+        <ol class="symbol-history">
+          <li><strong>1830</strong> Primer intento: entre 1830 y 1832, José Joaquín de Olmedo escribe la Canción Nacional, en el gobierno de Juan José Flores.</li>
+          <li><strong>1865</strong> A pedido de Nicolás Espinosa, presidente del Senado, Juan León Mera escribe la letra el 26 de noviembre.</li>
+          <li><strong>1866</strong> El 16 de enero se publica la letra completa en el semanario quiteño El Sud Americano.</li>
+          <li><strong>1870</strong> Se estrena el 10 de agosto en la Plaza de la Independencia de Quito.</li>
+          <li><strong>1948</strong> Se declara oficial e intangible.</li>
+          <li><strong>1965</strong> Se declara el 26 de noviembre Día del Himno Nacional.</li>
+        </ol>
+        <div class="symbol-actions"></div>
+      </article>
+    </section>
+  </template>
+
+  <template id="timeline-template">
+    <div class="exam-bar">
+      <button class="ghost back-home" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </button>
+    </div>
+    <section class="learn-page timeline-page">
+      <p class="eyebrow">Línea de tiempo</p>
+      <h1>La historia del Ecuador</h1>
+      <p class="lead">Todos los temas de Historia, en orden. Abre una fecha para leer el resumen y estudiar o practicar sus preguntas.</p>
+      <nav class="era-nav" aria-label="Épocas"></nav>
+      <div class="timeline-tools">
+        <button class="link timeline-expand" type="button">Abrir todas</button>
+      </div>
+      <ol class="timeline"></ol>
+      <section class="timeline-extra" aria-labelledby="timeline-extra-title">
+        <h2 id="timeline-extra-title">También en Historia</h2>
+        <ul class="timeline timeline-extra-items"></ul>
+      </section>
+    </section>
+  </template>
+
+  <template id="timeline-event-template">
+    <li class="timeline-event">
+      <details>
+        <summary>
+          <span class="timeline-year"></span>
+          <span class="timeline-title"></span>
+        </summary>
+        <div class="timeline-body">
+          <p class="timeline-summary"></p>
+          <div class="practice-actions"></div>
+        </div>
+      </details>
+    </li>
+  </template>
+
+  <template id="map-template">
+    <div class="exam-bar">
+      <button class="ghost back-home" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </button>
+    </div>
+    <section class="learn-page map-page">
+      <p class="eyebrow">Mapa de provincias</p>
+      <h1>Las 24 provincias</h1>
+      <div class="segmented map-modes" role="radiogroup" aria-label="Modo del mapa">
+        <label><input type="radio" name="map-mode" value="explore" checked><span>Explorar</span></label>
+        <label><input type="radio" name="map-mode" value="game"><span>Jugar</span></label>
+      </div>
+      <div class="map-layout">
+        <div class="map-frame">
+          <p class="map-loading">Cargando el mapa…</p>
+        </div>
+        <div class="map-side">
+          <div class="map-panel" aria-live="polite"></div>
+          <ul class="map-legend"></ul>
+        </div>
+      </div>
+      <p class="map-credit">Mapa basado en «<a href="https://commons.wikimedia.org/wiki/File:Azuay_in_Ecuador.svg" target="_blank" rel="noopener">Azuay in Ecuador</a>», de Milenioscuro, con licencia <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Galápagos aparece en un recuadro, fuera de su posición real.</p>
+      <div class="practice-actions map-practice">
+        <button class="ghost map-study" type="button">Estudiar las preguntas de provincias</button>
       </div>
     </section>
   </template>

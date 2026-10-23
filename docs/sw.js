@@ -6,6 +6,7 @@
 //   as there is a connection; the cached copy is used offline.
 // - Images: cache first. Question images (maps, coat of arms, flag) are saved
 //   on install; answer photos are saved the first time they are shown.
+// - Audio (the anthem): not cached; it needs a connection.
 // - Google Fonts: served from cache when available and refreshed in the
 //   background.
 //
@@ -100,7 +101,9 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com") {
     event.respondWith(staleWhileRevalidate(request));
-  } else if (url.origin === self.location.origin) {
+  } else if (url.origin === self.location.origin && !url.pathname.includes("/audio/")) {
+    // Audio is left to the browser: it asks for it in parts (range requests),
+    // which the cache can't store.
     const isImage = request.destination === "image" || url.pathname.includes("/images/");
     event.respondWith(isImage ? cacheFirst(request) : networkFirst(request));
   }
