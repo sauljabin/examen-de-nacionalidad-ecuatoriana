@@ -1299,20 +1299,6 @@ function dateKey(date) {
 // Activity calendar -----------------------------------------------------------
 
 const CALENDAR_WEEKS = 53;
-// The calendar grows with use: from the last month up to the last year.
-const CALENDAR_SPANS = [
-  { weeks: 5, text: "en el último mes" },
-  { weeks: 13, text: "en los últimos 3 meses" },
-  { weeks: 26, text: "en los últimos 6 meses" },
-  { weeks: CALENDAR_WEEKS, text: "en el último año" },
-];
-
-// The smallest span that reaches back to the first day with practice.
-function calendarSpan(today) {
-  const first = [...progress.days, ...Object.keys(progress.activity)].sort()[0];
-  const daysBack = first ? dayNumber(dateKey(today)) - dayNumber(first) : 0;
-  return CALENDAR_SPANS.find((span) => daysBack < span.weeks * 7 - 6) || CALENDAR_SPANS.at(-1);
-}
 const MONTHS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 const DATE_FORMAT = new Intl.DateTimeFormat("es-EC", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 
@@ -1338,9 +1324,8 @@ function activityText(key) {
 function renderActivity(container) {
   const today = new Date();
   today.setHours(12, 0, 0, 0);
-  const span = calendarSpan(today);
   const start = new Date(today);
-  start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - (span.weeks - 1) * 7);
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - (CALENDAR_WEEKS - 1) * 7);
   const goalDays = new Set(progress.goalDays);
   const calendar = container.querySelector(".activity-calendar");
   const cells = [];
@@ -1362,19 +1347,14 @@ function renderActivity(container) {
   corner.className = "activity-corner";
   place(corner, 1, 1);
   let practiced = 0;
-  let firstLabel = Infinity;
-  const addMonth = (date, week) => {
-    const month = document.createElement("span");
-    month.className = "activity-month";
-    month.textContent = MONTHS[date.getMonth()];
-    place(month, week + 2, 1);
-  };
   for (let index = 0, date = new Date(start); date <= today; index++, date.setDate(date.getDate() + 1)) {
     const week = Math.floor(index / 7);
     const key = dateKey(date);
-    if (date.getDate() === 1 && week < span.weeks - 1) {
-      addMonth(date, week);
-      firstLabel = Math.min(firstLabel, week);
+    if (date.getDate() === 1 && week < CALENDAR_WEEKS - 1) {
+      const month = document.createElement("span");
+      month.className = "activity-month";
+      month.textContent = MONTHS[date.getMonth()];
+      place(month, week + 2, 1);
     }
     const level = activityLevel(key, goalDays);
     if (level) practiced += 1;
@@ -1384,15 +1364,13 @@ function renderActivity(container) {
     cell.title = `${DATE_FORMAT.format(date)}: ${activityText(key)}`;
     place(cell, week + 2, (index % 7) + 2);
   }
-  // Name the first month too when no month starts near the left edge.
-  if (firstLabel > 2) addMonth(start, 0);
   calendar.replaceChildren(...cells);
   const summary = practiced
-    ? `Practicaste ${plural(practiced, "día", "días")} ${span.text}.`
+    ? `Practicaste ${plural(practiced, "día", "días")} en el último año.`
     : "Todavía no hay días con práctica. Cada día que respondas preguntas se pinta un cuadro.";
   container.querySelector(".activity-summary").textContent = summary;
   const scroller = container.querySelector(".activity-scroll");
-  scroller.setAttribute("aria-label", `Calendario de actividad ${span.text}. ${summary}`);
+  scroller.setAttribute("aria-label", `Calendario de actividad del último año. ${summary}`);
   // The latest weeks matter most: start scrolled to the end on narrow screens.
   requestAnimationFrame(() => { scroller.scrollLeft = scroller.scrollWidth; });
 }
