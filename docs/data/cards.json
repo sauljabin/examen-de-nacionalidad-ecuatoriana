@@ -173,6 +173,132 @@
        "explanation": "Ocupa la mitad de la bandera; el azul y el rojo, un cuarto cada uno."
       },
       {
+       "id": "XnW4lBMz0kw0Rl7UI.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué es un pabellón?"
+        }
+       ],
+       "options": [
+        "La bandera que identifica la nacionalidad de un barco",
+        "La bandera blanca que se usa para pedir una tregua",
+        "El asta de la bandera",
+        "El escudo que va en el centro de la bandera"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "p7pU09OwGQtJg4XsA.7630294862985575",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "La Bandera Nacional remonta sus orígenes al "
+        },
+        {
+         "text": "3 de agosto de 1806",
+         "cloze": true
+        },
+        {
+         "text": ", cuando el general "
+        },
+        {
+         "text": "Francisco de Miranda",
+         "bold": true
+        },
+        {
+         "text": " izó por primera vez la bandera "
+        },
+        {
+         "text": "tri",
+         "color": "orange"
+        },
+        {
+         "text": "co",
+         "color": "blue"
+        },
+        {
+         "text": "lor",
+         "color": "red"
+        },
+        {
+         "text": " en el "
+        },
+        {
+         "text": "Fortín de San Pedro en La Vela de Coro",
+         "cloze": true
+        }
+       ]
+      },
+      {
+       "id": "bandera-1809",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo era la bandera de los patriotas quiteños después del 10 de agosto de 1809?"
+        }
+       ],
+       "options": [
+        "Roja con una cruz en aspa blanca",
+        "Celeste y blanca con tres estrellas",
+        "Amarilla, azul y roja",
+        "Blanca con un cuadro azul y una estrella"
+       ],
+       "answer": 0,
+       "explanation": "La celeste y blanca con estrellas fue la de Guayaquil en 1820; el tricolor llegó con la Gran Colombia."
+      },
+      {
+       "id": "bandera-guayaquil-1820",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo era la bandera de Guayaquil independiente, en 1820?"
+        }
+       ],
+       "options": [
+        "Franjas celestes y blancas con tres estrellas blancas",
+        "Roja con una cruz en aspa blanca",
+        "Amarilla, azul y roja",
+        "Blanca, celeste y blanca con siete estrellas"
+       ],
+       "answer": 0,
+       "explanation": "La roja con aspa blanca fue la de Quito en 1809, y la de siete estrellas, la de la Revolución Marcista de 1845."
+      },
+      {
+       "id": "3wBVbWN4TlrqUujCd.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué bandera utilizó Ecuador entre 1845 y 1860, tras la Revolución Marcista?"
+        }
+       ],
+       "options": [
+        "Una bandera blanco, celeste y blanco, con estrellas",
+        "La tricolor amarilla, azul y roja, con el escudo",
+        "Una bandera celeste y blanca, con un sol",
+        "Una bandera roja y blanca, con una cruz"
+       ],
+       "answer": 0,
+       "explanation": "Era la bandera de la Revolución Marcista; en 1860 se volvió al tricolor."
+      },
+      {
+       "id": "sOmNzS3JxxQLQD36c.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuántas estrellas tuvo la bandera de la Revolución Marcista?"
+        }
+       ],
+       "options": [
+        "Primero 3; desde noviembre de 1845, 7",
+        "Siempre 7",
+        "Siempre 3",
+        "Primero 7; después, 24"
+       ],
+       "answer": 0,
+       "explanation": "Las 3 representaban los departamentos de Quito, Guayas y Azuay; las 7, una por cada provincia de entonces."
+      },
+      {
        "id": "tGqYBaYws52xAyMQN.f",
        "type": "choice",
        "front": [
@@ -220,6 +346,22 @@
        ],
        "answer": 0,
        "explanation": "Eloy Alfaro la oficializó de forma definitiva en 1900."
+      },
+      {
+       "id": "k65vk6RVo6MmuN505.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál fue una razón simbólica para regresar a la bandera tricolor en 1860?"
+        }
+       ],
+       "options": [
+        "Rendir homenaje a la Gran Colombia",
+        "Imitar la bandera de España",
+        "Recordar la Revolución Marcista",
+        "Celebrar la anexión de Galápagos"
+       ],
+       "answer": 0
       },
       {
        "id": "JXRFLpVaLmF92BCNL.f",
@@ -346,148 +488,6 @@
        ],
        "answer": 0,
        "explanation": "El 26 de septiembre recuerda el día de 1860 en que se adoptó el tricolor; 1965 es el año en que se declaró el Día del Himno."
-      },
-      {
-       "id": "p7pU09OwGQtJg4XsA.7630294862985575",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La Bandera Nacional remonta sus orígenes al "
-        },
-        {
-         "text": "3 de agosto de 1806",
-         "cloze": true
-        },
-        {
-         "text": ", cuando el general "
-        },
-        {
-         "text": "Francisco de Miranda",
-         "bold": true
-        },
-        {
-         "text": " izó por primera vez la bandera "
-        },
-        {
-         "text": "tri",
-         "color": "orange"
-        },
-        {
-         "text": "co",
-         "color": "blue"
-        },
-        {
-         "text": "lor",
-         "color": "red"
-        },
-        {
-         "text": " en el "
-        },
-        {
-         "text": "Fortín de San Pedro en La Vela de Coro",
-         "cloze": true
-        }
-       ]
-      },
-      {
-       "id": "XnW4lBMz0kw0Rl7UI.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es un pabellón?"
-        }
-       ],
-       "options": [
-        "La bandera que identifica la nacionalidad de un barco",
-        "La bandera blanca que se usa para pedir una tregua",
-        "El asta de la bandera",
-        "El escudo que va en el centro de la bandera"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "3wBVbWN4TlrqUujCd.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué bandera utilizó Ecuador entre 1845 y 1860, tras la Revolución Marcista?"
-        }
-       ],
-       "options": [
-        "Una bandera blanco, celeste y blanco, con estrellas",
-        "La tricolor amarilla, azul y roja, con el escudo",
-        "Una bandera celeste y blanca, con un sol",
-        "Una bandera roja y blanca, con una cruz"
-       ],
-       "answer": 0,
-       "explanation": "Era la bandera de la Revolución Marcista; en 1860 se volvió al tricolor."
-      },
-      {
-       "id": "sOmNzS3JxxQLQD36c.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuántas estrellas tuvo la bandera de la Revolución Marcista?"
-        }
-       ],
-       "options": [
-        "Primero 3; desde noviembre de 1845, 7",
-        "Siempre 7",
-        "Siempre 3",
-        "Primero 7; después, 24"
-       ],
-       "answer": 0,
-       "explanation": "Las 3 representaban los departamentos de Quito, Guayas y Azuay; las 7, una por cada provincia de entonces."
-      },
-      {
-       "id": "k65vk6RVo6MmuN505.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál fue una razón simbólica para regresar a la bandera tricolor en 1860?"
-        }
-       ],
-       "options": [
-        "Rendir homenaje a la Gran Colombia",
-        "Imitar la bandera de España",
-        "Recordar la Revolución Marcista",
-        "Celebrar la anexión de Galápagos"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "bandera-1809",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cómo era la bandera de los patriotas quiteños después del 10 de agosto de 1809?"
-        }
-       ],
-       "options": [
-        "Roja con una cruz en aspa blanca",
-        "Celeste y blanca con tres estrellas",
-        "Amarilla, azul y roja",
-        "Blanca con un cuadro azul y una estrella"
-       ],
-       "answer": 0,
-       "explanation": "La celeste y blanca con estrellas fue la de Guayaquil en 1820; el tricolor llegó con la Gran Colombia."
-      },
-      {
-       "id": "bandera-guayaquil-1820",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cómo era la bandera de Guayaquil independiente, en 1820?"
-        }
-       ],
-       "options": [
-        "Franjas celestes y blancas con tres estrellas blancas",
-        "Roja con una cruz en aspa blanca",
-        "Amarilla, azul y roja",
-        "Blanca, celeste y blanca con siete estrellas"
-       ],
-       "answer": 0,
-       "explanation": "La roja con aspa blanca fue la de Quito en 1809, y la de siete estrellas, la de la Revolución Marcista de 1845."
       }
      ]
     },
@@ -594,40 +594,6 @@
      "title": "Himno Nacional",
      "cards": [
       {
-       "id": "TyE37lkTfiIGnTQZS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué año se declaró el 26 de noviembre como el día del Himno Nacional?"
-        }
-       ],
-       "options": [
-        "1965",
-        "1948",
-        "1955",
-        "1900"
-       ],
-       "answer": 0,
-       "explanation": "En 1948 el himno se declaró oficial e intangible, y en 1955 se decretó el Día de la Bandera."
-      },
-      {
-       "id": "esqFTJRrlZakGNYNS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué fecha se celebra el Día del Himno Nacional del Ecuador?"
-        }
-       ],
-       "options": [
-        "26 de noviembre",
-        "26 de septiembre",
-        "31 de octubre",
-        "24 de mayo"
-       ],
-       "answer": 0,
-       "explanation": "El 26 de septiembre es el Día de la Bandera y el 31 de octubre, el del Escudo."
-      },
-      {
        "id": "8GnjMEvKPy8FzbdP3.f",
        "type": "choice",
        "front": [
@@ -711,26 +677,6 @@
        ]
       },
       {
-       "id": "vNN7hbPQmcu7OrYjE.2845125167893956",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "El presidente del Senado, Nicolás Espinosa, solicitó a "
-        },
-        {
-         "text": "Juan León Mera",
-         "bold": true
-        },
-        {
-         "text": " la elaboración del Himno Nacional el cual fue escrito el "
-        },
-        {
-         "text": "26 de noviembre de 1865.",
-         "cloze": true
-        }
-       ]
-      },
-      {
        "id": "0nvifuVEKkE5JpSJb.006232939318684627",
        "type": "cloze",
        "front": [
@@ -750,6 +696,26 @@
         },
         {
          "text": " durante la presidencia de Juan José Flores, entre 1830 y 1832."
+        }
+       ]
+      },
+      {
+       "id": "vNN7hbPQmcu7OrYjE.2845125167893956",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "El presidente del Senado, Nicolás Espinosa, solicitó a "
+        },
+        {
+         "text": "Juan León Mera",
+         "bold": true
+        },
+        {
+         "text": " la elaboración del Himno Nacional el cual fue escrito el "
+        },
+        {
+         "text": "26 de noviembre de 1865.",
+         "cloze": true
         }
        ]
       },
@@ -809,6 +775,40 @@
        ],
        "answer": 0,
        "explanation": "En 1965 se declaró el Día del Himno, el 26 de noviembre; el escudo se declaró intangible en 2003."
+      },
+      {
+       "id": "TyE37lkTfiIGnTQZS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué año se declaró el 26 de noviembre como el día del Himno Nacional?"
+        }
+       ],
+       "options": [
+        "1965",
+        "1948",
+        "1955",
+        "1900"
+       ],
+       "answer": 0,
+       "explanation": "En 1948 el himno se declaró oficial e intangible, y en 1955 se decretó el Día de la Bandera."
+      },
+      {
+       "id": "esqFTJRrlZakGNYNS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué fecha se celebra el Día del Himno Nacional del Ecuador?"
+        }
+       ],
+       "options": [
+        "26 de noviembre",
+        "26 de septiembre",
+        "31 de octubre",
+        "24 de mayo"
+       ],
+       "answer": 0,
+       "explanation": "El 26 de septiembre es el Día de la Bandera y el 31 de octubre, el del Escudo."
       }
      ]
     },
@@ -1154,6 +1154,56 @@
      "title": "Escudo Nacional",
      "cards": [
       {
+       "id": "escudo-1836",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué representaban las siete estrellas del escudo de 1836, del gobierno de Vicente Rocafuerte?"
+        }
+       ],
+       "options": [
+        "Las siete provincias que tenía entonces el Ecuador",
+        "Las siete batallas de la independencia",
+        "Los siete diputados de la Primera Constituyente",
+        "Las siete ciudades fundadas por los españoles"
+       ],
+       "answer": 0,
+       "explanation": "El escudo de Rocafuerte conservó el sol y las estrellas del primer escudo, y añadió el Guagua y el Rucu Pichincha."
+      },
+      {
+       "id": "escudo-marcista",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué escudo incorporó por primera vez los signos del zodiaco?"
+        }
+       ],
+       "options": [
+        "El de la Revolución Marcista, de 1845",
+        "El de Juan José Flores, de 1830",
+        "El de Vicente Rocafuerte, de 1836",
+        "El de Eloy Alfaro, de 1900"
+       ],
+       "answer": 0,
+       "explanation": "Los signos recuerdan los meses de marzo a junio de 1845, cuando ocurrió la Revolución Marcista. El escudo de 1900 los conservó."
+      },
+      {
+       "id": "JdjiW5ljGD9dJzDhY.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Los cuatro signos del zodiaco del Escudo Nacional corresponden a marzo, abril, mayo y junio. ¿Qué acontecimiento recuerdan?"
+        }
+       ],
+       "options": [
+        "La Revolución Marcista de 1845",
+        "La Batalla del Pichincha de 1822",
+        "El Primer Grito de Independencia de 1809",
+        "La separación de la Gran Colombia en 1830"
+       ],
+       "answer": 0
+      },
+      {
        "id": "fStHSTqN0zX1WMIpg.f",
        "type": "choice",
        "front": [
@@ -1178,6 +1228,35 @@
        "explanation": "El mismo decreto de 1900 fijó la bandera y el escudo."
       },
       {
+       "id": "XP63mK38aNUHX6UoQ.8084782604494435",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "El escudo actual fue oficialmente adoptado durante la presidencia de "
+        },
+        {
+         "text": "Eloy Alfaro",
+         "cloze": true
+        }
+       ]
+      },
+      {
+       "id": "kVl6Gk5u0aZ295Oph.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién diseñó el Escudo Nacional del Ecuador?"
+        }
+       ],
+       "options": [
+        "José Joaquín de Olmedo; el diseño actual se atribuye a Pedro Pablo Traversari",
+        "Juan León Mera; el diseño actual se atribuye a Antonio Neumane",
+        "Eloy Alfaro; el diseño actual se atribuye a Pedro Pablo Traversari",
+        "Simón Bolívar; el diseño actual se atribuye a José Joaquín de Olmedo"
+       ],
+       "answer": 0
+      },
+      {
        "id": "scVyOumKaHuoBTOAS.f",
        "type": "choice",
        "front": [
@@ -1193,104 +1272,6 @@
        ],
        "answer": 0,
        "explanation": "Ese día de 1900 se adoptaron oficialmente el escudo y la bandera."
-      },
-      {
-       "id": "XP63mK38aNUHX6UoQ.8084782604494435",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "El escudo actual fue oficialmente adoptado durante la presidencia de "
-        },
-        {
-         "text": "Eloy Alfaro",
-         "cloze": true
-        }
-       ]
-      },
-      {
-       "id": "dnkHxhMRe28bj5IqG.4106292682709909",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "El Buque a vapor "
-        },
-        {
-         "text": "Guayas",
-         "bold": true
-        },
-        {
-         "text": " fue el primero que se construyó en América del Sur en "
-        },
-        {
-         "text": "1841",
-         "cloze": true
-        }
-       ]
-      },
-      {
-       "id": "Wt9PNGxsBRbpDRvfS.3693047218280958",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "Los signos del zodiaco presentes en el Escudo Nacional son: "
-        },
-        {
-         "text": "Aries ♈, Tauro ♉, Géminis ♊ y Cáncer ♋",
-         "cloze": true
-        },
-        {
-         "text": "."
-        }
-       ]
-      },
-      {
-       "id": "T8b0cNKvrNHqGy6I6.2965482665332704",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "Los signos del zodiaco presentes en el Escudo Nacional hacen referencia a los hechos importantes ocurridos en los meses de "
-        },
-        {
-         "text": "marzo, abril, mayo y junio",
-         "cloze": true
-        },
-        {
-         "text": "."
-        }
-       ]
-      },
-      {
-       "id": "HABx9DF0AawkW5HLC.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Hacia dónde miran el cóndor y el buque a vapor Guayas en el Escudo Nacional?"
-        }
-       ],
-       "options": [
-        "Hacia la derecha del escudo, que es la izquierda de quien lo mira",
-        "Hacia la izquierda del escudo, que es la derecha de quien lo mira",
-        "Hacia arriba, hacia el sol",
-        "De frente, hacia quien lo mira"
-       ],
-       "answer": 0,
-       "explanation": "En heráldica, la derecha del escudo es la izquierda de quien lo mira."
-      },
-      {
-       "id": "JdjiW5ljGD9dJzDhY.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "Los cuatro signos del zodiaco del Escudo Nacional corresponden a marzo, abril, mayo y junio. ¿Qué acontecimiento recuerdan?"
-        }
-       ],
-       "options": [
-        "La Revolución Marcista de 1845",
-        "La Batalla del Pichincha de 1822",
-        "El Primer Grito de Independencia de 1809",
-        "La separación de la Gran Colombia en 1830"
-       ],
-       "answer": 0
       },
       {
        "id": "YkZVix0fTUyFAikfV.f",
@@ -1325,90 +1306,13 @@
        ],
        "answer": 0,
        "explanation": "1948 es el año en que se declaró intangible el himno, y 1978 el de la Constitución que reconoce el escudo."
-      },
-      {
-       "id": "kVl6Gk5u0aZ295Oph.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién diseñó el Escudo Nacional del Ecuador?"
-        }
-       ],
-       "options": [
-        "José Joaquín de Olmedo; el diseño actual se atribuye a Pedro Pablo Traversari",
-        "Juan León Mera; el diseño actual se atribuye a Antonio Neumane",
-        "Eloy Alfaro; el diseño actual se atribuye a Pedro Pablo Traversari",
-        "Simón Bolívar; el diseño actual se atribuye a José Joaquín de Olmedo"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "ry72oPwyGsTdBCCxM.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué son las fasces consulares?"
-        }
-       ],
-       "options": [
-        "Haces de varas atadas alrededor de un hacha, insignia de autoridad de los cónsules romanos",
-        "Lanzas cruzadas de los soldados de la independencia",
-        "Coronas de laurel que se daban a los vencedores en Roma",
-        "Escudos redondos de los legionarios romanos"
-       ],
-       "answer": 0,
-       "explanation": "Las portaban los lictores, servidores de los cónsules, como símbolo de su derecho a ejecutar la ley."
-      },
-      {
-       "id": "8dApZSZHw314x9WKn.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es un lictor?"
-        }
-       ],
-       "options": [
-        "Un funcionario romano que escoltaba a los magistrados y portaba las fasces",
-        "Un sacerdote romano encargado de los templos",
-        "Un soldado de la caballería romana",
-        "Un juez de la antigua Roma"
-       ],
-       "answer": 0,
-       "explanation": "Hacía funciones parecidas a las de la policía: mantenía el orden público y custodiaba a los presos."
-      },
-      {
-       "id": "ETSQbqhERXqnTujI1.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es una segur?"
-        }
-       ],
-       "options": [
-        "Un hacha grande, que formaba parte de las fasces de los lictores romanos",
-        "Una lanza corta",
-        "Un escudo pequeño",
-        "Una espada curva"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "o8XW1jM1r0AOi5Htf.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es un caduceo?"
-        }
-       ],
-       "options": [
-        "Una vara alada con dos serpientes entrelazadas, símbolo del comercio",
-        "Una espada con alas, símbolo de la guerra",
-        "Una antorcha encendida, símbolo de la libertad",
-        "Una balanza, símbolo de la justicia"
-       ],
-       "answer": 0,
-       "explanation": "Está asociado con Mercurio (Hermes en la mitología griega), dios del comercio. Lo usan instituciones de ciencias económicas."
-      },
+      }
+     ]
+    },
+    {
+     "id": "elementos-del-escudo",
+     "title": "Elementos del escudo",
+     "cards": [
       {
        "id": "escudo-condor",
        "type": "choice",
@@ -1427,87 +1331,21 @@
        "explanation": "Tiene las alas desplegadas, en actitud de vuelo. La paz la representa la palma; la gloria, el laurel; y la fuerza pública, la segur."
       },
       {
-       "id": "escudo-banderas",
+       "id": "HABx9DF0AawkW5HLC.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Cuántas banderas hay en el Escudo Nacional y cómo están dispuestas?"
+         "text": "¿Hacia dónde miran el cóndor y el buque a vapor Guayas en el Escudo Nacional?"
         }
        ],
        "options": [
-        "Cuatro, dos a cada lado, agrupadas bajo las fasces consulares",
-        "Dos, una a cada lado",
-        "Seis, tres a cada lado",
-        "Cuatro, todas a la izquierda"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "escudo-astas",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué representan las astas del Escudo Nacional?"
-        }
-       ],
-       "options": [
-        "Dos de lanza, las luchas por la independencia; dos de alabarda, la custodia del poder del país",
-        "La navegación y el comercio",
-        "La gloria de la nación",
-        "Las cuatro regiones del país"
+        "Hacia la derecha del escudo, que es la izquierda de quien lo mira",
+        "Hacia la izquierda del escudo, que es la derecha de quien lo mira",
+        "Hacia arriba, hacia el sol",
+        "De frente, hacia quien lo mira"
        ],
        "answer": 0,
-       "explanation": "Son cuatro y coronan las banderas."
-      },
-      {
-       "id": "escudo-liston",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es el listón del Escudo Nacional?"
-        }
-       ],
-       "options": [
-        "Una cinta de seda",
-        "Una corona de laurel",
-        "Una franja de la bandera",
-        "Una cadena de oro"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "escudo-laurel",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué representa el laurel en el Escudo Nacional?"
-        }
-       ],
-       "options": [
-        "La gloria de la nación",
-        "La paz en la nación",
-        "La fuerza pública",
-        "La dignidad republicana"
-       ],
-       "answer": 0,
-       "explanation": "La paz la representa la palma; la fuerza pública, la segur; y la dignidad republicana, las fasces."
-      },
-      {
-       "id": "escudo-palma",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué representa la palma en el Escudo Nacional?"
-        }
-       ],
-       "options": [
-        "La paz en la nación",
-        "La gloria de la nación",
-        "La fuerza pública",
-        "La navegación y el comercio"
-       ],
-       "answer": 0,
-       "explanation": "Algunas fuentes la interpretan también como el martirio de quienes lucharon por la libertad. La gloria la representa el laurel."
+       "explanation": "En heráldica, la derecha del escudo es la izquierda de quien lo mira."
       },
       {
        "id": "escudo-sol",
@@ -1525,6 +1363,55 @@
        ],
        "answer": 0,
        "explanation": "También se lo llama Sol Incaico. Está en la parte superior del óvalo, junto a los signos del zodiaco."
+      },
+      {
+       "id": "Wt9PNGxsBRbpDRvfS.3693047218280958",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "Los signos del zodiaco presentes en el Escudo Nacional son: "
+        },
+        {
+         "text": "Aries ♈, Tauro ♉, Géminis ♊ y Cáncer ♋",
+         "cloze": true
+        },
+        {
+         "text": "."
+        }
+       ]
+      },
+      {
+       "id": "T8b0cNKvrNHqGy6I6.2965482665332704",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "Los signos del zodiaco presentes en el Escudo Nacional hacen referencia a los hechos importantes ocurridos en los meses de "
+        },
+        {
+         "text": "marzo, abril, mayo y junio",
+         "cloze": true
+        },
+        {
+         "text": "."
+        }
+       ]
+      },
+      {
+       "id": "escudo-zodiaco-posicion",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué signos del zodiaco están a la derecha del sol en el Escudo Nacional y cuáles a la izquierda?"
+        }
+       ],
+       "options": [
+        "A la derecha del escudo, Aries y Tauro; a la izquierda, Géminis y Cáncer",
+        "A la derecha del escudo, Géminis y Cáncer; a la izquierda, Aries y Tauro",
+        "A la derecha del escudo, Leo y Virgo; a la izquierda, Aries y Tauro",
+        "Los cuatro están a la derecha del escudo"
+       ],
+       "answer": 0,
+       "explanation": "En heráldica, la derecha del escudo es la izquierda de quien lo mira."
       },
       {
        "id": "escudo-chimborazo",
@@ -1561,53 +1448,58 @@
        "explanation": "Sus orillas con vegetación expresan la agricultura nacional. La navegación y el comercio los simboliza el caduceo."
       },
       {
-       "id": "escudo-segur",
+       "id": "escudo-buque",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué simboliza el segur en el Escudo Nacional?"
+         "text": "¿Qué características tiene el buque a vapor Guayas del Escudo Nacional?"
         }
        ],
        "options": [
-        "La fuerza pública",
-        "La paz en la nación",
-        "La gloria de la nación",
-        "La navegación y el comercio"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "escudo-ovalo",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cómo es el contorno del óvalo del Escudo Nacional?"
-        }
-       ],
-       "options": [
-        "De doble borde color café, con uniones del mismo color arriba y abajo",
-        "De un solo borde dorado",
-        "De laureles entrelazados",
-        "De doble borde tricolor"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "escudo-zodiaco-posicion",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué signos del zodiaco están a la derecha del sol en el Escudo Nacional y cuáles a la izquierda?"
-        }
-       ],
-       "options": [
-        "A la derecha del escudo, Aries y Tauro; a la izquierda, Géminis y Cáncer",
-        "A la derecha del escudo, Géminis y Cáncer; a la izquierda, Aries y Tauro",
-        "A la derecha del escudo, Leo y Virgo; a la izquierda, Aries y Tauro",
-        "Los cuatro están a la derecha del escudo"
+        "Tiene un caduceo por mástil y los colores de la Bandera Nacional; fue el primero construido en América del Sur, en 1841",
+        "Es un velero español de la época colonial",
+        "Es el barco en que llegó Cristóbal Colón",
+        "Es un buque de guerra peruano capturado en 1829"
        ],
        "answer": 0,
-       "explanation": "En heráldica, la derecha del escudo es la izquierda de quien lo mira."
+       "explanation": "Se construyó en los astilleros de Guayaquil."
+      },
+      {
+       "id": "dnkHxhMRe28bj5IqG.4106292682709909",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "El Buque a vapor "
+        },
+        {
+         "text": "Guayas",
+         "bold": true
+        },
+        {
+         "text": " fue el primero que se construyó en América del Sur en "
+        },
+        {
+         "text": "1841",
+         "cloze": true
+        }
+       ]
+      },
+      {
+       "id": "o8XW1jM1r0AOi5Htf.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué es un caduceo?"
+        }
+       ],
+       "options": [
+        "Una vara alada con dos serpientes entrelazadas, símbolo del comercio",
+        "Una espada con alas, símbolo de la guerra",
+        "Una antorcha encendida, símbolo de la libertad",
+        "Una balanza, símbolo de la justicia"
+       ],
+       "answer": 0,
+       "explanation": "Está asociado con Mercurio (Hermes en la mitología griega), dios del comercio. Lo usan instituciones de ciencias económicas."
       },
       {
        "id": "escudo-caduceo",
@@ -1627,21 +1519,88 @@
        "explanation": "Está coronado por dos alas, rodeado de serpientes y es atributo de Mercurio; en el escudo sirve de mástil al buque Guayas."
       },
       {
-       "id": "escudo-buque",
+       "id": "escudo-banderas",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué características tiene el buque a vapor Guayas del Escudo Nacional?"
+         "text": "¿Cuántas banderas hay en el Escudo Nacional y cómo están dispuestas?"
         }
        ],
        "options": [
-        "Tiene un caduceo por mástil y los colores de la Bandera Nacional; fue el primero construido en América del Sur, en 1841",
-        "Es un velero español de la época colonial",
-        "Es el barco en que llegó Cristóbal Colón",
-        "Es un buque de guerra peruano capturado en 1829"
+        "Cuatro, dos a cada lado, agrupadas bajo las fasces consulares",
+        "Dos, una a cada lado",
+        "Seis, tres a cada lado",
+        "Cuatro, todas a la izquierda"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "escudo-astas",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué representan las astas del Escudo Nacional?"
+        }
+       ],
+       "options": [
+        "Dos de lanza, las luchas por la independencia; dos de alabarda, la custodia del poder del país",
+        "La navegación y el comercio",
+        "La gloria de la nación",
+        "Las cuatro regiones del país"
        ],
        "answer": 0,
-       "explanation": "Se construyó en los astilleros de Guayaquil."
+       "explanation": "Son cuatro y coronan las banderas."
+      },
+      {
+       "id": "escudo-laurel",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué representa el laurel en el Escudo Nacional?"
+        }
+       ],
+       "options": [
+        "La gloria de la nación",
+        "La paz en la nación",
+        "La fuerza pública",
+        "La dignidad republicana"
+       ],
+       "answer": 0,
+       "explanation": "La paz la representa la palma; la fuerza pública, la segur; y la dignidad republicana, las fasces."
+      },
+      {
+       "id": "escudo-palma",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué representa la palma en el Escudo Nacional?"
+        }
+       ],
+       "options": [
+        "La paz en la nación",
+        "La gloria de la nación",
+        "La fuerza pública",
+        "La navegación y el comercio"
+       ],
+       "answer": 0,
+       "explanation": "Algunas fuentes la interpretan también como el martirio de quienes lucharon por la libertad. La gloria la representa el laurel."
+      },
+      {
+       "id": "ry72oPwyGsTdBCCxM.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué son las fasces consulares?"
+        }
+       ],
+       "options": [
+        "Haces de varas atadas alrededor de un hacha, insignia de autoridad de los cónsules romanos",
+        "Lanzas cruzadas de los soldados de la independencia",
+        "Coronas de laurel que se daban a los vencedores en Roma",
+        "Escudos redondos de los legionarios romanos"
+       ],
+       "answer": 0,
+       "explanation": "Las portaban los lictores, servidores de los cónsules, como símbolo de su derecho a ejecutar la ley."
       },
       {
        "id": "escudo-fasces",
@@ -1661,38 +1620,85 @@
        "explanation": "El escudo descansa sobre ellas."
       },
       {
-       "id": "escudo-1836",
+       "id": "8dApZSZHw314x9WKn.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué representaban las siete estrellas del escudo de 1836, del gobierno de Vicente Rocafuerte?"
+         "text": "¿Qué es un lictor?"
         }
        ],
        "options": [
-        "Las siete provincias que tenía entonces el Ecuador",
-        "Las siete batallas de la independencia",
-        "Los siete diputados de la Primera Constituyente",
-        "Las siete ciudades fundadas por los españoles"
+        "Un funcionario romano que escoltaba a los magistrados y portaba las fasces",
+        "Un sacerdote romano encargado de los templos",
+        "Un soldado de la caballería romana",
+        "Un juez de la antigua Roma"
        ],
        "answer": 0,
-       "explanation": "El escudo de Rocafuerte conservó el sol y las estrellas del primer escudo, y añadió el Guagua y el Rucu Pichincha."
+       "explanation": "Hacía funciones parecidas a las de la policía: mantenía el orden público y custodiaba a los presos."
       },
       {
-       "id": "escudo-marcista",
+       "id": "ETSQbqhERXqnTujI1.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué escudo incorporó por primera vez los signos del zodiaco?"
+         "text": "¿Qué es una segur?"
         }
        ],
        "options": [
-        "El de la Revolución Marcista, de 1845",
-        "El de Juan José Flores, de 1830",
-        "El de Vicente Rocafuerte, de 1836",
-        "El de Eloy Alfaro, de 1900"
+        "Un hacha grande, que formaba parte de las fasces de los lictores romanos",
+        "Una lanza corta",
+        "Un escudo pequeño",
+        "Una espada curva"
        ],
-       "answer": 0,
-       "explanation": "Los signos recuerdan los meses de marzo a junio de 1845, cuando ocurrió la Revolución Marcista. El escudo de 1900 los conservó."
+       "answer": 0
+      },
+      {
+       "id": "escudo-segur",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué simboliza el segur en el Escudo Nacional?"
+        }
+       ],
+       "options": [
+        "La fuerza pública",
+        "La paz en la nación",
+        "La gloria de la nación",
+        "La navegación y el comercio"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "escudo-liston",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué es el listón del Escudo Nacional?"
+        }
+       ],
+       "options": [
+        "Una cinta de seda",
+        "Una corona de laurel",
+        "Una franja de la bandera",
+        "Una cadena de oro"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "escudo-ovalo",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo es el contorno del óvalo del Escudo Nacional?"
+        }
+       ],
+       "options": [
+        "De doble borde color café, con uniones del mismo color arriba y abajo",
+        "De un solo borde dorado",
+        "De laureles entrelazados",
+        "De doble borde tricolor"
+       ],
+       "answer": 0
       }
      ]
     },
