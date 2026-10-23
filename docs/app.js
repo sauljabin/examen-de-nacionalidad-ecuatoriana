@@ -44,6 +44,15 @@ function redraw(show) {
   window.scrollTo({ top, behavior: "instant" });
 }
 
+// Random order where items with more weight tend to come first
+// (Efraimidis–Spirakis weighted sampling).
+function weightedShuffle(items, weight) {
+  return items
+    .map((item) => ({ item, key: Math.random() ** (1 / weight(item)) }))
+    .sort((a, b) => b.key - a.key)
+    .map(({ item }) => item);
+}
+
 function shuffle(items) {
   const copy = [...items];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -608,9 +617,10 @@ function updateTopics() {
 const MOCK_SIZE = 30;
 const MOCK_PASS = 27;
 // Half of each mock exam comes from the questions that come up most
-// ("popularity" in cards.json).
+// ("popularity" in cards.json); the more a question comes up, the likelier
+// it is to be picked.
 const MOCK_POPULAR = 15;
-const POPULAR_MIN = 3;
+const POPULAR_MIN = 2;
 
 // Cloze cards made from the same text share this key: shown together, they
 // give away each other's answers.
@@ -660,7 +670,8 @@ function smartReview() {
 }
 
 // Only choice questions, as in the real exam: MOCK_POPULAR of the ones that
-// come up most, and the rest at random, spread evenly over the categories.
+// come up most, weighted by popularity, and the rest at random, spread evenly
+// over the categories.
 function mockExam() {
   const used = new Set();
   const picked = [];
@@ -671,7 +682,8 @@ function mockExam() {
     return true;
   };
   const choiceOnly = (cards) => cards.filter((card) => card.type === "choice");
-  for (const card of shuffle(choiceOnly(state.allCards).filter((card) => (card.popularity || 0) >= POPULAR_MIN))) {
+  const popular = choiceOnly(state.allCards).filter((card) => (card.popularity || 0) >= POPULAR_MIN);
+  for (const card of weightedShuffle(popular, (card) => card.popularity)) {
     if (picked.length === MOCK_POPULAR) break;
     take(card);
   }
