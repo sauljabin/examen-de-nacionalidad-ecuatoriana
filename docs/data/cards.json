@@ -7064,6 +7064,29 @@
        ],
        "answer": 0,
        "explanation": "El 10 de agosto de 1809 fue el Primer Grito de Independencia en Quito, el 3 de noviembre de 1820 se independizó Cuenca y el 24 de mayo de 1822 fue la Batalla del Pichincha."
+      },
+      {
+       "id": "Qa62ryyj1UIWT3yQi.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué acontecimiento lideró "
+        },
+        {
+         "text": "José Joaquín de Olmedo",
+         "bold": true
+        },
+        {
+         "text": " el 9 de octubre de 1820?"
+        }
+       ],
+       "options": [
+        "La independencia de Guayaquil",
+        "El Primer Grito de Independencia",
+        "La Revolución Marcista",
+        "La Batalla del Pichincha"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -7678,6 +7701,23 @@
        ],
        "answer": 0,
        "explanation": "Lo derrocó la Revolución Marcista, que empezó en Guayaquil."
+      },
+      {
+       "id": "OpldcRaTbwwKDyRbt.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué cargo ocupó José Joaquín de Olmedo tras la Revolución Marcista de 1845?"
+        }
+       ],
+       "options": [
+        "Presidió el gobierno provisional (Triunvirato Marcista)",
+        "Fue el primer presidente del Ecuador",
+        "Fue presidente de la Gran Colombia",
+        "Fue jefe del ejército de Juan José Flores"
+       ],
+       "answer": 0,
+       "explanation": "Ese gobierno se formó tras derrocar a Juan José Flores, que había sido el primer presidente del Ecuador."
       }
      ]
     },
@@ -7916,6 +7956,69 @@
        ],
        "answer": 0,
        "explanation": "Ocurrió en el gobierno de Luis Cordero, que renunció en 1895; el escándalo abrió paso a la Revolución Liberal."
+      }
+     ]
+    },
+    {
+     "id": "1895-revolucion-liberal",
+     "title": "1895 Revolución Liberal",
+     "cards": [
+      {
+       "id": "XTlgh2R7kesOC68Ua.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál fue el principal movimiento político liderado por Eloy Alfaro?"
+        }
+       ],
+       "options": [
+        "La Revolución Liberal",
+        "La Revolución Marcista",
+        "La Revolución Juliana",
+        "La Gloriosa"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "8vRnfGwICfkyLxs76.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué año se inició la Revolución Liberal liderada por Alfaro?"
+        }
+       ],
+       "options": [
+        "1895",
+        "1845",
+        "1912",
+        "1925"
+       ],
+       "answer": 0,
+       "explanation": "Comenzó el 5 de junio de 1895 en Guayaquil."
+      },
+      {
+       "id": "dFn4ZVv8ZdqthLR4a.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué destino trágico tuvo"
+        },
+        {
+         "text": " Eloy Alfaro",
+         "bold": true
+        },
+        {
+         "text": " el 28 de enero de 1912?"
+        }
+       ],
+       "options": [
+        "Fue capturado y asesinado en Quito tras un golpe organizado por sectores conservadores",
+        "Murió en el exilio en Panamá",
+        "Fue fusilado tras la Batalla de Guayaquil",
+        "Murió en un accidente de avión"
+       ],
+       "answer": 0,
+       "explanation": "Su cuerpo fue arrastrado y quemado en el parque El Ejido; ese día se recuerda como la «hoguera bárbara»."
       }
      ]
     },
@@ -8685,23 +8788,6 @@
        "explanation": "También mantienen sus propias formas de organización."
       },
       {
-       "id": "lCvb5RxGgaw8aege3.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cómo se denomina el mecanismo constitucional que permite al Presidente disolver la Asamblea Nacional y convocar elecciones extraordinarias?"
-        }
-       ],
-       "options": [
-        "Muerte cruzada",
-        "Juicio político",
-        "Revocatoria del mandato",
-        "Consulta popular"
-       ],
-       "answer": 0,
-       "explanation": "La usó por primera vez el presidente Guillermo Lasso en 2023."
-      },
-      {
        "id": "X2wuq3cJ0xlLVtiIL.f",
        "type": "choice",
        "front": [
@@ -8740,77 +8826,55 @@
        "explanation": "El castellano es el idioma oficial del Ecuador. Los demás idiomas ancestrales, como el wao tededo, son de uso oficial para los pueblos indígenas en las zonas donde habitan."
       },
       {
-       "id": "MJOPNfYySBNCHjaa2.f",
+       "id": "qT4dFpkx7KTZwozr4.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué órgano legislativo unicameral establece la Constitución de 2008?"
+         "text": "¿Cuál es el idioma oficial del Ecuador?"
         }
        ],
        "options": [
-        "La Asamblea Nacional",
-        "El Congreso Nacional",
-        "El Senado",
-        "La Cámara de Diputados"
+        "El castellano",
+        "El kichwa",
+        "El shuar",
+        "El inglés"
        ],
        "answer": 0,
-       "explanation": "Reemplazó al antiguo Congreso Nacional."
+       "explanation": "El kichwa y el shuar son idiomas oficiales de relación intercultural."
       },
       {
-       "id": "V32xAaMLSeToehN5r.f",
+       "id": "soberania",
        "type": "choice",
        "front": [
         {
-         "text": "¿Desde cuándo está vigente la "
-        },
-        {
-         "text": "ley de movilidad humana",
-         "bold": true
-        },
-        {
-         "text": "?"
+         "text": "¿En quién radica la soberanía del Ecuador?"
         }
        ],
        "options": [
-        "2017",
-        "2008",
-        "2010",
-        "2021"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "HU2LZlj8mSxXpuSSl.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Para qué sirve la acción de hábeas data?"
-        }
-       ],
-       "options": [
-        "Conocer, actualizar, rectificar o eliminar tus datos personales en bases de datos",
-        "Pedir la libertad de una persona detenida ilegalmente",
-        "Pedir información pública a una institución del Estado",
-        "Reclamar una indemnización por un accidente"
+        "En el pueblo",
+        "En el presidente de la República",
+        "En la Asamblea Nacional",
+        "En las Fuerzas Armadas"
        ],
        "answer": 0,
-       "explanation": "Pedir la libertad de una persona detenida ilegalmente es el hábeas corpus."
+       "explanation": "Según el artículo 1, la voluntad del pueblo es el fundamento de la autoridad; se ejerce a través de los órganos del poder público y de la participación directa."
       },
       {
-       "id": "kVvhbEerhOs3ap19O.f",
+       "id": "nombre-oficial",
        "type": "choice",
        "front": [
         {
-         "text": "¿En qué casos puede la Asamblea Nacional destituir al Presidente de la República?"
+         "text": "¿Cuál es el nombre oficial del país?"
         }
        ],
        "options": [
-        "Por arrogarse funciones que no le corresponden, o por grave crisis política y conmoción interna",
-        "Por perder una consulta popular",
-        "Por no asistir a la Asamblea Nacional",
-        "En cualquier momento, sin necesidad de una causa"
+        "República del Ecuador",
+        "Estado Plurinacional del Ecuador",
+        "Estados Unidos del Ecuador",
+        "Confederación del Ecuador"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "«Estado Plurinacional» es el nombre oficial de Bolivia."
       },
       {
        "id": "EgX12jUE86Q8GN5YH.f",
@@ -8849,90 +8913,13 @@
        ],
        "answer": 0,
        "explanation": "La Constitución prohíbe las bases militares extranjeras en todo el territorio."
-      },
-      {
-       "id": "PVpXghGc3UbVEwf9t.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "Al obtener la nacionalidad ecuatoriana, ¿se pierde la nacionalidad anterior?"
-        }
-       ],
-       "options": [
-        "No",
-        "Sí, siempre",
-        "Sí, hay que renunciar a ella ante el Registro Civil",
-        "Solo si se obtiene por matrimonio"
-       ],
-       "answer": 0,
-       "explanation": "El Ecuador permite tener más de una nacionalidad."
-      },
-      {
-       "id": "Bmhva1en3z9mjFC81.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué personas son ecuatorianos y ecuatorianas por naturalización?"
-        }
-       ],
-       "options": [
-        "Las que obtienen la carta de naturalización",
-        "Todas las que viven en el Ecuador más de un año",
-        "Las nacidas en el Ecuador",
-        "Los hijos de ecuatorianos nacidos en el extranjero"
-       ],
-       "answer": 0,
-       "explanation": "Las personas nacidas en el Ecuador y los hijos de ecuatorianos nacidos en el exterior son ecuatorianos por nacimiento."
-      },
-      {
-       "id": "JoBVM6feOe2fE6HbC.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuántas veces podrán reelegirse las autoridades de elección popular?"
-        }
-       ],
-       "options": [
-        "Una sola vez, consecutiva o no",
-        "Indefinidamente",
-        "Nunca",
-        "Dos veces consecutivas"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "j6wk0o2F3Hj5wLN3S.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quiénes pueden presentar proyectos de ley?"
-        }
-       ],
-       "options": [
-        "Los asambleístas, el Presidente, las otras funciones del Estado, la Corte Constitucional y la ciudadanía con respaldo",
-        "Solo los asambleístas",
-        "Solo el Presidente de la República",
-        "Solo la Corte Constitucional"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "naturalizacion-servicios",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién concede la carta de naturalización a un extranjero por haber prestado servicios relevantes al país?"
-        }
-       ],
-       "options": [
-        "El presidente de la República",
-        "La Asamblea Nacional",
-        "La Corte Constitucional",
-        "El Consejo Nacional Electoral"
-       ],
-       "answer": 0,
-       "explanation": "Es un acto discrecional de la Función Ejecutiva, que el presidente firma mediante decreto."
-      },
+      }
+     ]
+    },
+    {
+     "id": "derechos-y-garantias",
+     "title": "Derechos y garantías",
+     "cards": [
       {
        "id": "derecho-agua",
        "type": "choice",
@@ -8985,57 +8972,6 @@
        "explanation": "Lo dice el artículo 32."
       },
       {
-       "id": "soberania",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En quién radica la soberanía del Ecuador?"
-        }
-       ],
-       "options": [
-        "En el pueblo",
-        "En el presidente de la República",
-        "En la Asamblea Nacional",
-        "En las Fuerzas Armadas"
-       ],
-       "answer": 0,
-       "explanation": "Según el artículo 1, la voluntad del pueblo es el fundamento de la autoridad; se ejerce a través de los órganos del poder público y de la participación directa."
-      },
-      {
-       "id": "nombre-oficial",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre oficial del país?"
-        }
-       ],
-       "options": [
-        "República del Ecuador",
-        "Estado Plurinacional del Ecuador",
-        "Estados Unidos del Ecuador",
-        "Confederación del Ecuador"
-       ],
-       "answer": 0,
-       "explanation": "«Estado Plurinacional» es el nombre oficial de Bolivia."
-      },
-      {
-       "id": "qT4dFpkx7KTZwozr4.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es el idioma oficial del Ecuador?"
-        }
-       ],
-       "options": [
-        "El castellano",
-        "El kichwa",
-        "El shuar",
-        "El inglés"
-       ],
-       "answer": 0,
-       "explanation": "El kichwa y el shuar son idiomas oficiales de relación intercultural."
-      },
-      {
        "id": "iMn8XZRnesz2dXKEf.f",
        "type": "choice",
        "front": [
@@ -9048,6 +8984,103 @@
         "60 años",
         "70 años",
         "55 años"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "HU2LZlj8mSxXpuSSl.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Para qué sirve la acción de hábeas data?"
+        }
+       ],
+       "options": [
+        "Conocer, actualizar, rectificar o eliminar tus datos personales en bases de datos",
+        "Pedir la libertad de una persona detenida ilegalmente",
+        "Pedir información pública a una institución del Estado",
+        "Reclamar una indemnización por un accidente"
+       ],
+       "answer": 0,
+       "explanation": "Pedir la libertad de una persona detenida ilegalmente es el hábeas corpus."
+      }
+     ]
+    },
+    {
+     "id": "nacionalidad-y-movilidad-humana",
+     "title": "Nacionalidad y movilidad humana",
+     "cards": [
+      {
+       "id": "Bmhva1en3z9mjFC81.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué personas son ecuatorianos y ecuatorianas por naturalización?"
+        }
+       ],
+       "options": [
+        "Las que obtienen la carta de naturalización",
+        "Todas las que viven en el Ecuador más de un año",
+        "Las nacidas en el Ecuador",
+        "Los hijos de ecuatorianos nacidos en el extranjero"
+       ],
+       "answer": 0,
+       "explanation": "Las personas nacidas en el Ecuador y los hijos de ecuatorianos nacidos en el exterior son ecuatorianos por nacimiento."
+      },
+      {
+       "id": "PVpXghGc3UbVEwf9t.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Al obtener la nacionalidad ecuatoriana, ¿se pierde la nacionalidad anterior?"
+        }
+       ],
+       "options": [
+        "No",
+        "Sí, siempre",
+        "Sí, hay que renunciar a ella ante el Registro Civil",
+        "Solo si se obtiene por matrimonio"
+       ],
+       "answer": 0,
+       "explanation": "El Ecuador permite tener más de una nacionalidad."
+      },
+      {
+       "id": "naturalizacion-servicios",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién concede la carta de naturalización a un extranjero por haber prestado servicios relevantes al país?"
+        }
+       ],
+       "options": [
+        "El presidente de la República",
+        "La Asamblea Nacional",
+        "La Corte Constitucional",
+        "El Consejo Nacional Electoral"
+       ],
+       "answer": 0,
+       "explanation": "Es un acto discrecional de la Función Ejecutiva, que el presidente firma mediante decreto."
+      },
+      {
+       "id": "V32xAaMLSeToehN5r.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Desde cuándo está vigente la "
+        },
+        {
+         "text": "ley de movilidad humana",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "2017",
+        "2008",
+        "2010",
+        "2021"
        ],
        "answer": 0
       }
@@ -9242,6 +9275,55 @@
        "topic": "Función Ejecutiva"
       },
       {
+       "id": "lCvb5RxGgaw8aege3.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo se denomina el mecanismo constitucional que permite al Presidente disolver la Asamblea Nacional y convocar elecciones extraordinarias?"
+        }
+       ],
+       "options": [
+        "Muerte cruzada",
+        "Juicio político",
+        "Revocatoria del mandato",
+        "Consulta popular"
+       ],
+       "answer": 0,
+       "explanation": "La usó por primera vez el presidente Guillermo Lasso en 2023."
+      },
+      {
+       "id": "kVvhbEerhOs3ap19O.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué casos puede la Asamblea Nacional destituir al Presidente de la República?"
+        }
+       ],
+       "options": [
+        "Por arrogarse funciones que no le corresponden, o por grave crisis política y conmoción interna",
+        "Por perder una consulta popular",
+        "Por no asistir a la Asamblea Nacional",
+        "En cualquier momento, sin necesidad de una causa"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "JoBVM6feOe2fE6HbC.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuántas veces podrán reelegirse las autoridades de elección popular?"
+        }
+       ],
+       "options": [
+        "Una sola vez, consecutiva o no",
+        "Indefinidamente",
+        "Nunca",
+        "Dos veces consecutivas"
+       ],
+       "answer": 0
+      },
+      {
        "id": "3mFavKNXEYqyhoeK3.f",
        "topic": "Función Legislativa",
        "type": "basic",
@@ -9272,6 +9354,23 @@
        ],
        "answer": 0,
        "topic": "Función Legislativa"
+      },
+      {
+       "id": "MJOPNfYySBNCHjaa2.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué órgano legislativo unicameral establece la Constitución de 2008?"
+        }
+       ],
+       "options": [
+        "La Asamblea Nacional",
+        "El Congreso Nacional",
+        "El Senado",
+        "La Cámara de Diputados"
+       ],
+       "answer": 0,
+       "explanation": "Reemplazó al antiguo Congreso Nacional."
       },
       {
        "id": "uXPLpOALwq5FSR1lU.f",
@@ -9377,6 +9476,38 @@
        ],
        "answer": 0,
        "topic": "Función Legislativa"
+      },
+      {
+       "id": "j6wk0o2F3Hj5wLN3S.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quiénes pueden presentar proyectos de ley?"
+        }
+       ],
+       "options": [
+        "Los asambleístas, el Presidente, las otras funciones del Estado, la Corte Constitucional y la ciudadanía con respaldo",
+        "Solo los asambleístas",
+        "Solo el Presidente de la República",
+        "Solo la Corte Constitucional"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "Ru69ks4WeZVbQSrqq.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Por qué razón se puede destituir a un Asambleísta?"
+        }
+       ],
+       "options": [
+        "Por celebrar contratos con entidades del sector público",
+        "Por votar en contra del Presidente",
+        "Por faltar a una sesión",
+        "Por dar una entrevista"
+       ],
+       "answer": 0
       },
       {
        "id": "0oMAgImgSC8swBidO.f",
@@ -9530,22 +9661,6 @@
         "El Consejo Nacional Electoral"
        ],
        "answer": 0
-      },
-      {
-       "id": "Ru69ks4WeZVbQSrqq.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Por qué razón se puede destituir a un Asambleísta?"
-        }
-       ],
-       "options": [
-        "Por celebrar contratos con entidades del sector público",
-        "Por votar en contra del Presidente",
-        "Por faltar a una sesión",
-        "Por dar una entrevista"
-       ],
-       "answer": 0
       }
      ]
     },
@@ -9554,21 +9669,21 @@
      "title": "Presidentes",
      "cards": [
       {
-       "id": "zaliduwYYfKwhHC7u.f",
+       "id": "74f63ZnGeVsvCoHsd.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién fue nombrado presidente interino de la República del Ecuador en el año 1997?"
+         "text": "¿Quién fue el primer presidente del Ecuador?"
         }
        ],
        "options": [
-        "Fabián Alarcón",
-        "Alfredo Palacio",
-        "Jamil Mahuad",
-        "Gustavo Noboa"
+        "Juan José Flores",
+        "Vicente Rocafuerte",
+        "Gabriel García Moreno",
+        "José Joaquín de Olmedo"
        ],
        "answer": 0,
-       "explanation": "Reemplazó a Abdalá Bucaram, destituido por el Congreso."
+       "explanation": "Gobernó desde 1830 y era venezolano. Vicente Rocafuerte fue el primer presidente nacido en territorio ecuatoriano."
       },
       {
        "id": "YrlMW57kf06d7NUkW.f",
@@ -9588,23 +9703,6 @@
        "explanation": "Nació en Guayaquil y gobernó de 1835 a 1839. Su antecesor, Juan José Flores, era venezolano."
       },
       {
-       "id": "74f63ZnGeVsvCoHsd.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién fue el primer presidente del Ecuador?"
-        }
-       ],
-       "options": [
-        "Juan José Flores",
-        "Vicente Rocafuerte",
-        "Gabriel García Moreno",
-        "José Joaquín de Olmedo"
-       ],
-       "answer": 0,
-       "explanation": "Gobernó desde 1830 y era venezolano. Vicente Rocafuerte fue el primer presidente nacido en territorio ecuatoriano."
-      },
-      {
        "id": "UswoTwrxzwOBS9ATB.f",
        "type": "choice",
        "front": [
@@ -9620,57 +9718,6 @@
        ],
        "answer": 0,
        "explanation": "La Constitución de 1843, de Flores, se conoce como la «Carta de Esclavitud»."
-      },
-      {
-       "id": "1dZqngxgyh96m7wOS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué presidente ecuatoriano firmó la paz de manera definitiva con el Perú?"
-        }
-       ],
-       "options": [
-        "Jamil Mahuad",
-        "Sixto Durán-Ballén",
-        "Fabián Alarcón",
-        "Rafael Correa"
-       ],
-       "answer": 0,
-       "explanation": "La firmó en Brasilia en 1998."
-      },
-      {
-       "id": "ohMRtjh1UW9QpOtkt.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué presidente del Ecuador tuvo más mandatos?"
-        }
-       ],
-       "options": [
-        "José María Velasco Ibarra",
-        "Juan José Flores",
-        "Gabriel García Moreno",
-        "Eloy Alfaro"
-       ],
-       "answer": 0,
-       "explanation": "Fue presidente cinco veces entre 1934 y 1972, pero solo terminó uno de esos mandatos."
-      },
-      {
-       "id": "sKLytz6rD4rlVKcbx.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué obra de gran trascendencia nacional terminó Eloy Alfaro?"
-        }
-       ],
-       "options": [
-        "El ferrocarril Guayaquil–Quito",
-        "La carretera Panamericana",
-        "El puerto de Manta",
-        "El oleoducto transecuatoriano"
-       ],
-       "answer": 0,
-       "explanation": "Lo había iniciado García Moreno; llegó a Quito en 1908."
       },
       {
        "id": "Q61PFBv8FLNfBo4aB.f",
@@ -9690,6 +9737,40 @@
        "explanation": "Eloy Alfaro lo terminó."
       },
       {
+       "id": "OZoMTwe8BYOtdg5N3.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué presidente fue asesinado en las escalinatas del palacio de Carondelet?"
+        }
+       ],
+       "options": [
+        "Gabriel García Moreno, en 1875",
+        "Eloy Alfaro, en 1912",
+        "Jaime Roldós, en 1981",
+        "Juan José Flores, en 1845"
+       ],
+       "answer": 0,
+       "explanation": "Eloy Alfaro fue asesinado en Quito tras ser apresado, y Jaime Roldós murió en un accidente de avión."
+      },
+      {
+       "id": "sKLytz6rD4rlVKcbx.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué obra de gran trascendencia nacional terminó Eloy Alfaro?"
+        }
+       ],
+       "options": [
+        "El ferrocarril Guayaquil–Quito",
+        "La carretera Panamericana",
+        "El puerto de Manta",
+        "El oleoducto transecuatoriano"
+       ],
+       "answer": 0,
+       "explanation": "Lo había iniciado García Moreno; llegó a Quito en 1908."
+      },
+      {
        "id": "3f9FLnTa6tctnwPFN.f",
        "type": "choice",
        "front": [
@@ -9705,29 +9786,6 @@
        ],
        "answer": 0,
        "explanation": "Gabriel García Moreno lo había iniciado."
-      },
-      {
-       "id": "7HT4SlRRj57imnRr4.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién lideró la revuelta militar que ocasionó el derrocamiento del presidente "
-        },
-        {
-         "text": "Jamil Mahuad",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Lucio Gutiérrez",
-        "Abdalá Bucaram",
-        "Fabián Alarcón",
-        "Rafael Correa"
-       ],
-       "answer": 0
       },
       {
        "id": "JTeDNwK4F8YhH18ND.f",
@@ -9746,159 +9804,21 @@
        "answer": 0
       },
       {
-       "id": "XTlgh2R7kesOC68Ua.f",
+       "id": "ohMRtjh1UW9QpOtkt.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Cuál fue el principal movimiento político liderado por Eloy Alfaro?"
+         "text": "¿Qué presidente del Ecuador tuvo más mandatos?"
         }
        ],
        "options": [
-        "La Revolución Liberal",
-        "La Revolución Marcista",
-        "La Revolución Juliana",
-        "La Gloriosa"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "8vRnfGwICfkyLxs76.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué año se inició la Revolución Liberal liderada por Alfaro?"
-        }
-       ],
-       "options": [
-        "1895",
-        "1845",
-        "1912",
-        "1925"
+        "José María Velasco Ibarra",
+        "Juan José Flores",
+        "Gabriel García Moreno",
+        "Eloy Alfaro"
        ],
        "answer": 0,
-       "explanation": "Comenzó el 5 de junio de 1895 en Guayaquil."
-      },
-      {
-       "id": "dFn4ZVv8ZdqthLR4a.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué destino trágico tuvo"
-        },
-        {
-         "text": " Eloy Alfaro",
-         "bold": true
-        },
-        {
-         "text": " el 28 de enero de 1912?"
-        }
-       ],
-       "options": [
-        "Fue capturado y asesinado en Quito tras un golpe organizado por sectores conservadores",
-        "Murió en el exilio en Panamá",
-        "Fue fusilado tras la Batalla de Guayaquil",
-        "Murió en un accidente de avión"
-       ],
-       "answer": 0,
-       "explanation": "Su cuerpo fue arrastrado y quemado en el parque El Ejido; ese día se recuerda como la «hoguera bárbara»."
-      },
-      {
-       "id": "Qa62ryyj1UIWT3yQi.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué acontecimiento lideró "
-        },
-        {
-         "text": "José Joaquín de Olmedo",
-         "bold": true
-        },
-        {
-         "text": " el 9 de octubre de 1820?"
-        }
-       ],
-       "options": [
-        "La independencia de Guayaquil",
-        "El Primer Grito de Independencia",
-        "La Revolución Marcista",
-        "La Batalla del Pichincha"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "OpldcRaTbwwKDyRbt.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué cargo ocupó José Joaquín de Olmedo tras la Revolución Marcista de 1845?"
-        }
-       ],
-       "options": [
-        "Presidió el gobierno provisional (Triunvirato Marcista)",
-        "Fue el primer presidente del Ecuador",
-        "Fue presidente de la Gran Colombia",
-        "Fue jefe del ejército de Juan José Flores"
-       ],
-       "answer": 0,
-       "explanation": "Ese gobierno se formó tras derrocar a Juan José Flores, que había sido el primer presidente del Ecuador."
-      },
-      {
-       "id": "OZoMTwe8BYOtdg5N3.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué presidente fue asesinado en las escalinatas del palacio de Carondelet?"
-        }
-       ],
-       "options": [
-        "Gabriel García Moreno, en 1875",
-        "Eloy Alfaro, en 1912",
-        "Jaime Roldós, en 1981",
-        "Juan José Flores, en 1845"
-       ],
-       "answer": 0,
-       "explanation": "Eloy Alfaro fue asesinado en Quito tras ser apresado, y Jaime Roldós murió en un accidente de avión."
-      },
-      {
-       "id": "EEDmMe9KD2oF0AG5K.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál fue la frase que expresó el escritor Juan Montalvo en relación al asesinato del presidente García Moreno?"
-        }
-       ],
-       "options": [
-        "«Mi pluma lo mató»",
-        "«Dios no muere»",
-        "«Hasta la victoria siempre»",
-        "«La patria ya es de todos»"
-       ],
-       "answer": 0,
-       "explanation": "«Dios no muere» es la frase que se atribuye a García Moreno al morir."
-      },
-      {
-       "id": "CNZbJJWb2u5APacCo.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es el famoso discurso que pronunció el político y poeta "
-        },
-        {
-         "text": "José Joaquín de Olmedo",
-         "bold": true
-        },
-        {
-         "text": ", en las Cortes de Cádiz?"
-        }
-       ],
-       "options": [
-        "Sobre la supresión de las mitas",
-        "Sobre la abolición de la esclavitud",
-        "Sobre la libertad de prensa",
-        "Sobre la independencia de Guayaquil"
-       ],
-       "answer": 0,
-       "explanation": "La mita era el trabajo forzado de los indígenas."
+       "explanation": "Fue presidente cinco veces entre 1934 y 1972, pero solo terminó uno de esos mandatos."
       },
       {
        "id": "QSbWodVWZhvPchvXd.f",
@@ -9915,23 +9835,6 @@
         "El de Rafael Correa, en 2007"
        ],
        "answer": 0
-      },
-      {
-       "id": "I94YnEpLbvklBYtru.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuándo y cómo murió el presidente Jaime Roldós?"
-        }
-       ],
-       "options": [
-        "En 1981, en un accidente de avión",
-        "En 1979, en un accidente de avión",
-        "En 1984, en un atentado",
-        "En 1981, en un atentado en Carondelet"
-       ],
-       "answer": 0,
-       "explanation": "Murió el 24 de mayo de 1981."
       },
       {
        "id": "rodriguez-lara",
@@ -9966,6 +9869,23 @@
        ],
        "answer": 0,
        "explanation": "Los otros fueron binomios ganadores de 1984, 1988 y 1996."
+      },
+      {
+       "id": "I94YnEpLbvklBYtru.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuándo y cómo murió el presidente Jaime Roldós?"
+        }
+       ],
+       "options": [
+        "En 1981, en un accidente de avión",
+        "En 1979, en un accidente de avión",
+        "En 1984, en un atentado",
+        "En 1981, en un atentado en Carondelet"
+       ],
+       "answer": 0,
+       "explanation": "Murió el 24 de mayo de 1981."
       },
       {
        "id": "hurtado-1981",
@@ -10051,6 +9971,63 @@
        ],
        "answer": 0,
        "explanation": "Era la vicepresidenta de Abdalá Bucaram; luego el Congreso nombró presidente interino a Fabián Alarcón."
+      },
+      {
+       "id": "zaliduwYYfKwhHC7u.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién fue nombrado presidente interino de la República del Ecuador en el año 1997?"
+        }
+       ],
+       "options": [
+        "Fabián Alarcón",
+        "Alfredo Palacio",
+        "Jamil Mahuad",
+        "Gustavo Noboa"
+       ],
+       "answer": 0,
+       "explanation": "Reemplazó a Abdalá Bucaram, destituido por el Congreso."
+      },
+      {
+       "id": "1dZqngxgyh96m7wOS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué presidente ecuatoriano firmó la paz de manera definitiva con el Perú?"
+        }
+       ],
+       "options": [
+        "Jamil Mahuad",
+        "Sixto Durán-Ballén",
+        "Fabián Alarcón",
+        "Rafael Correa"
+       ],
+       "answer": 0,
+       "explanation": "La firmó en Brasilia en 1998."
+      },
+      {
+       "id": "7HT4SlRRj57imnRr4.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién lideró la revuelta militar que ocasionó el derrocamiento del presidente "
+        },
+        {
+         "text": "Jamil Mahuad",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "Lucio Gutiérrez",
+        "Abdalá Bucaram",
+        "Fabián Alarcón",
+        "Rafael Correa"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -12070,6 +12047,30 @@
        }
       },
       {
+       "id": "CNZbJJWb2u5APacCo.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el famoso discurso que pronunció el político y poeta "
+        },
+        {
+         "text": "José Joaquín de Olmedo",
+         "bold": true
+        },
+        {
+         "text": ", en las Cortes de Cádiz?"
+        }
+       ],
+       "options": [
+        "Sobre la supresión de las mitas",
+        "Sobre la abolición de la esclavitud",
+        "Sobre la libertad de prensa",
+        "Sobre la independencia de Guayaquil"
+       ],
+       "answer": 0,
+       "explanation": "La mita era el trabajo forzado de los indígenas."
+      },
+      {
        "id": "fqHXlFTdkmpNGJfNO.f",
        "type": "choice",
        "front": [
@@ -12758,6 +12759,23 @@
         "license": "CC BY 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Pablopalacio1926.png"
        }
+      },
+      {
+       "id": "EEDmMe9KD2oF0AG5K.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál fue la frase que expresó el escritor Juan Montalvo en relación al asesinato del presidente García Moreno?"
+        }
+       ],
+       "options": [
+        "«Mi pluma lo mató»",
+        "«Dios no muere»",
+        "«Hasta la victoria siempre»",
+        "«La patria ya es de todos»"
+       ],
+       "answer": 0,
+       "explanation": "«Dios no muere» es la frase que se atribuye a García Moreno al morir."
       },
       {
        "id": "oiTXCKUQD5zigMbEg.f",
