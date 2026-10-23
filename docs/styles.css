@@ -350,10 +350,14 @@ kbd {
   color: var(--ink);
   font: inherit;
   font-size: 1.05rem;
+  text-overflow: ellipsis;
   outline: none;
 }
 .search-status { margin: .75rem 0 0; color: var(--muted); }
 .search-status:empty { display: none; }
+/* The example lives under the box, not in the placeholder, which phones cut short. */
+.search-hint { margin: .5rem 0 0; color: var(--muted); font-size: .9rem; }
+.search:has(.search-status:not(:empty)) .search-hint { display: none; }
 .search-results {
   display: grid;
   gap: .75rem;
