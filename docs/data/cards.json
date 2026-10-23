@@ -611,19 +611,6 @@
        "explanation": "Las otras son los primeros versos de los himnos de Perú, Colombia y Venezuela."
       },
       {
-       "id": "tgUwngW8RaXIP3clc.6902121061277438",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "El Himno Nacional consta de seis estrofas y un coro, de las cuales únicamente se cantan "
-        },
-        {
-         "text": "la segunda estrofa y el coro",
-         "cloze": true
-        }
-       ]
-      },
-      {
        "id": "tgUwngW8RaXIP3clc.2227407481712953",
        "type": "cloze",
        "front": [
@@ -4654,29 +4641,6 @@
        "answer": 0
       },
       {
-       "id": "B6zFL4XvxrHHE70ra.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la parroquia de "
-        },
-        {
-         "text": "Salango",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Manabí",
-        "Santa Elena",
-        "Esmeraldas",
-        "Guayas"
-       ],
-       "answer": 0
-      },
-      {
        "id": "zPpsG3qC6xIRlMwAI.f",
        "type": "choice",
        "front": [
@@ -4696,52 +4660,6 @@
         "Manta",
         "Jipijapa",
         "Montecristi"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "c4wP3wGhJc5LCAUWy.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la "
-        },
-        {
-         "text": "Playa de Tonsupa",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Esmeraldas",
-        "Manabí",
-        "Santa Elena",
-        "El Oro"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "nyeDqVI9NRZcv6Sjl.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la"
-        },
-        {
-         "text": " Playa Atacames",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Esmeraldas",
-        "Manabí",
-        "Santa Elena",
-        "Guayas"
        ],
        "answer": 0
       },
@@ -4796,52 +4714,6 @@
        "options": [
         "Manabí",
         "Santa Elena",
-        "Esmeraldas",
-        "Guayas"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "4sGHjMTd1PnnQXmzf.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la "
-        },
-        {
-         "text": "Playa de Ayangue",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Santa Elena",
-        "Manabí",
-        "Guayas",
-        "El Oro"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "3WuF5OWATgj4NxOvg.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la "
-        },
-        {
-         "text": "Playa Montañita",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Santa Elena",
-        "Manabí",
         "Esmeraldas",
         "Guayas"
        ],
@@ -5735,36 +5607,6 @@
        }
       },
       {
-       "id": "JWqJnmWuD6dWhriur.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra el volcán "
-        },
-        {
-         "text": "Quilotoa",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Cotopaxi",
-        "Tungurahua",
-        "Bolívar",
-        "Imbabura"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-quilotoa.jpg",
-        "alt": "Laguna del Quilotoa, Cotopaxi",
-        "credit": "Annom",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Panorama_quilotoa_crater_lake_ecuador.jpg"
-       }
-      },
-      {
        "id": "MqWYuQroxStqiIMl7.f",
        "type": "choice",
        "front": [
@@ -5942,36 +5784,6 @@
         "credit": "Bcasterline",
         "license": "Public domain",
         "url": "https://commons.wikimedia.org/wiki/File:Otavalo_Imbabura_nina_urkuwan.jpg"
-       }
-      },
-      {
-       "id": "br55Vc93wTwxw2zLX.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra el volcán "
-        },
-        {
-         "text": "Cuicocha",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Imbabura",
-        "Carchi",
-        "Pichincha",
-        "Cotopaxi"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-cuicocha.jpg",
-        "alt": "Laguna de Cuicocha, Imbabura",
-        "credit": "Ymblanter",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Laguna_Cuicocha_seen_from_the_visitor_center_02.jpg"
        }
       },
       {
@@ -6890,7 +6702,7 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué día se celebra el Primer Grito de Independencia?"
+         "text": "¿Qué día se celebra el Primer Grito de Independencia, también conocido como el Día de la Independencia del Ecuador?"
         }
        ],
        "options": [
@@ -6900,7 +6712,7 @@
         "13 de mayo"
        ],
        "answer": 0,
-       "explanation": "El 24 de mayo recuerda la Batalla del Pichincha; el 9 de octubre, la independencia de Guayaquil; y el 13 de mayo, el nacimiento de la República (1830)."
+       "explanation": "Recuerda el 10 de agosto de 1809, cuando se instaló en Quito la Junta Soberana. El 24 de mayo recuerda la Batalla del Pichincha; el 9 de octubre, la independencia de Guayaquil; y el 13 de mayo, el nacimiento de la República (1830)."
       },
       {
        "id": "sntI1X1BGqsMrv5zD.f",
@@ -6918,40 +6730,6 @@
        ],
        "answer": 0,
        "explanation": "La Revolución Marcista fue en 1845, la Liberal en 1895 y La Gloriosa en 1944."
-      },
-      {
-       "id": "EpSlkZ4tbM5QgCNQu.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué día se celebra la independencia del Ecuador?"
-        }
-       ],
-       "options": [
-        "10 de agosto",
-        "24 de mayo",
-        "13 de mayo",
-        "9 de octubre"
-       ],
-       "answer": 0,
-       "explanation": "Recuerda el Primer Grito de Independencia, el 10 de agosto de 1809."
-      },
-      {
-       "id": "KWEzchN2xzg8V8R6c.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué fecha se celebra la independencia de Quito?"
-        }
-       ],
-       "options": [
-        "10 de agosto",
-        "24 de mayo",
-        "6 de diciembre",
-        "9 de octubre"
-       ],
-       "answer": 0,
-       "explanation": "Ese día de 1809 fue el Primer Grito de Independencia. La independencia definitiva llegó con la Batalla del Pichincha, el 24 de mayo de 1822; el 6 de diciembre se celebra la fundación de Quito."
       },
       {
        "id": "3bjv1BI1ScnNZrQHM.f",
@@ -7680,22 +7458,6 @@
      "summary": "El 25 de julio de 1851 el presidente José María Urbina decretó la manumisión de los esclavos, es decir, la abolición de la esclavitud en el Ecuador.",
      "cards": [
       {
-       "id": "UG8zJV1ldSanRN5Rj.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué fecha se celebra en Ecuador la abolición de la esclavitud, conocida también como manumisión de los esclavos?"
-        }
-       ],
-       "options": [
-        "25 de julio de 1851",
-        "13 de mayo de 1830",
-        "6 de marzo de 1845",
-        "24 de septiembre de 1860"
-       ],
-       "answer": 0
-      },
-      {
        "id": "Fmqd0uMwmoeQ3C9a2.f",
        "type": "choice",
        "front": [
@@ -7709,7 +7471,8 @@
         "1845",
         "1895"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "El decreto es del 25 de julio de 1851. Manumisión significa dar la libertad a una persona esclava: con ella se abolió la esclavitud en el Ecuador."
       },
       {
        "id": "8j3VzsC2VkswsESZv.f",
@@ -7839,23 +7602,6 @@
         "La separación de la Gran Colombia"
        ],
        "answer": 0
-      },
-      {
-       "id": "6cIeceE5S7ZNpejtn.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué personaje lideró las fuerzas vencedoras en la Batalla de Guayaquil de 1860?"
-        }
-       ],
-       "options": [
-        "Gabriel García Moreno",
-        "Guillermo Franco",
-        "Eloy Alfaro",
-        "José María Urbina"
-       ],
-       "answer": 0,
-       "explanation": "Contó con el apoyo militar del expresidente Juan José Flores."
       },
       {
        "id": "PCvlUlh49j6YYSkcg.f",
@@ -8264,22 +8010,6 @@
      "summary": "El 26 de octubre de 1998, durante la presidencia de Jamil Mahuad, Ecuador y Perú firmaron el Acta de Brasilia, que puso fin al conflicto territorial entre los dos países.",
      "cards": [
       {
-       "id": "VTtXQVyktlMSg130p.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué año se firmó la paz entre Ecuador y Perú?"
-        }
-       ],
-       "options": [
-        "1998, durante la presidencia de Jamil Mahuad",
-        "1995, durante la presidencia de Sixto Durán-Ballén",
-        "1942, durante la presidencia de Carlos Arroyo del Río",
-        "2000, durante la presidencia de Gustavo Noboa"
-       ],
-       "answer": 0
-      },
-      {
        "id": "2R80u7PjBlNG4tvrZ.f",
        "type": "choice",
        "front": [
@@ -8293,31 +8023,8 @@
         "1995",
         "1860"
        ],
-       "answer": 0
-      },
-      {
-       "id": "KiQ8mlqUaxH5z9kNn.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué año se firmó el "
-        },
-        {
-         "text": "Tratado de Brasilia",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "1998",
-        "1942",
-        "1995",
-        "1829"
-       ],
        "answer": 0,
-       "explanation": "El Acta de Brasilia se firmó el 26 de octubre de 1998."
+       "explanation": "Ecuador y Perú firmaron el Acta de Brasilia el 26 de octubre de 1998, durante la presidencia de Jamil Mahuad. 1942 es el año del Protocolo de Río de Janeiro y 1995, el de la Guerra del Cenepa."
       },
       {
        "id": "ZWl8xisVlWbfjNOGP.f",
@@ -9319,24 +9026,8 @@
         "El Presidente de la República"
        ],
        "answer": 0,
+       "explanation": "Es un órgano unicameral, creado por la Constitución de 2008, que reemplazó al antiguo Congreso Nacional.",
        "topic": "Función Legislativa"
-      },
-      {
-       "id": "MJOPNfYySBNCHjaa2.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué órgano legislativo unicameral establece la Constitución de 2008?"
-        }
-       ],
-       "options": [
-        "La Asamblea Nacional",
-        "El Congreso Nacional",
-        "El Senado",
-        "La Cámara de Diputados"
-       ],
-       "answer": 0,
-       "explanation": "Reemplazó al antiguo Congreso Nacional."
       },
       {
        "id": "uXPLpOALwq5FSR1lU.f",
@@ -9735,23 +9426,6 @@
        ],
        "answer": 0,
        "explanation": "Lo había iniciado García Moreno; llegó a Quito en 1908."
-      },
-      {
-       "id": "3f9FLnTa6tctnwPFN.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué presidente ecuatoriano culminó la construcción del ferrocarril?"
-        }
-       ],
-       "options": [
-        "Eloy Alfaro",
-        "Gabriel García Moreno",
-        "Leónidas Plaza",
-        "José María Urbina"
-       ],
-       "answer": 0,
-       "explanation": "Gabriel García Moreno lo había iniciado."
       },
       {
        "id": "JTeDNwK4F8YhH18ND.f",
@@ -10284,29 +9958,6 @@
         "credit": "MartínGonzález 2396",
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Vista_Externa_del_Palacio_de_Carondelet.JPG"
-       }
-      },
-      {
-       "id": "UTKOrhTakTtWW4GBC.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué iglesia del Centro Histórico de Quito es famosa por su fachada barroca y su interior dorado decorado con pan de oro?"
-        }
-       ],
-       "options": [
-        "La Iglesia de La Compañía de Jesús",
-        "La Iglesia de San Francisco",
-        "La Basílica del Voto Nacional",
-        "La Iglesia de El Sagrario"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-compania.jpg",
-        "alt": "Iglesia de la Compañía de Jesús, Quito",
-        "credit": "Ranoutofusername",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
        }
       },
       {
@@ -13652,29 +13303,6 @@
        "answer": 0
       },
       {
-       "id": "0ZuwW2eIAnCFXlaTU.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué compositor ecuatoriano es célebre por haber escrito pasillos y pasacalles dedicados a casi todas las provincias del país, razón por la que se lo conoce como «el cantor de la geografía ecuatoriana»?"
-        }
-       ],
-       "options": [
-        "Carlos Rubira Infante",
-        "Julio Jaramillo",
-        "Gerardo Guevara",
-        "Guillermo Rodríguez"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-rubira.jpg",
-        "alt": "Carlos Rubira Infante",
-        "credit": "Ceibos",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Carlos_Rubira.jpg"
-       }
-      },
-      {
        "id": "MPqNrKavqh3umhN4L.f",
        "type": "choice",
        "front": [
@@ -13689,6 +13317,7 @@
         "Álvaro Manzano"
        ],
        "answer": 0,
+       "explanation": "Por sus pasillos y pasacalles dedicados a casi todas las provincias, se lo conoce como «el cantor de la geografía ecuatoriana».",
        "photo": {
         "src": "images/foto-rubira.jpg",
         "alt": "Carlos Rubira Infante",
@@ -14215,36 +13844,6 @@
         "La Carolina",
         "El Arbolito",
         "Itchimbía"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-michelena.jpg",
-        "alt": "Carlos Michelena, «El Miche»",
-        "credit": "Marxbaqueroesp",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Carlos_Michelena.png"
-       }
-      },
-      {
-       "id": "QxGlYI2eLLaRIBgV7.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Con qué forma de puesta en escena se identifica históricamente "
-        },
-        {
-         "text": "Carlos Michelena",
-         "bold": true
-        },
-        {
-         "text": ", al presentarse sin escenario formal y dialogar directamente con el público?"
-        }
-       ],
-       "options": [
-        "El teatro callejero",
-        "La ópera",
-        "El teatro de títeres",
-        "El cine mudo"
        ],
        "answer": 0,
        "photo": {
@@ -15126,30 +14725,6 @@
         "Carchi"
        ],
        "answer": 0
-      },
-      {
-       "id": "4zEdxLfi10usyTgcK.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué región está ubicado el pueblo indígena "
-        },
-        {
-         "text": "Shuar",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "En la Amazonía",
-        "En la Sierra",
-        "En la Costa",
-        "En la Región Insular"
-       ],
-       "answer": 0,
-       "explanation": "Vive en la Amazonía del Ecuador y del Perú."
       },
       {
        "id": "7H9NwTjYC7fVrbiM7.f",
