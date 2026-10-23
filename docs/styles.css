@@ -1251,14 +1251,19 @@ legend { margin-bottom: .45rem; font-weight: 700; }
   background: var(--surface);
 }
 .timeline-event details[open] { border-color: var(--accent); }
+/* The year and the + sign share the first line; the title gets the whole
+   width below, so long words never run into the sign at large text sizes. */
 .timeline-event summary {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: .2rem .75rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: .1rem .75rem;
   padding: .7rem 1rem;
   cursor: pointer;
 }
+.timeline-event summary::after { grid-column: 2; grid-row: 1; }
+.timeline-title { grid-column: 1 / -1; }
+.timeline-year[hidden] + .timeline-title { grid-column: 1; grid-row: 1; }
 .timeline-event summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: var(--radius); }
 .timeline-year {
   color: var(--accent);
@@ -1267,11 +1272,10 @@ legend { margin-bottom: .45rem; font-weight: 700; }
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
-.timeline-title { flex: 1; font-weight: 700; }
+.timeline-title { font-weight: 700; overflow-wrap: break-word; }
 .timeline-event summary::-webkit-details-marker { display: none; }
 .timeline-event summary::after {
   content: "+";
-  align-self: center;
   color: var(--accent);
   font-size: 1.4rem;
   font-weight: 700;
