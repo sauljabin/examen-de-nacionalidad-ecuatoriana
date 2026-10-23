@@ -6494,6 +6494,71 @@
         "A Quito"
        ],
        "answer": 0
+      },
+      {
+       "id": "qmI5z3SfLcetPxcvb.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quiénes eran los ocupantes originarios de la zona de Pichincha, en Ecuador?"
+        }
+       ],
+       "options": [
+        "Los Quitu",
+        "Los Cañaris",
+        "Los Shuar",
+        "Los Mayas"
+       ],
+       "answer": 0,
+       "explanation": "Luego fueron integrados al Imperio inca."
+      },
+      {
+       "id": "QeYjeCqKh0XZx7Dcc.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué era el Tahuantinsuyo?"
+        }
+       ],
+       "options": [
+        "El Imperio inca",
+        "La capital de los Quitu",
+        "El templo del sol del Cusco",
+        "El sistema de caminos de los incas"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "mooTBooLJxhFHBvp8.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién fue el hermano de Atahualpa gobernador del Cusco?"
+        }
+       ],
+       "options": [
+        "Huáscar",
+        "Huayna Cápac",
+        "Rumiñahui",
+        "Manco Inca"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "oZaF7PKay8G8EGDwM.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Antes de la llegada de los españoles, Quito estaba gobernada por el Imperio Inca. ¿Quién era el gobernador de Quito?"
+        }
+       ],
+       "options": [
+        "Atahualpa",
+        "Huáscar",
+        "Manco Cápac",
+        "Huayna Cápac"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -6573,6 +6638,23 @@
        "explanation": "Diego de Almagro hizo una primera fundación cerca de la actual Riobamba, el 15 de agosto de 1534."
       },
       {
+       "id": "LI6c89cuNtpaRLca7.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Dónde se estableció por primera vez la ciudad de Quito?"
+        }
+       ],
+       "options": [
+        "Cerca de la actual Riobamba",
+        "A los pies del volcán Pichincha",
+        "Cerca de la actual Cuenca",
+        "En la costa, cerca de Guayaquil"
+       ],
+       "answer": 0,
+       "explanation": "La fundó Diego de Almagro el 15 de agosto de 1534. La fecha que se conmemora es el 6 de diciembre de 1534, cuando Sebastián de Benalcázar estableció el Cabildo en su ubicación actual, a los pies del Pichincha."
+      },
+      {
        "id": "XjZ60Yk31Rwazh9EY.f",
        "type": "choice",
        "front": [
@@ -6604,56 +6686,6 @@
         "Hernán Cortés"
        ],
        "answer": 0
-      },
-      {
-       "id": "qmI5z3SfLcetPxcvb.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quiénes eran los ocupantes originarios de la zona de Pichincha, en Ecuador?"
-        }
-       ],
-       "options": [
-        "Los Quitu",
-        "Los Cañaris",
-        "Los Shuar",
-        "Los Mayas"
-       ],
-       "answer": 0,
-       "explanation": "Luego fueron integrados al Imperio inca."
-      },
-      {
-       "id": "oZaF7PKay8G8EGDwM.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "Antes de la llegada de los españoles, Quito estaba gobernada por el Imperio Inca. ¿Quién era el gobernador de Quito?"
-        }
-       ],
-       "options": [
-        "Atahualpa",
-        "Huáscar",
-        "Manco Cápac",
-        "Huayna Cápac"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "LI6c89cuNtpaRLca7.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Dónde se estableció por primera vez la ciudad de Quito?"
-        }
-       ],
-       "options": [
-        "Cerca de la actual Riobamba",
-        "A los pies del volcán Pichincha",
-        "Cerca de la actual Cuenca",
-        "En la costa, cerca de Guayaquil"
-       ],
-       "answer": 0,
-       "explanation": "La fundó Diego de Almagro el 15 de agosto de 1534. La fecha que se conmemora es el 6 de diciembre de 1534, cuando Sebastián de Benalcázar estableció el Cabildo en su ubicación actual, a los pies del Pichincha."
       },
       {
        "id": "RIbs3mFKeM8TB8yU9.f",
@@ -6702,38 +6734,6 @@
        "answer": 0
       },
       {
-       "id": "mooTBooLJxhFHBvp8.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién fue el hermano de Atahualpa gobernador del Cusco?"
-        }
-       ],
-       "options": [
-        "Huáscar",
-        "Huayna Cápac",
-        "Rumiñahui",
-        "Manco Inca"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "QeYjeCqKh0XZx7Dcc.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué era el Tahuantinsuyo?"
-        }
-       ],
-       "options": [
-        "El Imperio inca",
-        "La capital de los Quitu",
-        "El templo del sol del Cusco",
-        "El sistema de caminos de los incas"
-       ],
-       "answer": 0
-      },
-      {
        "id": "xiTtlRXhpJYt64Hs3.f",
        "type": "choice",
        "front": [
@@ -6748,7 +6748,13 @@
         "Hernán Cortés"
        ],
        "answer": 0
-      },
+      }
+     ]
+    },
+    {
+     "id": "1563-real-audiencia-de-quito",
+     "title": "1563 Real Audiencia de Quito",
+     "cards": [
       {
        "id": "24n6XV8mEI02wkAyd.f",
        "type": "choice",
@@ -6782,6 +6788,22 @@
        ],
        "answer": 0,
        "explanation": "El rey Felipe II creó la Real Audiencia de Quito en 1563."
+      },
+      {
+       "id": "KF3yXOJSmuRiPcma2.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué ciudades principales formaban la Real Audiencia de Quito?"
+        }
+       ],
+       "options": [
+        "Quito, Guayaquil y Cuenca",
+        "Quito, Bogotá y Caracas",
+        "Quito, Lima y Cusco",
+        "Guayaquil, Lima y Trujillo"
+       ],
+       "answer": 0
       },
       {
        "id": "pQEiiYrRqawuHkeix.f",
@@ -6934,22 +6956,6 @@
        ],
        "answer": 0,
        "explanation": "El 24 de mayo recuerda la Batalla del Pichincha; el 9 de octubre, la independencia de Guayaquil; y el 13 de mayo, el nacimiento de la República (1830)."
-      },
-      {
-       "id": "KF3yXOJSmuRiPcma2.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué ciudades principales formaban la Real Audiencia de Quito?"
-        }
-       ],
-       "options": [
-        "Quito, Guayaquil y Cuenca",
-        "Quito, Bogotá y Caracas",
-        "Quito, Lima y Cusco",
-        "Guayaquil, Lima y Trujillo"
-       ],
-       "answer": 0
       },
       {
        "id": "sntI1X1BGqsMrv5zD.f",
@@ -8183,7 +8189,13 @@
         "Abdalá Bucaram"
        ],
        "answer": 0
-      },
+      }
+     ]
+    },
+    {
+     "id": "1998-paz-con-el-peru",
+     "title": "1998 Paz con el Perú",
+     "cards": [
       {
        "id": "VTtXQVyktlMSg130p.f",
        "type": "choice",
