@@ -10,6 +10,7 @@
      "cards": [
       {
        "id": "fZv8goNuJ33A5OMs0.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -61,6 +62,7 @@
      "cards": [
       {
        "id": "Z1LyDTjLOD10nvP1g.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -85,6 +87,7 @@
       },
       {
        "id": "yRqa5kieyIOGL93cY.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -109,6 +112,7 @@
       },
       {
        "id": "vftUQyPMogHAsMAoT.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -150,6 +154,7 @@
       },
       {
        "id": "XrrSsOnGix2d5MT4c.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -190,48 +195,25 @@
       },
       {
        "id": "p7pU09OwGQtJg4XsA.7630294862985575",
-       "type": "cloze",
+       "popularity": 2,
+       "type": "choice",
        "front": [
         {
-         "text": "La Bandera Nacional remonta sus orígenes al "
-        },
-        {
-         "text": "3 de agosto de 1806",
-         "cloze": true
-        },
-        {
-         "text": ", cuando el general "
-        },
-        {
-         "text": "Francisco de Miranda",
-         "bold": true
-        },
-        {
-         "text": " izó por primera vez en suelo venezolano la bandera "
-        },
-        {
-         "text": "tri",
-         "color": "orange"
-        },
-        {
-         "text": "co",
-         "color": "blue"
-        },
-        {
-         "text": "lor",
-         "color": "red"
-        },
-        {
-         "text": " en el "
-        },
-        {
-         "text": "Fortín de San Pedro en La Vela de Coro",
-         "cloze": true
+         "text": "¿Cuándo y dónde izó Francisco de Miranda por primera vez en suelo venezolano la bandera tricolor, origen de la Bandera Nacional?"
         }
-       ]
+       ],
+       "options": [
+        "El 3 de agosto de 1806, en el Fortín de San Pedro, en La Vela de Coro",
+        "El 10 de agosto de 1809, en Quito",
+        "El 9 de octubre de 1820, en Guayaquil",
+        "El 24 de mayo de 1822, en las faldas del Pichincha"
+       ],
+       "answer": 0,
+       "explanation": "De esa bandera amarilla, azul y roja vienen la de la Gran Colombia y la del Ecuador actual."
       },
       {
        "id": "bandera-1809",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -249,6 +231,7 @@
       },
       {
        "id": "bandera-guayaquil-1820",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -266,6 +249,7 @@
       },
       {
        "id": "3wBVbWN4TlrqUujCd.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -283,6 +267,7 @@
       },
       {
        "id": "sOmNzS3JxxQLQD36c.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -300,6 +285,7 @@
       },
       {
        "id": "tGqYBaYws52xAyMQN.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -317,6 +303,7 @@
       },
       {
        "id": "02FeFG3DFhgBYBXTv.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -365,6 +352,7 @@
       },
       {
        "id": "JXRFLpVaLmF92BCNL.f",
+       "popularity": 6,
        "type": "choice",
        "front": [
         {
@@ -411,6 +399,7 @@
       },
       {
        "id": "FSf1HbkLgILxCOZ1u.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -457,6 +446,7 @@
       },
       {
        "id": "exACNqH0EibHrnINK.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -474,6 +464,7 @@
       },
       {
        "id": "4gghKSEFI3ihAhFlB.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -595,6 +586,7 @@
      "cards": [
       {
        "id": "8GnjMEvKPy8FzbdP3.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -612,22 +604,24 @@
       },
       {
        "id": "tgUwngW8RaXIP3clc.2227407481712953",
-       "type": "cloze",
+       "type": "choice",
        "front": [
         {
-         "text": "El Himno Nacional consta de "
-        },
-        {
-         "text": "seis estrofas y un coro",
-         "cloze": true
-        },
-        {
-         "text": ", de las cuales únicamente se cantan la segunda estrofa y el coro"
+         "text": "¿Cuántas estrofas tiene el Himno Nacional?"
         }
-       ]
+       ],
+       "options": [
+        "Seis estrofas y un coro",
+        "Cuatro estrofas y un coro",
+        "Dos estrofas y un coro",
+        "Ocho estrofas y un coro"
+       ],
+       "answer": 0,
+       "explanation": "De todas ellas, solo se cantan el coro y la segunda estrofa."
       },
       {
        "id": "4eMqHkWBki4drm6wG.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -645,95 +639,97 @@
       },
       {
        "id": "LViQQ60zvH1EZpjkY.5917871796852614",
-       "type": "cloze",
+       "popularity": 8,
+       "type": "choice",
        "front": [
         {
-         "text": "La letra del Himno Nacional fue escrita por "
-        },
-        {
-         "text": "Juan León Mera",
-         "cloze": true
-        },
-        {
-         "text": " y su música fue compuesta por el compositor francés "
-        },
-        {
-         "text": "Antonio Neumane",
-         "cloze": true
+         "text": "¿Quién escribió la letra del Himno Nacional y quién compuso su música?"
         }
-       ]
+       ],
+       "options": [
+        "Juan León Mera escribió la letra y Antonio Neumane compuso la música",
+        "Antonio Neumane escribió la letra y Juan León Mera compuso la música",
+        "José Joaquín de Olmedo escribió la letra y Antonio Neumane compuso la música",
+        "Juan León Mera escribió la letra y Sixto María Durán compuso la música"
+       ],
+       "answer": 0,
+       "explanation": "Neumane era un compositor francés que vivía en Guayaquil. Olmedo había escrito antes una «Canción Nacional», que no llegó a ser el himno."
       },
       {
        "id": "0nvifuVEKkE5JpSJb.006232939318684627",
-       "type": "cloze",
+       "popularity": 4,
+       "type": "choice",
        "front": [
         {
-         "text": "Se conoce como el primer intento de elaboración del himno nacional la "
-        },
-        {
-         "text": "Canción Nacional",
-         "bold": true
-        },
-        {
-         "text": " escrita por "
-        },
-        {
-         "text": "José Joaquín de Olmedo",
-         "cloze": true
-        },
-        {
-         "text": " durante la presidencia de Juan José Flores, entre 1830 y 1832."
+         "text": "¿Quién escribió la Canción Nacional, el primer intento de himno del Ecuador, durante el gobierno de Juan José Flores?"
         }
-       ]
+       ],
+       "options": [
+        "José Joaquín de Olmedo",
+        "Juan León Mera",
+        "Juan Montalvo",
+        "Vicente Rocafuerte"
+       ],
+       "answer": 0,
+       "explanation": "La escribió entre 1830 y 1832. La letra del himno actual es de Juan León Mera, de 1865."
       },
       {
        "id": "vNN7hbPQmcu7OrYjE.2845125167893956",
-       "type": "cloze",
+       "popularity": 2,
+       "type": "choice",
        "front": [
         {
-         "text": "El presidente del Senado, Nicolás Espinosa, solicitó a "
-        },
-        {
-         "text": "Juan León Mera",
-         "bold": true
-        },
-        {
-         "text": " la elaboración del Himno Nacional el cual fue escrito el "
-        },
-        {
-         "text": "26 de noviembre de 1865.",
-         "cloze": true
+         "text": "¿En qué año escribió Juan León Mera la letra del Himno Nacional?"
         }
-       ]
+       ],
+       "options": [
+        "1865",
+        "1830",
+        "1870",
+        "1948"
+       ],
+       "answer": 0,
+       "explanation": "La terminó el 26 de noviembre de 1865, a pedido del presidente del Senado, Nicolás Espinosa. El himno se estrenó en 1870 y se declaró oficial en 1948."
       },
       {
        "id": "cpj4J0OF9ZPmeBIif.43119664584683703",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "El 16 de enero de 1866 se publica la versión completa de la letra de Juan León Mera en el semanario quiteño "
-        },
-        {
-         "text": "El Sud Americano",
-         "cloze": true
+         "text": "¿En qué semanario se publicó por primera vez la letra completa del Himno Nacional, el 16 de enero de 1866?"
         }
-       ]
+       ],
+       "options": [
+        "El Sud Americano",
+        "El Telégrafo",
+        "Primicias de la Cultura de Quito",
+        "El Comercio"
+       ],
+       "answer": 0,
+       "explanation": "Era un semanario de Quito. Juan León Mera había terminado la letra en noviembre de 1865."
       },
       {
        "id": "62FNNIFktuKuBed2D.10426296840469906",
-       "type": "cloze",
+       "popularity": 2,
+       "type": "choice",
        "front": [
         {
-         "text": "El Himno Nacional se estrenó el 10 de agosto de 1870 en "
-        },
-        {
-         "text": "la Plaza de la Independencia de Quito",
-         "cloze": true
+         "text": "¿Dónde se estrenó el Himno Nacional, el 10 de agosto de 1870?"
         }
-       ]
+       ],
+       "options": [
+        "En la Plaza de la Independencia de Quito",
+        "En el Teatro Sucre de Quito",
+        "En el Malecón de Guayaquil",
+        "En el Parque Calderón de Cuenca"
+       ],
+       "answer": 0,
+       "explanation": "Se estrenó en el aniversario del Primer Grito de Independencia, en la plaza que hoy se conoce como Plaza Grande."
       },
       {
        "id": "9d7xA13zmvtTo1TXx.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -765,6 +761,7 @@
       },
       {
        "id": "TyE37lkTfiIGnTQZS.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -782,6 +779,7 @@
       },
       {
        "id": "esqFTJRrlZakGNYNS.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1142,6 +1140,7 @@
      "cards": [
       {
        "id": "escudo-1836",
+       "popularity": 6,
        "type": "choice",
        "front": [
         {
@@ -1159,6 +1158,7 @@
       },
       {
        "id": "escudo-marcista",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -1192,6 +1192,7 @@
       },
       {
        "id": "fStHSTqN0zX1WMIpg.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -1216,19 +1217,25 @@
       },
       {
        "id": "XP63mK38aNUHX6UoQ.8084782604494435",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "El escudo actual fue oficialmente adoptado durante la presidencia de "
-        },
-        {
-         "text": "Eloy Alfaro",
-         "cloze": true
+         "text": "¿Durante la presidencia de quién se adoptó oficialmente el Escudo Nacional actual?"
         }
-       ]
+       ],
+       "options": [
+        "Eloy Alfaro",
+        "Gabriel García Moreno",
+        "Vicente Rocafuerte",
+        "Juan José Flores"
+       ],
+       "answer": 0,
+       "explanation": "Se adoptó el 31 de octubre de 1900, el mismo día que la Bandera Nacional."
       },
       {
        "id": "kVl6Gk5u0aZ295Oph.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -1245,6 +1252,7 @@
       },
       {
        "id": "scVyOumKaHuoBTOAS.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -1262,6 +1270,7 @@
       },
       {
        "id": "YkZVix0fTUyFAikfV.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -1279,6 +1288,7 @@
       },
       {
        "id": "8SkMhRJIjxr7Z8KaW.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -1302,6 +1312,7 @@
      "cards": [
       {
        "id": "escudo-condor",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1353,35 +1364,39 @@
       },
       {
        "id": "Wt9PNGxsBRbpDRvfS.3693047218280958",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "Los signos del zodiaco presentes en el Escudo Nacional son: "
-        },
-        {
-         "text": "Aries ♈, Tauro ♉, Géminis ♊ y Cáncer ♋",
-         "cloze": true
-        },
-        {
-         "text": "."
+         "text": "¿Qué signos del zodiaco aparecen en el Escudo Nacional?"
         }
-       ]
+       ],
+       "options": [
+        "Aries, Tauro, Géminis y Cáncer",
+        "Capricornio, Acuario, Piscis y Aries",
+        "Tauro, Géminis, Cáncer y Leo",
+        "Leo, Virgo, Libra y Escorpio"
+       ],
+       "answer": 0,
+       "explanation": "Corresponden a marzo, abril, mayo y junio, los meses de la Revolución Marcista de 1845."
       },
       {
        "id": "T8b0cNKvrNHqGy6I6.2965482665332704",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "Los signos del zodiaco presentes en el Escudo Nacional hacen referencia a los hechos importantes ocurridos en los meses de "
-        },
-        {
-         "text": "marzo, abril, mayo y junio",
-         "cloze": true
-        },
-        {
-         "text": "."
+         "text": "¿A qué meses corresponden los signos del zodiaco del Escudo Nacional?"
         }
-       ]
+       ],
+       "options": [
+        "Marzo, abril, mayo y junio",
+        "Enero, febrero, marzo y abril",
+        "Julio, agosto, septiembre y octubre",
+        "Septiembre, octubre, noviembre y diciembre"
+       ],
+       "answer": 0,
+       "explanation": "Recuerdan los meses de la Revolución Marcista de 1845. Los signos son Aries, Tauro, Géminis y Cáncer."
       },
       {
        "id": "escudo-zodiaco-posicion",
@@ -1402,6 +1417,7 @@
       },
       {
        "id": "escudo-chimborazo",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1419,6 +1435,7 @@
       },
       {
        "id": "escudo-rio-guayas",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1436,6 +1453,7 @@
       },
       {
        "id": "escudo-buque",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1453,23 +1471,21 @@
       },
       {
        "id": "dnkHxhMRe28bj5IqG.4106292682709909",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "El Buque a vapor "
-        },
-        {
-         "text": "Guayas",
-         "bold": true
-        },
-        {
-         "text": " fue el primero que se construyó en América del Sur en "
-        },
-        {
-         "text": "1841",
-         "cloze": true
+         "text": "¿En qué año se construyó el buque a vapor Guayas, el primero hecho en América del Sur?"
         }
-       ]
+       ],
+       "options": [
+        "1841",
+        "1822",
+        "1860",
+        "1900"
+       ],
+       "answer": 0,
+       "explanation": "Se construyó en los astilleros de Guayaquil. Por eso aparece en el Escudo Nacional."
       },
       {
        "id": "o8XW1jM1r0AOi5Htf.f",
@@ -1490,6 +1506,7 @@
       },
       {
        "id": "escudo-caduceo",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1540,6 +1557,7 @@
       },
       {
        "id": "escudo-laurel",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1557,6 +1575,7 @@
       },
       {
        "id": "escudo-palma",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -1591,6 +1610,7 @@
       },
       {
        "id": "escudo-fasces",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2118,6 +2138,7 @@
       },
       {
        "id": "uOSrCDdrrs3PxJnNh.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2135,6 +2156,7 @@
       },
       {
        "id": "v1fRapTTKk5Vx0DQX.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2167,6 +2189,7 @@
       },
       {
        "id": "ubicacion",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2184,6 +2207,7 @@
       },
       {
        "id": "amazonia-area",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2201,6 +2225,7 @@
       },
       {
        "id": "nOerEN51AB2epqhvA.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2224,6 +2249,7 @@
      "cards": [
       {
        "id": "clima",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2241,20 +2267,29 @@
       },
       {
        "id": "Nv1EhYu0z25n6Tjl4.f",
-       "type": "basic",
+       "popularity": 2,
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuáles son los principales ecosistemas del Ecuador?"
+         "text": "¿Cuáles de estos son ecosistemas principales del Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "Bosques húmedos, páramos, manglares, y la Amazonía (bosques de tierra firme e inundables), así como la franja marino costera."
-        }
-       ]
+       "options": [
+        "Los páramos",
+        "Los manglares",
+        "Los bosques húmedos",
+        "La taiga"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "También lo son la Amazonía, con bosques de tierra firme e inundables, y la franja marino costera. La taiga, un bosque de coníferas de las zonas frías del norte, no existe en el Ecuador."
       },
       {
        "id": "63Ajtq6mcg7rvSVIN.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -2272,6 +2307,7 @@
       },
       {
        "id": "aves",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -2289,6 +2325,7 @@
       },
       {
        "id": "0f1ExhRfs8IZUfiht.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -2311,6 +2348,7 @@
      "cards": [
       {
        "id": "fBKHkLC8PNOJLT5lt.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -2327,6 +2365,7 @@
       },
       {
        "id": "27y4tbTNHaqeOKinP.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2343,6 +2382,7 @@
       },
       {
        "id": "ozBE7EniLVDVLKQbR.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2359,6 +2399,7 @@
       },
       {
        "id": "2H8U3dQcDggFGr3ye.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2380,6 +2421,7 @@
       },
       {
        "id": "wBRuiGKexIOFHKRBo.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2401,6 +2443,7 @@
       },
       {
        "id": "rios-limite",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2418,6 +2461,7 @@
       },
       {
        "id": "zif-peru",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2441,6 +2485,7 @@
      "cards": [
       {
        "id": "7HGSQl0IRU7ja6pPp.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -2457,6 +2502,7 @@
       },
       {
        "id": "5RU3VpcJARkgChIlm.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2473,6 +2519,7 @@
       },
       {
        "id": "3dlaGeN0WROQ5NtMf.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -2490,6 +2537,7 @@
       },
       {
        "id": "GZirDvoYDGHKNcoNn.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -2507,6 +2555,7 @@
       },
       {
        "id": "0ycwWKcJIEXFiBhia.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -2541,6 +2590,7 @@
       },
       {
        "id": "cMrnN8Q3ox2rs3MMJ.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -2558,6 +2608,7 @@
       },
       {
        "id": "Cf9H88Z0prW8CGWLI.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2574,6 +2625,7 @@
       },
       {
        "id": "MyfhqGbmXaGbVOmGs.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -2590,6 +2642,7 @@
       },
       {
        "id": "chimborazo-cantones",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -2936,6 +2989,7 @@
       },
       {
        "id": "UOFIVDWOfnREl2mLj.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -3027,6 +3081,7 @@
      "cards": [
       {
        "id": "kGPVGOAbZ2MUcAtyP.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3043,6 +3098,7 @@
       },
       {
        "id": "WT8R6Mnc0FxaqwA6I.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3059,6 +3115,7 @@
       },
       {
        "id": "ger6U4GzrqM3wJA3C.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3075,6 +3132,7 @@
       },
       {
        "id": "zrpsdKCc1bpIWPsmo.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3091,6 +3149,7 @@
       },
       {
        "id": "MlFjKSSuEp777nMCi.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3107,6 +3166,7 @@
       },
       {
        "id": "7vhIcycIrmoCWcnxV.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3123,6 +3183,7 @@
       },
       {
        "id": "tqz04znmp5eeGVIpU.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3139,6 +3200,7 @@
       },
       {
        "id": "T3z3fRHibI44vcwzd.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3155,6 +3217,7 @@
       },
       {
        "id": "64ENKZAri76AuegR4.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -3172,6 +3235,7 @@
       },
       {
        "id": "L6L1Wk9Q2OIHUbZx6.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3188,6 +3252,7 @@
       },
       {
        "id": "zl0wDjUPMo525JRvs.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3204,6 +3269,7 @@
       },
       {
        "id": "B5OhLze0UKSOXPf6t.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3220,6 +3286,7 @@
       },
       {
        "id": "iHXHghlIN3eHAu1m0.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3236,6 +3303,7 @@
       },
       {
        "id": "DajCrjCZukeiGJaDF.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3252,6 +3320,7 @@
       },
       {
        "id": "nPYf8i6MGQNpKsJzI.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3268,6 +3337,7 @@
       },
       {
        "id": "YWauTNYRE7RnTYn8W.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -3284,6 +3354,7 @@
       },
       {
        "id": "1jHd7ooXQRIPbaEpE.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -3300,6 +3371,7 @@
       },
       {
        "id": "zYG2bFxAmw9XCyLKp.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3316,6 +3388,7 @@
       },
       {
        "id": "KVnbkWIoFUbVpq7N3.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -3332,6 +3405,7 @@
       },
       {
        "id": "ZsLHJqR8yn5GIJ2OR.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -3348,6 +3422,7 @@
       },
       {
        "id": "DhEY2o1uDiPNF1Of5.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3364,6 +3439,7 @@
       },
       {
        "id": "KE9dghIvQCUvgjaVJ.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3380,6 +3456,7 @@
       },
       {
        "id": "ZkJXV3nnr22GgMFYh.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -3396,6 +3473,7 @@
       },
       {
        "id": "K6CRbEXSCpPymuryD.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -4109,6 +4187,7 @@
       },
       {
        "id": "c6xwkH0hccGfkKvbc.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4132,6 +4211,7 @@
       },
       {
        "id": "I26V7rtNJQJT5pDeQ.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4195,6 +4275,7 @@
       },
       {
        "id": "NvW5LWak7tPcVEeoA.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4218,6 +4299,7 @@
       },
       {
        "id": "WAbTER412O6X0MGlF.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4235,6 +4317,7 @@
       },
       {
        "id": "ZEBzTrlxefQ7DsRk6.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4281,6 +4364,7 @@
       },
       {
        "id": "NkwJvDzy2h117AwLj.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -4298,6 +4382,7 @@
       },
       {
        "id": "capital",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4315,6 +4400,7 @@
       },
       {
        "id": "SYyPWhgq8EN807wyS.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4339,6 +4425,7 @@
       },
       {
        "id": "NcofP6yspE379slzH.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4363,6 +4450,7 @@
       },
       {
        "id": "U0lTsiKNWTXqLkCc1.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4402,6 +4490,7 @@
      "cards": [
       {
        "id": "o0HaQ8AeEGj1IhYYq.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -4426,6 +4515,7 @@
       },
       {
        "id": "V3HRrB28lB1hFTyga.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4449,6 +4539,7 @@
       },
       {
        "id": "wyfHqFdLWOQ6auFgI.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4465,6 +4556,7 @@
       },
       {
        "id": "j83V5M3qxZVQ1pYWS.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4482,6 +4574,7 @@
       },
       {
        "id": "Gls8LkerkdVUdZz19.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -4499,6 +4592,7 @@
       },
       {
        "id": "galapagos-islas-grandes",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4602,6 +4696,7 @@
       },
       {
        "id": "WxpPa3GNZyEb2DXYc.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4626,6 +4721,7 @@
       },
       {
        "id": "wjIXQ3cEwFm4L8MeU.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4665,6 +4761,7 @@
       },
       {
        "id": "OgqYpeYKj5BdBev0o.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -4721,6 +4818,7 @@
       },
       {
        "id": "69c8XlaZCX7GDXG30.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4737,6 +4835,7 @@
       },
       {
        "id": "9fih3AShGC1bYfxvQ.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4760,6 +4859,7 @@
       },
       {
        "id": "dSDaZXGFPYe8Mdd8J.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4781,6 +4881,7 @@
       },
       {
        "id": "YvUUSswGEgj1GiY2C.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -4809,6 +4910,7 @@
       },
       {
        "id": "XJ3cRp3pEpBJ57Dml.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -5044,24 +5146,24 @@
       },
       {
        "id": "85QEuGxzcxuVJIeA1.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué especies están protegidas en el "
-        },
-        {
-         "text": "Parque Nacional Galápagos",
-         "color": "purple"
-        },
-        {
-         "text": "?"
+         "text": "¿Qué especies protege el Parque Nacional Galápagos?"
         }
        ],
-       "back": [
-        {
-         "text": "Muchas especies endémicas y en peligro de extinción, incluyendo tortugas gigantes, iguanas marinas e iguanas terrestres, pinzones de Darwin y piqueros."
-        }
+       "options": [
+        "La tortuga gigante",
+        "La iguana marina",
+        "Los pinzones de Darwin",
+        "El oso de anteojos"
        ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "También protege a las iguanas terrestres y a los piqueros, entre muchas especies endémicas y en peligro de extinción. El oso de anteojos vive en los Andes.",
        "photo": {
         "src": "images/foto-tortuga-gigante.jpg",
         "alt": "Tortuga gigante de Galápagos",
@@ -5096,6 +5198,7 @@
       },
       {
        "id": "ILoFqN8Wf3xBG5UmP.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -5329,6 +5432,7 @@
       },
       {
        "id": "wi29qP6kA2och7ogB.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -5377,6 +5481,7 @@
       },
       {
        "id": "rxAz0m6xOTeQKwrvD.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -5788,6 +5893,7 @@
       },
       {
        "id": "fBtuo9tiAZ3Uns6cn.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -5804,6 +5910,7 @@
       },
       {
        "id": "mojanda",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -5827,6 +5934,7 @@
      "cards": [
       {
        "id": "NBHhN5SJVDcUF67A0.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -5844,6 +5952,7 @@
       },
       {
        "id": "Mn4ClQrcpbQHMQv7L.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -5935,6 +6044,7 @@
       },
       {
        "id": "MdeoN3GBpGpAEu5YA.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -5951,6 +6061,7 @@
       },
       {
        "id": "rios-por-habitante",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -6079,6 +6190,7 @@
      "cards": [
       {
        "id": "las-vegas",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6096,6 +6208,7 @@
       },
       {
        "id": "valdivia-agricola",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6113,6 +6226,7 @@
       },
       {
        "id": "culturas-costa",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6130,6 +6244,7 @@
       },
       {
        "id": "senorios",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -6147,6 +6262,7 @@
       },
       {
        "id": "caranqui-resistencia",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6164,6 +6280,7 @@
       },
       {
        "id": "inti",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6181,6 +6298,7 @@
       },
       {
        "id": "VASOWpvC796oYTLIZ.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -6198,6 +6316,7 @@
       },
       {
        "id": "pJoTuvoa3PGlvXQJS.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6232,6 +6351,7 @@
       },
       {
        "id": "cAOpixzgGXNvcO2cG.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6344,6 +6464,7 @@
      "cards": [
       {
        "id": "C0ZA6VLXwizIrn2bw.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6392,6 +6513,7 @@
       },
       {
        "id": "LI6c89cuNtpaRLca7.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6489,6 +6611,7 @@
       },
       {
        "id": "xiTtlRXhpJYt64Hs3.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6512,6 +6635,7 @@
      "cards": [
       {
        "id": "24n6XV8mEI02wkAyd.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6529,6 +6653,7 @@
       },
       {
        "id": "fNXsaYE3GUHxpoEmr.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6562,6 +6687,7 @@
       },
       {
        "id": "pQEiiYrRqawuHkeix.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6579,6 +6705,7 @@
       },
       {
        "id": "fwwKwHotadxYgUKrF.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -6602,6 +6729,7 @@
      "cards": [
       {
        "id": "2Eqfr5PtwCQh4Dsd7.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -6635,6 +6763,7 @@
       },
       {
        "id": "IQqMhIlcDWvxodzqw.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6659,6 +6788,7 @@
      "cards": [
       {
        "id": "4MgDYBlXtLTh0Xd0Z.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6676,6 +6806,7 @@
       },
       {
        "id": "6VfKStcIlOJSngAz5.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6699,6 +6830,7 @@
       },
       {
        "id": "bVsgXPuScZGu1J8Wg.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6733,6 +6865,7 @@
       },
       {
        "id": "3bjv1BI1ScnNZrQHM.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6774,6 +6907,7 @@
      "cards": [
       {
        "id": "rPypMS5mF4ERNi8Tx.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -6822,6 +6956,7 @@
      "cards": [
       {
        "id": "Hu68lTrOdwYQpiVNO.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6846,6 +6981,7 @@
      "cards": [
       {
        "id": "F3bcltdlhupmqA53A.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6862,6 +6998,7 @@
       },
       {
        "id": "v89Yld4TIma8BNuzQ.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6879,6 +7016,7 @@
       },
       {
        "id": "jwjckhGw4FDhvi3A2.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -6896,6 +7034,7 @@
       },
       {
        "id": "NdNjqsUtv4crriGtg.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -6958,42 +7097,43 @@
       },
       {
        "id": "GL9QkGPbApKn3QNGh.6907483461279907",
-       "type": "cloze",
+       "popularity": 2,
+       "type": "choice",
        "front": [
         {
-         "text": "Ecuador formó parte de la Gran Colombia desde "
-        },
-        {
-         "text": "1822",
-         "cloze": true
-        },
-        {
-         "text": " hasta "
-        },
-        {
-         "text": "1830",
-         "cloze": true
+         "text": "¿Entre qué años formó parte el Ecuador de la Gran Colombia?"
         }
-       ]
+       ],
+       "options": [
+        "De 1822 a 1830",
+        "De 1819 a 1822",
+        "De 1809 a 1822",
+        "De 1830 a 1845"
+       ],
+       "answer": 0,
+       "explanation": "Se unió tras la Batalla del Pichincha, en 1822, y se separó en 1830, cuando nació la República del Ecuador."
       },
       {
        "id": "zN4SjKlsQBpM0ZHBm.26723401615492526",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "En el Congreso de Angostura se aprobó "
-        },
-        {
-         "text": "la Ley Fundamental de la República de Colombia",
-         "cloze": true
-        },
-        {
-         "text": ", que unificó a Venezuela, la Nueva Granada (Colombia) y Quito (Ecuador) en una sola nación."
+         "text": "¿Qué se aprobó en el Congreso de Angostura, en 1819?"
         }
-       ]
+       ],
+       "options": [
+        "La Ley Fundamental de la República de Colombia, que unió a Venezuela, la Nueva Granada y Quito",
+        "La Constitución de la Gran Colombia",
+        "La primera Constitución del Ecuador",
+        "El Tratado de Guayaquil"
+       ],
+       "answer": 0,
+       "explanation": "La Constitución de la Gran Colombia se aprobó dos años después, en el Congreso de Cúcuta, en 1821."
       },
       {
        "id": "constitucion-cucuta",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7011,6 +7151,7 @@
       },
       {
        "id": "zI8AKSfVt2hWlTtzd.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7029,6 +7170,7 @@
       },
       {
        "id": "3893WApuk9r63ypyc.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7047,6 +7189,7 @@
       },
       {
        "id": "uwOEnSOslrSNt8U0f.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7065,6 +7208,7 @@
       },
       {
        "id": "Iy72wG50e6o8wRKkb.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -7089,6 +7233,7 @@
      "cards": [
       {
        "id": "cvFkXKk0XPOdPb8MP.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7200,6 +7345,7 @@
      "cards": [
       {
        "id": "t18aw04BM3All8xAn.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -7233,6 +7379,7 @@
       },
       {
        "id": "PgzsFYwb3Wac0figk.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7274,6 +7421,7 @@
       },
       {
        "id": "DwrFDfiXXZSQPMOd0.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7306,6 +7454,7 @@
       },
       {
        "id": "jAq3YXI69qrzm9gXe.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7329,68 +7478,42 @@
       },
       {
        "id": "uAQDIDLJ9a6LPeoCu.20707532278284158",
-       "type": "cloze",
+       "type": "choice",
        "front": [
         {
-         "text": "La "
-        },
-        {
-         "text": "Revolución Marcista ",
-         "bold": true
-        },
-        {
-         "text": "se llama así porque inició en el mes de "
-        },
-        {
-         "text": "marzo",
-         "cloze": true
+         "text": "¿En qué mes empezó la Revolución Marcista, que lleva ese nombre por él?"
         }
-       ]
-      },
-      {
-       "id": "cAcaPteQ5S86ysj6i.9980214720569148",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "Luego de destituir a Juan José Flores se formó un gobierno provisional (Triunvirato Marcista) dirigidos por Vicente Ramón Roca, que representaba a Guayaquil; "
-        },
-        {
-         "text": "José Joaquín de Olmedo, que representaba a Quito",
-         "cloze": true
-        },
-        {
-         "text": "; y Diego Noboa, que representaba al Azuay"
-        }
-       ]
-      },
-      {
-       "id": "cAcaPteQ5S86ysj6i.7491853093107835",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "Luego de destituir a Juan José Flores se formó un gobierno provisional (Triunvirato Marcista) dirigidos por "
-        },
-        {
-         "text": "Vicente Ramón Roca, que representaba a Guayaquil",
-         "cloze": true
-        },
-        {
-         "text": "; José Joaquín de Olmedo, que representaba a Quito; y Diego Noboa, que representaba al Azuay"
-        }
-       ]
+       ],
+       "options": [
+        "Marzo",
+        "Mayo",
+        "Agosto",
+        "Octubre"
+       ],
+       "answer": 0,
+       "explanation": "Empezó en Guayaquil el 6 de marzo de 1845, contra el gobierno de Juan José Flores."
       },
       {
        "id": "cAcaPteQ5S86ysj6i.10825425330861749",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "Luego de destituir a Juan José Flores se formó un gobierno provisional (Triunvirato Marcista) dirigidos por Vicente Ramón Roca, que representaba a Guayaquil; José Joaquín de Olmedo, que representaba a Quito; "
-        },
-        {
-         "text": "y Diego Noboa, que representaba al Azuay",
-         "cloze": true
+         "text": "¿Quiénes formaron el Triunvirato Marcista, el gobierno provisional de 1845?"
         }
-       ]
+       ],
+       "options": [
+        "José Joaquín de Olmedo",
+        "Vicente Ramón Roca",
+        "Diego Noboa",
+        "Juan José Flores"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Olmedo representaba a Quito; Roca, a Guayaquil, y Noboa, a Cuenca. Juan José Flores fue el presidente al que derrocaron."
       },
       {
        "id": "NysVcIh0JbcyzDHAQ.f",
@@ -7418,6 +7541,7 @@
       },
       {
        "id": "b2YtgISfbuUE9xBPo.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7435,6 +7559,7 @@
       },
       {
        "id": "OpldcRaTbwwKDyRbt.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7459,6 +7584,7 @@
      "cards": [
       {
        "id": "Fmqd0uMwmoeQ3C9a2.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7476,6 +7602,7 @@
       },
       {
        "id": "8j3VzsC2VkswsESZv.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7499,6 +7626,7 @@
      "cards": [
       {
        "id": "jiTlCNcDWRd2XAiye.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7622,6 +7750,7 @@
       },
       {
        "id": "V6GeaAKNS9JoaBTlT.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7645,6 +7774,7 @@
      "cards": [
       {
        "id": "crucero-esmeralda",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -7685,6 +7815,7 @@
       },
       {
        "id": "8vRnfGwICfkyLxs76.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -7702,6 +7833,7 @@
       },
       {
        "id": "dFn4ZVv8ZdqthLR4a.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7733,6 +7865,7 @@
      "cards": [
       {
        "id": "bVmeCA0k7raA8l3s2.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -7766,6 +7899,7 @@
       },
       {
        "id": "FXLyZnaIB14Z0Subv.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7789,6 +7923,7 @@
      "cards": [
       {
        "id": "revolucion-juliana",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -7833,6 +7968,7 @@
       },
       {
        "id": "c8turdK7IEEVFZGq4.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -7850,6 +7986,7 @@
       },
       {
        "id": "AoQbiOgQRhb04FrZ0.f",
+       "popularity": 6,
        "type": "choice",
        "front": [
         {
@@ -7867,6 +8004,7 @@
       },
       {
        "id": "RG7Pfg84sAoFMz1zH.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -7897,6 +8035,7 @@
      "cards": [
       {
        "id": "reforma-agraria",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -7921,6 +8060,7 @@
      "cards": [
       {
        "id": "alhXNWcIuq9RkYdwS.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -7988,6 +8128,7 @@
       },
       {
        "id": "PYnMZn5QDkru3h7jK.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -8011,6 +8152,7 @@
      "cards": [
       {
        "id": "2R80u7PjBlNG4tvrZ.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -8028,6 +8170,7 @@
       },
       {
        "id": "ZWl8xisVlWbfjNOGP.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -8058,6 +8201,7 @@
      "cards": [
       {
        "id": "2cy7Z2b9Iw3aJhzRp.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8074,6 +8218,7 @@
       },
       {
        "id": "sU44swaMSm5NURPf5.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -8091,6 +8236,7 @@
       },
       {
        "id": "pv1ba84XnFUbTPpvI.f",
+       "popularity": 7,
        "type": "choice",
        "front": [
         {
@@ -8132,6 +8278,7 @@
       },
       {
        "id": "ViGCpBcuJARHVjsEJ.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8155,6 +8302,7 @@
       },
       {
        "id": "JF9bxKLlAZdpGAEMS.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -8237,6 +8385,7 @@
      "cards": [
       {
        "id": "gcJaPAAdKFrSVDsdk.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8287,144 +8436,41 @@
       },
       {
        "id": "BGZJE57zSewNckdxK.7527770031120904",
-       "type": "cloze",
+       "type": "choice",
        "front": [
         {
-         "text": "La República del Ecuador, se define como un Estado "
-        },
-        {
-         "text": "constitucional de derechos y justicia",
-         "cloze": true
-        },
-        {
-         "text": ", social, democrático, soberano, independiente, unitario, intercultural, plurinacional y laico"
+         "text": "¿Cómo empieza la definición del Estado en el artículo 1 de la Constitución de 2008?"
         }
-       ]
-      },
-      {
-       "id": "BGZJE57zSewNckdxK.23795706188054178",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, social, democrático, soberano, independiente, unitario, "
-        },
-        {
-         "text": "intercultural",
-         "cloze": true
-        },
-        {
-         "text": ", plurinacional y laico"
-        }
-       ]
-      },
-      {
-       "id": "BGZJE57zSewNckdxK.4747514509441848",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, social, democrático, soberano, "
-        },
-        {
-         "text": "independiente",
-         "cloze": true
-        },
-        {
-         "text": ", unitario, intercultural, plurinacional y laico"
-        }
-       ]
-      },
-      {
-       "id": "BGZJE57zSewNckdxK.3450662854322607",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, social, democrático, soberano, independiente, "
-        },
-        {
-         "text": "unitario",
-         "cloze": true
-        },
-        {
-         "text": ", intercultural, plurinacional y laico"
-        }
-       ]
-      },
-      {
-       "id": "BGZJE57zSewNckdxK.6743590967794547",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, social, democrático, "
-        },
-        {
-         "text": "soberano",
-         "cloze": true
-        },
-        {
-         "text": ", independiente, unitario, intercultural, plurinacional y laico"
-        }
-       ]
-      },
-      {
-       "id": "BGZJE57zSewNckdxK.7615710124829406",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, social, democrático, soberano, independiente, unitario, intercultural, plurinacional y "
-        },
-        {
-         "text": "laico",
-         "cloze": true
-        }
-       ]
-      },
-      {
-       "id": "BGZJE57zSewNckdxK.46238376717246277",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, "
-        },
-        {
-         "text": "social",
-         "cloze": true
-        },
-        {
-         "text": ", democrático, soberano, independiente, unitario, intercultural, plurinacional y laico"
-        }
-       ]
-      },
-      {
-       "id": "BGZJE57zSewNckdxK.6090790857213613",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, social, "
-        },
-        {
-         "text": "democrático",
-         "cloze": true
-        },
-        {
-         "text": ", soberano, independiente, unitario, intercultural, plurinacional y laico"
-        }
-       ]
+       ],
+       "options": [
+        "Estado constitucional de derechos y justicia",
+        "Estado social de derecho",
+        "Estado federal y descentralizado",
+        "Estado confesional y unitario"
+       ],
+       "answer": 0,
+       "explanation": "La Constitución de 1998 decía «Estado social de derecho»; la de 2008 lo cambió por «Estado constitucional de derechos y justicia»."
       },
       {
        "id": "BGZJE57zSewNckdxK.7615326110674593",
-       "type": "cloze",
+       "popularity": 4,
+       "type": "choice",
        "front": [
         {
-         "text": "La República del Ecuador, se define como un Estado constitucional de derechos y justicia, social, democrático, soberano, independiente, unitario, intercultural, "
-        },
-        {
-         "text": "plurinacional",
-         "cloze": true
-        },
-        {
-         "text": " y laico"
+         "text": "¿Cuáles de estas características le da al Estado ecuatoriano el artículo 1 de la Constitución?"
         }
-       ]
+       ],
+       "options": [
+        "Plurinacional",
+        "Laico",
+        "Federal",
+        "Confesional"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "El artículo 1 dice que el Ecuador es un Estado constitucional de derechos y justicia, social, democrático, soberano, independiente, unitario, intercultural, plurinacional y laico. Es unitario, no federal, y laico, es decir, sin religión oficial."
       },
       {
        "id": "GO2WRKkwAAPT0yNHp.f",
@@ -8445,6 +8491,7 @@
       },
       {
        "id": "7QTwe4bdwNw3GhLlu.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8479,6 +8526,7 @@
       },
       {
        "id": "S6PAGYSiC6PYuGYsL.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8517,6 +8565,7 @@
       },
       {
        "id": "soberania",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8534,6 +8583,7 @@
       },
       {
        "id": "nombre-oficial",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8551,27 +8601,29 @@
       },
       {
        "id": "EgX12jUE86Q8GN5YH.f",
-       "type": "basic",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "Son deberes primordiales del Estado"
+         "text": "¿Cuáles de estos son deberes primordiales del Estado según la Constitución?"
         }
        ],
-       "back": [
-        {
-         "text": "• 1. "
-        },
-        {
-         "text": "Garantizar sin discriminación alguna el efectivo goce de los derechos establecidos en la Constitución y en los instrumentos internacionales, en particular la educación, la salud, la alimentación, la seguridad social y el agua para sus habitantes.",
-         "bold": true
-        },
-        {
-         "text": "\n• 2. Garantizar y defender la soberanía nacional.\n• 3. Fortalecer la unidad nacional en la diversidad.\n• 4. Garantizar la ética laica como sustento del quehacer público y el ordenamiento jurídico.\n• 5. Planificar el desarrollo nacional, erradicar la pobreza, promover el desarrollo sustentable y la redistribución equitativa de los recursos y la riqueza, para acceder al buen vivir.\n• 6. Promover el desarrollo equitativo y solidario de todo el territorio, mediante el fortalecimiento del proceso de autonomías y descentralización.\n• 7. Proteger el patrimonio natural y cultural del país.\n• 8. Garantizar a sus habitantes el derecho a una cultura de paz, a la seguridad integral y a vivir en una sociedad democrática y libre de corrupción."
-        }
-       ]
+       "options": [
+        "Garantizar y defender la soberanía nacional",
+        "Proteger el patrimonio natural y cultural del país",
+        "Garantizar la ética laica como sustento del quehacer público",
+        "Establecer una religión oficial"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Están en el artículo 3. También son deberes garantizar los derechos sin discriminación, fortalecer la unidad nacional en la diversidad, planificar el desarrollo y erradicar la pobreza, promover la autonomía y la descentralización, y garantizar una cultura de paz y una sociedad libre de corrupción."
       },
       {
        "id": "iFpwBR3s7C9Su53Ce.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8595,6 +8647,7 @@
      "cards": [
       {
        "id": "derecho-agua",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8612,6 +8665,7 @@
       },
       {
        "id": "educacion-gratuita",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8629,6 +8683,7 @@
       },
       {
        "id": "politicas-salud",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8646,6 +8701,7 @@
       },
       {
        "id": "iMn8XZRnesz2dXKEf.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8662,6 +8718,7 @@
       },
       {
        "id": "HU2LZlj8mSxXpuSSl.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8685,6 +8742,7 @@
      "cards": [
       {
        "id": "Bmhva1en3z9mjFC81.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8702,6 +8760,7 @@
       },
       {
        "id": "PVpXghGc3UbVEwf9t.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8719,6 +8778,7 @@
       },
       {
        "id": "naturalizacion-servicios",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8736,6 +8796,7 @@
       },
       {
        "id": "V32xAaMLSeToehN5r.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8814,21 +8875,29 @@
       },
       {
        "id": "D7paadi1SrALgQPLQ.f",
-       "topic": "Función Ejecutiva",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "Las principales atribuciones de la Función Ejecutiva son:"
+         "text": "¿Cuáles de estas son atribuciones de la Función Ejecutiva?"
         }
        ],
-       "back": [
-        {
-         "text": "• Dirigir y administrar el país.\n• Gestionar los recursos públicos.\n• Hacer cumplir las leyes y políticas públicas."
-        }
-       ]
+       "options": [
+        "Dirigir y administrar el país",
+        "Gestionar los recursos públicos",
+        "Hacer cumplir las leyes y las políticas públicas",
+        "Aprobar el presupuesto nacional"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "El Ejecutivo prepara el presupuesto, pero aprobarlo le toca a la Función Legislativa.",
+       "topic": "Función Ejecutiva"
       },
       {
        "id": "2OO7AGfM6G7ufxm2s.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -8932,6 +9001,7 @@
       },
       {
        "id": "nANe2vhZCUaMLJ4IT.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -8966,6 +9036,7 @@
       },
       {
        "id": "kVvhbEerhOs3ap19O.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -8982,6 +9053,7 @@
       },
       {
        "id": "JoBVM6feOe2fE6HbC.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -8998,21 +9070,29 @@
       },
       {
        "id": "3mFavKNXEYqyhoeK3.f",
-       "topic": "Función Legislativa",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "Las principales atribuciones de la Función Legislativa son:"
+         "text": "¿Cuáles de estas son atribuciones de la Función Legislativa?"
         }
        ],
-       "back": [
-        {
-         "text": "• Crear, discutir y aprobar leyes que regulen la convivencia entre los ciudadanos y el funcionamiento del Estado.\n• Fiscalizar los actos realizados por la Función Ejecutiva.\n• Aprobar el presupuesto nacional."
-        }
-       ]
+       "options": [
+        "Crear, discutir y aprobar las leyes",
+        "Fiscalizar los actos de la Función Ejecutiva",
+        "Aprobar el presupuesto nacional",
+        "Organizar las elecciones"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Organizar las elecciones le toca a la Función Electoral.",
+       "topic": "Función Legislativa"
       },
       {
        "id": "BTSRh1xmx6qtHUbjI.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9065,6 +9145,7 @@
       },
       {
        "id": "v52waeIEIGnhxlQE0.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9083,6 +9164,7 @@
       },
       {
        "id": "FcRkz9kZXCwDtsbMw.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9101,6 +9183,7 @@
       },
       {
        "id": "gTvrwW5O45wCgEB4K.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9119,6 +9202,7 @@
       },
       {
        "id": "6tkltVXr8Ey5nSpx6.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9136,6 +9220,7 @@
       },
       {
        "id": "j6wk0o2F3Hj5wLN3S.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9152,6 +9237,7 @@
       },
       {
        "id": "Ru69ks4WeZVbQSrqq.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9168,18 +9254,25 @@
       },
       {
        "id": "0oMAgImgSC8swBidO.f",
-       "topic": "Función Judicial",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "Las principales atribuciones de la Función Judicial son:"
+         "text": "¿Cuáles de estas son atribuciones de la Función Judicial?"
         }
        ],
-       "back": [
-        {
-         "text": "• Administrar la justicia en el país.\n• Garantizar el respeto a la constitución y a las leyes.\n• Interpretar y aplicar las leyes.\n• Proteger los derechos y garantías fundamentales de los ciudadanos."
-        }
-       ]
+       "options": [
+        "Administrar la justicia en el país",
+        "Garantizar el respeto a la Constitución y a las leyes",
+        "Proteger los derechos y garantías fundamentales de los ciudadanos",
+        "Crear y aprobar las leyes"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Crear y aprobar las leyes le toca a la Función Legislativa, es decir, a la Asamblea Nacional.",
+       "topic": "Función Judicial"
       },
       {
        "id": "P0NYH05LwWpxYt8ZG.f",
@@ -9217,21 +9310,29 @@
       },
       {
        "id": "efanlZdpdc5NoaJLB.f",
-       "topic": "Función Electoral",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "Las principales atribuciones de la Función Electoral son:"
+         "text": "¿Cuáles de estas son atribuciones de la Función Electoral?"
         }
        ],
-       "back": [
-        {
-         "text": "• Organizar y controlar las elecciones populares.\n• Inscribir y fiscalizar a los partidos políticos.\n• Garantizar la transparencia y legalidad de los procesos electorales.\n• Asegurar que los ciudadanos puedan ejercer su derecho al voto."
-        }
-       ]
+       "options": [
+        "Organizar y controlar las elecciones",
+        "Inscribir y fiscalizar a los partidos políticos",
+        "Garantizar la transparencia de los procesos electorales",
+        "Fiscalizar los actos de la Función Ejecutiva"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Fiscalizar al Ejecutivo le toca a la Asamblea Nacional, es decir, a la Función Legislativa.",
+       "topic": "Función Electoral"
       },
       {
        "id": "X5ijEgszxYP3klie0.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9250,18 +9351,25 @@
       },
       {
        "id": "lOeV1w0dj4moaA6R2.f",
-       "topic": "Función de Transparencia y Control Social",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "Las principales atribuciones de la Función de Transparencia y Control Social son:"
+         "text": "¿Cuáles de estas son atribuciones de la Función de Transparencia y Control Social?"
         }
        ],
-       "back": [
-        {
-         "text": "• Prevenir y combatir la corrupción.\n• Vigilar y supervisar el uso de los recursos públicos.\n• Incentivar la participación ciudadana.\n• Proteger el ejercicio y cumplimiento de los derechos."
-        }
-       ]
+       "options": [
+        "Prevenir y combatir la corrupción",
+        "Vigilar el uso de los recursos públicos",
+        "Incentivar la participación ciudadana",
+        "Administrar la justicia"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Administrar la justicia le toca a la Función Judicial.",
+       "topic": "Función de Transparencia y Control Social"
       },
       {
        "id": "WovwH4oRt0UXkZw7p.f",
@@ -9327,6 +9435,7 @@
      "cards": [
       {
        "id": "74f63ZnGeVsvCoHsd.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9344,6 +9453,7 @@
       },
       {
        "id": "YrlMW57kf06d7NUkW.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9361,6 +9471,7 @@
       },
       {
        "id": "UswoTwrxzwOBS9ATB.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -9395,6 +9506,7 @@
       },
       {
        "id": "OZoMTwe8BYOtdg5N3.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9412,6 +9524,7 @@
       },
       {
        "id": "sKLytz6rD4rlVKcbx.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9429,6 +9542,7 @@
       },
       {
        "id": "JTeDNwK4F8YhH18ND.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9445,6 +9559,7 @@
       },
       {
        "id": "ohMRtjh1UW9QpOtkt.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9462,6 +9577,7 @@
       },
       {
        "id": "QSbWodVWZhvPchvXd.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -9478,6 +9594,7 @@
       },
       {
        "id": "rodriguez-lara",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -9495,6 +9612,7 @@
       },
       {
        "id": "binomio-1979",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9512,6 +9630,7 @@
       },
       {
        "id": "I94YnEpLbvklBYtru.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9529,6 +9648,7 @@
       },
       {
        "id": "hurtado-1981",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9546,6 +9666,7 @@
       },
       {
        "id": "febres-cordero",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -9563,6 +9684,7 @@
       },
       {
        "id": "borja",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9580,6 +9702,7 @@
       },
       {
        "id": "bucaram",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -9597,6 +9720,7 @@
       },
       {
        "id": "rosalia-arteaga",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -9614,6 +9738,7 @@
       },
       {
        "id": "zaliduwYYfKwhHC7u.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -9631,6 +9756,7 @@
       },
       {
        "id": "1dZqngxgyh96m7wOS.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -9677,20 +9803,28 @@
      "cards": [
       {
        "id": "XsfRd5lE7WOAyNDqn.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Qué derechos asegura el gobierno ecuatoriano a sus ciudadanos en el extranjero?"
+         "text": "¿Qué asegura el Estado ecuatoriano a sus ciudadanos que viven en el extranjero?"
         }
        ],
-       "back": [
-        {
-         "text": "• Garantizar que sus derechos sean respetados y protegidos en el extranjero, incluyendo el acceso a la justicia y la defensa de sus intereses.\n• Protección y asistencia en diversas situaciones, como pérdida de documentos, problemas legales, o necesidad de apoyo en emergencias.\n• Derecho a votar en elecciones presidenciales, legislativas y para el Consejo de Participación Ciudadana y Control Social, así como a ser elegidos para cargos públicos."
-        }
-       ]
+       "options": [
+        "Protección y asistencia, por ejemplo si pierden sus documentos",
+        "El derecho a votar y a ser elegidos",
+        "El acceso a la justicia y la defensa de sus intereses",
+        "Una pensión mensual por vivir fuera del país"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Desde el exterior se vota para presidente, asambleístas y el Consejo de Participación Ciudadana y Control Social. Los consulados dan la protección y la asistencia."
       },
       {
        "id": "EnB7TUSNXOY103nYx.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -9725,6 +9859,7 @@
       },
       {
        "id": "65hd0Kzw5feeokKIo.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -9993,6 +10128,7 @@
       },
       {
        "id": "uzOkhM8aaV8nJYRhq.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -10083,6 +10219,7 @@
       },
       {
        "id": "atpt98EN423AlwnQE.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10166,6 +10303,7 @@
       },
       {
        "id": "5FdHQyyhUiCYipDmP.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10249,6 +10387,7 @@
       },
       {
        "id": "jLvzdUqCxxX2DjAcb.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10272,6 +10411,7 @@
       },
       {
        "id": "cerro-santa-ana",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -10295,6 +10435,7 @@
      "cards": [
       {
        "id": "LtNPjwibVLtxkG7xy.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10318,6 +10459,7 @@
       },
       {
        "id": "HA8tMvUIXus5Q8hN0.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10365,6 +10507,7 @@
       },
       {
        "id": "cmME9bgsyu7QQOyex.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -10411,6 +10554,7 @@
       },
       {
        "id": "XnvxIJBZluLkB6xm8.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10505,6 +10649,7 @@
       },
       {
        "id": "ZswCVhrzYl9xpe6BN.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -10637,6 +10782,7 @@
      "cards": [
       {
        "id": "S4cLTfQjvzte93y68.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -10697,6 +10843,7 @@
       },
       {
        "id": "rXuQ1wIcOpGHbylbg.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -10727,6 +10874,7 @@
       },
       {
        "id": "WGvARjEVCbBoUHOt3.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -10750,6 +10898,7 @@
       },
       {
        "id": "3FkILPaN2m9Tc9o37.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -10773,6 +10922,7 @@
       },
       {
        "id": "psjsvG4JZhhmB4th8.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10790,6 +10940,7 @@
       },
       {
        "id": "UobMjmt3U53wQbteG.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10820,6 +10971,7 @@
       },
       {
        "id": "NWlddZhgLxHvcavXB.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -10844,6 +10996,7 @@
       },
       {
        "id": "Elh3TT7jdAfmcJFfl.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -10875,6 +11028,7 @@
       },
       {
        "id": "cE6GXivHsetjdg2lm.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -10905,6 +11059,7 @@
       },
       {
        "id": "U0cX08tmU5ReLgR55.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -10929,6 +11084,7 @@
       },
       {
        "id": "aZMJmKNA1RkA8rsy8.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -11057,6 +11213,7 @@
       },
       {
        "id": "7EgMlcGH3jsQRkN1m.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11073,6 +11230,7 @@
       },
       {
        "id": "TdpbBKBouSF4SIYEq.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11127,6 +11285,7 @@
       },
       {
        "id": "zrZLg0p3xgS2HELhw.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -11150,6 +11309,7 @@
       },
       {
        "id": "3dbWKuNDISgXw1OIu.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -11173,6 +11333,7 @@
       },
       {
        "id": "cCaBeVojITywQbMpI.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -11196,6 +11357,7 @@
       },
       {
        "id": "J4aMGZi2e6Aer1huh.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11219,6 +11381,7 @@
       },
       {
        "id": "NHuMXz81Erqc2NvH8.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -11272,6 +11435,7 @@
       },
       {
        "id": "VdvLonnpKtEJWvsgs.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -11318,6 +11482,7 @@
       },
       {
        "id": "E1KYXCgQN7EXgjiWn.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11341,6 +11506,7 @@
       },
       {
        "id": "scYQg0oIedVS0bPh9.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11364,6 +11530,7 @@
       },
       {
        "id": "R6q3KKMhVtuoSUNs3.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -11388,6 +11555,7 @@
       },
       {
        "id": "juana-cordova",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -11411,6 +11579,7 @@
      "cards": [
       {
        "id": "oS4PTVaZCOnaOZ7fK.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -11471,6 +11640,7 @@
       },
       {
        "id": "b6Ms39QuOJL3Emawl.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -11501,6 +11671,7 @@
       },
       {
        "id": "RAltP7pcgzZj6Tlpr.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11592,6 +11763,7 @@
       },
       {
        "id": "espejo-medico",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -11609,6 +11781,7 @@
       },
       {
        "id": "ORI1I9P9AGkUv7ZNb.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -11662,6 +11835,7 @@
       },
       {
        "id": "CNZbJJWb2u5APacCo.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -11753,6 +11927,7 @@
       },
       {
        "id": "xBLb1VKC7znpmItCO.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11790,23 +11965,20 @@
       },
       {
        "id": "ki6YWPd2oeFUJm8Jv.5441592318310651",
-       "type": "cloze",
+       "type": "choice",
        "front": [
         {
-         "text": "Juan María Montalvo ",
-         "bold": true
-        },
-        {
-         "text": "fue un "
-        },
-        {
-         "text": "ensayista y novelista",
-         "cloze": true
-        },
-        {
-         "text": " ecuatoriano de pensamiento liberal"
+         "text": "¿Qué fue Juan Montalvo?"
         }
        ],
+       "options": [
+        "Un ensayista y novelista de pensamiento liberal",
+        "Un pintor de la Escuela Quiteña",
+        "Un compositor de pasillos",
+        "Un presidente de la República"
+       ],
+       "answer": 0,
+       "explanation": "Escribió ensayos como Las Catilinarias y Siete tratados, y la novela Capítulos que se le olvidaron a Cervantes.",
        "photo": {
         "src": "images/foto-montalvo.jpg",
         "alt": "Juan Montalvo",
@@ -11817,6 +11989,7 @@
       },
       {
        "id": "r9pX9caOJbBiPShFq.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -11840,6 +12013,7 @@
       },
       {
        "id": "Nk3lMCP1Wbc7wH62X.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -11901,6 +12075,7 @@
       },
       {
        "id": "TUlvR2iw3CX7DIxDe.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -11948,6 +12123,7 @@
       },
       {
        "id": "3wYwLuK8itYcviM3K.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12083,6 +12259,7 @@
       },
       {
        "id": "ultAC8KqASoT9M8b4.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -12120,6 +12297,7 @@
       },
       {
        "id": "QTyVwF5z7L5KFcu2y.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12150,6 +12328,7 @@
       },
       {
        "id": "XzyaTpDCAldbFoG9D.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12181,24 +12360,20 @@
       },
       {
        "id": "Qr0m9rBTvH6flUmTr.29221176283091",
-       "type": "cloze",
+       "type": "choice",
        "front": [
         {
-         "text": "El poema "
-        },
-        {
-         "text": "El alma en los labios",
-         "bold": true
-        },
-        {
-         "text": " fue escrito por "
-        },
-        {
-         "text": "Medardo Ángel Silva",
-         "bold": true,
-         "cloze": true
+         "text": "¿Quién escribió el poema «El alma en los labios»?"
         }
        ],
+       "options": [
+        "Medardo Ángel Silva",
+        "Julio Jaramillo",
+        "Jorge Carrera Andrade",
+        "Juan León Mera"
+       ],
+       "answer": 0,
+       "explanation": "Julio Jaramillo lo hizo famoso al cantarlo como pasillo.",
        "photo": {
         "src": "images/foto-medardo-silva.jpg",
         "alt": "Medardo Ángel Silva",
@@ -12239,6 +12414,7 @@
       },
       {
        "id": "AvfRiJYQeqATIL5VL.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12269,6 +12445,7 @@
       },
       {
        "id": "gvWkJviK2MQnQVWJO.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12353,6 +12530,7 @@
       },
       {
        "id": "huU1NozHyGnYemfJy.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -12376,6 +12554,7 @@
       },
       {
        "id": "EEDmMe9KD2oF0AG5K.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12423,6 +12602,7 @@
       },
       {
        "id": "yG7Rvw9g3Ep6OnGeb.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12453,6 +12633,7 @@
       },
       {
        "id": "icaza-teatro",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -12470,6 +12651,7 @@
       },
       {
        "id": "fnwLpkTgJdazT7HnZ.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -12493,6 +12675,7 @@
       },
       {
        "id": "siete-lunas",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -12540,24 +12723,21 @@
       },
       {
        "id": "VtcpYevsnu2UUnfLh.19773309858207144",
-       "type": "cloze",
+       "popularity": 2,
+       "type": "choice",
        "front": [
         {
-         "text": "La obra más conocida de "
-        },
-        {
-         "text": "Alicia Yánez Cossío",
-         "bold": true
-        },
-        {
-         "text": " es la novela "
-        },
-        {
-         "text": "Bruna, soroche y los tíos",
-         "bold": true,
-         "cloze": true
+         "text": "¿Cuál es la novela más conocida de Alicia Yánez Cossío?"
         }
        ],
+       "options": [
+        "Bruna, soroche y los tíos",
+        "Huasipungo",
+        "Cumandá",
+        "Siete lunas y siete serpientes"
+       ],
+       "answer": 0,
+       "explanation": "Se publicó en 1973. Huasipungo es de Jorge Icaza; Cumandá, de Juan León Mera, y Siete lunas y siete serpientes, de Demetrio Aguilera Malta.",
        "photo": {
         "src": "images/foto-yanez-cossio.jpg",
         "alt": "Alicia Yánez Cossío en 2014",
@@ -12598,6 +12778,7 @@
       },
       {
        "id": "CCdbEfEhwCBKsFngk.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -12628,6 +12809,7 @@
       },
       {
        "id": "LxB7mCLtJbeZwHFZ6.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -12658,6 +12840,7 @@
       },
       {
        "id": "hc0cMS6nSF96uu4ZL.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -12688,6 +12871,7 @@
       },
       {
        "id": "eZvMXP93rDBHs86sU.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -12718,6 +12902,7 @@
       },
       {
        "id": "OEngTrHesKrecjKsZ.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12754,6 +12939,7 @@
      "cards": [
       {
        "id": "Kt4wW9JfeV1d9yDOn.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -12777,6 +12963,7 @@
       },
       {
        "id": "Lrxbqm13qZqmqlZut.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12869,6 +13056,7 @@
       },
       {
        "id": "ydyNOHOsOnfHLrM2q.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -12938,6 +13126,7 @@
       },
       {
        "id": "kqVjK8G3p4inmVUOD.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -13046,17 +13235,25 @@
       },
       {
        "id": "Xf63PRpOyVUPBgNfz.f",
-       "type": "basic",
+       "popularity": 3,
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuáles son algunos géneros musicales del Ecuador?"
+         "text": "¿Cuáles de estos son géneros musicales del Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "La Bomba del Chota, Sanjuanito, Pasillo, Albazo, Pasacalle, Marimba esmeraldeña, Capishca, Yaraví, Alza, Tonada, Amorfino."
-        }
+       "options": [
+        "El pasillo",
+        "El sanjuanito",
+        "La bomba del Chota",
+        "El tango"
        ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "También lo son el albazo, el pasacalle, la marimba esmeraldeña, el capishca, el yaraví, el alza, la tonada y el amorfino. El tango es argentino.",
        "photo": {
         "src": "images/foto-jaramillo.jpg",
         "alt": "Julio Jaramillo, cantante de pasillos",
@@ -13113,6 +13310,7 @@
       },
       {
        "id": "OSrfsDBdOgsjUswoS.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13137,6 +13335,7 @@
       },
       {
        "id": "Knxhvo5keex9ofWsq.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13211,6 +13410,7 @@
       },
       {
        "id": "za7NNbXW8Gg6wyd5b.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13235,6 +13435,7 @@
       },
       {
        "id": "KV2zCY2LhpxyqQ5BE.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13258,6 +13459,7 @@
       },
       {
        "id": "EoBpZoLwAcWkORR4X.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13304,6 +13506,7 @@
       },
       {
        "id": "MPqNrKavqh3umhN4L.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13328,6 +13531,7 @@
       },
       {
        "id": "madera-guerrero",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -13345,6 +13549,7 @@
       },
       {
        "id": "xB48o9O98XHh8RKhF.f",
+       "popularity": 7,
        "type": "choice",
        "front": [
         {
@@ -13384,6 +13589,7 @@
       },
       {
        "id": "tXJjK2We9btKlkHYE.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13407,6 +13613,7 @@
       },
       {
        "id": "lindo-ecuador",
+       "popularity": 7,
        "type": "choice",
        "front": [
         {
@@ -13424,6 +13631,7 @@
       },
       {
        "id": "3ZjqB1XmHbRh3Cf2T.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13440,6 +13648,7 @@
       },
       {
        "id": "la-toquilla",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -13463,6 +13672,7 @@
      "cards": [
       {
        "id": "k0Yha6Jg1XoAr5kfq.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -13516,6 +13726,7 @@
       },
       {
        "id": "HVXeUoQwb1s5W1bxm.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13570,6 +13781,7 @@
       },
       {
        "id": "oqsuSEx9DBzWGYCZL.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -13600,6 +13812,7 @@
       },
       {
        "id": "EfU3WmzTrDOObJRto.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13623,6 +13836,7 @@
       },
       {
        "id": "J9hqvlQIydGcu5ecr.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13646,6 +13860,7 @@
       },
       {
        "id": "E18O9qJENiNsrHtgN.f",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -13677,6 +13892,7 @@
       },
       {
        "id": "4iq94CzoKYqcSmqKL.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13762,6 +13978,7 @@
       },
       {
        "id": "REMf4x0I6xv1a17sr.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13785,6 +14002,7 @@
       },
       {
        "id": "IiOwpuAfTov4lkqyK.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13802,6 +14020,7 @@
       },
       {
        "id": "qex32maDHvdVO7z3z.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13833,6 +14052,7 @@
       },
       {
        "id": "vFOmUxRJhusxWN8lH.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -13856,6 +14076,7 @@
       },
       {
        "id": "michelena-tema",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -13873,6 +14094,7 @@
       },
       {
        "id": "beatriz-vergara",
+       "popularity": 4,
        "type": "choice",
        "front": [
         {
@@ -14268,6 +14490,7 @@
       },
       {
        "id": "qYe9Xfq7UKyBrVD6P.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -14291,6 +14514,7 @@
       },
       {
        "id": "chicha-chonta",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -14466,6 +14690,7 @@
       },
       {
        "id": "VVujvfY1BHj3pmJAB.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -14545,33 +14770,20 @@
       },
       {
        "id": "E5ZqctFrGcbXf9aif.9288732603846174",
-       "type": "cloze",
+       "type": "choice",
        "front": [
         {
-         "text": "El "
-        },
-        {
-         "text": "Diablo Huma",
-         "bold": true
-        },
-        {
-         "text": ", también conocido como "
-        },
-        {
-         "text": "Aya Huma",
-         "bold": true
-        },
-        {
-         "text": ", es un personaje emblemático de las fiestas andinas ecuatorianas, especialmente durante el "
-        },
-        {
-         "text": "Inti Raymi",
-         "cloze": true
-        },
-        {
-         "text": " en la región de la sierra del Ecuador"
+         "text": "¿En qué fiesta andina aparece el Diablo Huma, también llamado Aya Huma?"
         }
        ],
+       "options": [
+        "En el Inti Raymi",
+        "En la Mama Negra",
+        "En el Pase del Niño",
+        "En la Diablada de Píllaro"
+       ],
+       "answer": 0,
+       "explanation": "Es un personaje con una máscara de dos caras que guía a los danzantes en el Inti Raymi de la Sierra.",
        "photo": {
         "src": "images/foto-diablo-huma.jpg",
         "alt": "Diablo Huma (Aya Huma)",
@@ -14744,29 +14956,25 @@
       },
       {
        "id": "bDgHDl0kjrqpP45a9.7771020236070846",
-       "type": "cloze",
+       "popularity": 1,
+       "type": "choice",
        "front": [
         {
-         "text": "En total hay "
-        },
-        {
-         "text": "18",
-         "cloze": true
-        },
-        {
-         "text": " pueblos y "
-        },
-        {
-         "text": "14",
-         "cloze": true
-        },
-        {
-         "text": " nacionalidades indígenas en el Ecuador"
+         "text": "¿Cuántos pueblos y nacionalidades indígenas hay en el Ecuador?"
         }
-       ]
+       ],
+       "options": [
+        "18 pueblos y 14 nacionalidades",
+        "14 pueblos y 18 nacionalidades",
+        "10 pueblos y 10 nacionalidades",
+        "24 pueblos y 13 nacionalidades"
+       ],
+       "answer": 0,
+       "explanation": "Las nacionalidades tienen idioma propio, como la kichwa o la shuar. Muchos de los pueblos, como los otavalo o los kayambi, forman parte de la nacionalidad kichwa."
       },
       {
        "id": "a9oBOqwZgnhzpZEqK.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -14783,6 +14991,7 @@
       },
       {
        "id": "jqaSc6kJdXZe2NwgG.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -14799,6 +15008,7 @@
       },
       {
        "id": "nacionalidad-kichwa",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -14816,6 +15026,7 @@
       },
       {
        "id": "piav",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -14833,6 +15044,7 @@
       },
       {
        "id": "nacionalidad-definicion",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -14943,6 +15155,7 @@
      "cards": [
       {
        "id": "4bkpOI21XtMntGPUh.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -14974,6 +15187,7 @@
       },
       {
        "id": "n6gcw9mypMhPyeKax.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -15005,6 +15219,7 @@
       },
       {
        "id": "yef4FtD4Oc70bg8yY.f",
+       "popularity": 1,
        "type": "choice",
        "front": [
         {
@@ -15035,6 +15250,7 @@
       },
       {
        "id": "CCAkYqGKRM4MIoasV.f",
+       "popularity": 5,
        "type": "choice",
        "front": [
         {
@@ -15065,6 +15281,7 @@
       },
       {
        "id": "zo3Qz3arJwBnbYVtI.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -15102,6 +15319,7 @@
       },
       {
        "id": "q2SHagLs1DwiDZrEk.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -15138,20 +15356,29 @@
      "cards": [
       {
        "id": "YQJF5y2aHKPCZFmpf.f",
-       "type": "basic",
+       "popularity": 6,
+       "type": "choice",
        "front": [
         {
-         "text": "Los principales productos que exporta Ecuador son"
+         "text": "¿Cuáles de estos son productos principales que exporta el Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "Petróleo, banano, camarón, café, atún, cacao y flores."
-        }
-       ]
+       "options": [
+        "El petróleo",
+        "El banano",
+        "El camarón",
+        "El trigo"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "También exporta café, atún, cacao y flores. El trigo, en cambio, casi todo se importa."
       },
       {
        "id": "exportaciones-destino",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {
@@ -15169,6 +15396,7 @@
       },
       {
        "id": "banano-destino",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -15186,6 +15414,7 @@
       },
       {
        "id": "banano-provincias",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -15203,6 +15432,7 @@
       },
       {
        "id": "244WkU6KNbPFvPBpU.f",
+       "popularity": 2,
        "type": "choice",
        "front": [
         {
@@ -15258,17 +15488,24 @@
       },
       {
        "id": "J1F4W9Jaw6faswYz3.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuáles son algunos de los principales periódicos del Ecuador?"
+         "text": "¿Cuáles de estos son periódicos del Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "El Universo, El Comercio, La Hora, El Telégrafo y Diario Expreso."
-        }
-       ]
+       "options": [
+        "El Universo",
+        "El Comercio",
+        "El Telégrafo",
+        "Clarín"
+       ],
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "También lo son La Hora y Expreso. Clarín es un diario argentino."
       },
       {
        "id": "D9f37HbZmmYYLSjd3.f",
@@ -15326,6 +15563,7 @@
      "cards": [
       {
        "id": "jrt6nbdkpNBfKI2iH.f",
+       "popularity": 3,
        "type": "choice",
        "front": [
         {

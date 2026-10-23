@@ -607,6 +607,10 @@ function updateTopics() {
 // per article 67 of the Reglamento a la Ley Orgánica de Movilidad Humana.
 const MOCK_SIZE = 30;
 const MOCK_PASS = 27;
+// Half of each mock exam comes from the questions that come up most
+// ("popularity" in cards.json).
+const MOCK_POPULAR = 15;
+const POPULAR_MIN = 3;
 
 // Cloze cards made from the same text share this key: shown together, they
 // give away each other's answers.
@@ -655,23 +659,27 @@ function smartReview() {
   return shuffle(picked);
 }
 
-// Random questions spread evenly over the categories, with at most one card
-// per text.
+// Only choice questions, as in the real exam: MOCK_POPULAR of the ones that
+// come up most, and the rest at random, spread evenly over the categories.
 function mockExam() {
   const used = new Set();
-  const pools = state.categories.map((category) =>
-    shuffle(category.subcategories.flatMap((sub) => sub.cards)));
   const picked = [];
+  const take = (card) => {
+    if (used.has(textKey(card))) return false;
+    used.add(textKey(card));
+    picked.push(card);
+    return true;
+  };
+  const choiceOnly = (cards) => cards.filter((card) => card.type === "choice");
+  for (const card of shuffle(choiceOnly(state.allCards).filter((card) => (card.popularity || 0) >= POPULAR_MIN))) {
+    if (picked.length === MOCK_POPULAR) break;
+    take(card);
+  }
+  const pools = state.categories.map((category) =>
+    shuffle(choiceOnly(category.subcategories.flatMap((sub) => sub.cards))));
   while (picked.length < MOCK_SIZE && pools.some((pool) => pool.length)) {
     for (const pool of pools) {
-      while (pool.length) {
-        const card = pool.pop();
-        const key = textKey(card);
-        if (used.has(key)) continue;
-        used.add(key);
-        picked.push(card);
-        break;
-      }
+      while (pool.length && !take(pool.pop()));
       if (picked.length === MOCK_SIZE) break;
     }
   }
@@ -684,7 +692,7 @@ function setupPractice() {
     if (cards.length) startExam(cards);
   });
   app.querySelector("#start-mock").addEventListener("click", () => {
-    startExam(mockExam(), { passMark: MOCK_PASS });
+    startExam(mockExam(), { passMark: MOCK_PASS, mock: true });
   });
   app.querySelector("#start-missed").addEventListener("click", () => {
     startExam(shuffle(cardsFromIds(progress.missed)));
@@ -903,11 +911,15 @@ function showStudyDone() {
 
 // Exam -----------------------------------------------------------------------
 
-function startExam(cards, { passMark, exit } = {}) {
+// In a mock exam (mock: true) answers are only saved: which were right and
+// wrong shows at the end, and there is no streak of right answers.
+function startExam(cards, { passMark, exit, mock = false } = {}) {
   state.studying = false;
   state.queue = cards;
   state.index = 0;
   state.missed = [];
+  state.mock = mock;
+  state.answers = [];
   state.passMark = passMark;
   state.exit = exit || { back: showHome, label: "Volver al inicio" };
   state.startedAt = Date.now();
@@ -934,7 +946,7 @@ function showCard() {
     [card.category, card.subcategory, card.topic].filter(Boolean).join(" › ");
   app.querySelector(".exam-bar").append(markButton(card));
   const combo = app.querySelector(".combo");
-  combo.hidden = state.combo < 2;
+  combo.hidden = state.mock || state.combo < 2;
   combo.textContent = `🔥 ${state.combo} seguidas`;
   combo.setAttribute("aria-label", `${state.combo} aciertos seguidos`);
   renderCardFace(card);
@@ -950,11 +962,19 @@ function showCard() {
     if (card.type !== "choice" && !event.target.closest("a, button")) reveal();
   });
   app.querySelector(".reveal").addEventListener("click", reveal);
-  app.querySelector(".next").addEventListener("click", () => grade(state.choiceResult));
+  app.querySelector(".next").addEventListener("click", () => (state.mock ? saveMockAnswer() : grade(state.choiceResult)));
   app.querySelector(".check-answer").addEventListener("click", checkSelection);
   if (card.type === "choice") {
     app.querySelector(".reveal").hidden = true;
-    app.querySelector(".check-answer").hidden = !isMultiChoice(card);
+    app.querySelector(".check-answer").hidden = state.mock || !isMultiChoice(card);
+    if (state.mock) {
+      const next = app.querySelector(".next");
+      const key = document.createElement("kbd");
+      key.textContent = "Enter";
+      next.replaceChildren(state.index + 1 < total ? "Siguiente " : "Terminar ", key);
+      next.hidden = false;
+      next.disabled = true;
+    }
     app.querySelector(".options button")?.focus({ preventScroll: true });
     return;
   }
@@ -999,16 +1019,24 @@ function correctAnswerText(card) {
   return joinList(correctOptions(card).map((index) => card.options[index]));
 }
 
+// A round mark for one answer and a square one for several, like radio
+// buttons and checkboxes.
+function optionMark() {
+  const mark = document.createElement("span");
+  mark.className = "option-mark";
+  mark.setAttribute("aria-hidden", "true");
+  return mark;
+}
+
 function renderOptions(card) {
   const fragment = document.createDocumentFragment();
-  if (isMultiChoice(card)) {
-    const hint = document.createElement("p");
-    hint.className = "choice-hint";
-    hint.textContent = "Selecciona todas las respuestas correctas.";
-    fragment.append(hint);
-  }
+  const multi = isMultiChoice(card);
+  const hint = document.createElement("p");
+  hint.className = multi ? "choice-hint is-multi" : "choice-hint";
+  hint.append(optionMark(), multi ? "Varias respuestas: marca todas las correctas" : "Una sola respuesta");
+  fragment.append(hint);
   const list = document.createElement("ol");
-  list.className = "options";
+  list.className = multi ? "options is-multi" : "options";
   // Keep the shuffled order for this card while it is on screen.
   state.optionOrder = shuffle(card.options.map((_, index) => index));
   state.selection = new Set();
@@ -1017,10 +1045,10 @@ function renderOptions(card) {
     const button = document.createElement("button");
     button.type = "button";
     button.dataset.option = optionIndex;
-    if (isMultiChoice(card)) button.setAttribute("aria-pressed", "false");
+    if (multi || state.mock) button.setAttribute("aria-pressed", "false");
     const key = document.createElement("kbd");
     key.textContent = position + 1;
-    button.append(key, card.options[optionIndex]);
+    button.append(optionMark(), key, card.options[optionIndex]);
     button.addEventListener("click", () => choose(optionIndex));
     item.append(button);
     list.append(item);
@@ -1032,16 +1060,35 @@ function renderOptions(card) {
 function choose(optionIndex) {
   if (state.revealed) return;
   const card = state.queue[state.index];
-  if (!isMultiChoice(card)) {
+  if (!isMultiChoice(card) && !state.mock) {
     finishChoice(new Set([optionIndex]));
     return;
   }
-  // Multiple answers: toggle the option and wait for "Comprobar".
-  if (state.selection.has(optionIndex)) state.selection.delete(optionIndex);
+  // Multiple answers, or any mock question: mark the option and wait for
+  // "Comprobar" or "Siguiente". One answer replaces the previous one.
+  if (!isMultiChoice(card)) state.selection = new Set([optionIndex]);
+  else if (state.selection.has(optionIndex)) state.selection.delete(optionIndex);
   else state.selection.add(optionIndex);
-  const button = app.querySelector(`.options button[data-option="${optionIndex}"]`);
-  button.classList.toggle("is-selected", state.selection.has(optionIndex));
-  button.setAttribute("aria-pressed", String(state.selection.has(optionIndex)));
+  for (const button of app.querySelectorAll(".options button")) {
+    const on = state.selection.has(Number(button.dataset.option));
+    button.classList.toggle("is-selected", on);
+    button.setAttribute("aria-pressed", String(on));
+  }
+  if (state.mock) app.querySelector(".next").disabled = !state.selection.size;
+}
+
+function isRightChoice(card, selected) {
+  const correct = new Set(correctOptions(card));
+  return selected.size === correct.size && [...selected].every((index) => correct.has(index));
+}
+
+function saveMockAnswer() {
+  if (!state.selection?.size) return;
+  const card = state.queue[state.index];
+  const right = isRightChoice(card, state.selection);
+  state.answers.push({ card, selected: [...state.selection], right });
+  state.revealed = true;
+  grade(right);
 }
 
 function reducedMotion() {
@@ -1065,11 +1112,12 @@ function finishChoice(selected) {
   state.revealed = true;
   const card = state.queue[state.index];
   const correct = new Set(correctOptions(card));
-  state.choiceResult = selected.size === correct.size && [...selected].every((index) => correct.has(index));
+  state.choiceResult = isRightChoice(card, selected);
   for (const button of app.querySelectorAll(".options button")) {
     const index = Number(button.dataset.option);
     button.disabled = true;
     button.classList.remove("is-selected");
+    button.classList.toggle("was-picked", selected.has(index));
     if (correct.has(index)) {
       button.classList.add("is-correct");
       if (!selected.has(index)) button.classList.add("is-missed");
@@ -1191,9 +1239,11 @@ function grade(knewIt) {
   setInList(progress.missed, card.id, !knewIt);
   if (hadMissed && !progress.missed.length) progress.stats.clearedMissed = true;
   recordAnswer(card, knewIt);
-  state.combo = knewIt ? state.combo + 1 : 0;
-  state.bestCombo = Math.max(state.bestCombo, state.combo);
-  progress.stats.bestCombo = Math.max(progress.stats.bestCombo || 0, state.bestCombo);
+  if (!state.mock) {
+    state.combo = knewIt ? state.combo + 1 : 0;
+    state.bestCombo = Math.max(state.bestCombo, state.combo);
+    progress.stats.bestCombo = Math.max(progress.stats.bestCombo || 0, state.bestCombo);
+  }
   state.index += 1;
   if (state.index < state.queue.length) showCard();
   else showResult();
@@ -2130,26 +2180,58 @@ function showResult() {
   restart.addEventListener("click", state.exit.back);
 
   const list = app.querySelector(".missed");
-  for (const card of missed) {
-    const item = document.createElement("li");
-    if (card.front?.length) {
-      const question = document.createElement("p");
-      question.append(renderSegments(card.front, { revealCloze: true }));
-      item.append(question);
+  if (state.mock) {
+    // Every answer, wrong ones first, with what was picked.
+    const wrongAnswers = state.answers.filter((answer) => !answer.right);
+    const rightAnswers = state.answers.filter((answer) => answer.right);
+    app.querySelector(".missed-title")?.replaceChildren(`Preguntas falladas (${wrongAnswers.length})`);
+    for (const answer of wrongAnswers) list.append(renderReviewItem(answer.card, answer.selected));
+    if (rightAnswers.length) {
+      const rightList = app.querySelector(".right-answers");
+      app.querySelector(".right-title").textContent = `Preguntas acertadas (${rightAnswers.length})`;
+      app.querySelector(".right-title").hidden = false;
+      rightList.hidden = false;
+      for (const answer of rightAnswers) rightList.append(renderReviewItem(answer.card, answer.selected));
     }
-    if (card.image) item.append(renderImage(card.image, { revealed: true }));
-    if (card.type === "basic" || card.type === "choice") {
-      const answer = document.createElement("p");
-      answer.className = "missed-answer";
-      if (card.type === "choice") answer.textContent = correctAnswerText(card);
-      else answer.append(renderSegments(card.back, { revealCloze: true }));
-      item.append(answer);
-    }
-    if (card.explanation) item.append(renderExplanation(card.explanation));
-    if (card.photo) item.append(renderPhoto(card.photo));
-    list.append(item);
+    app.focus({ preventScroll: true });
+    return;
   }
+  for (const card of missed) list.append(renderReviewItem(card));
   app.focus({ preventScroll: true });
+}
+
+// A question in the result list, with its right answer. Given what was picked
+// (mock exams), it also shows that answer.
+function renderReviewItem(card, selected) {
+  const item = document.createElement("li");
+  if (card.front?.length) {
+    const question = document.createElement("p");
+    question.append(renderSegments(card.front, { revealCloze: true }));
+    item.append(question);
+  }
+  if (card.image) item.append(renderImage(card.image, { revealed: true }));
+  const right = selected && isRightChoice(card, new Set(selected));
+  if (selected && !right) {
+    const picked = document.createElement("p");
+    picked.className = "picked-answer";
+    picked.textContent = `Tu respuesta: ${joinList(selected.map((index) => card.options[index]))}`;
+    item.append(picked);
+  }
+  if (card.type === "basic" || card.type === "choice") {
+    const answer = document.createElement("p");
+    answer.className = "missed-answer";
+    if (card.type === "choice") {
+      const label = selected ? (right ? "Tu respuesta: " : "Respuesta correcta: ") : "";
+      answer.textContent = label + correctAnswerText(card);
+      answer.classList.toggle("is-right", Boolean(right));
+    } else {
+      answer.append(renderSegments(card.back, { revealCloze: true }));
+    }
+    item.append(answer);
+  }
+  if (card.explanation) item.append(renderExplanation(card.explanation));
+  if (card.photo) item.append(renderPhoto(card.photo));
+  return item;
 }
 
 // Exam builder ---------------------------------------------------------------
@@ -2692,7 +2774,13 @@ document.addEventListener("keydown", (event) => {
       choose(state.optionOrder[position]);
     } else if (event.key === " " || event.key === "Enter") {
       const card = state.queue[state.index];
-      if (state.revealed) {
+      if (state.mock) {
+        // Enter on a focused button already clicks it.
+        if (event.key === "Enter" && !(event.target instanceof Element && event.target.closest("button"))) {
+          event.preventDefault();
+          saveMockAnswer();
+        }
+      } else if (state.revealed) {
         event.preventDefault();
         grade(state.choiceResult);
       } else if (isMultiChoice(card) && event.key === "Enter") {

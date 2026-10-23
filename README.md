@@ -1,6 +1,6 @@
 # Examen de Nacionalización Ecuatoriana
 
-Página web para practicar el examen de nacionalización ecuatoriana con preguntas de estudio. Funciona en el navegador de la computadora y del teléfono. Tiene 723 preguntas sobre símbolos patrios, geografía, historia, política y cultura del Ecuador.
+Página web para practicar el examen de nacionalización ecuatoriana con preguntas de estudio. Funciona en el navegador de la computadora y del teléfono. Tiene 714 preguntas sobre símbolos patrios, geografía, historia, política y cultura del Ecuador.
 
 > [!IMPORTANT]
 > **Este proyecto es completamente gratuito y tiene fines exclusivamente pedagógicos.** No es material oficial ni está avalado por ninguna institución del Estado ecuatoriano. El contenido puede contener errores u omisiones. Para requisitos y trámites, consulta la información oficial en [gob.ec: Obtención de la nacionalidad ecuatoriana por carta de naturalización](https://www.gob.ec/mremh/tramites/obtencion-nacionalidad-ecuatoriana-carta-naturalizacion).
@@ -23,7 +23,7 @@ El inicio tiene tres bloques: **Mi progreso** (ver más abajo), **Formas de prac
 
 - **Formas de practicar**
   - **Repaso inteligente:** arma solo un examen del tamaño de tu meta diaria. Primero pone las preguntas que te toca repasar y luego algunas que nunca viste. Usa repetición espaciada: cada vez que aciertas una pregunta, vuelve después de más días (1, 3, 7, 14 y 30); si la fallas, vuelve enseguida.
-  - **Simulacro:** 30 preguntas al azar de todos los temas, repartidas por igual, como en el examen real. Al final te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
+  - **Simulacro:** 30 preguntas de selección, como en el examen real: 15 entre las que más se repiten y 15 al azar de todos los temas, repartidas por igual. Mientras respondes no ves si acertaste ni el contador de aciertos seguidos; al final aparecen las falladas, con tu respuesta y la correcta, y las acertadas. También te dice si habrías aprobado: se aprueba con el 90 %, es decir, 27 aciertos ([artículo 67 del Reglamento a la Ley Orgánica de Movilidad Humana, según la Cancillería](https://www.cancilleria.gob.ec/2019/12/23/examenes-de-simbolos-patrios-para-obtener-carta-de-naturalizacion-se-rendiran-a-traves-del-sistema-informatico/)).
   - **Por temas:** abre una pantalla donde eliges categorías y subcategorías (por ejemplo, *Geografía › Volcanes*), cuántas preguntas y si van en orden aleatorio. Desde ahí también se imprime, y **Compartir esta selección** da un enlace que abre la misma pantalla con esos temas marcados (por ejemplo, para mandar solo *Símbolos Patrios › Himno Nacional*).
   - **Modo estudio:** eliges temas como en «Por temas», pero cada pregunta aparece ya con su respuesta, la explicación y la foto, sin calificación. Avanzas con **Siguiente** (o la flecha derecha, `Espacio` o `Enter`) y retrocedes con **Anterior** (o la flecha izquierda). No cuenta para la racha ni para las falladas. Al terminar puedes practicar esas mismas preguntas.
   - **Símbolos patrios:** la bandera, el escudo y el himno, uno debajo del otro, con su imagen, qué significa cada elemento, su historia y su día. El himno se puede escuchar (versión instrumental de dominio público) y tiene la letra que se canta y la completa, con sus seis estrofas.
@@ -51,7 +51,7 @@ En el inicio, **Mi progreso** muestra tu racha, cuántas preguntas dominas, cuá
 - **Meta diaria:** eliges 10, 20 o 30 preguntas al día y ves cuántas llevas hoy y cuántos días la cumpliste.
 - **Logros:** 20 medallas, como «Tres días seguidos», «Simulacro aprobado», «Diez seguidas» o «Símbolos dominados». Los nuevos aparecen al terminar un examen.
 
-Durante el examen, un contador muestra tus aciertos seguidos (por ejemplo, «🔥 5 seguidas»); al fallar vuelve a cero sin ningún aviso. Al aprobar un simulacro, terminar un examen con el 90 % o más, cumplir la meta o ganar un logro, cae un poco de confeti con los colores de la bandera.
+Durante el examen (menos en el simulacro), un contador muestra tus aciertos seguidos (por ejemplo, «🔥 5 seguidas»); al fallar vuelve a cero sin ningún aviso. Al aprobar un simulacro, terminar un examen con el 90 % o más, cumplir la meta o ganar un logro, cae un poco de confeti con los colores de la bandera.
 
 Todo se guarda solo en el navegador de cada dispositivo. Para pasarlo a otro teléfono o computadora, en **Mis datos** usa **Descargar mis datos** (guarda un archivo) y luego **Cargar mis datos** en el otro dispositivo. **Borrar mi progreso** lo reinicia sin tocar tus falladas, marcadas ni exámenes.
 
@@ -77,7 +77,7 @@ Para obtener un PDF, elige «Guardar como PDF» en el diálogo de impresión del
 
 ### Usar sin conexión e instalar en el teléfono
 
-Después de la primera visita con internet, la página funciona sin conexión: guarda la página, las preguntas y las imágenes de las preguntas (mapas, escudo y bandera). Las fotos de las respuestas se guardan a medida que las ves. El audio del himno es lo único que necesita conexión. Cuando vuelve la conexión, se descargan solas las preguntas actualizadas.
+En la primera visita con internet, la página descarga todo lo que necesita (unos 23 MB, una sola vez): la página, las preguntas, las imágenes, las fotos de las respuestas, el mapa y el audio del himno. Después funciona sin conexión. Cuando vuelve la conexión, se descargan solas las preguntas actualizadas.
 
 También se puede instalar como una app. En el inicio aparece un botón **Instalar app** (en Android y en Chrome o Edge de computadora) o, en el iPhone, las instrucciones para hacerlo; también se puede hacer a mano:
 
@@ -103,10 +103,11 @@ La configuración se guarda en tu navegador. La letra es [Atkinson Hyperlegible]
 
 | Tipo | Cómo se ve |
 |---|---|
-| Selección | Es el tipo más común, como en el examen real. Hay hasta cuatro opciones. Si la pregunta dice «Selecciona todas las respuestas correctas», puede haber varias: márcalas y pulsa **Comprobar** (o `Enter`). Al responder se marcan las correctas, el acierto se cuenta solo y suele aparecer una breve explicación. Las opciones se eligen también con las teclas `1` a `4`. En lagos, volcanes, parques nacionales y la mayoría de los temas de Cultura también aparece una foto. |
-| Pregunta y respuesta | Quedan pocas, las que piden una lista (por ejemplo, las atribuciones de cada función del Estado). La respuesta aparece debajo de la pregunta y tú indicas si acertaste. |
-| Texto con huecos | Cada parte oculta se ve como `?` y se completa al revelarla. |
-| Imagen | Un recuadro amarillo tapa una parte de la imagen (por ejemplo, la capital de una provincia en el mapa) y desaparece al revelarla. |
+| Selección | Es el tipo más común, como en el examen real. Hay hasta cuatro opciones. Si hay una sola respuesta, las opciones tienen marcas redondas y el aviso «Una sola respuesta». Si hay varias, las marcas son cuadradas y el aviso, resaltado, dice «Varias respuestas: marca todas las correctas»: márcalas y pulsa **Comprobar** (o `Enter`). Al responder se marcan las correctas, el acierto se cuenta solo y suele aparecer una breve explicación. Las opciones se eligen también con las teclas `1` a `4`. En lagos, volcanes, parques nacionales y la mayoría de los temas de Cultura también aparece una foto. |
+| Texto con huecos | Solo la letra cantada del himno. Cada parte oculta se ve como `?` y se completa al revelarla; tú indicas si acertaste. |
+| Imagen | Las partes del escudo y de la bandera, y las capitales en el mapa. Un recuadro amarillo tapa una parte de la imagen y desaparece al revelarla; tú indicas si acertaste. Cada una tiene también su pregunta de selección, sin imagen. |
+
+Las preguntas de huecos y de imagen no salen en el simulacro, que solo usa preguntas de selección.
 
 ## Colaborar
 

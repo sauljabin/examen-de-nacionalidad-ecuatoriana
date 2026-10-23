@@ -221,7 +221,7 @@
         </article>
         <article class="practice-card">
           <h3>Simulacro</h3>
-          <p>30 preguntas al azar de todos los temas, como en el examen. Para aprobar se necesitan 27 aciertos (90&nbsp;%).</p>
+          <p>30 preguntas de selección, como en el examen: la mitad entre las que más se repiten y el resto al azar de todos los temas. Las respuestas se ven al final. Para aprobar se necesitan 27 aciertos (90&nbsp;%).</p>
           <div class="practice-actions">
             <button id="start-mock" class="primary" type="button">Empezar simulacro</button>
           </div>
@@ -352,7 +352,7 @@
       </details>
       <details>
         <summary>¿Funciona sin internet?</summary>
-        <p>Sí. Después de abrirla una vez con internet, funciona sin conexión; solo el audio del himno necesita internet. También puedes instalarla como una app en tu teléfono o computadora.</p>
+        <p>Sí. La primera vez que la abres con internet, se descarga todo lo que necesita (unos 23&nbsp;MB, una sola vez): preguntas, imágenes, fotos y el audio del himno. Después funciona sin conexión. También puedes instalarla como una app en tu teléfono o computadora.</p>
       </details>
       <details>
         <summary>Encontré un error en una pregunta, ¿cómo lo aviso?</summary>
@@ -497,6 +497,8 @@
       <p class="save-done" hidden>Guardado en «Mis exámenes». <button class="link open-saved" type="button">Ver y compartir</button></p>
       <h2 class="missed-title">Preguntas falladas</h2>
       <ol class="missed"></ol>
+      <h2 class="missed-title right-title" hidden>Preguntas acertadas</h2>
+      <ol class="missed right-answers" hidden></ol>
     </section>
   </template>
 

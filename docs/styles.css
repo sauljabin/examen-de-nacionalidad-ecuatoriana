@@ -756,7 +756,56 @@ select {
 .options kbd { flex: none; }
 .options button.is-selected { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
 .options button.is-missed { border-style: dashed; }
-.choice-hint { margin: 1rem 0 0; color: var(--muted); font-size: .95rem; font-weight: 700; white-space: normal; }
+
+/* One answer: round marks, like radio buttons. Several: square marks, like
+   checkboxes, and a highlighted hint above the options. */
+.option-mark {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 1.15em;
+  height: 1.15em;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+.is-multi .option-mark { border-radius: 4px; }
+.options button:is(.is-selected, .was-picked) .option-mark::after {
+  content: "";
+  width: .5em;
+  height: .5em;
+  border-radius: 50%;
+  background: currentColor;
+}
+.options.is-multi button:is(.is-selected, .was-picked) .option-mark { background: currentColor; }
+.options.is-multi button:is(.is-selected, .was-picked) .option-mark::after {
+  width: .28em;
+  height: .55em;
+  margin-top: -.12em;
+  border: solid var(--surface);
+  border-width: 0 2px 2px 0;
+  border-radius: 0;
+  background: none;
+  transform: rotate(45deg);
+}
+.choice-hint {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: .5rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: .95rem;
+  font-weight: 700;
+  white-space: normal;
+}
+.choice-hint .option-mark { width: 1em; height: 1em; }
+.choice-hint.is-multi {
+  padding: .3rem .75rem;
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: var(--ink);
+}
 
 .explanation {
   margin: .5rem 0 0;
@@ -837,6 +886,9 @@ select {
 }
 .missed p { margin: 0; }
 .missed-answer { margin-top: .4rem !important; font-weight: 700; color: var(--accent); }
+.missed-answer.is-right { color: var(--right); }
+.picked-answer { margin-top: .4rem !important; font-weight: 700; color: var(--wrong); }
+.right-title { margin-top: 2rem; }
 .missed .occlusion { margin-top: .5rem; }
 
 /* Exam builder and shared exams --------------------------------------------- */
