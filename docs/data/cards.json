@@ -207,7 +207,7 @@
          "bold": true
         },
         {
-         "text": " izó por primera vez la bandera "
+         "text": " izó por primera vez en suelo venezolano la bandera "
         },
         {
          "text": "tri",
@@ -2268,59 +2268,20 @@
       },
       {
        "id": "63Ajtq6mcg7rvSVIN.f",
-       "type": "basic",
+       "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es el porcentaje aproximado de fauna y flora que se encuentra en Ecuador en relación con el total mundial?"
+         "text": "¿Qué porcentaje aproximado de la fauna y de la flora del mundo tiene el Ecuador?"
         }
        ],
-       "back": [
-        {
-         "text": "Aproximadamente el "
-        },
-        {
-         "text": "8%",
-         "bold": true
-        },
-        {
-         "text": " de las especies "
-        },
-        {
-         "text": "animales",
-         "bold": true
-        },
-        {
-         "text": " globales y alrededor del "
-        },
-        {
-         "text": "10%",
-         "bold": true
-        },
-        {
-         "text": " de todas las especies de "
-        },
-        {
-         "text": "plantas",
-         "bold": true
-        },
-        {
-         "text": " del mundo, incluyendo un impresionante "
-        },
-        {
-         "text": "18%",
-         "bold": true
-        },
-        {
-         "text": " de las especies de "
-        },
-        {
-         "text": "aves",
-         "bold": true
-        },
-        {
-         "text": " a nivel mundial."
-        }
-       ]
+       "options": [
+        "8 % de la fauna y 10 % de la flora",
+        "18 % de la fauna y 8 % de la flora",
+        "10 % de la fauna y 25 % de la flora",
+        "2 % de la fauna y 5 % de la flora"
+       ],
+       "answer": 0,
+       "explanation": "El 10 % de las plantas lo respalda el informe del Ecuador al Convenio sobre Diversidad Biológica, con apenas el 0,2 % de la superficie terrestre del planeta. El 8 % de los animales es aproximado, porque cambia según el grupo: cerca del 18 % de las aves y del 7 % de los anfibios y mamíferos."
       },
       {
        "id": "aves",
@@ -4594,16 +4555,17 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué tipo de ecosistema predomina en las Islas Galápagos?"
+         "text": "¿Qué ecosistema ocupa la mayor parte del área protegida de Galápagos?"
         }
        ],
        "options": [
-        "Marino",
-        "Páramo andino",
-        "Selva amazónica",
-        "Bosque nublado"
+        "El marino",
+        "El árido",
+        "El páramo andino",
+        "La selva amazónica"
        ],
        "answer": 0,
+       "explanation": "La Reserva Marina mide unos 138 000 km², y el Parque Nacional, en tierra, unos 7600 km². En las islas, la zona de vegetación más extensa es la árida.",
        "photo": {
         "src": "images/foto-iguana-marina.jpg",
         "alt": "Iguana marina en Galápagos",
@@ -6487,7 +6449,7 @@
         "Los Mayas"
        ],
        "answer": 0,
-       "explanation": "Luego fueron integrados al Imperio inca."
+       "explanation": "Así se suele llamar a los pueblos que vivían en la zona de Quito antes de los incas, que luego los integraron a su imperio. El «Reino de Quito» de los shyris, que describió Juan de Velasco en 1789, se considera hoy una leyenda: no hay pruebas arqueológicas de que existiera."
       },
       {
        "id": "QeYjeCqKh0XZx7Dcc.f",
@@ -6566,7 +6528,7 @@
     {
      "id": "1534-fundacion-de-quito",
      "title": "1534 Fundación de Quito",
-     "summary": "Francisco Pizarro ordenó ejecutar a Atahualpa, el último emperador inca. El 15 de agosto de 1534 Diego de Almagro fundó una primera ciudad cerca de la actual Riobamba, y el 6 de diciembre de 1534 Sebastián de Benalcázar fundó San Francisco de Quito a los pies del Pichincha; esa es la fecha que se celebra. Pizarro nombró a su hermano Gonzalo gobernador de Quito. Almagro recibió de la Corona la gobernación de Nueva Toledo, al sur, y se disputó con Pizarro el control del Cusco.",
+     "summary": "Francisco Pizarro ordenó ejecutar a Atahualpa, el último emperador del Tahuantinsuyo. El 15 de agosto de 1534 Diego de Almagro fundó una primera ciudad cerca de la actual Riobamba, y el 6 de diciembre de 1534 Sebastián de Benalcázar fundó San Francisco de Quito a los pies del Pichincha; esa es la fecha que se celebra. Pizarro nombró a su hermano Gonzalo gobernador de Quito. Almagro recibió de la Corona la gobernación de Nueva Toledo, al sur, y se disputó con Pizarro el control del Cusco.",
      "cards": [
       {
        "id": "C0ZA6VLXwizIrn2bw.f",
@@ -6638,7 +6600,7 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién fue el último emperador Inca?"
+         "text": "¿Quién fue el último emperador del Tahuantinsuyo antes de la conquista española?"
         }
        ],
        "options": [
@@ -6648,7 +6610,7 @@
         "Rumiñahui"
        ],
        "answer": 0,
-       "explanation": "Huáscar fue su hermano y rival, y Huayna Cápac, su padre."
+       "explanation": "Lo ejecutaron los españoles en 1533. Huáscar fue su hermano y rival, y Huayna Cápac, su padre. Después, algunos incas resistieron en Vilcabamba hasta 1572, pero ya sin el imperio."
       },
       {
        "id": "eLkCc2xfav1ZSpuHR.f",
