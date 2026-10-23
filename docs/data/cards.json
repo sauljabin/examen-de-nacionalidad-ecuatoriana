@@ -2141,6 +2141,112 @@
        "explanation": "Galápagos, la cuarta región, está en el océano Pacífico, fuera del continente."
       },
       {
+       "id": "v1fRapTTKk5Vx0DQX.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la carretera que atraviesa el Ecuador desde el norte al sur?"
+        }
+       ],
+       "options": [
+        "La carretera Panamericana",
+        "La Ruta Viva",
+        "La vía Interoceánica",
+        "La vía Alóag–Santo Domingo"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "zhuprqWA6xMYZUXtD.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué nombre toma la carretera Panamericana en el Ecuador?"
+        }
+       ],
+       "options": [
+        "Troncal de la Sierra (E35)",
+        "Troncal Amazónica (E45)",
+        "Ruta del Spondylus (E15)",
+        "Troncal de la Costa (E25)"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "ubicacion",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Dónde está ubicado el Ecuador?"
+        }
+       ],
+       "options": [
+        "En el noroeste de América del Sur, atravesado por la línea equinoccial",
+        "En el noreste de América del Sur, junto al océano Atlántico",
+        "En el centro de América del Sur, sin salida al mar",
+        "En el sur de América del Sur, junto a Chile"
+       ],
+       "answer": 0,
+       "explanation": "Por eso el país se llama Ecuador: lo cruza la línea ecuatorial."
+      },
+      {
+       "id": "amazonia-area",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué superficie tiene aproximadamente la región amazónica del Ecuador?"
+        }
+       ],
+       "options": [
+        "Unos 120 000 km²",
+        "Unos 12 000 km²",
+        "Unos 283 000 km²",
+        "Unos 60 000 km²"
+       ],
+       "answer": 0,
+       "explanation": "Todo el país mide unos 283 561 km², así que la Amazonía ocupa casi la mitad."
+      },
+      {
+       "id": "nOerEN51AB2epqhvA.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A qué se debe el nombre de la República del Ecuador?"
+        }
+       ],
+       "options": [
+        "Su ubicación en la línea ecuatorial",
+        "El nombre de un pueblo indígena",
+        "El apellido de un conquistador",
+        "El nombre de un río"
+       ],
+       "answer": 0,
+       "explanation": "La línea ecuatorial también se llama línea equinoccial."
+      }
+     ]
+    },
+    {
+     "id": "clima-y-biodiversidad",
+     "title": "Clima y biodiversidad",
+     "cards": [
+      {
+       "id": "clima",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿De qué depende principalmente el clima de cada lugar del Ecuador?"
+        }
+       ],
+       "options": [
+        "De la altitud",
+        "De las estaciones del año, como en Europa",
+        "De la distancia al océano Atlántico",
+        "De la cercanía a la frontera con Colombia"
+       ],
+       "answer": 0,
+       "explanation": "Por estar en la línea equinoccial casi no hay estaciones: a más altura, más frío."
+      },
+      {
        "id": "Nv1EhYu0z25n6Tjl4.f",
        "type": "basic",
        "front": [
@@ -2211,105 +2317,6 @@
        ]
       },
       {
-       "id": "0f1ExhRfs8IZUfiht.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "En los Andes, ¿cuál planta demuestra la mayor diversidad de especies en el mundo?"
-        }
-       ],
-       "options": [
-        "Las orquídeas",
-        "Las rosas",
-        "Los cactus",
-        "Los girasoles"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "v1fRapTTKk5Vx0DQX.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es la carretera que atraviesa el Ecuador desde el norte al sur?"
-        }
-       ],
-       "options": [
-        "La carretera Panamericana",
-        "La Ruta Viva",
-        "La vía Interoceánica",
-        "La vía Alóag–Santo Domingo"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "zhuprqWA6xMYZUXtD.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué nombre toma la carretera Panamericana en el Ecuador?"
-        }
-       ],
-       "options": [
-        "Troncal de la Sierra (E35)",
-        "Troncal Amazónica (E45)",
-        "Ruta del Spondylus (E15)",
-        "Troncal de la Costa (E25)"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "ubicacion",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Dónde está ubicado el Ecuador?"
-        }
-       ],
-       "options": [
-        "En el noroeste de América del Sur, atravesado por la línea equinoccial",
-        "En el noreste de América del Sur, junto al océano Atlántico",
-        "En el centro de América del Sur, sin salida al mar",
-        "En el sur de América del Sur, junto a Chile"
-       ],
-       "answer": 0,
-       "explanation": "Por eso el país se llama Ecuador: lo cruza la línea ecuatorial."
-      },
-      {
-       "id": "amazonia-area",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué superficie tiene aproximadamente la región amazónica del Ecuador?"
-        }
-       ],
-       "options": [
-        "Unos 120 000 km²",
-        "Unos 12 000 km²",
-        "Unos 283 000 km²",
-        "Unos 60 000 km²"
-       ],
-       "answer": 0,
-       "explanation": "Todo el país mide unos 283 561 km², así que la Amazonía ocupa casi la mitad."
-      },
-      {
-       "id": "clima",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿De qué depende principalmente el clima de cada lugar del Ecuador?"
-        }
-       ],
-       "options": [
-        "De la altitud",
-        "De las estaciones del año, como en Europa",
-        "De la distancia al océano Atlántico",
-        "De la cercanía a la frontera con Colombia"
-       ],
-       "answer": 0,
-       "explanation": "Por estar en la línea equinoccial casi no hay estaciones: a más altura, más frío."
-      },
-      {
        "id": "aves",
        "type": "choice",
        "front": [
@@ -2327,21 +2334,20 @@
        "explanation": "Es una de las mayores variedades de aves del planeta para un país de su tamaño."
       },
       {
-       "id": "nOerEN51AB2epqhvA.f",
+       "id": "0f1ExhRfs8IZUfiht.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿A qué se debe el nombre de la República del Ecuador?"
+         "text": "En los Andes, ¿cuál planta demuestra la mayor diversidad de especies en el mundo?"
         }
        ],
        "options": [
-        "Su ubicación en la línea ecuatorial",
-        "El nombre de un pueblo indígena",
-        "El apellido de un conquistador",
-        "El nombre de un río"
+        "Las orquídeas",
+        "Las rosas",
+        "Los cactus",
+        "Los girasoles"
        ],
-       "answer": 0,
-       "explanation": "La línea ecuatorial también se llama línea equinoccial."
+       "answer": 0
       }
      ]
     },
@@ -4354,23 +4360,6 @@
        "explanation": "Guayaquil es la ciudad más poblada; en Riobamba se reunió la primera Asamblea Constituyente, en 1830."
       },
       {
-       "id": "cerro-santa-ana",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué cerro de Guayaquil ofrece una vista de 360 grados de la ciudad y de los ríos Daule y Babahoyo?"
-        }
-       ],
-       "options": [
-        "El cerro Santa Ana",
-        "El Panecillo",
-        "El cerro Blanco",
-        "El Itchimbía"
-       ],
-       "answer": 0,
-       "explanation": "Se sube por las escalinatas del barrio Las Peñas. El Panecillo y el Itchimbía están en Quito."
-      },
-      {
        "id": "SYyPWhgq8EN807wyS.f",
        "type": "choice",
        "front": [
@@ -4570,6 +4559,52 @@
        ],
        "answer": 0,
        "explanation": "Además tiene unas seis islas medianas y más de 200 islotes."
+      },
+      {
+       "id": "gE6rMJCgy5IBxBRy5.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el animal más representativo de las Islas Galápagos (archipiélago de Colón)?"
+        }
+       ],
+       "options": [
+        "La tortuga gigante",
+        "El oso de anteojos",
+        "El cóndor andino",
+        "El jaguar"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-tortuga-gigante.jpg",
+        "alt": "Tortuga gigante de Galápagos",
+        "credit": "Matthew Field",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg"
+       }
+      },
+      {
+       "id": "7Zq9O9nezbkc7ihAR.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué tipo de ecosistema predomina en las Islas Galápagos?"
+        }
+       ],
+       "options": [
+        "Marino",
+        "Páramo andino",
+        "Selva amazónica",
+        "Bosque nublado"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-iguana-marina.jpg",
+        "alt": "Iguana marina en Galápagos",
+        "credit": "Ekki3",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:313_Rabida,_Iguana.jpg"
+       }
       }
      ]
     },
@@ -5219,17 +5254,17 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿En qué provincia se encuentra el volcán Sangay?"
+         "text": "¿En qué provincias está el Parque Nacional Sangay?"
         }
        ],
        "options": [
-        "Morona Santiago",
-        "Pastaza",
-        "Napo",
-        "Zamora Chinchipe"
+        "Morona Santiago, Chimborazo, Tungurahua y Cañar",
+        "Orellana y Pastaza",
+        "Cotopaxi, Pichincha y Napo",
+        "Loja y Zamora Chinchipe"
        ],
        "answer": 0,
-       "explanation": "Está dentro del Parque Nacional Sangay.",
+       "explanation": "Va de la Sierra a la Amazonía y es Patrimonio Natural de la Humanidad desde 1983. Orellana y Pastaza son del Yasuní; Cotopaxi, Pichincha y Napo, del Parque Nacional Cotopaxi; Loja y Zamora Chinchipe, del Podocarpus.",
        "photo": {
         "src": "images/foto-sangay.jpg",
         "alt": "Volcán Sangay",
@@ -5437,52 +5472,6 @@
         2
        ],
        "explanation": "Aunque lleva el nombre del volcán, el parque se extiende por tres provincias."
-      },
-      {
-       "id": "gE6rMJCgy5IBxBRy5.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es el animal más representativo de las Islas Galápagos (archipiélago de Colón)?"
-        }
-       ],
-       "options": [
-        "La tortuga gigante",
-        "El oso de anteojos",
-        "El cóndor andino",
-        "El jaguar"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-tortuga-gigante.jpg",
-        "alt": "Tortuga gigante de Galápagos",
-        "credit": "Matthew Field",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg"
-       }
-      },
-      {
-       "id": "7Zq9O9nezbkc7ihAR.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué tipo de ecosistema predomina en las Islas Galápagos?"
-        }
-       ],
-       "options": [
-        "Marino",
-        "Páramo andino",
-        "Selva amazónica",
-        "Bosque nublado"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-iguana-marina.jpg",
-        "alt": "Iguana marina en Galápagos",
-        "credit": "Ekki3",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:313_Rabida,_Iguana.jpg"
-       }
       }
      ]
     },
@@ -10652,6 +10641,23 @@
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Quito_Centro_Hist%C3%B3rico.JPG"
        }
+      },
+      {
+       "id": "cerro-santa-ana",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué cerro de Guayaquil ofrece una vista de 360 grados de la ciudad y de los ríos Daule y Babahoyo?"
+        }
+       ],
+       "options": [
+        "El cerro Santa Ana",
+        "El Panecillo",
+        "El cerro Blanco",
+        "El Itchimbía"
+       ],
+       "answer": 0,
+       "explanation": "Se sube por las escalinatas del barrio Las Peñas. El Panecillo y el Itchimbía están en Quito."
       }
      ]
     },
