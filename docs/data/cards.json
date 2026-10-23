@@ -1443,7 +1443,7 @@
         }
        ],
        "options": [
-        "La unión de los ecuatorianos como una gran familia que comparte las riquezas de la tierra",
+        "La unión del pueblo ecuatoriano como una gran familia que comparte las riquezas de la tierra",
         "La navegación y el comercio",
         "La paz en la nación",
         "La fuerza pública"
@@ -8753,10 +8753,10 @@
         "Las que obtienen la carta de naturalización",
         "Todas las que viven en el Ecuador más de un año",
         "Las nacidas en el Ecuador",
-        "Los hijos de ecuatorianos nacidos en el extranjero"
+        "Las nacidas en el extranjero de madre o padre nacidos en el Ecuador"
        ],
        "answer": 0,
-       "explanation": "Las personas nacidas en el Ecuador y los hijos de ecuatorianos nacidos en el exterior son ecuatorianos por nacimiento."
+       "explanation": "Las personas nacidas en el Ecuador y las nacidas en el extranjero de madre o padre nacidos en el Ecuador son ecuatorianas por nacimiento."
       },
       {
        "id": "PVpXghGc3UbVEwf9t.f",
@@ -9263,7 +9263,7 @@
        "options": [
         "Administrar la justicia en el país",
         "Garantizar el respeto a la Constitución y a las leyes",
-        "Proteger los derechos y garantías fundamentales de los ciudadanos",
+        "Proteger los derechos y garantías fundamentales de la ciudadanía",
         "Crear y aprobar las leyes"
        ],
        "answer": [
