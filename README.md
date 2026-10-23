@@ -31,11 +31,11 @@ El inicio tiene tres bloques: **Mi progreso** (ver más abajo), **Formas de prac
   - **Mapa de provincias:** en **Explorar**, tocas una provincia y ves su capital y su región, con los colores de las cuatro regiones. En **Jugar**, la página te pide las 24 provincias en desorden y las encuentras en el mapa.
   - **Falladas:** las preguntas que respondes mal se guardan solas, aunque cierres la página. Cuando aciertas una, sale de la lista.
   - **Marcadas:** durante un examen o en el buscador, el botón **Marcar** (o la tecla `M`) guarda una pregunta para repasarla después.
-- **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Arriba aparecen tres exámenes **recomendados** de 30 preguntas, «Lo esencial», «Lo importante» y «Para completar», con las preguntas que más se repiten en las guías de estudio públicas que arma gente que ya dio el examen oficial. Es una referencia, no una garantía de que salgan. Para tener un examen propio hay dos formas:
+- **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Arriba aparecen cuatro exámenes **recomendados** de 30 preguntas, «Lo esencial», «Lo importante», «Para reforzar» y «Complementarias», con las preguntas que más se repiten en las guías de estudio públicas que arma gente que ya dio el examen oficial. Es una referencia, no una garantía de que salgan. Para tener un examen propio hay dos formas:
   - **Crear examen:** elige preguntas con el buscador o desde tus marcadas y falladas, ponle un nombre y pulsa **Guardar**.
   - **Al terminar cualquier examen**, incluido un simulacro, escribe un nombre y pulsa **Guardar**.
 
-Cada examen guardado tiene un enlace para compartirlo: quien lo abra verá las mismas preguntas, sin registrarse, y podrá guardarlo en sus propios exámenes. También se puede imprimir, editar o eliminar.
+Cada examen guardado tiene un enlace para compartirlo: quien lo abra verá las mismas preguntas, sin registrarse, y podrá guardarlo en sus propios exámenes. También se puede imprimir, editar o eliminar. Los exámenes recomendados y los que te comparten no se editan: **Copiar y editar** crea una copia tuya, y el original queda igual.
 
 Las listas y los exámenes se guardan solo en el navegador de cada dispositivo. Un examen compartido viaja completo dentro del enlace (un código corto por pregunta después de `#examen=`), así que no hace falta ningún servidor.
 

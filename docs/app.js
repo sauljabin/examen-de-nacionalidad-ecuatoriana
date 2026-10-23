@@ -765,7 +765,7 @@ function renderSavedExam(exam, { featured = false } = {}) {
   open.className = "ghost";
   open.textContent = "Ver";
   open.setAttribute("aria-label", featured
-    ? `Ver «${exam.title}»: compartir o imprimir`
+    ? `Ver «${exam.title}»: compartir, imprimir o copiar y editar`
     : `Ver «${exam.title}»: compartir, imprimir, editar o eliminar`);
   open.addEventListener("click", () => openSavedExam(exam));
   item.append(info, start, open);
@@ -2443,11 +2443,15 @@ function showShared({ cards, title, missing = 0 }) {
       text: `Ya estabas creando un examen con ${plural(draft.length, "pregunta", "preguntas")}. Si sigues, se reemplaza por este.`,
       ok: "Reemplazar",
     }))) return;
-    progress.draft = { title: saved?.title || title, ids, editing: saved?.id };
+    // Only your own saved exams change in place; any other one is copied.
+    progress.draft = saved
+      ? { title: saved.title, ids, editing: saved.id }
+      : { title: featured ? `${title} (copia)` : title, ids };
     saveProgress();
     showBuilder();
   });
   const saved = findSavedExam(ids);
+  app.querySelector(".edit-shared").textContent = saved ? "Editar" : "Copiar y editar";
   app.querySelector(".shared .eyebrow").textContent =
     saved ? "Mis exámenes" : featured ? "Examen recomendado" : "Examen compartido";
   const save = app.querySelector(".save-shared");
