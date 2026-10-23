@@ -78,6 +78,8 @@ Mantén siempre estos avisos en el README y en el pie de la página: el proyecto
 - Las funciones del Estado se llaman como en la Constitución: «Función Ejecutiva», «Función Legislativa», «Función Judicial», «Función Electoral» y «Función de Transparencia y Control Social», no «Poder…».
 - Escribe «Cusco», «océano Pacífico» y «Constitución» con mayúscula cuando nombra una constitución concreta («la Constitución de 2008»).
 - Las opciones de las preguntas de selección no llevan punto final.
+- Las explicaciones dan el dato y, si hace falta, su fuente (por ejemplo, la Constitución o un informe oficial). No digas de dónde salió la pregunta: nada de «según las guías de estudio» ni de mazos o páginas de práctica.
+- Si dos preguntas piden el mismo dato con otras palabras, deja una sola y pasa a su explicación lo que la otra tenía de más. Sí valen el mismo dato con y sin imagen (partes del escudo y de la bandera, capitales en el mapa) y las preguntas inversas («¿Quién escribió Cumandá?» y «¿Qué novela escribió Mera en 1879?»).
 
 ## Comandos
 
