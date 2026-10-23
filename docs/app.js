@@ -17,6 +17,8 @@ const state = {
   revealed: false,
   cardsById: new Map(),
   cardsByCode: new Map(),
+  // Preloaded exams ("exams" in cards.json): the questions repeated most often.
+  featuredExams: [],
   // Where "Salir" and the result screen go back to.
   exit: { back: showHome, label: "Volver al inicio" },
   print: { cards: [], title: "" },
@@ -151,6 +153,10 @@ function sameIds(a, b) {
 
 function findSavedExam(ids) {
   return progress.exams.find((exam) => sameIds(exam.ids, ids));
+}
+
+function findFeaturedExam(ids) {
+  return state.featuredExams.find((exam) => sameIds(exam.ids, ids));
 }
 
 // Updates the exam with this id, or the one with the same questions, or adds a new one.
@@ -720,11 +726,17 @@ function setupPractice() {
   updatePractice();
 }
 
-function renderSavedExam(exam) {
+function renderSavedExam(exam, { featured = false } = {}) {
   const cards = cardsFromIds(exam.ids);
   const item = document.createElement("li");
   const info = document.createElement("div");
   info.className = "exam-info";
+  if (featured) {
+    const tag = document.createElement("span");
+    tag.className = "exam-tag";
+    tag.textContent = "Recomendado";
+    info.append(tag);
+  }
   const title = document.createElement("strong");
   title.textContent = exam.title;
   const meta = document.createElement("small");
@@ -740,7 +752,9 @@ function renderSavedExam(exam) {
   open.type = "button";
   open.className = "ghost";
   open.textContent = "Ver";
-  open.setAttribute("aria-label", `Ver «${exam.title}»: compartir, imprimir, editar o eliminar`);
+  open.setAttribute("aria-label", featured
+    ? `Ver «${exam.title}»: compartir o imprimir`
+    : `Ver «${exam.title}»: compartir, imprimir, editar o eliminar`);
   open.addEventListener("click", () => openSavedExam(exam));
   item.append(info, start, open);
   return item;
@@ -769,7 +783,10 @@ function updatePractice() {
   app.querySelector("#clear-marked").hidden = !marked;
   app.querySelector("#open-builder").textContent = draft ? `Seguir creando (${draft})` : "Crear examen";
   app.querySelector(".exams-empty").hidden = exams.length > 0;
-  app.querySelector(".exam-list").replaceChildren(...exams.map(renderSavedExam));
+  app.querySelector(".exam-list").replaceChildren(
+    ...state.featuredExams.map((exam) => renderSavedExam(exam, { featured: true })),
+    ...exams.map((exam) => renderSavedExam(exam)),
+  );
   updateProgressSummary();
 }
 
@@ -1824,9 +1841,12 @@ function showShared({ cards, title, missing = 0 }) {
   showScreen("shared-template");
   app.querySelector(".shared-title").textContent = title || "Examen personalizado";
   const categories = [...new Set(cards.map((card) => card.category))];
+  const ids = cards.map((card) => card.id);
+  const featured = findFeaturedExam(ids);
   app.querySelector(".shared-summary").textContent = cards.length
     ? `${plural(cards.length, "pregunta", "preguntas")} de ${joinList(categories)}.`
     : "Este enlace no tiene preguntas.";
+  app.querySelector(".shared-about").hidden = !featured;
   if (missing) {
     const warning = app.querySelector(".shared-warning");
     warning.hidden = false;
@@ -1872,10 +1892,11 @@ function showShared({ cards, title, missing = 0 }) {
     saveProgress();
     showBuilder();
   });
-  const saved = findSavedExam(cards.map((card) => card.id));
-  app.querySelector(".shared .eyebrow").textContent = saved ? "Mis exámenes" : "Examen compartido";
+  const saved = findSavedExam(ids);
+  app.querySelector(".shared .eyebrow").textContent =
+    saved ? "Mis exámenes" : featured ? "Examen recomendado" : "Examen compartido";
   const save = app.querySelector(".save-shared");
-  save.hidden = Boolean(saved);
+  save.hidden = Boolean(saved || featured);
   save.addEventListener("click", () => openSavedExam(saveExam({ title, ids: cards.map((card) => card.id) })));
   const remove = app.querySelector(".delete-shared");
   remove.hidden = !saved;
@@ -2234,6 +2255,7 @@ fetch("data/cards.json")
   .then((response) => response.json())
   .then((data) => {
     state.categories = data.categories;
+    state.featuredExams = data.exams || [];
     state.allCards = [];
     for (const category of data.categories) {
       for (const sub of category.subcategories) {

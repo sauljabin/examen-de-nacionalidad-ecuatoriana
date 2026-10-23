@@ -1,6 +1,6 @@
 # Examen de Nacionalización Ecuatoriana
 
-Página web para practicar el examen de nacionalización ecuatoriana con preguntas de estudio. Funciona en el navegador de la computadora y del teléfono. Tiene 691 preguntas sobre símbolos patrios, geografía, historia, política y cultura del Ecuador.
+Página web para practicar el examen de nacionalización ecuatoriana con preguntas de estudio. Funciona en el navegador de la computadora y del teléfono. Tiene 745 preguntas sobre símbolos patrios, geografía, historia, política y cultura del Ecuador.
 
 > [!IMPORTANT]
 > **Este proyecto es completamente gratuito y tiene fines exclusivamente pedagógicos.** No es material oficial ni está avalado por ninguna institución del Estado ecuatoriano. El contenido puede contener errores u omisiones. Para requisitos y trámites, consulta la información oficial en [gob.ec: Obtención de la nacionalidad ecuatoriana por carta de naturalización](https://www.gob.ec/mremh/tramites/obtencion-nacionalidad-ecuatoriana-carta-naturalizacion).
@@ -28,7 +28,7 @@ El inicio tiene tres bloques: **Mi progreso** (ver más abajo), **Formas de prac
   - **Modo estudio:** eliges temas como en «Por temas», pero cada pregunta aparece ya con su respuesta, la explicación y la foto, sin calificación. Avanzas con **Siguiente** (o la flecha derecha, `Espacio` o `Enter`) y retrocedes con **Anterior** (o la flecha izquierda). No cuenta para la racha ni para las falladas. Al terminar puedes practicar esas mismas preguntas.
   - **Falladas:** las preguntas que respondes mal se guardan solas, aunque cierres la página. Cuando aciertas una, sale de la lista.
   - **Marcadas:** durante un examen o en el buscador, el botón **Marcar** (o la tecla `M`) guarda una pregunta para repasarla después.
-- **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Hay dos formas de tener uno:
+- **Mis exámenes:** los exámenes que guardaste, para repetirlos o compartirlos. Arriba aparecen tres exámenes **recomendados** de 30 preguntas, «Lo esencial», «Lo importante» y «Para completar», con las preguntas que más se repiten en las guías de estudio públicas que arma gente que ya dio el examen oficial. Es una referencia, no una garantía de que salgan. Para tener un examen propio hay dos formas:
   - **Crear examen:** elige preguntas con el buscador o desde tus marcadas y falladas, ponle un nombre y pulsa **Guardar**.
   - **Al terminar cualquier examen**, incluido un simulacro, escribe un nombre y pulsa **Guardar**.
 

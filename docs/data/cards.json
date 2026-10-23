@@ -454,6 +454,40 @@
         "Celebrar la anexión de Galápagos"
        ],
        "answer": 0
+      },
+      {
+       "id": "bandera-1809",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo era la bandera de los patriotas quiteños después del 10 de agosto de 1809?"
+        }
+       ],
+       "options": [
+        "Roja con una cruz en aspa blanca",
+        "Celeste y blanca con tres estrellas",
+        "Amarilla, azul y roja",
+        "Blanca con un cuadro azul y una estrella"
+       ],
+       "answer": 0,
+       "explanation": "La celeste y blanca con estrellas fue la de Guayaquil en 1820; el tricolor llegó con la Gran Colombia."
+      },
+      {
+       "id": "bandera-guayaquil-1820",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo era la bandera de Guayaquil independiente, en 1820?"
+        }
+       ],
+       "options": [
+        "Franjas celestes y blancas con tres estrellas blancas",
+        "Roja con una cruz en aspa blanca",
+        "Amarilla, azul y roja",
+        "Blanca, celeste y blanca con siete estrellas"
+       ],
+       "answer": 0,
+       "explanation": "La roja con aspa blanca fue la de Quito en 1809, y la de siete estrellas, la de la Revolución Marcista de 1845."
       }
      ]
     },
@@ -1625,6 +1659,40 @@
        ],
        "answer": 0,
        "explanation": "El escudo descansa sobre ellas."
+      },
+      {
+       "id": "escudo-1836",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué representaban las siete estrellas del escudo de 1836, del gobierno de Vicente Rocafuerte?"
+        }
+       ],
+       "options": [
+        "Las siete provincias que tenía entonces el Ecuador",
+        "Las siete batallas de la independencia",
+        "Los siete diputados de la Primera Constituyente",
+        "Las siete ciudades fundadas por los españoles"
+       ],
+       "answer": 0,
+       "explanation": "El escudo de Rocafuerte conservó el sol y las estrellas del primer escudo, y añadió el Guagua y el Rucu Pichincha."
+      },
+      {
+       "id": "escudo-marcista",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué escudo incorporó por primera vez los signos del zodiaco?"
+        }
+       ],
+       "options": [
+        "El de la Revolución Marcista, de 1845",
+        "El de Juan José Flores, de 1830",
+        "El de Vicente Rocafuerte, de 1836",
+        "El de Eloy Alfaro, de 1900"
+       ],
+       "answer": 0,
+       "explanation": "Los signos recuerdan los meses de marzo a junio de 1845, cuando ocurrió la Revolución Marcista. El escudo de 1900 los conservó."
       }
      ]
     },
@@ -2189,6 +2257,74 @@
         "Troncal de la Costa (E25)"
        ],
        "answer": 0
+      },
+      {
+       "id": "ubicacion",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Dónde está ubicado el Ecuador?"
+        }
+       ],
+       "options": [
+        "En el noroeste de América del Sur, atravesado por la línea equinoccial",
+        "En el noreste de América del Sur, junto al océano Atlántico",
+        "En el centro de América del Sur, sin salida al mar",
+        "En el sur de América del Sur, junto a Chile"
+       ],
+       "answer": 0,
+       "explanation": "Por eso el país se llama Ecuador: lo cruza la línea ecuatorial."
+      },
+      {
+       "id": "amazonia-area",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué superficie tiene aproximadamente la región amazónica del Ecuador?"
+        }
+       ],
+       "options": [
+        "Unos 120 000 km²",
+        "Unos 12 000 km²",
+        "Unos 283 000 km²",
+        "Unos 60 000 km²"
+       ],
+       "answer": 0,
+       "explanation": "Todo el país mide unos 283 561 km², así que la Amazonía ocupa casi la mitad."
+      },
+      {
+       "id": "clima",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿De qué depende principalmente el clima de cada lugar del Ecuador?"
+        }
+       ],
+       "options": [
+        "De la altitud",
+        "De las estaciones del año, como en Europa",
+        "De la distancia al océano Atlántico",
+        "De la cercanía a la frontera con Colombia"
+       ],
+       "answer": 0,
+       "explanation": "Por estar en la línea equinoccial casi no hay estaciones: a más altura, más frío."
+      },
+      {
+       "id": "aves",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué parte de las especies de aves del mundo vive en el Ecuador?"
+        }
+       ],
+       "options": [
+        "Cerca del 18 %, más de 1600 especies",
+        "Cerca del 5 %",
+        "Cerca del 35 %",
+        "Cerca del 60 %"
+       ],
+       "answer": 0,
+       "explanation": "Es una de las mayores variedades de aves del planeta para un país de su tamaño."
       }
      ]
     },
@@ -2285,6 +2421,40 @@
         2
        ],
        "explanation": "En total son siete: El Oro, Loja, Zamora Chinchipe, Morona Santiago, Pastaza, Orellana y Sucumbíos. Azuay no tiene frontera internacional."
+      },
+      {
+       "id": "rios-limite",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué ríos marcan parte de las fronteras norte y sur del Ecuador?"
+        }
+       ],
+       "options": [
+        "El Mataje al norte y el Macará al sur",
+        "El Napo al norte y el Guayas al sur",
+        "El Esmeraldas al norte y el Pastaza al sur",
+        "El Daule al norte y el Babahoyo al sur"
+       ],
+       "answer": 0,
+       "explanation": "El Mataje marca el inicio de la frontera con Colombia en la Costa, según el Tratado Muñoz Vernaza-Suárez de 1916, y el Macará es parte del límite con el Perú en Loja. El Napo, el Guayas, el Esmeraldas, el Daule y el Babahoyo corren dentro del país."
+      },
+      {
+       "id": "zif-peru",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Con la paz de 1998 se creó el Plan Binacional para desarrollar la región fronteriza con el Perú. ¿Cuántas provincias ecuatorianas forman esa región?"
+        }
+       ],
+       "options": [
+        "8",
+        "3",
+        "5",
+        "12"
+       ],
+       "answer": 0,
+       "explanation": "Son El Oro, Loja, Zamora Chinchipe, Morona Santiago, Pastaza, Orellana, Sucumbíos y Napo; Napo entra aunque no toca la frontera. Juntas son casi la mitad del territorio nacional."
       }
      ]
     },
@@ -2440,6 +2610,23 @@
         "Guayas"
        ],
        "answer": 0
+      },
+      {
+       "id": "chimborazo-cantones",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuántos cantones tiene la provincia de Chimborazo?"
+        }
+       ],
+       "options": [
+        "10",
+        "24",
+        "5",
+        "15"
+       ],
+       "answer": 0,
+       "explanation": "Todo el Ecuador tiene 24 provincias y 221 cantones."
       }
      ]
     },
@@ -4129,7 +4316,42 @@
         "Manabí",
         "El Oro"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "Por sus grandes haciendas cacaoteras, como las de Vinces, de donde salía el cacao hacia Guayaquil. No la confundas con Zamora Chinchipe, la «cuna del cacao»: en Palanda se hallaron restos de cacao de hace unos 5300 años."
+      },
+      {
+       "id": "capital",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la capital del Ecuador?"
+        }
+       ],
+       "options": [
+        "Quito",
+        "Guayaquil",
+        "Cuenca",
+        "Riobamba"
+       ],
+       "answer": 0,
+       "explanation": "Guayaquil es la ciudad más poblada; en Riobamba se reunió la primera Asamblea Constituyente, en 1830."
+      },
+      {
+       "id": "cerro-santa-ana",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué cerro de Guayaquil ofrece una vista de 360 grados de la ciudad y de los ríos Daule y Babahoyo?"
+        }
+       ],
+       "options": [
+        "El cerro Santa Ana",
+        "El Panecillo",
+        "El cerro Blanco",
+        "El Itchimbía"
+       ],
+       "answer": 0,
+       "explanation": "Se sube por las escalinatas del barrio Las Peñas. El Panecillo y el Itchimbía están en Quito."
       }
      ]
     },
@@ -4233,6 +4455,23 @@
        ],
        "answer": 0,
        "explanation": "Se anexaron el 12 de febrero de 1832, durante el gobierno de Juan José Flores."
+      },
+      {
+       "id": "galapagos-islas-grandes",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuántas islas grandes tiene el archipiélago de Galápagos?"
+        }
+       ],
+       "options": [
+        "13",
+        "7",
+        "24",
+        "50"
+       ],
+       "answer": 0,
+       "explanation": "Además tiene unas seis islas medianas y más de 200 islotes."
       }
      ]
     },
@@ -5697,6 +5936,23 @@
         "100"
        ],
        "answer": 0
+      },
+      {
+       "id": "mojanda",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué estado está el volcán Mojanda-Fuya Fuya, entre Imbabura y Pichincha?"
+        }
+       ],
+       "options": [
+        "Inactivo",
+        "Es el volcán más activo del Ecuador",
+        "En erupción desde 1999",
+        "Activo, con erupciones cada año"
+       ],
+       "answer": 0,
+       "explanation": "Los volcanes más activos son el Sangay y el Reventador. En la caldera del Mojanda están sus lagunas."
       }
      ]
     },
@@ -5827,6 +6083,23 @@
         "100 sistemas hidrográficos con 300 cuencas"
        ],
        "answer": 0
+      },
+      {
+       "id": "rios-por-habitante",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué récord se le atribuye al Ecuador en cuanto a ríos?"
+        }
+       ],
+       "options": [
+        "Tener más ríos por kilómetro cuadrado que cualquier otro país",
+        "Tener el río más largo de América del Sur",
+        "Tener el río más caudaloso del mundo",
+        "Tener el río navegable más alto del mundo"
+       ],
+       "answer": 0,
+       "explanation": "El río más largo y caudaloso es el Amazonas, que nace en el Perú."
       }
      ]
     },
@@ -5934,6 +6207,114 @@
    "id": "historia",
    "title": "Historia",
    "subcategories": [
+    {
+     "id": "epoca-prehispanica",
+     "title": "Época prehispánica",
+     "cards": [
+      {
+       "id": "las-vegas",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué cultura de la península de Santa Elena es una de las más antiguas de la Costa, de hace unos 10 000 años?"
+        }
+       ],
+       "options": [
+        "Las Vegas",
+        "Valdivia",
+        "Machalilla",
+        "Chorrera"
+       ],
+       "answer": 0,
+       "explanation": "Era un pueblo de cazadores, recolectores y pescadores que aún no hacía cerámica. Valdivia, Machalilla y Chorrera son del período Formativo."
+      },
+      {
+       "id": "valdivia-agricola",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué cultura, hacia el 3500 a. C., fue una de las primeras agrícolas y alfareras de América?"
+        }
+       ],
+       "options": [
+        "Valdivia",
+        "Las Vegas",
+        "La Tolita",
+        "Cañari"
+       ],
+       "answer": 0,
+       "explanation": "Las Vegas es anterior pero no hacía cerámica; la Tolita y los cañaris son posteriores."
+      },
+      {
+       "id": "culturas-costa",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué pueblos habitaban la Costa antes de la llegada de los incas?"
+        }
+       ],
+       "options": [
+        "Manteños, huancavilcas y punáes",
+        "Caranquis, cayambis y quitus",
+        "Cañaris, puruhaes y paltas",
+        "Shuar, achuar y waorani"
+       ],
+       "answer": 0,
+       "explanation": "Caranquis, cayambis, quitus, cañaris, puruhaes y paltas eran de la Sierra; shuar, achuar y waorani son de la Amazonía."
+      },
+      {
+       "id": "senorios",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo se llamaban las organizaciones de los pueblos del actual Ecuador antes de la conquista inca?"
+        }
+       ],
+       "options": [
+        "Señoríos étnicos",
+        "Virreinatos",
+        "Audiencias",
+        "Encomiendas"
+       ],
+       "answer": 0,
+       "explanation": "Unos eran grandes e integraban varios cacicazgos. Los virreinatos, las audiencias y las encomiendas llegaron con los españoles."
+      },
+      {
+       "id": "caranqui-resistencia",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué señoríos opusieron la mayor resistencia a la conquista inca?"
+        }
+       ],
+       "options": [
+        "Los caranquis y cayambis",
+        "Los manteños y huancavilcas",
+        "Los cañaris",
+        "Los puruhaes"
+       ],
+       "answer": 0,
+       "explanation": "La resistencia terminó con la matanza de Yahuarcocha, la «laguna de sangre», en Imbabura."
+      },
+      {
+       "id": "inti",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué dios impusieron los incas a los pueblos que conquistaban?"
+        }
+       ],
+       "options": [
+        "Inti, el dios Sol",
+        "Pachamama, la madre tierra",
+        "Illapa, el dios del rayo",
+        "Mama Cocha, la madre del mar"
+       ],
+       "answer": 0,
+       "explanation": "Los incas respetaban los cultos de cada pueblo, pero exigían el culto al Sol, que representaba el poder del imperio."
+      }
+     ]
+    },
     {
      "id": "1492-descubrimiento-de-america",
      "title": "1492 Descubrimiento de América",
@@ -7295,6 +7676,29 @@
      ]
     },
     {
+     "id": "1894-venta-de-la-bandera",
+     "title": "1894 Venta de la bandera",
+     "cards": [
+      {
+       "id": "crucero-esmeralda",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué fue el escándalo de la «venta de la bandera», en 1894?"
+        }
+       ],
+       "options": [
+        "El uso de la bandera ecuatoriana para que Chile vendiera el crucero Esmeralda al Japón",
+        "La venta de las Islas Galápagos a los Estados Unidos",
+        "La venta de la bandera de la independencia a un museo europeo",
+        "El cambio de colores de la bandera para firmar un tratado con el Perú"
+       ],
+       "answer": 0,
+       "explanation": "Ocurrió en el gobierno de Luis Cordero, que renunció en 1895; el escándalo abrió paso a la Revolución Liberal."
+      }
+     ]
+    },
+    {
      "id": "1922-masacre-de-los-obreros-de-guayaquil",
      "title": "1922 Masacre de los Obreros de Guayaquil",
      "cards": [
@@ -7346,6 +7750,29 @@
         "José María Velasco Ibarra"
        ],
        "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "1925-revolucion-juliana",
+     "title": "1925 Revolución Juliana",
+     "cards": [
+      {
+       "id": "revolucion-juliana",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo se llamó el movimiento de jóvenes militares que derrocó al presidente Gonzalo Córdova el 9 de julio de 1925?"
+        }
+       ],
+       "options": [
+        "La Revolución Juliana",
+        "La Revolución Marcista",
+        "La Revolución Liberal",
+        "La Gloriosa"
+       ],
+       "answer": 0,
+       "explanation": "La Marcista fue en 1845, la Liberal en 1895 y la Gloriosa en 1944."
       }
      ]
     },
@@ -7429,6 +7856,29 @@
         "La ganancia de territorio en la Costa"
        ],
        "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "1964-reforma-agraria",
+     "title": "1964 Reforma Agraria",
+     "cards": [
+      {
+       "id": "reforma-agraria",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué año se dictó la primera Ley de Reforma Agraria?"
+        }
+       ],
+       "options": [
+        "1964",
+        "1895",
+        "1972",
+        "2004"
+       ],
+       "answer": 0,
+       "explanation": "La dictó la Junta Militar de 1963-1966, y abolió el huasipungo."
       }
      ]
     },
@@ -8122,6 +8572,108 @@
         "Solo la Corte Constitucional"
        ],
        "answer": 0
+      },
+      {
+       "id": "naturalizacion-servicios",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién concede la carta de naturalización a un extranjero por haber prestado servicios relevantes al país?"
+        }
+       ],
+       "options": [
+        "El presidente de la República",
+        "La Asamblea Nacional",
+        "La Corte Constitucional",
+        "El Consejo Nacional Electoral"
+       ],
+       "answer": 0,
+       "explanation": "Es un acto discrecional de la Función Ejecutiva, que el presidente firma mediante decreto."
+      },
+      {
+       "id": "derecho-agua",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué derecho declara el artículo 12 de la Constitución «fundamental e irrenunciable»?"
+        }
+       ],
+       "options": [
+        "El derecho humano al agua",
+        "El derecho a la propiedad privada",
+        "El derecho al voto facultativo",
+        "El derecho a un empleo público"
+       ],
+       "answer": 0,
+       "explanation": "El agua es además patrimonio nacional estratégico de uso público."
+      },
+      {
+       "id": "educacion-gratuita",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Hasta qué nivel es gratuita la educación pública?"
+        }
+       ],
+       "options": [
+        "Hasta el tercer nivel de educación superior",
+        "Solo hasta la educación básica",
+        "Solo hasta el bachillerato",
+        "Hasta el doctorado"
+       ],
+       "answer": 0,
+       "explanation": "La Constitución garantiza la gratuidad desde la educación inicial hasta el tercer nivel, es decir, las carreras universitarias."
+      },
+      {
+       "id": "politicas-salud",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Según la Constitución, ¿con qué políticas garantiza el Estado el derecho a la salud?"
+        }
+       ],
+       "options": [
+        "Económicas, sociales, culturales, educativas y ambientales",
+        "Solo con hospitales públicos",
+        "Solo con seguros privados obligatorios",
+        "Solo con campañas de vacunación"
+       ],
+       "answer": 0,
+       "explanation": "Lo dice el artículo 32."
+      },
+      {
+       "id": "soberania",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En quién radica la soberanía del Ecuador?"
+        }
+       ],
+       "options": [
+        "En el pueblo",
+        "En el presidente de la República",
+        "En la Asamblea Nacional",
+        "En las Fuerzas Armadas"
+       ],
+       "answer": 0,
+       "explanation": "Según el artículo 1, la voluntad del pueblo es el fundamento de la autoridad; se ejerce a través de los órganos del poder público y de la participación directa."
+      },
+      {
+       "id": "nombre-oficial",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre oficial del país?"
+        }
+       ],
+       "options": [
+        "República del Ecuador",
+        "Estado Plurinacional del Ecuador",
+        "Estados Unidos del Ecuador",
+        "Confederación del Ecuador"
+       ],
+       "answer": 0,
+       "explanation": "«Estado Plurinacional» es el nombre oficial de Bolivia."
       }
      ]
     },
@@ -9004,6 +9556,125 @@
        ],
        "answer": 0,
        "explanation": "Murió el 24 de mayo de 1981."
+      },
+      {
+       "id": "rodriguez-lara",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién gobernó el Ecuador de 1972 a 1976, tras derrocar a José María Velasco Ibarra?"
+        }
+       ],
+       "options": [
+        "Guillermo Rodríguez Lara",
+        "Jaime Roldós",
+        "León Febres Cordero",
+        "Osvaldo Hurtado"
+       ],
+       "answer": 0,
+       "explanation": "Fue una dictadura militar, en la que empezó la exportación de petróleo, en 1972."
+      },
+      {
+       "id": "binomio-1979",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué binomio presidencial ganó las elecciones de 1979, con las que volvió la democracia?"
+        }
+       ],
+       "options": [
+        "Jaime Roldós y Osvaldo Hurtado",
+        "León Febres Cordero y Blasco Peñaherrera",
+        "Rodrigo Borja y Luis Parodi",
+        "Abdalá Bucaram y Rosalía Arteaga"
+       ],
+       "answer": 0,
+       "explanation": "Los otros fueron binomios ganadores de 1984, 1988 y 1996."
+      },
+      {
+       "id": "hurtado-1981",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién asumió la presidencia en 1981, tras la muerte de Jaime Roldós?"
+        }
+       ],
+       "options": [
+        "Osvaldo Hurtado",
+        "León Febres Cordero",
+        "Rodrigo Borja",
+        "Abdalá Bucaram"
+       ],
+       "answer": 0,
+       "explanation": "Era el vicepresidente. Roldós murió en un accidente aéreo el 24 de mayo de 1981."
+      },
+      {
+       "id": "febres-cordero",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién asumió la presidencia del Ecuador en 1984?"
+        }
+       ],
+       "options": [
+        "León Febres Cordero",
+        "Rodrigo Borja",
+        "Osvaldo Hurtado",
+        "Sixto Durán Ballén"
+       ],
+       "answer": 0,
+       "explanation": "Gobernó de 1984 a 1988; le siguieron Rodrigo Borja (1988-1992) y Sixto Durán Ballén (1992-1996)."
+      },
+      {
+       "id": "borja",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué presidente, elegido en 1988, creó una red de guarderías comunitarias para niños de familias pobres?"
+        }
+       ],
+       "options": [
+        "Rodrigo Borja",
+        "León Febres Cordero",
+        "Jaime Roldós",
+        "Gustavo Noboa"
+       ],
+       "answer": 0,
+       "explanation": "Gobernó de 1988 a 1992. También impulsó el desayuno escolar y la Campaña Nacional de Alfabetización «Monseñor Leonidas Proaño»."
+      },
+      {
+       "id": "bucaram",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué presidente fue destituido en 1997 por «incapacidad mental», tras unos seis meses de gobierno?"
+        }
+       ],
+       "options": [
+        "Abdalá Bucaram",
+        "Jamil Mahuad",
+        "Lucio Gutiérrez",
+        "Fabián Alarcón"
+       ],
+       "answer": 0,
+       "explanation": "Mahuad y Gutiérrez también fueron derrocados, en 2000 y 2005; Alarcón fue el presidente interino que lo reemplazó."
+      },
+      {
+       "id": "rosalia-arteaga",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién fue la primera mujer presidenta del Ecuador, por pocos días en 1997?"
+        }
+       ],
+       "options": [
+        "Rosalía Arteaga",
+        "Matilde Hidalgo",
+        "Dolores Cacuango",
+        "Manuela Sáenz"
+       ],
+       "answer": 0,
+       "explanation": "Era la vicepresidenta de Abdalá Bucaram; luego el Congreso nombró presidente interino a Fabián Alarcón."
       }
      ]
     },
@@ -10707,6 +11378,23 @@
         "Gonzalo Endara Crow"
        ],
        "answer": 0
+      },
+      {
+       "id": "juana-cordova",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A qué se dedica Juana Córdova?"
+        }
+       ],
+       "options": [
+        "Es artista plástica",
+        "Es cantante de pasillos",
+        "Es actriz de teatro",
+        "Es novelista"
+       ],
+       "answer": 0,
+       "explanation": "Su obra gira en torno a la naturaleza."
       }
      ]
     },
@@ -11928,6 +12616,57 @@
         "A la costa"
        ],
        "answer": 0
+      },
+      {
+       "id": "espejo-medico",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué médico fue la figura intelectual más destacada de la Real Audiencia de Quito?"
+        }
+       ],
+       "options": [
+        "Eugenio Espejo",
+        "Pedro Vicente Maldonado",
+        "Juan de Velasco",
+        "Juan Bautista Aguirre"
+       ],
+       "answer": 0,
+       "explanation": "Fundó en 1792 el periódico «Primicias de la Cultura de Quito». Maldonado fue geógrafo, Velasco historiador y Aguirre poeta."
+      },
+      {
+       "id": "icaza-teatro",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Además de novelas como «Huasipungo», ¿qué otro género escribió Jorge Icaza?"
+        }
+       ],
+       "options": [
+        "Teatro",
+        "Poesía épica",
+        "Ciencia ficción",
+        "Ensayos de economía"
+       ],
+       "answer": 0,
+       "explanation": "Empezó como actor y autor de obras de teatro, como «El intruso»."
+      },
+      {
+       "id": "siete-lunas",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién escribió la novela «Siete lunas y siete serpientes»?"
+        }
+       ],
+       "options": [
+        "Demetrio Aguilera Malta",
+        "Jorge Icaza",
+        "Alicia Yánez Cossío",
+        "José de la Cuadra"
+       ],
+       "answer": 0,
+       "explanation": "Aguilera Malta también escribió «Don Goyo»."
       }
      ]
     },
@@ -12691,6 +13430,57 @@
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Aya-Uma_Luis.jpg"
        }
+      },
+      {
+       "id": "lindo-ecuador",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién compuso «A mi lindo Ecuador» y qué grupo la popularizó?"
+        }
+       ],
+       "options": [
+        "Rubén Barba; la popularizó Pueblo Nuevo",
+        "Carlos Rubira Infante; la popularizó Julio Jaramillo",
+        "Gerardo Guevara; la popularizaron los Hermanos Miño Naranjo",
+        "Julio Jaramillo; la popularizó el Dúo Benítez y Valencia"
+       ],
+       "answer": 0,
+       "explanation": "La versión de Pueblo Nuevo, de 1981, es la más conocida; muchos la llaman el segundo himno del país."
+      },
+      {
+       "id": "madera-guerrero",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién compuso «Guayaquileño, madera de guerrero»?"
+        }
+       ],
+       "options": [
+        "Carlos Rubira Infante",
+        "Rubén Barba",
+        "Gerardo Guevara",
+        "Julio Jaramillo"
+       ],
+       "answer": 0,
+       "explanation": "Rubira Infante dedicó canciones a casi todas las provincias. Rubén Barba compuso «A mi lindo Ecuador»."
+      },
+      {
+       "id": "la-toquilla",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué ciudad nació La Toquilla, la cantante que defiende la música nacional?"
+        }
+       ],
+       "options": [
+        "Portoviejo",
+        "Manta",
+        "Guayaquil",
+        "Esmeraldas"
+       ],
+       "answer": 0,
+       "explanation": "Se llama Alejandra García y canta ritmos tradicionales ecuatorianos desde Quito, donde vive hace años."
       }
      ]
     },
@@ -13149,6 +13939,40 @@
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Ana_Cristina_Barrag%C3%A1n_at_82nd_Venice_International_Film_Festival-1.jpg"
        }
+      },
+      {
+       "id": "beatriz-vergara",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué comedia protagoniza la actriz quiteña María Beatriz Vergara?"
+        }
+       ],
+       "options": [
+        "Ser mamá o morir en el intento",
+        "Las Marujitas se han muerto de leucemia",
+        "Estampas quiteñas",
+        "El intruso"
+       ],
+       "answer": 0,
+       "explanation": "Es una comedia que desmitifica el papel «sagrado» de la madre. «Las Marujitas se han muerto de leucemia» es de Juana Guarderas, las «Estampas quiteñas» son de Ernesto Albán y «El intruso», de Jorge Icaza."
+      },
+      {
+       "id": "michelena-tema",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué tipo de teatro hace Carlos Michelena, «El Miche»?"
+        }
+       ],
+       "options": [
+        "Teatro callejero de crítica social y política",
+        "Ópera clásica",
+        "Teatro de títeres para niños",
+        "Danza contemporánea"
+       ],
+       "answer": 0,
+       "explanation": "Actúa en el parque El Ejido de Quito, con personajes de la vida cotidiana."
       }
      ]
     },
@@ -13550,6 +14374,23 @@
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Batea_con_mazorcas_de_ma%C3%ADz.jpg"
        }
+      },
+      {
+       "id": "chicha-chonta",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué bebida amazónica se prepara con el fruto de una palma?"
+        }
+       ],
+       "options": [
+        "La chicha de chonta",
+        "La chicha de jora",
+        "La colada morada",
+        "El canelazo"
+       ],
+       "answer": 0,
+       "explanation": "La chicha de jora es de maíz, la colada morada de maíz morado y el canelazo de canela y aguardiente."
       }
      ]
     },
@@ -13934,6 +14775,57 @@
         "A Quito"
        ],
        "answer": 0
+      },
+      {
+       "id": "nacionalidad-kichwa",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la nacionalidad indígena más numerosa del Ecuador?"
+        }
+       ],
+       "options": [
+        "La kichwa",
+        "La shuar",
+        "La waorani",
+        "La tsáchila"
+       ],
+       "answer": 0,
+       "explanation": "La shuar es la segunda más numerosa."
+      },
+      {
+       "id": "piav",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué pueblos viven en aislamiento voluntario en la Amazonía ecuatoriana?"
+        }
+       ],
+       "options": [
+        "Tagaeri y taromenane",
+        "Shuar y achuar",
+        "Cofán y siona",
+        "Tsáchila y chachi"
+       ],
+       "answer": 0,
+       "explanation": "Viven en el Parque Nacional Yasuní y en la Zona Intangible, cerca del territorio waorani."
+      },
+      {
+       "id": "nacionalidad-definicion",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué es una nacionalidad indígena en el Ecuador?"
+        }
+       ],
+       "options": [
+        "Un pueblo con historia, idioma y cultura propios",
+        "Una provincia con autonomía",
+        "Un partido político indígena",
+        "Un documento de identidad"
+       ],
+       "answer": 0,
+       "explanation": "En el Ecuador hay 14 nacionalidades y 18 pueblos indígenas."
       }
      ]
     },
@@ -14781,6 +15673,57 @@
         "license": "Public domain",
         "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
        }
+      },
+      {
+       "id": "exportaciones-destino",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el principal destino de las exportaciones ecuatorianas?"
+        }
+       ],
+       "options": [
+        "Estados Unidos",
+        "Japón",
+        "Rusia",
+        "Brasil"
+       ],
+       "answer": 0,
+       "explanation": "Le siguen China, Panamá y la Unión Europea, en distinto orden según el año."
+      },
+      {
+       "id": "banano-destino",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el principal destino del banano ecuatoriano?"
+        }
+       ],
+       "options": [
+        "La Unión Europea",
+        "Estados Unidos",
+        "China",
+        "Japón"
+       ],
+       "answer": 0,
+       "explanation": "Rusia es el segundo comprador."
+      },
+      {
+       "id": "banano-provincias",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué provincias se concentra la producción de banano?"
+        }
+       ],
+       "options": [
+        "El Oro, Guayas y Los Ríos",
+        "Pichincha, Imbabura y Carchi",
+        "Napo, Pastaza y Orellana",
+        "Loja, Azuay y Cañar"
+       ],
+       "answer": 0,
+       "explanation": "Son provincias de la Costa, de clima cálido y húmedo."
       }
      ]
     },
@@ -14869,6 +15812,116 @@
       }
      ]
     }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "id": "recomendado-1",
+   "title": "Lo esencial",
+   "ids": [
+    "LViQQ60zvH1EZpjkY.5917871796852614",
+    "lindo-ecuador",
+    "pv1ba84XnFUbTPpvI.f",
+    "xB48o9O98XHh8RKhF.f",
+    "AoQbiOgQRhb04FrZ0.f",
+    "YQJF5y2aHKPCZFmpf.f",
+    "escudo-1836",
+    "JXRFLpVaLmF92BCNL.f",
+    "PYnMZn5QDkru3h7jK.f",
+    "ZWl8xisVlWbfjNOGP.f",
+    "3dlaGeN0WROQ5NtMf.f",
+    "4eMqHkWBki4drm6wG.f",
+    "64ENKZAri76AuegR4.f",
+    "7HGSQl0IRU7ja6pPp.f",
+    "CCAkYqGKRM4MIoasV.f",
+    "NWlddZhgLxHvcavXB.f",
+    "rPypMS5mF4ERNi8Tx.f",
+    "rodriguez-lara",
+    "espejo-medico",
+    "beatriz-vergara",
+    "madera-guerrero",
+    "0nvifuVEKkE5JpSJb.006232939318684627",
+    "0ycwWKcJIEXFiBhia.f",
+    "9d7xA13zmvtTo1TXx.f",
+    "FSf1HbkLgILxCOZ1u.f",
+    "GZirDvoYDGHKNcoNn.f",
+    "UswoTwrxzwOBS9ATB.f",
+    "b6Ms39QuOJL3Emawl.f",
+    "kqVjK8G3p4inmVUOD.f",
+    "oS4PTVaZCOnaOZ7fK.f"
+   ]
+  },
+  {
+   "id": "recomendado-2",
+   "title": "Lo importante",
+   "ids": [
+    "sOmNzS3JxxQLQD36c.f",
+    "E18O9qJENiNsrHtgN.f",
+    "Gls8LkerkdVUdZz19.f",
+    "K6CRbEXSCpPymuryD.f",
+    "NkwJvDzy2h117AwLj.f",
+    "VASOWpvC796oYTLIZ.f",
+    "YWauTNYRE7RnTYn8W.f",
+    "wi29qP6kA2och7ogB.f",
+    "bucaram",
+    "3wBVbWN4TlrqUujCd.f",
+    "BGZJE57zSewNckdxK.7615326110674593",
+    "Iy72wG50e6o8wRKkb.f",
+    "fwwKwHotadxYgUKrF.f",
+    "aves",
+    "exportaciones-destino",
+    "juana-cordova",
+    "la-toquilla",
+    "4bkpOI21XtMntGPUh.f",
+    "8vRnfGwICfkyLxs76.f",
+    "NHuMXz81Erqc2NvH8.f",
+    "R6q3KKMhVtuoSUNs3.f",
+    "S4cLTfQjvzte93y68.f",
+    "k0Yha6Jg1XoAr5kfq.f",
+    "n6gcw9mypMhPyeKax.f",
+    "oqsuSEx9DBzWGYCZL.f",
+    "uzOkhM8aaV8nJYRhq.f",
+    "senorios",
+    "chimborazo-cantones",
+    "2Eqfr5PtwCQh4Dsd7.f",
+    "63Ajtq6mcg7rvSVIN.f"
+   ]
+  },
+  {
+   "id": "recomendado-3",
+   "title": "Para completar",
+   "ids": [
+    "65hd0Kzw5feeokKIo.f",
+    "8SkMhRJIjxr7Z8KaW.f",
+    "CCdbEfEhwCBKsFngk.f",
+    "Elh3TT7jdAfmcJFfl.f",
+    "EnB7TUSNXOY103nYx.f",
+    "Kt4wW9JfeV1d9yDOn.f",
+    "MdeoN3GBpGpAEu5YA.f",
+    "QSbWodVWZhvPchvXd.f",
+    "TUlvR2iw3CX7DIxDe.f",
+    "Xf63PRpOyVUPBgNfz.f",
+    "YkZVix0fTUyFAikfV.f",
+    "a9oBOqwZgnhzpZEqK.f",
+    "fBKHkLC8PNOJLT5lt.f",
+    "fnwLpkTgJdazT7HnZ.f",
+    "jrt6nbdkpNBfKI2iH.f",
+    "kVl6Gk5u0aZ295Oph.f",
+    "o0HaQ8AeEGj1IhYYq.f",
+    "r9pX9caOJbBiPShFq.f",
+    "sU44swaMSm5NURPf5.f",
+    "tGqYBaYws52xAyMQN.f",
+    "zo3Qz3arJwBnbYVtI.f",
+    "rios-por-habitante",
+    "bandera-guayaquil-1820",
+    "crucero-esmeralda",
+    "febres-cordero",
+    "02FeFG3DFhgBYBXTv.f",
+    "0f1ExhRfs8IZUfiht.f",
+    "JF9bxKLlAZdpGAEMS.f",
+    "cCaBeVojITywQbMpI.f",
+    "fStHSTqN0zX1WMIpg.f"
    ]
   }
  ]

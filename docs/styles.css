@@ -424,6 +424,16 @@ kbd {
 .exam-info { display: grid; flex: 1 1 14rem; min-width: 0; }
 .exam-info strong { font-size: 1.1rem; }
 .exam-info small { color: var(--muted); font-size: .9rem; }
+.exam-tag {
+  justify-self: start;
+  margin-bottom: .2rem;
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.shared-about { margin: -.5rem 0 1rem; color: var(--muted); }
 
 .topics-intro { padding-top: .5rem; }
 .topics-intro h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
