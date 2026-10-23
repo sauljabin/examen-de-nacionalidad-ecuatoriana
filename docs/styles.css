@@ -765,6 +765,8 @@ select {
 .missed .explanation { font-size: .95rem; }
 
 .feedback { margin: 1rem 0 0; font-weight: 700; white-space: normal; }
+/* Leaves room below the result so the start of the explanation shows too. */
+.feedback, .grade { scroll-margin: 1rem 0 20vh; }
 .feedback.is-right { color: var(--right); }
 .feedback.is-wrong { color: var(--wrong); }
 

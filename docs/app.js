@@ -1032,6 +1032,17 @@ function choose(optionIndex) {
   button.setAttribute("aria-pressed", String(state.selection.has(optionIndex)));
 }
 
+function reducedMotion() {
+  return root.dataset.motion === "reduce" || matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+// After answering, bring the answer into view without jumping past it: the
+// page moves only as much as needed, so the options stay above when they fit,
+// and the explanation and «Siguiente» follow below.
+function scrollToAnswer(target) {
+  target.scrollIntoView({ block: "nearest", behavior: reducedMotion() ? "auto" : "smooth" });
+}
+
 function checkSelection() {
   if (state.revealed || !state.selection?.size) return;
   finishChoice(state.selection);
@@ -1070,7 +1081,8 @@ function finishChoice(selected) {
   app.querySelector(".check-answer").hidden = true;
   app.querySelector(".question").classList.add("is-revealed");
   app.querySelector(".next").hidden = false;
-  app.querySelector(".next").focus();
+  app.querySelector(".next").focus({ preventScroll: true });
+  scrollToAnswer(feedback);
 }
 
 function renderExplanation(text) {
@@ -1153,7 +1165,8 @@ function reveal() {
   app.querySelector(".question").classList.add("is-revealed");
   app.querySelector(".reveal").hidden = true;
   app.querySelector(".grade").hidden = false;
-  app.querySelector(".right").focus();
+  app.querySelector(".right").focus({ preventScroll: true });
+  scrollToAnswer(app.querySelector(".grade"));
 }
 
 function grade(knewIt) {
@@ -1323,7 +1336,7 @@ function renderGoal(container) {
 // Confetti in the flag colors. Skipped when the person or the system asks
 // for less motion.
 function celebrate() {
-  if (root.dataset.motion === "reduce" || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (reducedMotion()) return;
   const canvas = document.createElement("canvas");
   canvas.className = "confetti";
   canvas.setAttribute("aria-hidden", "true");
