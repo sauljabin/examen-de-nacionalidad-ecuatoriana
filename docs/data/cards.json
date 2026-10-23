@@ -14191,7 +14191,7 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿En qué fecha se toma tradicionalmente la colada morada?"
+         "text": "¿En qué fecha se comen tradicionalmente la colada morada y las guaguas de pan?"
         }
        ],
        "options": [
@@ -14201,7 +14201,7 @@
         "El Carnaval"
        ],
        "answer": 0,
-       "explanation": "Se toma el 2 de noviembre, con guaguas de pan.",
+       "explanation": "El Día de los Difuntos es el 2 de noviembre.",
        "photo": {
         "src": "images/foto-colada-morada.jpg",
         "alt": "Colada morada con guaguas de pan",
