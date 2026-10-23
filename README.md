@@ -47,10 +47,10 @@ En el inicio, **Mi progreso** muestra tu racha, cuántas preguntas dominas, cuá
 - **Respondidas:** cuántas respuestas diste y qué porcentaje acertaste.
 - **Dominadas:** una pregunta está dominada si la acertaste la última vez que la respondiste. Se muestra en total y por categoría, junto con las que tienes por repasar.
 - **Mejor simulacro:** tu mejor puntaje y cuántos simulacros aprobaste.
-- **Mi actividad:** un calendario del último año, con un cuadro por día. El color se intensifica según cuántas preguntas respondiste, comparado con tu meta diaria. En el teléfono se desliza de lado para ver los meses anteriores.
-- **Mis simulacros:** una gráfica de línea con el puntaje de tus últimos 20 simulacros y la línea de 27 aciertos para aprobar. Los aprobados se ven como puntos llenos y los no aprobados, como puntos vacíos. Debajo está la lista de todos, del más reciente al más antiguo. Al tocar un punto o un simulacro de la lista ves su resultado: tus respuestas, las correctas y las que fallaste.
+- **Mi actividad:** un calendario con un cuadro por día. Crece con el uso: muestra el último mes, luego los últimos 3 y 6 meses, y como máximo el último año. El color se intensifica según cuántas preguntas respondiste, comparado con tu meta diaria. En el teléfono se desliza de lado para ver los meses anteriores.
+- **Mis simulacros:** una gráfica de línea con el puntaje de tus últimos 30 simulacros y la línea de 27 aciertos para aprobar. Los aprobados se ven como puntos llenos y los no aprobados, como puntos vacíos. Debajo está la lista de todos, del más reciente al más antiguo. Al tocar un punto o un simulacro de la lista ves su resultado: tus respuestas, las correctas y las que fallaste.
 - **Meta diaria:** eliges 10, 20 o 30 preguntas al día y ves cuántas llevas hoy y cuántos días la cumpliste.
-- **Logros:** 20 medallas, como «Tres días seguidos», «Simulacro aprobado», «Diez seguidas» o «Símbolos dominados». Los nuevos aparecen al terminar un examen.
+- **Logros:** 30 medallas, como «Tres días seguidos», «Simulacro aprobado», «Tres aprobados seguidos», «Mapa a la primera» o «Símbolos dominados». Los nuevos aparecen al terminar un examen.
 
 Durante el examen (menos en el simulacro), un contador muestra tus aciertos seguidos (por ejemplo, «🔥 5 seguidas»); al fallar vuelve a cero sin ningún aviso. Al aprobar un simulacro, terminar un examen con el 90 % o más, cumplir la meta o ganar un logro, cae un poco de confeti con los colores de la bandera.
 

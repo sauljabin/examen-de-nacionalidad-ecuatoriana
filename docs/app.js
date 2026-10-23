@@ -1299,6 +1299,20 @@ function dateKey(date) {
 // Activity calendar -----------------------------------------------------------
 
 const CALENDAR_WEEKS = 53;
+// The calendar grows with use: from the last month up to the last year.
+const CALENDAR_SPANS = [
+  { weeks: 5, text: "en el último mes" },
+  { weeks: 13, text: "en los últimos 3 meses" },
+  { weeks: 26, text: "en los últimos 6 meses" },
+  { weeks: CALENDAR_WEEKS, text: "en el último año" },
+];
+
+// The smallest span that reaches back to the first day with practice.
+function calendarSpan(today) {
+  const first = [...progress.days, ...Object.keys(progress.activity)].sort()[0];
+  const daysBack = first ? dayNumber(dateKey(today)) - dayNumber(first) : 0;
+  return CALENDAR_SPANS.find((span) => daysBack < span.weeks * 7 - 6) || CALENDAR_SPANS.at(-1);
+}
 const MONTHS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 const DATE_FORMAT = new Intl.DateTimeFormat("es-EC", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 
@@ -1324,8 +1338,9 @@ function activityText(key) {
 function renderActivity(container) {
   const today = new Date();
   today.setHours(12, 0, 0, 0);
+  const span = calendarSpan(today);
   const start = new Date(today);
-  start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - (CALENDAR_WEEKS - 1) * 7);
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - (span.weeks - 1) * 7);
   const goalDays = new Set(progress.goalDays);
   const calendar = container.querySelector(".activity-calendar");
   const cells = [];
@@ -1347,14 +1362,19 @@ function renderActivity(container) {
   corner.className = "activity-corner";
   place(corner, 1, 1);
   let practiced = 0;
+  let firstLabel = Infinity;
+  const addMonth = (date, week) => {
+    const month = document.createElement("span");
+    month.className = "activity-month";
+    month.textContent = MONTHS[date.getMonth()];
+    place(month, week + 2, 1);
+  };
   for (let index = 0, date = new Date(start); date <= today; index++, date.setDate(date.getDate() + 1)) {
     const week = Math.floor(index / 7);
     const key = dateKey(date);
-    if (date.getDate() === 1 && week < CALENDAR_WEEKS - 1) {
-      const month = document.createElement("span");
-      month.className = "activity-month";
-      month.textContent = MONTHS[date.getMonth()];
-      place(month, week + 2, 1);
+    if (date.getDate() === 1 && week < span.weeks - 1) {
+      addMonth(date, week);
+      firstLabel = Math.min(firstLabel, week);
     }
     const level = activityLevel(key, goalDays);
     if (level) practiced += 1;
@@ -1364,13 +1384,15 @@ function renderActivity(container) {
     cell.title = `${DATE_FORMAT.format(date)}: ${activityText(key)}`;
     place(cell, week + 2, (index % 7) + 2);
   }
+  // Name the first month too when no month starts near the left edge.
+  if (firstLabel > 2) addMonth(start, 0);
   calendar.replaceChildren(...cells);
   const summary = practiced
-    ? `Practicaste ${plural(practiced, "día", "días")} en el último año.`
+    ? `Practicaste ${plural(practiced, "día", "días")} ${span.text}.`
     : "Todavía no hay días con práctica. Cada día que respondas preguntas se pinta un cuadro.";
   container.querySelector(".activity-summary").textContent = summary;
   const scroller = container.querySelector(".activity-scroll");
-  scroller.setAttribute("aria-label", `Calendario de actividad del último año. ${summary}`);
+  scroller.setAttribute("aria-label", `Calendario de actividad ${span.text}. ${summary}`);
   // The latest weeks matter most: start scrolled to the end on narrow screens.
   requestAnimationFrame(() => { scroller.scrollLeft = scroller.scrollWidth; });
 }
@@ -1538,12 +1560,37 @@ const ACHIEVEMENTS = [
   { id: "mocks-5", title: "Cinco aprobados", text: "Aprueba 5 simulacros.", test: (s) => s.mocksPassed >= 5 },
   { id: "own-exam", title: "Examen propio", text: "Guarda tu primer examen en «Mis exámenes».", test: (s) => s.savedExams >= 1 },
   { id: "all-mastered", title: "Todo dominado", text: "Domina todas las preguntas.", test: (s) => s.mastered >= s.total },
+  { id: "streak-14", title: "Dos semanas seguidas", text: "Practica 14 días seguidos.", test: (s) => s.bestStreak >= 14 },
+  { id: "answered-1000", title: "Mil preguntas", text: "Responde 1000 preguntas.", test: (s) => s.answered >= 1000 },
+  { id: "goal-30", title: "Treinta metas", text: "Cumple tu meta diaria en 30 días distintos.", test: (s) => s.goalDays >= 30 },
+  { id: "mocks-10", title: "Diez aprobados", text: "Aprueba 10 simulacros.", test: (s) => s.mocksPassed >= 10 },
+  { id: "mocks-row-3", title: "Tres aprobados seguidos", text: "Aprueba 3 simulacros seguidos.", test: (s) => s.mocksInRow >= 3 },
+  { id: "map-perfect", title: "Mapa a la primera", text: "Encuentra las 24 provincias a la primera en el mapa.", test: (s) => s.mapPerfect },
+  { id: "geography-mastered", title: "Geografía dominada", text: "Domina todas las preguntas de Geografía.", test: (s) => s.categoryMastered.has("Geografía") },
+  { id: "history-mastered", title: "Historia dominada", text: "Domina todas las preguntas de Historia.", test: (s) => s.categoryMastered.has("Historia") },
+  { id: "politics-mastered", title: "Política dominada", text: "Domina todas las preguntas de Política.", test: (s) => s.categoryMastered.has("Política") },
+  { id: "culture-mastered", title: "Cultura dominada", text: "Domina todas las preguntas de Cultura.", test: (s) => s.categoryMastered.has("Cultura") },
 ];
+
+// The most mock exams passed one after another, from the history.
+function mocksInRow() {
+  let best = 0;
+  let run = 0;
+  for (const entry of progress.mocks) {
+    run = mockPassed(entry) ? run + 1 : 0;
+    best = Math.max(best, run);
+  }
+  return best;
+}
 
 function progressSnapshot() {
   const stats = progress.stats;
-  const symbols = state.categories.find((category) => category.title === "Símbolos Patrios");
-  const symbolsMastery = symbols ? mastery(categoryCards(symbols)) : null;
+  const categoryMastered = new Set(state.categories
+    .filter((category) => {
+      const result = mastery(categoryCards(category));
+      return result.right === result.total;
+    })
+    .map((category) => category.title));
   return {
     answered: stats.answered || 0,
     exams: stats.exams || 0,
@@ -1552,7 +1599,10 @@ function progressSnapshot() {
     clearedMissed: Boolean(stats.clearedMissed),
     bestStreak: streaks().best,
     allCategories: state.categories.every((category) => mastery(categoryCards(category)).right > 0),
-    symbolsMastered: Boolean(symbolsMastery && symbolsMastery.right === symbolsMastery.total),
+    symbolsMastered: categoryMastered.has("Símbolos Patrios"),
+    categoryMastered,
+    mocksInRow: mocksInRow(),
+    mapPerfect: Boolean(stats.mapPerfect),
     mastered: mastery(state.allCards).right,
     total: state.allCards.length,
     bestCombo: stats.bestCombo || 0,
@@ -1698,15 +1748,11 @@ function showProgress() {
 
 // Mock exam history -------------------------------------------------------------
 
-const MOCK_CHART_SIZE = 20;
+const MOCK_CHART_SIZE = 30;
 const MOCK_DATE = new Intl.DateTimeFormat("es-EC", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
 
 function mockPassed(entry) {
   return entry.right >= entry.pass;
-}
-
-function mockLabel(entry) {
-  return `Simulacro ${entry.n}, ${MOCK_DATE.format(entry.at)}: ${entry.right} de ${entry.total}, ${mockPassed(entry) ? "aprobado" : "no aprobado"}`;
 }
 
 // A line chart of the last mock exams and, below, the list of all of them
@@ -1767,6 +1813,8 @@ function renderMockChart(chart, width) {
   const y = (value) => pad.top + (1 - (value - bottom) / (top - bottom)) * plotHeight;
   const gap = mocks.length === 1 ? plotWidth : plotWidth / (mocks.length - 1);
   const every = Math.ceil(28 / gap);
+  // Smaller marks when many fit in little space, like 30 on a phone.
+  const radius = gap < 16 ? 4 : 5.5;
   let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" aria-hidden="true">`;
   const step = top - bottom > 15 ? 10 : 5;
   for (let value = top; value >= bottom; value -= step) {
@@ -1785,7 +1833,7 @@ function renderMockChart(chart, width) {
   mocks.forEach((entry, index) => {
     svg += `<g class="mock-point${mockPassed(entry) ? " is-passed" : ""}" data-index="${offset + index}">`
       + `<circle class="mock-hit" cx="${x(index)}" cy="${y(entry.right)}" r="14"/>`
-      + `<circle class="mock-mark" cx="${x(index)}" cy="${y(entry.right)}" r="5.5"/></g>`;
+      + `<circle class="mock-mark" cx="${x(index)}" cy="${y(entry.right)}" r="${radius}"/></g>`;
   });
   chart.innerHTML = `${svg}</svg><p class="mock-tip" hidden></p>`;
   const tip = chart.querySelector(".mock-tip");
@@ -2248,9 +2296,19 @@ function endMapGame() {
     <p class="map-hint"></p>
     <div class="practice-actions"><button class="primary map-again" type="button">Jugar otra vez</button></div>`;
   panel.querySelector(".map-question").textContent = `Acertaste ${game.right} de ${game.queue.length}`;
-  panel.querySelector(".map-hint").textContent = game.right === game.queue.length
+  const perfect = game.right === game.queue.length;
+  panel.querySelector(".map-hint").textContent = perfect
     ? "¡Encontraste todas las provincias a la primera!"
     : "Las provincias en verde son las que acertaste a la primera.";
+  if (perfect) {
+    progress.stats.mapPerfect = true;
+    saveProgress();
+    const unlocked = unlockAchievements();
+    if (unlocked.length) {
+      panel.querySelector(".map-hint").textContent += ` Ganaste el logro «${unlocked.map((item) => item.title).join("», «")}».`;
+      celebrate();
+    }
+  }
   panel.querySelector(".map-again").addEventListener("click", startMapGame);
   panel.querySelector(".map-again").focus({ preventScroll: true });
 }
