@@ -125,11 +125,13 @@ docs/                       Página estática (lo que publica GitHub Pages)
   index.html, app.js, styles.css
   sw.js, manifest.webmanifest  Uso sin conexión e instalación como app
   icons/                    Íconos de la app
-  data/cards.json           Preguntas
-  images/                   Imágenes de las preguntas
+  data/cards.json           Preguntas (y los resúmenes de la línea de tiempo)
+  images/                   Imágenes de las preguntas, la bandera, el escudo y el mapa de provincias
+  audio/                    El himno instrumental
 .github/ISSUE_TEMPLATE/     Formularios para reportar errores y proponer preguntas
-scripts/build_part_images.py  Genera las imágenes de las partes del escudo y de la bandera
-assets/                     Escudo y bandera oficiales en SVG (fuente de esas imágenes)
+scripts/build_part_images.py   Genera las imágenes de las partes del escudo y de la bandera
+scripts/build_province_map.py  Genera el mapa de «Mapa de provincias»
+assets/                     SVG originales: escudo, bandera y mapa de provincias
 ```
 
 ## Editar las preguntas
@@ -140,6 +142,14 @@ Las imágenes de *Partes del Escudo Nacional* y *Partes de la Bandera Nacional* 
 
 ```bash
 python3 scripts/build_part_images.py
+```
+
+Los resúmenes de la **Línea de tiempo** están en `cards.json`, en el campo `summary` de cada subtema de Historia. El texto de **Símbolos patrios** está en `docs/index.html`; si corriges un dato de esos símbolos en las preguntas, corrígelo también ahí.
+
+El mapa de **Mapa de provincias** también se genera con un script, a partir del SVG de `assets/`. Los nombres, capitales y regiones están en `PROVINCES`, en `docs/app.js`:
+
+```bash
+python3 scripts/build_province_map.py
 ```
 
 ## Probar en local
@@ -160,4 +170,4 @@ En el repositorio de GitHub: **Settings → Pages → Build and deployment**, el
 
 Dedicado al dominio público con [CC0 1.0 Universal](LICENSE): puedes copiar, modificar y distribuir el código y el contenido sin pedir permiso ni dar crédito.
 
-Algunas imágenes se basan en obras de terceros de Wikimedia Commons: los mapas, y el escudo y la bandera oficiales en SVG ([escudo](https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Ecuador.svg), [bandera](https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg)). Las fotos que aparecen con las respuestas son de Wikimedia Commons y conservan su propia licencia (CC0, CC BY, CC BY-SA o dominio público); el autor, la licencia y el enlace al original se muestran bajo cada foto. Los símbolos patrios pertenecen al Estado ecuatoriano y la ley regula su uso. La dedicación CC0 solo cubre lo que es obra de los autores de este proyecto.
+Algunas imágenes se basan en obras de terceros de Wikimedia Commons: los mapas de las preguntas, y el escudo y la bandera oficiales en SVG ([escudo](https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Ecuador.svg), [bandera](https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg)). El mapa de **Mapa de provincias** se basa en «[Azuay in Ecuador](https://commons.wikimedia.org/wiki/File:Azuay_in_Ecuador.svg)», de Milenioscuro, y conserva su licencia [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.es). El audio del himno es la versión instrumental de la Banda de la Marina de los Estados Unidos, de [dominio público](https://commons.wikimedia.org/wiki/File:Anthem_of_Ecuador.ogg), y la letra, de Juan León Mera (1865), también es de dominio público. Las fotos que aparecen con las respuestas son de Wikimedia Commons y conservan su propia licencia (CC0, CC BY, CC BY-SA o dominio público); el autor, la licencia y el enlace al original se muestran bajo cada foto. Los símbolos patrios pertenecen al Estado ecuatoriano y la ley regula su uso. La dedicación CC0 solo cubre lo que es obra de los autores de este proyecto.
