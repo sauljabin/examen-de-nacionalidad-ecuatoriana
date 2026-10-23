@@ -104,15 +104,16 @@ function askConfirm({ title, text, ok, cancel = "Cancelar" }) {
 // built (draft), the last result of each question (results), the days with
 // practice (days), totals (stats), unlocked achievements (achievements), the
 // daily goal (goal), today's answers (today), the days the goal was met
-// (goalDays), the review schedule of each question (srs) and the answers
-// given each day (activity, "YYYY-MM-DD": count) for the activity calendar.
+// (goalDays), the review schedule of each question (srs), the answers
+// given each day (activity, "YYYY-MM-DD": count) for the activity calendar
+// and every finished mock exam (mocks).
 const progress = readProgress();
 
 function emptyProgress() {
   return {
     missed: [], marked: [], exams: [], draft: { title: "", ids: [] },
     results: {}, days: [], stats: {}, achievements: {},
-    goal: 20, today: { day: "", count: 0 }, goalDays: [], srs: {}, activity: {},
+    goal: 20, today: { day: "", count: 0 }, goalDays: [], srs: {}, activity: {}, mocks: [],
   };
 }
 
@@ -1461,6 +1462,9 @@ function celebrate() {
   requestAnimationFrame(frame);
 }
 
+// Mock exams kept in the history, with their answers, for «Mis simulacros».
+const MOCK_HISTORY = 200;
+
 function recordExam(right) {
   const stats = progress.stats;
   stats.exams = (stats.exams || 0) + 1;
@@ -1468,6 +1472,19 @@ function recordExam(right) {
     stats.mocks = (stats.mocks || 0) + 1;
     stats.bestMock = Math.max(stats.bestMock || 0, right);
     if (right >= state.passMark) stats.mocksPassed = (stats.mocksPassed || 0) + 1;
+  }
+  if (state.mock) {
+    // answers: [card id, picked option indexes, 1 if right].
+    progress.mocks.push({
+      n: stats.mocks,
+      at: Date.now(),
+      ms: Date.now() - state.startedAt,
+      right,
+      total: state.queue.length,
+      pass: state.passMark,
+      answers: state.answers.map((answer) => [answer.card.id, answer.selected, answer.right ? 1 : 0]),
+    });
+    progress.mocks.splice(0, progress.mocks.length - MOCK_HISTORY);
   }
   saveProgress();
 }
@@ -1642,6 +1659,7 @@ function showProgress() {
   renderGoal(goalSection);
   updateGoalDays();
   renderActivity(app.querySelector(".activity-section"));
+  renderMocks(app.querySelector(".mocks-section"));
 
   app.querySelector(".mastery-list").replaceChildren(...state.categories.map((category) => {
     const result = mastery(categoryCards(category));
@@ -1668,13 +1686,148 @@ function showProgress() {
   app.querySelector(".reset-progress").addEventListener("click", async () => {
     if (!(await askConfirm({
       title: "¿Borrar mi progreso?",
-      text: "Se borrarán la racha, las estadísticas, lo que dominas y los logros de este dispositivo. Tus falladas, marcadas y exámenes se mantienen.",
+      text: "Se borrarán la racha, las estadísticas, lo que dominas, los logros y tus simulacros de este dispositivo. Tus falladas, marcadas y exámenes se mantienen.",
       ok: "Borrar",
     }))) return;
-    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [], srs: {}, activity: {} });
+    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [], srs: {}, activity: {}, mocks: [] });
     saveProgress();
     redraw(showProgress);
   });
+  app.focus({ preventScroll: true });
+}
+
+// Mock exam history -------------------------------------------------------------
+
+const MOCK_CHART_SIZE = 20;
+const MOCK_DATE = new Intl.DateTimeFormat("es-EC", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
+
+function mockPassed(entry) {
+  return entry.right >= entry.pass;
+}
+
+function mockLabel(entry) {
+  return `Simulacro ${entry.n}, ${MOCK_DATE.format(entry.at)}: ${entry.right} de ${entry.total}, ${mockPassed(entry) ? "aprobado" : "no aprobado"}`;
+}
+
+// A line chart of the last mock exams and, below, the list of all of them
+// (newest first). The list is also the text version of the chart.
+function renderMocks(section) {
+  const mocks = progress.mocks;
+  const summary = section.querySelector(".mocks-summary");
+  if (!mocks.length) {
+    summary.textContent = "Cada simulacro que termines aparecerá aquí, con tu puntaje y tus respuestas.";
+    return;
+  }
+  const passed = mocks.filter(mockPassed).length;
+  summary.textContent = `Aprobaste ${passed} de ${plural(mocks.length, "simulacro", "simulacros")}. Toca uno para ver sus respuestas.`
+    + (mocks.length > MOCK_CHART_SIZE ? ` La gráfica muestra los últimos ${MOCK_CHART_SIZE}.` : "");
+  const list = section.querySelector(".mock-list");
+  list.replaceChildren(...mocks.map((entry, index) => {
+    const item = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "ghost";
+    const name = document.createElement("span");
+    name.textContent = `Simulacro ${entry.n} · ${MOCK_DATE.format(entry.at)}`;
+    const score = document.createElement("strong");
+    score.textContent = `${entry.right} de ${entry.total}`;
+    const status = document.createElement("span");
+    status.className = mockPassed(entry) ? "mock-status is-passed" : "mock-status";
+    status.textContent = mockPassed(entry) ? "✓ Aprobado" : "✗ No aprobado";
+    button.append(name, score, status);
+    button.addEventListener("click", () => showMockResult(index));
+    item.append(button);
+    return item;
+  }).reverse());
+  const chart = section.querySelector(".mock-chart");
+  chart.hidden = false;
+  section.querySelector(".mock-legend").hidden = false;
+  // Drawn at the real width so the text keeps its size on phones.
+  let width = 0;
+  new ResizeObserver(() => {
+    if (chart.clientWidth && chart.clientWidth !== width) {
+      width = chart.clientWidth;
+      renderMockChart(chart, width);
+    }
+  }).observe(chart);
+}
+
+function renderMockChart(chart, width) {
+  const offset = Math.max(0, progress.mocks.length - MOCK_CHART_SIZE);
+  const mocks = progress.mocks.slice(offset);
+  const height = 200;
+  const pad = { top: 14, right: 14, bottom: 28, left: 30 };
+  const plotWidth = width - pad.left - pad.right;
+  const plotHeight = height - pad.top - pad.bottom;
+  const top = Math.max(...mocks.map((entry) => entry.total));
+  // Scores are mostly near the top: start the scale a little below the
+  // lowest one (at most at 15) so the differences show.
+  const bottom = Math.max(0, Math.min(15, Math.floor((Math.min(...mocks.map((entry) => entry.right)) - 2) / 5) * 5));
+  const x = (index) => pad.left + (mocks.length === 1 ? plotWidth / 2 : (index * plotWidth) / (mocks.length - 1));
+  const y = (value) => pad.top + (1 - (value - bottom) / (top - bottom)) * plotHeight;
+  const gap = mocks.length === 1 ? plotWidth : plotWidth / (mocks.length - 1);
+  const every = Math.ceil(28 / gap);
+  let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" aria-hidden="true">`;
+  const step = top - bottom > 15 ? 10 : 5;
+  for (let value = top; value >= bottom; value -= step) {
+    svg += `<line class="mock-grid" x1="${pad.left}" x2="${width - pad.right}" y1="${y(value)}" y2="${y(value)}"/>`;
+    svg += `<text class="mock-axis" x="${pad.left - 8}" y="${y(value)}" text-anchor="end" dominant-baseline="middle">${value}</text>`;
+  }
+  svg += `<line class="mock-pass" x1="${pad.left}" x2="${width - pad.right}" y1="${y(mocks.at(-1).pass)}" y2="${y(mocks.at(-1).pass)}"/>`;
+  mocks.forEach((entry, index) => {
+    if ((mocks.length - 1 - index) % every === 0) {
+      svg += `<text class="mock-axis" x="${x(index)}" y="${height - 8}" text-anchor="middle">${entry.n}</text>`;
+    }
+  });
+  if (mocks.length > 1) {
+    svg += `<polyline class="mock-line" points="${mocks.map((entry, index) => `${x(index)},${y(entry.right)}`).join(" ")}"/>`;
+  }
+  mocks.forEach((entry, index) => {
+    svg += `<g class="mock-point${mockPassed(entry) ? " is-passed" : ""}" data-index="${offset + index}">`
+      + `<circle class="mock-hit" cx="${x(index)}" cy="${y(entry.right)}" r="14"/>`
+      + `<circle class="mock-mark" cx="${x(index)}" cy="${y(entry.right)}" r="5.5"/></g>`;
+  });
+  chart.innerHTML = `${svg}</svg><p class="mock-tip" hidden></p>`;
+  const tip = chart.querySelector(".mock-tip");
+  for (const point of chart.querySelectorAll(".mock-point")) {
+    const entry = progress.mocks[Number(point.dataset.index)];
+    const mark = point.querySelector(".mock-mark");
+    point.addEventListener("pointerenter", () => {
+      tip.textContent = `Simulacro ${entry.n} · ${MOCK_DATE.format(entry.at)}\n${entry.right} de ${entry.total} · ${mockPassed(entry) ? "Aprobado" : "No aprobado"}`;
+      const left = Number(mark.getAttribute("cx"));
+      // Near an edge, the tip opens toward the middle so it stays visible.
+      tip.dataset.side = left < width / 3 ? "left" : left > (width * 2) / 3 ? "right" : "";
+      tip.style.left = `${left}px`;
+      tip.style.top = `${mark.getAttribute("cy")}px`;
+      tip.hidden = false;
+    });
+    point.addEventListener("pointerleave", () => { tip.hidden = true; });
+    // The list below has a button for each one, so the chart needs no
+    // keyboard stops of its own.
+    point.addEventListener("click", () => showMockResult(Number(point.dataset.index)));
+  }
+}
+
+function showMockResult(index) {
+  const entry = progress.mocks[index];
+  if (!entry) return;
+  showScreen("mock-result-template");
+  app.querySelector(".back-progress").addEventListener("click", () => {
+    showProgress();
+    app.querySelector(".mocks-section").scrollIntoView();
+  });
+  app.querySelector(".eyebrow").textContent = `Simulacro ${entry.n}`;
+  const date = DATE_FORMAT.format(entry.at);
+  app.querySelector(".mock-date").textContent = date[0].toUpperCase() + date.slice(1);
+  app.querySelector(".score").textContent = `${Math.round((entry.right / entry.total) * 100)}%`;
+  app.querySelector(".summary").textContent =
+    `Acertaste ${entry.right} de ${entry.total} preguntas ${durationText(entry.ms)}.`;
+  showVerdict(entry.right, entry.pass);
+  // Questions removed from the site since then are skipped.
+  renderMockAnswers(entry.answers
+    .filter(([id]) => state.cardsById.has(id))
+    .map(([id, selected, right]) => ({ card: state.cardsById.get(id), selected, right: Boolean(right) })));
+  setupShareResult(entry);
   app.focus({ preventScroll: true });
 }
 
@@ -2120,6 +2273,16 @@ function durationText(ms) {
   return minutes < 1 ? "en menos de un minuto" : `en ${plural(minutes, "minuto", "minutos")}`;
 }
 
+function showVerdict(right, passMark) {
+  const verdict = app.querySelector(".verdict");
+  const passed = right >= passMark;
+  verdict.hidden = false;
+  verdict.classList.add(passed ? "is-right" : "is-wrong");
+  verdict.textContent = passed
+    ? `¡Aprobado! Se necesitan ${passMark} aciertos.`
+    : `No aprobado: se necesitan ${passMark} aciertos y te ${passMark - right === 1 ? "faltó" : "faltaron"} ${passMark - right}.`;
+}
+
 function showResult() {
   stopSpeaking();
   const total = state.queue.length;
@@ -2128,15 +2291,7 @@ function showResult() {
   app.querySelector(".score").textContent = `${Math.round((right / total) * 100)}%`;
   app.querySelector(".summary").textContent =
     `Acertaste ${right} de ${total} preguntas ${durationText(Date.now() - state.startedAt)}.`;
-  const verdict = app.querySelector(".verdict");
-  if (state.passMark) {
-    const passed = right >= state.passMark;
-    verdict.hidden = false;
-    verdict.classList.add(passed ? "is-right" : "is-wrong");
-    verdict.textContent = passed
-      ? `¡Aprobado! Se necesitan ${state.passMark} aciertos.`
-      : `No aprobado: se necesitan ${state.passMark} aciertos y te ${state.passMark - right === 1 ? "faltó" : "faltaron"} ${state.passMark - right}.`;
-  }
+  if (state.passMark) showVerdict(right, state.passMark);
   recordExam(right);
   const combo = app.querySelector(".result-combo");
   if (state.bestCombo >= 2) {
@@ -2199,23 +2354,59 @@ function showResult() {
 
   const list = app.querySelector(".missed");
   if (state.mock) {
-    // Every answer, wrong ones first, with what was picked.
-    const wrongAnswers = state.answers.filter((answer) => !answer.right);
-    const rightAnswers = state.answers.filter((answer) => answer.right);
-    app.querySelector(".missed-title")?.replaceChildren(`Preguntas falladas (${wrongAnswers.length})`);
-    for (const answer of wrongAnswers) list.append(renderReviewItem(answer.card, answer.selected));
-    if (rightAnswers.length) {
-      const rightList = app.querySelector(".right-answers");
-      app.querySelector(".right-title").textContent = `Preguntas acertadas (${rightAnswers.length})`;
-      app.querySelector(".right-title").hidden = false;
-      rightList.hidden = false;
-      for (const answer of rightAnswers) rightList.append(renderReviewItem(answer.card, answer.selected));
-    }
+    renderMockAnswers(state.answers);
+    setupShareResult(progress.mocks.at(-1));
     app.focus({ preventScroll: true });
     return;
   }
   for (const card of missed) list.append(renderReviewItem(card));
   app.focus({ preventScroll: true });
+}
+
+// Every answer of a mock exam, wrong ones first, with what was picked.
+function renderMockAnswers(answers) {
+  const wrongAnswers = answers.filter((answer) => !answer.right);
+  const rightAnswers = answers.filter((answer) => answer.right);
+  const missedTitle = app.querySelector(".missed-title:not(.right-title)");
+  if (wrongAnswers.length) missedTitle.textContent = `Preguntas falladas (${wrongAnswers.length})`;
+  else missedTitle?.remove();
+  const list = app.querySelector(".missed:not(.right-answers)");
+  for (const answer of wrongAnswers) list.append(renderReviewItem(answer.card, answer.selected));
+  if (rightAnswers.length) {
+    const rightList = app.querySelector(".right-answers");
+    app.querySelector(".right-title").textContent = `Preguntas acertadas (${rightAnswers.length})`;
+    app.querySelector(".right-title").hidden = false;
+    rightList.hidden = false;
+    for (const answer of rightAnswers) rightList.append(renderReviewItem(answer.card, answer.selected));
+  }
+}
+
+// Shares a short text with the score and a link to the site. It says only
+// whether the mock exam was passed and how many answers were right.
+function setupShareResult(entry) {
+  const button = app.querySelector(".share-result");
+  const status = app.querySelector(".share-status");
+  if (!entry) return;
+  button.hidden = false;
+  button.textContent = nativeShare ? "Compartir resultado" : "Copiar resultado";
+  button.addEventListener("click", async () => {
+    const text = entry.right >= entry.pass
+      ? `¡Aprobé un simulacro del examen de nacionalización ecuatoriana con ${entry.right} de ${entry.total} respuestas correctas!`
+      : `Hice un simulacro del examen de nacionalización ecuatoriana: ${entry.right} de ${entry.total} respuestas correctas. Se aprueba con ${entry.pass}, así que sigo practicando.`;
+    const url = location.origin + location.pathname;
+    if (nativeShare) {
+      try {
+        await navigator.share({ text, url });
+      } catch {}
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(`${text} ${url}`);
+      status.textContent = "Resultado copiado. Pégalo en un mensaje para compartirlo.";
+    } catch {
+      status.textContent = `${text} ${url}`;
+    }
+  });
 }
 
 // A question in the result list, with its right answer. Given what was picked

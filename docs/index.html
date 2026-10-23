@@ -483,6 +483,8 @@
       </section>
       <ul class="breakdown"></ul>
       <div class="result-actions">
+        <button class="ghost big share-result" type="button" hidden>Compartir resultado</button>
+        <p class="share-status" aria-live="polite"></p>
         <button class="primary big retry-missed" type="button">Repasar las falladas</button>
         <button class="ghost big restart" type="button">Volver al inicio</button>
       </div>
@@ -833,6 +835,18 @@
         <p class="progress-hint">Cada cuadro es un día. El color se intensifica según cuántas preguntas respondiste, comparado con tu meta diaria: el tercer tono es la meta cumplida y el más fuerte, el doble.</p>
       </section>
 
+      <section class="mocks-section" aria-labelledby="mocks-title">
+        <h2 id="mocks-title">Mis simulacros</h2>
+        <p class="mocks-summary"></p>
+        <div class="mock-chart" hidden></div>
+        <div class="mock-legend" aria-hidden="true" hidden>
+          <span><i class="mock-dot is-passed"></i>Aprobado</span>
+          <span><i class="mock-dot"></i>No aprobado</span>
+          <span><i class="mock-pass-line"></i>27 para aprobar</span>
+        </div>
+        <ol class="mock-list" reversed></ol>
+      </section>
+
       <section class="goal-section goal" aria-labelledby="goal-title">
         <h2 id="goal-title">Meta diaria</h2>
         <p class="goal-label" id="goal-label">Preguntas por día</p>
@@ -864,6 +878,30 @@
       </section>
 
       <button class="link reset-progress" type="button">Borrar mi progreso</button>
+    </section>
+  </template>
+
+  <template id="mock-result-template">
+    <div class="exam-bar">
+      <button class="ghost back-progress" type="button">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        Volver a mi progreso
+      </button>
+    </div>
+    <section class="result">
+      <p class="eyebrow"></p>
+      <p class="mock-date"></p>
+      <p class="score"></p>
+      <p class="summary"></p>
+      <p class="verdict"></p>
+      <div class="result-actions">
+        <button class="ghost big share-result" type="button">Compartir resultado</button>
+        <p class="share-status" aria-live="polite"></p>
+      </div>
+      <h2 class="missed-title">Preguntas falladas</h2>
+      <ol class="missed"></ol>
+      <h2 class="missed-title right-title" hidden>Preguntas acertadas</h2>
+      <ol class="missed right-answers" hidden></ol>
     </section>
   </template>
 
