@@ -750,6 +750,12 @@ function setupPractice() {
   updatePractice();
 }
 
+// The categories of some questions, in the same order as on the site.
+function categoryNames(cards) {
+  const names = new Set(cards.map((card) => card.category));
+  return state.categories.map((category) => category.title).filter((title) => names.has(title));
+}
+
 function renderSavedExam(exam, { featured = false } = {}) {
   const cards = cardsFromIds(exam.ids);
   const item = document.createElement("li");
@@ -764,7 +770,7 @@ function renderSavedExam(exam, { featured = false } = {}) {
   const title = document.createElement("strong");
   title.textContent = exam.title;
   const meta = document.createElement("small");
-  const categories = [...new Set(cards.map((card) => card.category))];
+  const categories = categoryNames(cards);
   meta.textContent = `${plural(cards.length, "pregunta", "preguntas")} · ${joinList(categories)}`;
   info.append(title, meta);
   const start = document.createElement("button");
@@ -2407,7 +2413,7 @@ function showShared({ cards, title, missing = 0 }) {
   history.replaceState(null, "", link);
   showScreen("shared-template");
   app.querySelector(".shared-title").textContent = title || "Examen personalizado";
-  const categories = [...new Set(cards.map((card) => card.category))];
+  const categories = categoryNames(cards);
   const ids = cards.map((card) => card.id);
   const featured = findFeaturedExam(ids);
   app.querySelector(".shared-summary").textContent = cards.length
