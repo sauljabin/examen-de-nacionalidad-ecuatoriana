@@ -6461,6 +6461,39 @@
        ],
        "answer": 0,
        "explanation": "Su hermano Huáscar recibió el sur, con el Cusco."
+      },
+      {
+       "id": "uNSWCiipAwPdHVwfe.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuáles son los vestigios más conocidos de la cultura Valdivia?"
+        }
+       ],
+       "options": [
+        "Las cerámicas",
+        "Las pirámides",
+        "Las joyas de oro",
+        "Los templos de piedra"
+       ],
+       "answer": 0,
+       "explanation": "Es una de las culturas alfareras más antiguas de América."
+      },
+      {
+       "id": "cAOpixzgGXNvcO2cG.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A qué región del actual Ecuador no llegó la conquista inca?"
+        }
+       ],
+       "options": [
+        "A la Amazonía",
+        "A la Sierra norte",
+        "A la Sierra sur",
+        "A Quito"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -10353,30 +10386,6 @@
        }
       },
       {
-       "id": "kWAwPUVBLsOnCWG7B.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es considerada la obra arquitectónica cumbre de la Escuela Quiteña, por su elaborada ornamentación barroca interior recubierta de pan de oro?"
-        }
-       ],
-       "options": [
-        "La Iglesia de La Compañía de Jesús",
-        "La Iglesia de San Francisco",
-        "La Basílica del Voto Nacional",
-        "La Iglesia de El Sagrario"
-       ],
-       "answer": 0,
-       "explanation": "La primera gran obra de la Escuela Quiteña fue la Iglesia y Convento de San Francisco.",
-       "photo": {
-        "src": "images/foto-compania.jpg",
-        "alt": "Iglesia de la Compañía de Jesús, Quito",
-        "credit": "Ranoutofusername",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
-       }
-      },
-      {
        "id": "uzOkhM8aaV8nJYRhq.f",
        "type": "choice",
        "front": [
@@ -10488,30 +10497,6 @@
         "El modernismo"
        ],
        "answer": 0,
-       "photo": {
-        "src": "images/foto-san-francisco.jpg",
-        "alt": "Iglesia y convento de San Francisco, Quito",
-        "credit": "Diego Delso",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco,_Quito,_Ecuador,_2015-07-22,_DD_154.JPG"
-       }
-      },
-      {
-       "id": "RRqAvUMjXOv09e76I.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál se considera la primera gran obra arquitectónica de la Escuela Quiteña?"
-        }
-       ],
-       "options": [
-        "La Iglesia y Convento de San Francisco",
-        "La Iglesia de La Compañía de Jesús",
-        "La Basílica del Voto Nacional",
-        "La Iglesia de El Sagrario"
-       ],
-       "answer": 0,
-       "explanation": "Su obra cumbre es la Iglesia de La Compañía de Jesús.",
        "photo": {
         "src": "images/foto-san-francisco.jpg",
         "alt": "Iglesia y convento de San Francisco, Quito",
@@ -10682,9 +10667,196 @@
      ]
     },
     {
-     "id": "pintura-y-artes-plasticas",
-     "title": "Pintura y artes plásticas",
+     "id": "escuela-quitena",
+     "title": "Escuela Quiteña",
      "cards": [
+      {
+       "id": "LtNPjwibVLtxkG7xy.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A qué se le denominó como la Escuela Quiteña?"
+        }
+       ],
+       "options": [
+        "El conjunto de artistas y obras de la Real Audiencia de Quito entre los siglos XVI y XVIII",
+        "Una escuela de pintura fundada en el siglo XX",
+        "La primera universidad de Quito",
+        "Un grupo de escritores indigenistas"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
+      },
+      {
+       "id": "HA8tMvUIXus5Q8hN0.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué siglos alcanzó su mayor esplendor la llamada «Escuela Quiteña» de arte colonial?"
+        }
+       ],
+       "options": [
+        "XVII y XVIII",
+        "XV y XVI",
+        "XIX y XX",
+        "XX y XXI"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
+      },
+      {
+       "id": "Pzz24qDeiDyLExriM.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué es el barroco quiteño?"
+        }
+       ],
+       "options": [
+        "El arte desarrollado en Quito entre los siglos XVII y XVIII, que adaptó el barroco europeo a la realidad andina",
+        "Un estilo de arquitectura moderna del siglo XX",
+        "Una corriente de pintura indígena anterior a la conquista",
+        "Un tipo de música tradicional de la Sierra"
+       ],
+       "answer": 0,
+       "explanation": "Abarcó la arquitectura, la pintura y la escultura.",
+       "photo": {
+        "src": "images/foto-compania.jpg",
+        "alt": "Iglesia de la Compañía de Jesús, Quito",
+        "credit": "Ranoutofusername",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
+       }
+      },
+      {
+       "id": "cmME9bgsyu7QQOyex.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué estilo artístico predomina en la producción escultórica y pictórica de la Escuela Quiteña durante la época colonial?"
+        }
+       ],
+       "options": [
+        "Barroco",
+        "Neoclásico",
+        "Expresionismo",
+        "Impresionismo"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
+      },
+      {
+       "id": "SnTsu8U2fZKifKtGD.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la técnica y el material más característico en las esculturas de la Escuela Quiteña?"
+        }
+       ],
+       "options": [
+        "Madera policromada y estofada en pan de oro",
+        "Mármol tallado",
+        "Bronce fundido",
+        "Cerámica pintada"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
+      },
+      {
+       "id": "XnvxIJBZluLkB6xm8.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo se denomina la técnica empleada por los maestros quiteños para dar realismo al color de la piel a las esculturas mediante varias capas de óleo?"
+        }
+       ],
+       "options": [
+        "Encarnado",
+        "Estofado",
+        "Dorado",
+        "Grabado"
+       ],
+       "answer": 0,
+       "explanation": "El estofado consiste en raspar la pintura sobre el pan de oro para que aparezcan dibujos dorados.",
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
+      },
+      {
+       "id": "IAtEUi14RhT2gB9Rt.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo se llama la técnica decorativa que raspa pintura sobre pan de oro para revelar dibujos?"
+        }
+       ],
+       "options": [
+        "Estofado",
+        "Encarnado",
+        "Grabado",
+        "Mosaico"
+       ],
+       "answer": 0,
+       "explanation": "El encarnado son las capas de óleo que dan color de piel a las esculturas.",
+       "photo": {
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
+       }
+      },
+      {
+       "id": "zWSVizNZ91ZvGVhRA.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué rasgo iconográfico refleja el sincretismo cultural en los retablos barrocos quiteños?"
+        }
+       ],
+       "options": [
+        "Rostros mestizos e indígenas junto a símbolos cristianos",
+        "Figuras geométricas abstractas",
+        "Escenas de la mitología griega",
+        "Retratos de los reyes de España"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-escuela-quitena.jpg",
+        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
+        "credit": "Andrés Sánchez Gallque",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+       }
+      },
       {
        "id": "panT0sizEhcoTXuRZ.f",
        "type": "choice",
@@ -10729,30 +10901,6 @@
         "credit": "J. Garcés R.",
         "license": "Public domain",
         "url": "https://commons.wikimedia.org/wiki/File:Miguel_de_Santiago.jpg"
-       }
-      },
-      {
-       "id": "z3UkJqbgSOr42JJqH.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es la obra más representativa de Manuel Chili «Caspicara»?"
-        }
-       ],
-       "options": [
-        "La Sábana Santa",
-        "La Virgen de Quito",
-        "La Virgen de los Ángeles",
-        "El Tren Volador"
-       ],
-       "answer": 0,
-       "explanation": "La Virgen de Quito es de Bernardo de Legarda, y la Virgen de los Ángeles, de Miguel de Santiago.",
-       "photo": {
-        "src": "images/foto-caspicara.jpg",
-        "alt": "Escultura en madera policromada de Caspicara",
-        "credit": "Caspicara (Manuel Chili)",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
        }
       },
       {
@@ -10810,44 +10958,69 @@
        }
       },
       {
-       "id": "HA8tMvUIXus5Q8hN0.f",
+       "id": "z3UkJqbgSOr42JJqH.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿En qué siglos alcanzó su mayor esplendor la llamada «Escuela Quiteña» de arte colonial?"
+         "text": "¿Cuál es la obra más representativa de Manuel Chili «Caspicara»?"
         }
        ],
        "options": [
-        "XVII y XVIII",
-        "XV y XVI",
-        "XIX y XX",
-        "XX y XXI"
+        "La Sábana Santa",
+        "La Virgen de Quito",
+        "La Virgen de los Ángeles",
+        "El Tren Volador"
        ],
        "answer": 0,
+       "explanation": "La Virgen de Quito es de Bernardo de Legarda, y la Virgen de los Ángeles, de Miguel de Santiago.",
        "photo": {
-        "src": "images/foto-escuela-quitena.jpg",
-        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
-        "credit": "Andrés Sánchez Gallque",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
+        "src": "images/foto-caspicara.jpg",
+        "alt": "Escultura en madera policromada de Caspicara",
+        "credit": "Caspicara (Manuel Chili)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
        }
       },
       {
-       "id": "Pzz24qDeiDyLExriM.f",
+       "id": "RRqAvUMjXOv09e76I.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué es el barroco quiteño?"
+         "text": "¿Cuál se considera la primera gran obra arquitectónica de la Escuela Quiteña?"
         }
        ],
        "options": [
-        "El arte desarrollado en Quito entre los siglos XVII y XVIII, que adaptó el barroco europeo a la realidad andina",
-        "Un estilo de arquitectura moderna del siglo XX",
-        "Una corriente de pintura indígena anterior a la conquista",
-        "Un tipo de música tradicional de la Sierra"
+        "La Iglesia y Convento de San Francisco",
+        "La Iglesia de La Compañía de Jesús",
+        "La Basílica del Voto Nacional",
+        "La Iglesia de El Sagrario"
        ],
        "answer": 0,
-       "explanation": "Abarcó la arquitectura, la pintura y la escultura.",
+       "explanation": "Su obra cumbre es la Iglesia de La Compañía de Jesús.",
+       "photo": {
+        "src": "images/foto-san-francisco.jpg",
+        "alt": "Iglesia y convento de San Francisco, Quito",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco,_Quito,_Ecuador,_2015-07-22,_DD_154.JPG"
+       }
+      },
+      {
+       "id": "kWAwPUVBLsOnCWG7B.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es considerada la obra arquitectónica cumbre de la Escuela Quiteña, por su elaborada ornamentación barroca interior recubierta de pan de oro?"
+        }
+       ],
+       "options": [
+        "La Iglesia de La Compañía de Jesús",
+        "La Iglesia de San Francisco",
+        "La Basílica del Voto Nacional",
+        "La Iglesia de El Sagrario"
+       ],
+       "answer": 0,
+       "explanation": "La primera gran obra de la Escuela Quiteña fue la Iglesia y Convento de San Francisco.",
        "photo": {
         "src": "images/foto-compania.jpg",
         "alt": "Iglesia de la Compañía de Jesús, Quito",
@@ -10855,257 +11028,82 @@
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Compa%C3%B1%C3%ADa_de_Jes%C3%BAs,_Quito_14.jpg"
        }
-      },
+      }
+     ]
+    },
+    {
+     "id": "pintura-y-artes-plasticas",
+     "title": "Pintura y artes plásticas",
+     "cards": [
       {
-       "id": "SnTsu8U2fZKifKtGD.f",
+       "id": "S4cLTfQjvzte93y68.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es la técnica y el material más característico en las esculturas de la Escuela Quiteña?"
-        }
-       ],
-       "options": [
-        "Madera policromada y estofada en pan de oro",
-        "Mármol tallado",
-        "Bronce fundido",
-        "Cerámica pintada"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-caspicara.jpg",
-        "alt": "Escultura en madera policromada de Caspicara",
-        "credit": "Caspicara (Manuel Chili)",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
-       }
-      },
-      {
-       "id": "LtNPjwibVLtxkG7xy.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿A qué se le denominó como la Escuela Quiteña?"
-        }
-       ],
-       "options": [
-        "El conjunto de artistas y obras de la Real Audiencia de Quito entre los siglos XVI y XVIII",
-        "Una escuela de pintura fundada en el siglo XX",
-        "La primera universidad de Quito",
-        "Un grupo de escritores indigenistas"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-escuela-quitena.jpg",
-        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
-        "credit": "Andrés Sánchez Gallque",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
-       }
-      },
-      {
-       "id": "XnvxIJBZluLkB6xm8.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cómo se denomina la técnica empleada por los maestros quiteños para dar realismo al color de la piel a las esculturas mediante varias capas de óleo?"
-        }
-       ],
-       "options": [
-        "Encarnado",
-        "Estofado",
-        "Dorado",
-        "Grabado"
-       ],
-       "answer": 0,
-       "explanation": "El estofado consiste en raspar la pintura sobre el pan de oro para que aparezcan dibujos dorados.",
-       "photo": {
-        "src": "images/foto-caspicara.jpg",
-        "alt": "Escultura en madera policromada de Caspicara",
-        "credit": "Caspicara (Manuel Chili)",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
-       }
-      },
-      {
-       "id": "IAtEUi14RhT2gB9Rt.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cómo se llama la técnica decorativa que raspa pintura sobre pan de oro para revelar dibujos?"
-        }
-       ],
-       "options": [
-        "Estofado",
-        "Encarnado",
-        "Grabado",
-        "Mosaico"
-       ],
-       "answer": 0,
-       "explanation": "El encarnado son las capas de óleo que dan color de piel a las esculturas.",
-       "photo": {
-        "src": "images/foto-caspicara.jpg",
-        "alt": "Escultura en madera policromada de Caspicara",
-        "credit": "Caspicara (Manuel Chili)",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mary_(from_a_nativity)_MET_ES5330.jpg"
-       }
-      },
-      {
-       "id": "cmME9bgsyu7QQOyex.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué estilo artístico predomina en la producción escultórica y pictórica de la Escuela Quiteña durante la época colonial?"
-        }
-       ],
-       "options": [
-        "Barroco",
-        "Neoclásico",
-        "Expresionismo",
-        "Impresionismo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-escuela-quitena.jpg",
-        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
-        "credit": "Andrés Sánchez Gallque",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
-       }
-      },
-      {
-       "id": "zWSVizNZ91ZvGVhRA.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué rasgo iconográfico refleja el sincretismo cultural en los retablos barrocos quiteños?"
-        }
-       ],
-       "options": [
-        "Rostros mestizos e indígenas junto a símbolos cristianos",
-        "Figuras geométricas abstractas",
-        "Escenas de la mitología griega",
-        "Retratos de los reyes de España"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-escuela-quitena.jpg",
-        "alt": "«Los tres mulatos de Esmeraldas», de Andrés Sánchez Gallque (1599)",
-        "credit": "Andrés Sánchez Gallque",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Los_tres_mulatos_de_Esmeraldas_(S%C3%A1nchez_Galque).jpg"
-       }
-      },
-      {
-       "id": "scYQg0oIedVS0bPh9.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué corriente estética emplean los críticos para describir la obra de "
+         "text": "¿Qué corrientes pictóricas integró "
         },
         {
-         "text": "Endara Crow",
+         "text": "Víctor Mideros",
          "bold": true
         },
         {
-         "text": ", por su fusión de realidad andina y elementos fantásticos?"
+         "text": " en su obra, combinando un tratamiento sensible del color con simbolismo esotérico?"
         }
        ],
        "options": [
-        "El realismo mágico",
-        "El expresionismo",
-        "La abstracción geométrica",
-        "El indigenismo"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "R6q3KKMhVtuoSUNs3.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es la pintura más conocida de "
-        },
-        {
-         "text": "Gonzalo Endara Crow",
-         "bold": true
-        },
-        {
-         "text": ", en la que un tren se eleva sobre un paisaje andino multicolor?"
-        }
-       ],
-       "options": [
-        "El Tren Volador",
-        "El carbonero",
-        "Las floristas",
-        "Astronautas"
-       ],
-       "answer": 0,
-       "explanation": "El carbonero es de Eduardo Kingman, Las floristas de Camilo Egas y Astronautas de Gilberto Almeida."
-      },
-      {
-       "id": "cE6GXivHsetjdg2lm.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué estilo artístico domina la obra de "
-        },
-        {
-         "text": "Oswaldo Guayasamín,",
-         "bold": true
-        },
-        {
-         "text": " reconocible por sus figuras alargadas y la intensa carga emotiva de sus rostros y manos?"
-        }
-       ],
-       "options": [
-        "El expresionismo",
-        "El realismo mágico",
-        "La abstracción geométrica",
-        "El impresionismo"
+        "Impresionismo y simbolismo",
+        "Expresionismo y surrealismo",
+        "Barroco y neoclasicismo",
+        "Abstracción geométrica"
        ],
        "answer": 0,
        "photo": {
-        "src": "images/foto-guayasamin.jpg",
-        "alt": "Oswaldo Guayasamín en 1949",
-        "credit": "Annemarie Heinrich",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo_Guayasam%C3%ADn_by_Annemarie_Heinrich,_1949.jpg"
+        "src": "images/foto-mideros.jpg",
+        "alt": "Víctor Mideros",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Fotopintorvictormideros.jpg"
        }
       },
       {
-       "id": "U0cX08tmU5ReLgR55.f",
+       "id": "SKBwilzCReELdKS0F.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Dónde se encuentra el museo de arte La Capilla del Hombre?"
+         "text": "¿Por qué se le conocía a "
+        },
+        {
+         "text": "Víctor Mideros",
+         "bold": true
+        },
+        {
+         "text": " como «el pintor de Dios»?"
         }
        ],
        "options": [
-        "En Quito",
-        "En Guayaquil",
-        "En Cuenca",
-        "En Ambato"
+        "Por su temática religiosa y su «paleta de Dios», con los siete colores del arco iris",
+        "Porque pintaba solo en iglesias",
+        "Porque nunca firmó sus obras",
+        "Porque pintó el techo de la Basílica del Voto Nacional"
        ],
        "answer": 0,
-       "explanation": "Fue una iniciativa de Oswaldo Guayasamín en homenaje al ser humano.",
        "photo": {
-        "src": "images/foto-capilla-del-hombre.jpg",
-        "alt": "La Capilla del Hombre, Quito",
-        "credit": "Bernard Gagnon",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:La_Capilla_del_Hombre,_Quito.jpg"
+        "src": "images/foto-mideros.jpg",
+        "alt": "Víctor Mideros",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Fotopintorvictormideros.jpg"
        }
       },
       {
-       "id": "aZMJmKNA1RkA8rsy8.f",
+       "id": "rXuQ1wIcOpGHbylbg.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es el orden cronológico correcto de creación de las tres series pictóricas de "
+         "text": "¿En qué iglesia de Quito se conservan las obras religiosas más conocidas del pintor "
         },
         {
-         "text": "Oswaldo Guayasamín",
+         "text": "Víctor Mideros",
          "bold": true
         },
         {
@@ -11113,19 +11111,18 @@
         }
        ],
        "options": [
-        "Huacayñán, La Edad de la Ira y Mientras viva siempre te recuerdo",
-        "La Edad de la Ira, Huacayñán y Mientras viva siempre te recuerdo",
-        "Mientras viva siempre te recuerdo, La Edad de la Ira y Huacayñán",
-        "Huacayñán, Mientras viva siempre te recuerdo y La Edad de la Ira"
+        "La Iglesia de La Merced",
+        "La Iglesia de La Compañía de Jesús",
+        "La Iglesia de San Francisco",
+        "La Basílica del Voto Nacional"
        ],
        "answer": 0,
-       "explanation": "La tercera serie también se conoce como La Ternura.",
        "photo": {
-        "src": "images/foto-guayasamin.jpg",
-        "alt": "Oswaldo Guayasamín en 1949",
-        "credit": "Annemarie Heinrich",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo_Guayasam%C3%ADn_by_Annemarie_Heinrich,_1949.jpg"
+        "src": "images/foto-la-merced.jpg",
+        "alt": "Iglesia de La Merced, Quito",
+        "credit": "Shoestring (Wikitravel)",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Convento_La_Merced,_Quito,_Ecuador.JPG"
        }
       },
       {
@@ -11275,6 +11272,91 @@
        }
       },
       {
+       "id": "cE6GXivHsetjdg2lm.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué estilo artístico domina la obra de "
+        },
+        {
+         "text": "Oswaldo Guayasamín,",
+         "bold": true
+        },
+        {
+         "text": " reconocible por sus figuras alargadas y la intensa carga emotiva de sus rostros y manos?"
+        }
+       ],
+       "options": [
+        "El expresionismo",
+        "El realismo mágico",
+        "La abstracción geométrica",
+        "El impresionismo"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-guayasamin.jpg",
+        "alt": "Oswaldo Guayasamín en 1949",
+        "credit": "Annemarie Heinrich",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo_Guayasam%C3%ADn_by_Annemarie_Heinrich,_1949.jpg"
+       }
+      },
+      {
+       "id": "U0cX08tmU5ReLgR55.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Dónde se encuentra el museo de arte La Capilla del Hombre?"
+        }
+       ],
+       "options": [
+        "En Quito",
+        "En Guayaquil",
+        "En Cuenca",
+        "En Ambato"
+       ],
+       "answer": 0,
+       "explanation": "Fue una iniciativa de Oswaldo Guayasamín en homenaje al ser humano.",
+       "photo": {
+        "src": "images/foto-capilla-del-hombre.jpg",
+        "alt": "La Capilla del Hombre, Quito",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:La_Capilla_del_Hombre,_Quito.jpg"
+       }
+      },
+      {
+       "id": "aZMJmKNA1RkA8rsy8.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el orden cronológico correcto de creación de las tres series pictóricas de "
+        },
+        {
+         "text": "Oswaldo Guayasamín",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "Huacayñán, La Edad de la Ira y Mientras viva siempre te recuerdo",
+        "La Edad de la Ira, Huacayñán y Mientras viva siempre te recuerdo",
+        "Mientras viva siempre te recuerdo, La Edad de la Ira y Huacayñán",
+        "Huacayñán, Mientras viva siempre te recuerdo y La Edad de la Ira"
+       ],
+       "answer": 0,
+       "explanation": "La tercera serie también se conoce como La Ternura.",
+       "photo": {
+        "src": "images/foto-guayasamin.jpg",
+        "alt": "Oswaldo Guayasamín en 1949",
+        "credit": "Annemarie Heinrich",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Oswaldo_Guayasam%C3%ADn_by_Annemarie_Heinrich,_1949.jpg"
+       }
+      },
+      {
        "id": "jx7oHbTbUuHKBrnm5.f",
        "type": "choice",
        "front": [
@@ -11404,6 +11486,66 @@
        "answer": 0
       },
       {
+       "id": "Hu5UoPWEWWZJ2o40w.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Gilberto Almeida",
+         "bold": true
+        },
+        {
+         "text": " fue parte de un movimiento artístico importante en Ecuador. ¿Cómo se conocía a este grupo de artistas?"
+        }
+       ],
+       "options": [
+        "El Grupo VAN",
+        "La Generación Decapitada",
+        "El tzantzismo",
+        "El Grupo de Guayaquil"
+       ],
+       "answer": 0,
+       "explanation": "La Generación Decapitada fue un grupo de poetas, el tzantzismo un movimiento literario y el Grupo de Guayaquil, de novelistas."
+      },
+      {
+       "id": "EFOJIY4hpaQSJht2Y.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué temática es recurrente en la obra de Gilberto Almeida, especialmente en sus paisajes?"
+        }
+       ],
+       "options": [
+        "La soledad y la desolación de los páramos andinos",
+        "Los caballos",
+        "Las manos",
+        "La vida en la Costa"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "zrZLg0p3xgS2HELhw.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién pintó la obra «"
+        },
+        {
+         "text": "Astronautas",
+         "bold": true
+        },
+        {
+         "text": "»?"
+        }
+       ],
+       "options": [
+        "Gilberto Almeida Egas",
+        "Oswaldo Guayasamín",
+        "Eduardo Kingman",
+        "Gonzalo Endara Crow"
+       ],
+       "answer": 0
+      },
+      {
        "id": "3dbWKuNDISgXw1OIu.f",
        "type": "choice",
        "front": [
@@ -11471,142 +11613,6 @@
         "Fue la primera directora de la Orquesta Sinfónica Nacional"
        ],
        "answer": 0
-      },
-      {
-       "id": "uXck0POOAzrWiSpkd.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué disciplinas artísticas se especializa"
-        },
-        {
-         "text": " Pilar Bustos",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Muralismo y dibujo",
-        "Escultura en mármol",
-        "Fotografía y cine",
-        "Grabado y cerámica"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "E1KYXCgQN7EXgjiWn.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál tema es recurrente en la obra de la artista ecuatoriana "
-        },
-        {
-         "text": "Pilar Bustos",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Los caballos",
-        "Las manos",
-        "Los páramos",
-        "Las flores"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "S4cLTfQjvzte93y68.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué corrientes pictóricas integró "
-        },
-        {
-         "text": "Víctor Mideros",
-         "bold": true
-        },
-        {
-         "text": " en su obra, combinando un tratamiento sensible del color con simbolismo esotérico?"
-        }
-       ],
-       "options": [
-        "Impresionismo y simbolismo",
-        "Expresionismo y surrealismo",
-        "Barroco y neoclasicismo",
-        "Abstracción geométrica"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-mideros.jpg",
-        "alt": "Víctor Mideros",
-        "credit": "Autor desconocido",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Fotopintorvictormideros.jpg"
-       }
-      },
-      {
-       "id": "SKBwilzCReELdKS0F.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Por qué se le conocía a "
-        },
-        {
-         "text": "Víctor Mideros",
-         "bold": true
-        },
-        {
-         "text": " como «el pintor de Dios»?"
-        }
-       ],
-       "options": [
-        "Por su temática religiosa y su «paleta de Dios», con los siete colores del arco iris",
-        "Porque pintaba solo en iglesias",
-        "Porque nunca firmó sus obras",
-        "Porque pintó el techo de la Basílica del Voto Nacional"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-mideros.jpg",
-        "alt": "Víctor Mideros",
-        "credit": "Autor desconocido",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Fotopintorvictormideros.jpg"
-       }
-      },
-      {
-       "id": "rXuQ1wIcOpGHbylbg.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué iglesia de Quito se conservan las obras religiosas más conocidas del pintor "
-        },
-        {
-         "text": "Víctor Mideros",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "La Iglesia de La Merced",
-        "La Iglesia de La Compañía de Jesús",
-        "La Iglesia de San Francisco",
-        "La Basílica del Voto Nacional"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-la-merced.jpg",
-        "alt": "Iglesia de La Merced, Quito",
-        "credit": "Shoestring (Wikitravel)",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Convento_La_Merced,_Quito,_Ecuador.JPG"
-       }
       },
       {
        "id": "NHuMXz81Erqc2NvH8.f",
@@ -11685,64 +11691,97 @@
        }
       },
       {
-       "id": "Hu5UoPWEWWZJ2o40w.f",
+       "id": "uXck0POOAzrWiSpkd.f",
        "type": "choice",
        "front": [
         {
-         "text": "Gilberto Almeida",
+         "text": "¿En qué disciplinas artísticas se especializa"
+        },
+        {
+         "text": " Pilar Bustos",
          "bold": true
         },
         {
-         "text": " fue parte de un movimiento artístico importante en Ecuador. ¿Cómo se conocía a este grupo de artistas?"
+         "text": "?"
         }
        ],
        "options": [
-        "El Grupo VAN",
-        "La Generación Decapitada",
-        "El tzantzismo",
-        "El Grupo de Guayaquil"
+        "Muralismo y dibujo",
+        "Escultura en mármol",
+        "Fotografía y cine",
+        "Grabado y cerámica"
        ],
-       "answer": 0,
-       "explanation": "La Generación Decapitada fue un grupo de poetas, el tzantzismo un movimiento literario y el Grupo de Guayaquil, de novelistas."
+       "answer": 0
       },
       {
-       "id": "EFOJIY4hpaQSJht2Y.f",
+       "id": "E1KYXCgQN7EXgjiWn.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué temática es recurrente en la obra de Gilberto Almeida, especialmente en sus paisajes?"
+         "text": "¿Cuál tema es recurrente en la obra de la artista ecuatoriana "
+        },
+        {
+         "text": "Pilar Bustos",
+         "bold": true
+        },
+        {
+         "text": "?"
         }
        ],
        "options": [
-        "La soledad y la desolación de los páramos andinos",
         "Los caballos",
         "Las manos",
-        "La vida en la Costa"
+        "Los páramos",
+        "Las flores"
        ],
        "answer": 0
       },
       {
-       "id": "zrZLg0p3xgS2HELhw.f",
+       "id": "scYQg0oIedVS0bPh9.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién pintó la obra «"
+         "text": "¿Qué corriente estética emplean los críticos para describir la obra de "
         },
         {
-         "text": "Astronautas",
+         "text": "Endara Crow",
          "bold": true
         },
         {
-         "text": "»?"
+         "text": ", por su fusión de realidad andina y elementos fantásticos?"
         }
        ],
        "options": [
-        "Gilberto Almeida Egas",
-        "Oswaldo Guayasamín",
-        "Eduardo Kingman",
-        "Gonzalo Endara Crow"
+        "El realismo mágico",
+        "El expresionismo",
+        "La abstracción geométrica",
+        "El indigenismo"
        ],
        "answer": 0
+      },
+      {
+       "id": "R6q3KKMhVtuoSUNs3.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la pintura más conocida de "
+        },
+        {
+         "text": "Gonzalo Endara Crow",
+         "bold": true
+        },
+        {
+         "text": ", en la que un tren se eleva sobre un paisaje andino multicolor?"
+        }
+       ],
+       "options": [
+        "El Tren Volador",
+        "El carbonero",
+        "Las floristas",
+        "Astronautas"
+       ],
+       "answer": 0,
+       "explanation": "El carbonero es de Eduardo Kingman, Las floristas de Camilo Egas y Astronautas de Gilberto Almeida."
       },
       {
        "id": "juana-cordova",
@@ -11768,38 +11807,44 @@
      "title": "Literatura",
      "cards": [
       {
-       "id": "SubaRiTwQSa7Wc4bh.f",
+       "id": "oS4PTVaZCOnaOZ7fK.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién escribió la novela «Las cruces sobre el agua»?"
+         "text": "¿Cuál es uno de los aportes más importantes de "
+        },
+        {
+         "text": "Juan Bautista Aguirre",
+         "bold": true
+        },
+        {
+         "text": " a la literatura ecuatoriana?"
         }
        ],
        "options": [
-        "Joaquín Gallegos Lara",
-        "Jorge Icaza",
-        "Juan León Mera",
-        "Pablo Palacio"
+        "Ser el primer poeta de gran relevancia del actual Ecuador",
+        "Escribir la primera novela ecuatoriana",
+        "Fundar el primer periódico de Quito",
+        "Componer el Himno Nacional"
        ],
        "answer": 0,
-       "explanation": "Trata de la masacre de los obreros de Guayaquil de 1922.",
        "photo": {
-        "src": "images/foto-gallegos-lara.jpg",
-        "alt": "Joaquín Gallegos Lara",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Joaquingallegoslara.png"
+        "src": "images/foto-aguirre.jpg",
+        "alt": "Juan Bautista Aguirre",
+        "credit": "Eladio Sevilla",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bautista-aguirre-pintura.png"
        }
       },
       {
-       "id": "3wYwLuK8itYcviM3K.f",
+       "id": "YATcWe9YNZIpQtjwb.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién escribió la novela "
+         "text": "¿Cuál es considerada la obra más relevante y representativa del poeta "
         },
         {
-         "text": "Cumandá",
+         "text": "Juan Bautista Aguirre",
          "bold": true
         },
         {
@@ -11807,536 +11852,18 @@
         }
        ],
        "options": [
-        "Juan León Mera",
-        "Miguel Riofrío",
-        "Jorge Icaza",
-        "Juan Montalvo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-mera.jpg",
-        "alt": "Juan León Mera",
-        "credit": "Autor desconocido",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
-       }
-      },
-      {
-       "id": "MCuO11dwB8p0ZPPdW.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué novela de "
-        },
-        {
-         "text": "Juan León Mera",
-         "bold": true
-        },
-        {
-         "text": ", publicada en 1879, se considera la primera gran obra de "
-        },
-        {
-         "text": "ficción",
-         "bold": true
-        },
-        {
-         "text": " ecuatoriana y lo consagró como novelista?"
-        }
-       ],
-       "options": [
-        "Cumandá",
-        "La Emancipada",
-        "Huasipungo",
-        "A la costa"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-mera.jpg",
-        "alt": "Juan León Mera",
-        "credit": "Autor desconocido",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
-       }
-      },
-      {
-       "id": "fQMg0EnjXHOojuV6j.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Por qué se le conoce a"
-        },
-        {
-         "text": " Juan León Mera",
-         "bold": true
-        },
-        {
-         "text": " como el "
-        },
-        {
-         "text": "«Padre de la literatura ecuatoriana»",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Por escribir Cumandá, componer el Himno Nacional y promover una literatura propia",
-        "Por escribir Huasipungo",
-        "Por fundar el primer periódico de Quito",
-        "Por escribir Las Catilinarias"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-mera.jpg",
-        "alt": "Juan León Mera",
-        "credit": "Autor desconocido",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
-       }
-      },
-      {
-       "id": "ultAC8KqASoT9M8b4.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es la novela considerada obra cumbre de "
-        },
-        {
-         "text": "Luis Alfredo Martínez",
-         "bold": true
-        },
-        {
-         "text": ", con la que introdujo la "
-        },
-        {
-         "text": "corriente realista",
-         "bold": true
-        },
-        {
-         "text": " en la narrativa ecuatoriana?"
-        }
-       ],
-       "options": [
-        "A la costa",
-        "Cumandá",
-        "Huasipungo",
-        "La Emancipada"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-luis-a-martinez.jpg",
-        "alt": "Luis A. Martínez",
-        "credit": "Autor desconocido",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Luis_A._mart%C3%ADnez.jpg"
-       }
-      },
-      {
-       "id": "QTyVwF5z7L5KFcu2y.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué movimiento literario se considera que "
-        },
-        {
-         "text": "Luis Alfredo Martínez",
-         "bold": true
-        },
-        {
-         "text": " introdujo en la literatura ecuatoriana gracias a su estilo descriptivo y social?"
-        }
-       ],
-       "options": [
-        "El realismo",
-        "El modernismo",
-        "El indigenismo",
-        "El realismo mágico"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-luis-a-martinez.jpg",
-        "alt": "Luis A. Martínez",
-        "credit": "Autor desconocido",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Luis_A._mart%C3%ADnez.jpg"
-       }
-      },
-      {
-       "id": "LxB7mCLtJbeZwHFZ6.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "Además de escritora, ¿qué otra profesión ejerce "
-        },
-        {
-         "text": "María Fernanda Ampuero",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Periodista",
-        "Médica",
-        "Abogada",
-        "Cineasta"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-ampuero.jpg",
-        "alt": "María Fernanda Ampuero",
-        "credit": "Freddy eduardo",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
-       }
-      },
-      {
-       "id": "hc0cMS6nSF96uu4ZL.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál libro de cuentos consolida a "
-        },
-        {
-         "text": "María Fernanda Ampuero ",
-         "bold": true
-        },
-        {
-         "text": "entre lo más destacado de la narrativa latinoamericana contemporánea?"
-        }
-       ],
-       "options": [
-        "Pelea de gallos",
-        "Huasipungo",
-        "Yo vendo unos ojos negros",
-        "El árbol del bien y del mal"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-ampuero.jpg",
-        "alt": "María Fernanda Ampuero",
-        "credit": "Freddy eduardo",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
-       }
-      },
-      {
-       "id": "eZvMXP93rDBHs86sU.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué característica define el estilo literario de "
-        },
-        {
-         "text": "María Fernanda Ampuero",
-         "bold": true
-        },
-        {
-         "text": " en sus relatos?"
-        }
-       ],
-       "options": [
-        "Un lenguaje crudo que denuncia el machismo, la violencia de género y la desigualdad",
-        "Poesía modernista sobre el amor y la muerte",
-        "Novela romántica ambientada en la selva",
-        "Sátira política del siglo XVIII"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-ampuero.jpg",
-        "alt": "María Fernanda Ampuero",
-        "credit": "Freddy eduardo",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
-       }
-      },
-      {
-       "id": "XzyaTpDCAldbFoG9D.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué poema de "
-        },
-        {
-         "text": "Medardo Ángel Silva",
-         "bold": true
-        },
-        {
-         "text": " se popularizó como pasillo al ser musicalizado por Julio Jaramillo?"
-        }
-       ],
-       "options": [
-        "El alma en los labios",
-        "Nuestro Juramento",
-        "El Espantapájaros",
-        "El árbol del bien y del mal"
-       ],
-       "answer": 0,
-       "explanation": "El árbol del bien y del mal es el único libro que Silva publicó en vida.",
-       "photo": {
-        "src": "images/foto-medardo-silva.jpg",
-        "alt": "Medardo Ángel Silva",
-        "credit": "Autor desconocido",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
-       }
-      },
-      {
-       "id": "Qr0m9rBTvH6flUmTr.29221176283091",
-       "type": "cloze",
-       "front": [
-        {
-         "text": "El poema "
-        },
-        {
-         "text": "El alma en los labios",
-         "bold": true
-        },
-        {
-         "text": " fue escrito por "
-        },
-        {
-         "text": "Medardo Ángel Silva",
-         "bold": true,
-         "cloze": true
-        }
-       ],
-       "photo": {
-        "src": "images/foto-medardo-silva.jpg",
-        "alt": "Medardo Ángel Silva",
-        "credit": "Autor desconocido",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
-       }
-      },
-      {
-       "id": "PSSfjFKG7TEAVIJVk.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál fue la única obra que "
-        },
-        {
-         "text": "Medardo Ángel Silva",
-         "bold": true
-        },
-        {
-         "text": " publicó en vida, considerada un hito del modernismo ecuatoriano?"
-        }
-       ],
-       "options": [
+        "Carta a Lizardo",
+        "La victoria de Junín: Canto a Bolívar",
         "El árbol del bien y del mal",
-        "El alma en los labios",
-        "Cumandá",
-        "La Emancipada"
+        "Las Catilinarias"
        ],
        "answer": 0,
        "photo": {
-        "src": "images/foto-medardo-silva.jpg",
-        "alt": "Medardo Ángel Silva",
-        "credit": "Autor desconocido",
+        "src": "images/foto-aguirre.jpg",
+        "alt": "Juan Bautista Aguirre",
+        "credit": "Eladio Sevilla",
         "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
-       }
-      },
-      {
-       "id": "AvfRiJYQeqATIL5VL.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué corrientes literarias influyeron en el estilo poético de "
-        },
-        {
-         "text": "Medardo Ángel Silva",
-         "bold": true
-        },
-        {
-         "text": ", caracterizado por temas de amor, melancolía y muerte?"
-        }
-       ],
-       "options": [
-        "El modernismo y el simbolismo francés",
-        "El realismo social",
-        "El indigenismo",
-        "El barroco"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-medardo-silva.jpg",
-        "alt": "Medardo Ángel Silva",
-        "credit": "Autor desconocido",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
-       }
-      },
-      {
-       "id": "gvWkJviK2MQnQVWJO.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿A qué agrupación literaria perteneció "
-        },
-        {
-         "text": "Medardo Ángel Silva",
-         "bold": true
-        },
-        {
-         "text": ", conocido por su trágico destino prematuro?"
-        }
-       ],
-       "options": [
-        "La Generación Decapitada",
-        "El Grupo de Guayaquil",
-        "El tzantzismo",
-        "El Grupo VAN"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-medardo-silva.jpg",
-        "alt": "Medardo Ángel Silva",
-        "credit": "Autor desconocido",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
-       }
-      },
-      {
-       "id": "RtCHxoZStdkKIiU5W.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué seudónimo utilizó "
-        },
-        {
-         "text": "Medardo Ángel Silva",
-         "bold": true
-        },
-        {
-         "text": " en su columna «Al pasar» del diario El Telégrafo?"
-        }
-       ],
-       "options": [
-        "Jean d'Agrève",
-        "Caspicara",
-        "El Miche",
-        "Evaristo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-medardo-silva.jpg",
-        "alt": "Medardo Ángel Silva",
-        "credit": "Autor desconocido",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
-       }
-      },
-      {
-       "id": "Nk3lMCP1Wbc7wH62X.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué novela de "
-        },
-        {
-         "text": "Miguel Riofrío",
-         "bold": true
-        },
-        {
-         "text": ", publicada por entregas en el diario quiteño La Unión en 1863, se considera la "
-        },
-        {
-         "text": "primera novela (corta) ecuatoriana",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "La Emancipada",
-        "Cumandá",
-        "A la costa",
-        "Huasipungo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-riofrio.jpg",
-        "alt": "Miguel Riofrío",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
-       }
-      },
-      {
-       "id": "cXxgS7V252Ynmq4kn.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué tema central aborda la trama de La Emancipada?"
-        }
-       ],
-       "options": [
-        "La rebelión de una joven contra un matrimonio impuesto por su padre",
-        "El amor entre una joven indígena y un hombre blanco",
-        "La explotación de los indígenas en una hacienda",
-        "La migración de la Sierra a la Costa"
-       ],
-       "answer": 0,
-       "explanation": "El amor entre una joven indígena y un hombre blanco es Cumandá; la explotación en la hacienda, Huasipungo; y la migración a la Costa, A la costa.",
-       "photo": {
-        "src": "images/foto-riofrio.jpg",
-        "alt": "Miguel Riofrío",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
-       }
-      },
-      {
-       "id": "GLbrtxxzxAthKfo0U.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuáles fueron las primeras novelas ecuatorianas?"
-        }
-       ],
-       "options": [
-        "«La Emancipada», de Miguel Riofrío, y «Cumandá», de Juan León Mera",
-        "«Huasipungo», de Jorge Icaza, y «A la costa», de Luis A. Martínez",
-        "«Las cruces sobre el agua», de Joaquín Gallegos Lara, y «Pelea de gallos», de María Fernanda Ampuero",
-        "«Las Catilinarias», de Juan Montalvo, y «Huasipungo», de Jorge Icaza"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-riofrio.jpg",
-        "alt": "Miguel Riofrío",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
-       }
-      },
-      {
-       "id": "TUlvR2iw3CX7DIxDe.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién fue el autor que escribió la primera novela del Ecuador?"
-        }
-       ],
-       "options": [
-        "Miguel Riofrío",
-        "Juan León Mera",
-        "Juan Montalvo",
-        "Jorge Icaza"
-       ],
-       "answer": 0,
-       "explanation": "Escribió La Emancipada (1863); Cumandá, de Juan León Mera, es de 1879.",
-       "photo": {
-        "src": "images/foto-riofrio.jpg",
-        "alt": "Miguel Riofrío",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+        "url": "https://commons.wikimedia.org/wiki/File:Bautista-aguirre-pintura.png"
        }
       },
       {
@@ -12459,6 +11986,23 @@
         "license": "Public domain",
         "url": "https://commons.wikimedia.org/wiki/File:Eugenio_Espejo_(por_Manuel_Salas_Alzamora).jpg"
        }
+      },
+      {
+       "id": "espejo-medico",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué médico fue la figura intelectual más destacada de la Real Audiencia de Quito?"
+        }
+       ],
+       "options": [
+        "Eugenio Espejo",
+        "Pedro Vicente Maldonado",
+        "Juan de Velasco",
+        "Juan Bautista Aguirre"
+       ],
+       "answer": 0,
+       "explanation": "Fundó en 1792 el periódico «Primicias de la Cultura de Quito». Maldonado fue geógrafo, Velasco historiador y Aguirre poeta."
       },
       {
        "id": "ORI1I9P9AGkUv7ZNb.f",
@@ -12645,6 +12189,682 @@
        }
       },
       {
+       "id": "r9pX9caOJbBiPShFq.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién escribió los Capítulos que se le olvidaron a Cervantes?"
+        }
+       ],
+       "options": [
+        "Juan Montalvo",
+        "Juan León Mera",
+        "Eugenio Espejo",
+        "Pablo Palacio"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-montalvo.jpg",
+        "alt": "Juan Montalvo",
+        "credit": "Casa de Montalvo",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Jmontalvo.jpg"
+       }
+      },
+      {
+       "id": "Nk3lMCP1Wbc7wH62X.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué novela de "
+        },
+        {
+         "text": "Miguel Riofrío",
+         "bold": true
+        },
+        {
+         "text": ", publicada por entregas en el diario quiteño La Unión en 1863, se considera la "
+        },
+        {
+         "text": "primera novela (corta) ecuatoriana",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "La Emancipada",
+        "Cumandá",
+        "A la costa",
+        "Huasipungo"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
+      },
+      {
+       "id": "cXxgS7V252Ynmq4kn.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué tema central aborda la trama de La Emancipada?"
+        }
+       ],
+       "options": [
+        "La rebelión de una joven contra un matrimonio impuesto por su padre",
+        "El amor entre una joven indígena y un hombre blanco",
+        "La explotación de los indígenas en una hacienda",
+        "La migración de la Sierra a la Costa"
+       ],
+       "answer": 0,
+       "explanation": "El amor entre una joven indígena y un hombre blanco es Cumandá; la explotación en la hacienda, Huasipungo; y la migración a la Costa, A la costa.",
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
+      },
+      {
+       "id": "TUlvR2iw3CX7DIxDe.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién fue el autor que escribió la primera novela del Ecuador?"
+        }
+       ],
+       "options": [
+        "Miguel Riofrío",
+        "Juan León Mera",
+        "Juan Montalvo",
+        "Jorge Icaza"
+       ],
+       "answer": 0,
+       "explanation": "Escribió La Emancipada (1863); Cumandá, de Juan León Mera, es de 1879.",
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
+      },
+      {
+       "id": "GLbrtxxzxAthKfo0U.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuáles fueron las primeras novelas ecuatorianas?"
+        }
+       ],
+       "options": [
+        "«La Emancipada», de Miguel Riofrío, y «Cumandá», de Juan León Mera",
+        "«Huasipungo», de Jorge Icaza, y «A la costa», de Luis A. Martínez",
+        "«Las cruces sobre el agua», de Joaquín Gallegos Lara, y «Pelea de gallos», de María Fernanda Ampuero",
+        "«Las Catilinarias», de Juan Montalvo, y «Huasipungo», de Jorge Icaza"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-riofrio.jpg",
+        "alt": "Miguel Riofrío",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Miguelriofrio.png"
+       }
+      },
+      {
+       "id": "3wYwLuK8itYcviM3K.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién escribió la novela "
+        },
+        {
+         "text": "Cumandá",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "Juan León Mera",
+        "Miguel Riofrío",
+        "Jorge Icaza",
+        "Juan Montalvo"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
+      },
+      {
+       "id": "MCuO11dwB8p0ZPPdW.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué novela de "
+        },
+        {
+         "text": "Juan León Mera",
+         "bold": true
+        },
+        {
+         "text": ", publicada en 1879, se considera la primera gran obra de "
+        },
+        {
+         "text": "ficción",
+         "bold": true
+        },
+        {
+         "text": " ecuatoriana y lo consagró como novelista?"
+        }
+       ],
+       "options": [
+        "Cumandá",
+        "La Emancipada",
+        "Huasipungo",
+        "A la costa"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
+      },
+      {
+       "id": "fQMg0EnjXHOojuV6j.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Por qué se le conoce a"
+        },
+        {
+         "text": " Juan León Mera",
+         "bold": true
+        },
+        {
+         "text": " como el "
+        },
+        {
+         "text": "«Padre de la literatura ecuatoriana»",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "Por escribir Cumandá, componer el Himno Nacional y promover una literatura propia",
+        "Por escribir Huasipungo",
+        "Por fundar el primer periódico de Quito",
+        "Por escribir Las Catilinarias"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
+      },
+      {
+       "id": "A91OyaiSukNYN3D6Q.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿De qué trata la novela "
+        },
+        {
+         "text": "Cumandá",
+         "bold": true
+        },
+        {
+         "text": " de Juan León Mera?"
+        }
+       ],
+       "options": [
+        "El amor entre Cumandá, una joven indígena, y Carlos Orozco, un hombre blanco",
+        "La rebelión de una joven contra un matrimonio impuesto",
+        "La explotación de los indígenas en una hacienda",
+        "La masacre de los obreros de Guayaquil"
+       ],
+       "answer": 0,
+       "explanation": "Cumandá es una joven zápara del Oriente; la historia está marcada por el conflicto cultural y una revelación trágica.",
+       "photo": {
+        "src": "images/foto-mera.jpg",
+        "alt": "Juan León Mera",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
+       }
+      },
+      {
+       "id": "ultAC8KqASoT9M8b4.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la novela considerada obra cumbre de "
+        },
+        {
+         "text": "Luis Alfredo Martínez",
+         "bold": true
+        },
+        {
+         "text": ", con la que introdujo la "
+        },
+        {
+         "text": "corriente realista",
+         "bold": true
+        },
+        {
+         "text": " en la narrativa ecuatoriana?"
+        }
+       ],
+       "options": [
+        "A la costa",
+        "Cumandá",
+        "Huasipungo",
+        "La Emancipada"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-luis-a-martinez.jpg",
+        "alt": "Luis A. Martínez",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Luis_A._mart%C3%ADnez.jpg"
+       }
+      },
+      {
+       "id": "QTyVwF5z7L5KFcu2y.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué movimiento literario se considera que "
+        },
+        {
+         "text": "Luis Alfredo Martínez",
+         "bold": true
+        },
+        {
+         "text": " introdujo en la literatura ecuatoriana gracias a su estilo descriptivo y social?"
+        }
+       ],
+       "options": [
+        "El realismo",
+        "El modernismo",
+        "El indigenismo",
+        "El realismo mágico"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-luis-a-martinez.jpg",
+        "alt": "Luis A. Martínez",
+        "credit": "Autor desconocido",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Luis_A._mart%C3%ADnez.jpg"
+       }
+      },
+      {
+       "id": "XzyaTpDCAldbFoG9D.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué poema de "
+        },
+        {
+         "text": "Medardo Ángel Silva",
+         "bold": true
+        },
+        {
+         "text": " se popularizó como pasillo al ser musicalizado por Julio Jaramillo?"
+        }
+       ],
+       "options": [
+        "El alma en los labios",
+        "Nuestro Juramento",
+        "El Espantapájaros",
+        "El árbol del bien y del mal"
+       ],
+       "answer": 0,
+       "explanation": "El árbol del bien y del mal es el único libro que Silva publicó en vida.",
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
+      },
+      {
+       "id": "Qr0m9rBTvH6flUmTr.29221176283091",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "El poema "
+        },
+        {
+         "text": "El alma en los labios",
+         "bold": true
+        },
+        {
+         "text": " fue escrito por "
+        },
+        {
+         "text": "Medardo Ángel Silva",
+         "bold": true,
+         "cloze": true
+        }
+       ],
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
+      },
+      {
+       "id": "PSSfjFKG7TEAVIJVk.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál fue la única obra que "
+        },
+        {
+         "text": "Medardo Ángel Silva",
+         "bold": true
+        },
+        {
+         "text": " publicó en vida, considerada un hito del modernismo ecuatoriano?"
+        }
+       ],
+       "options": [
+        "El árbol del bien y del mal",
+        "El alma en los labios",
+        "Cumandá",
+        "La Emancipada"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
+      },
+      {
+       "id": "AvfRiJYQeqATIL5VL.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué corrientes literarias influyeron en el estilo poético de "
+        },
+        {
+         "text": "Medardo Ángel Silva",
+         "bold": true
+        },
+        {
+         "text": ", caracterizado por temas de amor, melancolía y muerte?"
+        }
+       ],
+       "options": [
+        "El modernismo y el simbolismo francés",
+        "El realismo social",
+        "El indigenismo",
+        "El barroco"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
+      },
+      {
+       "id": "gvWkJviK2MQnQVWJO.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A qué agrupación literaria perteneció "
+        },
+        {
+         "text": "Medardo Ángel Silva",
+         "bold": true
+        },
+        {
+         "text": ", conocido por su trágico destino prematuro?"
+        }
+       ],
+       "options": [
+        "La Generación Decapitada",
+        "El Grupo de Guayaquil",
+        "El tzantzismo",
+        "El Grupo VAN"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
+      },
+      {
+       "id": "RtCHxoZStdkKIiU5W.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué seudónimo utilizó "
+        },
+        {
+         "text": "Medardo Ángel Silva",
+         "bold": true
+        },
+        {
+         "text": " en su columna «Al pasar» del diario El Telégrafo?"
+        }
+       ],
+       "options": [
+        "Jean d'Agrève",
+        "Caspicara",
+        "El Miche",
+        "Evaristo"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-medardo-silva.jpg",
+        "alt": "Medardo Ángel Silva",
+        "credit": "Autor desconocido",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Medardoangelsilva.png"
+       }
+      },
+      {
+       "id": "SubaRiTwQSa7Wc4bh.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién escribió la novela «Las cruces sobre el agua»?"
+        }
+       ],
+       "options": [
+        "Joaquín Gallegos Lara",
+        "Jorge Icaza",
+        "Juan León Mera",
+        "Pablo Palacio"
+       ],
+       "answer": 0,
+       "explanation": "Trata de la masacre de los obreros de Guayaquil de 1922.",
+       "photo": {
+        "src": "images/foto-gallegos-lara.jpg",
+        "alt": "Joaquín Gallegos Lara",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Joaquingallegoslara.png"
+       }
+      },
+      {
+       "id": "huU1NozHyGnYemfJy.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién escribió «El antropófago»?"
+        }
+       ],
+       "options": [
+        "Pablo Palacio",
+        "Jorge Icaza",
+        "Joaquín Gallegos Lara",
+        "Juan Montalvo"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-pablo-palacio.jpg",
+        "alt": "Pablo Palacio en 1926",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Pablopalacio1926.png"
+       }
+      },
+      {
+       "id": "oiTXCKUQD5zigMbEg.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la obra de "
+        },
+        {
+         "text": "Jorge Icaza Coronel ",
+         "bold": true
+        },
+        {
+         "text": "que se considera la cumbre del indigenismo ecuatoriano, por su denuncia cruda de la situación de los campesinos indígenas?"
+        }
+       ],
+       "options": [
+        "Huasipungo",
+        "Cumandá",
+        "A la costa",
+        "Las cruces sobre el agua"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-icaza.jpg",
+        "alt": "Jorge Icaza",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Jorgeicaza.png"
+       }
+      },
+      {
+       "id": "yG7Rvw9g3Ep6OnGeb.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué género literario alcanzó "
+        },
+        {
+         "text": "Jorge Icaza",
+         "bold": true
+        },
+        {
+         "text": " su mayor reconocimiento al retratar la explotación de los pueblos indígenas?"
+        }
+       ],
+       "options": [
+        "La novela de realismo social (indigenismo)",
+        "La poesía modernista",
+        "El teatro",
+        "El ensayo político"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-icaza.jpg",
+        "alt": "Jorge Icaza",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Jorgeicaza.png"
+       }
+      },
+      {
+       "id": "icaza-teatro",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Además de novelas como «Huasipungo», ¿qué otro género escribió Jorge Icaza?"
+        }
+       ],
+       "options": [
+        "Teatro",
+        "Poesía épica",
+        "Ciencia ficción",
+        "Ensayos de economía"
+       ],
+       "answer": 0,
+       "explanation": "Empezó como actor y autor de obras de teatro, como «El intruso»."
+      },
+      {
+       "id": "fnwLpkTgJdazT7HnZ.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál de estas novelas escribió Demetrio Aguilera Malta?"
+        }
+       ],
+       "photo": {
+        "src": "images/foto-aguilera-malta.jpg",
+        "alt": "Demetrio Aguilera Malta con Velia Márquez",
+        "credit": "Autor desconocido",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Velia_marquez_demetrio_aguilera_malta.jpg"
+       },
+       "options": [
+        "Don Goyo",
+        "Huasipungo",
+        "Cumandá",
+        "A la costa"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "siete-lunas",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién escribió la novela «Siete lunas y siete serpientes»?"
+        }
+       ],
+       "options": [
+        "Demetrio Aguilera Malta",
+        "Jorge Icaza",
+        "Alicia Yánez Cossío",
+        "José de la Cuadra"
+       ],
+       "answer": 0,
+       "explanation": "Aguilera Malta también escribió «Don Goyo»."
+      },
+      {
        "id": "vCnrdgtsGBLG6JrW8.f",
        "type": "choice",
        "front": [
@@ -12763,135 +12983,14 @@
        }
       },
       {
-       "id": "oiTXCKUQD5zigMbEg.f",
+       "id": "LxB7mCLtJbeZwHFZ6.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es la obra de "
+         "text": "Además de escritora, ¿qué otra profesión ejerce "
         },
         {
-         "text": "Jorge Icaza Coronel ",
-         "bold": true
-        },
-        {
-         "text": "que se considera la cumbre del indigenismo ecuatoriano, por su denuncia cruda de la situación de los campesinos indígenas?"
-        }
-       ],
-       "options": [
-        "Huasipungo",
-        "Cumandá",
-        "A la costa",
-        "Las cruces sobre el agua"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-icaza.jpg",
-        "alt": "Jorge Icaza",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Jorgeicaza.png"
-       }
-      },
-      {
-       "id": "yG7Rvw9g3Ep6OnGeb.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué género literario alcanzó "
-        },
-        {
-         "text": "Jorge Icaza",
-         "bold": true
-        },
-        {
-         "text": " su mayor reconocimiento al retratar la explotación de los pueblos indígenas?"
-        }
-       ],
-       "options": [
-        "La novela de realismo social (indigenismo)",
-        "La poesía modernista",
-        "El teatro",
-        "El ensayo político"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-icaza.jpg",
-        "alt": "Jorge Icaza",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Jorgeicaza.png"
-       }
-      },
-      {
-       "id": "A91OyaiSukNYN3D6Q.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿De qué trata la novela "
-        },
-        {
-         "text": "Cumandá",
-         "bold": true
-        },
-        {
-         "text": " de Juan León Mera?"
-        }
-       ],
-       "options": [
-        "El amor entre Cumandá, una joven indígena, y Carlos Orozco, un hombre blanco",
-        "La rebelión de una joven contra un matrimonio impuesto",
-        "La explotación de los indígenas en una hacienda",
-        "La masacre de los obreros de Guayaquil"
-       ],
-       "answer": 0,
-       "explanation": "Cumandá es una joven zápara del Oriente; la historia está marcada por el conflicto cultural y una revelación trágica.",
-       "photo": {
-        "src": "images/foto-mera.jpg",
-        "alt": "Juan León Mera",
-        "credit": "Autor desconocido",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Juan_Leon_Mera.jpg"
-       }
-      },
-      {
-       "id": "oS4PTVaZCOnaOZ7fK.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es uno de los aportes más importantes de "
-        },
-        {
-         "text": "Juan Bautista Aguirre",
-         "bold": true
-        },
-        {
-         "text": " a la literatura ecuatoriana?"
-        }
-       ],
-       "options": [
-        "Ser el primer poeta de gran relevancia del actual Ecuador",
-        "Escribir la primera novela ecuatoriana",
-        "Fundar el primer periódico de Quito",
-        "Componer el Himno Nacional"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-aguirre.jpg",
-        "alt": "Juan Bautista Aguirre",
-        "credit": "Eladio Sevilla",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Bautista-aguirre-pintura.png"
-       }
-      },
-      {
-       "id": "YATcWe9YNZIpQtjwb.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es considerada la obra más relevante y representativa del poeta "
-        },
-        {
-         "text": "Juan Bautista Aguirre",
+         "text": "María Fernanda Ampuero",
          "bold": true
         },
         {
@@ -12899,139 +12998,109 @@
         }
        ],
        "options": [
-        "Carta a Lizardo",
-        "La victoria de Junín: Canto a Bolívar",
-        "El árbol del bien y del mal",
-        "Las Catilinarias"
+        "Periodista",
+        "Médica",
+        "Abogada",
+        "Cineasta"
        ],
        "answer": 0,
        "photo": {
-        "src": "images/foto-aguirre.jpg",
-        "alt": "Juan Bautista Aguirre",
-        "credit": "Eladio Sevilla",
+        "src": "images/foto-ampuero.jpg",
+        "alt": "María Fernanda Ampuero",
+        "credit": "Freddy eduardo",
         "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Bautista-aguirre-pintura.png"
+        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
        }
       },
       {
-       "id": "r9pX9caOJbBiPShFq.f",
+       "id": "hc0cMS6nSF96uu4ZL.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién escribió los Capítulos que se le olvidaron a Cervantes?"
-        }
-       ],
-       "options": [
-        "Juan Montalvo",
-        "Juan León Mera",
-        "Eugenio Espejo",
-        "Pablo Palacio"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-montalvo.jpg",
-        "alt": "Juan Montalvo",
-        "credit": "Casa de Montalvo",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Jmontalvo.jpg"
-       }
-      },
-      {
-       "id": "huU1NozHyGnYemfJy.f",
-       "type": "choice",
-       "front": [
+         "text": "¿Cuál libro de cuentos consolida a "
+        },
         {
-         "text": "¿Quién escribió «El antropófago»?"
-        }
-       ],
-       "options": [
-        "Pablo Palacio",
-        "Jorge Icaza",
-        "Joaquín Gallegos Lara",
-        "Juan Montalvo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-pablo-palacio.jpg",
-        "alt": "Pablo Palacio en 1926",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Pablopalacio1926.png"
-       }
-      },
-      {
-       "id": "fnwLpkTgJdazT7HnZ.f",
-       "type": "choice",
-       "front": [
+         "text": "María Fernanda Ampuero ",
+         "bold": true
+        },
         {
-         "text": "¿Cuál de estas novelas escribió Demetrio Aguilera Malta?"
+         "text": "entre lo más destacado de la narrativa latinoamericana contemporánea?"
         }
        ],
-       "photo": {
-        "src": "images/foto-aguilera-malta.jpg",
-        "alt": "Demetrio Aguilera Malta con Velia Márquez",
-        "credit": "Autor desconocido",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Velia_marquez_demetrio_aguilera_malta.jpg"
-       },
        "options": [
-        "Don Goyo",
+        "Pelea de gallos",
         "Huasipungo",
-        "Cumandá",
-        "A la costa"
+        "Yo vendo unos ojos negros",
+        "El árbol del bien y del mal"
        ],
-       "answer": 0
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-ampuero.jpg",
+        "alt": "María Fernanda Ampuero",
+        "credit": "Freddy eduardo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
+       }
       },
       {
-       "id": "espejo-medico",
+       "id": "eZvMXP93rDBHs86sU.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué médico fue la figura intelectual más destacada de la Real Audiencia de Quito?"
+         "text": "¿Qué característica define el estilo literario de "
+        },
+        {
+         "text": "María Fernanda Ampuero",
+         "bold": true
+        },
+        {
+         "text": " en sus relatos?"
         }
        ],
        "options": [
-        "Eugenio Espejo",
-        "Pedro Vicente Maldonado",
-        "Juan de Velasco",
-        "Juan Bautista Aguirre"
+        "Un lenguaje crudo que denuncia el machismo, la violencia de género y la desigualdad",
+        "Poesía modernista sobre el amor y la muerte",
+        "Novela romántica ambientada en la selva",
+        "Sátira política del siglo XVIII"
        ],
        "answer": 0,
-       "explanation": "Fundó en 1792 el periódico «Primicias de la Cultura de Quito». Maldonado fue geógrafo, Velasco historiador y Aguirre poeta."
+       "photo": {
+        "src": "images/foto-ampuero.jpg",
+        "alt": "María Fernanda Ampuero",
+        "credit": "Freddy eduardo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Fernanda_Ampuero.jpg"
+       }
       },
       {
-       "id": "icaza-teatro",
+       "id": "OEngTrHesKrecjKsZ.f",
        "type": "choice",
        "front": [
         {
-         "text": "Además de novelas como «Huasipungo», ¿qué otro género escribió Jorge Icaza?"
-        }
-       ],
-       "options": [
-        "Teatro",
-        "Poesía épica",
-        "Ciencia ficción",
-        "Ensayos de economía"
-       ],
-       "answer": 0,
-       "explanation": "Empezó como actor y autor de obras de teatro, como «El intruso»."
-      },
-      {
-       "id": "siete-lunas",
-       "type": "choice",
-       "front": [
+         "text": "¿Qué movimiento literario de vanguardia cofundó "
+        },
         {
-         "text": "¿Quién escribió la novela «Siete lunas y siete serpientes»?"
+         "text": "Ulises Estrella",
+         "bold": true
+        },
+        {
+         "text": " en 1962?"
         }
        ],
        "options": [
-        "Demetrio Aguilera Malta",
-        "Jorge Icaza",
-        "Alicia Yánez Cossío",
-        "José de la Cuadra"
+        "El tzantzismo",
+        "La Generación Decapitada",
+        "El Grupo VAN",
+        "El modernismo"
        ],
        "answer": 0,
-       "explanation": "Aguilera Malta también escribió «Don Goyo»."
+       "photo": {
+        "src": "images/foto-estrella.jpg",
+        "alt": "Ulises Estrella",
+        "credit": "GARY FLORES CADENA",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Ulises_Estrella.jpg"
+       }
       }
      ]
     },
@@ -13155,149 +13224,6 @@
        }
       },
       {
-       "id": "0ZuwW2eIAnCFXlaTU.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué compositor ecuatoriano es célebre por haber escrito pasillos y pasacalles dedicados a casi todas las provincias del país, razón por la que se lo conoce como «el cantor de la geografía ecuatoriana»?"
-        }
-       ],
-       "options": [
-        "Carlos Rubira Infante",
-        "Julio Jaramillo",
-        "Gerardo Guevara",
-        "Guillermo Rodríguez"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-rubira.jpg",
-        "alt": "Carlos Rubira Infante",
-        "credit": "Ceibos",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Carlos_Rubira.jpg"
-       }
-      },
-      {
-       "id": "MPqNrKavqh3umhN4L.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién es el músico que compuso 21 canciones dedicadas a varias provincias del país?"
-        }
-       ],
-       "options": [
-        "Carlos Rubira Infante",
-        "Julio Jaramillo",
-        "Gerardo Guevara",
-        "Álvaro Manzano"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-rubira.jpg",
-        "alt": "Carlos Rubira Infante",
-        "credit": "Ceibos",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Carlos_Rubira.jpg"
-       }
-      },
-      {
-       "id": "8RKsJvMM4xXXBpclY.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué festividad ecuatoriana es conocida por sus máscaras y trajes coloridos de diablos?"
-        }
-       ],
-       "photo": {
-        "src": "images/foto-diablada.jpg",
-        "alt": "Diablada de Píllaro",
-        "credit": "Agencia de Noticias ANDES",
-        "license": "CC BY-SA 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:%22LA_DIABLADA_DE_P%C3%8DLLARO%22_(39497453312).jpg"
-       },
-       "options": [
-        "La Diablada de Píllaro",
-        "La Fiesta de la Fruta y de las Flores",
-        "La Fiesta del Yamor",
-        "El Pase del Niño"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "OSrfsDBdOgsjUswoS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué instrumento de cuerda es característico de la música andina ecuatoriana?"
-        }
-       ],
-       "options": [
-        "El charango",
-        "La marimba",
-        "El rondador",
-        "La bomba"
-       ],
-       "answer": 0,
-       "explanation": "La marimba es de percusión; el rondador, de viento; y la bomba, un tambor.",
-       "photo": {
-        "src": "images/foto-charango.jpg",
-        "alt": "Charango",
-        "credit": "Joel Takv",
-        "license": "CC BY-SA 2.5",
-        "url": "https://commons.wikimedia.org/wiki/File:Charango_jt.png"
-       }
-      },
-      {
-       "id": "Knxhvo5keex9ofWsq.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué instrumentos de viento son característicos de la música andina ecuatoriana?"
-        }
-       ],
-       "photo": {
-        "src": "images/foto-rondador.jpg",
-        "alt": "Rondador",
-        "credit": "Inti-sol",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Rondador.jpg"
-       },
-       "options": [
-        "El rondador",
-        "La quena",
-        "El charango",
-        "La marimba"
-       ],
-       "answer": [
-        0,
-        1
-       ],
-       "explanation": "El charango es un instrumento de cuerda y la marimba, de percusión."
-      },
-      {
-       "id": "PQV7LqOJFMx8UHSZm.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cómo se llama la danza tradicional de los afroecuatorianos de Esmeraldas?"
-        }
-       ],
-       "options": [
-        "La marimba",
-        "El sanjuanito",
-        "El pasillo",
-        "El yaraví"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-marimba.jpg",
-        "alt": "Grupo de marimba esmeraldeña",
-        "credit": "Allstyles",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Marimba_Esmeralde%C3%B1a_Group.jpg"
-       }
-      },
-      {
        "id": "ydyNOHOsOnfHLrM2q.f",
        "type": "choice",
        "front": [
@@ -13365,224 +13291,6 @@
         "license": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Sacre_du_folklore_1543260_Nukanchik.jpg"
        }
-      },
-      {
-       "id": "alRFkeApOpVjBpMnT.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué ciudad se celebra La Mama Negra?"
-        }
-       ],
-       "options": [
-        "Latacunga",
-        "Ambato",
-        "Riobamba",
-        "Otavalo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-mama-negra.jpg",
-        "alt": "Mama Negra en Latacunga, 2019",
-        "credit": "Jotacemelo",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mama_Negra_2019.jpg"
-       }
-      },
-      {
-       "id": "3ZjqB1XmHbRh3Cf2T.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién fue el Director de orquesta más importante del Ecuador (Orquesta Sinfónica Nacional del Ecuador)?"
-        }
-       ],
-       "options": [
-        "Álvaro Manzano",
-        "Julio Jaramillo",
-        "Carlos Rubira Infante",
-        "Guillermo Rodríguez"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "V9wXW7v4En2jZUgPS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué géneros musicales se especializó Julio Jaramillo, contribuyendo a popularizar la música ecuatoriana en toda América Latina?"
-        }
-       ],
-       "options": [
-        "El pasillo y el bolero",
-        "La bomba y la marimba",
-        "El sanjuanito y el yaraví",
-        "El rock y el pop"
-       ],
-       "answer": 0,
-       "explanation": "También cantó vals y tango.",
-       "photo": {
-        "src": "images/foto-jaramillo.jpg",
-        "alt": "Julio Jaramillo, cantante de pasillos",
-        "credit": "Maty1206",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Julio_jaramillo_laurido2.jpg"
-       }
-      },
-      {
-       "id": "za7NNbXW8Gg6wyd5b.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál seudónimo se le atribuye a Julio Jaramillo por la calidez y dulzura de su voz?"
-        }
-       ],
-       "options": [
-        "El Ruiseñor de América",
-        "El Requinto de Oro de América",
-        "El Pintor de las Manos",
-        "El Miche"
-       ],
-       "answer": 0,
-       "explanation": "También lo llaman por sus iniciales, J. J.",
-       "photo": {
-        "src": "images/foto-jaramillo.jpg",
-        "alt": "Julio Jaramillo, cantante de pasillos",
-        "credit": "Maty1206",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Julio_jaramillo_laurido2.jpg"
-       }
-      },
-      {
-       "id": "KV2zCY2LhpxyqQ5BE.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué canción se considera la interpretación más emblemática de Julio Jaramillo?"
-        }
-       ],
-       "options": [
-        "Nuestro Juramento",
-        "El Espantapájaros",
-        "El chulla quiteño",
-        "Chola cuencana"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-jaramillo.jpg",
-        "alt": "Julio Jaramillo, cantante de pasillos",
-        "credit": "Maty1206",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Julio_jaramillo_laurido2.jpg"
-       }
-      },
-      {
-       "id": "EoBpZoLwAcWkORR4X.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué seudónimo ostentaba "
-        },
-        {
-         "text": "Guillermo Rodríguez",
-         "bold": true
-        },
-        {
-         "text": " por su maestría en el requinto?"
-        }
-       ],
-       "options": [
-        "El Requinto de Oro de América",
-        "El Ruiseñor de América",
-        "El cantor de la geografía ecuatoriana",
-        "El Pintor de las Manos"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "fJJsHgFfyxBmZfScP.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué instrumento se especializó"
-        },
-        {
-         "text": " Guillermo Rodríguez",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "El requinto",
-        "El piano",
-        "El charango",
-        "La marimba"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "kAui8mCh8NzY0JkYM.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué instrumento se especializó "
-        },
-        {
-         "text": "Gerardo Guevara",
-         "bold": true
-        },
-        {
-         "text": " durante sus primeros años de formación musical?"
-        }
-       ],
-       "options": [
-        "El piano",
-        "El requinto",
-        "El violín",
-        "El charango"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "xB48o9O98XHh8RKhF.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién compuso el pasillo «El Espantapájaros»?"
-        }
-       ],
-       "options": [
-        "Gerardo Guevara Viteri",
-        "Julio Jaramillo",
-        "Carlos Rubira Infante",
-        "Álvaro Manzano"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "tXJjK2We9btKlkHYE.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "Además de compositor, ¿qué otra profesión ejerció "
-        },
-        {
-         "text": "Gerardo Guevara",
-         "bold": true
-        },
-        {
-         "text": " a lo largo de su carrera?"
-        }
-       ],
-       "options": [
-        "Director de orquesta y de coros",
-        "Pintor",
-        "Actor de teatro",
-        "Periodista"
-       ],
-       "answer": 0
       },
       {
        "id": "kqVjK8G3p4inmVUOD.f",
@@ -13760,41 +13468,320 @@
        "answer": 0
       },
       {
-       "id": "E5ZqctFrGcbXf9aif.9288732603846174",
-       "type": "cloze",
+       "id": "OSrfsDBdOgsjUswoS.f",
+       "type": "choice",
        "front": [
         {
-         "text": "El "
-        },
+         "text": "¿Qué instrumento de cuerda es característico de la música andina ecuatoriana?"
+        }
+       ],
+       "options": [
+        "El charango",
+        "La marimba",
+        "El rondador",
+        "La bomba"
+       ],
+       "answer": 0,
+       "explanation": "La marimba es de percusión; el rondador, de viento; y la bomba, un tambor.",
+       "photo": {
+        "src": "images/foto-charango.jpg",
+        "alt": "Charango",
+        "credit": "Joel Takv",
+        "license": "CC BY-SA 2.5",
+        "url": "https://commons.wikimedia.org/wiki/File:Charango_jt.png"
+       }
+      },
+      {
+       "id": "Knxhvo5keex9ofWsq.f",
+       "type": "choice",
+       "front": [
         {
-         "text": "Diablo Huma",
-         "bold": true
-        },
-        {
-         "text": ", también conocido como "
-        },
-        {
-         "text": "Aya Huma",
-         "bold": true
-        },
-        {
-         "text": ", es un personaje emblemático de las fiestas andinas ecuatorianas, especialmente durante el "
-        },
-        {
-         "text": "Inti Raymi",
-         "cloze": true
-        },
-        {
-         "text": " en la región de la sierra del Ecuador"
+         "text": "¿Qué instrumentos de viento son característicos de la música andina ecuatoriana?"
         }
        ],
        "photo": {
-        "src": "images/foto-diablo-huma.jpg",
-        "alt": "Diablo Huma (Aya Huma)",
-        "credit": "TupakAmaruIshkay",
+        "src": "images/foto-rondador.jpg",
+        "alt": "Rondador",
+        "credit": "Inti-sol",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Rondador.jpg"
+       },
+       "options": [
+        "El rondador",
+        "La quena",
+        "El charango",
+        "La marimba"
+       ],
+       "answer": [
+        0,
+        1
+       ],
+       "explanation": "El charango es un instrumento de cuerda y la marimba, de percusión."
+      },
+      {
+       "id": "PQV7LqOJFMx8UHSZm.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cómo se llama la danza tradicional de los afroecuatorianos de Esmeraldas?"
+        }
+       ],
+       "options": [
+        "La marimba",
+        "El sanjuanito",
+        "El pasillo",
+        "El yaraví"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-marimba.jpg",
+        "alt": "Grupo de marimba esmeraldeña",
+        "credit": "Allstyles",
         "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Aya-Uma_Luis.jpg"
+        "url": "https://commons.wikimedia.org/wiki/File:Marimba_Esmeralde%C3%B1a_Group.jpg"
        }
+      },
+      {
+       "id": "V9wXW7v4En2jZUgPS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué géneros musicales se especializó Julio Jaramillo, contribuyendo a popularizar la música ecuatoriana en toda América Latina?"
+        }
+       ],
+       "options": [
+        "El pasillo y el bolero",
+        "La bomba y la marimba",
+        "El sanjuanito y el yaraví",
+        "El rock y el pop"
+       ],
+       "answer": 0,
+       "explanation": "También cantó vals y tango.",
+       "photo": {
+        "src": "images/foto-jaramillo.jpg",
+        "alt": "Julio Jaramillo, cantante de pasillos",
+        "credit": "Maty1206",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Julio_jaramillo_laurido2.jpg"
+       }
+      },
+      {
+       "id": "za7NNbXW8Gg6wyd5b.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál seudónimo se le atribuye a Julio Jaramillo por la calidez y dulzura de su voz?"
+        }
+       ],
+       "options": [
+        "El Ruiseñor de América",
+        "El Requinto de Oro de América",
+        "El Pintor de las Manos",
+        "El Miche"
+       ],
+       "answer": 0,
+       "explanation": "También lo llaman por sus iniciales, J. J.",
+       "photo": {
+        "src": "images/foto-jaramillo.jpg",
+        "alt": "Julio Jaramillo, cantante de pasillos",
+        "credit": "Maty1206",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Julio_jaramillo_laurido2.jpg"
+       }
+      },
+      {
+       "id": "KV2zCY2LhpxyqQ5BE.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué canción se considera la interpretación más emblemática de Julio Jaramillo?"
+        }
+       ],
+       "options": [
+        "Nuestro Juramento",
+        "El Espantapájaros",
+        "El chulla quiteño",
+        "Chola cuencana"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-jaramillo.jpg",
+        "alt": "Julio Jaramillo, cantante de pasillos",
+        "credit": "Maty1206",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Julio_jaramillo_laurido2.jpg"
+       }
+      },
+      {
+       "id": "EoBpZoLwAcWkORR4X.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué seudónimo ostentaba "
+        },
+        {
+         "text": "Guillermo Rodríguez",
+         "bold": true
+        },
+        {
+         "text": " por su maestría en el requinto?"
+        }
+       ],
+       "options": [
+        "El Requinto de Oro de América",
+        "El Ruiseñor de América",
+        "El cantor de la geografía ecuatoriana",
+        "El Pintor de las Manos"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "fJJsHgFfyxBmZfScP.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué instrumento se especializó"
+        },
+        {
+         "text": " Guillermo Rodríguez",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "El requinto",
+        "El piano",
+        "El charango",
+        "La marimba"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "0ZuwW2eIAnCFXlaTU.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué compositor ecuatoriano es célebre por haber escrito pasillos y pasacalles dedicados a casi todas las provincias del país, razón por la que se lo conoce como «el cantor de la geografía ecuatoriana»?"
+        }
+       ],
+       "options": [
+        "Carlos Rubira Infante",
+        "Julio Jaramillo",
+        "Gerardo Guevara",
+        "Guillermo Rodríguez"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-rubira.jpg",
+        "alt": "Carlos Rubira Infante",
+        "credit": "Ceibos",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Carlos_Rubira.jpg"
+       }
+      },
+      {
+       "id": "MPqNrKavqh3umhN4L.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién es el músico que compuso 21 canciones dedicadas a varias provincias del país?"
+        }
+       ],
+       "options": [
+        "Carlos Rubira Infante",
+        "Julio Jaramillo",
+        "Gerardo Guevara",
+        "Álvaro Manzano"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-rubira.jpg",
+        "alt": "Carlos Rubira Infante",
+        "credit": "Ceibos",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Carlos_Rubira.jpg"
+       }
+      },
+      {
+       "id": "madera-guerrero",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién compuso «Guayaquileño, madera de guerrero»?"
+        }
+       ],
+       "options": [
+        "Carlos Rubira Infante",
+        "Rubén Barba",
+        "Gerardo Guevara",
+        "Julio Jaramillo"
+       ],
+       "answer": 0,
+       "explanation": "Rubira Infante dedicó canciones a casi todas las provincias. Rubén Barba compuso «A mi lindo Ecuador»."
+      },
+      {
+       "id": "xB48o9O98XHh8RKhF.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién compuso el pasillo «El Espantapájaros»?"
+        }
+       ],
+       "options": [
+        "Gerardo Guevara Viteri",
+        "Julio Jaramillo",
+        "Carlos Rubira Infante",
+        "Álvaro Manzano"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "kAui8mCh8NzY0JkYM.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué instrumento se especializó "
+        },
+        {
+         "text": "Gerardo Guevara",
+         "bold": true
+        },
+        {
+         "text": " durante sus primeros años de formación musical?"
+        }
+       ],
+       "options": [
+        "El piano",
+        "El requinto",
+        "El violín",
+        "El charango"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tXJjK2We9btKlkHYE.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Además de compositor, ¿qué otra profesión ejerció "
+        },
+        {
+         "text": "Gerardo Guevara",
+         "bold": true
+        },
+        {
+         "text": " a lo largo de su carrera?"
+        }
+       ],
+       "options": [
+        "Director de orquesta y de coros",
+        "Pintor",
+        "Actor de teatro",
+        "Periodista"
+       ],
+       "answer": 0
       },
       {
        "id": "lindo-ecuador",
@@ -13814,21 +13801,20 @@
        "explanation": "La versión de Pueblo Nuevo, de 1981, es la más conocida; muchos la llaman el segundo himno del país."
       },
       {
-       "id": "madera-guerrero",
+       "id": "3ZjqB1XmHbRh3Cf2T.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién compuso «Guayaquileño, madera de guerrero»?"
+         "text": "¿Quién fue el Director de orquesta más importante del Ecuador (Orquesta Sinfónica Nacional del Ecuador)?"
         }
        ],
        "options": [
+        "Álvaro Manzano",
+        "Julio Jaramillo",
         "Carlos Rubira Infante",
-        "Rubén Barba",
-        "Gerardo Guevara",
-        "Julio Jaramillo"
+        "Guillermo Rodríguez"
        ],
-       "answer": 0,
-       "explanation": "Rubira Infante dedicó canciones a casi todas las provincias. Rubén Barba compuso «A mi lindo Ecuador»."
+       "answer": 0
       },
       {
        "id": "la-toquilla",
@@ -13854,6 +13840,29 @@
      "title": "Cine y teatro",
      "cards": [
       {
+       "id": "k0Yha6Jg1XoAr5kfq.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién dirigió la película Ratas, ratones, rateros?"
+        }
+       ],
+       "options": [
+        "Sebastián Cordero",
+        "Tania Hermida",
+        "Ana Cristina Barragán",
+        "Ulises Estrella"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-cordero.jpg",
+        "alt": "Sebastián Cordero en 2017",
+        "credit": "MiamiFilmFestival",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Sebastian_Cordero_at_2017_MIFF.jpg"
+       }
+      },
+      {
        "id": "NPL3HnxEhTIJoG42S.f",
        "type": "choice",
        "front": [
@@ -13873,29 +13882,6 @@
         "Qué tan lejos",
         "Europa Report",
         "La piel pulpo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-cordero.jpg",
-        "alt": "Sebastián Cordero en 2017",
-        "credit": "MiamiFilmFestival",
-        "license": "CC BY-SA 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Sebastian_Cordero_at_2017_MIFF.jpg"
-       }
-      },
-      {
-       "id": "k0Yha6Jg1XoAr5kfq.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién dirigió la película Ratas, ratones, rateros?"
-        }
-       ],
-       "options": [
-        "Sebastián Cordero",
-        "Tania Hermida",
-        "Ana Cristina Barragán",
-        "Ulises Estrella"
        ],
        "answer": 0,
        "photo": {
@@ -14014,33 +14000,26 @@
        "answer": 0
       },
       {
-       "id": "OEngTrHesKrecjKsZ.f",
+       "id": "J9hqvlQIydGcu5ecr.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué movimiento literario de vanguardia cofundó "
-        },
-        {
-         "text": "Ulises Estrella",
-         "bold": true
-        },
-        {
-         "text": " en 1962?"
+         "text": "¿Quién dirigió la película La piel pulpo?"
         }
        ],
        "options": [
-        "El tzantzismo",
-        "La Generación Decapitada",
-        "El Grupo VAN",
-        "El modernismo"
+        "Ana Cristina Barragán",
+        "Tania Hermida",
+        "Sebastián Cordero",
+        "María Fernanda Restrepo"
        ],
        "answer": 0,
        "photo": {
-        "src": "images/foto-estrella.jpg",
-        "alt": "Ulises Estrella",
-        "credit": "GARY FLORES CADENA",
+        "src": "images/foto-barragan.jpg",
+        "alt": "Ana Cristina Barragán en el Festival de Venecia",
+        "credit": "LucaFazPhoto",
         "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Ulises_Estrella.jpg"
+        "url": "https://commons.wikimedia.org/wiki/File:Ana_Cristina_Barrag%C3%A1n_at_82nd_Venice_International_Film_Festival-1.jpg"
        }
       },
       {
@@ -14075,27 +14054,66 @@
        }
       },
       {
-       "id": "REMf4x0I6xv1a17sr.f",
+       "id": "4iq94CzoKYqcSmqKL.f",
        "type": "choice",
        "front": [
         {
-         "text": "Desde 1990, ¿qué espacio escénico quiteño dirige "
+         "text": "¿Quién fue "
         },
         {
-         "text": "Juana Guarderas",
+         "text": "Ernesto Albán Mosquera",
          "bold": true
         },
         {
-         "text": ", convirtiéndose en un referente del teatro nacional?"
+         "text": "?"
         }
        ],
        "options": [
-        "El Patio de Comedias",
-        "El Teatro Nacional Sucre",
-        "El Teatro Bolívar",
-        "La Casa de la Cultura Ecuatoriana"
+        "El actor cómico más emblemático del Ecuador en el siglo XX",
+        "Un presidente del Ecuador",
+        "Un pintor de la Escuela Quiteña",
+        "Un compositor de pasillos"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "Es famoso por su personaje Evaristo, de las «Estampas quiteñas».",
+       "photo": {
+        "src": "images/foto-alban.jpg",
+        "alt": "Estatua de Ernesto Albán en la Plaza del Teatro, Quito",
+        "credit": "David Adam Kess",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Photography_by_David_Adam_Kess,_Plaza_del_Teatro,_Quito_(El_Centro_Hist%C3%B3rico_de_Quito_%27_pic.ab1)_Ernesto_Alb%C3%A1n,_black_and_white_photography.jpg"
+       }
+      },
+      {
+       "id": "repzAFI6WawA8z2hb.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué se conoce como «"
+        },
+        {
+         "text": "Estampas Quiteñas",
+         "bold": true
+        },
+        {
+         "text": "» en la historia del teatro ecuatoriano?"
+        }
+       ],
+       "options": [
+        "Obras de teatro cortas y humorísticas sobre la vida cotidiana de Quito",
+        "Pinturas de paisajes quiteños de la Escuela Quiteña",
+        "Postales turísticas del Centro Histórico",
+        "Una serie de cortometrajes de los años noventa"
+       ],
+       "answer": 0,
+       "explanation": "Las creó Alfonso García Muñoz y las popularizó el actor Ernesto Albán.",
+       "photo": {
+        "src": "images/foto-alban.jpg",
+        "alt": "Estatua de Ernesto Albán en la Plaza del Teatro, Quito",
+        "credit": "David Adam Kess",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Photography_by_David_Adam_Kess,_Plaza_del_Teatro,_Quito_(El_Centro_Hist%C3%B3rico_de_Quito_%27_pic.ab1)_Ernesto_Alb%C3%A1n,_black_and_white_photography.jpg"
+       }
       },
       {
        "id": "DoprrfpUf0AbZs77o.f",
@@ -14117,6 +14135,29 @@
         "Directora de cine",
         "Escritora",
         "Cantante"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "REMf4x0I6xv1a17sr.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Desde 1990, ¿qué espacio escénico quiteño dirige "
+        },
+        {
+         "text": "Juana Guarderas",
+         "bold": true
+        },
+        {
+         "text": ", convirtiéndose en un referente del teatro nacional?"
+        }
+       ],
+       "options": [
+        "El Patio de Comedias",
+        "El Teatro Nacional Sucre",
+        "El Teatro Bolívar",
+        "La Casa de la Cultura Ecuatoriana"
        ],
        "answer": 0
       },
@@ -14221,89 +14262,21 @@
        }
       },
       {
-       "id": "4iq94CzoKYqcSmqKL.f",
+       "id": "michelena-tema",
        "type": "choice",
        "front": [
         {
-         "text": "¿Quién fue "
-        },
-        {
-         "text": "Ernesto Albán Mosquera",
-         "bold": true
-        },
-        {
-         "text": "?"
+         "text": "¿Qué tipo de teatro hace Carlos Michelena, «El Miche»?"
         }
        ],
        "options": [
-        "El actor cómico más emblemático del Ecuador en el siglo XX",
-        "Un presidente del Ecuador",
-        "Un pintor de la Escuela Quiteña",
-        "Un compositor de pasillos"
+        "Teatro callejero de crítica social y política",
+        "Ópera clásica",
+        "Teatro de títeres para niños",
+        "Danza contemporánea"
        ],
        "answer": 0,
-       "explanation": "Es famoso por su personaje Evaristo, de las «Estampas quiteñas».",
-       "photo": {
-        "src": "images/foto-alban.jpg",
-        "alt": "Estatua de Ernesto Albán en la Plaza del Teatro, Quito",
-        "credit": "David Adam Kess",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Photography_by_David_Adam_Kess,_Plaza_del_Teatro,_Quito_(El_Centro_Hist%C3%B3rico_de_Quito_%27_pic.ab1)_Ernesto_Alb%C3%A1n,_black_and_white_photography.jpg"
-       }
-      },
-      {
-       "id": "repzAFI6WawA8z2hb.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué se conoce como «"
-        },
-        {
-         "text": "Estampas Quiteñas",
-         "bold": true
-        },
-        {
-         "text": "» en la historia del teatro ecuatoriano?"
-        }
-       ],
-       "options": [
-        "Obras de teatro cortas y humorísticas sobre la vida cotidiana de Quito",
-        "Pinturas de paisajes quiteños de la Escuela Quiteña",
-        "Postales turísticas del Centro Histórico",
-        "Una serie de cortometrajes de los años noventa"
-       ],
-       "answer": 0,
-       "explanation": "Las creó Alfonso García Muñoz y las popularizó el actor Ernesto Albán.",
-       "photo": {
-        "src": "images/foto-alban.jpg",
-        "alt": "Estatua de Ernesto Albán en la Plaza del Teatro, Quito",
-        "credit": "David Adam Kess",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Photography_by_David_Adam_Kess,_Plaza_del_Teatro,_Quito_(El_Centro_Hist%C3%B3rico_de_Quito_%27_pic.ab1)_Ernesto_Alb%C3%A1n,_black_and_white_photography.jpg"
-       }
-      },
-      {
-       "id": "J9hqvlQIydGcu5ecr.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién dirigió la película La piel pulpo?"
-        }
-       ],
-       "options": [
-        "Ana Cristina Barragán",
-        "Tania Hermida",
-        "Sebastián Cordero",
-        "María Fernanda Restrepo"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-barragan.jpg",
-        "alt": "Ana Cristina Barragán en el Festival de Venecia",
-        "credit": "LucaFazPhoto",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Ana_Cristina_Barrag%C3%A1n_at_82nd_Venice_International_Film_Festival-1.jpg"
-       }
+       "explanation": "Actúa en el parque El Ejido de Quito, con personajes de la vida cotidiana."
       },
       {
        "id": "beatriz-vergara",
@@ -14321,23 +14294,6 @@
        ],
        "answer": 0,
        "explanation": "Es una comedia que desmitifica el papel «sagrado» de la madre. «Las Marujitas se han muerto de leucemia» es de Juana Guarderas, las «Estampas quiteñas» son de Ernesto Albán y «El intruso», de Jorge Icaza."
-      },
-      {
-       "id": "michelena-tema",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué tipo de teatro hace Carlos Michelena, «El Miche»?"
-        }
-       ],
-       "options": [
-        "Teatro callejero de crítica social y política",
-        "Ópera clásica",
-        "Teatro de títeres para niños",
-        "Danza contemporánea"
-       ],
-       "answer": 0,
-       "explanation": "Actúa en el parque El Ejido de Quito, con personajes de la vida cotidiana."
       }
      ]
     },
@@ -14796,78 +14752,6 @@
        "answer": 0
       },
       {
-       "id": "rwZyKkdHkvfpNvkLA.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué parroquia ecuatoriana es famosa por la elaboración de guitarras artesanales?"
-        }
-       ],
-       "options": [
-        "San Bartolomé, en Azuay",
-        "Otavalo, en Imbabura",
-        "Montecristi, en Manabí",
-        "Salasaca, en Tungurahua"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "QEwaXfYZfFm9AANY4.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué fiesta tradicional se celebra en Cuenca durante el mes de noviembre?"
-        }
-       ],
-       "options": [
-        "Las fiestas de independencia de Cuenca",
-        "La Mama Negra",
-        "La Fiesta del Yamor",
-        "La Fiesta de la Fruta y de las Flores"
-       ],
-       "answer": 0,
-       "explanation": "Recuerdan la independencia de Cuenca, el 3 de noviembre de 1820."
-      },
-      {
-       "id": "VVujvfY1BHj3pmJAB.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Dónde y cuándo se celebra la Fiesta de la Fruta y de las Flores?"
-        }
-       ],
-       "options": [
-        "En Ambato, durante el Carnaval",
-        "En Cuenca, en noviembre",
-        "En Otavalo, en septiembre",
-        "En Latacunga, en noviembre"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "hilE2kVzyNipJzYSz.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué celebración tradicional tiene lugar en la provincia de "
-        },
-        {
-         "text": "Imbabura",
-         "bold": true
-        },
-        {
-         "text": " en septiembre?"
-        }
-       ],
-       "options": [
-        "La Fiesta del Yamor, en Otavalo",
-        "La Mama Negra",
-        "La Fiesta de la Fruta y de las Flores",
-        "El Pase del Niño"
-       ],
-       "answer": 0
-      },
-      {
        "id": "EbEhuz0Vn5aYaKGyn.f",
        "type": "choice",
        "front": [
@@ -14883,6 +14767,22 @@
        ],
        "answer": 0,
        "explanation": "Se exportaba por Panamá desde la fiebre del oro del siglo XIX."
+      },
+      {
+       "id": "rwZyKkdHkvfpNvkLA.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué parroquia ecuatoriana es famosa por la elaboración de guitarras artesanales?"
+        }
+       ],
+       "options": [
+        "San Bartolomé, en Azuay",
+        "Otavalo, en Imbabura",
+        "Montecristi, en Manabí",
+        "Salasaca, en Tungurahua"
+       ],
+       "answer": 0
       },
       {
        "id": "lnuDEoxhgWc3SU0qB.f",
@@ -14947,6 +14847,145 @@
         "Una feria artesanal de Otavalo"
        ],
        "answer": 0
+      },
+      {
+       "id": "hilE2kVzyNipJzYSz.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué celebración tradicional tiene lugar en la provincia de "
+        },
+        {
+         "text": "Imbabura",
+         "bold": true
+        },
+        {
+         "text": " en septiembre?"
+        }
+       ],
+       "options": [
+        "La Fiesta del Yamor, en Otavalo",
+        "La Mama Negra",
+        "La Fiesta de la Fruta y de las Flores",
+        "El Pase del Niño"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "VVujvfY1BHj3pmJAB.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Dónde y cuándo se celebra la Fiesta de la Fruta y de las Flores?"
+        }
+       ],
+       "options": [
+        "En Ambato, durante el Carnaval",
+        "En Cuenca, en noviembre",
+        "En Otavalo, en septiembre",
+        "En Latacunga, en noviembre"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "QEwaXfYZfFm9AANY4.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué fiesta tradicional se celebra en Cuenca durante el mes de noviembre?"
+        }
+       ],
+       "options": [
+        "Las fiestas de independencia de Cuenca",
+        "La Mama Negra",
+        "La Fiesta del Yamor",
+        "La Fiesta de la Fruta y de las Flores"
+       ],
+       "answer": 0,
+       "explanation": "Recuerdan la independencia de Cuenca, el 3 de noviembre de 1820."
+      },
+      {
+       "id": "8RKsJvMM4xXXBpclY.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué festividad ecuatoriana es conocida por sus máscaras y trajes coloridos de diablos?"
+        }
+       ],
+       "photo": {
+        "src": "images/foto-diablada.jpg",
+        "alt": "Diablada de Píllaro",
+        "credit": "Agencia de Noticias ANDES",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:%22LA_DIABLADA_DE_P%C3%8DLLARO%22_(39497453312).jpg"
+       },
+       "options": [
+        "La Diablada de Píllaro",
+        "La Fiesta de la Fruta y de las Flores",
+        "La Fiesta del Yamor",
+        "El Pase del Niño"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "alRFkeApOpVjBpMnT.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué ciudad se celebra La Mama Negra?"
+        }
+       ],
+       "options": [
+        "Latacunga",
+        "Ambato",
+        "Riobamba",
+        "Otavalo"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-mama-negra.jpg",
+        "alt": "Mama Negra en Latacunga, 2019",
+        "credit": "Jotacemelo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mama_Negra_2019.jpg"
+       }
+      },
+      {
+       "id": "E5ZqctFrGcbXf9aif.9288732603846174",
+       "type": "cloze",
+       "front": [
+        {
+         "text": "El "
+        },
+        {
+         "text": "Diablo Huma",
+         "bold": true
+        },
+        {
+         "text": ", también conocido como "
+        },
+        {
+         "text": "Aya Huma",
+         "bold": true
+        },
+        {
+         "text": ", es un personaje emblemático de las fiestas andinas ecuatorianas, especialmente durante el "
+        },
+        {
+         "text": "Inti Raymi",
+         "cloze": true
+        },
+        {
+         "text": " en la región de la sierra del Ecuador"
+        }
+       ],
+       "photo": {
+        "src": "images/foto-diablo-huma.jpg",
+        "alt": "Diablo Huma (Aya Huma)",
+        "credit": "TupakAmaruIshkay",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Aya-Uma_Luis.jpg"
+       }
       }
      ]
     },
@@ -15135,23 +15174,6 @@
        "answer": 0
       },
       {
-       "id": "uNSWCiipAwPdHVwfe.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuáles son los vestigios más conocidos de la cultura Valdivia?"
-        }
-       ],
-       "options": [
-        "Las cerámicas",
-        "Las pirámides",
-        "Las joyas de oro",
-        "Los templos de piedra"
-       ],
-       "answer": 0,
-       "explanation": "Es una de las culturas alfareras más antiguas de América."
-      },
-      {
        "id": "bDgHDl0kjrqpP45a9.7771020236070846",
        "type": "cloze",
        "front": [
@@ -15203,22 +15225,6 @@
         "En Pastaza y Morona Santiago",
         "En Loja y Zamora Chinchipe",
         "En Manabí y Santa Elena"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "cAOpixzgGXNvcO2cG.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿A qué región del actual Ecuador no llegó la conquista inca?"
-        }
-       ],
-       "options": [
-        "A la Amazonía",
-        "A la Sierra norte",
-        "A la Sierra sur",
-        "A Quito"
        ],
        "answer": 0
       },
