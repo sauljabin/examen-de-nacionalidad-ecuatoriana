@@ -2325,6 +2325,23 @@
        ],
        "answer": 0,
        "explanation": "Es una de las mayores variedades de aves del planeta para un país de su tamaño."
+      },
+      {
+       "id": "nOerEN51AB2epqhvA.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A qué se debe el nombre de la República del Ecuador?"
+        }
+       ],
+       "options": [
+        "Su ubicación en la línea ecuatorial",
+        "El nombre de un pueblo indígena",
+        "El apellido de un conquistador",
+        "El nombre de un río"
+       ],
+       "answer": 0,
+       "explanation": "La línea ecuatorial también se llama línea equinoccial."
       }
      ]
     },
@@ -4352,6 +4369,87 @@
        ],
        "answer": 0,
        "explanation": "Se sube por las escalinatas del barrio Las Peñas. El Panecillo y el Itchimbía están en Quito."
+      },
+      {
+       "id": "SYyPWhgq8EN807wyS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué año fue destruida la ciudad de "
+        },
+        {
+         "text": "Latacunga",
+         "bold": true
+        },
+        {
+         "text": " por un fuerte terremoto?"
+        }
+       ],
+       "options": [
+        "1698",
+        "1868",
+        "1797",
+        "1949"
+       ],
+       "answer": 0,
+       "explanation": "En 1797 un terremoto destruyó Riobamba; en 1868, Ibarra; y en 1949, Ambato."
+      },
+      {
+       "id": "NcofP6yspE379slzH.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué año fue destruida la ciudad de "
+        },
+        {
+         "text": "Ibarra",
+         "bold": true
+        },
+        {
+         "text": " por un terremoto?"
+        }
+       ],
+       "options": [
+        "1868",
+        "1698",
+        "1797",
+        "1949"
+       ],
+       "answer": 0,
+       "explanation": "En 1698 un terremoto destruyó Latacunga; en 1797, Riobamba; y en 1949, Ambato."
+      },
+      {
+       "id": "U0lTsiKNWTXqLkCc1.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál de estas ciudades es una de las más visitadas por turistas nacionales y extranjeros?"
+        }
+       ],
+       "options": [
+        "Otavalo",
+        "Babahoyo",
+        "Nueva Loja",
+        "Guaranda"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "IO3RnxHgilJJ7fGO0.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el nombre del aeropuerto internacional que sirve a Quito?"
+        }
+       ],
+       "options": [
+        "Mariscal Sucre",
+        "José Joaquín de Olmedo",
+        "Eloy Alfaro",
+        "Mariscal Lamar"
+       ],
+       "answer": 0,
+       "explanation": "El José Joaquín de Olmedo está en Guayaquil, el Eloy Alfaro en Manta y el Mariscal Lamar en Cuenca."
       }
      ]
     },
@@ -4852,6 +4950,23 @@
        ],
        "answer": 0,
        "explanation": "Su centro es Puyo, la capital de Pastaza."
+      },
+      {
+       "id": "XJ3cRp3pEpBJ57Dml.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿De cuál ciudad salen principalmente los cruceros en Ecuador?"
+        }
+       ],
+       "options": [
+        "Manta",
+        "Esmeraldas",
+        "Puerto Bolívar",
+        "Salinas"
+       ],
+       "answer": 0,
+       "explanation": "Manta está en la provincia de Manabí."
       }
      ]
     },
@@ -6312,6 +6427,40 @@
        ],
        "answer": 0,
        "explanation": "Los incas respetaban los cultos de cada pueblo, pero exigían el culto al Sol, que representaba el poder del imperio."
+      },
+      {
+       "id": "VASOWpvC796oYTLIZ.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué siglo los aborígenes del actual Ecuador enfrentaron la conquista inca?"
+        }
+       ],
+       "options": [
+        "En el siglo XV",
+        "En el siglo XIII",
+        "En el siglo XVI",
+        "En el siglo XVIII"
+       ],
+       "answer": 0,
+       "explanation": "La conquista española llegó en el siglo XVI."
+      },
+      {
+       "id": "pJoTuvoa3PGlvXQJS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "Al morir Huayna Cápac, ¿cuáles tierras le dieron a Atahualpa?"
+        }
+       ],
+       "options": [
+        "Los territorios del norte, con Quito",
+        "Los territorios del sur, con el Cusco",
+        "Toda la costa del Pacífico",
+        "La Amazonía"
+       ],
+       "answer": 0,
+       "explanation": "Su hermano Huáscar recibió el sur, con el Cusco."
       }
      ]
     },
@@ -6617,6 +6766,22 @@
        ],
        "answer": 0,
        "explanation": "Los obrajes, talleres textiles, fueron la base de la economía de la Audiencia."
+      },
+      {
+       "id": "fwwKwHotadxYgUKrF.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuánto duró el poder colonial en Ecuador?"
+        }
+       ],
+       "options": [
+        "Cerca de 300 años",
+        "Cerca de 100 años",
+        "Cerca de 50 años",
+        "Cerca de 500 años"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -7107,6 +7272,23 @@
        "answer": 0,
        "explanation": "El Distrito del Norte era Venezuela y el del Centro, la Nueva Granada.",
        "topic": "Distritos de la Gran Colombia"
+      },
+      {
+       "id": "Iy72wG50e6o8wRKkb.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué ciudad se reunieron Bolívar y San Martín?"
+        }
+       ],
+       "options": [
+        "Guayaquil",
+        "Quito",
+        "Lima",
+        "Bogotá"
+       ],
+       "answer": 0,
+       "explanation": "La entrevista de Guayaquil fue en julio de 1822."
       }
      ]
     },
@@ -8105,6 +8287,122 @@
        "explanation": "Mahuad la anunció el 9 de enero de 2000, tras el feriado bancario, y fue derrocado días después. Su sucesor, Gustavo Noboa, la aplicó con la Ley de Transformación Económica (Ley Trole) en marzo de 2000."
       }
      ]
+    },
+    {
+     "id": "mujeres-que-hicieron-historia",
+     "title": "Mujeres que hicieron historia",
+     "cards": [
+      {
+       "id": "SBhFz1u5LYKmP0NkN.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A qué mujer ecuatoriana se la conoce como la «Libertadora del Libertador»?"
+        }
+       ],
+       "options": [
+        "Manuela Sáenz",
+        "Manuela Cañizares",
+        "Dolores Cacuango",
+        "Matilde Hidalgo"
+       ],
+       "answer": 0,
+       "explanation": "En casa de Manuela Cañizares se reunieron los patriotas la noche del 9 de agosto de 1809."
+      },
+      {
+       "id": "ViGCpBcuJARHVjsEJ.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué líder indígena fundó las primeras escuelas bilingües (kichwa y castellano) del Ecuador?"
+        }
+       ],
+       "options": [
+        "Dolores Cacuango",
+        "Manuela Sáenz",
+        "Matilde Hidalgo",
+        "Manuela Cañizares"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-dolores-cacuango.jpg",
+        "alt": "Dolores Cacuango",
+        "credit": "Varios autores",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Dolores_Cacuango1.jpg"
+       }
+      },
+      {
+       "id": "JF9bxKLlAZdpGAEMS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién fue la primera mujer que votó en Ecuador (y en Latinoamérica)?"
+        }
+       ],
+       "options": [
+        "Matilde Hidalgo",
+        "Manuela Sáenz",
+        "Dolores Cacuango",
+        "Araceli Gilbert"
+       ],
+       "answer": 0,
+       "explanation": "Votó en 1924.",
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
+      },
+      {
+       "id": "uqMEvHWHy83kMXfDL.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién fue la primera médica del Ecuador?"
+        }
+       ],
+       "options": [
+        "Matilde Hidalgo",
+        "Manuela Sáenz",
+        "Dolores Cacuango",
+        "Manuela Cañizares"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
+      },
+      {
+       "id": "c3PTBouXDbJAdllLS.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Quién fue la primera mujer electa a un cargo público en el Ecuador?"
+        }
+       ],
+       "options": [
+        "Matilde Hidalgo",
+        "Manuela Sáenz",
+        "Dolores Cacuango",
+        "Manuela Cañizares"
+       ],
+       "answer": 0,
+       "photo": {
+        "src": "images/foto-matilde-hidalgo.jpg",
+        "alt": "Matilde Hidalgo",
+        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
+       }
+      }
+     ]
     }
    ]
   },
@@ -8674,6 +8972,39 @@
        ],
        "answer": 0,
        "explanation": "«Estado Plurinacional» es el nombre oficial de Bolivia."
+      },
+      {
+       "id": "qT4dFpkx7KTZwozr4.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el idioma oficial del Ecuador?"
+        }
+       ],
+       "options": [
+        "El castellano",
+        "El kichwa",
+        "El shuar",
+        "El inglés"
+       ],
+       "answer": 0,
+       "explanation": "El kichwa y el shuar son idiomas oficiales de relación intercultural."
+      },
+      {
+       "id": "iMn8XZRnesz2dXKEf.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿A partir de cuántos años se considera en Ecuador 3ra edad?"
+        }
+       ],
+       "options": [
+        "65 años",
+        "60 años",
+        "70 años",
+        "55 años"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -9712,6 +10043,40 @@
        ],
        "answer": 0,
        "explanation": "Fue uno de los países fundadores de la ONU."
+      },
+      {
+       "id": "vNkNbMATrwoSCL1CY.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "La UNASUR (Unión de Naciones Suramericanas) tuvo su sede principal en la provincia de"
+        }
+       ],
+       "options": [
+        "Pichincha",
+        "Guayas",
+        "Azuay",
+        "Manabí"
+       ],
+       "answer": 0,
+       "explanation": "Su sede estaba en la Mitad del Mundo, junto a Quito."
+      },
+      {
+       "id": "65hd0Kzw5feeokKIo.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué año Ecuador formó parte de la Comunidad Andina (CAN)?"
+        }
+       ],
+       "options": [
+        "1969",
+        "1945",
+        "1980",
+        "2008"
+       ],
+       "answer": 0,
+       "explanation": "Fue uno de los países fundadores, con el Acuerdo de Cartagena."
       }
      ]
     }
@@ -14501,6 +14866,87 @@
         "El Pase del Niño"
        ],
        "answer": 0
+      },
+      {
+       "id": "EbEhuz0Vn5aYaKGyn.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Por qué al sombrero de paja toquilla, originario del Ecuador, se le conoce internacionalmente como «Panama Hat»?"
+        }
+       ],
+       "options": [
+        "Por su exportación a través de Panamá y su uso durante la construcción del canal",
+        "Porque se inventó en Panamá",
+        "Porque la paja toquilla viene de Panamá",
+        "Porque lo usaba un presidente panameño"
+       ],
+       "answer": 0,
+       "explanation": "Se exportaba por Panamá desde la fiebre del oro del siglo XIX."
+      },
+      {
+       "id": "lnuDEoxhgWc3SU0qB.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué es el "
+        },
+        {
+         "text": "Inti Raymi",
+         "bold": true
+        },
+        {
+         "text": "?"
+        }
+       ],
+       "options": [
+        "Una fiesta incaica para agradecer al sol por las cosechas",
+        "Una fiesta de la Costa que celebra el mar",
+        "Un plato típico de la Sierra",
+        "Una danza afroecuatoriana"
+       ],
+       "answer": 0,
+       "explanation": "También se la llama Fiesta del Sol y se celebra alrededor del solsticio de junio (21 de junio), cuando el sol alcanza su punto más al norte."
+      },
+      {
+       "id": "7npaP19nlZ3TB0r9r.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué celebración ecuatoriana está relacionada con la fertilidad y la mujer?"
+        }
+       ],
+       "options": [
+        "El Kulla Raymi",
+        "El Inti Raymi",
+        "El Pawkar Raymi",
+        "El Kapak Raymi"
+       ],
+       "answer": 0,
+       "explanation": "El Inti Raymi agradece al sol por las cosechas."
+      },
+      {
+       "id": "cjzYvCAJ2QDuLHaCn.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Qué es la "
+        },
+        {
+         "text": "Pambamesa",
+         "bold": true
+        },
+        {
+         "text": " en Ecuador?"
+        }
+       ],
+       "options": [
+        "Una comida que se comparte sobre un mantel en el suelo, en fiestas como el Inti Raymi",
+        "Una mesa de madera tallada",
+        "Un plato típico de Semana Santa",
+        "Una feria artesanal de Otavalo"
+       ],
+       "answer": 0
       }
      ]
     },
@@ -14826,159 +15272,100 @@
        ],
        "answer": 0,
        "explanation": "En el Ecuador hay 14 nacionalidades y 18 pueblos indígenas."
-      }
-     ]
-    },
-    {
-     "id": "cultura-general",
-     "title": "Cultura General",
-     "cards": [
+      },
       {
-       "id": "hHlQxbquf4HyKxYTm.f",
+       "id": "hj5gdXYb8UJNuSne2.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿De cuántas horas es la jornada máxima laboral a la semana en Ecuador?"
+         "text": "¿Qué es una "
+        },
+        {
+         "text": "minga",
+         "bold": true
+        },
+        {
+         "text": " en Ecuador?"
         }
        ],
        "options": [
-        "40 horas",
-        "44 horas",
-        "48 horas",
-        "36 horas"
+        "Un trabajo colectivo y gratuito con fines de utilidad social",
+        "Una fiesta de la cosecha",
+        "Un plato típico",
+        "Un instrumento musical"
        ],
        "answer": 0
       },
       {
-       "id": "OPVYkHcYql9MO1z2y.f",
+       "id": "t3BAp84g1HWf3zRvc.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿En qué fecha cívica se conmemora el día del maestro?"
+         "text": "¿Qué es la ayahuasca?"
         }
        ],
        "options": [
-        "El 13 de abril, por el nacimiento de Juan Montalvo",
-        "El 1 de mayo",
-        "El 10 de agosto",
-        "El 26 de noviembre"
+        "Una bebida psicodélica usada en rituales indígenas de la Amazonía",
+        "Un plato típico de la Costa",
+        "Una danza de la Sierra",
+        "Un instrumento musical"
        ],
-       "answer": 0,
-       "explanation": "Juan Montalvo nació el 13 de abril de 1832."
+       "answer": 0
       },
       {
-       "id": "J1F4W9Jaw6faswYz3.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "¿Cuáles son algunos de los principales periódicos del Ecuador?"
-        }
-       ],
-       "back": [
-        {
-         "text": "El Universo, El Comercio, La Hora, El Telégrafo y Diario Expreso."
-        }
-       ]
-      },
-      {
-       "id": "vNkNbMATrwoSCL1CY.f",
+       "id": "ho10wMdm4PLqFgtPU.f",
        "type": "choice",
        "front": [
         {
-         "text": "La UNASUR (Unión de Naciones Suramericanas) tuvo su sede principal en la provincia de"
+         "text": "¿Qué plantas contiene la bebida ayahuasca?"
         }
        ],
        "options": [
-        "Pichincha",
-        "Guayas",
-        "Azuay",
-        "Manabí"
+        "La ayahuasca y la chacruna",
+        "La guayusa y la canela",
+        "El maíz morado y el mortiño",
+        "La hoja de coca y el cacao"
        ],
-       "answer": 0,
-       "explanation": "Su sede estaba en la Mitad del Mundo, junto a Quito."
+       "answer": 0
       },
       {
-       "id": "nOerEN51AB2epqhvA.f",
+       "id": "EfNm4xyaozmvqvOXZ.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿A qué se debe el nombre de la República del Ecuador?"
+         "text": "¿Qué significa la palabra «wawa» en kichwa?"
         }
        ],
        "options": [
-        "Su ubicación en la línea ecuatorial",
-        "El nombre de un pueblo indígena",
-        "El apellido de un conquistador",
-        "El nombre de un río"
+        "Niño o bebé",
+        "Madre",
+        "Agua",
+        "Casa"
        ],
-       "answer": 0,
-       "explanation": "La línea ecuatorial también se llama línea equinoccial."
+       "answer": 0
       },
       {
-       "id": "qT4dFpkx7KTZwozr4.f",
+       "id": "upFZtdTphk0PHAumD.f",
        "type": "choice",
        "front": [
         {
-         "text": "¿Cuál es el idioma oficial del Ecuador?"
+         "text": "¿Qué significa Yasuní en la lengua Waorani?"
         }
        ],
        "options": [
-        "El castellano",
-        "El kichwa",
-        "El shuar",
-        "El inglés"
+        "Tierra sagrada",
+        "Río grande",
+        "Selva verde",
+        "Casa del jaguar"
        ],
-       "answer": 0,
-       "explanation": "El kichwa y el shuar son idiomas oficiales de relación intercultural."
-      },
-      {
-       "id": "XJ3cRp3pEpBJ57Dml.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿De cuál ciudad salen principalmente los cruceros en Ecuador?"
-        }
-       ],
-       "options": [
-        "Manta",
-        "Esmeraldas",
-        "Puerto Bolívar",
-        "Salinas"
-       ],
-       "answer": 0,
-       "explanation": "Manta está en la provincia de Manabí."
-      },
-      {
-       "id": "SBhFz1u5LYKmP0NkN.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿A qué mujer ecuatoriana se la conoce como la «Libertadora del Libertador»?"
-        }
-       ],
-       "options": [
-        "Manuela Sáenz",
-        "Manuela Cañizares",
-        "Dolores Cacuango",
-        "Matilde Hidalgo"
-       ],
-       "answer": 0,
-       "explanation": "En casa de Manuela Cañizares se reunieron los patriotas la noche del 9 de agosto de 1809."
-      },
-      {
-       "id": "YQJF5y2aHKPCZFmpf.f",
-       "type": "basic",
-       "front": [
-        {
-         "text": "Los principales productos que exporta Ecuador son"
-        }
-       ],
-       "back": [
-        {
-         "text": "Petróleo, banano, camarón, café, atún, cacao y flores."
-        }
-       ]
-      },
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "patrimonio-de-la-humanidad",
+     "title": "Patrimonio de la Humanidad",
+     "cards": [
       {
        "id": "4bkpOI21XtMntGPUh.f",
        "type": "choice",
@@ -15167,512 +15554,26 @@
         "1983"
        ],
        "answer": 0
-      },
+      }
+     ]
+    },
+    {
+     "id": "economia-y-trabajo",
+     "title": "Economía y trabajo",
+     "cards": [
       {
-       "id": "D9f37HbZmmYYLSjd3.f",
-       "type": "choice",
+       "id": "YQJF5y2aHKPCZFmpf.f",
+       "type": "basic",
        "front": [
         {
-         "text": "¿Cuál es el deporte con origen en Ecuador?"
+         "text": "Los principales productos que exporta Ecuador son"
         }
        ],
-       "options": [
-        "El ecuavóley",
-        "El fútbol",
-        "El básquet",
-        "El vóley playa"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "PsxXAQ7Jin34y6XXt.f",
-       "type": "choice",
-       "front": [
+       "back": [
         {
-         "text": "¿Cuál es la flor nacional del Ecuador?"
+         "text": "Petróleo, banano, camarón, café, atún, cacao y flores."
         }
-       ],
-       "options": [
-        "La chuquiragua",
-        "La orquídea",
-        "La rosa",
-        "El girasol"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "lnuDEoxhgWc3SU0qB.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es el "
-        },
-        {
-         "text": "Inti Raymi",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Una fiesta incaica para agradecer al sol por las cosechas",
-        "Una fiesta de la Costa que celebra el mar",
-        "Un plato típico de la Sierra",
-        "Una danza afroecuatoriana"
-       ],
-       "answer": 0,
-       "explanation": "También se la llama Fiesta del Sol y se celebra alrededor del solsticio de junio (21 de junio), cuando el sol alcanza su punto más al norte."
-      },
-      {
-       "id": "cjzYvCAJ2QDuLHaCn.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es la "
-        },
-        {
-         "text": "Pambamesa",
-         "bold": true
-        },
-        {
-         "text": " en Ecuador?"
-        }
-       ],
-       "options": [
-        "Una comida que se comparte sobre un mantel en el suelo, en fiestas como el Inti Raymi",
-        "Una mesa de madera tallada",
-        "Un plato típico de Semana Santa",
-        "Una feria artesanal de Otavalo"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "hj5gdXYb8UJNuSne2.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es una "
-        },
-        {
-         "text": "minga",
-         "bold": true
-        },
-        {
-         "text": " en Ecuador?"
-        }
-       ],
-       "options": [
-        "Un trabajo colectivo y gratuito con fines de utilidad social",
-        "Una fiesta de la cosecha",
-        "Un plato típico",
-        "Un instrumento musical"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "dBKY0bpVgy4D00Ega.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuándo se celebra el Día del Trabajador en Ecuador?"
-        }
-       ],
-       "options": [
-        "El 1 de mayo",
-        "El 13 de abril",
-        "El 24 de mayo",
-        "El 10 de agosto"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "IO3RnxHgilJJ7fGO0.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es el nombre del aeropuerto internacional que sirve a Quito?"
-        }
-       ],
-       "options": [
-        "Mariscal Sucre",
-        "José Joaquín de Olmedo",
-        "Eloy Alfaro",
-        "Mariscal Lamar"
-       ],
-       "answer": 0,
-       "explanation": "El José Joaquín de Olmedo está en Guayaquil, el Eloy Alfaro en Manta y el Mariscal Lamar en Cuenca."
-      },
-      {
-       "id": "EbEhuz0Vn5aYaKGyn.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Por qué al sombrero de paja toquilla, originario del Ecuador, se le conoce internacionalmente como «Panama Hat»?"
-        }
-       ],
-       "options": [
-        "Por su exportación a través de Panamá y su uso durante la construcción del canal",
-        "Porque se inventó en Panamá",
-        "Porque la paja toquilla viene de Panamá",
-        "Porque lo usaba un presidente panameño"
-       ],
-       "answer": 0,
-       "explanation": "Se exportaba por Panamá desde la fiebre del oro del siglo XIX."
-      },
-      {
-       "id": "t3BAp84g1HWf3zRvc.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué es la ayahuasca?"
-        }
-       ],
-       "options": [
-        "Una bebida psicodélica usada en rituales indígenas de la Amazonía",
-        "Un plato típico de la Costa",
-        "Una danza de la Sierra",
-        "Un instrumento musical"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "ho10wMdm4PLqFgtPU.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué plantas contiene la bebida ayahuasca?"
-        }
-       ],
-       "options": [
-        "La ayahuasca y la chacruna",
-        "La guayusa y la canela",
-        "El maíz morado y el mortiño",
-        "La hoja de coca y el cacao"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "EfNm4xyaozmvqvOXZ.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué significa la palabra «wawa» en kichwa?"
-        }
-       ],
-       "options": [
-        "Niño o bebé",
-        "Madre",
-        "Agua",
-        "Casa"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "upFZtdTphk0PHAumD.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué significa Yasuní en la lengua Waorani?"
-        }
-       ],
-       "options": [
-        "Tierra sagrada",
-        "Río grande",
-        "Selva verde",
-        "Casa del jaguar"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "7npaP19nlZ3TB0r9r.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué celebración ecuatoriana está relacionada con la fertilidad y la mujer?"
-        }
-       ],
-       "options": [
-        "El Kulla Raymi",
-        "El Inti Raymi",
-        "El Pawkar Raymi",
-        "El Kapak Raymi"
-       ],
-       "answer": 0,
-       "explanation": "El Inti Raymi agradece al sol por las cosechas."
-      },
-      {
-       "id": "Iy72wG50e6o8wRKkb.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué ciudad se reunieron Bolívar y San Martín?"
-        }
-       ],
-       "options": [
-        "Guayaquil",
-        "Quito",
-        "Lima",
-        "Bogotá"
-       ],
-       "answer": 0,
-       "explanation": "La entrevista de Guayaquil fue en julio de 1822."
-      },
-      {
-       "id": "pJoTuvoa3PGlvXQJS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "Al morir Huayna Cápac, ¿cuáles tierras le dieron a Atahualpa?"
-        }
-       ],
-       "options": [
-        "Los territorios del norte, con Quito",
-        "Los territorios del sur, con el Cusco",
-        "Toda la costa del Pacífico",
-        "La Amazonía"
-       ],
-       "answer": 0,
-       "explanation": "Su hermano Huáscar recibió el sur, con el Cusco."
-      },
-      {
-       "id": "244WkU6KNbPFvPBpU.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál es la semilla de la palma que se exporta desde el siglo XIX?"
-        }
-       ],
-       "options": [
-        "La tagua",
-        "El cacao",
-        "El café",
-        "El coco"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "SYyPWhgq8EN807wyS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué año fue destruida la ciudad de "
-        },
-        {
-         "text": "Latacunga",
-         "bold": true
-        },
-        {
-         "text": " por un fuerte terremoto?"
-        }
-       ],
-       "options": [
-        "1698",
-        "1868",
-        "1797",
-        "1949"
-       ],
-       "answer": 0,
-       "explanation": "En 1797 un terremoto destruyó Riobamba; en 1868, Ibarra; y en 1949, Ambato."
-      },
-      {
-       "id": "NcofP6yspE379slzH.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué año fue destruida la ciudad de "
-        },
-        {
-         "text": "Ibarra",
-         "bold": true
-        },
-        {
-         "text": " por un terremoto?"
-        }
-       ],
-       "options": [
-        "1868",
-        "1698",
-        "1797",
-        "1949"
-       ],
-       "answer": 0,
-       "explanation": "En 1698 un terremoto destruyó Latacunga; en 1797, Riobamba; y en 1949, Ambato."
-      },
-      {
-       "id": "fwwKwHotadxYgUKrF.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuánto duró el poder colonial en Ecuador?"
-        }
-       ],
-       "options": [
-        "Cerca de 300 años",
-        "Cerca de 100 años",
-        "Cerca de 50 años",
-        "Cerca de 500 años"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "VASOWpvC796oYTLIZ.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué siglo los aborígenes del actual Ecuador enfrentaron la conquista inca?"
-        }
-       ],
-       "options": [
-        "En el siglo XV",
-        "En el siglo XIII",
-        "En el siglo XVI",
-        "En el siglo XVIII"
-       ],
-       "answer": 0,
-       "explanation": "La conquista española llegó en el siglo XVI."
-      },
-      {
-       "id": "iMn8XZRnesz2dXKEf.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿A partir de cuántos años se considera en Ecuador 3ra edad?"
-        }
-       ],
-       "options": [
-        "65 años",
-        "60 años",
-        "70 años",
-        "55 años"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "U0lTsiKNWTXqLkCc1.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Cuál de estas ciudades es una de las más visitadas por turistas nacionales y extranjeros?"
-        }
-       ],
-       "options": [
-        "Otavalo",
-        "Babahoyo",
-        "Nueva Loja",
-        "Guaranda"
-       ],
-       "answer": 0
-      },
-      {
-       "id": "65hd0Kzw5feeokKIo.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué año Ecuador formó parte de la Comunidad Andina (CAN)?"
-        }
-       ],
-       "options": [
-        "1969",
-        "1945",
-        "1980",
-        "2008"
-       ],
-       "answer": 0,
-       "explanation": "Fue uno de los países fundadores, con el Acuerdo de Cartagena."
-      },
-      {
-       "id": "ViGCpBcuJARHVjsEJ.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Qué líder indígena fundó las primeras escuelas bilingües (kichwa y castellano) del Ecuador?"
-        }
-       ],
-       "options": [
-        "Dolores Cacuango",
-        "Manuela Sáenz",
-        "Matilde Hidalgo",
-        "Manuela Cañizares"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-dolores-cacuango.jpg",
-        "alt": "Dolores Cacuango",
-        "credit": "Varios autores",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Dolores_Cacuango1.jpg"
-       }
-      },
-      {
-       "id": "JF9bxKLlAZdpGAEMS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién fue la primera mujer que votó en Ecuador (y en Latinoamérica)?"
-        }
-       ],
-       "options": [
-        "Matilde Hidalgo",
-        "Manuela Sáenz",
-        "Dolores Cacuango",
-        "Araceli Gilbert"
-       ],
-       "answer": 0,
-       "explanation": "Votó en 1924.",
-       "photo": {
-        "src": "images/foto-matilde-hidalgo.jpg",
-        "alt": "Matilde Hidalgo",
-        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
-       }
-      },
-      {
-       "id": "uqMEvHWHy83kMXfDL.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién fue la primera médica del Ecuador?"
-        }
-       ],
-       "options": [
-        "Matilde Hidalgo",
-        "Manuela Sáenz",
-        "Dolores Cacuango",
-        "Manuela Cañizares"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-matilde-hidalgo.jpg",
-        "alt": "Matilde Hidalgo",
-        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
-       }
-      },
-      {
-       "id": "c3PTBouXDbJAdllLS.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién fue la primera mujer electa a un cargo público en el Ecuador?"
-        }
-       ],
-       "options": [
-        "Matilde Hidalgo",
-        "Manuela Sáenz",
-        "Dolores Cacuango",
-        "Manuela Cañizares"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-matilde-hidalgo.jpg",
-        "alt": "Matilde Hidalgo",
-        "credit": "Colegio Nacional de Artes Plásticas «Dra. Matilde Hidalgo de Procel», Machala",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Matilde_Hidalgo.jpg"
-       }
+       ]
       },
       {
        "id": "exportaciones-destino",
@@ -15724,6 +15625,123 @@
        ],
        "answer": 0,
        "explanation": "Son provincias de la Costa, de clima cálido y húmedo."
+      },
+      {
+       "id": "244WkU6KNbPFvPBpU.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la semilla de la palma que se exporta desde el siglo XIX?"
+        }
+       ],
+       "options": [
+        "La tagua",
+        "El cacao",
+        "El café",
+        "El coco"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "hHlQxbquf4HyKxYTm.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿De cuántas horas es la jornada máxima laboral a la semana en Ecuador?"
+        }
+       ],
+       "options": [
+        "40 horas",
+        "44 horas",
+        "48 horas",
+        "36 horas"
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "cultura-general",
+     "title": "Cultura General",
+     "cards": [
+      {
+       "id": "OPVYkHcYql9MO1z2y.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿En qué fecha cívica se conmemora el día del maestro?"
+        }
+       ],
+       "options": [
+        "El 13 de abril, por el nacimiento de Juan Montalvo",
+        "El 1 de mayo",
+        "El 10 de agosto",
+        "El 26 de noviembre"
+       ],
+       "answer": 0,
+       "explanation": "Juan Montalvo nació el 13 de abril de 1832."
+      },
+      {
+       "id": "J1F4W9Jaw6faswYz3.f",
+       "type": "basic",
+       "front": [
+        {
+         "text": "¿Cuáles son algunos de los principales periódicos del Ecuador?"
+        }
+       ],
+       "back": [
+        {
+         "text": "El Universo, El Comercio, La Hora, El Telégrafo y Diario Expreso."
+        }
+       ]
+      },
+      {
+       "id": "D9f37HbZmmYYLSjd3.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es el deporte con origen en Ecuador?"
+        }
+       ],
+       "options": [
+        "El ecuavóley",
+        "El fútbol",
+        "El básquet",
+        "El vóley playa"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "PsxXAQ7Jin34y6XXt.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuál es la flor nacional del Ecuador?"
+        }
+       ],
+       "options": [
+        "La chuquiragua",
+        "La orquídea",
+        "La rosa",
+        "El girasol"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "dBKY0bpVgy4D00Ega.f",
+       "type": "choice",
+       "front": [
+        {
+         "text": "¿Cuándo se celebra el Día del Trabajador en Ecuador?"
+        }
+       ],
+       "options": [
+        "El 1 de mayo",
+        "El 13 de abril",
+        "El 24 de mayo",
+        "El 10 de agosto"
+       ],
+       "answer": 0
       }
      ]
     },
