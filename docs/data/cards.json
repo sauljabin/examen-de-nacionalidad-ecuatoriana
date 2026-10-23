@@ -146,7 +146,7 @@
         "Siete estrellas blancas"
        ],
        "answer": 0,
-       "explanation": "El escudo reúne el Chimborazo, el río Guayas, el sol y el cóndor. Según el decreto de 1900, llevan la bandera con escudo los edificios nacionales, los buques de guerra, las fortalezas y las misiones diplomáticas."
+       "explanation": "El escudo reúne el Chimborazo, el río Guayas, el sol y el cóndor."
       },
       {
        "id": "XrrSsOnGix2d5MT4c.f",
@@ -4950,10 +4950,10 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿Por cuál provincia se extiende principalmente "
+         "text": "¿Por qué provincias pasa "
         },
         {
-         "text": "La Ruta de los Shamanes",
+         "text": "la Ruta de los Shamanes",
          "bold": true
         },
         {
@@ -4961,13 +4961,17 @@
         }
        ],
        "options": [
-        "Pastaza",
         "Napo",
+        "Pastaza",
         "Morona Santiago",
         "Zamora Chinchipe"
        ],
-       "answer": 0,
-       "explanation": "Su centro es Puyo, la capital de Pastaza."
+       "answer": [
+        0,
+        1,
+        2
+       ],
+       "explanation": "Va de Tena, en Napo, a Gualaquiza, en Morona Santiago, pasando por Puyo y Macas. Ofrece encuentros con chamanes shuar y kichwa y tratamientos con plantas medicinales."
       },
       {
        "id": "XJ3cRp3pEpBJ57Dml.f",
@@ -11168,7 +11172,8 @@
         "Astronautas",
         "El Tren Volador"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "Ese año ganó el primer premio de pintura con tres obras: «San Juanito», «Las sahumeriantes» y «Las floristas». Volvió a ganarlo en 1923 con «Retrato de mujer»."
       },
       {
        "id": "UobMjmt3U53wQbteG.f",
@@ -11495,16 +11500,17 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué temática es recurrente en la obra de Gilberto Almeida, especialmente en sus paisajes?"
+         "text": "¿Qué temática es recurrente en la obra de Gilberto Almeida?"
         }
        ],
        "options": [
-        "La soledad y la desolación de los páramos andinos",
+        "Las casas, iglesias y portones coloniales de Quito y de los pueblos andinos",
         "Los caballos",
         "Las manos",
         "La vida en la Costa"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "Sus primeras obras retratan sobre todo edificios y vistas del Quito antiguo; más tarde hizo grandes dibujos en blanco y negro. Los caballos son un tema de Pilar Bustos, y las manos, de Eduardo Kingman."
       },
       {
        "id": "zrZLg0p3xgS2HELhw.f",
