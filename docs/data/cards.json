@@ -4946,29 +4946,6 @@
        "explanation": "La ruta recorre toda la costa: Esmeraldas, Manabí, Santa Elena, Guayas y El Oro. Los Ríos no tiene salida al mar."
       },
       {
-       "id": "9s3Vv1oAfnE0UlZD8.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿En qué provincia se encuentra la cascada "
-        },
-        {
-         "text": "San Rafael",
-         "bold": true
-        },
-        {
-         "text": "?"
-        }
-       ],
-       "options": [
-        "Napo",
-        "Pastaza",
-        "Morona Santiago",
-        "Zamora Chinchipe"
-       ],
-       "answer": 0
-      },
-      {
        "id": "YvUUSswGEgj1GiY2C.f",
        "type": "choice",
        "front": [
@@ -6585,7 +6562,7 @@
     {
      "id": "1534-fundacion-de-quito",
      "title": "1534 Fundación de Quito",
-     "summary": "Francisco Pizarro ordenó ejecutar a Atahualpa, el último emperador inca. El 15 de agosto de 1534 Diego de Almagro fundó una primera ciudad cerca de la actual Riobamba, y el 6 de diciembre de 1534 Sebastián de Benalcázar fundó San Francisco de Quito a los pies del Pichincha; esa es la fecha que se celebra. Pizarro nombró a Gonzalo Pizarro gobernador de Quito, y a Almagro, de Nueva Toledo; con Almagro se disputó el control del Cusco.",
+     "summary": "Francisco Pizarro ordenó ejecutar a Atahualpa, el último emperador inca. El 15 de agosto de 1534 Diego de Almagro fundó una primera ciudad cerca de la actual Riobamba, y el 6 de diciembre de 1534 Sebastián de Benalcázar fundó San Francisco de Quito a los pies del Pichincha; esa es la fecha que se celebra. Pizarro nombró a su hermano Gonzalo gobernador de Quito. Almagro recibió de la Corona la gobernación de Nueva Toledo, al sur, y se disputó con Pizarro el control del Cusco.",
      "cards": [
       {
        "id": "C0ZA6VLXwizIrn2bw.f",
@@ -6690,7 +6667,7 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿A quién nombró Francisco Pizarro como gobernador de "
+         "text": "¿Quién recibió de la Corona española, en 1534, la gobernación de "
         },
         {
          "text": "Nueva Toledo",
@@ -6706,7 +6683,8 @@
         "Gonzalo Pizarro",
         "Francisco de Orellana"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "Se la concedió el rey Carlos I de España, al sur de Nueva Castilla, la gobernación de Francisco Pizarro. El límite entre las dos y el control del Cusco enfrentaron después a Pizarro y Almagro."
       },
       {
        "id": "XDYTKTetaliXkgpJY.f",
@@ -7048,7 +7026,7 @@
     {
      "id": "1820-independencia-de-guayaquil",
      "title": "1820 Independencia de Guayaquil",
-     "summary": "El 9 de octubre de 1820 Guayaquil se declaró independiente, en un movimiento liderado por José Joaquín de Olmedo. Su bandera tenía franjas celestes y blancas con tres estrellas.",
+     "summary": "El 9 de octubre de 1820 Guayaquil se declaró independiente. Organizaron el levantamiento José de Villamil y José de Antepara, y lo llevaron a cabo militares como Gregorio Escobedo, León de Febres Cordero y Luis Urdaneta. José Joaquín de Olmedo, que no quiso dirigir la revuelta, asumió ese día el mando político. Su bandera tenía franjas celestes y blancas con tres estrellas.",
      "cards": [
       {
        "id": "rPypMS5mF4ERNi8Tx.f",
@@ -7072,23 +7050,24 @@
        "type": "choice",
        "front": [
         {
-         "text": "¿Qué acontecimiento lideró "
+         "text": "¿Qué cargo asumió "
         },
         {
          "text": "José Joaquín de Olmedo",
          "bold": true
         },
         {
-         "text": " el 9 de octubre de 1820?"
+         "text": " tras la independencia de Guayaquil, el 9 de octubre de 1820?"
         }
        ],
        "options": [
-        "La independencia de Guayaquil",
-        "El Primer Grito de Independencia",
-        "La Revolución Marcista",
-        "La Batalla del Pichincha"
+        "El mando político: presidió la Junta de Gobierno y luego la Provincia Libre de Guayaquil",
+        "El mando militar de la revolución",
+        "La presidencia de la Gran Colombia",
+        "La presidencia de la Real Audiencia de Quito"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "Olmedo rechazó dirigir el levantamiento, porque creía que debía hacerlo un militar. El mando militar lo asumió Gregorio Escobedo. El 8 de noviembre de 1820, los representantes de la provincia eligieron a Olmedo presidente de la Provincia Libre de Guayaquil."
       }
      ]
     },
@@ -10908,29 +10887,6 @@
        }
       },
       {
-       "id": "ZTJYRRpK3NQjG2992.f",
-       "type": "choice",
-       "front": [
-        {
-         "text": "¿Quién es el autor de la pintura «Virgen de los Ángeles»?"
-        }
-       ],
-       "options": [
-        "Miguel de Santiago",
-        "Bernardo de Legarda",
-        "Manuel Chili «Caspicara»",
-        "Oswaldo Guayasamín"
-       ],
-       "answer": 0,
-       "photo": {
-        "src": "images/foto-miguel-de-santiago.jpg",
-        "alt": "Retrato de Miguel de Santiago",
-        "credit": "J. Garcés R.",
-        "license": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:Miguel_de_Santiago.jpg"
-       }
-      },
-      {
        "id": "ZswCVhrzYl9xpe6BN.f",
        "type": "choice",
        "front": [
@@ -10995,11 +10951,11 @@
        "options": [
         "La Sábana Santa",
         "La Virgen de Quito",
-        "La Virgen de los Ángeles",
+        "Los milagros de la Virgen de Guápulo",
         "El Tren Volador"
        ],
        "answer": 0,
-       "explanation": "La Virgen de Quito es de Bernardo de Legarda, y la Virgen de los Ángeles, de Miguel de Santiago.",
+       "explanation": "La Virgen de Quito es de Bernardo de Legarda, y la serie de los milagros de la Virgen de Guápulo, de Miguel de Santiago.",
        "photo": {
         "src": "images/foto-caspicara.jpg",
         "alt": "Escultura en madera policromada de Caspicara",
@@ -11280,7 +11236,7 @@
          "bold": true
         },
         {
-         "text": " que obtuvo el Primer Premio en el Salón Mariano Aguilera en 1935?"
+         "text": " que obtuvo el Primer Premio en el Salón Mariano Aguilera en 1936?"
         }
        ],
        "options": [
@@ -11290,6 +11246,7 @@
         "Huacayñán"
        ],
        "answer": 0,
+       "explanation": "Lo pintó en 1934. Según la mayoría de las fuentes, el jurado lo rechazó en 1935 y lo premió al año siguiente.",
        "photo": {
         "src": "images/foto-kingman.jpg",
         "alt": "Eduardo Kingman",
@@ -11368,10 +11325,10 @@
         }
        ],
        "options": [
-        "Huacayñán, La Edad de la Ira y Mientras viva siempre te recuerdo",
-        "La Edad de la Ira, Huacayñán y Mientras viva siempre te recuerdo",
-        "Mientras viva siempre te recuerdo, La Edad de la Ira y Huacayñán",
-        "Huacayñán, Mientras viva siempre te recuerdo y La Edad de la Ira"
+        "Huacayñán, La Edad de la Ira y Mientras vivo siempre te recuerdo",
+        "La Edad de la Ira, Huacayñán y Mientras vivo siempre te recuerdo",
+        "Mientras vivo siempre te recuerdo, La Edad de la Ira y Huacayñán",
+        "Huacayñán, Mientras vivo siempre te recuerdo y La Edad de la Ira"
        ],
        "answer": 0,
        "explanation": "La tercera serie también se conoce como La Ternura.",
@@ -14238,12 +14195,13 @@
         }
        ],
        "options": [
-        "Las Marujitas se han muerto de leucemia",
+        "La Marujita se ha muerto con leucemia",
         "Estampas quiteñas",
         "Ratas, ratones, rateros",
         "Qué tan lejos"
        ],
-       "answer": 0
+       "answer": 0,
+       "explanation": "Se estrenó en 1990, y por ella Juana Guarderas, Martha Ormaza y Elena Torres son conocidas como «Las Marujitas»."
       },
       {
        "id": "qex32maDHvdVO7z3z.f",
@@ -14356,12 +14314,12 @@
        ],
        "options": [
         "Ser mamá o morir en el intento",
-        "Las Marujitas se han muerto de leucemia",
+        "La Marujita se ha muerto con leucemia",
         "Estampas quiteñas",
         "El intruso"
        ],
        "answer": 0,
-       "explanation": "Es una comedia que desmitifica el papel «sagrado» de la madre. «Las Marujitas se han muerto de leucemia» es de Juana Guarderas, las «Estampas quiteñas» son de Ernesto Albán y «El intruso», de Jorge Icaza."
+       "explanation": "Es una comedia que desmitifica el papel «sagrado» de la madre. «La Marujita se ha muerto con leucemia» es la obra de Juana Guarderas y Las Marujitas, las «Estampas quiteñas» son de Ernesto Albán y «El intruso», de Jorge Icaza."
       }
      ]
     },
