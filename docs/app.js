@@ -95,14 +95,15 @@ function askConfirm({ title, text, ok, cancel = "Cancelar" }) {
 // built (draft), the last result of each question (results), the days with
 // practice (days), totals (stats), unlocked achievements (achievements), the
 // daily goal (goal), today's answers (today), the days the goal was met
-// (goalDays) and the review schedule of each question (srs).
+// (goalDays), the review schedule of each question (srs) and the answers
+// given each day (activity, "YYYY-MM-DD": count) for the activity calendar.
 const progress = readProgress();
 
 function emptyProgress() {
   return {
     missed: [], marked: [], exams: [], draft: { title: "", ids: [] },
     results: {}, days: [], stats: {}, achievements: {},
-    goal: 20, today: { day: "", count: 0 }, goalDays: [], srs: {},
+    goal: 20, today: { day: "", count: 0 }, goalDays: [], srs: {}, activity: {},
   };
 }
 
@@ -1188,14 +1189,96 @@ async function confirmExit() {
 // Progress, streak and achievements -----------------------------------------
 
 function todayKey() {
-  const date = new Date();
-  return [date.getFullYear(), date.getMonth() + 1, date.getDate()]
-    .map((part) => String(part).padStart(2, "0")).join("-");
+  return dateKey(new Date());
 }
 
 function dayNumber(key) {
   const [year, month, day] = key.split("-").map(Number);
   return Math.round(Date.UTC(year, month - 1, day) / 86400000);
+}
+
+function dateKey(date) {
+  return [date.getFullYear(), date.getMonth() + 1, date.getDate()]
+    .map((part) => String(part).padStart(2, "0")).join("-");
+}
+
+// Activity calendar -----------------------------------------------------------
+
+const CALENDAR_WEEKS = 53;
+const MONTHS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+const DATE_FORMAT = new Intl.DateTimeFormat("es-EC", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+
+// 0 = no practice; 1–4 grow with the answers, measured against the daily goal.
+// Days saved before the calendar existed have no count: they show as 1, or 3
+// if the goal was met.
+function activityLevel(key, goalDays) {
+  const count = progress.activity[key];
+  if (count === undefined) return goalDays.has(key) ? 3 : progress.days.includes(key) ? 1 : 0;
+  if (count >= progress.goal * 2) return 4;
+  if (count >= progress.goal) return 3;
+  return count >= progress.goal / 2 ? 2 : 1;
+}
+
+function activityText(key) {
+  const count = progress.activity[key];
+  if (count !== undefined) return plural(count, "respuesta", "respuestas");
+  return progress.days.includes(key) ? "practicaste" : "sin práctica";
+}
+
+// A year of days in columns of weeks (Monday first), like a contributions
+// graph, ending with the current week.
+function renderActivity(container) {
+  const today = new Date();
+  today.setHours(12, 0, 0, 0);
+  const start = new Date(today);
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - (CALENDAR_WEEKS - 1) * 7);
+  const goalDays = new Set(progress.goalDays);
+  const calendar = container.querySelector(".activity-calendar");
+  const cells = [];
+  const place = (element, column, row) => {
+    element.style.gridColumn = String(column);
+    element.style.gridRow = String(row);
+    cells.push(element);
+  };
+  // Weekday labels in one column that stays put while the weeks scroll.
+  const days = document.createElement("div");
+  days.className = "activity-days";
+  for (const name of ["lun", "", "mié", "", "vie", "", ""]) {
+    const label = document.createElement("span");
+    label.textContent = name;
+    days.append(label);
+  }
+  place(days, 1, "2 / span 7");
+  const corner = document.createElement("span");
+  corner.className = "activity-corner";
+  place(corner, 1, 1);
+  let practiced = 0;
+  for (let index = 0, date = new Date(start); date <= today; index++, date.setDate(date.getDate() + 1)) {
+    const week = Math.floor(index / 7);
+    const key = dateKey(date);
+    if (date.getDate() === 1 && week < CALENDAR_WEEKS - 1) {
+      const month = document.createElement("span");
+      month.className = "activity-month";
+      month.textContent = MONTHS[date.getMonth()];
+      place(month, week + 2, 1);
+    }
+    const level = activityLevel(key, goalDays);
+    if (level) practiced += 1;
+    const cell = document.createElement("i");
+    cell.className = "activity-cell";
+    cell.dataset.level = String(level);
+    cell.title = `${DATE_FORMAT.format(date)}: ${activityText(key)}`;
+    place(cell, week + 2, (index % 7) + 2);
+  }
+  calendar.replaceChildren(...cells);
+  const summary = practiced
+    ? `Practicaste ${plural(practiced, "día", "días")} en el último año.`
+    : "Todavía no hay días con práctica. Cada día que respondas preguntas se pinta un cuadro.";
+  container.querySelector(".activity-summary").textContent = summary;
+  const scroller = container.querySelector(".activity-scroll");
+  scroller.setAttribute("aria-label", `Calendario de actividad del último año. ${summary}`);
+  // The latest weeks matter most: start scrolled to the end on narrow screens.
+  requestAnimationFrame(() => { scroller.scrollLeft = scroller.scrollWidth; });
 }
 
 function recordAnswer(card, right) {
@@ -1209,6 +1292,7 @@ function recordAnswer(card, right) {
   if (progress.days.at(-1) !== today) progress.days.push(today);
   if (progress.today.day !== today) progress.today = { day: today, count: 0 };
   progress.today.count += 1;
+  progress.activity[today] = (progress.activity[today] || 0) + 1;
   if (checkGoal()) state.goalJustMet = true;
   saveProgress();
 }
@@ -1454,6 +1538,7 @@ function showProgress() {
       saveProgress();
       renderGoal(goalSection);
       updateGoalDays();
+      renderActivity(app.querySelector(".activity-section"));
     });
   }
   const updateGoalDays = () => {
@@ -1463,6 +1548,7 @@ function showProgress() {
   };
   renderGoal(goalSection);
   updateGoalDays();
+  renderActivity(app.querySelector(".activity-section"));
 
   app.querySelector(".mastery-list").replaceChildren(...state.categories.map((category) => {
     const result = mastery(categoryCards(category));
@@ -1492,7 +1578,7 @@ function showProgress() {
       text: "Se borrarán la racha, las estadísticas, lo que dominas y los logros de este dispositivo. Tus falladas, marcadas y exámenes se mantienen.",
       ok: "Borrar",
     }))) return;
-    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [], srs: {} });
+    Object.assign(progress, { results: {}, days: [], stats: {}, achievements: {}, today: { day: "", count: 0 }, goalDays: [], srs: {}, activity: {} });
     saveProgress();
     redraw(showProgress);
   });

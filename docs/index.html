@@ -580,12 +580,27 @@
       </dl>
       <p class="progress-hint">La racha cuenta los días seguidos en que respondes al menos una pregunta. Una pregunta está dominada si la acertaste la última vez que la respondiste.</p>
 
+      <section class="activity-section" aria-labelledby="activity-title">
+        <h2 id="activity-title">Mi actividad</h2>
+        <p class="activity-summary"></p>
+        <div class="activity-scroll" role="img" tabindex="0">
+          <div class="activity-calendar"></div>
+        </div>
+        <div class="activity-legend" aria-hidden="true">
+          <span>Menos</span>
+          <i class="activity-cell" data-level="0"></i><i class="activity-cell" data-level="1"></i><i class="activity-cell" data-level="2"></i><i class="activity-cell" data-level="3"></i><i class="activity-cell" data-level="4"></i>
+          <span>Más</span>
+        </div>
+        <p class="progress-hint">Cada cuadro es un día. El color se intensifica según cuántas preguntas respondiste, comparado con tu meta diaria: el tercer tono es la meta cumplida y el más fuerte, el doble.</p>
+      </section>
+
       <section class="goal-section goal" aria-labelledby="goal-title">
         <h2 id="goal-title">Meta diaria</h2>
-        <div class="segmented goal-options" role="radiogroup" aria-label="Preguntas por día">
-          <label><input type="radio" name="goal" value="10"><span>10 preguntas</span></label>
-          <label><input type="radio" name="goal" value="20"><span>20 preguntas</span></label>
-          <label><input type="radio" name="goal" value="30"><span>30 preguntas</span></label>
+        <p class="goal-label" id="goal-label">Preguntas por día</p>
+        <div class="segmented goal-options" role="radiogroup" aria-labelledby="goal-label">
+          <label><input type="radio" name="goal" value="10"><span>10</span></label>
+          <label><input type="radio" name="goal" value="20"><span>20</span></label>
+          <label><input type="radio" name="goal" value="30"><span>30</span></label>
         </div>
         <p class="goal-text"></p>
         <i class="goal-bar" aria-hidden="true"></i>

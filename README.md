@@ -44,6 +44,7 @@ En el inicio, **Mi progreso** muestra tu racha, cuántas preguntas dominas, cuá
 - **Respondidas:** cuántas respuestas diste y qué porcentaje acertaste.
 - **Dominadas:** una pregunta está dominada si la acertaste la última vez que la respondiste. Se muestra en total y por categoría, junto con las que tienes por repasar.
 - **Mejor simulacro:** tu mejor puntaje y cuántos simulacros aprobaste.
+- **Mi actividad:** un calendario del último año, con un cuadro por día. El color se intensifica según cuántas preguntas respondiste, comparado con tu meta diaria. En el teléfono se desliza de lado para ver los meses anteriores.
 - **Meta diaria:** eliges 10, 20 o 30 preguntas al día y ves cuántas llevas hoy y cuántos días la cumpliste.
 - **Logros:** 20 medallas, como «Tres días seguidos», «Simulacro aprobado», «Diez seguidas» o «Símbolos dominados». Los nuevos aparecen al terminar un examen.
 
